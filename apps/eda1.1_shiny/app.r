@@ -74,91 +74,91 @@ update <- function(threshold=DEFAULT_THRESHOLD, country=NA, typeInput=c()) {
 
 # UI component of shiny app
 ui <- fluidPage(
-  # verticalLayout(
-  #   inputPanel(
-  #     sliderInput("thresholdInput", "Minimum threshold", 
-  #                 min=0, max=floor(sort(t$N)[length(t$N)-1]/10)*10, 
-  #                 value=DEFAULT_THRESHOLD, post=" N spp.",
-  #                 step=5),
-  #     selectInput("nodeColourInput", "Node colour by",
-  #                 c("Country", "Colonialism", "Economic status"), selected=NULL, multiple=F),
-  #     selectInput("countryInput", "Country", # sorted by Discover Life codes
-  #                 c("All", nodes_lab), selected=NULL, multiple=F),
-  #     conditionalPanel(
-  #       condition = "input.countryInput != 'All'",
-  #       checkboxGroupInput("typeInput", "Type (Source or Target)", 
-  #                         choices = list("Source" = 1, "Target" = 2),
-  #                         selected = c(1, 2))
-  #     )
-  #   ),
-  #   mainPanel(
-  #     sidebarLayout(
-  #       sidebarPanel(tableOutput("networkTable"),
-  #                    "Legend:", 
-  #                    "Src = Source i.e., country of taxonomist", 
-  #                    "Tgt = Target i.e. country of type species", 
-  #                    "N = N species described",
-  #                    width=2), 
-  #       mainPanel(forceNetworkOutput("network", height="500px"), width=10)
-  #     ),
-  #     width=12
-  #   )
-  # )
+  verticalLayout(
+    inputPanel(
+      sliderInput("thresholdInput", "Minimum threshold", 
+                  min=0, max=floor(sort(t$N)[length(t$N)-1]/10)*10, 
+                  value=DEFAULT_THRESHOLD, post=" N spp.",
+                  step=5),
+      selectInput("nodeColourInput", "Node colour by",
+                  c("Country", "Colonialism", "Economic status"), selected=NULL, multiple=F),
+      selectInput("countryInput", "Country", # sorted by Discover Life codes
+                  c("All", nodes_lab), selected=NULL, multiple=F),
+      conditionalPanel(
+        condition = "input.countryInput != 'All'",
+        checkboxGroupInput("typeInput", "Type (Source or Target)", 
+                          choices = list("Source" = 1, "Target" = 2),
+                          selected = c(1, 2))
+      )
+    ),
+    mainPanel(
+      sidebarLayout(
+        sidebarPanel(tableOutput("networkTable"),
+                     "Legend:", 
+                     "Src = Source i.e., country of taxonomist", 
+                     "Tgt = Target i.e. country of type species", 
+                     "N = N species described",
+                     width=2), 
+        mainPanel(forceNetworkOutput("network", height="500px"), width=10)
+      ),
+      width=12
+    )
+  )
 )
 
 # Server component of shiny app
 server <- function(input, output) {
 
-  # # Update data
-  # update_data <- reactive({
-  #   parsed_country <- unlist(strsplit(input$countryInput, " - "))[2]
-  #   if(input$countryInput == "All") {
-  #     updated <- update(input$thresholdInput, parsed_country)
-  #   } else {
-  #     updated <- update(input$thresholdInput, parsed_country, input$typeInput)
-  #   }
-  #   updated
-  # })
+  # Update data
+  update_data <- reactive({
+    parsed_country <- unlist(strsplit(input$countryInput, " - "))[2]
+    if(input$countryInput == "All") {
+      updated <- update(input$thresholdInput, parsed_country)
+    } else {
+      updated <- update(input$thresholdInput, parsed_country, input$typeInput)
+    }
+    updated
+  })
 
-  # # Output plots
-  # clickJS <- 'd3.selectAll(".node").on("click", function(d){ alert(d.name + ": " + d.nodesize + "spp."); })'
-  # output$network <- renderForceNetwork({
+  # Output plots
+  clickJS <- 'd3.selectAll(".node").on("click", function(d){ alert(d.name + ": " + d.nodesize + "spp."); })'
+  output$network <- renderForceNetwork({
 
-  #   updated <- update_data()
+    updated <- update_data()
 
-  #   if (dim(updated$t2)[1] == 0) {
+    if (dim(updated$t2)[1] == 0) {
 
-  #   } else {
+    } else {
       
-  #     grouping <- ifelse(input$nodeColourInput == "Country", "label", 
-  #       ifelse(input$nodeColourInput == "Colonialism", "Col_status", 
-  #         ifelse(input$nodeColourInput == "Economic status", "Econ_status", "")))
+      grouping <- ifelse(input$nodeColourInput == "Country", "label", 
+        ifelse(input$nodeColourInput == "Colonialism", "Col_status", 
+          ifelse(input$nodeColourInput == "Economic status", "Econ_status", "")))
 
-  #     legend_status <- ifelse(input$nodeColourInput == "Country", FALSE, TRUE)
+      legend_status <- ifelse(input$nodeColourInput == "Country", FALSE, TRUE)
 
-  #     forceNetwork(
-  #       Links = updated$t2, Nodes = updated$nodes,
-  #       Source = "idx_from", Target = "idx_to", Value = "N", 
-  #       colourScale = JS("d3.scaleOrdinal(d3.schemeCategory10);"),
-  #       NodeID = "label", Group=grouping, Nodesize="N", arrows=T, zoom=T, opacity=.8, 
-  #       radiusCalculation = JS("Math.sqrt(d.nodesize)"),
-  #       linkWidth = JS("function(d) { return d.value == 1 ? 1 : Math.log(d.value, 2); }"),
-  #       charge=-10000/((input$thresholdInput/200+1)), fontFamily="Calibri", 
-  #       fontSize=40, opacityNoHover = 1, clickAction=clickJS, legend=legend_status)
-  #   }
-  # })
+      forceNetwork(
+        Links = updated$t2, Nodes = updated$nodes,
+        Source = "idx_from", Target = "idx_to", Value = "N", 
+        colourScale = JS("d3.scaleOrdinal(d3.schemeCategory10);"),
+        NodeID = "label", Group=grouping, Nodesize="N", arrows=T, zoom=T, opacity=.8, 
+        radiusCalculation = JS("Math.sqrt(d.nodesize)"),
+        linkWidth = JS("function(d) { return d.value == 1 ? 1 : Math.log(d.value, 2); }"),
+        charge=-10000/((input$thresholdInput/200+1)), fontFamily="Calibri", 
+        fontSize=40, opacityNoHover = 1, clickAction=clickJS, legend=legend_status)
+    }
+  })
 
-  # output$networkTable <- renderTable({
+  output$networkTable <- renderTable({
     
-  #   updated <- update_data()
+    updated <- update_data()
 
-  #   if(dim(updated$t2)[1] >=1) {
-  #     tableshow <- updated$t2[,c("ori", "des", "N")]
-  #     names(tableshow) <- c("Src", "Tgt", "N")
-  #     tableshow
-  #   } else { data.frame(Comment=c("No data")) }
+    if(dim(updated$t2)[1] >=1) {
+      tableshow <- updated$t2[,c("ori", "des", "N")]
+      names(tableshow) <- c("Src", "Tgt", "N")
+      tableshow
+    } else { data.frame(Comment=c("No data")) }
 
-  # })
+  })
 
 }
 
