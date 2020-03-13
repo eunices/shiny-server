@@ -3,8 +3,6 @@ library(shiny)
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
 
-  df <- read.csv('2019-09-22-flow-map-type-loc-des-country.csv')
-
   # Expression that generates a histogram. The expression is
   # wrapped in a call to renderPlot to indicate that:
   #
@@ -13,7 +11,7 @@ shinyServer(function(input, output) {
   #  2) Its output type is a plot
 
   output$distPlot <- renderPlot({
-    x    <- df[, 3]  # Old Faithful Geyser data
+    x    <- faithful[, 3]  # Old Faithful Geyser data
     bins <- seq(min(x), max(x), length.out = input$bins + 1)
 
     # draw the histogram with the specified number of bins
