@@ -5,7 +5,6 @@ library(shiny)
 library(data.table)
 library(networkD3)
 
-
 # UI component of shiny app
 shinyUI(fluidPage(
   verticalLayout(
