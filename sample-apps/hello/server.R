@@ -13,7 +13,7 @@ shinyServer(function(input, output) {
   #  2) Its output type is a plot
 
   output$distPlot <- renderPlot({
-    x    <- faithful[, 3]  # Old Faithful Geyser data
+    x    <- df[, 3]  # Old Faithful Geyser data
     bins <- seq(min(x), max(x), length.out = input$bins + 1)
 
     # draw the histogram with the specified number of bins
