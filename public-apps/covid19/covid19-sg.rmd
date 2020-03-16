@@ -90,5 +90,21 @@ df = df[order(as.numeric(df$case)),]
 
 ## EDA
 ```{r}
-ggplot(df, aes(x=days.to.recover.resources)) + geom_histogram()
+theme = theme_minimal()
+binwidth = 5
+min = as.numeric(min(df$days.to.recover.resources, na.rm=T))
+max = as.numeric(max(df$days.to.recover.resources, na.rm=T))
+data = as.numeric(df$days.to.recover.resources)
+data = data.frame(cat=cut(data, breaks=seq(min, max, by=binwidth), right = FALSE), val=data)
+hist_max = max(table(data$cat))
+
+ggplot(df, aes(x=days.to.recover.resources)) + geom_histogram(binwidth=binwidth, na.rm=T) + 
+  xlab("Days to recover") + ylab("Number of people") +
+  scale_y_continuous(breaks=seq(0, hist_max, ifelse(hist_max <30, 1, 5))) +
+  theme
+
+print(table(data$cat))
+print(median(df$days.to.recover.resources, na.rm=T))
+print(mean(df$days.to.recover.resources, na.rm=T))
+
 ```
