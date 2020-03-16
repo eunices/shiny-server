@@ -85,12 +85,8 @@ df = df[order(as.numeric(df$case)),]
 # write.csv(df, paste0(app_dir, Sys.Date(), "-data.csv"), 
 #           fileEncoding="UTF-8", na="NA", row.names=F)
 
+ggplot(df, aes(x=days.to.recover.resources)) + geom_histogram()
+
 ```
 
 ## EDA
-```r
-ggplot(df, aes(x=days.to.recover.resources)) + geom_histogram()
-```
-
-
-
