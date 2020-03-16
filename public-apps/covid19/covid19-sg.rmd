@@ -70,6 +70,7 @@ df$days.to.recover.symptomatic = df$recovered.at.date - df$symptomatic.at.date
 df$days.to.recover.resources = df$recovered.at.date - df$confirmed.at.date
 df$days.symptomatic.to.confirm = df$confirmed.at.date - df$symptomatic.at.date
 
+# Remove columns not required
 df$symptomatic.toconfirmation = NULL
 df$days.torecover = NULL
 df$confirmed.at = NULL
@@ -77,7 +78,6 @@ df$recovered.at = NULL
 df$symptomatic.at = NULL
 df$status = NULL
 
-# Remove columns not required
 df = df[order(as.numeric(df$case)),]
 
 # Writing data just in case it's gone
@@ -89,13 +89,16 @@ df = df[order(as.numeric(df$case)),]
 ```
 
 ## EDA
+
+### Histogram of N days till recovery
 ```{r}
 theme = theme_minimal()
 binwidth = 5
 min = as.numeric(min(df$days.to.recover.resources, na.rm=T))
 max = as.numeric(max(df$days.to.recover.resources, na.rm=T))
 data = as.numeric(df$days.to.recover.resources)
-data = data.frame(cat=cut(data, breaks=seq(min, max, by=binwidth), right = FALSE), val=data)
+data = data.frame(cat=cut(data, breaks=seq(min, max, by=binwidth), right = FALSE),
+                  val=data)
 hist_max = max(table(data$cat))
 
 ggplot(df, aes(x=days.to.recover.resources)) + geom_histogram(binwidth=binwidth, na.rm=T) + 
@@ -106,5 +109,34 @@ ggplot(df, aes(x=days.to.recover.resources)) + geom_histogram(binwidth=binwidth,
 print(table(data$cat))
 print(median(df$days.to.recover.resources, na.rm=T))
 print(mean(df$days.to.recover.resources, na.rm=T))
+
+```
+
+### Correlation between age and days to recover
+```{r}
+
+ggplot(df, aes(x=age, y=days.to.recover.resources)) + geom_point() + 
+  xlab("Age") + ylab("Days to recover") +
+  theme
+
+df_corr = df[!is.na(df$days.to.recover.resources),]
+print("Rsq:")
+print(cor(as.numeric(df_corr$age), as.numeric(df_corr$days.to.recover.resources))^2)
+
+```
+
+### Boxplot between age brackets and days to recover
+```{r}
+theme = theme_minimal()
+agewidth = 10
+min = as.numeric(min(df$age, na.rm=T))
+max = as.numeric(max(df$age, na.rm=T))
+data = data.frame(cat=cut(as.numeric(df$age), breaks=seq(0, max, by=agewidth), right = FALSE),
+                  age=df$age, 
+                  days=df$days.to.recover.resources)
+
+ggplot(data, aes(x=cat, y=days)) + geom_boxplot() +
+  geom_jitter(height = 0, width = 0.1) +
+  xlab("Age category") + ylab("Days to recover") + theme
 
 ```
