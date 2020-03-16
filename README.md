@@ -2,6 +2,9 @@
 
 ## Deploying apps
 1. Connect using gcloud. Copy and paste from VM's console.
+```bash
+gcloud beta compute ssh --zone "asia-southeast1-b" "instance-2" --project "astute-rig-271004"
+```
 2. `sudo git pull` in `/srv/shiny-server/` folder
 
 ## Set up shiny server with GCP

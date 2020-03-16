@@ -93,6 +93,7 @@ df = df[order(as.numeric(df$case)),]
 ```r
 library(ggplot2)
 
+print(head(df, 10))
 
 ```
 
