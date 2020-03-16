@@ -10,6 +10,7 @@ output:
 
 ```{r}
 library(rvest)
+library(ggplot2)
 
 url = "https://co.vid19.sg/cases/search"
 html = read_html(url) 
@@ -28,9 +29,6 @@ Data is obtained from `r url`.
 ## Cleaning data
 
 ```r
-names(df)
-head(df)
-
 # split patient field
 # df$patient.age = sub("(.*)(year-old|year old).*", "\\1", df$patient)
 # df[grepl("month", df$patient),]$patient.age = 
@@ -91,10 +89,7 @@ df = df[order(as.numeric(df$case)),]
 
 ## EDA
 ```r
-library(ggplot2)
-
-print(head(df, 10))
-
+ggplot(df, aes(x=days.to.recover.resources)) + geom_histogram()
 ```
 
 

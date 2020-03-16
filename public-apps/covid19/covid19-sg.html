@@ -375,12 +375,14 @@ summary {
 <ul>
 <li><a href="#getting-data">Getting data</a></li>
 <li><a href="#cleaning-data">Cleaning data</a></li>
+<li><a href="#eda">EDA</a></li>
 </ul>
 </div>
 
 <div id="getting-data" class="section level2">
 <h2>Getting data</h2>
 <pre class="r"><code>library(rvest)
+library(ggplot2)
 
 url = &quot;https://co.vid19.sg/cases/search&quot;
 html = read_html(url) 
@@ -402,11 +404,7 @@ print(names(df))</code></pre>
 </div>
 <div id="cleaning-data" class="section level2">
 <h2>Cleaning data</h2>
-<pre class="r"><code>
-names(df)
-head(df)
-
-# split patient field
+<pre class="r"><code># split patient field
 # df$patient.age = sub(&quot;(.*)(year-old|year old).*&quot;, &quot;\\1&quot;, df$patient)
 # df[grepl(&quot;month&quot;, df$patient),]$patient.age = 
 #   as.numeric(sub(&quot;(.*)(month-old|month old).*&quot;, &quot;\\1&quot;, df[grepl(&quot;month&quot;, df$patient),]$patient))/12
@@ -462,6 +460,10 @@ df = df[order(as.numeric(df$case)),]
 # write.csv(df, paste0(app_dir, Sys.Date(), &quot;-data.csv&quot;), 
 #           fileEncoding=&quot;UTF-8&quot;, na=&quot;NA&quot;, row.names=F)
 </code></pre>
+</div>
+<div id="eda" class="section level2">
+<h2>EDA</h2>
+<pre class="r"><code>ggplot(df, aes(x=days.to.recover.resources)) + geom_histogram()</code></pre>
 </div>
 
 
