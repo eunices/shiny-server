@@ -28,7 +28,7 @@ Data is obtained from `r url`.
 
 ## Cleaning data
 
-```r
+```{r}
 # split patient field
 # df$patient.age = sub("(.*)(year-old|year old).*", "\\1", df$patient)
 # df[grepl("month", df$patient),]$patient.age = 
@@ -85,8 +85,10 @@ df = df[order(as.numeric(df$case)),]
 # write.csv(df, paste0(app_dir, Sys.Date(), "-data.csv"), 
 #           fileEncoding="UTF-8", na="NA", row.names=F)
 
-ggplot(df, aes(x=days.to.recover.resources)) + geom_histogram()
 
 ```
 
 ## EDA
+```{r}
+ggplot(df, aes(x=days.to.recover.resources)) + geom_histogram()
+```
