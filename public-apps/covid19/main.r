@@ -66,7 +66,6 @@ clean_data = function(df, write=F) {
     df$confirmed.at = NULL
     df$recovered.at = NULL
     df$symptomatic.at = NULL
-    df$status = NULL
 
     print(paste0(Sys.time(), ": Finishing up."))
     df = df[order(as.numeric(df$case)),]

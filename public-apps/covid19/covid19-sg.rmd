@@ -111,6 +111,8 @@ renderPlot({
 ```{r}
 
 # N cases still requiring treatment
+
+# TODO: filter out fatalities
 df_cases = df[, c("case", "symptomatic.at.date", "recovered.at.date", "confirmed.at.date")]
 df_cases[is.na(df_cases$recovered.at.date),]$recovered.at.date = Sys.Date()
 df_cases[is.na(df_cases$symptomatic.at.date),]$symptomatic.at.date = 
