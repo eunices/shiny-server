@@ -4,9 +4,13 @@ get_data = function(url) {
     df = html %>% 
         html_nodes("#casesTable") %>%
         html_table()
-    df = df[[1]]
-    names(df) = gsub("\\?", "", gsub("\\ ", ".", tolower(names(df))))
-    df
+    if (exists("df")) {
+        df = df[[1]]
+        names(df) = gsub("\\?", "", gsub("\\ ", ".", tolower(names(df))))
+        df
+    } else {
+        stop(paste0(Sys.time(), ": Did not download data successfully from URL."))
+    }
 }
 
 clean_data = function(df, write=F) {
@@ -78,3 +82,5 @@ clean_data = function(df, write=F) {
     df
     
 }
+
+
