@@ -11,17 +11,10 @@ output:
 ```{r}
 library(rvest)
 library(ggplot2)
+source('main.r')
 
 url = "https://co.vid19.sg/cases/search"
-html = read_html(url) 
-df = html %>% 
-  html_nodes("#casesTable") %>%
-  html_table()
-df = df[[1]]
-names(df) = gsub("\\?", "", gsub("\\ ", ".", tolower(names(df))))
-
-print(names(df))
-
+df = get_data(url)
 ```
 
 Data is obtained from `r url`. 
@@ -29,63 +22,7 @@ Data is obtained from `r url`.
 ## Cleaning data
 
 ```{r}
-# split patient field
-# df$patient.age = sub("(.*)(year-old|year old).*", "\\1", df$patient)
-# df[grepl("month", df$patient),]$patient.age = 
-#   as.numeric(sub("(.*)(month-old|month old).*", "\\1", df[grepl("month", df$patient),]$patient))/12
-# df$patient.age = as.numeric(sub("-|\\ ", "", df$patient.age))
-# df$patient.gender = "U"
-# df[grepl("male|man|bangladesh", tolower(df$patient)),]$patient.gender = "M"
-# df[grepl("female", df$patient),]$patient.gender = "F"
-
-df$patient.info = sub(".*male (.*)", "\\1", df$patient)
-df$patient.citizen = "visitor"
-text = "singapore pr|(singapore|singaporea) (citizen|resident)|singapore permanent|singaporean|permanent resident"
-df[grepl(text, tolower(df$patient.info)),]$patient.citizen = "citizen"
-df[grepl("work pass", tolower(df$patient.info)),]$patient.citizen = "wp"
-
-df$patient.nationality = ""
-df[df$patient.citizen != "citizen",]$patient.nationality = 
-  sub("(national).*", "", tolower(df[df$patient.citizen != "citizen",]$patient.info))
-df$patient.nationality = 
-  trimws(sub("year-old", "", sub("([0-9]+|year|old|citizen)", "", df$patient.nationality)))
-df[grepl("wuhan", df$patient.nationality), ]$patient.nationality = "chinese"
-df[df$patient.nationality != "",]$patient.nationality
-
-df$gender = tolower(df$gender)
-df$case.type = tolower(df$case.type)
-
-df$patient.info = NULL
-df$nationality = NULL
-df$patient = NULL
-
-# patient.citizen = Singaporean, Work Pass, Visitor
-# patient.nationality only filled in if not Singaporean
-
-df$confirmed.at.date = as.Date(gsub("st|th|rd|nd", "", df$confirmed.at), "%d, %b %Y")
-df$symptomatic.at.date = as.Date(gsub("st|th|rd|nd", "", df$symptomatic.at), "%d, %b %Y")
-df$recovered.at.date = as.Date(gsub("st|th|rd|nd", "", df$recovered.at), "%d, %b %Y")
-
-df$days.to.recover.symptomatic = df$recovered.at.date - df$symptomatic.at.date
-df$days.to.recover.resources = df$recovered.at.date - df$confirmed.at.date
-df$days.symptomatic.to.confirm = df$confirmed.at.date - df$symptomatic.at.date
-
-# Remove columns not required
-df$symptomatic.toconfirmation = NULL
-df$days.torecover = NULL
-df$confirmed.at = NULL
-df$recovered.at = NULL
-df$symptomatic.at = NULL
-df$status = NULL
-
-df = df[order(as.numeric(df$case)),]
-
-# Writing data just in case it's gone
-# app_dir = "public-apps/covid19/"
-# write.csv(df, paste0(app_dir, Sys.Date(), "-data.csv"), 
-#           fileEncoding="UTF-8", na="NA", row.names=F)
-
-
+df = clean_data(df)
 ```
 
 ## EDA
@@ -106,7 +43,13 @@ ggplot(df, aes(x=days.to.recover.resources)) + geom_histogram(binwidth=binwidth,
   scale_y_continuous(breaks=seq(0, hist_max, ifelse(hist_max <30, 1, 5))) +
   theme
 
+# Number of recovered
+print(table(!is.na(df$days.to.recover.resources)))
+
+# Distribution of days it takes to recover
 print(table(data$cat))
+
+# Median and mean number of days it takes to recover
 print(median(df$days.to.recover.resources, na.rm=T))
 print(mean(df$days.to.recover.resources, na.rm=T))
 
