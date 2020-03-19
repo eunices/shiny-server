@@ -18,22 +18,25 @@ actionButton("add", "Add")
 ```
 
 ```{r echo=F}
-values = reactiveValues(counter_value = 0, sampled_value = runif(min=0, max=1)) 
+values = reactiveValues()
+values$counter = 0
+values$sampled = runif(1, min=0, max=1)
+
 observeEvent(input$add, { 
-    values$counter_value = values$counter_value + 1
-    values$sampled_value = runif(min=0, max=1)    
+    values$counter = values$counter + 1
+    values$sampled = runif(1, min=0, max=1)
 })
 ```
 
 ```{r echo=F}
 renderText({ 
-    paste("Counter: ", values$counter_value)
-    paste("Value: ", values$sampled_value)
+    paste("Counter: ", values$counter)
+    paste("Value: ", values$sampled)
 })
 
 renderPlot({
 
-    # df = data.frame(N=values$counter_value)
+    # df = data.frame(N=values$counter)
     
 })
 ```
