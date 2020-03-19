@@ -96,7 +96,7 @@ fluidPage(
                     paste("Counter: ", values$counter, " points added")
                 }),
                 renderText({ 
-                    paste("Currently: ", values$step_size, " points added")
+                    paste("Currently: ", values$step_size, " points added at each step")
                 }),
                 renderText({
                     if(dim(values$data)[1] >= 1) {
