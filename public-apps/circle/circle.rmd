@@ -19,12 +19,12 @@ actionButton("add", "Add")
 
 ```{r}
 counter = reactiveValues(counter_value = 0) 
-observeEvent(input$add, { counter$countervalue = counter$countervalue + 1})
+observeEvent(input$add, { counter$counter_value = counter$counter_value + 1})
 ```
 
 ```{r}
 renderPlot({
-    data = data.frame(counter=counter$countervalue)
+    data = data.frame(counter=counter$counter_value)
     ggplot(data) + geom_bar()
     # barplot(counter)
 })
