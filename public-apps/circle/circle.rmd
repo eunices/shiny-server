@@ -25,7 +25,7 @@ observeEvent(input$add, { counter$counter_value = counter$counter_value + 1})
 ```{r}
 renderPlot({
     data = data.frame(counter=counter$counter_value)
-    ggplot(data) + geom_bar()
+    ggplot(data, aes(x=counter)) + geom_bar()
     # barplot(counter)
 })
 ```
