@@ -53,6 +53,8 @@ clean_data = function(df, write=F) {
     df$days.to.recover.resources = df$recovered.at.date - df$confirmed.at.date
     df$days.symptomatic.to.confirm = df$confirmed.at.date - df$symptomatic.at.date
 
+    df$age = as.numeric(df$age)
+
     # Remove columns not required
     df$symptomatic.toconfirmation = NULL
     df$days.torecover = NULL
@@ -83,4 +85,5 @@ get_alternative_data = function() {
     df$confirmed.at.date = as.Date(df$confirmed.at.date, "%Y-%m-%d")
     df$recovered.at.date = as.Date(df$recovered.at.date, "%Y-%m-%d")
     df$symptomatic.at.date = as.Date(df$symptomatic.at.date, "%Y-%m-%d")
+    df$age = as.numeric(df$age)
 }
