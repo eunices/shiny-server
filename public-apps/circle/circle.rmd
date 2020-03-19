@@ -1,0 +1,26 @@
+---
+runtime: shiny
+title: "Monte carlo simulation of circle to find value of pi"
+output: 
+  html_document:
+    toc: true
+    theme: flatly
+---
+
+```{r}
+knitr::opts_chunk$set(echo=TRUE, message=TRUE, warning=TRUE)
+```
+
+
+```{r echo=TRUE}
+actionButton("counter", "Add dot")
+
+randomVals <- eventReactive(input$go, {
+    runif(100)
+})
+
+
+renderPlot({
+    hist(randomVals())
+})
+```
