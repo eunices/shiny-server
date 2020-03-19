@@ -15,13 +15,12 @@ knitr::opts_chunk$set(echo=TRUE, message=TRUE, warning=TRUE)
 ```{r}
 actionButton("counter", "Add")
 
-randomVals <- eventReactive(input$counter, {
-    runif(100)
-})
+counter = 0
+counter = eventReactive(input$counter, {counter + 1})
 ```
 
 ```{r}
 renderPlot({
-    hist(randomVals())
+    barplot(counter)
 })
 ```
