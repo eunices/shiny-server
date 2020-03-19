@@ -22,7 +22,9 @@ counter = eventReactive(input$counter, {counter + 1})
 ```
 
 ```{r}
+
 renderPlot({
+    ggplot(data.frame(counter=counter)) + geom_bar()
     # barplot(counter)
 })
 ```
