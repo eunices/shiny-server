@@ -14,6 +14,9 @@ library(DT)
 ```{r}
 min=0
 max=1
+
+angle = seq(-pi, pi, length = 50)
+circle = data.frame(x = sin(angle), y = cos(angle))
 ```
 
 Sidebar {.sidebar}
@@ -30,11 +33,10 @@ values$data = data.frame(x=numeric(), y=numeric(), inside=integer())
 
 observeEvent(input$add, { 
     values$counter = values$counter + 1
-    x = runif(1, min=min, max=max)
-    y = runif(1, min=min, max=max)
+    x = runif(10, min=min, max=max)
+    y = runif(10, min=min, max=max)
     inside = ifelse(x^2 + y^2 < max^2, 1, 0) 
-    values$data = rbind(values$data, 
-                        data.frame(x=x, y=y, inside=inside))
+    values$data = rbind(values$data, data.frame(x=x, y=y, inside=inside))
 })
 
 output$data = renderDataTable({values$data})
@@ -56,7 +58,10 @@ renderPlot({
         geom_point() +
         theme_minimal() +
         scale_x_continuous(limits=c(min,max)) +
-        scale_y_continuous(limits=c(min,max))
+        scale_y_continuous(limits=c(min,max)) +
+        geom_polygon(aes(x, y), data = circle, inherit.aes = F) + 
+        guides(fill=FALSE)
+        
     
 }, width = "auto", height = "auto")
 ```
