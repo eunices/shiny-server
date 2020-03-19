@@ -52,7 +52,7 @@ renderText({
 
 ```{r}
 renderText({ 
-    paste("$\pi$: ", sum(values$data$inside==1)/length(values$data$inside))
+    paste("$\pi$: ", 4*sum(values$data$inside==1)/length(values$data$inside))
 })
 ```
 
