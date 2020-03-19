@@ -33,15 +33,16 @@ observeEvent(input$add, {
 output$data = renderDataTable({values$data})
 ```
 
-
-
-Page 1
-=====================================  
 ```{r}
 renderText({ 
     paste("Counter: ", values$counter)
 })
 ```
+
+
+Page 1
+=====================================  
+
 ```{r}
 renderPlot({
     ggplot(values$data, aes(x=x, y=y)) + geom_point()
