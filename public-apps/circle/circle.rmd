@@ -91,7 +91,8 @@ fluidPage(
                 renderText({
                     if(dim(values$data)[1] >= 1) {
                         pi_sim = 4*sum(values$data$inside==1)/length(values$data$inside)
-                        paste("Simulated pi = ", formatC(round(pi_sim, 7), digits=7))
+                        paste("Simulated pi = ", formatC(round(pi_sim, 7), format='f', 
+                                                         flag='0', digits=7))
                     } else {
                         paste("Simulation not started.")
                     }
