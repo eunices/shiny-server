@@ -27,12 +27,6 @@ Sidebar {.sidebar}
 
 The aim of this exercise is to simulate the value of $\pi$ (`r pi`).
 
-```{r}
-actionButton("add", "Add", style="background-color: #337ab7")
-actionButton("reset", "Reset")
-numericInput("step", "Step size (power of 10)", 1, min = 1, max = 3)
-```
-
 First, we draw a circle and a square.<br>
 
 Second, we start the simulation.
@@ -42,8 +36,15 @@ Second, we start the simulation.
 $x^2 + y^2 < R^2$, where $R$ is the radius of the circle. 
 3. Tally number of points in circle/ number of points in square. Values should converge on $\frac{\pi}{4}$.
 
+```{r}
+actionButton("add", "Step", style="background-color: #337ab7")
+actionButton("reset", "Reset")
+numericInput("step", "Step size (power of 10)", 1, min = 1, max = 3)
+```
+
 See page 2 tab for data generated.
 See page 3 tab for why this works.
+
 
 ```{r}
 values = reactiveValues()
