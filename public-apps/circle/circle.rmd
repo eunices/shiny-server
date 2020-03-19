@@ -52,7 +52,9 @@ renderText({
 
 ```{r}
 renderText({ 
-    paste("Simulate pi: ", 4*sum(values$data$inside==1)/length(values$data$inside))
+    if(dim(values$data)[1] >= 1) {
+        paste("Simulate pi: ", 4*sum(values$data$inside==1)/length(values$data$inside))
+    }
 })
 ```
 
