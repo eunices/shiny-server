@@ -32,13 +32,18 @@ observeEvent(input$add, {
 
 output$data = renderDataTable({values$data})
 ```
+
+```{r}
+dataTableOutput("data")
+```
+
 Page 1
 =====================================  
 ```{r}
 renderText({ 
     paste("Counter: ", values$counter)
 })
-dataTableOutput("data")
+
 renderPlot({
   
     # df = data.frame(N=values$counter)
