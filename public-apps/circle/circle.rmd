@@ -24,6 +24,6 @@ observeEvent(input$add, { counter$counter_value = counter$counter_value + 1})
 
 ```{r}
 renderPlot({
-    barplot(counter)
+    barplot(data.frame(counter))
 })
 ```
