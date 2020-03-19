@@ -30,7 +30,6 @@ actionButton("add", "Add")
 values = reactiveValues()
 values$counter = 0
 values$data = data.frame(x=numeric(), y=numeric(), inside=integer())
-
 observeEvent(input$add, { 
     values$counter = values$counter + 1
     x = runif(10, min=min, max=max)
@@ -59,11 +58,11 @@ renderPlot({
         theme_minimal() +
         scale_x_continuous(limits=c(min,max)) +
         scale_y_continuous(limits=c(min,max)) +
-        geom_polygon(aes(x, y), data = circle, inherit.aes = F) + 
+        geom_polygon(aes(x+0.5, y+0.5), data = circle, inherit.aes = F) + 
         guides(fill=FALSE)
         
     
-}, width = "auto", height = "auto")
+}, width = 400, height = 400)
 ```
 
 Page 2
