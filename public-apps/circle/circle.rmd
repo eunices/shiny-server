@@ -30,9 +30,11 @@ values$data = data.frame(x=numeric(), y=numeric())
 
 observeEvent(input$add, { 
     values$counter = values$counter + 1
+    x = runif(1, min=min, max=max)
+    y = runif(1, min=min, max=max)
+    inside = ifelse(x^2 + y^2 < max^2, 1, 0) 
     values$data = rbind(values$data, 
-                        data.frame(x=runif(1, min=min, max=max),
-                                   y=runif(1, min=min, max=max)))
+                        data.frame(x=x, y=y, inside=inside))
 })
 
 output$data = renderDataTable({values$data})
@@ -56,7 +58,7 @@ renderPlot({
         scale_x_continuous(limits=c(min,max)) +
         scale_y_continuous(limits=c(min,max))
     
-})
+}, width = "auto", height = "auto",)
 ```
 
 Page 2
