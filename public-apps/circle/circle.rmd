@@ -12,11 +12,12 @@ library(DT)
 ```
 
 ```{r}
-min=0
-max=1
+rad=1
+min=-1
+max=min+2*rad
 
 angle = seq(-pi, pi, length = 50)
-circle = data.frame(x = sin(angle), y = cos(angle))
+circle = data.frame(x = sin(angle)/1, y = cos(angle))
 ```
 
 Sidebar {.sidebar}
