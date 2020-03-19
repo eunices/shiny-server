@@ -76,3 +76,11 @@ clean_data = function(df, write=F) {
 }
 
 
+get_alternative_data = function() {
+    filenames = list.files()[grepl("-data.csv", list.files())]
+    df = read.csv(filenames[length(filenames)], encoding="UTF-8", na.strings="NA", 
+                stringsAsFactors=FALSE)
+    df$confirmed.at.date = as.Date(df$confirmed.at.date, "%Y-%m-%d")
+    df$recovered.at.date = as.Date(df$recovered.at.date, "%Y-%m-%d")
+    df$symptomatic.at.date = as.Date(df$symptomatic.at.date, "%Y-%m-%d")
+}
