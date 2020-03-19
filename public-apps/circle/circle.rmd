@@ -102,7 +102,11 @@ fluidPage(
                     }
                 }),
                 renderText({
-                    paste("Previous 5 values: ", paste(values$pi_sim_li, collapse=", "))
+                    if(!length(values$pi_sim_li) <=0) {
+                        paste("Previous values: ", paste(values$pi_sim_li, collapse=", "))
+                    } else {
+                        paste0("No previous values.")
+                    }
                 }),
                 renderText({ 
                     paste("Counter: ", values$counter, " points added")
