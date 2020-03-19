@@ -52,7 +52,7 @@ Page 1
 
 ```{r}
 renderPlot({
-    ggplot(values$data, aes(x=x, y=y, color=inside)) + 
+    ggplot(values$data, aes(x=x, y=y)) + 
         geom_point() +
         theme_minimal() +
         scale_x_continuous(limits=c(min,max)) +
