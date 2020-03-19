@@ -98,6 +98,7 @@ fluidPage(
                     geom_line() +
                     geom_hline(yintercept=pi, size=2, color="red") +
                     theme_minimal() +
+                    scale_y_continuous(limits=c(0, 5)) +
                     guides(color=FALSE) +
                     xlab("Number of points") + ylab("Simulated pi value")
             }, height=300, width=300)),
