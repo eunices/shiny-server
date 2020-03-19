@@ -52,9 +52,11 @@ renderText({
 
 ```{r}
 renderText({ 
-    paste("pi: ", 4*sum(values$data$inside==1)/length(values$data$inside))
+    paste("Simulate pi: ", 4*sum(values$data$inside==1)/length(values$data$inside))
 })
 ```
+
+Real $\pi$ = `r pi`
 
 
 Page 1
