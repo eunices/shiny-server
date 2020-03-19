@@ -43,7 +43,7 @@ $x^2 + y^2 < R^2$, where $R$ is the radius of the circle.
 3. Tally number of points in circle/ number of points in square. Values should converge on $\frac{\pi}{4}$.
 
 See page 2 tab for data generated.
-See page 3 tab for more information.
+See page 3 tab for why this works.
 
 ```{r}
 values = reactiveValues()
