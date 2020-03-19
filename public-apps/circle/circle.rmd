@@ -57,9 +57,9 @@ values$data = data.frame(x=numeric(), y=numeric(), inside=integer())
 values$step_size = per_step
 observeEvent(input$add, { 
     values$step_size = ifelse(values$counter <= 1000, per_step, per_step *10)
-    values$counter = values$counter + step_value
-    x = runif(step_value, min=min, max=max)
-    y = runif(step_value, min=min, max=max)
+    values$counter = values$counter + values$step_size
+    x = runif(values$step_size, min=min, max=max)
+    y = runif(values$step_size, min=min, max=max)
     inside = ifelse(x^2 + y^2 < max^2, 1, 0) 
     values$data = rbind(values$data, data.frame(x=x, y=y, inside=inside))
 })
