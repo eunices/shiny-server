@@ -101,9 +101,9 @@ renderPlot({
     type_label = c("imported case", "local transmission")
     names(type_label) = c("Imported", "Local")
 
-    ggplot(data=data, aes(x=confirmed.at.date, fill=case.type)) +
+    ggplot(data=data, aes(x=confirmed.at.date, fill=infection.source)) +
       geom_histogram(stat="bin", binwidth=input$binwidth_date) + 
-      facet_wrap(~ case.type, ncol=1, labeller = camelcase_labeller) + 
+      facet_wrap(~ infection.source, ncol=1, labeller = camelcase_labeller) + 
       scale_fill_discrete(name="Case type", breaks=type_label, labels=names(type_label)) + 
       xlab("") + ylab("Number of confirmed cases detected\n") +
       scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
