@@ -15,18 +15,17 @@ library(ggplot2)
 
 ```{r}
 actionButton("add", "Add")
-counter = reactiveValues(counter_value = 0) 
 ```
 
 ```{r}
- observeEvent(input$add, {
-      counter$countervalue = counter$countervalue + 1
-})
+counter = reactiveValues(counter_value = 0) 
+observeEvent(input$add, { counter$countervalue = counter$countervalue + 1})
 ```
 
 ```{r}
 renderPlot({
-    ggplot(data.frame(counter=counter$countervalue)) + geom_bar()
+    data = data.frame(counter=counter$countervalue)
+    ggplot() + geom_bar()
     # barplot(counter)
 })
 ```
