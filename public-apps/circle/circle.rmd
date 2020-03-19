@@ -23,7 +23,7 @@ observeEvent(input$add, { counter$counter_value = counter$counter_value + 1})
 ```
 
 ```{r}
-renderPlot({
-    barplot(data.frame(counter))
+renderText({ 
+    paste("Counter: ", counter$counter_value)
 })
 ```
