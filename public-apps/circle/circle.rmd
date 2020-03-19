@@ -100,7 +100,7 @@ fluidPage(
             renderText({ 
                 paste("Counter: ", values$counter*per_step)
             }))
-)
+))
 ```
 
 Page 2
