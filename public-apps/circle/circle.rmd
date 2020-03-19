@@ -55,9 +55,10 @@ values = reactiveValues()
 values$counter = 0
 values$data = data.frame(x=numeric(), y=numeric(), inside=integer())
 observeEvent(input$add, { 
-    values$counter = values$counter + 1
-    x = runif(per_step, min=min, max=max)
-    y = runif(per_step, min=min, max=max)
+    step_value = ifelse(values$counter <= 1000, per_step, per_step *10)
+    values$counter = values$counter + step_value
+    x = runif(step_value, min=min, max=max)
+    y = runif(step_value, min=min, max=max)
     inside = ifelse(x^2 + y^2 < max^2, 1, 0) 
     values$data = rbind(values$data, data.frame(x=x, y=y, inside=inside))
 })
@@ -91,7 +92,7 @@ fluidPage(
         column(6,
             fluidPage(
                 renderText({ 
-                    paste("Counter: ", values$counter*per_step)
+                    paste("Counter: ", values$counter)
                 }),
                 renderText({
                     if(dim(values$data)[1] >= 1) {
