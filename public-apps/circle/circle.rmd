@@ -54,8 +54,9 @@ Thus, $\pi = 4 * \frac{number of points in circle}{number of points in square}$
 values = reactiveValues()
 values$counter = 0
 values$data = data.frame(x=numeric(), y=numeric(), inside=integer())
+values$step_size = per_step
 observeEvent(input$add, { 
-    step_value = ifelse(values$counter <= 1000, per_step, per_step *10)
+    values$step_size = ifelse(values$counter <= 1000, per_step, per_step *10)
     values$counter = values$counter + step_value
     x = runif(step_value, min=min, max=max)
     y = runif(step_value, min=min, max=max)
@@ -92,7 +93,10 @@ fluidPage(
         column(6,
             fluidPage(
                 renderText({ 
-                    paste("Counter: ", values$counter)
+                    paste("Counter: ", values$counter, " points added")
+                }),
+                renderText({ 
+                    paste("Currently: ", values$step_size, " points added")
                 }),
                 renderText({
                     if(dim(values$data)[1] >= 1) {
