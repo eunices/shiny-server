@@ -13,22 +13,27 @@ library(ggplot2)
 ```
 
 
-```{r}
+```{r echo=F}
 actionButton("add", "Add")
 ```
 
-```{r}
-counter = reactiveValues(counter_value = 0) 
-observeEvent(input$add, { counter$counter_value = counter$counter_value + 1})
+```{r echo=F}
+values = reactiveValues(counter_value = 0, sampled_value = runif(min=0, max=1)) 
+observeEvent(input$add, { 
+    values$counter_value = values$counter_value + 1
+    values$sampled_value = runif(min=0, max=1)    
+})
 ```
 
-```{r}
+```{r echo=F}
 renderText({ 
-    paste("Counter: ", counter$counter_value)
+    paste("Counter: ", values$counter_value)
+    paste("Value: ", values$sampled_value)
 })
 
-renderPlot({ 
-    df = data.frame(N=counter$counter_value)
-    ggplot(df, aes(x=N)) + geom_bar()
+renderPlot({
+
+    # df = data.frame(N=values$counter_value)
+    
 })
 ```
