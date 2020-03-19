@@ -59,7 +59,7 @@ renderPlot({
         scale_x_continuous(limits=c(min,max)) +
         scale_y_continuous(limits=c(min,max)) +
         geom_polygon(aes(x+0.5, y+0.5), data = circle, inherit.aes = F) + 
-        guides(fill=FALSE)
+        guides(color=FALSE)
         
     
 }, width = 400, height = 400)
