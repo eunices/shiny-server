@@ -26,7 +26,7 @@ actionButton("add", "Add")
 ```{r}
 values = reactiveValues()
 values$counter = 0
-values$data = data.frame(x=numeric(), y=numeric())
+values$data = data.frame(x=numeric(), y=numeric(), inside=integer())
 
 observeEvent(input$add, { 
     values$counter = values$counter + 1
