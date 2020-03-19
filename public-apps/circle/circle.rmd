@@ -9,6 +9,7 @@ output:
 
 ```{r}
 knitr::opts_chunk$set(echo=TRUE, message=TRUE, warning=TRUE)
+library(ggplot2)
 ```
 
 
