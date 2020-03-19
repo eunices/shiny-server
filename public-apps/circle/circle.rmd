@@ -34,7 +34,7 @@ output$data = renderDataTable({values$data})
 ```
 
 ```{r}
-dataTableOutput("data")
+fluidRow(column(dataTableOutput("data"), width=1))
 ```
 
 Page 1
