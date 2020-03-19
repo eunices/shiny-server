@@ -95,8 +95,7 @@ fluidPage(
                         pi_sim = 4*sum(values$data$inside==1)/length(values$data$inside)
                         paste("Simulated pi = ", round(pi_sim, 7))
                     }
-                }),
-                "Actual pi = `r pi`"
+                })
                 )
 )))
 ```
