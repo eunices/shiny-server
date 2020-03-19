@@ -29,16 +29,15 @@ observeEvent(input$add, {
                         data.frame(x=runif(1, min=0, max=1),
                                    y=runif(1, min=0, max=1)))
 })
+
+output$data = renderDataTable({values$data})
 ```
 
 ```{r}
 renderText({ 
     paste("Counter: ", values$counter)
 })
-renderDataTable({
-    value$data
-})
-
+dataTableOutput("data")
 renderPlot({
   
     # df = data.frame(N=values$counter)
