@@ -83,7 +83,7 @@ fluidPage(
                     scale_x_continuous(limits=c(min,max)) +
                     scale_y_continuous(limits=c(min,max)) +
                     guides(color=FALSE) + 
-                    theme(rect = element_rect(fill = "transparent"))
+                    theme(panel.background = element_rect(fill = "transparent"))
             }, height=300, width=300)),
         column(6,
             fluidPage(
