@@ -73,7 +73,7 @@ Page 1
 
 fluidPage(
     fluidRow(
-        column(10, 
+        column(9, 
             renderPlot({
                 ggplot(values$data, aes(x=x, y=y, color=factor(inside))) + 
                     geom_polygon(aes(x, y), data = circle, inherit.aes = F) + 
@@ -85,16 +85,20 @@ fluidPage(
                     
                 
             }, width = 500, height = 500)),
-        column(2,
-            renderText({ 
-                paste("Counter: ", values$counter*per_step)
-
-                if(dim(values$data)[1] >= 1) {
-                    pi_sim = 4*sum(values$data$inside==1)/length(values$data$inside)
-                    paste("Simulated pi = ", round(pi_sim, 7))
-                }
-            }))
-))
+        column(3,
+            fluidPage(
+                renderText({ 
+                    paste("Counter: ", values$counter*per_step)
+                    
+                }),
+                renderText({
+                    if(dim(values$data)[1] >= 1) {
+                        pi_sim = 4*sum(values$data$inside==1)/length(values$data$inside)
+                        paste("Simulated pi = ", round(pi_sim, 7))
+                    }
+                })
+                )
+)))
 ```
 
 Page 2
