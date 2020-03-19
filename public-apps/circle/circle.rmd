@@ -82,10 +82,11 @@ fluidPage(
                     theme_minimal() +
                     scale_x_continuous(limits=c(min,max)) +
                     scale_y_continuous(limits=c(min,max)) +
-                    guides(color=FALSE)
+                    guides(color=FALSE) + 
+                    coord_fixed()
                     
                 
-            }, width = 500, height = 500)),
+            })),
         column(6,
             fluidPage(
                 renderText({ 
