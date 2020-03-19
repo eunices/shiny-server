@@ -34,6 +34,9 @@ observeEvent(input$add, {
 renderText({ 
     paste("Counter: ", values$counter)
 })
+renderDataTable({
+    value$data
+})
 
 renderPlot({
   
