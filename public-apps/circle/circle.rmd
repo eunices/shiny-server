@@ -52,7 +52,7 @@ values$counter = 0
 values$data = data.frame(x=numeric(), y=numeric(), inside=integer())
 values$step_size = per_step
 values$pi_sim = NA
-values$pi_sim_li = c()
+values$pi_sim_df = data.frame(counter=integer(), value=numeric())
 
 observeEvent(input$add, { 
     values$step_size = per_step^input$step 
@@ -62,8 +62,9 @@ observeEvent(input$add, {
     inside = ifelse(x^2 + y^2 < max^2, 1, 0) 
     values$data = rbind(values$data, data.frame(x=x, y=y, inside=inside))
     values$pi_sim = 4*sum(values$data$inside==1)/length(values$data$inside)
-    values$pi_sim_li = c(values$pi_sim_li, round(values$pi_sim, 7))
-    if(length(values$pi_sim_li) > 6) values$pi_sim_li <- values$pi_sim_li[-1] # remove 1st
+    values$pi_sim_df = rbind(values$pi_sim_df, 
+                             data.frame(counter=values$counter, 
+                                        value=values$pi_sim))
 })
 observeEvent(input$reset, {
     values$counter = 0
@@ -90,6 +91,13 @@ fluidPage(
                     scale_y_continuous(limits=c(min,max)) +
                     guides(color=FALSE) +
                     xlab("") + ylab("")
+            }, height=300, width=300),
+            renderPlot({
+                ggplot(values$pi_sim_df, aes(x=counter, y=value)) + 
+                    geom_line() +
+                    theme_minimal() +
+                    guides(color=FALSE) +
+                    xlab("Number of points") + ylab("Simulated pi value")
             }, height=300, width=300)),
         column(6,
             fluidPage(
@@ -99,14 +107,6 @@ fluidPage(
                                                          flag='0', digits=7))
                     } else {
                         paste("Simulation not started.")
-                    }
-                }),
-                renderText({
-                    len = length(values$pi_sim_li)
-                    if(len>1) {
-                        paste("Previous values: ", paste(values$pi_sim_li[-len], collapse=", "))
-                    } else {
-                        paste0("No previous values.")
                     }
                 }),
                 renderText({ 
