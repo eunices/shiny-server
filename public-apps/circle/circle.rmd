@@ -84,7 +84,7 @@ fluidPage(
                     scale_y_continuous(limits=c(min,max)) +
                     guides(color=FALSE) + 
                     coord_fixed()                
-            }, height="100%")),
+            })),
         column(6,
             fluidPage(
                 renderText({ 
