@@ -14,8 +14,6 @@ knitr::opts_chunk$set(echo=TRUE, message=TRUE, warning=TRUE)
 
 ```{r}
 actionButton("counter", "Add")
-
-counter = 0
 ```
 
 ```{r}
