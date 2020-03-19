@@ -17,6 +17,7 @@ library(rvest)
 library(ggplot2)
 library(tidyr)
 library(data.table)
+library(gridExtra)
 source('main.r')
 source('util.r')
 
@@ -70,10 +71,11 @@ min_date = min(df$confirmed.at.date, na.rm=T)
 max_date = max(df$confirmed.at.date, na.rm=T)
 ```
 
-The first case detected on `r min_date`.
+The first case detected in Singapore on `r format(min_date, "%d %B %Y")`. 
 
 ```{r}
 
+date_second_wave = as.Date("2020-02-25")
 style = "display: inline-block;vertical-align:top; padding-right: 20px"
 bootstrapPage(
         div(style=style, dateRangeInput("range_date", "Date range", 
@@ -90,7 +92,8 @@ renderPlot({
     ggplot(data=data, aes(x=confirmed.at.date)) +
       geom_histogram(stat="bin", binwidth=input$binwidth_date, fill="steelblue") + 
       xlab("") + ylab("") + 
-      scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
+      geom_vline(xintercept=date_second_wave, size=2, col="red") +
+      scale_x_date(date_breaks = "weeks", date_labels = "%Y EW %U") +
       theme
 }, height=280)
 renderPlot({
@@ -104,12 +107,37 @@ renderPlot({
     ggplot(data=data, aes(x=confirmed.at.date, fill=infection.source)) +
       geom_histogram(stat="bin", binwidth=input$binwidth_date) + 
       facet_wrap(~ infection.source, ncol=1, labeller = camelcase_labeller) + 
+      geom_vline(xintercept=date_second_wave, size=2, col="red") +
       scale_fill_discrete(name="Case type", breaks=type_label, labels=names(type_label)) + 
       xlab("") + ylab("Number of confirmed cases detected\n") +
-      scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
+      scale_x_date(date_breaks = "weeks", date_labels = "%Y EW %U") +
       theme
 })
 ```
+From here, we can see that there are two waves of cases, the first from EW 03 to EW 07 and second from EW 08 onwards. These are associated with the Chinese cases mainly and when there was a global spread subsequently with Europe as the epicenter.
+
+```{r}
+
+data_1st_wave = data.table(df[df$confirmed.at.date < date_second_wave &
+                              df$infection.source == "imported case",])
+data_1st_wave = data_1st_wave[, list(N=length(case)),by="patient.nationality"]
+data_1st_wave[patient.nationality==""]$patient.nationality = "singaporean"
+
+data_2nd_wave = data.table(df[df$confirmed.at.date >= date_second_wave &
+                              df$infection.source == "imported case",])
+data_2nd_wave = data_2nd_wave[, list(N=length(case)),by="patient.nationality"]
+data_2nd_wave[patient.nationality==""]$patient.nationality = "singaporean"
+
+grid.arrange(
+  ggplot(data_1st_wave, aes(x=camelcase_labeller("", patient.nationality), y=N)) +
+  geom_bar(stat = "identity") + coord_flip() + theme_minimal() +
+  xlab("") + ylab("") + ggtitle("First wave"),
+  ggplot(data_2nd_wave, aes(x=camelcase_labeller("", patient.nationality), y=N)) +
+  geom_bar(stat = "identity") + coord_flip() + theme_minimal() +
+  xlab("") + ylab("Number of imported cases detected") + ggtitle("Second wave")
+)
+```
+
 
 #### Hospital load through time
 ```{r}
@@ -132,7 +160,7 @@ max_load = 9*1200*0.15
 renderPlot({
   ggplot(data=df_cases_day, aes(x=day, y=hospital_load)) +
     geom_bar(stat="identity", fill="steelblue") + 
-    xlab("") + ylab("Number of hospitalised patients in a day\n") + 
+    xlab("") + ylab("Number of hospitalised peersons\n") + 
     scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
     theme
 }, height=280)

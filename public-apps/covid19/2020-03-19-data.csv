@@ -1,314 +1,314 @@
 "case","age","gender","status","infection.source","displayed.symptoms","patient.citizen","patient.nationality","confirmed.at.date","symptomatic.at.date","recovered.at.date","days.to.recover.symptomatic","days.to.recover.resources","days.symptomatic.to.confirm"
-1,66,"male","Recovered","imported case","true","visitor","chinese",2020-01-23,2020-01-21,2020-02-19,29,27,2
-2,53,"female","Recovered","imported case","true","visitor","chinese",2020-01-24,2020-01-21,2020-02-07,17,14,3
-3,37,"male","Recovered","imported case","true","visitor","chinese",2020-01-24,2020-01-23,2020-02-21,29,28,1
-4,36,"male","Recovered","imported case","true","visitor","chinese",2020-01-25,2020-01-23,2020-02-12,20,18,2
-5,56,"female","Recovered","imported case","true","visitor","chinese",2020-01-27,2020-01-24,2020-02-18,25,22,3
-6,56,"male","Recovered","imported case","true","visitor","chinese",2020-01-27,2020-01-25,2020-02-20,26,24,2
-7,35,"male","Recovered","imported case","true","visitor","chinese",2020-01-27,2020-01-24,2020-02-04,11,8,3
-8,56,"female","Recovered","imported case","true","visitor","chinese",2020-01-28,2020-01-24,2020-02-18,25,21,4
-9,56,"male","Recovered","imported case","true","visitor","chinese",2020-01-29,2020-01-24,2020-02-23,30,25,5
-10,56,"male","Recovered","imported case","true","visitor","chinese",2020-01-29,2020-01-21,2020-02-09,19,11,8
-11,31,"female","Recovered","imported case","true","visitor","chinese",2020-01-29,2020-01-27,2020-02-10,14,12,2
-12,37,"female","Recovered","imported case","true","visitor","chinese",2020-01-29,2020-01-26,2020-02-12,17,14,3
-13,73,"female","Recovered","imported case","true","visitor","chinese",2020-01-30,2020-01-28,2020-02-09,12,10,2
-14,31,"male","Recovered","imported case","true","wp","chinese",2020-01-30,2020-01-28,2020-02-17,20,18,2
-15,47,"female","Recovered","imported case","true","citizen","",2020-01-30,2020-01-30,2020-02-16,17,17,0
-16,38,"male","Recovered","imported case","true","visitor","chinese",2020-01-30,2020-01-23,2020-02-20,28,21,7
-17,47,"female","Recovered","imported case","true","citizen","",2020-01-31,2020-01-30,2020-02-11,12,11,1
-18,31,"female","Recovered","imported case","true","visitor","chinese",2020-02-01,2020-01-30,2020-02-27,28,26,2
-19,28,"female","Recovered","local transmission","true","citizen","",2020-02-03,2020-01-29,2020-02-22,24,19,5
-20,48,"female","Recovered","local transmission","true","citizen","",2020-02-04,2020-01-25,2020-02-29,35,25,10
-21,44,"female","Recovered","local transmission","true","visitor","indonesian",2020-02-04,2020-02-02,2020-02-18,16,14,2
-22,41,"male","Recovered","imported case","false","citizen","",2020-02-03,NA,2020-02-09,NA,6,NA
-23,17,"male","Recovered","imported case","false","citizen","",2020-02-03,NA,2020-02-21,NA,18,NA
-24,32,"female","Recovered","local transmission","true","citizen","",2020-02-03,2020-01-30,2020-02-15,16,12,4
-25,40,"male","Recovered","local transmission","true","citizen","",2020-02-04,2020-01-24,2020-02-12,19,8,11
-26,42,"female","Recovered","imported case","true","visitor","chinese",2020-02-04,2020-01-28,2020-02-09,12,5,7
-27,45,"male","Recovered","local transmission","true","citizen","",2020-02-05,2020-02-01,2020-02-21,20,16,4
-28,1,"male","Recovered","local transmission","true","citizen","",2020-02-05,NA,2020-02-22,NA,17,NA
-29,41,"male","Recovered","local transmission","true","citizen","",2020-02-05,2020-01-28,2020-02-12,15,7,8
-30,27,"male","Recovered","local transmission","true","citizen","",2020-02-06,2020-01-21,2020-02-14,24,8,16
-31,53,"male","Recovered","local transmission","true","citizen","",2020-02-06,2020-01-23,2020-02-17,25,11,14
-32,42,"female","Recovered","local transmission","true","citizen","",2020-02-06,2020-02-02,2020-02-19,17,13,4
-33,39,"female","Recovered","local transmission","true","citizen","",2020-02-06,2020-01-30,2020-02-19,20,13,7
-34,40,"female","Recovered","local transmission","true","citizen","",2020-02-07,2020-01-27,2020-02-12,16,5,11
-35,64,"male","In hospital","local transmission","true","citizen","",2020-02-07,2020-01-30,NA,NA,NA,8
-36,38,"female","Recovered","local transmission","true","citizen","",2020-02-07,2020-01-24,2020-02-11,18,4,14
-37,53,"male","Recovered","local transmission","true","citizen","",2020-02-07,2020-01-30,2020-03-02,32,24,8
-38,52,"female","Recovered","local transmission","true","citizen","",2020-02-08,2020-02-03,2020-02-18,15,10,5
-39,51,"male","Recovered","local transmission","true","citizen","",2020-02-08,2020-01-29,2020-02-16,18,8,10
-40,36,"male","Recovered","local transmission","true","citizen","",2020-02-08,2020-01-30,2020-02-12,13,4,9
-41,71,"male","In hospital","local transmission","true","citizen","",2020-02-08,2020-02-01,NA,NA,NA,7
-42,39,"male","In hospital","local transmission","true","wp","bangladesh",2020-02-08,2020-02-01,NA,NA,NA,7
-43,54,"male","Recovered","local transmission","true","citizen","",2020-02-08,2020-01-30,2020-03-07,37,28,9
-44,37,"male","Recovered","local transmission","true","citizen","",2020-02-09,2020-01-31,2020-02-19,19,10,9
-45,2,"female","Recovered","imported case","false","citizen","",2020-02-10,NA,2020-02-14,NA,4,NA
-46,35,"male","Recovered","local transmission","true","citizen","",2020-02-10,2020-02-05,2020-02-24,19,14,5
-47,39,"male","Recovered","local transmission","true","wp","bangladesh",2020-02-10,2020-02-06,2020-03-07,30,26,4
-48,34,"male","Recovered","local transmission","true","citizen","",2020-02-11,2020-02-01,2020-02-17,16,6,10
-49,46,"male","Recovered","local transmission","true","citizen","",2020-02-11,2020-02-03,2020-02-26,23,15,8
-50,62,"male","Recovered","local transmission","true","citizen","",2020-02-12,2020-02-07,2020-02-21,14,9,5
-51,48,"male","Recovered","local transmission","true","citizen","",2020-02-12,2020-02-04,2020-02-21,17,9,8
-52,37,"male","Recovered","local transmission","true","visitor","bangladesh",2020-02-12,2020-02-07,2020-02-28,21,16,5
-53,54,"male","Recovered","local transmission","true","citizen","",2020-02-12,2020-02-07,2020-03-14,36,31,5
-54,55,"female","Recovered","local transmission","true","citizen","",2020-02-13,2020-02-10,2020-03-01,20,17,3
-55,30,"male","Recovered","local transmission","true","citizen","",2020-02-13,2020-01-30,2020-02-19,20,6,14
-56,30,"male","Recovered","local transmission","true","visitor","bangladesh",2020-02-13,2020-02-12,2020-02-26,14,13,1
-57,26,"male","Recovered","local transmission","true","citizen","",2020-02-13,2020-02-11,2020-02-21,10,8,2
-58,55,"male","Recovered","local transmission","true","citizen","",2020-02-13,2020-02-10,2020-02-25,15,12,3
-59,61,"male","Recovered","local transmission","true","citizen","",2020-02-13,2020-02-07,2020-02-26,19,13,6
-60,51,"female","Recovered","local transmission","true","citizen","",2020-02-13,2020-02-08,2020-03-01,22,17,5
-61,57,"male","Recovered","local transmission","true","citizen","",2020-02-13,2020-02-06,2020-03-04,27,20,7
-62,44,"female","Recovered","local transmission","true","citizen","",2020-02-13,2020-02-09,2020-02-25,16,12,4
-63,54,"female","Recovered","local transmission","true","citizen","",2020-02-14,2020-02-10,2020-02-21,11,7,4
-64,50,"male","Recovered","local transmission","true","citizen","",2020-02-14,2020-02-03,2020-02-23,20,9,11
-65,61,"female","Recovered","local transmission","true","citizen","",2020-02-14,2020-02-12,2020-02-17,5,3,2
-66,28,"male","Recovered","local transmission","true","citizen","",2020-02-14,2020-01-29,2020-02-20,22,6,16
-67,56,"female","Recovered","local transmission","true","citizen","",2020-02-14,2020-02-09,2020-03-02,22,17,5
-68,79,"female","Recovered","local transmission","true","citizen","",2020-02-14,2020-01-30,2020-02-29,30,15,15
-69,26,"male","Recovered","local transmission","true","wp","bangladesh",2020-02-15,2020-02-14,2020-03-02,17,16,1
-70,27,"female","Recovered","local transmission","true","citizen","",2020-02-15,2020-02-03,2020-02-21,18,6,12
-71,25,"male","Recovered","local transmission","true","citizen","",2020-02-15,2020-02-01,2020-03-05,33,19,14
-72,40,"male","Recovered","local transmission","true","wp","chinese",2020-02-15,2020-02-10,2020-02-27,17,12,5
-73,43,"male","Recovered","local transmission","true","citizen","",2020-02-15,2020-02-09,2020-02-26,17,11,6
-74,29,"male","Recovered","local transmission","true","citizen","",2020-02-15,2020-02-12,2020-03-07,24,21,3
-75,71,"female","Recovered","local transmission","true","citizen","",2020-02-16,NA,2020-02-29,NA,13,NA
-76,1,"male","Recovered","imported case","false","citizen","",2020-02-16,NA,2020-02-18,NA,2,NA
-77,35,"male","Recovered","local transmission","true","citizen","",2020-02-17,2020-02-10,2020-02-25,15,8,7
-78,57,"female","Recovered","local transmission","true","citizen","",2020-02-17,2020-02-09,2020-02-27,18,10,8
-79,35,"female","Recovered","local transmission","true","visitor","malaysian",2020-02-17,2020-02-12,2020-02-28,16,11,5
-80,38,"female","Recovered","local transmission","true","citizen","",2020-02-18,2020-02-04,2020-02-27,23,9,14
-81,50,"male","Recovered","local transmission","true","citizen","",2020-02-18,2020-02-16,2020-02-25,9,7,2
-82,57,"female","In hospital","local transmission","true","citizen","",2020-02-18,2020-02-09,NA,NA,NA,9
-83,54,"male","Recovered","local transmission","true","citizen","",2020-02-19,2020-01-28,2020-02-21,24,2,22
-84,35,"female","Recovered","local transmission","true","citizen","",2020-02-19,2020-02-04,2020-02-21,17,2,15
-85,36,"male","Recovered","local transmission","true","wp","chinese",2020-02-20,2020-02-14,2020-03-07,22,16,6
-86,24,"male","Recovered","local transmission","true","citizen","",2020-02-20,2020-02-14,2020-03-07,22,16,6
-87,32,"male","Recovered","imported case","false","citizen","",2020-02-21,NA,2020-02-24,NA,3,NA
-88,30,"female","Recovered","local transmission","true","citizen","",2020-02-21,2020-02-16,2020-03-02,15,10,5
-89,41,"male","Recovered","local transmission","true","citizen","",2020-02-22,2020-02-03,2020-02-28,25,6,19
-90,75,"female","In hospital","local transmission","true","citizen","",2020-02-23,2020-02-09,NA,NA,NA,14
-91,58,"female","Recovered","local transmission","true","citizen","",2020-02-22,2020-01-23,2020-02-25,33,3,30
-92,47,"male","Recovered","local transmission","true","citizen","",2020-02-26,2020-02-17,2020-03-11,23,14,9
-93,38,"male","Recovered","local transmission","true","citizen","",2020-02-26,2020-02-17,2020-03-07,19,10,9
-94,64,"female","In hospital","local transmission","true","citizen","",2020-02-26,2020-02-11,NA,NA,NA,15
-95,44,"male","Recovered","local transmission","true","citizen","",2020-02-27,2020-02-22,2020-03-14,21,16,5
-96,12,"male","Recovered","local transmission","true","citizen","",2020-02-27,2020-02-21,2020-03-07,15,9,6
-97,44,"female","In hospital","local transmission","true","citizen","",2020-02-27,2020-02-20,NA,NA,NA,7
-98,24,"male","Recovered","local transmission","true","citizen","",2020-02-28,2020-02-27,2020-03-05,7,6,1
-99,27,"male","Recovered","local transmission","true","citizen","",2020-02-28,2020-02-21,2020-03-16,24,17,7
-100,20,"male","Recovered","local transmission","true","visitor","malaysian",2020-02-28,2020-02-27,2020-03-16,18,17,1
-101,61,"male","Recovered","local transmission","true","citizen","",2020-02-29,2020-02-25,2020-03-18,22,18,4
-102,41,"female","Recovered","local transmission","true","visitor","filipino",2020-02-29,2020-02-25,2020-03-14,18,14,4
-103,37,"female","Recovered","local transmission","true","citizen","",2020-03-01,2020-02-20,2020-03-14,23,13,10
-104,25,"female","In hospital","local transmission","true","visitor","myanmar",2020-03-01,2020-02-23,NA,NA,NA,7
-105,49,"male","In hospital","local transmission","true","citizen","",2020-03-01,2020-02-26,NA,NA,NA,4
-106,54,"male","Recovered","local transmission","true","wp","japanese",2020-03-01,2020-02-23,2020-03-11,17,10,7
-107,68,"female","Recovered","local transmission","true","citizen","",2020-03-01,2020-02-16,2020-03-06,19,5,14
-108,34,"female","In hospital","local transmission","true","visitor","filipino",2020-03-02,2020-02-25,NA,NA,NA,6
-109,70,"male","In hospital","local transmission","true","citizen","",2020-03-02,2020-02-25,NA,NA,NA,6
-110,33,"male","Recovered","local transmission","true","citizen","",2020-03-02,2020-02-22,2020-03-07,14,5,9
-111,43,"male","Recovered","local transmission","true","citizen","",2020-03-03,2020-02-24,2020-03-13,18,10,8
-112,62,"female","Recovered","local transmission","true","citizen","",2020-03-04,2020-02-21,2020-03-09,17,5,12
-113,42,"male","In hospital","imported case","true","wp","french",2020-03-04,2020-03-03,NA,NA,NA,1
-114,62,"male","In hospital","local transmission","true","citizen","",2020-03-04,2020-02-28,NA,NA,NA,5
-115,62,"female","In hospital","local transmission","true","citizen","",2020-03-05,NA,NA,NA,NA,NA
-116,50,"female","In hospital","local transmission","true","citizen","",2020-03-05,2020-02-29,NA,NA,NA,5
-117,52,"female","In hospital","local transmission","true","citizen","",2020-03-05,2020-03-02,NA,NA,NA,3
-118,33,"female","Recovered","local transmission","true","citizen","",2020-03-05,2020-02-29,2020-03-18,18,13,5
-119,55,"male","In hospital","local transmission","true","citizen","",2020-03-05,2020-02-27,NA,NA,NA,7
-120,62,"female","In hospital","local transmission","true","citizen","",2020-03-05,2020-03-02,NA,NA,NA,3
-121,54,"female","In hospital","local transmission","true","citizen","",2020-03-05,2020-02-26,NA,NA,NA,8
-122,64,"female","Recovered","local transmission","true","citizen","",2020-03-05,2020-03-03,2020-03-17,14,12,2
-123,47,"male","Recovered","imported case","true","citizen","",2020-03-05,2020-02-27,2020-03-17,19,12,7
-124,37,"female","In hospital","imported case","true","citizen","",2020-03-06,2020-03-05,NA,NA,NA,1
-125,65,"female","In hospital","local transmission","true","citizen","",2020-03-06,2020-03-05,NA,NA,NA,1
-126,77,"male","In hospital","local transmission","true","citizen","",2020-03-06,2020-03-05,NA,NA,NA,1
-127,64,"female","In hospital","local transmission","true","citizen","",2020-03-05,2020-03-05,NA,NA,NA,0
-128,70,"male","In hospital","local transmission","true","citizen","",2020-03-06,2020-03-05,NA,NA,NA,1
-129,68,"female","In hospital","local transmission","true","citizen","",2020-03-06,NA,NA,NA,NA,NA
-130,66,"male","In hospital","local transmission","true","citizen","",2020-03-06,NA,NA,NA,NA,NA
-131,66,"male","Recovered","local transmission","true","citizen","",2020-03-06,2020-03-02,2020-03-17,15,11,4
-132,37,"female","In hospital","imported case","true","citizen","",2020-03-06,2020-02-29,NA,NA,NA,6
-133,62,"female","In hospital","local transmission","true","visitor","indonesian",2020-03-06,2020-02-29,NA,NA,NA,6
-134,56,"female","In hospital","local transmission","true","citizen","",2020-03-06,2020-02-28,NA,NA,NA,7
-135,40,"male","Recovered","local transmission","true","citizen","",2020-03-06,2020-02-26,2020-03-14,17,8,9
-136,36,"male","In hospital","imported case","true","visitor","italian",2020-03-06,2020-03-01,NA,NA,NA,5
-137,60,"male","In hospital","local transmission","true","citizen","",2020-03-06,2020-03-05,NA,NA,NA,1
-138,26,"male","Recovered","local transmission","false","citizen","",2020-03-06,NA,2020-03-09,NA,3,NA
-139,71,"male","In hospital","local transmission","true","citizen","",2020-03-07,2020-03-03,NA,NA,NA,4
-140,62,"female","In hospital","local transmission","true","citizen","",2020-03-07,2020-02-28,NA,NA,NA,8
-141,69,"male","In hospital","local transmission","true","citizen","",2020-03-07,2020-03-01,NA,NA,NA,6
-142,26,"male","In hospital","local transmission","true","citizen","",2020-03-07,2020-03-05,NA,NA,NA,2
-143,42,"male","In hospital","local transmission","true","citizen","",2020-03-07,2020-03-05,NA,NA,NA,2
-144,58,"female","In hospital","local transmission","true","citizen","",2020-03-07,2020-03-03,NA,NA,NA,4
-145,67,"female","In hospital","local transmission","true","citizen","",2020-03-08,2020-02-29,NA,NA,NA,8
-146,64,"female","Recovered","local transmission","true","citizen","",2020-03-08,2020-03-04,2020-03-14,10,6,4
-147,64,"male","In hospital","imported case","true","visitor","indonesian",2020-03-08,2020-03-03,NA,NA,NA,5
-148,67,"female","Recovered","local transmission","true","citizen","",2020-03-08,2020-02-24,2020-03-11,16,3,13
-149,62,"male","Recovered","local transmission","true","citizen","",2020-03-08,2020-02-23,2020-03-16,22,8,14
-150,53,"female","Recovered","local transmission","true","citizen","",2020-03-08,2020-02-29,2020-03-14,14,6,8
-151,51,"male","Recovered","local transmission","true","citizen","",2020-03-08,2020-02-04,2020-03-08,33,0,33
-152,65,"male","In hospital","imported case","true","visitor","indonesian",2020-03-08,2020-02-28,NA,NA,NA,9
-153,65,"female","In hospital","imported case","true","citizen","",2020-03-08,2020-03-03,NA,NA,NA,5
-154,52,"male","In hospital","imported case","true","visitor","british",2020-03-09,2020-03-08,NA,NA,NA,1
-155,47,"female","In hospital","local transmission","true","wp","malaysian",2020-03-09,2020-03-04,NA,NA,NA,5
-156,50,"female","In hospital","local transmission","true","citizen","",2020-03-09,2020-03-07,NA,NA,NA,2
-157,54,"female","In hospital","local transmission","true","citizen","",2020-03-09,2020-03-08,NA,NA,NA,1
-158,53,"female","In hospital","local transmission","true","citizen","",2020-03-09,2020-03-05,NA,NA,NA,4
-159,59,"male","In hospital","local transmission","true","citizen","",2020-03-09,2020-03-05,NA,NA,NA,4
-160,5,"male","Recovered","local transmission","true","citizen","",2020-03-09,2020-03-07,2020-03-14,7,5,2
-161,73,"male","In hospital","local transmission","true","citizen","",2020-03-09,2020-02-27,NA,NA,NA,11
-162,28,"male","In hospital","local transmission","true","citizen","",2020-03-09,2020-03-07,NA,NA,NA,2
-163,27,"female","In hospital","local transmission","true","citizen","",2020-03-09,2020-03-08,NA,NA,NA,1
-164,57,"female","In hospital","local transmission","true","citizen","",2020-03-10,2020-03-08,NA,NA,NA,2
-165,30,"male","In hospital","imported case","true","citizen","",2020-03-10,2020-03-09,NA,NA,NA,1
-166,55,"female","In hospital","local transmission","true","citizen","",2020-03-10,2020-03-04,NA,NA,NA,6
-167,35,"female","In hospital","imported case","true","wp","filipino",2020-03-10,2020-03-08,NA,NA,NA,2
-168,47,"male","In hospital","local transmission","true","citizen","",2020-03-10,2020-03-01,NA,NA,NA,9
-169,40,"male","In hospital","imported case","true","citizen","",2020-03-10,2020-03-09,NA,NA,NA,1
-170,56,"female","In hospital","imported case","true","visitor","indonesian",2020-03-10,2020-03-06,NA,NA,NA,4
-171,27,"male","Recovered","imported case","true","citizen","",2020-03-11,2020-03-09,2020-03-17,8,6,2
-172,42,"female","In hospital","local transmission","true","wp","philippines",2020-03-11,2020-03-05,NA,NA,NA,6
-173,31,"male","In hospital","imported case","true","citizen","",2020-03-11,2020-03-09,NA,NA,NA,2
-174,67,"female","In hospital","local transmission","true","citizen","",2020-03-11,2020-03-07,NA,NA,NA,4
-175,44,"male","In hospital","imported case","true","citizen","",2020-03-11,2020-03-10,NA,NA,NA,1
-176,37,"female","In hospital","imported case","true","visitor","british",2020-03-11,2020-03-07,NA,NA,NA,4
-177,26,"male","In hospital","imported case","true","citizen","",2020-03-11,2020-03-09,NA,NA,NA,2
-178,37,"male","In hospital","imported case","true","wp","filipino",2020-03-11,2020-03-08,NA,NA,NA,3
-179,66,"female","In hospital","local transmission","true","citizen","",2020-03-11,2020-02-27,NA,NA,NA,13
-180,71,"male","In hospital","imported case","true","citizen","",2020-03-12,2020-03-10,NA,NA,NA,2
-181,83,"male","In hospital","imported case","true","visitor","indonesian",2020-03-12,2020-03-08,NA,NA,NA,4
-182,76,"female","In hospital","imported case","true","visitor","indonesian",2020-03-12,2020-03-09,NA,NA,NA,3
-183,29,"male","In hospital","imported case","true","citizen","",2020-03-12,2020-03-06,NA,NA,NA,6
-184,35,"male","In hospital","local transmission","true","wp","filipino",2020-03-12,2020-03-09,NA,NA,NA,3
-185,34,"male","In hospital","local transmission","true","citizen","",2020-03-12,2020-03-07,NA,NA,NA,5
-186,64,"male","In hospital","local transmission","true","citizen","",2020-03-12,2020-03-05,NA,NA,NA,7
-187,48,"male","In hospital","imported case","true","citizen","",2020-03-12,2020-03-04,NA,NA,NA,8
-188,53,"male","In hospital","imported case","true","citizen","",2020-03-12,2020-03-07,NA,NA,NA,5
-189,36,"male","Recovered","imported case","true","wp","indian",2020-03-12,2020-03-11,2020-03-16,5,4,1
-190,53,"male","In hospital","local transmission","true","citizen","",2020-03-13,2020-03-10,NA,NA,NA,3
-191,24,"female","In hospital","imported case","true","wp","malaysian",2020-03-13,2020-03-09,NA,NA,NA,4
-192,32,"male","In hospital","imported case","true","visitor","american",2020-03-13,2020-03-13,NA,NA,NA,0
-193,26,"male","In hospital","imported case","true","wp","malaysian",2020-03-13,2020-03-12,NA,NA,NA,1
-194,24,"female","In hospital","imported case","true","wp","chinese",2020-03-13,2020-03-08,NA,NA,NA,5
-195,47,"male","In hospital","imported case","true","citizen","",2020-03-13,2020-03-06,NA,NA,NA,7
-196,73,"female","Recovered","local transmission","true","citizen","",2020-03-13,2020-03-03,2020-03-17,14,4,10
-197,30,"male","In hospital","imported case","true","citizen","",2020-03-13,2020-03-04,NA,NA,NA,9
-198,61,"female","In hospital","local transmission","true","citizen","",2020-03-13,2020-03-07,NA,NA,NA,6
-199,37,"male","In hospital","imported case","true","citizen","",2020-03-13,2020-03-03,NA,NA,NA,10
-200,62,"female","In hospital","local transmission","true","citizen","",2020-03-13,2020-03-12,NA,NA,NA,1
-201,52,"female","Recovered","local transmission","true","citizen","",2020-03-13,2020-03-05,2020-03-18,13,5,8
-202,44,"male","In hospital","imported case","true","citizen","",2020-03-13,2020-03-03,NA,NA,NA,10
-203,36,"female","In hospital","imported case","true","citizen","",2020-03-13,2020-03-11,NA,NA,NA,2
-204,32,"male","In hospital","imported case","true","wp","american",2020-03-13,2020-03-11,NA,NA,NA,2
-205,30,"female","In hospital","imported case","true","visitor","filipino",2020-03-14,NA,NA,NA,NA,NA
-206,33,"female","In hospital","imported case","true","visitor","new zealand",2020-03-14,NA,NA,NA,NA,NA
-207,40,"female","In hospital","imported case","true","citizen","",2020-03-14,NA,NA,NA,NA,NA
-208,26,"female","In hospital","local transmission","true","citizen","",2020-03-14,NA,NA,NA,NA,NA
-209,32,"female","In hospital","imported case","true","citizen","",2020-03-14,NA,NA,NA,NA,NA
-210,56,"male","In hospital","imported case","true","visitor","german",2020-03-14,2020-03-13,NA,NA,NA,1
-211,35,"female","In hospital","local transmission","true","visitor","filipino",2020-03-14,NA,NA,NA,NA,NA
-212,64,"male","In hospital","imported case","true","visitor","indonesian",2020-03-14,2020-03-09,NA,NA,NA,5
-213,48,"male","In hospital","imported case","true","citizen","",2020-03-14,2020-03-08,NA,NA,NA,6
-214,29,"male","In hospital","local transmission","true","citizen","",2020-03-14,2020-03-05,NA,NA,NA,9
-215,65,"male","In hospital","imported case","true","citizen","",2020-03-14,2020-03-13,NA,NA,NA,1
-216,30,"male","In hospital","imported case","true","citizen","",2020-03-14,2020-03-09,NA,NA,NA,5
-217,22,"male","In hospital","imported case","true","visitor","spanish",2020-03-14,2020-03-13,NA,NA,NA,1
-218,55,"female","In hospital","local transmission","true","citizen","",2020-03-14,2020-03-02,NA,NA,NA,12
-219,30,"male","In hospital","local transmission","true","citizen","",2020-03-15,2020-03-13,NA,NA,NA,2
-220,53,"male","In hospital","imported case","true","citizen","",2020-03-15,2020-03-12,NA,NA,NA,3
-221,28,"female","In hospital","local transmission","true","wp","filipino",2020-03-15,2020-03-11,NA,NA,NA,4
-222,41,"male","In hospital","imported case","true","wp","french",2020-03-15,2020-03-13,NA,NA,NA,2
-223,60,"male","In hospital","imported case","true","citizen","",2020-03-15,2020-03-13,NA,NA,NA,2
-224,50,"male","In hospital","local transmission","true","citizen","",2020-03-15,2020-03-13,NA,NA,NA,2
-225,63,"male","In hospital","imported case","true","citizen","",2020-03-15,2020-03-09,NA,NA,NA,6
-226,49,"male","In hospital","imported case","true","visitor","dutch",2020-03-15,2020-03-12,NA,NA,NA,3
-227,53,"male","In hospital","imported case","true","citizen","",2020-03-15,2020-03-11,NA,NA,NA,4
-228,67,"male","In hospital","local transmission","true","citizen","",2020-03-15,2020-03-03,NA,NA,NA,12
-229,26,"female","In hospital","imported case","true","citizen","",2020-03-15,2020-03-15,NA,NA,NA,0
-230,38,"female","In hospital","imported case","true","citizen","",2020-03-15,2020-03-14,NA,NA,NA,1
-231,78,"male","In hospital","imported case","true","visitor","australian",2020-03-14,2020-03-04,NA,NA,NA,10
-232,65,"female","In hospital","imported case","true","visitor","australian",2020-03-15,2020-03-02,NA,NA,NA,13
-233,61,"male","In hospital","imported case","true","visitor","british",2020-03-16,2020-03-15,NA,NA,NA,1
-234,86,"male","In hospital","local transmission","true","citizen","",2020-03-16,2020-02-28,NA,NA,NA,17
-235,31,"female","In hospital","local transmission","true","citizen","",2020-03-16,2020-03-11,NA,NA,NA,5
-236,30,"female","In hospital","local transmission","true","citizen","",2020-03-16,2020-03-10,NA,NA,NA,6
-237,36,"female","In hospital","local transmission","true","wp","indonesian",2020-03-16,2020-03-12,NA,NA,NA,4
-238,83,"female","In hospital","imported case","true","visitor","belgium",2020-03-16,2020-03-14,NA,NA,NA,2
-239,28,"male","In hospital","imported case","true","wp","british",2020-03-16,2020-03-14,NA,NA,NA,2
-240,27,"male","In hospital","imported case","true","citizen","",2020-03-16,2020-03-14,NA,NA,NA,2
-241,28,"male","In hospital","imported case","true","wp","british",2020-03-16,2020-03-11,NA,NA,NA,5
-242,64,"female","In hospital","local transmission","true","citizen","",2020-03-16,2020-03-14,NA,NA,NA,2
-243,36,"male","In hospital","imported case","true","citizen","",2020-03-16,2020-03-11,NA,NA,NA,5
-244,53,"male","In hospital","imported case","true","citizen","",2020-03-16,2020-03-07,NA,NA,NA,9
-245,76,"male","In hospital","local transmission","true","citizen","",2020-03-16,2020-03-12,NA,NA,NA,4
-246,39,"male","In hospital","imported case","true","visitor","canadian",2020-03-16,2020-03-09,NA,NA,NA,7
-247,41,"male","In hospital","imported case","true","citizen","",2020-03-16,2020-03-16,NA,NA,NA,0
-248,23,"female","In hospital","local transmission","true","wp","malaysian",2020-03-17,NA,NA,NA,NA,NA
-249,42,"male","In hospital","imported case","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-250,28,"male","In hospital","imported case","true","wp","british",2020-03-17,NA,NA,NA,NA,NA
-251,59,"female","In hospital","local transmission","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-252,66,"male","In hospital","local transmission","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-253,24,"male","In hospital","imported case","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-254,43,"female","In hospital","imported case","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-255,44,"male","In hospital","imported case","true","visitor","swedish",2020-03-17,NA,NA,NA,NA,NA
-256,32,"female","In hospital","local transmission","true","visitor","filipino",2020-03-17,NA,NA,NA,NA,NA
-257,19,"male","In hospital","imported case","true","visitor","french",2020-03-17,NA,NA,NA,NA,NA
-258,47,"male","In hospital","imported case","true","visitor","indian",2020-03-17,NA,NA,NA,NA,NA
-259,30,"female","In hospital","imported case","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-260,48,"female","In hospital","local transmission","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-261,30,"male","In hospital","imported case","true","visitor","american",2020-03-17,NA,NA,NA,NA,NA
-262,20,"female","In hospital","imported case","true","visitor","indonesian",2020-03-17,NA,NA,NA,NA,NA
-263,52,"female","In hospital","imported case","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-264,41,"female","In hospital","imported case","true","visitor","indonesian",2020-03-17,NA,NA,NA,NA,NA
-265,25,"female","In hospital","imported case","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-266,63,"male","In hospital","imported case","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-267,72,"female","In hospital","imported case","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-268,64,"male","In hospital","imported case","true","visitor","year old male british",2020-03-17,NA,NA,NA,NA,NA
-269,19,"female","In hospital","imported case","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-270,62,"female","In hospital","imported case","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-271,29,"male","In hospital","imported case","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-272,65,"male","In hospital","imported case","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-273,69,"male","In hospital","local transmission","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-274,50,"male","In hospital","imported case","true","visitor","year old male american",2020-03-17,NA,NA,NA,NA,NA
-275,27,"male","In hospital","local transmission","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-276,21,"male","In hospital","imported case","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-277,55,"male","In hospital","imported case","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-278,48,"female","In hospital","imported case","true","visitor","american",2020-03-17,NA,NA,NA,NA,NA
-279,71,"male","In hospital","imported case","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-280,21,"female","In hospital","imported case","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-281,46,"male","In hospital","imported case","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-282,NA,"male","In hospital","imported case","true","visitor","old male unidentified",2020-03-17,NA,NA,NA,NA,NA
-283,62,"female","In hospital","local transmission","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-284,32,"male","In hospital","imported case","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-285,42,"female","In hospital","imported case","true","visitor","thai",2020-03-17,NA,NA,NA,NA,NA
-286,54,"male","In hospital","imported case","true","visitor","year old male british",2020-03-17,NA,NA,NA,NA,NA
-287,26,"male","In hospital","local transmission","true","citizen","",2020-03-17,NA,NA,NA,NA,NA
-288,71,"male","In hospital","local transmission","true","citizen","",2020-03-18,NA,NA,NA,NA,NA
-289,62,"male","In hospital","local transmission","true","citizen","",2020-03-18,NA,NA,NA,NA,NA
-290,69,"male","In hospital","local transmission","true","citizen","",2020-03-18,NA,NA,NA,NA,NA
-291,52,"male","In hospital","local transmission","true","visitor","year old male indian",2020-03-18,NA,NA,NA,NA,NA
-292,64,"female","In hospital","imported case","true","citizen","",2020-03-18,NA,NA,NA,NA,NA
-293,30,"male","In hospital","imported case","true","visitor","year old male british",2020-03-18,NA,NA,NA,NA,NA
-294,58,"female","In hospital","local transmission","true","citizen","",2020-03-18,NA,NA,NA,NA,NA
-295,55,"male","In hospital","imported case","true","citizen","",2020-03-18,NA,NA,NA,NA,NA
-296,25,"female","In hospital","imported case","true","visitor","malaysian",2020-03-18,NA,NA,NA,NA,NA
-297,31,"male","In hospital","imported case","true","visitor","year old male indonesian",2020-03-18,NA,NA,NA,NA,NA
-298,44,"male","In hospital","imported case","true","citizen","",2020-03-18,NA,NA,NA,NA,NA
-299,29,"male","In hospital","imported case","true","citizen","",2020-03-18,NA,NA,NA,NA,NA
-300,28,"male","In hospital","imported case","true","visitor","year old male german",2020-03-18,NA,NA,NA,NA,NA
-301,63,"male","In hospital","imported case","true","citizen","",2020-03-18,NA,NA,NA,NA,NA
-302,49,"female","In hospital","local transmission","true","citizen","",2020-03-18,NA,NA,NA,NA,NA
-303,27,"male","In hospital","local transmission","true","visitor","year old male malaysian",2020-03-18,NA,NA,NA,NA,NA
-304,27,"female","In hospital","imported case","true","citizen","",2020-03-18,NA,NA,NA,NA,NA
-305,24,"male","In hospital","local transmission","true","citizen","",2020-03-18,NA,NA,NA,NA,NA
-306,56,"male","In hospital","imported case","true","citizen","",2020-03-18,NA,NA,NA,NA,NA
-307,22,"female","In hospital","imported case","true","citizen","",2020-03-18,NA,NA,NA,NA,NA
-308,59,"male","In hospital","imported case","true","citizen","",2020-03-18,NA,NA,NA,NA,NA
-309,60,"male","In hospital","imported case","true","citizen","",2020-03-18,NA,NA,NA,NA,NA
-310,58,"male","In hospital","local transmission","true","citizen","",2020-03-18,NA,NA,NA,NA,NA
-311,80,"female","In hospital","local transmission","true","citizen","",2020-03-18,NA,NA,NA,NA,NA
-312,30,"male","In hospital","imported case","true","visitor","year old male french",2020-03-18,NA,NA,NA,NA,NA
-313,39,"male","In hospital","imported case","true","visitor","year old male british",2020-03-18,NA,NA,NA,NA,NA
+1,66,"male","Recovered","imported case","true","visitor","Chinese",2020-01-23,2020-01-21,2020-02-19,29,27,2
+2,53,"female","Recovered","imported case","true","visitor","Chinese",2020-01-24,2020-01-21,2020-02-07,17,14,3
+3,37,"male","Recovered","imported case","true","visitor","Chinese",2020-01-24,2020-01-23,2020-02-21,29,28,1
+4,36,"male","Recovered","imported case","true","visitor","Chinese",2020-01-25,2020-01-23,2020-02-12,20,18,2
+5,56,"female","Recovered","imported case","true","visitor","Chinese",2020-01-27,2020-01-24,2020-02-18,25,22,3
+6,56,"male","Recovered","imported case","true","visitor","Chinese",2020-01-27,2020-01-25,2020-02-20,26,24,2
+7,35,"male","Recovered","imported case","true","visitor","Chinese",2020-01-27,2020-01-24,2020-02-04,11,8,3
+8,56,"female","Recovered","imported case","true","visitor","Chinese",2020-01-28,2020-01-24,2020-02-18,25,21,4
+9,56,"male","Recovered","imported case","true","visitor","Chinese",2020-01-29,2020-01-24,2020-02-23,30,25,5
+10,56,"male","Recovered","imported case","true","visitor","Chinese",2020-01-29,2020-01-21,2020-02-09,19,11,8
+11,31,"female","Recovered","imported case","true","visitor","Chinese",2020-01-29,2020-01-27,2020-02-10,14,12,2
+12,37,"female","Recovered","imported case","true","visitor","Chinese",2020-01-29,2020-01-26,2020-02-12,17,14,3
+13,73,"female","Recovered","imported case","true","visitor","Chinese",2020-01-30,2020-01-28,2020-02-09,12,10,2
+14,31,"male","Recovered","imported case","true","wp","Singaporean",2020-01-30,2020-01-28,2020-02-17,20,18,2
+15,47,"female","Recovered","imported case","true","citizen","Singaporean",2020-01-30,2020-01-30,2020-02-16,17,17,0
+16,38,"male","Recovered","imported case","true","visitor","Chinese",2020-01-30,2020-01-23,2020-02-20,28,21,7
+17,47,"female","Recovered","imported case","true","citizen","Singaporean",2020-01-31,2020-01-30,2020-02-11,12,11,1
+18,31,"female","Recovered","imported case","true","visitor","Chinese",2020-02-01,2020-01-30,2020-02-27,28,26,2
+19,28,"female","Recovered","local transmission","true","citizen","Singaporean",2020-02-03,2020-01-29,2020-02-22,24,19,5
+20,48,"female","Recovered","local transmission","true","citizen","Singaporean",2020-02-04,2020-01-25,2020-02-29,35,25,10
+21,44,"female","Recovered","local transmission","true","visitor","Indonesian",2020-02-04,2020-02-02,2020-02-18,16,14,2
+22,41,"male","Recovered","imported case","false","citizen","Singaporean",2020-02-03,NA,2020-02-09,NA,6,NA
+23,17,"male","Recovered","imported case","false","citizen","Singaporean",2020-02-03,NA,2020-02-21,NA,18,NA
+24,32,"female","Recovered","local transmission","true","citizen","Singaporean",2020-02-03,2020-01-30,2020-02-15,16,12,4
+25,40,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-04,2020-01-24,2020-02-12,19,8,11
+26,42,"female","Recovered","imported case","true","visitor","Chinese",2020-02-04,2020-01-28,2020-02-09,12,5,7
+27,45,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-05,2020-02-01,2020-02-21,20,16,4
+28,1,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-05,NA,2020-02-22,NA,17,NA
+29,41,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-05,2020-01-28,2020-02-12,15,7,8
+30,27,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-06,2020-01-21,2020-02-14,24,8,16
+31,53,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-06,2020-01-23,2020-02-17,25,11,14
+32,42,"female","Recovered","local transmission","true","citizen","Singaporean",2020-02-06,2020-02-02,2020-02-19,17,13,4
+33,39,"female","Recovered","local transmission","true","citizen","Singaporean",2020-02-06,2020-01-30,2020-02-19,20,13,7
+34,40,"female","Recovered","local transmission","true","citizen","Singaporean",2020-02-07,2020-01-27,2020-02-12,16,5,11
+35,64,"male","In hospital","local transmission","true","citizen","Singaporean",2020-02-07,2020-01-30,NA,NA,NA,8
+36,38,"female","Recovered","local transmission","true","citizen","Singaporean",2020-02-07,2020-01-24,2020-02-11,18,4,14
+37,53,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-07,2020-01-30,2020-03-02,32,24,8
+38,52,"female","Recovered","local transmission","true","citizen","Singaporean",2020-02-08,2020-02-03,2020-02-18,15,10,5
+39,51,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-08,2020-01-29,2020-02-16,18,8,10
+40,36,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-08,2020-01-30,2020-02-12,13,4,9
+41,71,"male","In hospital","local transmission","true","citizen","Singaporean",2020-02-08,2020-02-01,NA,NA,NA,7
+42,39,"male","In hospital","local transmission","true","wp","Bangladeshi",2020-02-08,2020-02-01,NA,NA,NA,7
+43,54,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-08,2020-01-30,2020-03-07,37,28,9
+44,37,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-09,2020-01-31,2020-02-19,19,10,9
+45,2,"female","Recovered","imported case","false","citizen","Singaporean",2020-02-10,NA,2020-02-14,NA,4,NA
+46,35,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-10,2020-02-05,2020-02-24,19,14,5
+47,39,"male","Recovered","local transmission","true","wp","Bangladeshi",2020-02-10,2020-02-06,2020-03-07,30,26,4
+48,34,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-11,2020-02-01,2020-02-17,16,6,10
+49,46,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-11,2020-02-03,2020-02-26,23,15,8
+50,62,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-12,2020-02-07,2020-02-21,14,9,5
+51,48,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-12,2020-02-04,2020-02-21,17,9,8
+52,37,"male","Recovered","local transmission","true","visitor","Bangladeshi",2020-02-12,2020-02-07,2020-02-28,21,16,5
+53,54,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-12,2020-02-07,2020-03-14,36,31,5
+54,55,"female","Recovered","local transmission","true","citizen","Singaporean",2020-02-13,2020-02-10,2020-03-01,20,17,3
+55,30,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-13,2020-01-30,2020-02-19,20,6,14
+56,30,"male","Recovered","local transmission","true","visitor","Bangladeshi",2020-02-13,2020-02-12,2020-02-26,14,13,1
+57,26,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-13,2020-02-11,2020-02-21,10,8,2
+58,55,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-13,2020-02-10,2020-02-25,15,12,3
+59,61,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-13,2020-02-07,2020-02-26,19,13,6
+60,51,"female","Recovered","local transmission","true","citizen","Singaporean",2020-02-13,2020-02-08,2020-03-01,22,17,5
+61,57,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-13,2020-02-06,2020-03-04,27,20,7
+62,44,"female","Recovered","local transmission","true","citizen","Singaporean",2020-02-13,2020-02-09,2020-02-25,16,12,4
+63,54,"female","Recovered","local transmission","true","citizen","Singaporean",2020-02-14,2020-02-10,2020-02-21,11,7,4
+64,50,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-14,2020-02-03,2020-02-23,20,9,11
+65,61,"female","Recovered","local transmission","true","citizen","Singaporean",2020-02-14,2020-02-12,2020-02-17,5,3,2
+66,28,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-14,2020-01-29,2020-02-20,22,6,16
+67,56,"female","Recovered","local transmission","true","citizen","Singaporean",2020-02-14,2020-02-09,2020-03-02,22,17,5
+68,79,"female","Recovered","local transmission","true","citizen","Singaporean",2020-02-14,2020-01-30,2020-02-29,30,15,15
+69,26,"male","Recovered","local transmission","true","wp","Bangladeshi",2020-02-15,2020-02-14,2020-03-02,17,16,1
+70,27,"female","Recovered","local transmission","true","citizen","Singaporean",2020-02-15,2020-02-03,2020-02-21,18,6,12
+71,25,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-15,2020-02-01,2020-03-05,33,19,14
+72,40,"male","Recovered","local transmission","true","wp","Chinese",2020-02-15,2020-02-10,2020-02-27,17,12,5
+73,43,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-15,2020-02-09,2020-02-26,17,11,6
+74,29,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-15,2020-02-12,2020-03-07,24,21,3
+75,71,"female","Recovered","local transmission","true","citizen","Singaporean",2020-02-16,NA,2020-02-29,NA,13,NA
+76,1,"male","Recovered","imported case","false","citizen","Singaporean",2020-02-16,NA,2020-02-18,NA,2,NA
+77,35,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-17,2020-02-10,2020-02-25,15,8,7
+78,57,"female","Recovered","local transmission","true","citizen","Singaporean",2020-02-17,2020-02-09,2020-02-27,18,10,8
+79,35,"female","Recovered","local transmission","true","visitor","Malaysian",2020-02-17,2020-02-12,2020-02-28,16,11,5
+80,38,"female","Recovered","local transmission","true","citizen","Singaporean",2020-02-18,2020-02-04,2020-02-27,23,9,14
+81,50,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-18,2020-02-16,2020-02-25,9,7,2
+82,57,"female","In hospital","local transmission","true","citizen","Singaporean",2020-02-18,2020-02-09,NA,NA,NA,9
+83,54,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-19,2020-01-28,2020-02-21,24,2,22
+84,35,"female","Recovered","local transmission","true","citizen","Singaporean",2020-02-19,2020-02-04,2020-02-21,17,2,15
+85,36,"male","Recovered","local transmission","true","wp","Chinese",2020-02-20,2020-02-14,2020-03-07,22,16,6
+86,24,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-20,2020-02-14,2020-03-07,22,16,6
+87,32,"male","Recovered","imported case","false","citizen","Singaporean",2020-02-21,NA,2020-02-24,NA,3,NA
+88,30,"female","Recovered","local transmission","true","citizen","Singaporean",2020-02-21,2020-02-16,2020-03-02,15,10,5
+89,41,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-22,2020-02-03,2020-02-28,25,6,19
+90,75,"female","In hospital","local transmission","true","citizen","Singaporean",2020-02-23,2020-02-09,NA,NA,NA,14
+91,58,"female","Recovered","local transmission","true","citizen","Singaporean",2020-02-22,2020-01-23,2020-02-25,33,3,30
+92,47,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-26,2020-02-17,2020-03-11,23,14,9
+93,38,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-26,2020-02-17,2020-03-07,19,10,9
+94,64,"female","In hospital","local transmission","true","citizen","Singaporean",2020-02-26,2020-02-11,NA,NA,NA,15
+95,44,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-27,2020-02-22,2020-03-14,21,16,5
+96,12,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-27,2020-02-21,2020-03-07,15,9,6
+97,44,"female","In hospital","local transmission","true","citizen","Singaporean",2020-02-27,2020-02-20,NA,NA,NA,7
+98,24,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-28,2020-02-27,2020-03-05,7,6,1
+99,27,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-28,2020-02-21,2020-03-16,24,17,7
+100,20,"male","Recovered","local transmission","true","visitor","Malaysian",2020-02-28,2020-02-27,2020-03-16,18,17,1
+101,61,"male","Recovered","local transmission","true","citizen","Singaporean",2020-02-29,2020-02-25,2020-03-18,22,18,4
+102,41,"female","Recovered","local transmission","true","visitor","Filipino",2020-02-29,2020-02-25,2020-03-14,18,14,4
+103,37,"female","Recovered","local transmission","true","citizen","Singaporean",2020-03-01,2020-02-20,2020-03-14,23,13,10
+104,25,"female","In hospital","local transmission","true","visitor","Myanmarian",2020-03-01,2020-02-23,NA,NA,NA,7
+105,49,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-01,2020-02-26,NA,NA,NA,4
+106,54,"male","Recovered","local transmission","true","wp","Japanese",2020-03-01,2020-02-23,2020-03-11,17,10,7
+107,68,"female","Recovered","local transmission","true","citizen","Singaporean",2020-03-01,2020-02-16,2020-03-06,19,5,14
+108,34,"female","In hospital","local transmission","true","visitor","Filipino",2020-03-02,2020-02-25,NA,NA,NA,6
+109,70,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-02,2020-02-25,NA,NA,NA,6
+110,33,"male","Recovered","local transmission","true","citizen","Singaporean",2020-03-02,2020-02-22,2020-03-07,14,5,9
+111,43,"male","Recovered","local transmission","true","citizen","Singaporean",2020-03-03,2020-02-24,2020-03-13,18,10,8
+112,62,"female","Recovered","local transmission","true","citizen","Singaporean",2020-03-04,2020-02-21,2020-03-09,17,5,12
+113,42,"male","In hospital","imported case","true","wp","French",2020-03-04,2020-03-03,NA,NA,NA,1
+114,62,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-04,2020-02-28,NA,NA,NA,5
+115,62,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-05,NA,NA,NA,NA,NA
+116,50,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-05,2020-02-29,NA,NA,NA,5
+117,52,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-05,2020-03-02,NA,NA,NA,3
+118,33,"female","Recovered","local transmission","true","citizen","Singaporean",2020-03-05,2020-02-29,2020-03-18,18,13,5
+119,55,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-05,2020-02-27,NA,NA,NA,7
+120,62,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-05,2020-03-02,NA,NA,NA,3
+121,54,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-05,2020-02-26,NA,NA,NA,8
+122,64,"female","Recovered","local transmission","true","citizen","Singaporean",2020-03-05,2020-03-03,2020-03-17,14,12,2
+123,47,"male","Recovered","imported case","true","citizen","Singaporean",2020-03-05,2020-02-27,2020-03-17,19,12,7
+124,37,"female","In hospital","imported case","true","citizen","Singaporean",2020-03-06,2020-03-05,NA,NA,NA,1
+125,65,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-06,2020-03-05,NA,NA,NA,1
+126,77,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-06,2020-03-05,NA,NA,NA,1
+127,64,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-05,2020-03-05,NA,NA,NA,0
+128,70,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-06,2020-03-05,NA,NA,NA,1
+129,68,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-06,NA,NA,NA,NA,NA
+130,66,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-06,NA,NA,NA,NA,NA
+131,66,"male","Recovered","local transmission","true","citizen","Singaporean",2020-03-06,2020-03-02,2020-03-17,15,11,4
+132,37,"female","In hospital","imported case","true","citizen","Singaporean",2020-03-06,2020-02-29,NA,NA,NA,6
+133,62,"female","In hospital","local transmission","true","visitor","Indonesian",2020-03-06,2020-02-29,NA,NA,NA,6
+134,56,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-06,2020-02-28,NA,NA,NA,7
+135,40,"male","Recovered","local transmission","true","citizen","Singaporean",2020-03-06,2020-02-26,2020-03-14,17,8,9
+136,36,"male","In hospital","imported case","true","visitor","Italian",2020-03-06,2020-03-01,NA,NA,NA,5
+137,60,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-06,2020-03-05,NA,NA,NA,1
+138,26,"male","Recovered","local transmission","false","citizen","Singaporean",2020-03-06,NA,2020-03-09,NA,3,NA
+139,71,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-07,2020-03-03,NA,NA,NA,4
+140,62,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-07,2020-02-28,NA,NA,NA,8
+141,69,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-07,2020-03-01,NA,NA,NA,6
+142,26,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-07,2020-03-05,NA,NA,NA,2
+143,42,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-07,2020-03-05,NA,NA,NA,2
+144,58,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-07,2020-03-03,NA,NA,NA,4
+145,67,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-08,2020-02-29,NA,NA,NA,8
+146,64,"female","Recovered","local transmission","true","citizen","Singaporean",2020-03-08,2020-03-04,2020-03-14,10,6,4
+147,64,"male","In hospital","imported case","true","visitor","Indonesian",2020-03-08,2020-03-03,NA,NA,NA,5
+148,67,"female","Recovered","local transmission","true","citizen","Singaporean",2020-03-08,2020-02-24,2020-03-11,16,3,13
+149,62,"male","Recovered","local transmission","true","citizen","Singaporean",2020-03-08,2020-02-23,2020-03-16,22,8,14
+150,53,"female","Recovered","local transmission","true","citizen","Singaporean",2020-03-08,2020-02-29,2020-03-14,14,6,8
+151,51,"male","Recovered","local transmission","true","citizen","Singaporean",2020-03-08,2020-02-04,2020-03-08,33,0,33
+152,65,"male","In hospital","imported case","true","visitor","Indonesian",2020-03-08,2020-02-28,NA,NA,NA,9
+153,65,"female","In hospital","imported case","true","citizen","Singaporean",2020-03-08,2020-03-03,NA,NA,NA,5
+154,52,"male","In hospital","imported case","true","visitor","British",2020-03-09,2020-03-08,NA,NA,NA,1
+155,47,"female","In hospital","local transmission","true","wp","Malaysian",2020-03-09,2020-03-04,NA,NA,NA,5
+156,50,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-09,2020-03-07,NA,NA,NA,2
+157,54,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-09,2020-03-08,NA,NA,NA,1
+158,53,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-09,2020-03-05,NA,NA,NA,4
+159,59,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-09,2020-03-05,NA,NA,NA,4
+160,5,"male","Recovered","local transmission","true","citizen","Singaporean",2020-03-09,2020-03-07,2020-03-14,7,5,2
+161,73,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-09,2020-02-27,NA,NA,NA,11
+162,28,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-09,2020-03-07,NA,NA,NA,2
+163,27,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-09,2020-03-08,NA,NA,NA,1
+164,57,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-10,2020-03-08,NA,NA,NA,2
+165,30,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-10,2020-03-09,NA,NA,NA,1
+166,55,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-10,2020-03-04,NA,NA,NA,6
+167,35,"female","In hospital","imported case","true","wp","Filipino",2020-03-10,2020-03-08,NA,NA,NA,2
+168,47,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-10,2020-03-01,NA,NA,NA,9
+169,40,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-10,2020-03-09,NA,NA,NA,1
+170,56,"female","In hospital","imported case","true","visitor","Indonesian",2020-03-10,2020-03-06,NA,NA,NA,4
+171,27,"male","Recovered","imported case","true","citizen","Singaporean",2020-03-11,2020-03-09,2020-03-17,8,6,2
+172,42,"female","In hospital","local transmission","true","wp","Filipino",2020-03-11,2020-03-05,NA,NA,NA,6
+173,31,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-11,2020-03-09,NA,NA,NA,2
+174,67,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-11,2020-03-07,NA,NA,NA,4
+175,44,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-11,2020-03-10,NA,NA,NA,1
+176,37,"female","In hospital","imported case","true","visitor","Singaporean",2020-03-11,2020-03-07,NA,NA,NA,4
+177,26,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-11,2020-03-09,NA,NA,NA,2
+178,37,"male","In hospital","imported case","true","wp","Filipino",2020-03-11,2020-03-08,NA,NA,NA,3
+179,66,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-11,2020-02-27,NA,NA,NA,13
+180,71,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-12,2020-03-10,NA,NA,NA,2
+181,83,"male","In hospital","imported case","true","visitor","Indonesian",2020-03-12,2020-03-08,NA,NA,NA,4
+182,76,"female","In hospital","imported case","true","visitor","Indonesian",2020-03-12,2020-03-09,NA,NA,NA,3
+183,29,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-12,2020-03-06,NA,NA,NA,6
+184,35,"male","In hospital","local transmission","true","wp","Filipino",2020-03-12,2020-03-09,NA,NA,NA,3
+185,34,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-12,2020-03-07,NA,NA,NA,5
+186,64,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-12,2020-03-05,NA,NA,NA,7
+187,48,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-12,2020-03-04,NA,NA,NA,8
+188,53,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-12,2020-03-07,NA,NA,NA,5
+189,36,"male","Recovered","imported case","true","wp","Indian",2020-03-12,2020-03-11,2020-03-16,5,4,1
+190,53,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-13,2020-03-10,NA,NA,NA,3
+191,24,"female","In hospital","imported case","true","wp","Malaysian",2020-03-13,2020-03-09,NA,NA,NA,4
+192,32,"male","In hospital","imported case","true","visitor","American",2020-03-13,2020-03-13,NA,NA,NA,0
+193,26,"male","In hospital","imported case","true","wp","Malaysian",2020-03-13,2020-03-12,NA,NA,NA,1
+194,24,"female","In hospital","imported case","true","wp","Chinese",2020-03-13,2020-03-08,NA,NA,NA,5
+195,47,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-13,2020-03-06,NA,NA,NA,7
+196,73,"female","Recovered","local transmission","true","citizen","Singaporean",2020-03-13,2020-03-03,2020-03-17,14,4,10
+197,30,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-13,2020-03-04,NA,NA,NA,9
+198,61,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-13,2020-03-07,NA,NA,NA,6
+199,37,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-13,2020-03-03,NA,NA,NA,10
+200,62,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-13,2020-03-12,NA,NA,NA,1
+201,52,"female","Recovered","local transmission","true","citizen","Singaporean",2020-03-13,2020-03-05,2020-03-18,13,5,8
+202,44,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-13,2020-03-03,NA,NA,NA,10
+203,36,"female","In hospital","imported case","true","citizen","Singaporean",2020-03-13,2020-03-11,NA,NA,NA,2
+204,32,"male","In hospital","imported case","true","wp","American",2020-03-13,2020-03-11,NA,NA,NA,2
+205,30,"female","In hospital","imported case","true","visitor","Filipino",2020-03-14,NA,NA,NA,NA,NA
+206,33,"female","In hospital","imported case","true","visitor","New zealander",2020-03-14,NA,NA,NA,NA,NA
+207,40,"female","In hospital","imported case","true","citizen","Singaporean",2020-03-14,NA,NA,NA,NA,NA
+208,26,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-14,NA,NA,NA,NA,NA
+209,32,"female","In hospital","imported case","true","citizen","Singaporean",2020-03-14,NA,NA,NA,NA,NA
+210,56,"male","In hospital","imported case","true","visitor","German",2020-03-14,2020-03-13,NA,NA,NA,1
+211,35,"female","In hospital","local transmission","true","visitor","Filipino",2020-03-14,NA,NA,NA,NA,NA
+212,64,"male","In hospital","imported case","true","visitor","Indonesian",2020-03-14,2020-03-09,NA,NA,NA,5
+213,48,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-14,2020-03-08,NA,NA,NA,6
+214,29,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-14,2020-03-05,NA,NA,NA,9
+215,65,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-14,2020-03-13,NA,NA,NA,1
+216,30,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-14,2020-03-09,NA,NA,NA,5
+217,22,"male","In hospital","imported case","true","visitor","Spanish",2020-03-14,2020-03-13,NA,NA,NA,1
+218,55,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-14,2020-03-02,NA,NA,NA,12
+219,30,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-15,2020-03-13,NA,NA,NA,2
+220,53,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-15,2020-03-12,NA,NA,NA,3
+221,28,"female","In hospital","local transmission","true","wp","Filipino",2020-03-15,2020-03-11,NA,NA,NA,4
+222,41,"male","In hospital","imported case","true","wp","French",2020-03-15,2020-03-13,NA,NA,NA,2
+223,60,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-15,2020-03-13,NA,NA,NA,2
+224,50,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-15,2020-03-13,NA,NA,NA,2
+225,63,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-15,2020-03-09,NA,NA,NA,6
+226,49,"male","In hospital","imported case","true","visitor","Dutch",2020-03-15,2020-03-12,NA,NA,NA,3
+227,53,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-15,2020-03-11,NA,NA,NA,4
+228,67,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-15,2020-03-03,NA,NA,NA,12
+229,26,"female","In hospital","imported case","true","citizen","Singaporean",2020-03-15,2020-03-15,NA,NA,NA,0
+230,38,"female","In hospital","imported case","true","citizen","Singaporean",2020-03-15,2020-03-14,NA,NA,NA,1
+231,78,"male","In hospital","imported case","true","visitor","Australian",2020-03-14,2020-03-04,NA,NA,NA,10
+232,65,"female","In hospital","imported case","true","visitor","Australian",2020-03-15,2020-03-02,NA,NA,NA,13
+233,61,"male","In hospital","imported case","true","visitor","British",2020-03-16,2020-03-15,NA,NA,NA,1
+234,86,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-16,2020-02-28,NA,NA,NA,17
+235,31,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-16,2020-03-11,NA,NA,NA,5
+236,30,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-16,2020-03-10,NA,NA,NA,6
+237,36,"female","In hospital","local transmission","true","wp","Indonesian",2020-03-16,2020-03-12,NA,NA,NA,4
+238,83,"female","In hospital","imported case","true","visitor","Belgian",2020-03-16,2020-03-14,NA,NA,NA,2
+239,28,"male","In hospital","imported case","true","wp","Singaporean",2020-03-16,2020-03-14,NA,NA,NA,2
+240,27,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-16,2020-03-14,NA,NA,NA,2
+241,28,"male","In hospital","imported case","true","wp","British",2020-03-16,2020-03-11,NA,NA,NA,5
+242,64,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-16,2020-03-14,NA,NA,NA,2
+243,36,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-16,2020-03-11,NA,NA,NA,5
+244,53,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-16,2020-03-07,NA,NA,NA,9
+245,76,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-16,2020-03-12,NA,NA,NA,4
+246,39,"male","In hospital","imported case","true","visitor","Canadian",2020-03-16,2020-03-09,NA,NA,NA,7
+247,41,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-16,2020-03-16,NA,NA,NA,0
+248,23,"female","In hospital","local transmission","true","wp","Malaysian",2020-03-17,NA,NA,NA,NA,NA
+249,42,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+250,28,"male","In hospital","imported case","true","wp","British",2020-03-17,NA,NA,NA,NA,NA
+251,59,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+252,66,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+253,24,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+254,43,"female","In hospital","imported case","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+255,44,"male","In hospital","imported case","true","visitor","Swedish",2020-03-17,NA,NA,NA,NA,NA
+256,32,"female","In hospital","local transmission","true","visitor","Filipino",2020-03-17,NA,NA,NA,NA,NA
+257,19,"male","In hospital","imported case","true","visitor","French",2020-03-17,NA,NA,NA,NA,NA
+258,47,"male","In hospital","imported case","true","visitor","Indian",2020-03-17,NA,NA,NA,NA,NA
+259,30,"female","In hospital","imported case","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+260,48,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+261,30,"male","In hospital","imported case","true","visitor","American",2020-03-17,NA,NA,NA,NA,NA
+262,20,"female","In hospital","imported case","true","visitor","Indonesian",2020-03-17,NA,NA,NA,NA,NA
+263,52,"female","In hospital","imported case","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+264,41,"female","In hospital","imported case","true","visitor","Indonesian",2020-03-17,NA,NA,NA,NA,NA
+265,25,"female","In hospital","imported case","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+266,63,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+267,72,"female","In hospital","imported case","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+268,64,"male","In hospital","imported case","true","visitor","British",2020-03-17,NA,NA,NA,NA,NA
+269,19,"female","In hospital","imported case","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+270,62,"female","In hospital","imported case","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+271,29,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+272,65,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+273,69,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+274,50,"male","In hospital","imported case","true","visitor","American",2020-03-17,NA,NA,NA,NA,NA
+275,27,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+276,21,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+277,55,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+278,48,"female","In hospital","imported case","true","visitor","American",2020-03-17,NA,NA,NA,NA,NA
+279,71,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+280,21,"female","In hospital","imported case","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+281,46,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+282,NA,"male","In hospital","imported case","true","visitor","Unidentified nationality",2020-03-17,NA,NA,NA,NA,NA
+283,62,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+284,32,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+285,42,"female","In hospital","imported case","true","visitor","Thai",2020-03-17,NA,NA,NA,NA,NA
+286,54,"male","In hospital","imported case","true","visitor","British",2020-03-17,NA,NA,NA,NA,NA
+287,26,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-17,NA,NA,NA,NA,NA
+288,71,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-18,NA,NA,NA,NA,NA
+289,62,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-18,NA,NA,NA,NA,NA
+290,69,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-18,NA,NA,NA,NA,NA
+291,52,"male","In hospital","local transmission","true","visitor","Indian",2020-03-18,NA,NA,NA,NA,NA
+292,64,"female","In hospital","imported case","true","citizen","Singaporean",2020-03-18,NA,NA,NA,NA,NA
+293,30,"male","In hospital","imported case","true","visitor","British",2020-03-18,NA,NA,NA,NA,NA
+294,58,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-18,NA,NA,NA,NA,NA
+295,55,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-18,NA,NA,NA,NA,NA
+296,25,"female","In hospital","imported case","true","visitor","Malaysian",2020-03-18,NA,NA,NA,NA,NA
+297,31,"male","In hospital","imported case","true","visitor","Indonesian",2020-03-18,NA,NA,NA,NA,NA
+298,44,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-18,NA,NA,NA,NA,NA
+299,29,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-18,NA,NA,NA,NA,NA
+300,28,"male","In hospital","imported case","true","visitor","German",2020-03-18,NA,NA,NA,NA,NA
+301,63,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-18,NA,NA,NA,NA,NA
+302,49,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-18,NA,NA,NA,NA,NA
+303,27,"male","In hospital","local transmission","true","visitor","Malaysian",2020-03-18,NA,NA,NA,NA,NA
+304,27,"female","In hospital","imported case","true","citizen","Singaporean",2020-03-18,NA,NA,NA,NA,NA
+305,24,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-18,NA,NA,NA,NA,NA
+306,56,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-18,NA,NA,NA,NA,NA
+307,22,"female","In hospital","imported case","true","citizen","Singaporean",2020-03-18,NA,NA,NA,NA,NA
+308,59,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-18,NA,NA,NA,NA,NA
+309,60,"male","In hospital","imported case","true","citizen","Singaporean",2020-03-18,NA,NA,NA,NA,NA
+310,58,"male","In hospital","local transmission","true","citizen","Singaporean",2020-03-18,NA,NA,NA,NA,NA
+311,80,"female","In hospital","local transmission","true","citizen","Singaporean",2020-03-18,NA,NA,NA,NA,NA
+312,30,"male","In hospital","imported case","true","visitor","French",2020-03-18,NA,NA,NA,NA,NA
+313,39,"male","In hospital","imported case","true","visitor","British",2020-03-18,NA,NA,NA,NA,NA
