@@ -8,36 +8,40 @@ output:
 ---
 
 ```{r}
-knitr::opts_chunk$set(echo=TRUE, message=TRUE, warning=TRUE)
+knitr::opts_chunk$set(echo=F, message=TRUE, warning=TRUE)
 library(ggplot2)
 ```
 
 
-```{r echo=F}
+```{r}
 actionButton("add", "Add")
 ```
 
-```{r echo=F}
+```{r}
 values = reactiveValues()
 values$counter = 0
-values$sampled = runif(1, min=0, max=1)
+values$data = data.frame(x=numeric(), y=numeric())
 
 observeEvent(input$add, { 
     values$counter = values$counter + 1
-    values$sampled = runif(1, min=0, max=1)
+    values$data = rbind(values$data, 
+                        data.frame(x=runif(1, min=0, max=1),
+                                   y=runif(1, min=0, max=1))
 })
 ```
 
-```{r echo=F}
+```{r}
 renderText({ 
-    paste("Value: ", values$sampled)
+    paste("Sampled value: ", values$sampledx)
 })
-renderText({ 
-    paste("Counter: ", values$counter)
+
+renderDataTable({
+    values$data
 })
 
 renderPlot({
 
+    plot(
     # df = data.frame(N=values$counter)
     
 })
