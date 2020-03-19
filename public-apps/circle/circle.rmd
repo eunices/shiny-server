@@ -25,7 +25,7 @@ circle = data.frame(x = sin(angle), y = cos(angle))
 Sidebar {.sidebar}
 =====================================
 
-The aim of this exercise is to simulate the value of $\pi = $ `r pi`.
+The aim of this exercise is to simulate the value of $\pi$ (`r pi`).
 
 ```{r}
 actionButton("add", "Add", style="background-color: #337ab7")
