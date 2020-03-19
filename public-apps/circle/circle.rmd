@@ -81,7 +81,7 @@ Plot
 
 fluidPage(
     fluidRow(
-        column(3, 
+        column(4, 
             renderPlot({
                 ggplot(values$data, aes(x=x, y=y, color=factor(inside))) + 
                     geom_polygon(aes(x, y), data = circle, inherit.aes = F) + 
@@ -92,7 +92,7 @@ fluidPage(
                     guides(color=FALSE) +
                     xlab("") + ylab("")
             }, height=300, width=300)),
-        column(3, 
+        column(4, 
             renderPlot({
                 ggplot(values$pi_sim_df, aes(x=counter, y=value)) + 
                     geom_line() +
@@ -101,7 +101,7 @@ fluidPage(
                     guides(color=FALSE) +
                     xlab("Number of points") + ylab("Simulated pi value")
             }, height=300, width=300)),
-        column(6,
+        column(4,
             fluidPage(
                 renderText({
                     if(dim(values$data)[1] >= 1) {
