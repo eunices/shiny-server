@@ -32,9 +32,8 @@ actionButton("add", "Add", style="background-color: #337ab7")
 actionButton("reset", "Reset")
 ```
 
-- First, we draw a circle and a square.
-
-- Second, we start the simulation.
+First, we draw a circle and a square.<br>
+Second, we start the simulation.
 1. Randomly draw x,y coordinates in square. 
 2. Check if coordinates falls within the circle using formula
 $x^2 + y^2 < R^2$, where $R$ is the radius of the circle. 
