@@ -34,12 +34,6 @@ actionButton("reset", "Reset")
 
 ```{r}
 renderText({ 
-    paste("Counter: ", values$counter*per_step)
-})
-```
-
-```{r}
-renderText({ 
     if(dim(values$data)[1] >= 1) {
         pi_sim = 4*sum(values$data$inside==1)/length(values$data$inside)
         paste("Simulated pi: ", round(pi_sim, 7))
@@ -98,6 +92,11 @@ renderPlot({
         
     
 }, width = 500, height = 500)
+
+
+renderText({ 
+    paste("Counter: ", values$counter*per_step)
+})
 ```
 
 Page 2
