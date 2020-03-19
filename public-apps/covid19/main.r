@@ -73,7 +73,7 @@ clean_data = function(df, write=F) {
         # Write data just in case it's gone
         app_dir = "public-apps/covid19/"
         print(paste0(Sys.time(), ": Persist file to ", app_dir, "."))
-        write.csv(df, paste0(app_dir, Sys.Date(), "-data.csv"), 
+        write.csv(df, paste0(Sys.Date(), "-data.csv"), 
                   fileEncoding="UTF-8", na="NA", row.names=F)
     }
 
