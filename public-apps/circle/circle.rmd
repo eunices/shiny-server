@@ -30,8 +30,10 @@ observeEvent(input$add, {
 
 ```{r echo=F}
 renderText({ 
-    paste("Counter: ", values$counter)
     paste("Value: ", values$sampled)
+})
+renderText({ 
+    paste("Counter: ", values$counter)
 })
 
 renderPlot({
