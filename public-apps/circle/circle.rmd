@@ -62,7 +62,7 @@ observeEvent(input$add, {
     inside = ifelse(x^2 + y^2 < max^2, 1, 0) 
     values$data = rbind(values$data, data.frame(x=x, y=y, inside=inside))
     values$pi_sim = 4*sum(values$data$inside==1)/length(values$data$inside)
-    values$pi_sim_li = c(values$pi_sim_li, values$pi_sim)
+    values$pi_sim_li = c(values$pi_sim_li, round(values$pi_sim, 7))
     if(length(values$pi_sim_li) > 5) values$pi_sim_li <- values$pi_sim_li[-1] # remove 1st
 })
 observeEvent(input$reset, {
@@ -102,8 +102,9 @@ fluidPage(
                     }
                 }),
                 renderText({
-                    if(length(values$pi_sim_li) >0) {
-                        paste("Previous values: ", paste(values$pi_sim_li, collapse=", "))
+                    len = length(values$pi_sim_li)
+                    if(len>0) {
+                        paste("Previous values: ", paste(values$pi_sim_li[-len], collapse=", "))
                     } else {
                         paste0("No previous values.")
                     }
