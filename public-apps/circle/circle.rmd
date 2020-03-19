@@ -84,7 +84,7 @@ Page 1
 
 fluidPage(
     fluidRow(
-        column(3, 
+        column(10, 
             renderPlot({
                 ggplot(values$data, aes(x=x, y=y, color=factor(inside))) + 
                     geom_polygon(aes(x, y), data = circle, inherit.aes = F) + 
@@ -96,7 +96,7 @@ fluidPage(
                     
                 
             }, width = 500, height = 500)),
-        column(1,
+        column(2,
             renderText({ 
                 paste("Counter: ", values$counter*per_step)
             }))
