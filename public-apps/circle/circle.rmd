@@ -81,7 +81,7 @@ Plot
 
 fluidPage(
     fluidRow(
-        column(6, 
+        column(3, 
             renderPlot({
                 ggplot(values$data, aes(x=x, y=y, color=factor(inside))) + 
                     geom_polygon(aes(x, y), data = circle, inherit.aes = F) + 
@@ -91,7 +91,8 @@ fluidPage(
                     scale_y_continuous(limits=c(min,max)) +
                     guides(color=FALSE) +
                     xlab("") + ylab("")
-            }, height=300, width=300),
+            }, height=300, width=300)),
+        column(3, 
             renderPlot({
                 ggplot(values$pi_sim_df, aes(x=counter, y=value)) + 
                     geom_line() +
