@@ -47,7 +47,7 @@ $A_s = 2R * 2R = 4R^2$ <br>
 $A_c = \pi * R^2$ <br>
 $\frac{A_c}{A_s} = \frac{\pi * R^2}{4R^2} = \frac{\pi}{4}$ <br>
 
-Thus, the simulated value of pi should be $\pi = 4 * \frac{number of points in circle}{number of points in square}$
+Thus, $\pi = 4 * \frac{number of points in circle}{number of points in square}$
 
 
 ```{r}
