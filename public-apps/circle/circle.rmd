@@ -1,11 +1,9 @@
 ---
 runtime: shiny
 title: "Monte carlo simulation of circle to find value of pi"
-output: 
-  html_document:
-    toc: true
-    theme: flatly
+output: flexdashboard::flex_dashboard
 ---
+
 
 ```{r}
 knitr::opts_chunk$set(echo=F, message=TRUE, warning=TRUE)
@@ -13,6 +11,8 @@ library(ggplot2)
 library(DT)
 ```
 
+Sidebar {.sidebar}
+=====================================
 
 ```{r}
 actionButton("add", "Add")
@@ -32,7 +32,8 @@ observeEvent(input$add, {
 
 output$data = renderDataTable({values$data})
 ```
-
+Page 1
+=====================================  
 ```{r}
 renderText({ 
     paste("Counter: ", values$counter)
