@@ -32,7 +32,7 @@ theme = theme_minimal()
 
 ```{r echo=TRUE}
 url = "https://co.vid19.sg/cases/search"
-df = get_data(url)
+df = tryCatch({ get_data(url) })
 ```
 
 Data is obtained from `r url`. 

@@ -33,14 +33,13 @@ clean_data = function(df, write=F) {
 
     df$patient.nationality = ""
     df[df$patient.citizen != "citizen",]$patient.nationality = 
-    sub("(national).*", "", tolower(df[df$patient.citizen != "citizen",]$patient.info))
+        sub("(national).*", "", tolower(df[df$patient.citizen != "citizen",]$patient.info))
     df$patient.nationality = 
-    trimws(sub("year-old", "", sub("([0-9]+|year|old|citizen)", "", df$patient.nationality)))
+        trimws(sub("year-old", "", sub("([0-9]+|year|old|citizen)", "", df$patient.nationality)))
     df[grepl("wuhan", df$patient.nationality), ]$patient.nationality = "chinese"
-    df[df$patient.nationality != "",]$patient.nationality
 
     df$gender = tolower(df$gender)
-    df$case.type = tolower(df$case.type)
+    df$infection.source = tolower(df$infection.source)
 
     # Remove unnecessary columns
     df$patient.info = NULL
