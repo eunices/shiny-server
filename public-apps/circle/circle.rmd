@@ -12,7 +12,7 @@ library(DT)
 ```
 
 ```{r}
-per_step = 100
+per_step = 50
 
 rad=1
 min=-1
