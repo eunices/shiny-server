@@ -135,6 +135,9 @@ grid.arrange(
 
 
 #### Hospital load through time
+
+Hospital load is an important metric to ensure that hospitals are not overloaded. Here, it's the sum of people who are not recovered. 
+
 ```{r}
 
 # N cases still requiring treatment
