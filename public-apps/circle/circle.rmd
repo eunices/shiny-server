@@ -12,12 +12,14 @@ library(DT)
 ```
 
 ```{r}
+per_step = 100
+
 rad=1
 min=-1
 max=min+2*rad
 
 angle = seq(-pi, pi, length = 50)
-circle = data.frame(x = sin(angle)/1, y = cos(angle))
+circle = data.frame(x = sin(angle), y = cos(angle))
 ```
 
 Sidebar {.sidebar}
@@ -33,8 +35,8 @@ values$counter = 0
 values$data = data.frame(x=numeric(), y=numeric(), inside=integer())
 observeEvent(input$add, { 
     values$counter = values$counter + 1
-    x = runif(10, min=min, max=max)
-    y = runif(10, min=min, max=max)
+    x = runif(per_step, min=min, max=max)
+    y = runif(per_step, min=min, max=max)
     inside = ifelse(x^2 + y^2 < max^2, 1, 0) 
     values$data = rbind(values$data, data.frame(x=x, y=y, inside=inside))
 })
@@ -44,7 +46,7 @@ output$data = renderDataTable({values$data})
 
 ```{r}
 renderText({ 
-    paste("Counter: ", values$counter)
+    paste("Counter: ", values$counter*per_step)
 })
 ```
 
