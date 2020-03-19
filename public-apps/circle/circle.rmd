@@ -29,11 +29,24 @@ The aim of this exercise is to simulate the value of $\pi$.
 
 ```{r}
 actionButton("add", "Add")
-pi_sim = 4*sum(values$data$inside==1)/length(values$data$inside)
 ```
-Counter: `r values$counter*per_step` <br>
-Simulated $\pi$ = `r pi_sim` <br>
-Real $\pi$ = `r pi` <br>
+
+```{r}
+renderText({ 
+    paste("Counter: ", values$counter*per_step)
+})
+```
+
+```{r}
+renderText({ 
+    if(dim(values$data)[1] >= 1) {
+        pi_sim = 4*sum(values$data$inside==1)/length(values$data$inside)
+        paste("Simulated pi: ", round(pi_sim, 7))
+    }
+})
+```
+
+Real $\pi$ = `r pi`<br>
 
 First, we draw a circle and a square.
 
