@@ -102,7 +102,7 @@ fluidPage(
                     }
                 }),
                 renderText({
-                    if(!length(values$pi_sim_li) <=0) {
+                    if(length(values$pi_sim_li) >0) {
                         paste("Previous values: ", paste(values$pi_sim_li, collapse=", "))
                     } else {
                         paste0("No previous values.")
