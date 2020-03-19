@@ -29,6 +29,6 @@ renderText({
 
 renderPlot({ 
     df = data.frame(N=counter$counter_value)
-    ggplot(df, aes(x=N)) + geom_boxplot()
+    ggplot(df, aes(x=N)) + geom_bar()
 })
 ```
