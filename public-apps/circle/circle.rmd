@@ -63,7 +63,7 @@ observeEvent(input$add, {
     values$data = rbind(values$data, data.frame(x=x, y=y, inside=inside))
     values$pi_sim = 4*sum(values$data$inside==1)/length(values$data$inside)
     values$pi_sim_li = c(values$pi_sim_li, values$pi_sim)
-    if(length(values$pi_sim) > 10) values$pi_sim <- values$pi_sim[-1] # remove 1st
+    if(length(values$pi_sim_li) > 10) values$pi_sim_li <- values$pi_sim_li[-1] # remove 1st
 })
 observeEvent(input$reset, {
     values$counter = 0
@@ -102,7 +102,7 @@ fluidPage(
                     }
                 }),
                 renderText({
-                    paste(values$pi_sim_li, collapse=", ")
+                    paste("Previous values: ", paste(values$pi_sim_li, collapse=", "))
                 }),
                 renderText({ 
                     paste("Counter: ", values$counter, " points added")
