@@ -82,7 +82,7 @@ fluidPage(
                     theme_minimal() +
                     scale_x_continuous(limits=c(min,max)) +
                     scale_y_continuous(limits=c(min,max)) +
-                    guides(color=FALSE) + coord_equal() 
+                    guides(color=FALSE)
             }), height=300, width=300),
         column(6,
             fluidPage(
