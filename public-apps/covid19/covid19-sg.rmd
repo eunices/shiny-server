@@ -20,6 +20,10 @@ library(data.table)
 source('main.r')
 source('util.r')
 
+# Resources
+# https://staff.math.su.se/hoehle/blog/2020/03/16/flatteningthecurve.html
+# https://blog.ephorie.de/covid-19-the-case-of-germany 
+
 # Params
 theme = theme_minimal()
 ```
