@@ -51,6 +51,8 @@ values = reactiveValues()
 values$counter = 0
 values$data = data.frame(x=numeric(), y=numeric(), inside=integer())
 values$step_size = per_step
+values$pi_sim = NA
+values$pi_sim_li = c()
 
 observeEvent(input$add, { 
     values$step_size = per_step^input$step 
@@ -59,6 +61,9 @@ observeEvent(input$add, {
     y = runif(values$step_size, min=min, max=max)
     inside = ifelse(x^2 + y^2 < max^2, 1, 0) 
     values$data = rbind(values$data, data.frame(x=x, y=y, inside=inside))
+    values$pi_sim = 4*sum(values$data$inside==1)/length(values$data$inside)
+    values$pi_sim_li = c(values$pi_sim_li, values$pi_sim)
+    if(length(values$pi_sim) > 10) values$pi_sim <- values$pi_sim[-1] # remove 1st
 })
 observeEvent(input$reset, {
     values$counter = 0
@@ -90,12 +95,14 @@ fluidPage(
             fluidPage(
                 renderText({
                     if(dim(values$data)[1] >= 1) {
-                        pi_sim = 4*sum(values$data$inside==1)/length(values$data$inside)
-                        paste("Simulated pi = ", formatC(round(pi_sim, 7), format='f', 
+                        paste("Simulated pi = ", formatC(round(values$pi_sim, 7), format='f', 
                                                          flag='0', digits=7))
                     } else {
                         paste("Simulation not started.")
                     }
+                }),
+                renderText({
+                    paste(values$pi_sim_li, collapse=", ")
                 }),
                 renderText({ 
                     paste("Counter: ", values$counter, " points added")
