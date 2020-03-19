@@ -83,14 +83,15 @@ fluidPage(
                     theme_minimal() +
                     scale_x_continuous(limits=c(min,max)) +
                     scale_y_continuous(limits=c(min,max)) +
-                    guides(color=FALSE) 
+                    guides(color=FALSE) +
+                    xlab("") + ylab("")
             }, height=300, width=300)),
         column(6,
             fluidPage(
                 renderText({
                     if(dim(values$data)[1] >= 1) {
                         pi_sim = 4*sum(values$data$inside==1)/length(values$data$inside)
-                        paste("Simulated pi = ", round(pi_sim, 7))
+                        paste("Simulated pi = ", formatC(round(pi_sim, 7), digits=7))
                     } else {
                         paste("Simulation not started.")
                     }
