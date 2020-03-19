@@ -30,7 +30,6 @@ The aim of this exercise is to simulate the value of $\pi$ (`r pi`).
 ```{r}
 actionButton("add", "Add", style="background-color: #337ab7")
 actionButton("reset", "Reset")
-
 numericInput("step", "Step size (power of 10)", 1, min = 1, max = 3)
 ```
 
@@ -42,14 +41,6 @@ Second, we start the simulation.
 2. Check if coordinates falls within the circle using formula
 $x^2 + y^2 < R^2$, where $R$ is the radius of the circle. 
 3. Tally number of points in circle/ number of points in square. Values should converge on $\frac{\pi}{4}$.
-
-This is because <br>
-
-$A_s = 2R * 2R = 4R^2$ <br>
-$A_c = \pi * R^2$ <br>
-$\frac{A_c}{A_s} = \frac{\pi * R^2}{4R^2} = \frac{\pi}{4}$ <br>
-
-Thus, $\pi = 4 * \frac{number of points in circle}{number of points in square}$
 
 
 ```{r}
@@ -116,3 +107,14 @@ Page 2
 ```{r}
 dataTableOutput("data")
 ```
+
+Page 3
+=====================================  
+
+This is because <br>
+
+$A_s = 2R * 2R = 4R^2$ <br>
+$A_c = \pi * R^2$ <br>
+$\frac{A_c}{A_s} = \frac{\pi * R^2}{4R^2} = \frac{\pi}{4}$ <br>
+
+Thus, $\pi = 4 * \frac{number of points in circle}{number of points in square}$
