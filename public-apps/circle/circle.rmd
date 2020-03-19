@@ -28,8 +28,8 @@ Sidebar {.sidebar}
 The aim of this exercise is to simulate the value of $\pi$.
 
 ```{r}
-actionButton("add", "Add")
-actionButton("reset", "Reset")
+actionButton("add", "Add", style="background-color: #337ab7")
+actionButton("reset", "Reset", style="background-color: #337ab7")
 ```
 
 ```{r}
