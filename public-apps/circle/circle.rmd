@@ -1,6 +1,6 @@
 ---
 runtime: shiny
-title: "Monte carlo simulation of circle to find value of pi"
+title: "Monte carlo simulation"
 output: flexdashboard::flex_dashboard
 ---
 
@@ -24,6 +24,17 @@ circle = data.frame(x = sin(angle), y = cos(angle))
 
 Sidebar {.sidebar}
 =====================================
+
+The aim of this exercise is to simulate the value of $\pi$.
+
+First, we draw a circle and a square.
+
+1. Randomly draw x,y coordinate in square. 
+2. Check if it falls within the circle using formula
+$x^2 + y^2 < R^2$, where $R$ is the radius of the circle. If it does, mark as "inside", otherwise "outside".
+3. Tally number of points in circle/ number of points in square. 
+
+The simulated value of pi should be $\pi = 4 * (number of points in circle) / (number of points in square)$
 
 ```{r}
 actionButton("add", "Add")
