@@ -38,12 +38,12 @@ First, we draw a circle and a square.
 $x^2 + y^2 < R^2$, where $R$ is the radius of the circle. If it does, mark as "inside", otherwise "outside".
 3. Tally number of points in circle/ number of points in square. 
 
+
+$A_s = 2R * 2R = 4R^2$ <br>
+$A_c = \pi * R^2$ <br>
+$\frac{A_c}{A_s} = \frac{\pi * R^2}{4R^2} = \frac{\pi}{4}$ <br>
+
 The simulated value of pi should be $\pi = 4 * \frac{number of points in circle}{number of points in square}$
-
-$A_s = 2R * 2R = 4R^2$
-$A_c = \pi * R^2$
-$\frac{A_c}{A_s} = \frac{\pi * R^2}{4R^2} = \frac{\pi}{4}$
-
 
 ```{r}
 values = reactiveValues()
