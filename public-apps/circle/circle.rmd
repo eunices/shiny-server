@@ -26,4 +26,9 @@ observeEvent(input$add, { counter$counter_value = counter$counter_value + 1})
 renderText({ 
     paste("Counter: ", counter$counter_value)
 })
+
+renderPlot({ 
+    df = data.frame(N=counter$counter_value)
+    ggplot(df, aes(x=N)) + geom_boxplot()
+})
 ```
