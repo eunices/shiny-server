@@ -69,6 +69,8 @@ observeEvent(input$add, {
 observeEvent(input$reset, {
     values$counter = 0
     values$data = data.frame(x=numeric(), y=numeric(), inside=integer())
+    values$pi_sim = NA
+    values$pi_sim_df = data.frame(counter=integer(), value=numeric())
 })
 
 output$data = renderDataTable({values$data})
