@@ -82,7 +82,7 @@ Page 1
 
 ```{r}
 
-fluidRow(
+fluidPage(
     renderPlot({
         ggplot(values$data, aes(x=x, y=y, color=factor(inside))) + 
             geom_polygon(aes(x, y), data = circle, inherit.aes = F) + 
