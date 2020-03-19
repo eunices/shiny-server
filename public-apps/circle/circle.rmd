@@ -14,13 +14,13 @@ knitr::opts_chunk$set(echo=TRUE, message=TRUE, warning=TRUE)
 
 ```{r}
 actionButton("counter", "Add")
-```
 
-```{r}
 randomVals <- eventReactive(input$counter, {
     runif(100)
 })
+```
 
+```{r}
 renderPlot({
     hist(randomVals())
 })
