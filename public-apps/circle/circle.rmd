@@ -52,13 +52,13 @@ Page 1
 
 ```{r}
 renderPlot({
-    ggplot(values$data, aes(x=x, y=y)) + 
+    ggplot(values$data, aes(x=x, y=y, color=inside)) + 
         geom_point() +
         theme_minimal() +
         scale_x_continuous(limits=c(min,max)) +
         scale_y_continuous(limits=c(min,max))
     
-}, width = "auto", height = "auto",)
+}, width = "auto", height = "auto")
 ```
 
 Page 2
