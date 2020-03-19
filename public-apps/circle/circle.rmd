@@ -35,10 +35,10 @@ actionButton("reset", "Reset")
 - First, we draw a circle and a square.
 
 - Second, we start the simulation.
-    1. Randomly draw x,y coordinates in square. 
-    2. Check if coordinates falls within the circle using formula
-    $x^2 + y^2 < R^2$, where $R$ is the radius of the circle. 
-    3. Tally number of points in circle/ number of points in square. Values should converge on $\frac{\pi}{4}$.
+1. Randomly draw x,y coordinates in square. 
+2. Check if coordinates falls within the circle using formula
+$x^2 + y^2 < R^2$, where $R$ is the radius of the circle. 
+3. Tally number of points in circle/ number of points in square. Values should converge on $\frac{\pi}{4}$.
 
 $A_s = 2R * 2R = 4R^2$ <br>
 $A_c = \pi * R^2$ <br>
