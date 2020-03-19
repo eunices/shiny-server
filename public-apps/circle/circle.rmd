@@ -52,8 +52,8 @@ Page 1
 
 ```{r}
 renderPlot({
-    ggplot(values$data, aes(x=x, y=y)) + 
-        geom_point(aes(color=factor(inside))) +
+    ggplot(values$data, aes(x=x, y=y, fill=inside)) + 
+        geom_point() +
         theme_minimal() +
         scale_x_continuous(limits=c(min,max)) +
         scale_y_continuous(limits=c(min,max))
