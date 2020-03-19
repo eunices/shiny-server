@@ -34,7 +34,7 @@ First, we draw a circle and a square.
 $x^2 + y^2 < R^2$, where $R$ is the radius of the circle. If it does, mark as "inside", otherwise "outside".
 3. Tally number of points in circle/ number of points in square. 
 
-The simulated value of pi should be $\pi = 4 * (number of points in circle) / (number of points in square)$
+The simulated value of pi should be $\pi = 4 * \frac{number of points in circle}{number of points in square}$
 
 ```{r}
 actionButton("add", "Add")
