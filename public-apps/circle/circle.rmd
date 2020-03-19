@@ -99,7 +99,7 @@ fluidPage(
                 ggplot(values$pi_sim_df, aes(x=counter, y=value)) + 
                     geom_hline(yintercept=pi, size=2, color="red") +
                     geom_line() +
-                    geom_points() + 
+                    geom_point() + 
                     theme_minimal() +
                     guides(color=FALSE) +
                     xlab("Number of points") + ylab("Simulated pi value\n")
