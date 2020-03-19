@@ -205,7 +205,7 @@ ggplot(df, aes(x=days.to.recover.symptomatic)) + geom_histogram(binwidth=binwidt
 
 #### Association between age and days to recover
 
-Here we attempt to investigate if there is an association with number of days to recover and age. Age does not appear to be associated with the number of days to recover, though [fatalities are higher for elderly above 65](https://www.businessinsider.sg/most-us-coronavirus-deaths-ages-65-older-cdc-report-2020-3).
+Here we attempt to investigate if there is an association with number of days to recover and age, as [fatalities are higher for elderly above 65](https://www.businessinsider.sg/most-us-coronavirus-deaths-ages-65-older-cdc-report-2020-3).
 
 ```{r}
 selectInput("age_width", label = "Age bin width", choices = c(5, 10, 20), selected = 5)
@@ -235,4 +235,4 @@ df_corr = df[!is.na(df[, c("days.to.recover.symptomatic")]),]
 rsq = cor(as.numeric(df_corr$age), as.numeric(df_corr$days.to.recover.symptomatic))^2
 
 ```
-$R^2$ = `r round(rsq*100, 2)`%
+Age does not appear to be associated with the number of days to recover ($R^2$ = `r round(rsq*100, 2)`%). 
