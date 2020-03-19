@@ -27,6 +27,10 @@ Sidebar {.sidebar}
 
 The aim of this exercise is to simulate the value of $\pi$.
 
+```{r}
+actionButton("add", "Add")
+```
+
 First, we draw a circle and a square.
 
 1. Randomly draw x,y coordinate in square. 
@@ -36,9 +40,6 @@ $x^2 + y^2 < R^2$, where $R$ is the radius of the circle. If it does, mark as "i
 
 The simulated value of pi should be $\pi = 4 * \frac{number of points in circle}{number of points in square}$
 
-```{r}
-actionButton("add", "Add")
-```
 
 ```{r}
 values = reactiveValues()
