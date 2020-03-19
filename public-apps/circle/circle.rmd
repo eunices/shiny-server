@@ -83,21 +83,23 @@ Page 1
 ```{r}
 
 fluidPage(
-    renderPlot({
-        ggplot(values$data, aes(x=x, y=y, color=factor(inside))) + 
-            geom_polygon(aes(x, y), data = circle, inherit.aes = F) + 
-            geom_point() +
-            theme_minimal() +
-            scale_x_continuous(limits=c(min,max)) +
-            scale_y_continuous(limits=c(min,max)) +
-            guides(color=FALSE)
-            
-        
-    }, width = 500, height = 500),
-
-    renderText({ 
-        paste("Counter: ", values$counter*per_step)
-    })
+    fluidRow(
+        column(5, 
+            renderPlot({
+                ggplot(values$data, aes(x=x, y=y, color=factor(inside))) + 
+                    geom_polygon(aes(x, y), data = circle, inherit.aes = F) + 
+                    geom_point() +
+                    theme_minimal() +
+                    scale_x_continuous(limits=c(min,max)) +
+                    scale_y_continuous(limits=c(min,max)) +
+                    guides(color=FALSE)
+                    
+                
+            }, width = 500, height = 500)),
+        column(3,
+            renderText({ 
+                paste("Counter: ", values$counter*per_step)
+            }))
 )
 ```
 
