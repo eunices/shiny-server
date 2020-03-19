@@ -93,7 +93,7 @@ fluidPage(
             guides(color=FALSE)
             
         
-    }, width = 400, height = 400)
+    }, width = 400, height = 400),
 
     renderText({ 
         paste("Counter: ", values$counter*per_step)
