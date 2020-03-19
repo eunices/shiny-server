@@ -223,7 +223,7 @@ renderPlot({
 ```
 
 ```{r fig.height=4, fig.width=12}
-ggplot(df, aes(x=age, y=days.to.recover.symptomatic)) + 
+ggplot(df, aes(x=as.numeric(age), y=as.numeric(days.to.recover.symptomatic))) + 
   geom_smooth(method='lm', formula= y~x) +
   geom_point() + 
   xlab("Age") + ylab("Days to recover") +
