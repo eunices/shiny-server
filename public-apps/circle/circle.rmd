@@ -42,8 +42,8 @@ actionButton("reset", "Reset")
 numericInput("step", "Step size (power of 10)", 1, min = 1, max = 3)
 ```
 
-- See tab 2 for data generated.
-- See tab 3 tab for why this works.
+- See [Data](#section-data) tab for data generated.
+- See [Why this works](#section-why-this-works) tab for the math.
 
 
 ```{r}
