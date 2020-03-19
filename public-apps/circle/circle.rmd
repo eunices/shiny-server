@@ -32,17 +32,6 @@ actionButton("add", "Add", style="background-color: #337ab7")
 actionButton("reset", "Reset")
 ```
 
-```{r}
-renderText({ 
-    if(dim(values$data)[1] >= 1) {
-        pi_sim = 4*sum(values$data$inside==1)/length(values$data$inside)
-        paste("Simulated pi = ", round(pi_sim, 7))
-    }
-})
-```
-
-Real pi = `r pi`<br>
-
 First, we draw a circle and a square.
 
 1. Randomly draw x,y coordinates in square. 
@@ -99,6 +88,11 @@ fluidPage(
         column(2,
             renderText({ 
                 paste("Counter: ", values$counter*per_step)
+
+                if(dim(values$data)[1] >= 1) {
+                    pi_sim = 4*sum(values$data$inside==1)/length(values$data$inside)
+                    paste("Simulated pi = ", round(pi_sim, 7))
+                }
             }))
 ))
 ```
