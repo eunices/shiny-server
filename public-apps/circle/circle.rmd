@@ -83,10 +83,8 @@ fluidPage(
                     scale_x_continuous(limits=c(min,max)) +
                     scale_y_continuous(limits=c(min,max)) +
                     guides(color=FALSE) + 
-                    coord_fixed()
-                    
-                
-            })),
+                    coord_fixed()                
+            }), height="90%", width="90%"),
         column(6,
             fluidPage(
                 renderText({ 
