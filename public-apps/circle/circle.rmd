@@ -57,11 +57,11 @@ Page 1
 ```{r}
 renderPlot({
     ggplot(values$data, aes(x=x, y=y, color=factor(inside))) + 
+        geom_polygon(aes(x, y), data = circle, inherit.aes = F) + 
         geom_point() +
         theme_minimal() +
         scale_x_continuous(limits=c(min,max)) +
         scale_y_continuous(limits=c(min,max)) +
-        geom_polygon(aes(x, y), data = circle, inherit.aes = F) + 
         guides(color=FALSE)
         
     
