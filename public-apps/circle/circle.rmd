@@ -12,7 +12,7 @@ library(DT)
 ```
 
 ```{r}
-per_step = 100
+per_step = 10
 
 rad=1
 min=-1
@@ -56,7 +56,8 @@ values$counter = 0
 values$data = data.frame(x=numeric(), y=numeric(), inside=integer())
 values$step_size = per_step
 observeEvent(input$add, { 
-    values$step_size = ifelse(values$counter < 1000, per_step, per_step *10)
+    values$step_size = ifelse(values$counter < 100, per_step,
+        ifelse(values$counter < 1000, per_step^2, per_step^3))
     values$counter = values$counter + values$step_size
     x = runif(values$step_size, min=min, max=max)
     y = runif(values$step_size, min=min, max=max)
