@@ -31,6 +31,22 @@ The aim of this exercise is to simulate the value of $\pi$.
 actionButton("add", "Add")
 ```
 
+```{r}
+renderText({ 
+    paste("Counter: ", values$counter*per_step)
+})
+```
+
+```{r}
+renderText({ 
+    if(dim(values$data)[1] >= 1) {
+        paste("Simulate pi: ", 4*sum(values$data$inside==1)/length(values$data$inside))
+    }
+})
+```
+
+Real $\pi$ = `r pi`<br>
+
 First, we draw a circle and a square.
 
 1. Randomly draw x,y coordinate in square. 
@@ -44,6 +60,7 @@ $A_c = \pi * R^2$ <br>
 $\frac{A_c}{A_s} = \frac{\pi * R^2}{4R^2} = \frac{\pi}{4}$ <br>
 
 The simulated value of pi should be $\pi = 4 * \frac{number of points in circle}{number of points in square}$
+
 
 ```{r}
 values = reactiveValues()
@@ -59,23 +76,6 @@ observeEvent(input$add, {
 
 output$data = renderDataTable({values$data})
 ```
-
-```{r}
-renderText({ 
-    paste("Counter: ", values$counter*per_step)
-})
-```
-
-```{r}
-renderText({ 
-    if(dim(values$data)[1] >= 1) {
-        paste("Simulate pi: ", 4*sum(values$data$inside==1)/length(values$data$inside))
-    }
-})
-```
-
-Real $\pi$ = `r pi`
-
 
 Page 1
 =====================================  
