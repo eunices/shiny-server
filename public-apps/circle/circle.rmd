@@ -10,6 +10,7 @@ output:
 ```{r}
 knitr::opts_chunk$set(echo=F, message=TRUE, warning=TRUE)
 library(ggplot2)
+library(DT)
 ```
 
 
