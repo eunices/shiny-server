@@ -63,7 +63,7 @@ observeEvent(input$add, {
     values$data = rbind(values$data, data.frame(x=x, y=y, inside=inside))
     values$pi_sim = 4*sum(values$data$inside==1)/length(values$data$inside)
     values$pi_sim_li = c(values$pi_sim_li, round(values$pi_sim, 7))
-    if(length(values$pi_sim_li) > 5) values$pi_sim_li <- values$pi_sim_li[-1] # remove 1st
+    if(length(values$pi_sim_li) > 6) values$pi_sim_li <- values$pi_sim_li[-1] # remove 1st
 })
 observeEvent(input$reset, {
     values$counter = 0
