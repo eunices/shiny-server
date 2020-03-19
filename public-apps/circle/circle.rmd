@@ -24,19 +24,15 @@ values$data = data.frame(x=numeric(), y=numeric())
 
 observeEvent(input$add, { 
     values$counter = values$counter + 1
-    values$data = rbind(values$data, 
-                        data.frame(x=runif(1, min=0, max=1),
-                                   y=runif(1, min=0, max=1))
+    # values$data = rbind(values$data, 
+    #                     data.frame(x=runif(1, min=0, max=1),
+    #                                y=runif(1, min=0, max=1))
 })
 ```
 
 ```{r}
 renderText({ 
     paste("Sampled value: ", values$sampledx)
-})
-
-renderDataTable({
-    # values$data
 })
 
 renderPlot({
