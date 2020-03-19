@@ -41,7 +41,8 @@ Page 1
 renderText({ 
     paste("Counter: ", values$counter)
 })
-
+```
+```{r}
 renderPlot({
     ggplot(values$data, aes(x=x, y=y)) + geom_point()
     # df = data.frame(N=values$counter)
