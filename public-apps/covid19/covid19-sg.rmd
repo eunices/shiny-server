@@ -42,12 +42,12 @@ Data is obtained from `r url`.
 ## Clean data
 
 ```{r echo=TRUE}
-if(exists("df")) {
-  df = clean_data(df)
-} else {
-  df = get_alternative_data()
-}  
-str(df)
+# if(exists("df")) {
+#   df = clean_data(df)
+# } else {
+#   df = get_alternative_data()
+# }  
+# str(df)
 ```
 
 ### Notes about data
@@ -63,11 +63,11 @@ covid19-coronavirus-singapore-discharged-patients-moh-12477696).
 
 #### Cases detected through time
 ```{r}
-min_date = min(df$confirmed.at.date, na.rm=T)
-max_date = max(df$confirmed.at.date, na.rm=T)
+# min_date = min(df$confirmed.at.date, na.rm=T)
+# max_date = max(df$confirmed.at.date, na.rm=T)
 ```
 
-The first case detected in Singapore on `r format(min_date, "%d %B %Y")`. 
+The first case detected in Singapore on `r # format(min_date, "%d %B %Y")`. 
 
 ```{r}
 
@@ -111,10 +111,11 @@ The first case detected in Singapore on `r format(min_date, "%d %B %Y")`.
 #       theme
 # })
 ```
+
 From here, we can see that there are two waves of cases, the first from EW 03 to EW 07 and second from EW 08 onwards. These are associated with the Chinese cases mainly and when there was a global spread subsequently with Europe as the epicenter.
 
-```{r}
 
+```{r}
 # data_1st_wave = data.table(df[df$confirmed.at.date < date_second_wave &
 #                               df$infection.source == "imported case",])
 # data_1st_wave = data_1st_wave[, list(N=length(case)),by="country.of.origin"]
@@ -140,7 +141,7 @@ Case load is an important metric that is correlated also with hospital load. Her
 
 Measuring hospital load is key to ensure that hospitals are not overloaded.  We assume that the number of those who require hospitalisation is 20% of the case load, since it is a conservative estimate that 20% of the patients require hospitalisation and/or ICU care. From [24 Mar 2020](https://go.gov.sg/measures24mar), those who still test positive but display no symptoms will no longer be hospitalised. 
 
-There are 9 public acute hospitals in Singapore, with an average capacity of 1,200 beds. They are currently operating at approximately [75% load](https://www.moh.gov.sg/resources-statistics/healthcare-institution-statistics/beds-occupancy-rate-(bor)). We assume that hospitals can operate at a 90% bed load, to ensure that hospitals are not overtaxed and there is sufficient isolation between covid patients (more than usual required). Then there would be `r max_load` beds available. 
+There are 9 public acute hospitals in Singapore, with an average capacity of 1,200 beds. They are currently operating at approximately [75% load](https://www.moh.gov.sg/resources-statistics/healthcare-institution-statistics/beds-occupancy-rate-(bor)). We assume that hospitals can operate at a 90% bed load, to ensure that hospitals are not overtaxed and there is sufficient isolation between covid patients (more than usual required). Then there would be `r # max_load` beds available. 
 
 ```{r}
 
@@ -188,13 +189,13 @@ Recovered date is based on the discharged date when there are [consecutive negat
 #### Days to recovery histogram
 
 ```{r}
-is.recovered = table(!is.na(df[, c("days.to.recover.symptomatic")]))
+# is.recovered = table(!is.na(df[, c("days.to.recover.symptomatic")]))
 ```
-- Number of recovered persons: `r is.recovered[2]`
-- Proportion of recovered persons: `r round(prop.table(is.recovered)[2]*100, 2)`%
+- Number of recovered persons: `r # is.recovered[2]`
+- Proportion of recovered persons: `r # round(prop.table(is.recovered)[2]*100, 2)`%
 
-- Median time to recovery (from confirmed): `r as.numeric(median(df[, c("days.to.recover.symptomatic")], na.rm=T))` days
-- Median time to recovery (from confirmed): `r round(as.numeric(mean(df[, c("days.to.recover.symptomatic")], na.rm=T)), 2)` days
+- Median time to recovery (from confirmed): `r # as.numeric(median(df[, c("days.to.recover.symptomatic")], na.rm=T))` days
+- Median time to recovery (from confirmed): `r # round(as.numeric(mean(df[, c("days.to.recover.symptomatic")], na.rm=T)), 2)` days
 
 ```{r fig.height=3, fig.width=5}
 # binwidth = 5
