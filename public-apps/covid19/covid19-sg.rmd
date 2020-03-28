@@ -241,7 +241,7 @@ Here we attempt to investigate if there is an association with number of days to
 # df_corr = df[!is.na(df[, c("days.to.recover.symptomatic")]),]
 # rsq = cor(as.numeric(df_corr$age), as.numeric(df_corr$days.to.recover.symptomatic))^2
 ```
-Age does not appear to be associated with the number of days to recover ($R^2$ = `r round(rsq*100, 2)`%). 
+Age does not appear to be associated with the number of days to recover ($R^2$ = `r #round(rsq*100, 2)`%). 
 
 ### Interventions in Singapore
 
