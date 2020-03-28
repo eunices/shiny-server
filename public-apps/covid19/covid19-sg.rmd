@@ -65,33 +65,32 @@ covid19-coronavirus-singapore-discharged-patients-moh-12477696).
 ```{r}
 min_date = min(df$confirmed.at.date, na.rm=T)
 max_date = max(df$confirmed.at.date, na.rm=T)
+date_second_wave = as.Date("2020-02-25")
 ```
 
 The first case detected in Singapore on `r format(min_date, "%d %B %Y")`. 
 
 ```{r}
+style = "display: inline-block;vertical-align:top; padding-right: 20px"
+bootstrapPage(
+  div(style=style, dateRangeInput("range_date", "Date range", 
+                                  start = min_date, end = max_date,
+                                  min = min_date, max = max_date)),
+  div(style=style, numericInput("binwidth_date", "Days bin width", value = 1, min=1, max=14)))
 
-# date_second_wave = as.Date("2020-02-25")
-# style = "display: inline-block;vertical-align:top; padding-right: 20px"
-# bootstrapPage(
-#   div(style=style, dateRangeInput("range_date", "Date range", 
-#                                   start = min_date, end = max_date,
-#                                   min = min_date, max = max_date)),
-#   div(style=style, numericInput("binwidth_date", "Days bin width", value = 1, min=1, max=14)))
+renderPlot({
+    # input = list(range_date = c(as.Date(min_date), as.Date(max_date)), binwidth=1)
+    min_date = input$range_date[1]
+    max_date = input$range_date[2]
+    data = df[df$confirmed.at.date >= min_date & df$confirmed.at.date <= max_date,]
 
-# renderPlot({
-#     # input = range(range_date = c(as.Date(min_date), as.Date(max_date)), binwidth=1)
-#     min_date = input$range_date[1]
-#     max_date = input$range_date[2]
-#     data = df[df$confirmed.at.date >= min_date & df$confirmed.at.date <= max_date,]
-
-#     ggplot(data=data, aes(x=confirmed.at.date)) +
-#       geom_histogram(stat="bin", binwidth=input$binwidth_date, fill="steelblue") + 
-#       xlab("") + ylab("") + 
-#       geom_vline(xintercept=date_second_wave, size=2, col="red") +
-#       scale_x_date(date_breaks = "weeks", date_labels = "%Y EW %U") +
-#       theme
-# }, height=280)
+    ggplot(data=data, aes(x=confirmed.at.date)) +
+      geom_histogram(stat="bin", binwidth=input$binwidth_date, fill="steelblue") + 
+      xlab("") + ylab("") + 
+      geom_vline(xintercept=date_second_wave, size=2, col="red") +
+      scale_x_date(date_breaks = "weeks", date_labels = "%Y EW %U") +
+      theme
+}, height=280)
 
 # renderPlot({
 #     min_date = input$range_date[1]
