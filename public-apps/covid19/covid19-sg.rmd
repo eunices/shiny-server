@@ -53,9 +53,9 @@ str(df)
 ### Notes about data
 
 1. symptomatic < confirmed < recovered date
-2. Recovered date is based on the discharged date when there are [consecutive negative PCR tests](https://www.channelnewsasia.com/news/singapore/covid19-coronavirus-singapore-discharged-patients-moh-12477696). 
-3. `days.to.recover.symptomatic` = recovered - symptomatic
-4. `days.to.recover.resources` = recovered - confirmed
+covid19-coronavirus-singapore-discharged-patients-moh-12477696). 
+2. `days.to.recover.symptomatic` = recovered - symptomatic
+3. `days.to.recover.resources` = recovered - confirmed
 
 ## What are the figures
 
@@ -116,13 +116,11 @@ From here, we can see that there are two waves of cases, the first from EW 03 to
 
 data_1st_wave = data.table(df[df$confirmed.at.date < date_second_wave &
                               df$infection.source == "imported case",])
-data_1st_wave = data_1st_wave[, list(N=length(case)),by="patient.nationality"]
-data_1st_wave[patient.nationality==""]$patient.nationality = "singaporean"
+data_1st_wave = data_1st_wave[, list(N=length(case)),by="country.of.origin"]
 
 data_2nd_wave = data.table(df[df$confirmed.at.date >= date_second_wave &
                               df$infection.source == "imported case",])
-data_2nd_wave = data_2nd_wave[, list(N=length(case)),by="patient.nationality"]
-data_2nd_wave[patient.nationality==""]$patient.nationality = "singaporean"
+data_2nd_wave = data_2nd_wave[, list(N=length(case)),by="country.of.origin"]
 
 grid.arrange(
   ggplot(data_1st_wave, aes(x=camelcase_labeller("", patient.nationality), y=N)) +
@@ -135,15 +133,19 @@ grid.arrange(
 ```
 
 
-#### Hospital load through time
+#### Cases through time
 
-Hospital load is an important metric to ensure that hospitals are not overloaded. Here, it's the sum of people who are not recovered. 
+Case load is an important metric that is correlated also with hospital load. Here, it's the sum of people who are not recovered. 
+
+Measuring hospital load is key to ensure that hospitals are not overloaded.  We assume that the number of those who require hospitalisation is 20% of the case load, since it is a conservative estimate that 20% of the patients require hospitalisation and/or ICU care. From [24 Mar 2020](https://go.gov.sg/measures24mar), those who still test positive but display no symptoms will no longer be hospitalised. 
+
+There are 9 public acute hospitals in Singapore, with an average capacity of 1,200 beds. They are currently operating at approximately [75% load](https://www.moh.gov.sg/resources-statistics/healthcare-institution-statistics/beds-occupancy-rate-(bor)). We assume that hospitals can operate at a 90% bed load, to ensure that hospitals are not overtaxed and there is sufficient isolation between covid patients (more than usual required). Then there would be `r max_load` beds available. 
 
 ```{r}
 
 # N cases still requiring treatment
 
-# TODO: filter out fatalities
+date_no_hosp = as.Date("2020-03-24")
 df_cases = df[df$status != "Deceased", c("case", "symptomatic.at.date", "recovered.at.date", "confirmed.at.date")]
 df_cases[is.na(df_cases$recovered.at.date),]$recovered.at.date = Sys.Date()
 df_cases[is.na(df_cases$symptomatic.at.date),]$symptomatic.at.date = 
@@ -154,8 +156,11 @@ df_cases$day = mapply(function(min, max) { seq(min, max, by="day") },
                        min=df_cases$symptomatic.at.date, max=df_cases$recovered.at.date)
 df_cases_day = data.table(unnest(df_cases, cols=c(day, case))); rm(df_cases)
 df_cases_day = df_cases_day[, list(hospital_load=length(case)), by="day"]
+df_cases_day[day>=date_no_hosp]$hospital_load =  df_cases_day[day>=date_no_hosp]$hospital_load*0.2
+
 
 max_load = 9*1200*0.15
+load_prop = 0.2
 renderPlot({
   ggplot(data=df_cases_day, aes(x=day, y=hospital_load)) +
     geom_bar(stat="identity", fill="steelblue") + 
@@ -166,16 +171,18 @@ renderPlot({
 renderPlot({
   ggplot(data=df_cases_day, aes(x=day, y=round(hospital_load/max_load*100, 2))) +
     geom_bar(stat="identity", fill="steelblue") + 
+    geom_vline(xintercept=date_no_hosp, size=2, col="red") +
     xlab("") + ylab("% of (estimated) maximum patient load\n") + 
     scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
     theme
 }, height=280)
 ```
 
-There are 9 public acute hospitals in Singapore, with an average capacity of 1,200 beds. They are currently operating at approximately [75% load](https://www.moh.gov.sg/resources-statistics/healthcare-institution-statistics/beds-occupancy-rate-(bor)). We assume that hospitals can operate at a 90% bed load, to ensure that hospitals are not overtaxed and there is sufficient isolation between covid patients (more than usual required). Then there would be `r max_load` beds available. 
 
 
 ### Recovery time
+
+Recovered date is based on the discharged date when there are [consecutive negative PCR tests](https://www.channelnewsasia.com/news/singapore/.
 
 #### Days to recovery histogram
 
@@ -235,3 +242,6 @@ rsq = cor(as.numeric(df_corr$age), as.numeric(df_corr$days.to.recover.symptomati
 
 ```
 Age does not appear to be associated with the number of days to recover ($R^2$ = `r round(rsq*100, 2)`%). 
+
+#### Interventions in Singapore
+
