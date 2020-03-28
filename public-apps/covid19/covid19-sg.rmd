@@ -241,10 +241,10 @@ renderPlot({
 #### Gender
 
 ```{r}
-ggplot(data, aes(x=gender, y=days.to.recover.symptomatic)) + 
-  geom_boxplot() +
-  geom_jitter(height = 0, width = 0.1) +
-  xlab("Gender") + ylab("Days to recover") + theme
+# ggplot(data, aes(x=gender, y=days.to.recover.symptomatic)) + 
+#   geom_boxplot() +
+#   geom_jitter(height = 0, width = 0.1) +
+#   xlab("Gender") + ylab("Days to recover") + theme
 ```
 
 
