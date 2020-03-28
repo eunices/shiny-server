@@ -114,7 +114,7 @@ renderPlot({
 From here, we can see that there are two waves of cases, the first from EW 03 to EW 07 and second from EW 08 onwards. These are associated with the Chinese cases mainly and when there was a global spread subsequently with Europe as the epicenter.
 
 
-```{r}
+```{r fig.height=5, fig.width=5}
 data_1st_wave = data.table(df[df$confirmed.at.date < date_second_wave & df$infection.source == "imported case",])
 data_1st_wave = data_1st_wave[, list(N=length(case)),by="country.of.origin"]
 
@@ -160,22 +160,22 @@ df_cases_day = df_cases_day[, list(hospital_load=length(case)), by="day"]
 df_cases_day$hospital_load = as.numeric(df_cases_day$hospital_load)
 df_cases_day[day>=date_no_hosp,]$hospital_load =  df_cases_day[day>=date_no_hosp,]$hospital_load*hosp_prop
 
-# renderPlot({
-#   ggplot(data=df_cases_day, aes(x=day, y=hospital_load)) +
-#     geom_bar(stat="identity", fill="steelblue") + 
-#     xlab("") + ylab("Number of hospitalised peersons\n") + 
-#     scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
-#     theme
-# }, height=280)
+renderPlot({
+  ggplot(data=df_cases_day, aes(x=day, y=hospital_load)) +
+    geom_bar(stat="identity", fill="steelblue") + 
+    xlab("") + ylab("Number of hospitalised peersons\n") + 
+    scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
+    theme
+}, height=280)
 
-# renderPlot({
-#   ggplot(data=df_cases_day, aes(x=day, y=round(hospital_load/max_load*100, 2))) +
-#     geom_bar(stat="identity", fill="steelblue") + 
-#     geom_vline(xintercept=date_no_hosp-1, size=2, col="red") +
-#     xlab("") + ylab("% of (estimated) maximum patient load\n") + 
-#     scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
-#     theme
-# }, height=280)
+renderPlot({
+  ggplot(data=df_cases_day, aes(x=day, y=round(hospital_load/max_load*100, 2))) +
+    geom_bar(stat="identity", fill="steelblue") + 
+    geom_vline(xintercept=date_no_hosp-1, size=2, col="red") +
+    xlab("") + ylab("% of (estimated) maximum patient load\n") + 
+    scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
+    theme
+}, height=280)
 ```
 
 ### Recovery time
