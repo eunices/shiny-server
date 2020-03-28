@@ -11,7 +11,7 @@ output:
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
 ```
 
-```{r echo=TRUE}
+```{r}
 # Libraries
 library(rvest)
 library(ggplot2)
@@ -32,7 +32,7 @@ theme = theme_minimal()
 
 ## Get data
 
-```{r echo=TRUE}
+```{r}
 url = "https://co.vid19.sg/cases/search"
 df = tryCatch({ get_data(url) })
 ```
@@ -41,12 +41,15 @@ Data is obtained from `r url`.
 
 ## Clean data
 
-```{r echo=TRUE}
+```{r}
 if(exists("df")) {
   df = clean_data(df)
 } else {
   df = get_alternative_data()
 }  
+```
+
+```{r echo=TRUE}
 str(df)
 ```
 
@@ -245,13 +248,11 @@ ggplot(df, aes(x=as.numeric(age), y=as.numeric(days.to.recover.symptomatic))) +
 df_corr = df[!is.na(df[, c("days.to.recover.symptomatic")]),]
 rsq = cor(as.numeric(df_corr$age), as.numeric(df_corr$days.to.recover.symptomatic))^2
 ```
-Age does not appear to be associated with the number of days to recover ($R^2$ = `r #round(rsq*100, 2)`%). 
+Age does not appear to be associated with the number of days to recover ($R^2$ = `r round(rsq*100, 2)`%). 
 
+## Interventions in Singapore
 
-
-### Interventions in Singapore
-
-#### Key measures
+### Key measures
 
 - 2020-03-28: defer non-essential trips to malls
 - 2020-03-27: [home based learning](http://go.gov.sg/homebasedlearning) once a week for primary, secondary schools, and junior college
