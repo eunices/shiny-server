@@ -114,7 +114,7 @@ renderPlot({
 From here, we can see that there are two waves of cases, the first from EW 03 to EW 07 and second from EW 08 onwards. These are associated with the Chinese cases mainly and when there was a global spread subsequently with Europe as the epicenter.
 
 
-```{r fig.height=5, fig.width=5}
+```{r fig.height=6, fig.width=7}
 data_1st_wave = data.table(df[df$confirmed.at.date < date_second_wave & df$infection.source == "imported case",])
 data_1st_wave = data_1st_wave[, list(N=length(case)),by="country.of.origin"]
 
@@ -185,13 +185,13 @@ Recovered date is based on the discharged date when there are [consecutive negat
 #### Days to recovery histogram
 
 ```{r}
-# is.recovered = table(!is.na(df[, c("days.to.recover.symptomatic")]))
+is.recovered = table(!is.na(df[, c("days.to.recover.symptomatic")]))
 ```
-- Number of recovered persons: `r # is.recovered[2]`
-- Proportion of recovered persons: `r # round(prop.table(is.recovered)[2]*100, 2)`%
+- Number of recovered persons: `r is.recovered[2]`
+- Proportion of recovered persons: `r round(prop.table(is.recovered)[2]*100, 2)`%
 
-- Median time to recovery (from confirmed): `r # as.numeric(median(df[, c("days.to.recover.symptomatic")], na.rm=T))` days
-- Median time to recovery (from confirmed): `r # round(as.numeric(mean(df[, c("days.to.recover.symptomatic")], na.rm=T)), 2)` days
+- Median time to recovery (from confirmed): `r as.numeric(median(df[, c("days.to.recover.symptomatic")], na.rm=T))` days
+- Median time to recovery (from confirmed): `r round(as.numeric(mean(df[, c("days.to.recover.symptomatic")], na.rm=T)), 2)` days
 
 ```{r fig.height=3, fig.width=5}
 # binwidth = 5
