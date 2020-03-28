@@ -71,66 +71,66 @@ The first case detected in Singapore on `r format(min_date, "%d %B %Y")`.
 
 ```{r}
 
-date_second_wave = as.Date("2020-02-25")
-style = "display: inline-block;vertical-align:top; padding-right: 20px"
-bootstrapPage(
-  div(style=style, dateRangeInput("range_date", "Date range", 
-                                  start = min_date, end = max_date,
-                                  min = min_date, max = max_date)),
-  div(style=style, numericInput("binwidth_date", "Days bin width", value = 1, min=1, max=14)))
+# date_second_wave = as.Date("2020-02-25")
+# style = "display: inline-block;vertical-align:top; padding-right: 20px"
+# bootstrapPage(
+#   div(style=style, dateRangeInput("range_date", "Date range", 
+#                                   start = min_date, end = max_date,
+#                                   min = min_date, max = max_date)),
+#   div(style=style, numericInput("binwidth_date", "Days bin width", value = 1, min=1, max=14)))
 
-renderPlot({
-    # input = range(range_date = c(as.Date(min_date), as.Date(max_date)), binwidth=1)
-    min_date = input$range_date[1]
-    max_date = input$range_date[2]
-    data = df[df$confirmed.at.date >= min_date & df$confirmed.at.date <= max_date,]
+# renderPlot({
+#     # input = range(range_date = c(as.Date(min_date), as.Date(max_date)), binwidth=1)
+#     min_date = input$range_date[1]
+#     max_date = input$range_date[2]
+#     data = df[df$confirmed.at.date >= min_date & df$confirmed.at.date <= max_date,]
 
-    ggplot(data=data, aes(x=confirmed.at.date)) +
-      geom_histogram(stat="bin", binwidth=input$binwidth_date, fill="steelblue") + 
-      xlab("") + ylab("") + 
-      geom_vline(xintercept=date_second_wave, size=2, col="red") +
-      scale_x_date(date_breaks = "weeks", date_labels = "%Y EW %U") +
-      theme
-}, height=280)
+#     ggplot(data=data, aes(x=confirmed.at.date)) +
+#       geom_histogram(stat="bin", binwidth=input$binwidth_date, fill="steelblue") + 
+#       xlab("") + ylab("") + 
+#       geom_vline(xintercept=date_second_wave, size=2, col="red") +
+#       scale_x_date(date_breaks = "weeks", date_labels = "%Y EW %U") +
+#       theme
+# }, height=280)
 
-renderPlot({
-    min_date = input$range_date[1]
-    max_date = input$range_date[2]
-    data = df[df$confirmed.at.date >= min_date & df$confirmed.at.date <= max_date,]
+# renderPlot({
+#     min_date = input$range_date[1]
+#     max_date = input$range_date[2]
+#     data = df[df$confirmed.at.date >= min_date & df$confirmed.at.date <= max_date,]
 
-    type_label = c("imported case", "local transmission")
-    names(type_label) = c("Imported", "Local")
+#     type_label = c("imported case", "local transmission")
+#     names(type_label) = c("Imported", "Local")
 
-    ggplot(data=data, aes(x=confirmed.at.date, fill=infection.source)) +
-      geom_histogram(stat="bin", binwidth=input$binwidth_date) + 
-      facet_wrap(~ infection.source, ncol=1, labeller = camelcase_labeller) + 
-      geom_vline(xintercept=date_second_wave, size=2, col="red") +
-      scale_fill_discrete(name="Case type", breaks=type_label, labels=names(type_label)) + 
-      xlab("") + ylab("Number of confirmed cases detected\n") +
-      scale_x_date(date_breaks = "weeks", date_labels = "%Y EW %U") +
-      theme
-})
+#     ggplot(data=data, aes(x=confirmed.at.date, fill=infection.source)) +
+#       geom_histogram(stat="bin", binwidth=input$binwidth_date) + 
+#       facet_wrap(~ infection.source, ncol=1, labeller = camelcase_labeller) + 
+#       geom_vline(xintercept=date_second_wave, size=2, col="red") +
+#       scale_fill_discrete(name="Case type", breaks=type_label, labels=names(type_label)) + 
+#       xlab("") + ylab("Number of confirmed cases detected\n") +
+#       scale_x_date(date_breaks = "weeks", date_labels = "%Y EW %U") +
+#       theme
+# })
 ```
 From here, we can see that there are two waves of cases, the first from EW 03 to EW 07 and second from EW 08 onwards. These are associated with the Chinese cases mainly and when there was a global spread subsequently with Europe as the epicenter.
 
 ```{r}
 
-data_1st_wave = data.table(df[df$confirmed.at.date < date_second_wave &
-                              df$infection.source == "imported case",])
-data_1st_wave = data_1st_wave[, list(N=length(case)),by="country.of.origin"]
+# data_1st_wave = data.table(df[df$confirmed.at.date < date_second_wave &
+#                               df$infection.source == "imported case",])
+# data_1st_wave = data_1st_wave[, list(N=length(case)),by="country.of.origin"]
 
-data_2nd_wave = data.table(df[df$confirmed.at.date >= date_second_wave &
-                              df$infection.source == "imported case",])
-data_2nd_wave = data_2nd_wave[, list(N=length(case)),by="country.of.origin"]
+# data_2nd_wave = data.table(df[df$confirmed.at.date >= date_second_wave &
+#                               df$infection.source == "imported case",])
+# data_2nd_wave = data_2nd_wave[, list(N=length(case)),by="country.of.origin"]
 
-grid.arrange(
-  ggplot(data_1st_wave, aes(x=camelcase_labeller("", country.of.origin), y=N)) +
-  geom_bar(stat = "identity") + coord_flip() + theme_minimal() +
-  xlab("") + ylab("") + ggtitle("First wave"),
-  ggplot(data_2nd_wave, aes(x=camelcase_labeller("", country.of.origin), y=N)) +
-  geom_bar(stat = "identity") + coord_flip() + theme_minimal() +
-  xlab("") + ylab("Number of imported cases detected") + ggtitle("Second wave")
-)
+# grid.arrange(
+#   ggplot(data_1st_wave, aes(x=camelcase_labeller("", country.of.origin), y=N)) +
+#   geom_bar(stat = "identity") + coord_flip() + theme_minimal() +
+#   xlab("") + ylab("") + ggtitle("First wave"),
+#   ggplot(data_2nd_wave, aes(x=camelcase_labeller("", country.of.origin), y=N)) +
+#   geom_bar(stat = "identity") + coord_flip() + theme_minimal() +
+#   xlab("") + ylab("Number of imported cases detected") + ggtitle("Second wave")
+# )
 ```
 
 
@@ -146,39 +146,39 @@ There are 9 public acute hospitals in Singapore, with an average capacity of 1,2
 
 # N cases still requiring treatment
 
-date_no_hosp = as.Date("2020-03-24")
-df_cases = df[df$status != "Deceased", c("case", "symptomatic.at.date", "recovered.at.date", "confirmed.at.date")]
-df_cases[is.na(df_cases$recovered.at.date),]$recovered.at.date = Sys.Date()
-df_cases[is.na(df_cases$symptomatic.at.date),]$symptomatic.at.date = 
-  df_cases[is.na(df_cases$symptomatic.at.date),]$confirmed.at.date # use confirmed.at if no symptomatic
+# date_no_hosp = as.Date("2020-03-24")
+# df_cases = df[df$status != "Deceased", c("case", "symptomatic.at.date", "recovered.at.date", "confirmed.at.date")]
+# df_cases[is.na(df_cases$recovered.at.date),]$recovered.at.date = Sys.Date()
+# df_cases[is.na(df_cases$symptomatic.at.date),]$symptomatic.at.date = 
+#   df_cases[is.na(df_cases$symptomatic.at.date),]$confirmed.at.date # use confirmed.at if no symptomatic
 
-df_cases$day = mapply(function(min, max) { seq(min, max, by="day") }, 
-                       min=df_cases$symptomatic.at.date, max=df_cases$recovered.at.date)
-df_cases_day = data.table(unnest(df_cases, cols=c(day, case))); rm(df_cases)
-df_cases_day = df_cases_day[, list(hospital_load=length(case)), by="day"]
-df_cases_day$hospital_load = as.numeric(df_cases_day$hospital_load)
-df_cases_day[day>=date_no_hosp,]$hospital_load =  df_cases_day[day>=date_no_hosp,]$hospital_load*0.2
+# df_cases$day = mapply(function(min, max) { seq(min, max, by="day") }, 
+#                        min=df_cases$symptomatic.at.date, max=df_cases$recovered.at.date)
+# df_cases_day = data.table(unnest(df_cases, cols=c(day, case))); rm(df_cases)
+# df_cases_day = df_cases_day[, list(hospital_load=length(case)), by="day"]
+# df_cases_day$hospital_load = as.numeric(df_cases_day$hospital_load)
+# df_cases_day[day>=date_no_hosp,]$hospital_load =  df_cases_day[day>=date_no_hosp,]$hospital_load*0.2
 
 
-max_load = 9*1200*0.15
-load_prop = 0.2
+# max_load = 9*1200*0.15
+# load_prop = 0.2
 
-renderPlot({
-  ggplot(data=df_cases_day, aes(x=day, y=hospital_load)) +
-    geom_bar(stat="identity", fill="steelblue") + 
-    xlab("") + ylab("Number of hospitalised peersons\n") + 
-    scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
-    theme
-}, height=280)
+# renderPlot({
+#   ggplot(data=df_cases_day, aes(x=day, y=hospital_load)) +
+#     geom_bar(stat="identity", fill="steelblue") + 
+#     xlab("") + ylab("Number of hospitalised peersons\n") + 
+#     scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
+#     theme
+# }, height=280)
 
-renderPlot({
-  ggplot(data=df_cases_day, aes(x=day, y=round(hospital_load/max_load*100, 2))) +
-    geom_bar(stat="identity", fill="steelblue") + 
-    geom_vline(xintercept=date_no_hosp-1, size=2, col="red") +
-    xlab("") + ylab("% of (estimated) maximum patient load\n") + 
-    scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
-    theme
-}, height=280)
+# renderPlot({
+#   ggplot(data=df_cases_day, aes(x=day, y=round(hospital_load/max_load*100, 2))) +
+#     geom_bar(stat="identity", fill="steelblue") + 
+#     geom_vline(xintercept=date_no_hosp-1, size=2, col="red") +
+#     xlab("") + ylab("% of (estimated) maximum patient load\n") + 
+#     scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
+#     theme
+# }, height=280)
 ```
 
 ### Recovery time
@@ -188,7 +188,7 @@ Recovered date is based on the discharged date when there are [consecutive negat
 #### Days to recovery histogram
 
 ```{r}
-is.recovered = table(!is.na(df[, c("days.to.recover.symptomatic")]))
+# is.recovered = table(!is.na(df[, c("days.to.recover.symptomatic")]))
 ```
 - Number of recovered persons: `r is.recovered[2]`
 - Proportion of recovered persons: `r round(prop.table(is.recovered)[2]*100, 2)`%
@@ -197,17 +197,16 @@ is.recovered = table(!is.na(df[, c("days.to.recover.symptomatic")]))
 - Median time to recovery (from confirmed): `r round(as.numeric(mean(df[, c("days.to.recover.symptomatic")], na.rm=T)), 2)` days
 
 ```{r fig.height=3, fig.width=5}
-theme = theme_minimal()
-binwidth = 5
-min = as.numeric(min(df[, c("days.to.recover.symptomatic")], na.rm=T))
-max = as.numeric(max(df[, c("days.to.recover.symptomatic")], na.rm=T))
-hist_max = max(table(cut(as.numeric(df[, c("days.to.recover.symptomatic")]), 
-                          breaks=seq(min, max, by=binwidth), right = FALSE)))
-ggplot(df, aes(x=days.to.recover.symptomatic)) + geom_histogram(binwidth=binwidth, na.rm=T) + 
-  xlab("Days to recover") + ylab("Number of people") +
-  scale_y_continuous(breaks=seq(0, hist_max, ifelse(hist_max<30, 1, 5))) +
-  scale_x_continuous(breaks=seq(0, max, ifelse(max<30, 1, 5))) + 
-  theme
+# binwidth = 5
+# min = as.numeric(min(df[, c("days.to.recover.symptomatic")], na.rm=T))
+# max = as.numeric(max(df[, c("days.to.recover.symptomatic")], na.rm=T))
+# hist_max = max(table(cut(as.numeric(df[, c("days.to.recover.symptomatic")]), 
+#                           breaks=seq(min, max, by=binwidth), right = FALSE)))
+# ggplot(df, aes(x=days.to.recover.symptomatic)) + geom_histogram(binwidth=binwidth, na.rm=T) + 
+#   xlab("Days to recover") + ylab("Number of people") +
+#   scale_y_continuous(breaks=seq(0, hist_max, ifelse(hist_max<30, 1, 5))) +
+#   scale_x_continuous(breaks=seq(0, max, ifelse(max<30, 1, 5))) + 
+#   theme
 ```
 
 #### Association between age and days to recover
@@ -215,42 +214,41 @@ ggplot(df, aes(x=days.to.recover.symptomatic)) + geom_histogram(binwidth=binwidt
 Here we attempt to investigate if there is an association with number of days to recover and age, as [fatalities are higher for elderly above 65](https://www.businessinsider.sg/most-us-coronavirus-deaths-ages-65-older-cdc-report-2020-3).
 
 ```{r}
-selectInput("age_width", label = "Age bin width", choices = c(5, 10, 20), selected = 5)
-renderPlot({
-  # input = list(age_width=10)
-  agewidth = as.numeric(input$age_width)
-  min = as.numeric(min(df$age, na.rm=T))
-  max = as.numeric(max(df$age, na.rm=T))
-  data = data.frame(cat=cut(as.numeric(df$age), breaks=seq(0, max, by=agewidth), right = FALSE),
-                    age=df$age, 
-                    days=df[, c("days.to.recover.symptomatic")])
-  data = data[!is.na(data$cat),]
+# selectInput("age_width", label = "Age bin width", choices = c(5, 10, 20), selected = 5)
+# renderPlot({
+#   # input = list(age_width=10)
+#   agewidth = as.numeric(input$age_width)
+#   min = as.numeric(min(df$age, na.rm=T))
+#   max = as.numeric(max(df$age, na.rm=T))
+#   data = data.frame(cat=cut(as.numeric(df$age), breaks=seq(0, max, by=agewidth), right = FALSE),
+#                     age=df$age, 
+#                     days=df[, c("days.to.recover.symptomatic")])
+#   data = data[!is.na(data$cat),]
 
-  ggplot(data, aes(x=cat, y=days)) + geom_boxplot() +
-    geom_jitter(height = 0, width = 0.1) +
-    xlab("Age category") + ylab("Days to recover") + theme
-})
+#   ggplot(data, aes(x=cat, y=days)) + geom_boxplot() +
+#     geom_jitter(height = 0, width = 0.1) +
+#     xlab("Age category") + ylab("Days to recover") + theme
+# })
 ```
 
 ```{r fig.height=4, fig.width=12}
-ggplot(df, aes(x=as.numeric(age), y=as.numeric(days.to.recover.symptomatic))) + 
-  geom_smooth(method='lm', formula= y~x) +
-  geom_point() + 
-  xlab("Age") + ylab("Days to recover") +
-  theme
+# ggplot(df, aes(x=as.numeric(age), y=as.numeric(days.to.recover.symptomatic))) + 
+#   geom_smooth(method='lm', formula= y~x) +
+#   geom_point() + 
+#   xlab("Age") + ylab("Days to recover") +
+#   theme
 
-df_corr = df[!is.na(df[, c("days.to.recover.symptomatic")]),]
-rsq = cor(as.numeric(df_corr$age), as.numeric(df_corr$days.to.recover.symptomatic))^2
-
+# df_corr = df[!is.na(df[, c("days.to.recover.symptomatic")]),]
+# rsq = cor(as.numeric(df_corr$age), as.numeric(df_corr$days.to.recover.symptomatic))^2
 ```
 Age does not appear to be associated with the number of days to recover ($R^2$ = `r round(rsq*100, 2)`%). 
 
 ### Interventions in Singapore
-
-Source: https://www.moh.gov.sg/news-highlights/
 
 #### Key measures
 
 - 2019-03-28: defer non-essential trips to malls
 - 2019-03-27: [home based learning](http://go.gov.sg/homebasedlearning) once a week for primary, secondary schools, and junior college; staggered Wednesday, Thursday, Friday respectively 
 - 
+
+Source: https://www.moh.gov.sg/news-highlights/
