@@ -215,7 +215,9 @@ ggplot(df, aes(x=days.to.recover.symptomatic)) +
   theme
 ```
 
-#### Association between age and days to recover
+### Risk factors
+
+#### Age
 
 Here we attempt to investigate if there is an association with number of days to recover and age, as [fatalities are higher for elderly above 65](https://www.businessinsider.sg/most-us-coronavirus-deaths-ages-65-older-cdc-report-2020-3).
 
@@ -236,19 +238,27 @@ renderPlot({
     xlab("Age category") + ylab("Days to recover") + theme
 })
 ```
+#### Gender
+
+```{r}
+ggplot(data, aes(x=gender, y=days.to.recover.symptomatic)) + 
+  geom_boxplot() +
+  geom_jitter(height = 0, width = 0.1) +
+  xlab("Gender") + ylab("Days to recover") + theme
+```
+
 
 ```{r fig.height=4, fig.width=12}
-ggplot(df, aes(x=as.numeric(age), y=as.numeric(days.to.recover.symptomatic))) + 
-  geom_smooth(method='lm', formula= y~x) +
-  geom_point() + 
-  xlab("Age") + ylab("Days to recover") +
-  theme
+# ggplot(df, aes(x=as.numeric(age), y=as.numeric(days.to.recover.symptomatic))) + 
+#   geom_smooth(method='lm', formula= y~x) +
+#   geom_point() + 
+#   xlab("Age") + ylab("Days to recover") +
+#   theme
 
-# Calculate Rsq
-df_corr = df[!is.na(df[, c("days.to.recover.symptomatic")]),]
-rsq = cor(as.numeric(df_corr$age), as.numeric(df_corr$days.to.recover.symptomatic))^2
+# # Calculate Rsq
+# df_corr = df[!is.na(df[, c("days.to.recover.symptomatic")]),]
+# rsq = cor(as.numeric(df_corr$age), as.numeric(df_corr$days.to.recover.symptomatic))^2
 ```
-Age does not appear to be associated with the number of days to recover ($R^2$ = `r round(rsq*100, 2)`%). 
 
 ## Interventions in Singapore
 
