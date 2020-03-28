@@ -63,11 +63,11 @@ covid19-coronavirus-singapore-discharged-patients-moh-12477696).
 
 #### Cases detected through time
 ```{r}
-# min_date = min(df$confirmed.at.date, na.rm=T)
-# max_date = max(df$confirmed.at.date, na.rm=T)
+min_date = min(df$confirmed.at.date, na.rm=T)
+max_date = max(df$confirmed.at.date, na.rm=T)
 ```
 
-The first case detected in Singapore on `r # format(min_date, "%d %B %Y")`. 
+The first case detected in Singapore on `r format(min_date, "%d %B %Y")`. 
 
 ```{r}
 
