@@ -42,12 +42,12 @@ Data is obtained from `r url`.
 ## Clean data
 
 ```{r echo=TRUE}
-# if(exists("df")) {
-#   df = clean_data(df)
-# } else {
-#   df = get_alternative_data()
-# }  
-# str(df)
+if(exists("df")) {
+  df = clean_data(df)
+} else {
+  df = get_alternative_data()
+}  
+str(df)
 ```
 
 ### Notes about data
