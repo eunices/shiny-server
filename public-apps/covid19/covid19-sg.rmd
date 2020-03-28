@@ -24,6 +24,7 @@ source('util.r')
 # Resources
 # https://staff.math.su.se/hoehle/blog/2020/03/16/flatteningthecurve.html
 # https://blog.ephorie.de/covid-19-the-case-of-germany 
+# https://rviews.rstudio.com/2020/03/19/simulating-covid-19-interventions-with-r/
 
 # Params
 theme = theme_minimal()
@@ -143,7 +144,7 @@ Hospital load is an important metric to ensure that hospitals are not overloaded
 # N cases still requiring treatment
 
 # TODO: filter out fatalities
-df_cases = df[, c("case", "symptomatic.at.date", "recovered.at.date", "confirmed.at.date")]
+df_cases = df[df$status != "Deceased", c("case", "symptomatic.at.date", "recovered.at.date", "confirmed.at.date")]
 df_cases[is.na(df_cases$recovered.at.date),]$recovered.at.date = Sys.Date()
 df_cases[is.na(df_cases$symptomatic.at.date),]$symptomatic.at.date = 
   df_cases[is.na(df_cases$symptomatic.at.date),]$confirmed.at.date 

@@ -139,3 +139,9 @@ $A_c = \pi * R^2$ <br>
 $\frac{A_c}{A_s} = \frac{\pi * R^2}{4R^2} = \frac{\pi}{4}$ <br>
 
 Thus, $\pi = 4 * \frac{number of points in circle}{number of points in square}$
+
+## Additional resources on Monte Carlo sampling
+1. https://homerhanumat.github.io/r-notes/monte-carlo-simulation.html
+2. https://towardsdatascience.com/monte-carlo-simulation-in-r-with-focus-on-financial-data-ad43e2a4aedf
+3. http://inst-mat.utalca.cl/jornadasbioestadistica2011/doc/CursoCasella/%20UseR-SC-10-B-Part1.pdf
+4. http://www.programmingr.com/monte-carlo-simulation-in-r/ 
