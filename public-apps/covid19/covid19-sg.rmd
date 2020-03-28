@@ -91,6 +91,7 @@ renderPlot({
       geom_histogram(stat="bin", binwidth=input$binwidth_date, fill="steelblue") + 
       xlab("") + ylab("") + 
       geom_vline(xintercept=date_second_wave, size=2, col="red") +
+      annotate("text", x=date_second_wave, y=20, label= "Second wave") + 
       scale_x_date(date_breaks = "weeks", date_labels = "%Y EW %U") +
       theme
 }, height=280)
@@ -107,6 +108,7 @@ renderPlot({
       geom_histogram(stat="bin", binwidth=input$binwidth_date) + 
       facet_wrap(~ infection.source, ncol=1, labeller = camelcase_labeller) + 
       geom_vline(xintercept=date_second_wave, size=2, col="red") +
+      annotate("text", x=date_second_wave, y=20, label= "Second wave") + 
       scale_fill_discrete(name="Case type", breaks=type_label, labels=names(type_label)) + 
       xlab("") + ylab("Number of confirmed cases detected\n") +
       scale_x_date(date_breaks = "weeks", date_labels = "%Y EW %U") +
@@ -193,7 +195,7 @@ renderPlot({
     xlab("") + ylab("Number of cases\n") + 
     scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
     theme
-}, height=280)
+})
 ```
 
 Measuring hospital load is key to ensure that hospitals are not overloaded.  We assume that the number of those who require hospitalisation is 20% of the case load, since it is a conservative estimate that 20% of the patients require hospitalisation and/or ICU care. From [24 Mar 2020](https://go.gov.sg/measures24mar), those who still test positive but display no symptoms will no longer be hospitalised. 
@@ -206,7 +208,7 @@ renderPlot({
     xlab("") + ylab("Number of hospitalised persons\n") + 
     scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
     theme
-}, height=280)
+})
 ```
 
 
