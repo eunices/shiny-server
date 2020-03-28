@@ -187,18 +187,22 @@ Recovered date is based on the discharged date when there are [consecutive negat
 ```{r}
 is.recovered = table(!is.na(df[, c("days.to.recover.symptomatic")]))
 ```
-- Number of recovered persons: `r is.recovered[2]`
-- Proportion of recovered persons: `r round(prop.table(is.recovered)[2]*100, 2)`%
+- Number of recovered persons: 
+  `r is.recovered[2]`
+- Proportion of recovered persons: 
+  `r round(prop.table(is.recovered)[2]*100, 1)`%
 
-- Median time to recovery (from confirmed): `r as.numeric(median(df[, c("days.to.recover.symptomatic")], na.rm=T))` days
-- Median time to recovery (from confirmed): `r round(as.numeric(mean(df[, c("days.to.recover.symptomatic")], na.rm=T)), 2)` days
+- Median time to recovery (from confirmed): 
+  `r as.numeric(median(df[, c("days.to.recover.symptomatic")], na.rm=T))` days
+- Median time to recovery (from confirmed): 
+  `r round(as.numeric(mean(df[, c("days.to.recover.symptomatic")], na.rm=T)), 1)` days
 
 ```{r fig.height=3, fig.width=5}
-# binwidth = 5
-# min = as.numeric(min(df[, c("days.to.recover.symptomatic")], na.rm=T))
-# max = as.numeric(max(df[, c("days.to.recover.symptomatic")], na.rm=T))
-# hist_max = max(table(cut(as.numeric(df[, c("days.to.recover.symptomatic")]), 
-#                           breaks=seq(min, max, by=binwidth), right = FALSE)))
+binwidth = 5
+min = as.numeric(min(df[, c("days.to.recover.symptomatic")], na.rm=T))
+max = as.numeric(max(df[, c("days.to.recover.symptomatic")], na.rm=T))
+hist_max = max(table(cut(as.numeric(df[, c("days.to.recover.symptomatic")]), 
+                         breaks=seq(min, max, by=binwidth), right = FALSE)))
 # ggplot(df, aes(x=days.to.recover.symptomatic)) + geom_histogram(binwidth=binwidth, na.rm=T) + 
 #   xlab("Days to recover") + ylab("Number of people") +
 #   scale_y_continuous(breaks=seq(0, hist_max, ifelse(hist_max<30, 1, 5))) +
