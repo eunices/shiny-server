@@ -171,7 +171,7 @@ renderPlot({
 renderPlot({
   ggplot(data=df_cases_day, aes(x=day, y=round(hospital_load/max_load*100, 2))) +
     geom_bar(stat="identity", fill="steelblue") + 
-    geom_vline(xintercept=date_no_hosp-1, size=2, col="red") +
+    geom_vline(xintercept=date_no_hosp, size=2, col="red") +
     xlab("") + ylab("% of (estimated) maximum patient load\n") + 
     scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
     theme
@@ -215,21 +215,21 @@ ggplot(df, aes(x=days.to.recover.symptomatic)) + geom_histogram(binwidth=binwidt
 Here we attempt to investigate if there is an association with number of days to recover and age, as [fatalities are higher for elderly above 65](https://www.businessinsider.sg/most-us-coronavirus-deaths-ages-65-older-cdc-report-2020-3).
 
 ```{r}
-# selectInput("age_width", label = "Age bin width", choices = c(5, 10, 20), selected = 5)
-# renderPlot({
-#   # input = list(age_width=10)
-#   agewidth = as.numeric(input$age_width)
-#   min = as.numeric(min(df$age, na.rm=T))
-#   max = as.numeric(max(df$age, na.rm=T))
-#   data = data.frame(cat=cut(as.numeric(df$age), breaks=seq(0, max, by=agewidth), right = FALSE),
-#                     age=df$age, 
-#                     days=df[, c("days.to.recover.symptomatic")])
-#   data = data[!is.na(data$cat),]
+selectInput("age_width", label = "Age bin width", choices = c(5, 10, 20), selected = 5)
+renderPlot({
+  # input = list(age_width=10)
+  agewidth = as.numeric(input$age_width)
+  min = as.numeric(min(df$age, na.rm=T))
+  max = as.numeric(max(df$age, na.rm=T))
+  data = data.frame(cat=cut(as.numeric(df$age), breaks=seq(0, max, by=agewidth), right = FALSE),
+                    age=df$age, 
+                    days=df[, c("days.to.recover.symptomatic")])
+  data = data[!is.na(data$cat),]
 
-#   ggplot(data, aes(x=cat, y=days)) + geom_boxplot() +
-#     geom_jitter(height = 0, width = 0.1) +
-#     xlab("Age category") + ylab("Days to recover") + theme
-# })
+  ggplot(data, aes(x=cat, y=days)) + geom_boxplot() +
+    geom_jitter(height = 0, width = 0.1) +
+    xlab("Age category") + ylab("Days to recover") + theme
+})
 ```
 
 ```{r fig.height=4, fig.width=12}
