@@ -188,7 +188,7 @@ Recovered date is based on the discharged date when there are [consecutive negat
 #### Days to recovery histogram
 
 ```{r}
-# is.recovered = table(!is.na(df[, c("days.to.recover.symptomatic")]))
+is.recovered = table(!is.na(df[, c("days.to.recover.symptomatic")]))
 ```
 - Number of recovered persons: `r is.recovered[2]`
 - Proportion of recovered persons: `r round(prop.table(is.recovered)[2]*100, 2)`%
