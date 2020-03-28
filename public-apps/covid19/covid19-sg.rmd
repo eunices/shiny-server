@@ -270,7 +270,7 @@ Age does not appear to be associated with the number of days to recover ($R^2$ =
 - 2020-02-28: [Schools with extra precaution](http://go.gov.sg/covid19-MOE).
 - 2020-02-23: [Start of travel advisories to outbreak countries other than China (e.g. Daegu, Korea)](http://go.gov.sg/mom-27feb).
 - 2020-02-19: [Introduction of Stay Home Notice](http://go.gov.sg/StayHomeNotice).
-- 2020-02-07: [Some community spread in Singapore, DORSCON orange. Business continuity plans kick in and stemperature screening)[http://go.gov.sg/dorscon7feb].
+- 2020-02-07: [Some community spread in Singapore, DORSCON orange. Business continuity plans kick in and stemperature screening)(http://go.gov.sg/dorscon7feb).
 
 
 
