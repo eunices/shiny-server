@@ -138,6 +138,7 @@ grid.arrange(
 ```{r} 
 max_load = 9*1200*0.15 # hospital capacity
 hosp_prop = 0.2        # proportion of cases requiring hospitalisation
+date_no_hosp = as.Date("2020-03-24") # date when hospitalisation not required for positive, asymptomatic cases
 ```
 
 Case load is an important metric that is correlated also with hospital load. Here, it's the sum of people who are not recovered. 
@@ -147,7 +148,6 @@ Measuring hospital load is key to ensure that hospitals are not overloaded.  We 
 There are 9 public acute hospitals in Singapore, with an average capacity of 1,200 beds. They are currently operating at approximately [75% load](https://www.moh.gov.sg/resources-statistics/healthcare-institution-statistics/beds-occupancy-rate-(bor)). We assume that hospitals can operate at a 90% bed load, to ensure that hospitals are not overtaxed and there is sufficient isolation between covid patients (more than usual required). Then there would be `r max_load` beds available. 
 
 ```{r}
-date_no_hosp = as.Date("2020-03-24")
 df_cases = df[df$status != "Deceased", c("case", "symptomatic.at.date", "recovered.at.date", "confirmed.at.date")]
 df_cases[is.na(df_cases$recovered.at.date),]$recovered.at.date = Sys.Date()
 df_cases[is.na(df_cases$symptomatic.at.date),]$symptomatic.at.date = 
@@ -203,11 +203,11 @@ min = as.numeric(min(df[, c("days.to.recover.symptomatic")], na.rm=T))
 max = as.numeric(max(df[, c("days.to.recover.symptomatic")], na.rm=T))
 hist_max = max(table(cut(as.numeric(df[, c("days.to.recover.symptomatic")]), 
                          breaks=seq(min, max, by=binwidth), right = FALSE)))
-# ggplot(df, aes(x=days.to.recover.symptomatic)) + geom_histogram(binwidth=binwidth, na.rm=T) + 
-#   xlab("Days to recover") + ylab("Number of people") +
-#   scale_y_continuous(breaks=seq(0, hist_max, ifelse(hist_max<30, 1, 5))) +
-#   scale_x_continuous(breaks=seq(0, max, ifelse(max<30, 1, 5))) + 
-#   theme
+ggplot(df, aes(x=days.to.recover.symptomatic)) + geom_histogram(binwidth=binwidth, na.rm=T) + 
+  xlab("Days to recover") + ylab("Number of people") +
+  scale_y_continuous(breaks=seq(0, hist_max, ifelse(hist_max<30, 1, 5))) +
+  scale_x_continuous(breaks=seq(0, max, ifelse(max<30, 1, 5))) + 
+  theme
 ```
 
 #### Association between age and days to recover
