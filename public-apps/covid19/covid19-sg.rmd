@@ -203,7 +203,9 @@ min = as.numeric(min(df[, c("days.to.recover.symptomatic")], na.rm=T))
 max = as.numeric(max(df[, c("days.to.recover.symptomatic")], na.rm=T))
 hist_max = max(table(cut(as.numeric(df[, c("days.to.recover.symptomatic")]), 
                          breaks=seq(min, max, by=binwidth), right = FALSE)))
-ggplot(df, aes(x=days.to.recover.symptomatic)) + geom_histogram(binwidth=binwidth, na.rm=T) + 
+                         
+ggplot(df, aes(x=days.to.recover.symptomatic)) + 
+  geom_histogram(binwidth=binwidth, na.rm=T) + 
   xlab("Days to recover") + ylab("Number of people") +
   scale_y_continuous(breaks=seq(0, hist_max, ifelse(hist_max<30, 1, 5))) +
   scale_x_continuous(breaks=seq(0, max, ifelse(max<30, 1, 5))) + 
@@ -222,27 +224,30 @@ renderPlot({
   min = as.numeric(min(df$age, na.rm=T))
   max = as.numeric(max(df$age, na.rm=T))
   data = data.frame(cat=cut(as.numeric(df$age), breaks=seq(0, max, by=agewidth), right = FALSE),
-                    age=df$age, 
-                    days=df[, c("days.to.recover.symptomatic")])
+                    age=df$age, days=df[, c("days.to.recover.symptomatic")])
   data = data[!is.na(data$cat),]
 
-  ggplot(data, aes(x=cat, y=days)) + geom_boxplot() +
+  ggplot(data, aes(x=cat, y=days)) + 
+    geom_boxplot() +
     geom_jitter(height = 0, width = 0.1) +
     xlab("Age category") + ylab("Days to recover") + theme
 })
 ```
 
 ```{r fig.height=4, fig.width=12}
-# ggplot(df, aes(x=as.numeric(age), y=as.numeric(days.to.recover.symptomatic))) + 
-#   geom_smooth(method='lm', formula= y~x) +
-#   geom_point() + 
-#   xlab("Age") + ylab("Days to recover") +
-#   theme
+ggplot(df, aes(x=as.numeric(age), y=as.numeric(days.to.recover.symptomatic))) + 
+  geom_smooth(method='lm', formula= y~x) +
+  geom_point() + 
+  xlab("Age") + ylab("Days to recover") +
+  theme
 
-# df_corr = df[!is.na(df[, c("days.to.recover.symptomatic")]),]
-# rsq = cor(as.numeric(df_corr$age), as.numeric(df_corr$days.to.recover.symptomatic))^2
+# Calculate Rsq
+df_corr = df[!is.na(df[, c("days.to.recover.symptomatic")]),]
+rsq = cor(as.numeric(df_corr$age), as.numeric(df_corr$days.to.recover.symptomatic))^2
 ```
 Age does not appear to be associated with the number of days to recover ($R^2$ = `r #round(rsq*100, 2)`%). 
+
+
 
 ### Interventions in Singapore
 
