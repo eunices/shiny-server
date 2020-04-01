@@ -261,6 +261,13 @@ ggplot(df, aes(x=days.to.recover.symptomatic)) +
   theme
 ```
 
+### Deaths
+
+```{r}
+deceased = df[df$status == "Deceased"]
+kable(deceased)
+```
+
 ### Risk factors
 
 #### Age
