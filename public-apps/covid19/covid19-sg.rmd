@@ -159,7 +159,7 @@ grid.arrange(
   ggplot(data_2nd_wave, aes(x=reorder(camelcase_labeller("", country.of.origin), -N), y=N)) +
   geom_bar(stat = "identity") + coord_flip() + theme_minimal() +
   xlab("") + ylab("Number of imported cases detected") + ggtitle("Second wave") +
-  theme(axis.text.x=element_text(size=rel(0.5)))
+  theme(axis.text.y=element_text(size=rel(0.7)))
 )
 ```
 
