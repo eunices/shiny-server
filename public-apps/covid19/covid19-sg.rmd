@@ -145,18 +145,18 @@ Source: https://www.moh.gov.sg/news-highlights/
 
 ```{r fig.height=6, fig.width=7}
 data_1st_wave = data.table(df[df$confirmed.at.date < date_second_wave & df$infection.source == "imported case",])
-data_1st_wave = data_1st_wave[, list(N=length(case)), by="country.of.origin"][order(-N)]
+data_1st_wave = data_1st_wave[, list(N=length(case)), by="country.of.origin"]
 
 data_2nd_wave = data.table(df[df$confirmed.at.date >= date_second_wave & df$infection.source == "imported case",])
-data_2nd_wave = data_2nd_wave[, list(N=length(case)), by="country.of.origin"][order(-N)]
+data_2nd_wave = data_2nd_wave[, list(N=length(case)), by="country.of.origin"]
 
 
 grid.arrange(
-  ggplot(data_1st_wave, aes(x=camelcase_labeller("", country.of.origin), y=N)) +
+  ggplot(data_1st_wave[order(-N)], aes(x=camelcase_labeller("", country.of.origin), y=N)) +
   geom_bar(stat = "identity") + coord_flip() + theme_minimal() +
   xlab("") + ylab("") + ggtitle("First wave"),
   
-  ggplot(data_2nd_wave, aes(x=camelcase_labeller("", country.of.origin), y=N)) +
+  ggplot(data_2nd_wave[order(-N)], aes(x=camelcase_labeller("", country.of.origin), y=N)) +
   geom_bar(stat = "identity") + coord_flip() + theme_minimal() +
   xlab("") + ylab("Number of imported cases detected") + ggtitle("Second wave")
 )
