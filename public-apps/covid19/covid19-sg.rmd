@@ -263,10 +263,10 @@ ggplot(df, aes(x=days.to.recover.symptomatic)) +
 
 ### Deaths
 
-```{r echo=T}
+```{r}
 deceased = df[df$status == "Deceased",]
 deceased$N = 1:dim(deceased)[1]
-kable(deceased, "markdown")
+knitr::kable(deceased, "markdown")
 ```
 
 ### Risk factors
