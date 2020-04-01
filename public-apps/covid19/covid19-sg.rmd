@@ -155,7 +155,7 @@ grid.arrange(
   geom_bar(stat = "identity") + coord_flip() + theme_minimal() +
   xlab("") + ylab("") + ggtitle("First wave"),
   
-  ggplot(data_2nd_wave, aes(x=camelcase_labeller("", country.of.origin), y=N)) +
+  ggplot(data_2nd_wave, aes(x=reorder(camelcase_labeller("", country.of.origin), -N), y=N)) +
   geom_bar(stat = "identity") + coord_flip() + theme_minimal() +
   xlab("") + ylab("Number of imported cases detected") + ggtitle("Second wave")
 )
