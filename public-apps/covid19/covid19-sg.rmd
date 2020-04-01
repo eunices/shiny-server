@@ -265,8 +265,8 @@ ggplot(df, aes(x=days.to.recover.symptomatic)) +
 
 ```{r}
 deceased = df[df$status == "Deceased",]
-# deceased$N = 1:dim(deceased)[1]
-kable(deceased)
+deceased$N = 1:dim(deceased)[1]
+print(deceased)
 ```
 
 ### Risk factors
