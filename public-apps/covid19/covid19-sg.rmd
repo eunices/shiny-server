@@ -263,7 +263,7 @@ ggplot(df, aes(x=days.to.recover.symptomatic)) +
 
 ### Deaths
 
-```{r}
+```{r echo=T}
 deceased = df[df$status == "Deceased",]
 deceased$N = 1:dim(deceased)[1]
 print(deceased)
