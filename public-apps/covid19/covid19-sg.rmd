@@ -178,9 +178,8 @@ df_cases[is.na(df_cases$recovered.at.date),]$recovered.at.date = Sys.Date()
 df_cases[is.na(df_cases$symptomatic.at.date),]$symptomatic.at.date = 
   df_cases[is.na(df_cases$symptomatic.at.date),]$confirmed.at.date # use confirmed.at if no symptomatic
 
-df_cases$day = mapply(function(min, max) seq(min, max, by="day"), 
-                      min=df_cases$symptomatic.at.date, 
-                      max=df_cases$recovered.at.date)
+df_cases$day = mapply(function(min, max) { seq(min, max, by="day") }, 
+                       min=df_cases$symptomatic.at.date, max=df_cases$recovered.at.date)
 df_cases_day = data.table(unnest(df_cases, cols=c(day, case))); rm(df_cases)
 df_cases_day = df_cases_day[, list(case_load=length(case)), by="day"]
 df_cases_day$case_load = as.numeric(df_cases_day$case_load)
@@ -206,7 +205,7 @@ Measuring hospital load is key to ensure that hospitals are not overloaded.  We 
 renderPlot({
   ggplot(data=df_cases_day, aes(x=day, y=hospital_load)) +
     geom_bar(stat="identity", fill="steelblue") + 
-    geom_vline(xintercept=date_no_hosp, size=2, col="red", hjust = 0) +
+    geom_vline(xintercept=date_no_hosp, size=2, col="red") +
     xlab("") + ylab("Number of hospitalised persons\n") + 
     scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
     theme
@@ -220,11 +219,11 @@ There are 9 public acute hospitals in Singapore, with an average capacity of 1,2
 renderPlot({
   ggplot(data=df_cases_day, aes(x=day, y=round(hospital_load/max_load*100, 2))) +
     geom_bar(stat="identity", fill="steelblue") + 
-    geom_vline(xintercept=date_no_hosp, size=2, col="red", hjust = 0) +
+    geom_vline(xintercept=date_no_hosp, size=2, col="red") +
     xlab("") + ylab("% of (estimated) maximum patient load\n") + 
     scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
     theme
-})
+}, height=280)
 ```
 
 ### Recovery time
@@ -246,7 +245,7 @@ is.recovered = table(!is.na(df[, c("days.to.recover.symptomatic")]))
 - Median time to recovery (from confirmed): 
   `r round(as.numeric(mean(df[, c("days.to.recover.symptomatic")], na.rm=T)), 1)` days
 
-```{r}
+```{r fig.height=3, fig.width=5}
 binwidth = 5
 min = as.numeric(min(df[, c("days.to.recover.symptomatic")], na.rm=T))
 max = as.numeric(max(df[, c("days.to.recover.symptomatic")], na.rm=T))
