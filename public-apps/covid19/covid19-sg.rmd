@@ -149,6 +149,8 @@ data_1st_wave = data_1st_wave[, list(N=length(case)), by="country.of.origin"]
 
 data_2nd_wave = data.table(df[df$confirmed.at.date >= date_second_wave & df$infection.source == "imported case",])
 data_2nd_wave = data_2nd_wave[, list(N=length(case)), by="country.of.origin"]
+data_2nd_wave$country.of.origin = factor(data_2nd_wave$country.of.origin, 
+                                         levels=unique(data_2nd_wave[order(-N)]$country.of.origin))
 
 
 grid.arrange(
