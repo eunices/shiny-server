@@ -37,11 +37,11 @@ url = "https://co.vid19.sg/cases/search"
 df = get_data(url)
 print(df)
 
-if(dim(df)==0) {
-  df = clean_data(df)
-} else {
-  df = get_alternative_data()
-}  
+# if(dim(df)==0) {
+#   df = clean_data(df)
+# } else {
+#   df = get_alternative_data()
+# }  
 ```
 
 Data is obtained from `r url`. 
