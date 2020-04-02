@@ -178,22 +178,6 @@ grid.arrange(
 
 TODO: SIR model
 
-### Conditions
-
-Those who are in critical condition are in ICU.
-
-These are the critical condition (ICU), cases in hospital, cases well but still test positive:
-
-- 2020-04-02: 23, 464, 315
-
-Note: Data was only captured from 2 Apr 2020 onwards, refer to "sources.txt" for links.
-
-#### Cluster characteristics
-
-TODO:
-- duration of cluster
-- type of venue of cluster
-- number of people involved
 
 #### Test kits
 
@@ -298,7 +282,18 @@ ggplot(df, aes(x=days.to.recover.symptomatic)) +
   theme
 ```
 
-### Deaths
+
+### Conditions
+
+Those who are in critical condition are in ICU.
+
+These are the deaths, critical condition (ICU), cases in hospital, cases well but still test positive:
+
+- 2020-04-02: 4, 23, 464, 315
+
+Note: Data was only captured from 2 Apr 2020 onwards, refer to "sources.txt" for links.
+
+#### Deaths
 
 [Fatalities are higher for elderly above 65](https://www.businessinsider.sg/most-us-coronavirus-deaths-ages-65-older-cdc-report-2020-3). 
 
@@ -310,6 +305,15 @@ knitr::kable(deceased, "markdown")
 ```
 
 Number of deceased: `r dim(deceased)[1]`
+
+
+### Cluster characteristics
+
+TODO:
+- duration of cluster
+- type of venue of cluster
+- number of people involved
+
 
 ### Risk factors
 
