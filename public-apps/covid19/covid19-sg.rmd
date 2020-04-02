@@ -289,6 +289,8 @@ ggplot(df, aes(x=days.to.recover.symptomatic)) +
 
 ### Deaths
 
+[Fatalities are higher for elderly above 65](https://www.businessinsider.sg/most-us-coronavirus-deaths-ages-65-older-cdc-report-2020-3). 
+
 ```{r}
 # TODO: deceased at date
 deceased = df[df$status == "Deceased", c("case", "age", "gender", "patient.nationality",
@@ -302,7 +304,7 @@ Number of deceased: `r dim(deceased)[1]`
 
 #### Age
 
-Here we attempt to investigate if there is an association with number of days to recover and age, as [fatalities are higher for elderly above 65](https://www.businessinsider.sg/most-us-coronavirus-deaths-ages-65-older-cdc-report-2020-3).
+Here we attempt to investigate if there is an association with number of days to recover and age.
 
 ```{r}
 selectInput("age_width", label = "Age bin width", choices = c(5, 10, 20), selected = 5)
