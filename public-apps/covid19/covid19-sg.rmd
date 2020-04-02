@@ -36,12 +36,13 @@ theme = theme_minimal()
 url = "https://co.vid19.sg/cases/search"
 df = try({get_data(url)})
 print(df)
+print(class(df))
 
-# if(dim(df)==0) {
-#   df = clean_data(df)
-# } else {
-#   df = get_alternative_data()
-# }  
+if(class(df)=="try-error") {
+  df = clean_data(df)
+} else {
+  df = get_alternative_data()
+}  
 ```
 
 Data is obtained from `r url`. 
