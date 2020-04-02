@@ -128,7 +128,7 @@ renderPlot({
     min_date = input$range_date[1]
     max_date = input$range_date[2]
     data = df[df$confirmed.at.date >= min_date & df$confirmed.at.date <= max_date,]
-    data = data[data$infection.sources == "local transmission",]
+    data = data[data$infection.source == "local transmission",]
     data$clustered = ifelse(data$cluster == "", "Not in cluster", "Cluster case")
     cluster = data[data$clustered=="Cluster case",]
     cluster = data[!duplicated(data$cluster),]
