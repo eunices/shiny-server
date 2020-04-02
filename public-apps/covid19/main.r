@@ -87,4 +87,5 @@ get_alternative_data = function() {
     df$symptomatic.at.date = as.Date(df$symptomatic.at.date, "%Y-%m-%d")
     df$age = as.numeric(df$age)
     df
+    print(filenames)
 }

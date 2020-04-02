@@ -45,7 +45,7 @@ Data is obtained from `r url`.
 # if(exists("df")) {
 #   df = clean_data(df)
 # } else {
-  df = get_alternative_data()
+df = get_alternative_data()
 # }  
 ```
 
