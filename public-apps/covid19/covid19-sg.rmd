@@ -35,16 +35,12 @@ theme = theme_minimal()
 ```{r}
 url = "https://co.vid19.sg/cases/search"
 df = get_data(url)
-```
 
-Data is obtained from `r url`. 
-
-## Clean data
-
-```{r}
 if(dim(df)==0) {
   df = clean_data(df)
 } else {
-df = get_alternative_data()
+  df = get_alternative_data()
 }  
 ```
+
+Data is obtained from `r url`. 
