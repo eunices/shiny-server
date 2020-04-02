@@ -145,7 +145,7 @@ renderPlot({
       geom_histogram(stat="bin", binwidth=input$binwidth_date) + 
       geom_vline(xintercept=date_second_wave, size=2, col="red") +
       annotate("text", x=date_second_wave, y=20, label= "Second wave") + 
-      xlab("") + ylab("Number of locally-transmitted cases\n") +
+      xlab("") + ylab("Number of locally-transmitted unlinked cases\n") +
       scale_x_date(date_breaks = "weeks", date_labels = "%Y EW %U") +
       theme
 
