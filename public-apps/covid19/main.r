@@ -70,6 +70,11 @@ clean_data = function(df, write=F) {
     if (write==T) {
         # Write data just in case it's gone
         app_dir = "public-apps/covid19/"
+        df = df[, c("case", "age", "gender", "status", "infection.source", 
+                    "country.of.origin", "displayed.symptoms", 
+                    "patient.citizen", "patient.nationality", 
+                    "confirmed.at.date", "symptomatic.at.date",
+                    "recovered.at.date")]
         print(paste0(Sys.time(), ": Persist file to ", app_dir, "."))
         write.csv(df, paste0(Sys.Date(), "-data.csv"), 
                   fileEncoding="UTF-8", na="NA", row.names=F)
@@ -89,6 +94,13 @@ get_alternative_data = function() {
     df$confirmed.at.date = as.Date(df$confirmed.at.date, "%Y-%m-%d")
     df$recovered.at.date = as.Date(df$recovered.at.date, "%Y-%m-%d")
     df$symptomatic.at.date = as.Date(df$symptomatic.at.date, "%Y-%m-%d")
+    if("deceased.at.date" %in% names(df)) df$deceased.at.date = as.Date(df$deceased.at.date, "%Y-%m-%d")
+
+    df$days.to.recover.symptomatic = df$recovered.at.date - df$symptomatic.at.date
+    df$days.to.recover.resources = df$recovered.at.date - df$confirmed.at.date
+    df$days.symptomatic.to.confirm = df$confirmed.at.date - df$symptomatic.at.date
+    if("deceased.at.date" %in% names(df)) df$days.to.deceased = df$deceased.at.date - df$symptomatic.at.date
+
     df$age = as.numeric(df$age)
     df
 }
