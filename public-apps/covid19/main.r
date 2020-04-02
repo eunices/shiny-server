@@ -81,14 +81,14 @@ clean_data = function(df, write=F) {
 
 
 get_alternative_data = function() {
-    print(paste0(Sys.time(), ": Alternative data used"))
     filenames = list.files()[grepl("-data.csv", list.files())]
-    df = read.csv(filenames[length(filenames)], encoding="UTF-8", na.strings="NA", 
+    filename = filenames[length(filenames)]
+    print(paste0(Sys.time(), ": Alternative data used from ", filename))
+    df = read.csv(filename, encoding="UTF-8", na.strings="NA", 
                 stringsAsFactors=FALSE)
     df$confirmed.at.date = as.Date(df$confirmed.at.date, "%Y-%m-%d")
     df$recovered.at.date = as.Date(df$recovered.at.date, "%Y-%m-%d")
     df$symptomatic.at.date = as.Date(df$symptomatic.at.date, "%Y-%m-%d")
     df$age = as.numeric(df$age)
     df
-    print(filenames)
 }
