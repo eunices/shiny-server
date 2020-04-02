@@ -37,6 +37,7 @@ url = "https://co.vid19.sg/cases/search"
 df = try({get_data(url)})
 print(df)
 print(df[[1]])
+print(grep(df[[1]], "error"))
 
 # if(class(df)=="try-error") {
 #   df = clean_data(df)
