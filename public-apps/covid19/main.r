@@ -1,9 +1,11 @@
 get_data = function(url) {
     html = read_html(url)
+    print(html)
     print(paste0(Sys.time(), ": Read data from URL."))
     df = html %>% 
         html_nodes("#casesTable") %>%
         html_table()
+    print(df)
     if (exists("df")) {
         df = df[[1]]
         names(df) = gsub("\\?", "", gsub("\\ ", ".", tolower(names(df))))

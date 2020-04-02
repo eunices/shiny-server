@@ -34,7 +34,7 @@ theme = theme_minimal()
 
 ```{r echo=T}
 url = "https://co.vid19.sg/cases/search"
-df = get_data(url)
+df = try({get_data(url)})
 print(df)
 
 # if(dim(df)==0) {
