@@ -138,6 +138,7 @@ This records the key measures the Singapore government has taken.
 - 2020-03-22: [no short-term visitors allowed, workpass only essential services](http://go.gov.sg/travel22mar).
 - 2020-03-20: [ActiveSG sport centres social distancing measures](http://go.gov.sg/sport15mar).
 - 2020-03-18: [Malaysia under lock down](http://go.gov.sg/mco) till 14 Apr; increased border control measures.
+- 2020-03-17: [Singaporeans coming back](https://www.straitstimes.com/politics/parliament-coronavirus-cases-to-rise-as-more-overseas-singaporeans-return-home-says-gan-kim)
 - 2020-03-16: [Singaporeans to defer all non-essential travel](http://go.gov.sg/travel-15mar); [temporary closure of mosques](https://www.muis.gov.sg/Media/Media-Releases/16-Mar-20-Media-Statement-on-Extension-of-Temporary-Closure-of-Mosques).
 - 2020-03-14: encourage employers to allow [tele-commuting/ staggered work hours](http://go.gov.sg/workplacesocialdistancing).
 - 2020-03-13: [large-scale ticketed events with >250 people to be deferred/cancelled](http://go.gov.sg/socialdistancing-13mar).
@@ -317,7 +318,7 @@ Number of deceased: `r dim(deceased)[1]`
 Here we attempt to investigate if there is an association with number of days to recover and age.
 
 ```{r}
-selectInput("age_width", label = "Age bin width", choices = c(5, 10, 20), selected = 5)
+selectInput("age_width", label = "Age bin width", choices = c(5, 10, 20), selected = 10)
 renderPlot({
   # input = list(age_width=10)
   agewidth = as.numeric(input$age_width)
