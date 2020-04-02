@@ -118,6 +118,7 @@ From here, we can see that there are two waves of imported cases, the first from
 
 This records the key measures the Singapore government has taken.
 
+- 2020-04-02: work from home mandated, [offense otherwise](https://www.channelnewsasia.com/news/singapore/covid-19-work-from-home-singapore-jail-fines-coronavirus-1260222).
 - 2020-03-28: defer non-essential trips to malls
 - 2020-03-27: [home based learning](http://go.gov.sg/homebasedlearning) once a week for primary, secondary schools, and junior college
 - 2020-03-26: spacing regulated in malls/ supermarket, e.g. 1 m distance (marked by duct tapes)
