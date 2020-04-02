@@ -177,6 +177,16 @@ grid.arrange(
 
 TODO: SIR model
 
+### Conditions
+
+Those who are in critical condition are in ICU.
+
+These are the critical condition (ICU), cases in hospital, cases well but still test positive:
+
+- 2020-04-02: 23, 464, 315
+
+Note: Data was only captured from 2 Apr 2020 onwards.
+
 #### Cluster characteristics
 
 TODO:
