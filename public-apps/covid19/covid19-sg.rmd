@@ -35,7 +35,7 @@ theme = theme_minimal()
 ```{r echo=T}
 url = "https://co.vid19.sg/cases/search"
 df = try({get_data(url)})
-if(grepl("error", df[[1]])) {
+if(!grepl("error", df[[1]])) {
   df = clean_data(df)
 } else {
   df = get_alternative_data()
