@@ -288,6 +288,7 @@ ggplot(df, aes(x=days.to.recover.symptomatic)) +
 ### Deaths
 
 ```{r}
+# TODO: deceased at date
 deceased = df[df$status == "Deceased", c("case", "age", "gender", "patient.nationality",
                                          "confirmed.at.date", "infection.source")]
 knitr::kable(deceased, "markdown")
