@@ -137,18 +137,14 @@ renderPlot({
       geom_histogram(stat="bin", binwidth=input$binwidth_date) + 
       geom_vline(xintercept=date_second_wave, size=2, col="red") +
       annotate("text", x=date_second_wave, y=20, label= "Second wave") + 
-      scale_fill_discrete(name="Case type", breaks=type_label, labels=names(type_label)) + 
       xlab("") + ylab("Number of clusters detected\n") +
       scale_x_date(date_breaks = "weeks", date_labels = "%Y EW %U") +
       theme
 
-      p2 = ggplot(data=data[data$clustered=="Not in cluster",], 
-                  aes(x=confirmed.at.date, fill=infection.source)) +
+      p2 = ggplot(data=data[data$cluster=="",], aes(x=confirmed.at.date)) +
       geom_histogram(stat="bin", binwidth=input$binwidth_date) + 
-      facet_wrap(~ infection.source, ncol=1, labeller = camelcase_labeller) + 
       geom_vline(xintercept=date_second_wave, size=2, col="red") +
       annotate("text", x=date_second_wave, y=20, label= "Second wave") + 
-      scale_fill_discrete(name="Case type", breaks=type_label, labels=names(type_label)) + 
       xlab("") + ylab("Number of locally-transmitted cases\n") +
       scale_x_date(date_breaks = "weeks", date_labels = "%Y EW %U") +
       theme
