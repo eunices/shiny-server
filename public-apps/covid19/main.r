@@ -97,10 +97,11 @@ get_alternative_data = function() {
     df$symptomatic.at.date = as.Date(df$symptomatic.at.date, "%Y-%m-%d")
     if("deceased.at.date" %in% names(df)) df$deceased.at.date = as.Date(df$deceased.at.date, "%Y-%m-%d")
 
-    df$days.to.recover.symptomatic = df$recovered.at.date - df$symptomatic.at.date
-    df$days.to.recover.resources = df$recovered.at.date - df$confirmed.at.date
-    df$days.symptomatic.to.confirm = df$confirmed.at.date - df$symptomatic.at.date
-    if("deceased.at.date" %in% names(df)) df$days.to.deceased = df$deceased.at.date - df$symptomatic.at.date
+    # Calculated in days
+    df$days.to.recover.symptomatic = as.numeric(df$recovered.at.date - df$symptomatic.at.date)
+    df$days.to.recover.resources = as.numeric(df$recovered.at.date - df$confirmed.at.date)
+    df$days.symptomatic.to.confirm = as.numeric(df$confirmed.at.date - df$symptomatic.at.date)
+    if("deceased.at.date" %in% names(df)) df$days.to.deceased = as.numeric(df$deceased.at.date - df$symptomatic.at.date)
 
     df$age = as.numeric(df$age)
     df
