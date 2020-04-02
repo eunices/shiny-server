@@ -64,10 +64,10 @@ The data differs slightly from the MOH's press releases annex:
 2. Does not have case local linked/unlinked
 3. Does not have cluster information or links (for non-cluster cases). Both are considered "local linked".
 4. Only one imported country, when there could be a list.
-5. Does not have "long-term pass" information, due to data cleaning issues prior to 2 Apr 2020. Long-term pass holders tend to be working in Singapore, but were classified as "visitors" prior to 2 Apr 2020.
-6. Citizen and PR are same, i.e. "citizen".
-7. Local linked cases may also be imported or have a travel history. But the former takes precedence. (e.g. case 973 linked to Lee Ah Mooi Home).
+5. Citizen and PR are same, i.e. "citizen".
+6. Local linked cases may also be imported or have a travel history. But the former takes precedence. (e.g. case 973 linked to Lee Ah Mooi Home).
 
+TODO: collect links/address data
 
 ## What are the figures
 
@@ -121,6 +121,7 @@ renderPlot({
       scale_fill_discrete(name="Case type", breaks=type_label, labels=names(type_label)) + 
       xlab("") + ylab("Number of confirmed cases detected\n") +
       scale_x_date(date_breaks = "weeks", date_labels = "%Y EW %U") +
+      theme(legend.position="none") +
       theme
 })
 

@@ -64,6 +64,7 @@ clean_data = function(df, write=F) {
     df$confirmed.at = NULL
     df$recovered.at = NULL
     df$symptomatic.at = NULL
+    df$status = NULL
 
     print(paste0(Sys.time(), ": Finishing up."))
     df = df[order(as.numeric(df$case)),]
@@ -102,6 +103,10 @@ get_alternative_data = function() {
     df$days.to.recover.resources = as.numeric(df$recovered.at.date - df$confirmed.at.date)
     df$days.symptomatic.to.confirm = as.numeric(df$confirmed.at.date - df$symptomatic.at.date)
     if("deceased.at.date" %in% names(df)) df$days.to.deceased = as.numeric(df$deceased.at.date - df$symptomatic.at.date)
+
+    # Status
+    df$patient.status = ifelse(!is.na(df$deceased.at.date), "Deceased", 
+        ifelse(is.na(df$recovered.at.date), "Recovering", "Recovered"))
 
     df$age = as.numeric(df$age)
     df
