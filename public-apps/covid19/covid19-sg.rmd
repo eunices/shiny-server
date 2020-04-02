@@ -141,7 +141,7 @@ renderPlot({
 
       p2 = ggplot(data=data[data$cluster=="",], aes(x=confirmed.at.date)) +
       geom_histogram(stat="bin", binwidth=input$binwidth_date) + 
-      xlab("") + ylab("Number of locally-transmitted unlinked cases\n") +
+      xlab("") + ylab("Number of locally-transmitted \nunlinked cases\n") +
       scale_x_date(date_breaks = "weeks", date_labels = "%Y EW %U") +
       theme
 
