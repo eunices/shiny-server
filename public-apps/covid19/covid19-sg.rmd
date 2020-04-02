@@ -34,7 +34,7 @@ theme = theme_minimal()
 
 ```{r}
 url = "https://co.vid19.sg/cases/search"
-df = tryCatch({ get_data(url) })
+df = tryCatch({ get_data(url) }, warning=function() {}, error=function(){}, finally=function(){})
 ```
 
 Data is obtained from `r url`. 
