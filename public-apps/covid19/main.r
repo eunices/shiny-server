@@ -105,9 +105,10 @@ get_alternative_data = function() {
     if("deceased.at.date" %in% names(df)) df$days.to.deceased = as.numeric(df$deceased.at.date - df$symptomatic.at.date)
 
     # Status
-    df$patient.status = ifelse(!is.na(df$deceased.at.date), "Deceased", 
-        ifelse(is.na(df$recovered.at.date), "Recovering", "Recovered"))
+    # df$patient.status = ifelse(!is.na(df$deceased.at.date), "Deceased", 
+    #     ifelse(is.na(df$recovered.at.date), "Recovering", "Recovered"))
 
+    # Age
     df$age = as.numeric(df$age)
     df
 }
