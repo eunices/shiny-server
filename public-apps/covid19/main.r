@@ -86,4 +86,5 @@ get_alternative_data = function() {
     df$recovered.at.date = as.Date(df$recovered.at.date, "%Y-%m-%d")
     df$symptomatic.at.date = as.Date(df$symptomatic.at.date, "%Y-%m-%d")
     df$age = as.numeric(df$age)
+    df
 }
