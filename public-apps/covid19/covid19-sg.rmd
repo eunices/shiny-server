@@ -34,12 +34,14 @@ theme = theme_minimal()
 
 ```{r}
 url = "https://co.vid19.sg/cases/search"
-df = try({get_data(url)})
-if(!grepl("error", df[[1]])) {
-  df = clean_data(df)
-} else {
-  df = get_alternative_data()
-}  
+# df = try({get_data(url)})
+# if(!grepl("error", df[[1]])) {
+#   df = clean_data(df)
+# } else {
+#   df = get_alternative_data()
+# }  
+
+df = get_alternative_data()
 ```
 
 Data is obtained from `r url` (which appears to be defunct as of 2 Apr 2020, and I started collected data on my own). 
@@ -121,6 +123,42 @@ renderPlot({
       scale_x_date(date_breaks = "weeks", date_labels = "%Y EW %U") +
       theme
 })
+
+renderPlot({
+    min_date = input$range_date[1]
+    max_date = input$range_date[2]
+    data = df[df$confirmed.at.date >= min_date & df$confirmed.at.date <= max_date,]
+    data = data[data$infection.sources == "local transmission",]
+    data$clustered = ifelse(data$cluster == "", "Not in cluster", "Cluster case")
+    cluster = data[data$clustered=="Cluster case",]
+    cluster = data[!duplicated(data$cluster),]
+
+    p1 = ggplot(data=cluster, aes(x=confirmed.at.date)) +
+      geom_histogram(stat="bin", binwidth=input$binwidth_date) + 
+      geom_vline(xintercept=date_second_wave, size=2, col="red") +
+      annotate("text", x=date_second_wave, y=20, label= "Second wave") + 
+      scale_fill_discrete(name="Case type", breaks=type_label, labels=names(type_label)) + 
+      xlab("") + ylab("Number of clusters detected\n") +
+      scale_x_date(date_breaks = "weeks", date_labels = "%Y EW %U") +
+      theme
+
+      p2 = ggplot(data=data[data$clustered=="Not in cluster",], 
+                  aes(x=confirmed.at.date, fill=infection.source)) +
+      geom_histogram(stat="bin", binwidth=input$binwidth_date) + 
+      facet_wrap(~ infection.source, ncol=1, labeller = camelcase_labeller) + 
+      geom_vline(xintercept=date_second_wave, size=2, col="red") +
+      annotate("text", x=date_second_wave, y=20, label= "Second wave") + 
+      scale_fill_discrete(name="Case type", breaks=type_label, labels=names(type_label)) + 
+      xlab("") + ylab("Number of locally-transmitted cases\n") +
+      scale_x_date(date_breaks = "weeks", date_labels = "%Y EW %U") +
+      theme
+
+      grid.arrange(p1, p2)
+})
+
+
+
+
 ```
 
 From here, we can see that there are two waves of imported cases, the first from EW 03 to EW 07 and second from EW 08 onwards. These are associated with the Chinese cases mainly and when there was a global spread subsequently with Europe as the epicenter.
@@ -287,9 +325,9 @@ ggplot(df, aes(x=days.to.recover.symptomatic)) +
 
 Those who are in critical condition are in ICU.
 
-These are the deaths, critical condition (ICU), cases in hospital, cases well but still test positive:
+These are the deaths, critical condition (ICU), cases in hospital, cases well but still test positive, recovered:
 
-- 2020-04-02: 4, 23, 464, 315
+- 2020-04-02: 4, 23, 464, 315, 266
 
 Note: Data was only captured from 2 Apr 2020 onwards, refer to "sources.txt" for links.
 
