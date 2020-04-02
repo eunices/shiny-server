@@ -121,7 +121,7 @@ renderPlot({
       scale_fill_discrete(name="Case type", breaks=type_label, labels=names(type_label)) + 
       xlab("") + ylab("Number of confirmed cases detected\n") +
       scale_x_date(date_breaks = "weeks", date_labels = "%Y EW %U") +
-      theme(legend.position="none") +
+      guides(fill=F) +
       theme
 })
 
