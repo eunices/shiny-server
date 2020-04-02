@@ -37,7 +37,7 @@ theme = theme_minimal()
 # df = tryCatch({ get_data(url) })
 ```
 
-Data is obtained from `r url`. 
+Data is obtained from `r # url`. 
 
 ## Clean data
 
