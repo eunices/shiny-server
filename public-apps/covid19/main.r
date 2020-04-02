@@ -81,6 +81,7 @@ clean_data = function(df, write=F) {
 
 
 get_alternative_data = function() {
+    print(paste0(Sys.time(), ": Alternative data used"))
     filenames = list.files()[grepl("-data.csv", list.files())]
     df = read.csv(filenames[length(filenames)], encoding="UTF-8", na.strings="NA", 
                 stringsAsFactors=FALSE)
