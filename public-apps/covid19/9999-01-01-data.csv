@@ -173,7 +173,7 @@ case,age,gender,status,infection.source,country.of.origin,displayed.symptoms,pat
 172,42,female,In hospital,local transmission,,TRUE,wp,Filipino,2020-03-11,2020-03-05,NA,NA
 173,31,male,Recovered,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-11,2020-03-09,2020-03-28,NA
 174,67,female,Recovered,local transmission,,TRUE,citizen,Singaporean,2020-03-11,2020-03-07,2020-03-21,NA
-175,44,male,In hospital,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-11,2020-03-10,NA,NA
+175,44,male,In hospital,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-11,2020-03-10,2020-04-02,NA
 176,37,female,In hospital,imported case,Unclear origin,TRUE,visitor,Singaporean,2020-03-11,2020-03-07,NA,NA
 177,26,male,In hospital,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-11,2020-03-09,NA,NA
 178,37,male,Recovered,imported case,Philippines,TRUE,wp,Filipino,2020-03-11,2020-03-08,2020-03-23,NA
@@ -181,7 +181,7 @@ case,age,gender,status,infection.source,country.of.origin,displayed.symptoms,pat
 180,71,male,In hospital,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-12,2020-03-10,NA,NA
 181,83,male,In hospital,imported case,Unclear origin,TRUE,visitor,Indonesian,2020-03-12,2020-03-08,NA,NA
 182,76,female,In hospital,imported case,Unclear origin,TRUE,visitor,Indonesian,2020-03-12,2020-03-09,NA,NA
-183,29,male,In hospital,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-12,2020-03-06,NA,NA
+183,29,male,In hospital,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-12,2020-03-06,2020-04-02,NA
 184,35,male,In hospital,local transmission,,TRUE,wp,Filipino,2020-03-12,2020-03-09,NA,NA
 185,34,male,Recovered,local transmission,,TRUE,citizen,Singaporean,2020-03-12,2020-03-07,2020-03-23,NA
 186,64,male,Recovered,local transmission,,TRUE,citizen,Singaporean,2020-03-12,2020-03-05,2020-03-21,NA
@@ -229,7 +229,7 @@ case,age,gender,status,infection.source,country.of.origin,displayed.symptoms,pat
 228,67,male,Recovered,local transmission,,TRUE,citizen,Singaporean,2020-03-15,2020-03-03,2020-03-30,NA
 229,26,female,In hospital,imported case,Spain,TRUE,citizen,Singaporean,2020-03-15,2020-03-15,NA,NA
 230,38,female,In hospital,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-15,2020-03-14,NA,NA
-231,78,male,In hospital,imported case,United states,TRUE,visitor,Australian,2020-03-14,2020-03-04,NA,NA
+231,78,male,In hospital,imported case,United states,TRUE,visitor,Australian,2020-03-14,2020-03-04,2020-04-02,NA
 232,65,female,Recovered,imported case,United states,TRUE,visitor,Australian,2020-03-15,2020-03-02,2020-03-26,NA
 233,61,male,In hospital,imported case,United kingdom,TRUE,visitor,British,2020-03-16,2020-03-15,NA,NA
 234,86,male,Recovered,local transmission,,TRUE,citizen,Singaporean,2020-03-16,2020-02-28,2020-03-27,NA
@@ -242,12 +242,12 @@ case,age,gender,status,infection.source,country.of.origin,displayed.symptoms,pat
 241,28,male,Recovered,imported case,France,TRUE,wp,British,2020-03-16,2020-03-11,2020-03-28,NA
 242,64,female,Recovered,local transmission,,TRUE,citizen,Singaporean,2020-03-16,2020-03-14,2020-03-31,NA
 243,36,male,Recovered,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-16,2020-03-11,2020-03-26,NA
-244,53,male,In hospital,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-16,2020-03-07,NA,NA
+244,53,male,In hospital,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-16,2020-03-07,2020-04-02,NA
 245,76,male,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-16,2020-03-12,NA,NA
 246,39,male,Recovered,imported case,Japan,TRUE,visitor,Canadian,2020-03-16,2020-03-09,2020-04-01,NA
 247,41,male,Recovered,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-16,2020-03-16,2020-03-30,NA
 248,23,female,Recovered,local transmission,,TRUE,wp,Malaysian,2020-03-17,NA,2020-03-31,NA
-249,42,male,In hospital,imported case,United states,TRUE,citizen,Singaporean,2020-03-17,NA,NA,NA
+249,42,male,In hospital,imported case,United states,TRUE,citizen,Singaporean,2020-03-17,NA,2020-04-02,NA
 250,28,male,In hospital,imported case,Unclear origin,TRUE,wp,British,2020-03-17,NA,NA,NA
 251,59,female,Recovered,local transmission,,TRUE,citizen,Singaporean,2020-03-17,NA,2020-03-27,NA
 252,66,male,Recovered,local transmission,,TRUE,citizen,Singaporean,2020-03-17,NA,2020-03-29,NA
@@ -281,7 +281,7 @@ case,age,gender,status,infection.source,country.of.origin,displayed.symptoms,pat
 280,21,female,Recovered,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-17,NA,2020-03-30,NA
 281,46,male,Recovered,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-17,NA,2020-03-28,NA
 282,NA,male,In hospital,imported case,France,TRUE,visitor,Unidentified nationality,2020-03-17,NA,NA,NA
-283,62,female,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-17,NA,NA,NA
+283,62,female,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-17,NA,2020-04-02,NA
 284,32,male,In hospital,imported case,United states,TRUE,citizen,Singaporean,2020-03-17,NA,NA,NA
 285,42,female,In hospital,imported case,Thailand,TRUE,visitor,Thai,2020-03-17,NA,NA,NA
 286,54,male,In hospital,imported case,United kingdom,TRUE,visitor,British,2020-03-17,NA,NA,NA
@@ -299,7 +299,7 @@ case,age,gender,status,infection.source,country.of.origin,displayed.symptoms,pat
 298,44,male,Recovered,imported case,India,TRUE,citizen,Singaporean,2020-03-18,NA,2020-03-31,NA
 299,29,male,In hospital,imported case,Philippines,TRUE,citizen,Singaporean,2020-03-18,NA,NA,NA
 300,28,male,In hospital,imported case,Unclear origin,TRUE,visitor,German,2020-03-18,NA,NA,NA
-301,63,male,In hospital,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-18,NA,NA,NA
+301,63,male,In hospital,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-18,NA,2020-04-02,NA
 302,49,female,Recovered,local transmission,,TRUE,citizen,Singaporean,2020-03-18,NA,2020-03-28,NA
 303,27,male,Recovered,local transmission,,TRUE,visitor,Malaysian,2020-03-18,NA,2020-03-27,NA
 304,27,female,In hospital,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-18,NA,NA,NA
@@ -329,7 +329,7 @@ case,age,gender,status,infection.source,country.of.origin,displayed.symptoms,pat
 328,63,female,In hospital,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-19,NA,NA,NA
 329,64,male,In hospital,imported case,Turkey,TRUE,citizen,Singaporean,2020-03-19,NA,NA,NA
 330,67,male,Recovered,local transmission,,TRUE,citizen,Singaporean,2020-03-19,NA,2020-03-29,NA
-331,49,female,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-19,NA,NA,NA
+331,49,female,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-19,NA,2020-04-02,NA
 332,36,female,In hospital,imported case,United kingdom,TRUE,visitor,American,2020-03-19,NA,NA,NA
 333,48,male,In hospital,imported case,United states,TRUE,visitor,Colombian,2020-03-19,NA,NA,NA
 334,32,female,In hospital,imported case,United states,TRUE,citizen,Singaporean,2020-03-19,NA,NA,NA
@@ -377,13 +377,13 @@ case,age,gender,status,infection.source,country.of.origin,displayed.symptoms,pat
 376,21,female,Recovered,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-20,NA,2020-03-30,NA
 377,59,male,Recovered,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-20,NA,2020-03-26,NA
 378,38,male,In hospital,imported case,United kingdom,TRUE,visitor,British,2020-03-20,NA,NA,NA
-379,62,male,In hospital,imported case,Indonesia,TRUE,visitor,Swedish,2020-03-20,NA,NA,NA
+379,62,male,In hospital,imported case,Indonesia,TRUE,visitor,Swedish,2020-03-20,NA,2020-04-02,NA
 380,34,male,In hospital,imported case,Switzerland,TRUE,citizen,Singaporean,2020-03-20,NA,NA,NA
 381,27,female,In hospital,imported case,Spain,TRUE,citizen,Singaporean,2020-03-20,NA,NA,NA
 382,55,female,Recovered,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-20,NA,2020-03-29,NA
 383,42,female,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-20,NA,NA,NA
 384,65,male,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-20,NA,NA,NA
-385,22,male,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-20,NA,NA,NA
+385,22,male,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-20,NA,2020-04-02,NA
 386,64,female,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-20,NA,NA,NA
 387,30,female,In hospital,imported case,Unclear origin,TRUE,visitor,Swiss,2020-03-20,NA,NA,NA
 388,40,male,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-20,NA,NA,NA
@@ -412,7 +412,7 @@ case,age,gender,status,infection.source,country.of.origin,displayed.symptoms,pat
 411,30,male,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-21,NA,NA,NA
 412,19,female,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-21,NA,NA,NA
 413,29,male,In hospital,imported case,Switzerland,TRUE,citizen,Singaporean,2020-03-21,NA,NA,NA
-414,37,male,In hospital,imported case,United states,TRUE,visitor,Australian,2020-03-21,NA,NA,NA
+414,37,male,In hospital,imported case,United states,TRUE,visitor,Australian,2020-03-21,NA,2020-04-02,NA
 415,64,female,In hospital,imported case,Indonesia,TRUE,visitor,Indonesian,2020-03-21,NA,NA,NA
 416,21,male,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-21,NA,NA,NA
 417,18,female,In hospital,imported case,United kingdom,TRUE,visitor,French,2020-03-21,NA,NA,NA
@@ -455,7 +455,7 @@ case,age,gender,status,infection.source,country.of.origin,displayed.symptoms,pat
 454,47,female,In hospital,imported case,United states,TRUE,citizen,Singaporean,2020-03-22,NA,NA,NA
 455,29,male,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-22,NA,NA,NA
 456,24,male,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-22,NA,NA,NA
-457,40,male,In hospital,local transmission,,TRUE,visitor,Myanmarian,2020-03-22,NA,NA,NA
+457,40,male,In hospital,local transmission,,TRUE,visitor,Myanmarian,2020-03-22,NA,2020-04-02,NA
 458,20,female,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-22,NA,NA,NA
 459,67,male,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-22,NA,NA,NA
 460,23,female,In hospital,imported case,United kingdom,TRUE,visitor,New zealander,2020-03-22,NA,NA,NA
@@ -467,7 +467,7 @@ case,age,gender,status,infection.source,country.of.origin,displayed.symptoms,pat
 466,55,male,Recovered,imported case,Indonesia,TRUE,citizen,Singaporean,2020-03-22,NA,2020-03-30,NA
 467,20,female,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-22,NA,NA,NA
 468,28,male,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-22,NA,NA,NA
-469,43,male,In hospital,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-22,NA,NA,NA
+469,43,male,In hospital,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-22,NA,2020-04-02,NA
 470,24,female,In hospital,imported case,Indonesia,TRUE,citizen,Singaporean,2020-03-22,NA,NA,NA
 471,22,male,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-22,NA,NA,NA
 472,19,female,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-22,NA,NA,NA
@@ -476,7 +476,7 @@ case,age,gender,status,infection.source,country.of.origin,displayed.symptoms,pat
 475,22,female,In hospital,imported case,Ireland,TRUE,citizen,Singaporean,2020-03-22,NA,NA,NA
 476,68,male,In hospital,imported case,Indonesia,TRUE,visitor,Indonesian,2020-03-22,NA,NA,2/4/2020
 477,44,male,In hospital,local transmission,,TRUE,visitor,Irish,2020-03-22,NA,NA,NA
-478,80,male,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-22,NA,NA,NA
+478,80,male,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-22,NA,2020-04-02,NA
 479,35,female,In hospital,local transmission,,TRUE,visitor,Indonesian,2020-03-22,NA,NA,NA
 480,52,female,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-22,NA,NA,NA
 481,37,female,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-22,NA,NA,NA
@@ -507,7 +507,7 @@ case,age,gender,status,infection.source,country.of.origin,displayed.symptoms,pat
 506,49,male,In hospital,imported case,Unclear origin,TRUE,visitor,Australian,2020-03-23,NA,NA,NA
 507,29,female,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-23,NA,NA,NA
 508,23,male,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-23,NA,NA,NA
-509,53,male,In hospital,imported case,Indonesia,TRUE,citizen,Singaporean,2020-03-23,NA,NA,NA
+509,53,male,In hospital,imported case,Indonesia,TRUE,citizen,Singaporean,2020-03-23,NA,2020-04-02,NA
 510,52,female,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-23,NA,NA,NA
 511,53,male,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-23,NA,NA,NA
 512,21,female,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-23,NA,NA,NA
@@ -527,13 +527,13 @@ case,age,gender,status,infection.source,country.of.origin,displayed.symptoms,pat
 526,22,female,In hospital,imported case,United states,TRUE,citizen,Singaporean,2020-03-23,NA,NA,NA
 527,44,male,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-23,NA,NA,NA
 528,50,male,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-24,NA,NA,NA
-529,19,female,In hospital,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-24,NA,NA,NA
+529,19,female,In hospital,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-24,NA,2020-04-02,NA
 530,35,male,In hospital,imported case,United states,TRUE,citizen,Singaporean,2020-03-24,NA,NA,NA
 531,43,male,In hospital,local transmission,,TRUE,visitor,Indian,2020-03-24,NA,NA,NA
 532,44,male,In hospital,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-24,NA,NA,NA
 533,61,male,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-24,NA,NA,NA
 534,34,male,In hospital,imported case,Unclear origin,TRUE,visitor,British,2020-03-24,NA,NA,NA
-535,61,male,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-24,NA,NA,NA
+535,61,male,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-24,NA,2020-04-02,NA
 536,86,female,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-23,NA,NA,NA
 537,22,female,In hospital,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-23,NA,NA,NA
 538,50,male,In hospital,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-23,NA,NA,NA
@@ -623,7 +623,7 @@ case,age,gender,status,infection.source,country.of.origin,displayed.symptoms,pat
 622,27,female,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-25,NA,NA,NA
 623,58,female,In hospital,imported case,Indonesia,TRUE,visitor,Indonesian,2020-03-25,NA,NA,NA
 624,48,female,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-25,NA,NA,NA
-625,27,male,In hospital,imported case,Philippines,TRUE,visitor,Filipino,2020-03-25,NA,NA,NA
+625,27,male,In hospital,imported case,Philippines,TRUE,visitor,Filipino,2020-03-25,NA,2020-04-02,NA
 626,44,female,In hospital,local transmission,,TRUE,visitor,British,2020-03-25,NA,NA,NA
 627,18,female,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-25,NA,NA,NA
 628,23,male,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-25,NA,NA,NA
@@ -747,7 +747,7 @@ case,age,gender,status,infection.source,country.of.origin,displayed.symptoms,pat
 746,38,male,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-27,NA,NA,NA
 747,51,male,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-27,NA,NA,NA
 748,36,female,In hospital,local transmission,,TRUE,visitor,Malaysian,2020-03-27,NA,NA,NA
-749,24,female,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-27,NA,NA,NA
+749,24,female,In hospital,imported case,United kingdom,TRUE,citizen,Singaporean,2020-03-27,NA,2020-04-02,NA
 750,22,female,In hospital,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-27,NA,NA,NA
 751,71,male,In hospital,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-27,NA,NA,NA
 752,70,female,In hospital,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-27,NA,NA,NA
@@ -763,7 +763,7 @@ case,age,gender,status,infection.source,country.of.origin,displayed.symptoms,pat
 762,21,male,In hospital,imported case,United states,TRUE,visitor,Indian,2020-03-27,NA,NA,NA
 763,21,female,In hospital,imported case,United states,TRUE,citizen,Singaporean,2020-03-27,NA,NA,NA
 764,51,male,In hospital,local transmission,,TRUE,visitor,Spanish,2020-03-27,NA,NA,NA
-765,31,male,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-27,NA,NA,NA
+765,31,male,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-27,NA,2020-04-02,NA
 766,50,male,Recovered,imported case,Unclear origin,TRUE,citizen,Singaporean,2020-03-27,NA,2020-03-31,NA
 767,28,male,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-27,NA,NA,NA
 768,42,male,In hospital,local transmission,,TRUE,visitor,Bangladeshi,2020-03-27,NA,NA,NA
@@ -819,7 +819,7 @@ case,age,gender,status,infection.source,country.of.origin,displayed.symptoms,pat
 818,22,female,In hospital,local transmission,,TRUE,visitor,Japanese,2020-03-28,NA,NA,NA
 819,35,female,In hospital,imported case,India,TRUE,visitor,Indian,2020-03-28,NA,NA,NA
 820,55,female,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-28,NA,NA,NA
-821,35,male,In hospital,local transmission,,TRUE,visitor,Bangladeshi,2020-03-28,NA,NA,NA
+821,35,male,In hospital,local transmission,,TRUE,visitor,Bangladeshi,2020-03-28,NA,2020-04-02,NA
 822,22,male,In hospital,imported case,United states,TRUE,citizen,Singaporean,2020-03-28,NA,NA,NA
 823,43,male,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-28,NA,NA,NA
 824,33,female,In hospital,local transmission,,TRUE,citizen,Singaporean,2020-03-28,NA,NA,NA
