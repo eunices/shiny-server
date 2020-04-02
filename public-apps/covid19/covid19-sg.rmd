@@ -33,8 +33,8 @@ theme = theme_minimal()
 ## Get data
 
 ```{r}
-url = "https://co.vid19.sg/cases/search"
-df = tryCatch({ get_data(url) })
+# url = "https://co.vid19.sg/cases/search"
+# df = tryCatch({ get_data(url) })
 ```
 
 Data is obtained from `r url`. 
@@ -42,11 +42,11 @@ Data is obtained from `r url`.
 ## Clean data
 
 ```{r}
-if(exists("df")) {
-  df = clean_data(df)
-} else {
+# if(exists("df")) {
+#   df = clean_data(df)
+# } else {
   df = get_alternative_data()
-}  
+# }  
 ```
 
 ```{r echo=TRUE}
