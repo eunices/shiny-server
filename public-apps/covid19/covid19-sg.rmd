@@ -261,11 +261,12 @@ ggplot(df, aes(x=days.to.recover.symptomatic)) +
 
 ```{r}
 columns = c("case", "age", "gender", "patient.nationality", "confirmed.at.date", "infection.source")
-columns = ifelse("deceased.at.date" %in% names(df), c(columns, "deceased.at.date"), columns)
+# columns = ifelse("deceased.at.date" %in% names(df), c(columns, "deceased.at.date"), columns)
 deceased = df[df$status == "Deceased", columns]
-deceased$N = 1:dim(deceased)[1]
 knitr::kable(deceased, "markdown")
 ```
+
+Number of deceased: `r dim(deceased)[1]`.
 
 ### Risk factors
 
