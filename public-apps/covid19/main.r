@@ -32,6 +32,7 @@ clean_data = function(df, write=F) {
     text = "singapore pr|(singapore|singaporea) (citizen|resident)|singapore permanent|singaporean|permanent resident"
     df[grepl(text, tolower(df$patient.info)),]$patient.citizen = "citizen"
     df[grepl("work pass", tolower(df$patient.info)),]$patient.citizen = "wp"
+    df[grepl("long term", tolower(df$patient.info)),]$patient.citizen = "lp"
 
     df$patient.nationality = df$nationality
     df$gender = tolower(df$gender)
