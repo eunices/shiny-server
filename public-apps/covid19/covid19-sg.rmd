@@ -52,6 +52,8 @@ Data is obtained from `r url`. The data differs slightly from the MOH's press re
 6. Citizen and PR are same, i.e. "citizen".
 7. Local linked cases may also be imported or have a travel history. But the former takes precedence. (e.g. case 973 linked to Lee Ah Mooi Home).
 
+Clusters information were obtained from this [Straits Times news article](https://www.straitstimes.com/singapore/health/novel-coronavirus-cases-in-singapore).
+
 ```{r echo=TRUE}
 str(df)
 ```
@@ -170,6 +172,20 @@ grid.arrange(
 ```{r}
 # SIR 
 ```
+
+TODO: SIR model
+
+#### Cluster characteristics
+
+TODO:
+- duration of cluster
+- type of venue of cluster
+- number of people involved
+
+#### Test kits
+
+TODO:
+- estimate test kit availability
 
 #### Hospital load
 
