@@ -226,7 +226,7 @@ date_no_hosp = as.Date("2020-03-24") # date when hospitalisation not required fo
 Case load is an important metric that is correlated also with hospital load. Here, it's the sum of people who are not recovered. 
 
 ```{r}
-df_cases = df[df$status != "Deceased", c("case", "symptomatic.at.date", "recovered.at.date", "confirmed.at.date")]
+df_cases = df[df$patient.status != "Deceased", c("case", "symptomatic.at.date", "recovered.at.date", "confirmed.at.date")]
 df_cases[is.na(df_cases$recovered.at.date),]$recovered.at.date = Sys.Date()
 df_cases[is.na(df_cases$symptomatic.at.date),]$symptomatic.at.date = 
   df_cases[is.na(df_cases$symptomatic.at.date),]$confirmed.at.date # use confirmed.at if no symptomatic
@@ -330,7 +330,7 @@ Note: Data was only captured from 2 Apr 2020 onwards, refer to "sources.txt" for
 
 ```{r}
 # TODO: deceased at date
-deceased = df[df$status == "Deceased", c("case", "age", "gender", "patient.nationality",
+deceased = df[df$patient.status == "Deceased", c("case", "age", "gender", "patient.nationality",
                                          "confirmed.at.date", "infection.source")]
 knitr::kable(deceased, "markdown")
 ```
