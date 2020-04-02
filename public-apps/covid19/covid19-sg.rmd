@@ -42,7 +42,7 @@ if(!grepl("error", df[[1]])) {
 }  
 ```
 
-Data is obtained from `r url` (which appears to be defunct as of 2 Apr 2020). 
+Data is obtained from `r url` (which appears to be defunct as of 2 Apr 2020, and I started collected data on my own). 
 
 Clusters information were obtained from this [Straits Times news article](https://www.straitstimes.com/singapore/health/novel-coronavirus-cases-in-singapore).
 
