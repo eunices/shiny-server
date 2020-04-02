@@ -42,6 +42,8 @@ url = "https://co.vid19.sg/cases/search"
 # }  
 
 df = get_alternative_data()
+
+# TODO: get links/hospital/location data
 ```
 
 Data is obtained from `r url` (which appears to be defunct as of 2 Apr 2020, and I started collected data on my own). 
