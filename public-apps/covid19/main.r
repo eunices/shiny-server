@@ -9,7 +9,8 @@ get_data = function(url) {
         names(df) = gsub("\\?", "", gsub("\\ ", ".", tolower(names(df))))
         df
     } else {
-        stop(paste0(Sys.time(), ": Did not download data successfully from URL."))
+        data.frame(null=integer())
+        # stop(paste0(Sys.time(), ": Did not download data successfully from URL."))
     }
 }
 

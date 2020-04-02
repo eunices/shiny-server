@@ -34,7 +34,7 @@ theme = theme_minimal()
 
 ```{r}
 url = "https://co.vid19.sg/cases/search"
-df = tryCatch({ get_data(url) }, warning=function() {}, error=function(){}, finally=function(){})
+df = get_data(url)
 ```
 
 Data is obtained from `r url`. 
@@ -42,7 +42,7 @@ Data is obtained from `r url`.
 ## Clean data
 
 ```{r}
-if(exists("df")) {
+if(dim(df)==0) {
   df = clean_data(df)
 } else {
 df = get_alternative_data()
