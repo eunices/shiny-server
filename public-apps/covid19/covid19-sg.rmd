@@ -250,7 +250,7 @@ renderPlot({
     xlab("") + ylab("% of (estimated) maximum patient load\n") + 
     scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
     theme
-}, height=280)
+})
 ```
 
 ### Recovery time
