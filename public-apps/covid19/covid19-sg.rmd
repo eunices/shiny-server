@@ -42,7 +42,21 @@ if(!grepl("error", df[[1]])) {
 }  
 ```
 
-Data is obtained from `r url`. The data differs slightly from the MOH's press releases annex:
+Data is obtained from `r url`. 
+
+Clusters information were obtained from this [Straits Times news article](https://www.straitstimes.com/singapore/health/novel-coronavirus-cases-in-singapore).
+
+```{r echo=TRUE}
+str(df)
+```
+
+Notes about data: 
+
+1. symptomatic < confirmed < recovered date
+2. `days.to.recover.symptomatic` = recovered - symptomatic
+3. `days.to.recover.resources` = recovered - confirmed
+
+The data differs slightly from the MOH's press releases annex:
 
 1. Does not have hospital information
 2. Does not have case local linked/unlinked
@@ -52,18 +66,6 @@ Data is obtained from `r url`. The data differs slightly from the MOH's press re
 6. Citizen and PR are same, i.e. "citizen".
 7. Local linked cases may also be imported or have a travel history. But the former takes precedence. (e.g. case 973 linked to Lee Ah Mooi Home).
 
-Clusters information were obtained from this [Straits Times news article](https://www.straitstimes.com/singapore/health/novel-coronavirus-cases-in-singapore).
-
-```{r echo=TRUE}
-str(df)
-```
-
-### Notes about data
-
-1. symptomatic < confirmed < recovered date
-covid19-coronavirus-singapore-discharged-patients-moh-12477696). 
-2. `days.to.recover.symptomatic` = recovered - symptomatic
-3. `days.to.recover.resources` = recovered - confirmed
 
 ## What are the figures
 
