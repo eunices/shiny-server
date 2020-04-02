@@ -62,7 +62,7 @@ The data differs slightly from the MOH's press releases annex:
 2. Does not have case local linked/unlinked
 3. Does not have cluster information or links (for non-cluster cases). Both are considered "local linked".
 4. Only one imported country, when there could be a list.
-5. Does not have "long-term pass" information, due to data cleaning issues prior to 1 Apr 2020. 
+5. Does not have "long-term pass" information, due to data cleaning issues prior to 2 Apr 2020. 
 6. Citizen and PR are same, i.e. "citizen".
 7. Local linked cases may also be imported or have a travel history. But the former takes precedence. (e.g. case 973 linked to Lee Ah Mooi Home).
 
