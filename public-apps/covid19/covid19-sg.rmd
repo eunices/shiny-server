@@ -50,7 +50,7 @@ str(df)
 ```
 
 
-Up till 1 Apr 2020, data was obtained from `r url1` (which appears to be defunct as of 2 Apr 2020). 
+Up till 1 Apr 2020, data was obtained from `r url1` (which appears to be defunct as of 2 Apr 2020; they migrated to `r url2`.
 
 Subsequently, data was collected based on the MOH press releases. Also retrospectively, prior was augmented from this [Straits Times news article](https://www.straitstimes.com/singapore/health/novel-coronavirus-cases-in-singapore). It provided more information and cluster/links were added, origin  information from previous cases.
 
