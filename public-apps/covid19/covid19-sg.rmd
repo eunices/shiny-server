@@ -85,6 +85,17 @@ Notes about data:
 4. `hospital` is the hospital warded (may have been transferred from another hospital).
 5. `links.to` are linked cases which are not family; `links.to.family` are linked cases which are family
 
+
+### Summary stats
+
+This is collected in anticipation that case data will subsequently not be released when there are too many cases.
+
+Those who are in critical condition are in ICU. These are the deaths, critical condition (ICU), cases in hospital, cases well but still test positive, recovered:
+
+- 2020-04-02: 4, 23, 464, 315, 266
+
+Note: Data was only captured from 2 Apr 2020 onwards, refer to "sources.txt" for links.
+
 ## What are the figures
 
 ### Coronavirus through time
@@ -331,17 +342,6 @@ ggplot(df, aes(x=days.to.recover.symptomatic)) +
   scale_x_continuous(breaks=seq(0, max, ifelse(max<30, 1, 5))) + 
   theme
 ```
-
-
-### Conditions
-
-Those who are in critical condition are in ICU.
-
-These are the deaths, critical condition (ICU), cases in hospital, cases well but still test positive, recovered:
-
-- 2020-04-02: 4, 23, 464, 315, 266
-
-Note: Data was only captured from 2 Apr 2020 onwards, refer to "sources.txt" for links.
 
 #### Deaths
 
