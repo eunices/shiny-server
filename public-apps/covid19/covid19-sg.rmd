@@ -48,6 +48,18 @@ df = get_alternative_data()
 
 Data is obtained from `r url` (which appears to be defunct as of 2 Apr 2020, and I started collected data on my own). 
 
+The data from `r url` differed from MOH:
+
+The data differs slightly from the MOH's press releases annex:
+1. Does not have hospital information
+2. Does not have case local linked/unlinked
+3. Does not have cluster information or links (for non-cluster cases). Both are considered "local linked".
+4. Only one imported country, when there could be a list.
+5. Citizen and PR are same, i.e. "citizen".
+6. Local linked cases may also be imported or have a travel history. But the former takes precedence. (e.g. case 973 linked to Lee Ah Mooi Home).
+
+Thus, as of 2 Apr 2020, I tried to adopt the MOH format as it had more information. Thus, certain fields, like links, hospital, locations are blank prior to that.
+
 Clusters information were obtained from this [Straits Times news article](https://www.straitstimes.com/singapore/health/novel-coronavirus-cases-in-singapore).
 
 ```{r echo=TRUE}
@@ -59,17 +71,6 @@ Notes about data:
 1. symptomatic < confirmed < recovered date
 2. `days.to.recover.symptomatic` = recovered - symptomatic
 3. `days.to.recover.resources` = recovered - confirmed
-
-The data differs slightly from the MOH's press releases annex:
-
-1. Does not have hospital information
-2. Does not have case local linked/unlinked
-3. Does not have cluster information or links (for non-cluster cases). Both are considered "local linked".
-4. Only one imported country, when there could be a list.
-5. Citizen and PR are same, i.e. "citizen".
-6. Local linked cases may also be imported or have a travel history. But the former takes precedence. (e.g. case 973 linked to Lee Ah Mooi Home).
-
-TODO: collect links/address data
 
 ## What are the figures
 
@@ -112,7 +113,7 @@ renderPlot({
     max_date = input$range_date[2]
     data = df[df$confirmed.at.date >= min_date & df$confirmed.at.date <= max_date,]
 
-    type_label = c("imported case", "local transmission")
+    type_label = c("Imported case", "Local transmission")
     names(type_label) = c("Imported", "Local")
 
     ggplot(data=data, aes(x=confirmed.at.date, fill=infection.source)) +
@@ -131,7 +132,7 @@ renderPlot({
     min_date = input$range_date[1]
     max_date = input$range_date[2]
     data = df[df$confirmed.at.date >= min_date & df$confirmed.at.date <= max_date,]
-    data = data[data$infection.source == "local transmission",]
+    data = data[data$infection.source == "Local transmission",]
     data$clustered = ifelse(data$cluster == "", "Not in cluster", "Cluster case")
     cluster = data[data$clustered=="Cluster case",]
     cluster = data[!duplicated(data$cluster),]
@@ -186,10 +187,10 @@ This records the key measures the Singapore government has taken.
 Source: https://www.moh.gov.sg/news-highlights/
 
 ```{r fig.height=6, fig.width=9}
-data_1st_wave = data.table(df[df$confirmed.at.date < date_second_wave & df$infection.source == "imported case",])
+data_1st_wave = data.table(df[df$confirmed.at.date < date_second_wave & df$infection.source == "Imported case",])
 data_1st_wave = data_1st_wave[, list(N=length(case)), by="country.of.origin"]
 
-data_2nd_wave = data.table(df[df$confirmed.at.date >= date_second_wave & df$infection.source == "imported case",])
+data_2nd_wave = data.table(df[df$confirmed.at.date >= date_second_wave & df$infection.source == "Imported case",])
 data_2nd_wave = data_2nd_wave[, list(N=length(case)), by="country.of.origin"]
 
 grid.arrange(
