@@ -93,6 +93,7 @@ This is collected in anticipation that case data will subsequently not be releas
 Those who are in critical condition are in ICU. These are the deaths, critical condition (ICU), cases in hospital, cases well but still test positive, recovered:
 
 - 2020-04-02: 4, 23, 464, 315, 266
+- 2020-04-03: 5, 25, 473, 354, 282
 
 Note: Data was only captured from 2 Apr 2020 onwards, refer to "sources.txt" for links.
 
