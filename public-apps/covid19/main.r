@@ -5,7 +5,6 @@ get_data = function(url) {
     df = html %>% 
         html_nodes("#casesTable") %>%
         html_table()
-    print(df)
     if (exists("df")) {
         df = df[[1]]
         names(df) = gsub("\\?", "", gsub("\\ ", ".", tolower(names(df))))
@@ -72,7 +71,7 @@ clean_data = function(df, write=F) {
     if (write==T) {
         # Write data just in case it's gone
         app_dir = "public-apps/covid19/"
-        df = df[, c("case", "age", "gender", "status", "infection.source", 
+        df = df[, c("case", "age", "gender", "infection.source", 
                     "country.of.origin", "displayed.symptoms", 
                     "patient.citizen", "patient.nationality", 
                     "confirmed.at.date", "symptomatic.at.date",
