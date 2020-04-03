@@ -105,7 +105,7 @@ get_alternative_data = function() {
 
     # Status
     df$patient.status = ifelse(!is.na(df$deceased.at.date), "Deceased", 
-        ifelse(is.na(df$recovered.at.date), "Recovering", "Recovered"))
+        ifelse(is.na(df$recovered.at.date), "Infected", "Recovered"))
 
     # Age
     df$age = as.numeric(df$age)
