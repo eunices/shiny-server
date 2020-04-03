@@ -68,11 +68,12 @@ Additionally, I tried to adopt the MOH format as it had more information. Certai
 
 Henceforth, my data collection from MOH annexes include:
 
-1. Summary of daily stats.
+1. Summary of daily stats
 2. Getting recovered dates of those who recovered
 3. Add new links/ clusters to existing cases
 4. Copy and paste new cases from table
-5. Add addresses where possible TBC
+5. Add addresses where possible [TBC]
+6. Dumping the `r url2` data
 
 Data complete up till: 3 Apr 2020
 
@@ -82,6 +83,7 @@ Notes about data:
 2. `days.to.recover.symptomatic` = recovered - symptomatic
 3. `days.to.recover.resources` = recovered - confirmed
 4. `hospital` is the hospital warded (may have been transferred from another hospital).
+5. `links.to` are linked cases which are not family; `links.to.family` are linked cases which are family
 
 ## What are the figures
 
