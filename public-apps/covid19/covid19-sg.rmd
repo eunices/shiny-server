@@ -51,6 +51,7 @@ Data is obtained from `r url` (which appears to be defunct as of 2 Apr 2020, and
 The data from `r url` differed from MOH:
 
 The data differs slightly from the MOH's press releases annex:
+
 1. Does not have hospital information
 2. Does not have case local linked/unlinked
 3. Does not have cluster information or links (for non-cluster cases). Both are considered "local linked".
@@ -58,7 +59,7 @@ The data differs slightly from the MOH's press releases annex:
 5. Citizen and PR are same, i.e. "citizen".
 6. Local linked cases may also be imported or have a travel history. But the former takes precedence. (e.g. case 973 linked to Lee Ah Mooi Home).
 
-Thus, as of 2 Apr 2020, I tried to adopt the MOH format as it had more information. Thus, certain fields, like links, hospital, locations are blank prior to that.
+Thus, as of 2 Apr 2020, I tried to adopt the MOH format as it had more information. Thus, certain fields, like links, hospital, locations are blank prior to that. I also changed the citizenship to country names, and camelcase-d everything.
 
 Clusters information were obtained from this [Straits Times news article](https://www.straitstimes.com/singapore/health/novel-coronavirus-cases-in-singapore).
 
