@@ -33,8 +33,9 @@ theme = theme_minimal()
 ## Get data
 
 ```{r}
-url = "https://co.vid19.sg/cases/search"
-# df = try({get_data(url)})
+url1 = "https://co.vid19.sg/cases/search"
+url2 = "https://www.againstcovid19.com/singapore/cases/search"
+# df = try({get_data(url1)})
 # if(!grepl("error", df[[1]])) {
 #   df = clean_data(df)
 # } else {
@@ -46,9 +47,9 @@ df = get_alternative_data()
 # TODO: get links/hospital/location data
 ```
 
-Data is obtained from `r url` (which appears to be defunct as of 2 Apr 2020, and I started collected data on my own). 
+Up till 1 Apr 2020, data was obtained from `r url1` (which appears to be defunct as of 2 Apr 2020). 
 
-The data from `r url` differed from MOH:
+Subsequently, data was collected based on the MOH press releases. Also retrospectively, prior was augmented from this [Straits Times news article](https://www.straitstimes.com/singapore/health/novel-coronavirus-cases-in-singapore). It provided more information and cluster/links were added, origin  information from previous cases.
 
 The data differs slightly from the MOH's press releases annex:
 
@@ -59,9 +60,19 @@ The data differs slightly from the MOH's press releases annex:
 5. Citizen and PR are same, i.e. "citizen".
 6. Local linked cases may also be imported or have a travel history. But the former takes precedence. (e.g. case 973 linked to Lee Ah Mooi Home).
 
-Thus, as of 2 Apr 2020, I tried to adopt the MOH format as it had more information. Thus, certain fields, like links, hospital, locations are blank prior to that. I also changed the citizenship to country names, and camelcase-d everything.
+Additionally, I tried to adopt the MOH format as it had more information. Certain fields, like links, hospital, locations are missing prior to that. I also changed the citizenship to country names, and camelcase-d everything. I trimmed down columns that were captured in other columns (from `r url`) as well to prevent conflicting columns (e.g., patient.status).
 
-Clusters information were obtained from this [Straits Times news article](https://www.straitstimes.com/singapore/health/novel-coronavirus-cases-in-singapore).
+Henceforth, my data collection from MOH annexes include:
+
+1. Summary of daily stats.
+2. Getting recovered dates of those who recovered
+3. Add new links/ clusters to existing cases
+4. Copy and paste new cases from table
+5. Add addresses where possible [TBC]
+
+Data complete up till:
+
+
 
 ```{r echo=TRUE}
 str(df)
@@ -72,6 +83,7 @@ Notes about data:
 1. symptomatic < confirmed < recovered date
 2. `days.to.recover.symptomatic` = recovered - symptomatic
 3. `days.to.recover.resources` = recovered - confirmed
+4. `hospital` is the hospital warded (may have been transferred from another hospital).
 
 ## What are the figures
 
@@ -167,7 +179,7 @@ This records the key measures the Singapore government has taken.
 - 2020-04-02: work from home mandated, [offense otherwise](https://www.channelnewsasia.com/news/singapore/covid-19-work-from-home-singapore-jail-fines-coronavirus-1260222).
 - 2020-03-28: defer non-essential trips to malls
 - 2020-03-27: [home based learning](http://go.gov.sg/homebasedlearning) once a week for primary, secondary schools, and junior college
-- 2020-03-26: spacing regulated in malls/ supermarket, e.g. 1 m distance (marked by duct tapes)
+- 2020-03-26: spacing regulated in malls/ supermarket, e.g. 1 m distance (marked by duct tapes); returnees from UK/ US to stay in [hotels](https://www.stb.gov.sg/content/stb/en/home-pages/advisory-on-covid-19.html).
 - 2020-03-25: large-scale events (>250 people) suspended till 30 Jun
 - 2020-03-24: many gatherings suspended till 30 Apr. 
 - 2020-03-22: [no short-term visitors allowed, workpass only essential services](http://go.gov.sg/travel22mar).
@@ -179,6 +191,7 @@ This records the key measures the Singapore government has taken.
 - 2020-03-13: [large-scale ticketed events with >250 people to be deferred/cancelled](http://go.gov.sg/socialdistancing-13mar).
 - 2020-03-11: [senior activities suspended, till 24 March - was later extended on 25 Mar](http://go.gov.sg/PAseniors).
 - 2020-03-10: Port call by [Costa Fortuna](http://go.gov.sg/mpa9mar).
+- 2020-03-07: Foreigners to [bear cost of covid treatment](https://www.channelnewsasia.com/news/singapore/foreigners-to-bear-costs-of-covid-19-treatment-in-singapore-12519500).
 - 2020-03-04: [work pass holders allowed to return, be swabbed with 5-6 hours turnaround for test results](http://go.gov.sg/mom3mar).
 - 2020-02-28: [schools with extra precaution](http://go.gov.sg/covid19-MOE).
 - 2020-02-23: [start of travel advisories to outbreak countries other than China (e.g. Daegu, Korea)](http://go.gov.sg/mom-27feb).
@@ -186,6 +199,8 @@ This records the key measures the Singapore government has taken.
 - 2020-02-07: [some community spread in Singapore, DORSCON orange. Business continuity plans kick in and temp. screening](http://go.gov.sg/dorscon7feb).
 
 Source: https://www.moh.gov.sg/news-highlights/
+
+TODO: categorize policies into tackling different "issues", see if intervention "worked"
 
 ```{r fig.height=6, fig.width=9}
 data_1st_wave = data.table(df[df$confirmed.at.date < date_second_wave & df$infection.source == "Imported case",])
