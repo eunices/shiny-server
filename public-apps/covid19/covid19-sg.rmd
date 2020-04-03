@@ -43,9 +43,12 @@ url2 = "https://www.againstcovid19.com/singapore/cases/search"
 # }  
 
 df = get_alternative_data()
-
-# TODO: get links/hospital/location data
 ```
+
+```{r echo=TRUE}
+str(df)
+```
+
 
 Up till 1 Apr 2020, data was obtained from `r url1` (which appears to be defunct as of 2 Apr 2020). 
 
@@ -59,8 +62,9 @@ The data differs slightly from the MOH's press releases annex:
 4. Only one imported country, when there could be a list.
 5. Citizen and PR are same, i.e. "citizen".
 6. Local linked cases may also be imported or have a travel history. But the former takes precedence. (e.g. case 973 linked to Lee Ah Mooi Home).
+7. Long term pass holder/ work pass status seem to be inaccurately captured.
 
-Additionally, I tried to adopt the MOH format as it had more information. Certain fields, like links, hospital, locations are missing prior to that. I also changed the citizenship to country names, and camelcase-d everything. I trimmed down columns that were captured in other columns (from `r url`) as well to prevent conflicting columns (e.g., patient.status).
+Additionally, I tried to adopt the MOH format as it had more information. Certain fields, like links, hospital, locations are missing prior to that. I also changed the citizenship to country names, and camelcase-d everything. I trimmed down columns that were captured in other columns (from `r url1`) as well to prevent conflicting columns (e.g., patient.status).
 
 Henceforth, my data collection from MOH annexes include:
 
@@ -68,15 +72,9 @@ Henceforth, my data collection from MOH annexes include:
 2. Getting recovered dates of those who recovered
 3. Add new links/ clusters to existing cases
 4. Copy and paste new cases from table
-5. Add addresses where possible [TBC]
+5. Add addresses where possible TBC
 
-Data complete up till:
-
-
-
-```{r echo=TRUE}
-str(df)
-```
+Data complete up till: 3 Apr 2020
 
 Notes about data: 
 
