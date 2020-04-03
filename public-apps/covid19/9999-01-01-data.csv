@@ -121,7 +121,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 120,2020-03-05,unknown,62,F,Singapore,citizen,,Local transmission,,Safra Jurong private dinner function,TRUE,,2020-03-02,NA,NA
 121,2020-03-05,unknown,54,F,Singapore,citizen,,Local transmission,,Safra Jurong private dinner function,TRUE,,2020-02-26,2020-03-19,NA
 122,2020-03-05,unknown,64,F,Singapore,citizen,,Local transmission,,Safra Jurong private dinner function,TRUE,,2020-03-03,2020-03-17,NA
-123,2020-03-05,unknown,47,M,Singapore,citizen,South africa,Imported case,,,TRUE,,2020-02-27,2020-03-17,NA
+123,2020-03-05,unknown,47,M,Singapore,citizen,South Africa,Imported case,,,TRUE,,2020-02-27,2020-03-17,NA
 124,2020-03-06,unknown,37,F,Singapore,citizen,Germany,Imported case,,,TRUE,,2020-03-05,NA,NA
 125,2020-03-06,unknown,65,F,Singapore,citizen,,Local transmission,,Safra Jurong private dinner function,TRUE,,2020-03-05,2020-03-19,NA
 126,2020-03-06,unknown,77,M,Singapore,citizen,,Local transmission,,,TRUE,,2020-03-05,NA,NA
@@ -190,7 +190,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 189,2020-03-12,unknown,36,M,India,wp,India,Imported case,,,TRUE,,2020-03-11,2020-03-16,NA
 190,2020-03-13,unknown,53,M,Singapore,citizen,,Local transmission,,,TRUE,,2020-03-10,NA,NA
 191,2020-03-13,unknown,24,F,Malaysia,wp,Unclear origin,Imported case,,,TRUE,,2020-03-09,NA,NA
-192,2020-03-13,unknown,32,M,United States of America,visitor,United states,Imported case,,Hero's bar at 69 Circular Road,TRUE,,2020-03-13,2020-03-26,NA
+192,2020-03-13,unknown,32,M,United States of America of America,visitor,United States of America,Imported case,,Hero's bar at 69 Circular Road,TRUE,,2020-03-13,2020-03-26,NA
 193,2020-03-13,unknown,26,M,Malaysia,wp,Unclear origin,Imported case,,,TRUE,,2020-03-12,NA,NA
 194,2020-03-13,unknown,24,F,China,wp,Unclear origin,Imported case,,,TRUE,,2020-03-08,NA,NA
 195,2020-03-13,unknown,47,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,2020-03-06,NA,NA
@@ -204,10 +204,10 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 203,2020-03-13,unknown,36,F,Singapore,citizen,Indonesia,Imported case,,,TRUE,,2020-03-11,2020-03-30,NA
 204,2020-03-13,unknown,32,M,United States of America,wp,Japan,Imported case,,,TRUE,,2020-03-11,NA,NA
 205,2020-03-14,unknown,30,F,Philippines,lp,Philippines,Imported case,,,TRUE,,NA,NA,NA
-206,2020-03-14,unknown,33,F,New Zealand,lp,United states,Imported case,,,TRUE,,NA,2020-03-29,NA
-207,2020-03-14,unknown,40,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+206,2020-03-14,unknown,33,F,New Zealand,lp,United States of America,Imported case,,,TRUE,,NA,2020-03-29,NA
+207,2020-03-14,unknown,40,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 208,2020-03-14,unknown,26,F,Singapore,citizen,,Local transmission,,Church of Singapore (Bukit Timah) at 2B Hindhede Road,TRUE,,NA,NA,NA
-209,2020-03-14,unknown,32,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+209,2020-03-14,unknown,32,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 210,2020-03-14,unknown,56,M,Germany,lp,Unclear origin,Imported case,,,TRUE,,2020-03-13,2020-03-30,NA
 211,2020-03-14,unknown,35,F,Philippines,lp,,Local transmission,,,TRUE,,NA,2020-03-23,NA
 212,2020-03-14,unknown,64,M,Indonesia,visitor,Indonesia,Imported case,,,TRUE,,2020-03-09,NA,2020-03-21
@@ -229,9 +229,9 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 228,2020-03-15,unknown,67,M,Singapore,citizen,,Local transmission,,,TRUE,,2020-03-03,2020-03-30,NA
 229,2020-03-15,unknown,26,F,Singapore,citizen,Spain,Imported case,,,TRUE,,2020-03-15,NA,NA
 230,2020-03-15,unknown,38,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,2020-03-14,NA,NA
-231,2020-03-14,unknown,78,M,Australia,visitor,United states,Imported case,,,TRUE,,2020-03-04,2020-04-02,NA
-232,2020-03-15,unknown,65,F,Australia,visitor,United states,Imported case,,,TRUE,,2020-03-02,2020-03-26,NA
-233,2020-03-16,unknown,61,M,United Kingdom,lp,United kingdom,Imported case,,,TRUE,,2020-03-15,NA,NA
+231,2020-03-14,unknown,78,M,Australia,visitor,United States of America,Imported case,,,TRUE,,2020-03-04,2020-04-02,NA
+232,2020-03-15,unknown,65,F,Australia,visitor,United States of America,Imported case,,,TRUE,,2020-03-02,2020-03-26,NA
+233,2020-03-16,unknown,61,M,United Kingdom,lp,United Kingdom,Imported case,,,TRUE,,2020-03-15,NA,NA
 234,2020-03-16,unknown,86,M,Singapore,citizen,,Local transmission,,,TRUE,,2020-02-28,2020-03-27,NA
 235,2020-03-16,unknown,31,F,Singapore,citizen,,Local transmission,,Church of Singapore (Bukit Timah) at 2B Hindhede Road,TRUE,,2020-03-11,2020-03-23,NA
 236,2020-03-16,unknown,30,F,Singapore,citizen,,Local transmission,,,TRUE,,2020-03-10,2020-03-28,NA
@@ -247,7 +247,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 246,2020-03-16,unknown,39,M,Canada,visitor,Japan,Imported case,,,TRUE,,2020-03-09,2020-04-01,NA
 247,2020-03-16,unknown,41,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,2020-03-16,2020-03-30,NA
 248,2020-03-17,unknown,23,F,Malaysia,wp,,Local transmission,,,TRUE,,NA,2020-03-31,NA
-249,2020-03-17,unknown,42,M,Singapore,citizen,United states,Imported case,,,TRUE,,NA,2020-04-02,NA
+249,2020-03-17,unknown,42,M,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,2020-04-02,NA
 250,2020-03-17,unknown,28,M,United Kingdom,wp,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 251,2020-03-17,unknown,59,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,2020-03-27,NA
 252,2020-03-17,unknown,66,M,Singapore,citizen,,Local transmission,,Masjid Al-Muttaqin at 5140 Ang Mo Kio Avenue 6,TRUE,,NA,2020-03-29,NA
@@ -255,46 +255,46 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 254,2020-03-17,unknown,43,F,Singapore,citizen,France,Imported case,,,TRUE,,NA,NA,NA
 255,2020-03-17,unknown,44,M,Sweden,visitor,Unclear origin,Imported case,,,TRUE,,NA,2020-03-21,NA
 256,2020-03-17,unknown,32,F,Philippines,visitor,,Local transmission,,,TRUE,,NA,2020-03-28,NA
-257,2020-03-17,unknown,19,M,France,lp,United kingdom,Imported case,,,TRUE,,NA,2020-04-01,NA
+257,2020-03-17,unknown,19,M,France,lp,United Kingdom,Imported case,,,TRUE,,NA,2020-04-01,NA
 258,2020-03-17,unknown,47,M,India,visitor,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 259,2020-03-17,unknown,30,F,Singapore,citizen,Philippines,Imported case,,,TRUE,,NA,2020-03-27,NA
 260,2020-03-17,unknown,48,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,2020-03-23,NA
 261,2020-03-17,unknown,30,M,United States of America,visitor,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-262,2020-03-17,unknown,20,F,Indonesia,visitor,United kingdom,Imported case,,,TRUE,,NA,2020-03-31,NA
+262,2020-03-17,unknown,20,F,Indonesia,visitor,United Kingdom,Imported case,,,TRUE,,NA,2020-03-31,NA
 263,2020-03-17,unknown,52,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,2020-03-30,NA
 264,2020-03-17,unknown,41,F,Indonesia,visitor,Indonesia,Imported case,,,TRUE,,NA,2020-03-28,NA
-265,2020-03-17,unknown,25,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+265,2020-03-17,unknown,25,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 266,2020-03-17,unknown,63,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 267,2020-03-17,unknown,72,F,Singapore,citizen,Indonesia,Imported case,,,TRUE,,NA,NA,NA
 268,2020-03-17,unknown,64,M,United Kingdom,visitor,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-269,2020-03-17,unknown,19,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,2020-03-29,NA
+269,2020-03-17,unknown,19,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,2020-03-29,NA
 270,2020-03-17,unknown,62,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-271,2020-03-17,unknown,29,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+271,2020-03-17,unknown,29,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 272,2020-03-17,unknown,65,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 273,2020-03-17,unknown,69,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-274,2020-03-17,unknown,50,M,United States of America,visitor,United states,Imported case,,,TRUE,,NA,NA,NA
+274,2020-03-17,unknown,50,M,United States of America of America,visitor,United States of America,Imported case,,,TRUE,,NA,NA,NA
 275,2020-03-17,unknown,27,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,2020-03-21,NA
-276,2020-03-17,unknown,21,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-277,2020-03-17,unknown,55,M,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+276,2020-03-17,unknown,21,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+277,2020-03-17,unknown,55,M,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 278,2020-03-17,unknown,48,F,United States of America,visitor,Unclear origin,Imported case,,,TRUE,,NA,2020-03-26,NA
 279,2020-03-17,unknown,71,M,Singapore,citizen,Philippines,Imported case,,,TRUE,,NA,NA,NA
-280,2020-03-17,unknown,21,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,2020-03-30,NA
+280,2020-03-17,unknown,21,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,2020-03-30,NA
 281,2020-03-17,unknown,46,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,2020-03-28,NA
 282,2020-03-17,unknown,76,M,unknown,visitor,France,Imported case,,,TRUE,,NA,NA,NA
 283,2020-03-17,unknown,62,F,Singapore,citizen,,Local transmission,,Church of Singapore (Bukit Timah) at 2B Hindhede Road,TRUE,,NA,2020-04-02,NA
-284,2020-03-17,unknown,32,M,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+284,2020-03-17,unknown,32,M,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 285,2020-03-17,unknown,42,F,Thailand,visitor,Thailand,Imported case,,,TRUE,,NA,NA,NA
-286,2020-03-17,unknown,54,M,United Kingdom,visitor,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+286,2020-03-17,unknown,54,M,United Kingdom,visitor,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 287,2020-03-17,unknown,26,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 288,2020-03-18,unknown,71,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 289,2020-03-18,unknown,62,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 290,2020-03-18,unknown,69,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,2020-03-31,NA
 291,2020-03-18,unknown,52,M,India,lp,,Local transmission,,,TRUE,,NA,2020-03-23,NA
 292,2020-03-18,unknown,64,F,Singapore,citizen,Turkey,Imported case,,,TRUE,,NA,NA,NA
-293,2020-03-18,unknown,30,M,United Kingdom,visitor,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+293,2020-03-18,unknown,30,M,United Kingdom,visitor,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 294,2020-03-18,unknown,58,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-295,2020-03-18,unknown,55,M,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
-296,2020-03-18,unknown,25,F,Malaysia,visitor,United kingdom,Imported case,,,TRUE,,NA,2020-03-28,NA
+295,2020-03-18,unknown,55,M,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
+296,2020-03-18,unknown,25,F,Malaysia,visitor,United Kingdom,Imported case,,,TRUE,,NA,2020-03-28,NA
 297,2020-03-18,unknown,31,M,Indonesia,visitor,Indonesia,Imported case,,,TRUE,,NA,NA,NA
 298,2020-03-18,unknown,44,M,Singapore,citizen,India,Imported case,,,TRUE,,NA,2020-03-31,NA
 299,2020-03-18,unknown,29,M,Singapore,citizen,Philippines,Imported case,,,TRUE,,NA,NA,NA
@@ -304,64 +304,64 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 303,2020-03-18,unknown,27,M,Malaysia,lp,,Local transmission,,,TRUE,,NA,2020-03-27,NA
 304,2020-03-18,unknown,27,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 305,2020-03-18,unknown,24,M,Singapore,citizen,,Local transmission,,Boulder+ Gym at 12 Kallang Avenue,TRUE,,NA,NA,NA
-306,2020-03-18,unknown,56,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+306,2020-03-18,unknown,56,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 307,2020-03-18,unknown,22,F,Singapore,citizen,Philippines,Imported case,,,TRUE,,NA,NA,NA
-308,2020-03-18,unknown,59,M,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+308,2020-03-18,unknown,59,M,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 309,2020-03-18,unknown,60,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 310,2020-03-18,unknown,58,M,Singapore,citizen,,Local transmission,,Masjid Al-Muttaqin at 5140 Ang Mo Kio Avenue 6,TRUE,,NA,NA,NA
 311,2020-03-18,unknown,80,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,2020-03-22,NA
 312,2020-03-18,unknown,30,M,France,visitor,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-313,2020-03-18,unknown,39,M,United Kingdom,visitor,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+313,2020-03-18,unknown,39,M,United Kingdom,visitor,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 314,2020-03-18,unknown,58,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,2020-03-29,NA
-315,2020-03-18,unknown,57,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+315,2020-03-18,unknown,57,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 316,2020-03-18,unknown,25,M,Malaysia,visitor,Malaysia,Imported case,,,TRUE,,NA,NA,NA
-317,2020-03-18,unknown,29,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+317,2020-03-18,unknown,29,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 318,2020-03-18,unknown,58,F,China,lp,,Local transmission,,,TRUE,,NA,2020-03-31,NA
 319,2020-03-18,unknown,67,F,Philippines,visitor,Philippines,Imported case,,,TRUE,,NA,NA,NA
-320,2020-03-18,unknown,34,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+320,2020-03-18,unknown,34,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 321,2020-03-18,unknown,65,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,2020-03-30,NA
 322,2020-03-18,unknown,46,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-323,2020-03-18,unknown,24,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-324,2020-03-18,unknown,45,M,Brazil,visitor,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-325,2020-03-19,unknown,38,M,Philippines,visitor,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+323,2020-03-18,unknown,24,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+324,2020-03-18,unknown,45,M,Brazil,visitor,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+325,2020-03-19,unknown,38,M,Philippines,visitor,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 326,2020-03-19,unknown,33,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 327,2020-03-19,unknown,38,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 328,2020-03-19,unknown,63,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 329,2020-03-19,unknown,64,M,Singapore,citizen,Turkey,Imported case,,,TRUE,,NA,NA,NA
 330,2020-03-19,unknown,67,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,2020-03-29,NA
-331,2020-03-19,unknown,49,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,2020-04-02,NA
-332,2020-03-19,unknown,36,F,United States of America,lp,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-333,2020-03-19,unknown,48,M,Colombia,lp,United states,Imported case,,,TRUE,,NA,NA,NA
-334,2020-03-19,unknown,32,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+331,2020-03-19,unknown,49,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,2020-04-02,NA
+332,2020-03-19,unknown,36,F,United States of America of America,lp,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+333,2020-03-19,unknown,48,M,Colombia,lp,United States of America,Imported case,,,TRUE,,NA,NA,NA
+334,2020-03-19,unknown,32,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 335,2020-03-19,unknown,57,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,2020-03-27,NA
 336,2020-03-19,unknown,60,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 337,2020-03-19,unknown,31,M,Switzerland,visitor,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 338,2020-03-19,unknown,57,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 339,2020-03-19,unknown,66,M,Singapore,citizen,Philippines,Imported case,,,TRUE,,NA,NA,NA
 340,2020-03-19,unknown,27,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-341,2020-03-19,unknown,31,M,Germany,visitor,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+341,2020-03-19,unknown,31,M,Germany,visitor,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 342,2020-03-19,unknown,31,M,Singapore,citizen,Thailand,Imported case,,,TRUE,,NA,NA,NA
-343,2020-03-19,unknown,20,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-344,2020-03-19,unknown,21,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+343,2020-03-19,unknown,20,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+344,2020-03-19,unknown,21,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 345,2020-03-19,unknown,30,M,Germany,visitor,,Local transmission,,Boulder+ Gym at 12 Kallang Avenue,TRUE,,NA,2020-03-30,NA
 346,2020-03-19,unknown,59,M,Singapore,citizen,India,Imported case,,,TRUE,,NA,2020-03-29,NA
-347,2020-03-19,unknown,27,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+347,2020-03-19,unknown,27,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 348,2020-03-19,unknown,51,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-349,2020-03-19,unknown,21,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+349,2020-03-19,unknown,21,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 350,2020-03-19,unknown,61,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 351,2020-03-19,unknown,51,M,Singapore,citizen,Indonesia,Imported case,,,TRUE,,NA,2020-03-28,NA
 352,2020-03-19,unknown,43,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 353,2020-03-19,unknown,23,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,2020-03-26,NA
-354,2020-03-19,unknown,59,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-355,2020-03-19,unknown,38,M,Australia,lp,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+354,2020-03-19,unknown,59,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+355,2020-03-19,unknown,38,M,Australia,lp,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 356,2020-03-19,unknown,27,M,Australia,visitor,India,Imported case,,,TRUE,,NA,NA,NA
 357,2020-03-19,unknown,41,M,Germany,visitor,Germany,Imported case,,,TRUE,,NA,2020-03-30,NA
 358,2020-03-19,unknown,39,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 359,2020-03-19,unknown,45,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-360,2020-03-19,unknown,26,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+360,2020-03-19,unknown,26,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 361,2020-03-19,unknown,32,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 362,2020-03-19,unknown,45,F,Germany,lp,Germany,Imported case,,,TRUE,,NA,NA,NA
-363,2020-03-19,unknown,49,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+363,2020-03-19,unknown,49,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 364,2020-03-20,unknown,52,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 365,2020-03-20,unknown,33,M,Netherlands,visitor,Netherlands,Imported case,,,TRUE,,NA,NA,NA
 366,2020-03-20,unknown,26,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
@@ -369,166 +369,166 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 368,2020-03-20,unknown,19,F,Indonesia,lp,,Local transmission,,,TRUE,,NA,NA,NA
 369,2020-03-20,unknown,34,M,Singapore,citizen,Thailand,Imported case,,,TRUE,,NA,NA,NA
 370,2020-03-20,unknown,73,M,Malaysia,visitor,Indonesia,Imported case,,,TRUE,,NA,NA,NA
-371,2020-03-20,unknown,22,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-372,2020-03-20,unknown,22,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-373,2020-03-20,unknown,51,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-374,2020-03-20,unknown,23,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,2020-03-29,NA
-375,2020-03-20,unknown,25,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
-376,2020-03-20,unknown,21,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,2020-03-30,NA
-377,2020-03-20,unknown,59,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,2020-03-26,NA
-378,2020-03-20,unknown,38,M,United Kingdom,lp,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+371,2020-03-20,unknown,22,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+372,2020-03-20,unknown,22,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+373,2020-03-20,unknown,51,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+374,2020-03-20,unknown,23,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,2020-03-29,NA
+375,2020-03-20,unknown,25,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
+376,2020-03-20,unknown,21,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,2020-03-30,NA
+377,2020-03-20,unknown,59,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,2020-03-26,NA
+378,2020-03-20,unknown,38,M,United Kingdom,lp,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 379,2020-03-20,unknown,62,M,Sweden,visitor,Indonesia,Imported case,,,TRUE,,NA,2020-04-02,NA
 380,2020-03-20,unknown,34,M,Singapore,citizen,Switzerland,Imported case,,,TRUE,,NA,NA,NA
 381,2020-03-20,unknown,27,F,Singapore,citizen,Spain,Imported case,,,TRUE,,NA,NA,NA
-382,2020-03-20,unknown,55,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,2020-03-29,NA
-383,2020-03-20,unknown,42,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+382,2020-03-20,unknown,55,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,2020-03-29,NA
+383,2020-03-20,unknown,42,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 384,2020-03-20,unknown,65,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-385,2020-03-20,unknown,22,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,2020-04-02,NA
+385,2020-03-20,unknown,22,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,2020-04-02,NA
 386,2020-03-20,unknown,64,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 387,2020-03-20,unknown,30,F,Switzerland,visitor,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 388,2020-03-20,unknown,40,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 389,2020-03-20,unknown,36,F,Russia,visitor,India,Imported case,,,TRUE,,NA,NA,NA
-390,2020-03-20,unknown,35,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+390,2020-03-20,unknown,35,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 391,2020-03-20,unknown,53,M,Australia,visitor,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 392,2020-03-20,unknown,54,M,Singapore,citizen,Indonesia,Imported case,,,TRUE,,NA,NA,NA
-393,2020-03-20,unknown,21,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+393,2020-03-20,unknown,21,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 394,2020-03-20,unknown,66,F,Philippines,lp,Philippines,Imported case,,,TRUE,,NA,NA,NA
 395,2020-03-20,unknown,54,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 396,2020-03-20,unknown,46,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,2020-03-27,NA
 397,2020-03-20,unknown,43,M,Ireland,visitor,Ireland,Imported case,,,TRUE,,NA,NA,NA
 398,2020-03-20,unknown,57,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,2020-03-30,NA
-399,2020-03-20,unknown,23,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-400,2020-03-20,unknown,56,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-401,2020-03-20,unknown,20,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,2020-03-31,NA
+399,2020-03-20,unknown,23,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+400,2020-03-20,unknown,56,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+401,2020-03-20,unknown,20,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,2020-03-31,NA
 402,2020-03-20,unknown,22,F,Indonesia,visitor,Indonesia,Imported case,,,TRUE,,NA,NA,NA
 403,2020-03-20,unknown,77,M,Indonesia,lp,Indonesia,Imported case,,,TRUE,,NA,NA,NA
 404,2020-03-20,unknown,28,M,Australia,lp,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-405,2020-03-20,unknown,25,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+405,2020-03-20,unknown,25,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 406,2020-03-20,unknown,61,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,2020-03-28,NA
 407,2020-03-20,unknown,25,M,Spanish,visitor,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-408,2020-03-20,unknown,27,M,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
-409,2020-03-20,unknown,23,F,Australia,visitor,United states,Imported case,,,TRUE,,NA,NA,NA
-410,2020-03-21,unknown,20,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-411,2020-03-21,unknown,30,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-412,2020-03-21,unknown,19,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+408,2020-03-20,unknown,27,M,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
+409,2020-03-20,unknown,23,F,Australia,visitor,United States of America,Imported case,,,TRUE,,NA,NA,NA
+410,2020-03-21,unknown,20,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+411,2020-03-21,unknown,30,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+412,2020-03-21,unknown,19,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 413,2020-03-21,unknown,29,M,Singapore,citizen,Switzerland,Imported case,,,TRUE,,NA,NA,NA
-414,2020-03-21,unknown,37,M,Australia,lp,United states,Imported case,,,TRUE,,NA,2020-04-02,NA
+414,2020-03-21,unknown,37,M,Australia,lp,United States of America,Imported case,,,TRUE,,NA,2020-04-02,NA
 415,2020-03-21,unknown,64,F,Indonesia,visitor,Indonesia,Imported case,,,TRUE,,NA,NA,NA
-416,2020-03-21,unknown,21,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-417,2020-03-21,unknown,18,F,France,lp,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-418,2020-03-21,unknown,44,M,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+416,2020-03-21,unknown,21,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+417,2020-03-21,unknown,18,F,France,lp,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+418,2020-03-21,unknown,44,M,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 419,2020-03-21,unknown,45,M,Netherlands,visitor,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-420,2020-03-21,unknown,21,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-421,2020-03-21,unknown,23,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-422,2020-03-21,unknown,56,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+420,2020-03-21,unknown,21,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+421,2020-03-21,unknown,23,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+422,2020-03-21,unknown,56,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 423,2020-03-21,unknown,24,M,Singapore,citizen,Ireland,Imported case,,,TRUE,,NA,2020-03-29,NA
-424,2020-03-21,unknown,24,M,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
-425,2020-03-21,unknown,21,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+424,2020-03-21,unknown,24,M,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
+425,2020-03-21,unknown,21,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 426,2020-03-21,unknown,55,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,2020-03-29,NA
-427,2020-03-21,unknown,39,M,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
-428,2020-03-21,unknown,22,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+427,2020-03-21,unknown,39,M,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
+428,2020-03-21,unknown,22,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 429,2020-03-21,unknown,31,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 430,2020-03-21,unknown,59,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-431,2020-03-21,unknown,58,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+431,2020-03-21,unknown,58,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 432,2020-03-21,unknown,53,F,United Kingdom,lp,Indonesia,Imported case,,,TRUE,,NA,NA,NA
 433,2020-03-21,unknown,24,M,Singapore,citizen,Canada,Imported case,,,TRUE,,NA,NA,NA
 434,2020-03-21,unknown,36,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,2020-03-29,NA
 435,2020-03-21,unknown,30,F,Singapore,citizen,Malaysia,Imported case,,,TRUE,,NA,2020-03-25,NA
 436,2020-03-21,unknown,46,M,Singapore,citizen,Philippines,Imported case,,,TRUE,,NA,NA,NA
 437,2020-03-21,unknown,33,M,United Kingdom,visitor,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-438,2020-03-21,unknown,55,F,United States of America,visitor,United states,Imported case,,,TRUE,,NA,NA,NA
+438,2020-03-21,unknown,55,F,United States of America of America,visitor,United States of America,Imported case,,,TRUE,,NA,NA,NA
 439,2020-03-21,unknown,55,F,Denmark,lp,Denmark,Imported case,,Wilby Residences at 25 Wilby Road,TRUE,,NA,NA,NA
-440,2020-03-21,unknown,55,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+440,2020-03-21,unknown,55,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 441,2020-03-21,unknown,57,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 442,2020-03-21,unknown,48,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 443,2020-03-21,unknown,29,M,Singapore,citizen,,Local transmission,,Boulder+ Gym at 12 Kallang Avenue,TRUE,,NA,NA,NA
 444,2020-03-21,unknown,44,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-445,2020-03-21,unknown,21,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-446,2020-03-21,unknown,26,F,Indonesia,lp,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-447,2020-03-21,unknown,32,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-448,2020-03-21,unknown,21,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-449,2020-03-21,unknown,21,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+445,2020-03-21,unknown,21,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+446,2020-03-21,unknown,26,F,Indonesia,lp,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+447,2020-03-21,unknown,32,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+448,2020-03-21,unknown,21,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+449,2020-03-21,unknown,21,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 450,2020-03-21,unknown,44,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,2020-03-25,NA
 451,2020-03-22,unknown,62,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-452,2020-03-22,unknown,22,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-453,2020-03-22,unknown,41,M,India,lp,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-454,2020-03-22,unknown,47,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
-455,2020-03-22,unknown,29,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-456,2020-03-22,unknown,24,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+452,2020-03-22,unknown,22,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+453,2020-03-22,unknown,41,M,India,lp,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+454,2020-03-22,unknown,47,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
+455,2020-03-22,unknown,29,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+456,2020-03-22,unknown,24,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 457,2020-03-22,unknown,40,M,Myanmar,visitor,,Local transmission,,,TRUE,,NA,2020-04-02,NA
-458,2020-03-22,unknown,20,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+458,2020-03-22,unknown,20,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 459,2020-03-22,unknown,67,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-460,2020-03-22,unknown,23,F,New Zealand,visitor,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+460,2020-03-22,unknown,23,F,New Zealand,visitor,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 461,2020-03-22,unknown,49,F,Singapore,citizen,Malaysia,Imported case,,,TRUE,,NA,2020-03-28,NA
-462,2020-03-22,unknown,20,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,2020-03-31,NA
+462,2020-03-22,unknown,20,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,2020-03-31,NA
 463,2020-03-22,unknown,64,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-464,2020-03-22,unknown,23,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-465,2020-03-22,unknown,41,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+464,2020-03-22,unknown,23,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+465,2020-03-22,unknown,41,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 466,2020-03-22,unknown,55,M,Singapore,citizen,Indonesia,Imported case,,,TRUE,,NA,2020-03-30,NA
-467,2020-03-22,unknown,20,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-468,2020-03-22,unknown,28,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+467,2020-03-22,unknown,20,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+468,2020-03-22,unknown,28,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 469,2020-03-22,unknown,43,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,2020-04-02,NA
 470,2020-03-22,unknown,24,F,Singapore,citizen,Indonesia,Imported case,,,TRUE,,NA,NA,NA
-471,2020-03-22,unknown,22,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-472,2020-03-22,unknown,19,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-473,2020-03-22,unknown,25,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-474,2020-03-22,unknown,22,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+471,2020-03-22,unknown,22,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+472,2020-03-22,unknown,19,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+473,2020-03-22,unknown,25,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+474,2020-03-22,unknown,22,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 475,2020-03-22,unknown,22,F,Singapore,citizen,Ireland,Imported case,,,TRUE,,NA,NA,NA
 476,2020-03-22,unknown,68,M,Indonesia,visitor,Indonesia,Imported case,,,TRUE,,NA,NA,2020-04-02
 477,2020-03-22,unknown,44,M,Ireland,visitor,,Local transmission,,,TRUE,,NA,NA,NA
 478,2020-03-22,unknown,80,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,2020-04-02,NA
 479,2020-03-22,unknown,35,F,Indonesia,visitor,,Local transmission,,,TRUE,,NA,NA,NA
 480,2020-03-22,unknown,52,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-481,2020-03-22,unknown,37,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-482,2020-03-22,unknown,35,M,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
-483,2020-03-22,unknown,28,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
-484,2020-03-22,unknown,21,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-485,2020-03-22,unknown,20,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-486,2020-03-22,unknown,22,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,2020-03-30,NA
+481,2020-03-22,unknown,37,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+482,2020-03-22,unknown,35,M,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
+483,2020-03-22,unknown,28,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
+484,2020-03-22,unknown,21,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+485,2020-03-22,unknown,20,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+486,2020-03-22,unknown,22,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,2020-03-30,NA
 487,2020-03-22,unknown,72,M,Singapore,citizen,Indonesia,Imported case,,,TRUE,,NA,NA,NA
-488,2020-03-22,unknown,36,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-489,2020-03-22,unknown,25,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+488,2020-03-22,unknown,36,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+489,2020-03-22,unknown,25,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 490,2020-03-22,unknown,36,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-491,2020-03-22,unknown,22,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-492,2020-03-22,unknown,24,F,India,visitor,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-493,2020-03-22,unknown,23,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+491,2020-03-22,unknown,22,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+492,2020-03-22,unknown,24,F,India,visitor,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+493,2020-03-22,unknown,23,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 494,2020-03-22,unknown,24,M,Singapore,citizen,Sweden,Imported case,,,TRUE,,NA,NA,NA
-495,2020-03-22,unknown,29,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-496,2020-03-22,unknown,21,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-497,2020-03-22,unknown,63,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-498,2020-03-22,unknown,22,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-499,2020-03-22,unknown,27,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+495,2020-03-22,unknown,29,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+496,2020-03-22,unknown,21,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+497,2020-03-22,unknown,63,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+498,2020-03-22,unknown,22,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+499,2020-03-22,unknown,27,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 500,2020-03-22,unknown,24,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-501,2020-03-22,unknown,65,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-502,2020-03-22,unknown,74,F,India,visitor,United kingdom,Imported case,,,TRUE,,NA,2020-03-29,NA
-503,2020-03-22,unknown,26,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+501,2020-03-22,unknown,65,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+502,2020-03-22,unknown,74,F,India,visitor,United Kingdom,Imported case,,,TRUE,,NA,2020-03-29,NA
+503,2020-03-22,unknown,26,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 504,2020-03-23,unknown,32,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,2020-03-26,NA
-505,2020-03-23,unknown,24,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+505,2020-03-23,unknown,24,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 506,2020-03-23,unknown,49,M,Australia,visitor,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-507,2020-03-23,unknown,29,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-508,2020-03-23,unknown,23,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+507,2020-03-23,unknown,29,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+508,2020-03-23,unknown,23,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 509,2020-03-23,unknown,53,M,Singapore,citizen,Indonesia,Imported case,,,TRUE,,NA,2020-04-02,NA
 510,2020-03-23,unknown,52,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 511,2020-03-23,unknown,53,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-512,2020-03-23,unknown,21,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+512,2020-03-23,unknown,21,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 513,2020-03-23,unknown,21,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 514,2020-03-23,unknown,18,F,India,visitor,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-515,2020-03-23,unknown,24,M,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+515,2020-03-23,unknown,24,M,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 516,2020-03-23,unknown,42,F,Singapore,citizen,,Local transmission,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,,NA,NA,NA
 517,2020-03-23,unknown,37,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-518,2020-03-23,unknown,46,M,Australia,lp,United states,Imported case,,,TRUE,,NA,NA,NA
+518,2020-03-23,unknown,46,M,Australia,lp,United States of America,Imported case,,,TRUE,,NA,NA,NA
 519,2020-03-23,unknown,44,M,Germany,visitor,Germany,Imported case,,,TRUE,,NA,NA,NA
 520,2020-03-23,unknown,71,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,2020-03-24,NA
 521,2020-03-23,unknown,37,F,Singapore,citizen,,Local transmission,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,,NA,NA,NA
-522,2020-03-23,unknown,45,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+522,2020-03-23,unknown,45,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 523,2020-03-23,unknown,9,M,Philippines,lp,Philippines,Imported case,,,TRUE,,NA,NA,NA
 524,2020-03-23,unknown,61,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 525,2020-03-23,unknown,64,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-526,2020-03-23,unknown,22,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+526,2020-03-23,unknown,22,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 527,2020-03-23,unknown,44,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 528,2020-03-24,unknown,50,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 529,2020-03-24,unknown,19,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,2020-04-02,NA
-530,2020-03-24,unknown,35,M,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+530,2020-03-24,unknown,35,M,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 531,2020-03-24,unknown,43,M,India,visitor,,Local transmission,,,TRUE,,NA,NA,NA
 532,2020-03-24,unknown,44,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 533,2020-03-24,unknown,61,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
@@ -538,66 +538,66 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 537,2020-03-23,unknown,22,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 538,2020-03-23,unknown,50,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 539,2020-03-24,unknown,74,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,2020-04-01,NA
-540,2020-03-24,unknown,23,M,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+540,2020-03-24,unknown,23,M,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 541,2020-03-24,unknown,20,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,2020-03-27,NA
 542,2020-03-24,unknown,23,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 543,2020-03-24,unknown,19,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 544,2020-03-24,unknown,55,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 545,2020-03-24,unknown,75,F,Indonesia,lp,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-546,2020-03-24,unknown,27,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-547,2020-03-24,unknown,25,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+546,2020-03-24,unknown,27,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+547,2020-03-24,unknown,25,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 548,2020-03-24,unknown,44,F,Singapore,citizen,Spain,Imported case,,,TRUE,,NA,NA,NA
-549,2020-03-24,unknown,21,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+549,2020-03-24,unknown,21,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 550,2020-03-24,unknown,24,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-551,2020-03-24,unknown,22,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-552,2020-03-24,unknown,21,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+551,2020-03-24,unknown,22,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+552,2020-03-24,unknown,21,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 553,2020-03-24,unknown,57,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 554,2020-03-24,unknown,24,F,Malaysia,lp,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-555,2020-03-24,unknown,24,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+555,2020-03-24,unknown,24,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 556,2020-03-24,unknown,27,F,United Kingdom,visitor,,Local transmission,,Dover Court International School at 301 Dover Road; Hero's bar at 69 Circular Road,TRUE,,NA,NA,NA
 557,2020-03-24,unknown,68,M,Singapore,citizen,Pakistan,Imported case,,,TRUE,,NA,NA,NA
 558,2020-03-24,unknown,17,M,Singapore,citizen,Malaysia,Imported case,,,TRUE,,NA,NA,NA
-559,2020-03-24,unknown,22,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-560,2020-03-24,unknown,24,M,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+559,2020-03-24,unknown,22,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+560,2020-03-24,unknown,24,M,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 561,2020-03-24,unknown,30,M,Singapore,citizen,France,Imported case,,,TRUE,,NA,NA,NA
 562,2020-03-24,unknown,28,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-563,2020-03-24,unknown,25,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+563,2020-03-24,unknown,25,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 564,2020-03-24,unknown,29,M,France,visitor,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-565,2020-03-24,unknown,46,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+565,2020-03-24,unknown,46,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 566,2020-03-24,unknown,67,F,Singapore,citizen,,Local transmission,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,,NA,NA,NA
 567,2020-03-24,unknown,70,M,Singapore,citizen,,Local transmission,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,,NA,NA,NA
 568,2020-03-24,unknown,30,M,Malaysia,visitor,Malaysia,Imported case,,,TRUE,,NA,NA,NA
-569,2020-03-24,unknown,22,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+569,2020-03-24,unknown,22,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 570,2020-03-24,unknown,50,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,2020-03-31,NA
-571,2020-03-24,unknown,52,M,United Kingdom,visitor,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+571,2020-03-24,unknown,52,M,United Kingdom,visitor,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 572,2020-03-24,unknown,26,F,Singapore,citizen,,Local transmission,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,,NA,NA,NA
 573,2020-03-24,unknown,45,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 574,2020-03-24,unknown,24,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 575,2020-03-24,unknown,28,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-576,2020-03-24,unknown,21,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+576,2020-03-24,unknown,21,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 577,2020-03-24,unknown,37,F,unknown,visitor,,Local transmission,,,TRUE,,NA,NA,NA
 578,2020-03-24,unknown,11,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-579,2020-03-24,unknown,25,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+579,2020-03-24,unknown,25,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 580,2020-03-24,unknown,35,F,United States of America,visitor,,Local transmission,,,TRUE,,NA,NA,NA
 581,2020-03-24,unknown,47,M,Singapore,citizen,,Local transmission,,SingPost Centre at 10 Eunos Road 8,TRUE,,NA,NA,NA
-582,2020-03-24,unknown,3,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+582,2020-03-24,unknown,3,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 583,2020-03-24,unknown,61,F,Singapore,citizen,,Local transmission,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,,NA,NA,NA
 584,2020-03-24,unknown,37,F,Singapore,citizen,,Local transmission,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,,NA,NA,NA
 585,2020-03-24,unknown,38,F,Philippines,visitor,,Local transmission,,,TRUE,,NA,NA,NA
 586,2020-03-24,unknown,51,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-587,2020-03-24,unknown,25,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-588,2020-03-24,unknown,62,M,United Kingdom,visitor,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+587,2020-03-24,unknown,25,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+588,2020-03-24,unknown,62,M,United Kingdom,visitor,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 589,2020-03-24,unknown,47,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-590,2020-03-24,unknown,21,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+590,2020-03-24,unknown,21,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 591,2020-03-24,unknown,64,M,Singapore,citizen,Portugal,Imported case,,,TRUE,,NA,NA,NA
-592,2020-03-24,unknown,24,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-593,2020-03-24,unknown,24,M,Singapore,citizen,United states,Imported case,,,TRUE,,NA,2020-03-29,NA
+592,2020-03-24,unknown,24,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+593,2020-03-24,unknown,24,M,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,2020-03-29,NA
 594,2020-03-24,unknown,23,F,China,lp,,Local transmission,,,TRUE,,NA,NA,NA
 595,2020-03-24,unknown,19,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-596,2020-03-25,unknown,35,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+596,2020-03-25,unknown,35,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 597,2020-03-25,unknown,50,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 598,2020-03-25,unknown,35,F,India,visitor,,Local transmission,,,TRUE,,NA,NA,NA
-599,2020-03-25,unknown,32,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+599,2020-03-25,unknown,32,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 600,2020-03-25,unknown,66,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 601,2020-03-24,unknown,47,F,Singapore,citizen,,Local transmission,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,,2020-03-17,2020-03-29,NA
 602,2020-03-24,unknown,56,F,Singapore,citizen,,Local transmission,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,,NA,NA,NA
@@ -605,11 +605,11 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 604,2020-03-24,unknown,36,F,Philippines,lp,,Local transmission,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,,NA,NA,NA
 605,2020-03-24,unknown,29,F,Singapore,citizen,,Local transmission,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,,NA,NA,NA
 606,2020-03-25,unknown,55,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-607,2020-03-25,unknown,40,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+607,2020-03-25,unknown,40,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 608,2020-03-25,unknown,18,F,France,lp,Canada,Imported case,,,TRUE,,NA,NA,NA
 609,2020-03-24,unknown,30,F,Singapore,citizen,,Local transmission,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,,NA,NA,NA
 610,2020-03-24,unknown,25,F,Singapore,citizen,,Local transmission,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,,NA,NA,NA
-611,2020-03-25,unknown,24,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+611,2020-03-25,unknown,24,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 612,2020-03-24,unknown,22,F,Singapore,citizen,,Local transmission,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,,NA,NA,NA
 613,2020-03-25,unknown,62,F,Singapore,citizen,Thailand,Imported case,,,TRUE,,NA,NA,NA
 614,2020-03-25,unknown,62,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
@@ -618,40 +618,40 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 617,2020-03-25,unknown,26,F,Philippines,visitor,,Local transmission,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,,NA,NA,NA
 618,2020-03-25,unknown,29,F,United Kingdom,visitor,,Local transmission,,Dover Court International School at 301 Dover Road,TRUE,,NA,NA,NA
 619,2020-03-25,unknown,65,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-620,2020-03-25,unknown,18,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+620,2020-03-25,unknown,18,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 621,2020-03-25,unknown,50,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-622,2020-03-25,unknown,27,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+622,2020-03-25,unknown,27,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 623,2020-03-25,unknown,58,F,Indonesia,lp,Indonesia,Imported case,,,TRUE,,NA,NA,NA
 624,2020-03-25,unknown,48,F,Singapore,citizen,,Local transmission,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,,NA,NA,NA
 625,2020-03-25,unknown,27,M,Philippines,visitor,Philippines,Imported case,,,TRUE,,NA,2020-04-02,NA
 626,2020-03-25,unknown,44,F,United Kingdom,visitor,,Local transmission,,Dover Court International School at 301 Dover Road,TRUE,,NA,NA,NA
-627,2020-03-25,unknown,18,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-628,2020-03-25,unknown,23,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+627,2020-03-25,unknown,18,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+628,2020-03-25,unknown,23,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 629,2020-03-25,unknown,46,M,Singapore,citizen,Pakistan,Imported case,,,TRUE,,NA,2020-03-30,NA
 630,2020-03-25,unknown,43,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 631,2020-03-25,unknown,3,F,India,lp,,Local transmission,,,TRUE,,NA,NA,NA
 632,2020-03-25,unknown,32,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-633,2020-03-25,unknown,35,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+633,2020-03-25,unknown,35,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 634,2020-03-25,unknown,42,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-635,2020-03-25,unknown,21,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
-636,2020-03-25,unknown,22,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+635,2020-03-25,unknown,21,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
+636,2020-03-25,unknown,22,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 637,2020-03-25,unknown,24,M,China,lp,,Local transmission,,,TRUE,,NA,NA,NA
 638,2020-03-25,unknown,49,M,Singapore,citizen,,Local transmission,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,,NA,NA,NA
-639,2020-03-25,unknown,40,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+639,2020-03-25,unknown,40,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 640,2020-03-25,unknown,18,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 641,2020-03-25,unknown,55,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-642,2020-03-25,unknown,19,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+642,2020-03-25,unknown,19,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 643,2020-03-25,unknown,51,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 644,2020-03-25,unknown,52,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 645,2020-03-25,unknown,27,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 646,2020-03-25,unknown,56,F,Singapore,citizen,Indonesia,Imported case,,,TRUE,,NA,NA,NA
-647,2020-03-25,unknown,46,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
-648,2020-03-25,unknown,26,M,France,visitor,Sri lanka,Imported case,,,TRUE,,NA,NA,NA
+647,2020-03-25,unknown,46,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
+648,2020-03-25,unknown,26,M,France,visitor,Sri Lanka,Imported case,,,TRUE,,NA,NA,NA
 649,2020-03-25,unknown,36,M,Singapore,citizen,Australia,Imported case,,,TRUE,,NA,NA,NA
-650,2020-03-25,unknown,19,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+650,2020-03-25,unknown,19,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 651,2020-03-25,unknown,31,M,Malaysia,visitor,Thailand,Imported case,,,TRUE,,NA,NA,NA
 652,2020-03-25,unknown,37,M,Australia,visitor,,Local transmission,,,TRUE,,NA,NA,NA
-653,2020-03-25,unknown,25,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+653,2020-03-25,unknown,25,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 654,2020-03-25,unknown,66,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 655,2020-03-25,unknown,30,M,India,lp,,Local transmission,,,TRUE,,NA,NA,NA
 656,2020-03-25,unknown,30,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
@@ -661,18 +661,18 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 660,2020-03-25,unknown,22,F,Philippines,visitor,,Local transmission,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,,NA,NA,NA
 661,2020-03-26,unknown,44,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 662,2020-03-26,unknown,42,M,United Kingdom,visitor,,Local transmission,,Dover Court International School at 301 Dover Road,TRUE,,NA,NA,NA
-663,2020-03-26,unknown,21,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+663,2020-03-26,unknown,21,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 664,2020-03-26,unknown,38,F,United States of America,visitor,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-665,2020-03-26,unknown,21,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+665,2020-03-26,unknown,21,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 666,2020-03-26,unknown,32,F,Singapore,citizen,,Local transmission,,,TRUE,,2020-03-24,NA,NA
-667,2020-03-26,unknown,40,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+667,2020-03-26,unknown,40,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 668,2020-03-26,unknown,31,F,India,visitor,,Local transmission,,,TRUE,,NA,NA,NA
 669,2020-03-26,unknown,54,M,United Kingdom,visitor,France,Imported case,,,TRUE,,NA,NA,NA
 670,2020-03-26,unknown,34,M,Australia,visitor,,Local transmission,,Hero's bar at 69 Circular Road,TRUE,,NA,NA,NA
-671,2020-03-26,unknown,29,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
-672,2020-03-26,unknown,24,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
-673,2020-03-26,unknown,27,M,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
-674,2020-03-26,unknown,59,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+671,2020-03-26,unknown,29,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
+672,2020-03-26,unknown,24,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
+673,2020-03-26,unknown,27,M,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
+674,2020-03-26,unknown,59,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 675,2020-03-26,unknown,51,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 676,2020-03-26,unknown,29,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 677,2020-03-26,unknown,40,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
@@ -682,7 +682,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 681,2020-03-26,unknown,42,M,New Zealand,visitor,,Local transmission,,,TRUE,,NA,NA,NA
 682,2020-03-26,unknown,22,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 683,2020-03-26,unknown,40,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-684,2020-03-26,unknown,21,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+684,2020-03-26,unknown,21,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 685,2020-03-26,unknown,59,M,New Zealand,lp,,Local transmission,,,TRUE,,NA,NA,NA
 686,2020-03-26,unknown,37,M,United Kingdom,visitor,,Local transmission,,Dover Court International School at 301 Dover Road,TRUE,,NA,NA,NA
 687,2020-03-26,unknown,77,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
@@ -699,7 +699,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 698,2020-03-26,unknown,60,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 699,2020-03-26,unknown,53,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 700,2020-03-26,unknown,55,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-701,2020-03-26,unknown,50,M,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+701,2020-03-26,unknown,50,M,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 702,2020-03-26,unknown,61,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 703,2020-03-26,unknown,58,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 704,2020-03-26,unknown,19,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
@@ -717,51 +717,51 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 716,2020-03-27,unknown,67,F,Singapore,citizen,,Local transmission,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,,NA,NA,NA
 717,2020-03-27,unknown,19,F,India,lp,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 718,2020-03-27,unknown,33,M,Bangaldesh,lp,,Local transmission,,,TRUE,,NA,NA,NA
-719,2020-03-27,unknown,29,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-720,2020-03-27,unknown,20,M,Indonesia,visitor,United states,Imported case,,,TRUE,,NA,NA,NA
+719,2020-03-27,unknown,29,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+720,2020-03-27,unknown,20,M,Indonesia,visitor,United States of America,Imported case,,,TRUE,,NA,NA,NA
 721,2020-03-27,unknown,68,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 722,2020-03-27,unknown,56,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-723,2020-03-27,unknown,27,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+723,2020-03-27,unknown,27,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 724,2020-03-27,unknown,29,M,Malaysia,visitor,,Local transmission,,SingPost Centre at 10 Eunos Road 8,TRUE,,NA,NA,NA
-725,2020-03-27,unknown,23,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+725,2020-03-27,unknown,23,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 726,2020-03-27,unknown,59,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-727,2020-03-27,unknown,59,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+727,2020-03-27,unknown,59,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 728,2020-03-27,unknown,22,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 729,2020-03-27,unknown,53,M,Singapore,citizen,,Local transmission,,Dover Court International School at 301 Dover Road,TRUE,,NA,NA,NA
 730,2020-03-27,unknown,26,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 731,2020-03-27,unknown,32,M,Singapore,citizen,,Local transmission,,,TRUE,,2020-03-21,NA,NA
-732,2020-03-27,unknown,23,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+732,2020-03-27,unknown,23,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 733,2020-03-27,unknown,52,M,Australia,visitor,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 734,2020-03-27,unknown,31,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 735,2020-03-27,unknown,29,F,Ireland,visitor,Vietnam,Imported case,,,TRUE,,NA,NA,NA
 736,2020-03-27,unknown,43,M,France,lp,Indonesia,Imported case,,,TRUE,,NA,NA,NA
 737,2020-03-27,unknown,28,M,Malaysia,visitor,Malaysia,Imported case,,,TRUE,,NA,NA,NA
-738,2020-03-27,unknown,57,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-739,2020-03-27,unknown,30,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+738,2020-03-27,unknown,57,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+739,2020-03-27,unknown,30,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 740,2020-03-27,unknown,25,M,China,visitor,,Local transmission,,SingPost Centre at 10 Eunos Road 8,TRUE,,NA,NA,NA
 741,2020-03-27,unknown,42,F,Singapore,citizen,,Local transmission,,,TRUE,,2020-03-24,NA,NA
 742,2020-03-27,unknown,39,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 743,2020-03-27,unknown,69,M,Singapore,citizen,Malaysia,Imported case,,,TRUE,,NA,NA,NA
-744,2020-03-27,unknown,40,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+744,2020-03-27,unknown,40,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 745,2020-03-27,unknown,36,F,Singapore,citizen,,Local transmission,,The Wedding Brocade at 1 Yishun Industrial Street 1,TRUE,,NA,NA,NA
 746,2020-03-27,unknown,38,M,Singapore,citizen,,Local transmission,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,,NA,NA,NA
 747,2020-03-27,unknown,51,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 748,2020-03-27,unknown,36,F,Malaysia,visitor,,Local transmission,,,TRUE,,NA,NA,NA
-749,2020-03-27,unknown,24,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,2020-04-02,NA
+749,2020-03-27,unknown,24,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,2020-04-02,NA
 750,2020-03-27,unknown,22,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 751,2020-03-27,unknown,71,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 752,2020-03-27,unknown,70,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 753,2020-03-27,unknown,24,M,Singapore,citizen,Canada,Imported case,,,TRUE,,NA,NA,NA
-754,2020-03-27,unknown,22,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+754,2020-03-27,unknown,22,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 755,2020-03-27,unknown,25,M,Singapore,citizen,Laos,Imported case,,,TRUE,,NA,NA,NA
 756,2020-03-27,unknown,42,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 757,2020-03-27,unknown,22,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-758,2020-03-27,unknown,23,M,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+758,2020-03-27,unknown,23,M,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 759,2020-03-27,unknown,1,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 760,2020-03-27,unknown,64,M,Singapore,citizen,Turkey,Imported case,,,TRUE,,NA,NA,NA
 761,2020-03-27,unknown,36,F,South Africa,visitor,,Local transmission,,Dover Court International School at 301 Dover Road,TRUE,,NA,NA,NA
-762,2020-03-27,unknown,21,M,India,visitor,United states,Imported case,,,TRUE,,NA,NA,NA
-763,2020-03-27,unknown,21,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+762,2020-03-27,unknown,21,M,India,visitor,United States of America,Imported case,,,TRUE,,NA,NA,NA
+763,2020-03-27,unknown,21,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 764,2020-03-27,unknown,51,M,Spanish,visitor,,Local transmission,,,TRUE,,NA,NA,NA
 765,2020-03-27,unknown,31,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,2020-04-02,NA
 766,2020-03-27,unknown,50,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,2020-03-31,NA
@@ -770,22 +770,22 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 769,2020-03-27,unknown,44,M,Singapore,citizen,Pakistan,Imported case,,,TRUE,,NA,NA,NA
 770,2020-03-27,unknown,47,M,Malaysia,visitor,Malaysia,Imported case,,,TRUE,,NA,NA,NA
 771,2020-03-27,unknown,30,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-772,2020-03-28,unknown,43,M,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+772,2020-03-28,unknown,43,M,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 773,2020-03-27,unknown,55,F,India,lp,,Local transmission,,,TRUE,,NA,NA,NA
-774,2020-03-27,unknown,24,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+774,2020-03-27,unknown,24,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 775,2020-03-27,unknown,29,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 776,2020-03-27,unknown,35,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,2020-03-31,NA
 777,2020-03-28,unknown,29,M,Singapore,citizen,France,Imported case,,,TRUE,,NA,NA,NA
-778,2020-03-28,unknown,21,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+778,2020-03-28,unknown,21,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 779,2020-03-28,unknown,55,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 780,2020-03-28,unknown,50,F,Philippines,visitor,,Local transmission,,,TRUE,,NA,NA,NA
 781,2020-03-27,unknown,43,F,Singapore,citizen,Philippines,Imported case,,,TRUE,,NA,NA,NA
-782,2020-03-27,unknown,21,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-783,2020-03-27,unknown,19,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-784,2020-03-27,unknown,23,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+782,2020-03-27,unknown,21,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+783,2020-03-27,unknown,19,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+784,2020-03-27,unknown,23,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 785,2020-03-27,unknown,31,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 786,2020-03-27,unknown,51,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-787,2020-03-28,unknown,40,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+787,2020-03-28,unknown,40,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 788,2020-03-28,unknown,57,F,Singapore,citizen,,Local transmission,,Mustafa Centre at 145 Syed Alwi Road,TRUE,,NA,NA,NA
 789,2020-03-28,unknown,50,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 790,2020-03-28,unknown,60,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
@@ -798,10 +798,10 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 797,2020-03-28,unknown,35,F,Indonesia,lp,,Local transmission,,,TRUE,,NA,NA,NA
 798,2020-03-28,unknown,29,F,Singapore,citizen,Turkey,Imported case,,,TRUE,,NA,NA,NA
 799,2020-03-28,unknown,39,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-800,2020-03-28,unknown,22,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+800,2020-03-28,unknown,22,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 801,2020-03-28,unknown,39,M,Myanmar,visitor,,Local transmission,,,TRUE,,NA,NA,NA
 802,2020-03-28,unknown,28,F,Singapore,citizen,,Local transmission,,The Wedding Brocade at 1 Yishun Industrial Street 1,TRUE,,NA,NA,NA
-803,2020-03-28,unknown,23,M,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+803,2020-03-28,unknown,23,M,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 804,2020-03-28,unknown,21,F,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 805,2020-03-28,unknown,32,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 806,2020-03-28,unknown,25,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
@@ -813,35 +813,35 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 812,2020-03-28,unknown,25,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 813,2020-03-28,unknown,29,F,United Kingdom,visitor,,Local transmission,,Hero's bar at 69 Circular Road,TRUE,,NA,NA,NA
 814,2020-03-28,unknown,61,M,Singapore,citizen,Malaysia,Imported case,,,TRUE,,NA,NA,NA
-815,2020-03-28,unknown,21,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+815,2020-03-28,unknown,21,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 816,2020-03-28,unknown,36,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 817,2020-03-28,unknown,43,M,Singapore,citizen,India,Imported case,,,TRUE,,NA,NA,NA
 818,2020-03-28,unknown,22,F,Japan,visitor,,Local transmission,,Wilby Residences at 25 Wilby Road,TRUE,,NA,NA,NA
 819,2020-03-28,unknown,35,F,India,lp,India,Imported case,,,TRUE,,NA,NA,NA
 820,2020-03-28,unknown,55,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 821,2020-03-28,unknown,35,M,Bangaldesh,lp,,Local transmission,,,TRUE,,NA,2020-04-02,NA
-822,2020-03-28,unknown,22,M,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+822,2020-03-28,unknown,22,M,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 823,2020-03-28,unknown,43,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 824,2020-03-28,unknown,33,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 825,2020-03-28,unknown,36,M,Philippines,visitor,Philippines,Imported case,,,TRUE,,NA,NA,NA
 826,2020-03-28,unknown,48,M,Bangaldesh,lp,,Local transmission,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,,NA,NA,NA
-827,2020-03-28,unknown,27,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,2020-04-01,NA
+827,2020-03-28,unknown,27,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,2020-04-01,NA
 828,2020-03-28,unknown,47,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 829,2020-03-28,unknown,34,M,India,visitor,,Local transmission,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,,NA,NA,NA
 830,2020-03-28,unknown,61,F,Singapore,citizen,Turkey,Imported case,,,TRUE,,NA,NA,NA
-831,2020-03-29,unknown,22,M,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
-832,2020-03-29,unknown,52,M,Singapore,citizen,United arab emirates,Imported case,,,TRUE,,NA,NA,NA
-833,2020-03-29,unknown,69,M,Malaysia,lp,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+831,2020-03-29,unknown,22,M,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
+832,2020-03-29,unknown,52,M,Singapore,citizen,United Arab Emirates,Imported case,,,TRUE,,NA,NA,NA
+833,2020-03-29,unknown,69,M,Malaysia,lp,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 834,2020-03-28,unknown,34,M,India,visitor,India,Imported case,,,TRUE,,NA,NA,NA
 835,2020-03-29,unknown,68,F,Singapore,citizen,Turkey,Imported case,,,TRUE,,NA,NA,NA
 836,2020-03-29,unknown,43,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 837,2020-03-29,unknown,68,F,Singapore,citizen,Turkey,Imported case,,,TRUE,,NA,NA,NA
-838,2020-03-29,unknown,42,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+838,2020-03-29,unknown,42,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 839,2020-03-29,unknown,57,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 840,2020-03-29,unknown,52,F,Singapore,citizen,Philippines,Imported case,,,TRUE,,NA,NA,NA
-841,2020-03-29,unknown,21,F,Singapore,citizen,United states,Imported case,,,TRUE,,NA,NA,NA
+841,2020-03-29,unknown,21,F,Singapore,citizen,United States of America,Imported case,,,TRUE,,NA,NA,NA
 842,2020-03-29,unknown,30,M,Singapore,citizen,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
-843,2020-03-29,unknown,68,F,Malaysia,visitor,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+843,2020-03-29,unknown,68,F,Malaysia,visitor,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 844,2020-03-29,unknown,47,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 845,2020-03-29,unknown,38,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 846,2020-03-29,unknown,68,M,United Arab Emirates,lp,,Local transmission,,,TRUE,,NA,NA,NA
@@ -860,7 +860,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 859,2020-03-29,unknown,41,M,Bangaldesh,visitor,,Local transmission,,,TRUE,,NA,NA,NA
 860,2020-03-29,unknown,22,M,India,lp,,Local transmission,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,,NA,NA,NA
 861,2020-03-29,unknown,25,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-862,2020-03-29,unknown,29,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+862,2020-03-29,unknown,29,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 863,2020-03-29,unknown,49,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 864,2020-03-29,unknown,27,F,Singapore,citizen,,Local transmission,,Wilby Residences at 25 Wilby Road,TRUE,,NA,NA,NA
 865,2020-03-29,unknown,36,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
@@ -869,10 +869,10 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 868,2020-03-29,unknown,29,M,Bangaldesh,lp,,Local transmission,,Sungei Kadut dormitory at 55 Sungei Kadut Loop,TRUE,,NA,NA,NA
 869,2020-03-30,unknown,41,M,Singapore,citizen,,Local transmission,,Maxwell MRT station at 50 Neil Road,TRUE,,NA,NA,NA
 870,2020-03-30,unknown,54,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-871,2020-03-30,unknown,19,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-872,2020-03-30,unknown,39,F,Singapore,citizen,United arab emirates,Imported case,,,TRUE,,NA,NA,NA
+871,2020-03-30,unknown,19,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+872,2020-03-30,unknown,39,F,Singapore,citizen,United Arab Emirates,Imported case,,,TRUE,,NA,NA,NA
 873,2020-03-30,unknown,47,F,Singapore,citizen,,Local transmission,,Wilby Residences at 25 Wilby Road,TRUE,,NA,NA,NA
-874,2020-03-30,unknown,25,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+874,2020-03-30,unknown,25,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 875,2020-03-30,unknown,29,M,Bangaldesh,visitor,,Local transmission,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,,NA,NA,NA
 876,2020-03-30,unknown,53,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 877,2020-03-30,unknown,41,M,Malaysia,visitor,Malaysia,Imported case,,,TRUE,,NA,NA,NA
@@ -880,15 +880,15 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 879,2020-03-30,unknown,26,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 880,2020-03-30,unknown,49,M,Bangaldesh,visitor,,Local transmission,,,TRUE,,NA,NA,NA
 881,2020-03-30,unknown,39,M,Singapore,citizen,,Local transmission,,SingPost Centre at 10 Eunos Road 8,TRUE,,NA,NA,NA
-882,2020-03-30,unknown,29,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
-883,2020-03-30,unknown,21,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+882,2020-03-30,unknown,29,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
+883,2020-03-30,unknown,21,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 884,2020-03-30,unknown,40,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 885,2020-03-30,unknown,26,M,Singapore,citizen,Denmark,Imported case,,,TRUE,,NA,NA,NA
 886,2020-03-30,unknown,36,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 887,2020-03-30,unknown,62,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-888,2020-03-30,unknown,24,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+888,2020-03-30,unknown,24,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 889,2020-03-30,unknown,65,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-890,2020-03-30,unknown,35,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+890,2020-03-30,unknown,35,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 891,2020-03-30,unknown,21,M,India,lp,,Local transmission,,,TRUE,,2020-03-29,NA,NA
 892,2020-03-30,unknown,24,M,Singapore,citizen,Canada,Imported case,,,TRUE,,NA,NA,NA
 893,2020-03-30,unknown,44,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
@@ -903,7 +903,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 902,2020-03-30,unknown,37,M,Sri Lanka,visitor,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 903,2020-03-30,unknown,27,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 904,2020-03-31,unknown,49,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-905,2020-03-30,unknown,22,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+905,2020-03-30,unknown,22,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 906,2020-03-30,unknown,44,M,Italy,visitor,Unclear origin,Imported case,,,TRUE,,NA,NA,NA
 907,2020-03-30,unknown,50,M,Netherlands,visitor,,Local transmission,,Keppel Shipyard at 51 Pioneer Sector 1,TRUE,,NA,NA,NA
 908,2020-03-30,unknown,36,M,Bangaldesh,visitor,,Local transmission,,Mustafa Centre at 145 Syed Alwi Road,TRUE,,NA,NA,NA
@@ -913,15 +913,15 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 912,2020-03-31,unknown,39,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 913,2020-03-31,unknown,66,F,Singapore,citizen,Australia,Imported case,,,TRUE,,NA,NA,NA
 914,2020-03-30,unknown,55,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-915,2020-03-31,unknown,24,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+915,2020-03-31,unknown,24,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 916,2020-03-31,unknown,46,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-917,2020-03-31,unknown,23,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+917,2020-03-31,unknown,23,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 918,2020-03-31,unknown,86,F,Singapore,citizen,,Local transmission,,Lee Ah Mooi Old Age Home at 1 Thomson Lane,TRUE,,NA,NA,NA
 919,2020-03-31,unknown,56,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 920,2020-03-31,unknown,55,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 921,2020-03-31,unknown,32,M,India,visitor,,Local transmission,,,TRUE,,NA,NA,NA
 922,2020-03-31,unknown,36,M,Bangaldesh,visitor,,Local transmission,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,,NA,NA,NA
-923,2020-03-31,unknown,20,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+923,2020-03-31,unknown,20,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 924,2020-03-31,unknown,34,M,Bangaldesh,visitor,,Local transmission,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,,NA,NA,NA
 925,2020-03-31,unknown,33,M,Bangaldesh,visitor,,Local transmission,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,,NA,NA,NA
 926,2020-03-31,unknown,33,M,Bangaldesh,visitor,,Local transmission,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,,NA,NA,NA
@@ -930,7 +930,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 929,2020-04-01,unknown,37,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 930,2020-04-01,unknown,23,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 931,2020-04-01,unknown,24,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-932,2020-04-01,unknown,34,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+932,2020-04-01,unknown,34,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 933,2020-04-01,unknown,31,M,Singapore,citizen,Thailand,Imported case,,,TRUE,,NA,NA,NA
 934,2020-04-01,unknown,33,M,Bangaldesh,wp,,Local transmission,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,,NA,NA,NA
 935,2020-04-01,unknown,80,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
@@ -950,9 +950,9 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 949,2020-04-01,unknown,20,M,Singapore,citizen,India,Imported case,,,TRUE,,NA,NA,NA
 950,2020-04-01,unknown,29,M,Singapore,citizen,Netherlands,Imported case,,,TRUE,,NA,NA,NA
 951,2020-04-01,unknown,29,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-952,2020-04-01,unknown,37,F,Singapore,citizen,United arab emirates,Imported case,,,TRUE,,NA,NA,NA
+952,2020-04-01,unknown,37,F,Singapore,citizen,United Arab Emirates,Imported case,,,TRUE,,NA,NA,NA
 953,2020-04-01,unknown,51,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-954,2020-04-01,unknown,53,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+954,2020-04-01,unknown,53,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 955,2020-04-01,unknown,53,M,Australia,wp,South Africa,Imported case,,,TRUE,,NA,NA,NA
 956,2020-04-01,unknown,32,M,Bangaldesh,lp,,Local transmission,,,TRUE,,NA,NA,NA
 957,2020-04-01,unknown,73,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
@@ -1003,11 +1003,11 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1002,2020-04-01,unknown,24,M,Singapore,citizen,Canada,Imported case,,,TRUE,,NA,NA,NA
 1003,2020-04-01,unknown,31,F,Singapore,citizen,,Local transmission,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,,NA,NA,NA
 1004,2020-04-01,unknown,32,F,India,wp,Indonesia,Local transmission,,Lee Ah Mooi Old Age Home at 1 Thomson Lane,TRUE,,NA,NA,NA
-1005,2020-04-01,unknown,30,F,Malaysia,wp,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+1005,2020-04-01,unknown,30,F,Malaysia,wp,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 1006,2020-04-01,unknown,29,F,Singapore,citizen,"India, Malaysia",Local transmission,,,TRUE,,NA,NA,NA
 1007,2020-04-01,unknown,62,F,Singapore,citizen,Philippines,Local transmission,,,TRUE,,NA,NA,NA
-1008,2020-04-01,unknown,76,M,Singapore,citizen,United kingdom,Local transmission,,,TRUE,,NA,NA,NA
-1009,2020-04-01,unknown,48,M,Singapore,citizen,United kingdom,Local transmission,,Maxwell MRT station at 50 Neil Road,TRUE,,NA,NA,NA
+1008,2020-04-01,unknown,76,M,Singapore,citizen,United Kingdom,Local transmission,,,TRUE,,NA,NA,NA
+1009,2020-04-01,unknown,48,M,Singapore,citizen,United Kingdom,Local transmission,,Maxwell MRT station at 50 Neil Road,TRUE,,NA,NA,NA
 1010,2020-04-01,unknown,27,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 1011,2020-04-01,unknown,30,M,India,lp,,Local transmission,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,,NA,NA,NA
 1012,2020-04-01,unknown,27,M,Bangaldesh,wp,,Local transmission,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,,NA,NA,NA
@@ -1043,8 +1043,8 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1042,2020-04-02,unknown,45,M,Singapore,citizen,Philippines,Imported case,,,TRUE,,NA,NA,NA
 1043,2020-04-02,unknown,53,F,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 1044,2020-04-02,unknown,31,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
-1045,2020-04-02,unknown,21,M,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+1045,2020-04-02,unknown,21,M,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 1046,2020-04-02,unknown,56,M,Singapore,citizen,,Local transmission,,,TRUE,,NA,NA,NA
 1047,2020-04-02,unknown,25,M,India,lp,,Local transmission,,SingPost Centre at 10 Eunos Road 8,TRUE,,NA,NA,NA
-1048,2020-04-02,unknown,73,F,Singapore,citizen,United kingdom,Imported case,,,TRUE,,NA,NA,NA
+1048,2020-04-02,unknown,73,F,Singapore,citizen,United Kingdom,Imported case,,,TRUE,,NA,NA,NA
 1049,2020-04-02,unknown,30,M,India,lp,,Local transmission,,,TRUE,,NA,NA,NA
