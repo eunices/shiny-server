@@ -382,7 +382,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 381,2020-03-20,SGH,27,F,Singapore,citizen,Spain,Imported case,,,,TRUE,NA,NA,NA
 382,2020-03-20,NCID,55,F,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,2020-03-29,NA
 383,2020-03-20,NCID,42,F,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
-384,2020-03-20,NCID,65,M,Singapore,citizen,,Local transmission,553,,,TRUE,NA,NA,NA
+384,2020-03-20,NCID,65,M,Singapore,citizen,,Local transmission,553,,Singapore Cricket Club at A Connaught Drive ,TRUE,NA,NA,NA
 385,2020-03-20,CGH,22,M,Singapore,citizen,United Kingdom,Imported case,559,,,TRUE,NA,2020-04-02,NA
 386,2020-03-20,NTFGH,64,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 387,2020-03-20,NUH,30,F,Switzerland,visitor,Unclear origin,Imported case,337,,,TRUE,NA,NA,NA
@@ -538,7 +538,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 537,2020-03-23,NCID,22,F,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,NA,NA,NA
 538,2020-03-23,NCID,50,M,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,NA,NA,NA
 539,2020-03-24,SGH,74,F,Singapore,citizen,,Local transmission,"338, 367",,,TRUE,NA,2020-04-01,NA
-540,2020-03-24,NUH,23,M,Singapore,citizen,United States of America,Imported case,,,,TRUE,NA,NA,NA
+540,2020-03-24,NUH,23,M,Singapore,citizen,United States of America,Imported case,,,Ce La Vi at Marina Bay Sands,TRUE,NA,NA,NA
 541,2020-03-24,NCID,20,F,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,NA,2020-03-27,NA
 542,2020-03-24,NCID,23,M,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,NA,NA,NA
 543,2020-03-24,NCID,19,F,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,NA,NA,NA
@@ -668,7 +668,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 667,2020-03-26,NCID,40,F,Singapore,citizen,United States of America,Imported case,,772,,TRUE,NA,NA,NA
 668,2020-03-26,NCID,31,F,India,visitor,,Local transmission,600,,,TRUE,NA,NA,NA
 669,2020-03-26,NCID,54,M,United Kingdom,visitor,France,Imported case,,,,TRUE,NA,NA,NA
-670,2020-03-26,NCID,34,M,Australia,visitor,,Local transmission,714,,Hero's bar at 69 Circular Road,TRUE,NA,NA,NA
+670,2020-03-26,NCID,34,M,Australia,visitor,,Local transmission,714,,Hero's bar at 69 Circular Road; Singapore Cricket Club at A Connaught Drive,TRUE,NA,NA,NA
 671,2020-03-26,NCID,29,F,Singapore,citizen,United States of America,Imported case,,,,TRUE,NA,NA,NA
 672,2020-03-26,NCID,24,F,Singapore,citizen,United States of America,Imported case,,,,TRUE,NA,NA,NA
 673,2020-03-26,NCID,27,M,Singapore,citizen,United States of America,Imported case,,,,TRUE,NA,NA,NA
@@ -726,7 +726,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 725,2020-03-27,NTFGH,23,M,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
 726,2020-03-27,NCID,59,M,Singapore,citizen,,Local transmission,"557, 629, 1023",,,TRUE,NA,NA,NA
 727,2020-03-27,NCID,59,M,Singapore,citizen,United Kingdom,Imported case,,"863, 935",,TRUE,NA,NA,NA
-728,2020-03-27,CGH,22,M,Singapore,citizen,,Local transmission,,792,,TRUE,NA,NA,NA
+728,2020-03-27,CGH,22,M,Singapore,citizen,,Local transmission,,792,Singapore Cricket Club at A Connaught Drive,TRUE,NA,NA,NA
 729,2020-03-27,SGH,53,M,Singapore,citizen,,Local transmission,,,Dover Court International School at 301 Dover Road,TRUE,NA,NA,NA
 730,2020-03-27,CGH,26,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 731,2020-03-27,CGH,32,M,Singapore,citizen,,Local transmission,,,,TRUE,2020-03-21,NA,NA
@@ -790,7 +790,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 789,2020-03-28,NCID,50,F,Singapore,citizen,,Local transmission,722,,,TRUE,NA,NA,NA
 790,2020-03-28,NCID,60,M,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,NA,NA,NA
 791,2020-03-28,NCID,40,F,Indonesia,lp,,Local transmission,"418, 512",,,TRUE,NA,NA,NA
-792,2020-03-28,NCID,50,F,Singapore,citizen,,Local transmission,728,,,TRUE,NA,NA,NA
+792,2020-03-28,NCID,50,F,Singapore,citizen,,Local transmission,728,,Singapore Cricket Club at A Connaught Drive,TRUE,NA,NA,NA
 793,2020-03-28,NCID,23,F,Singapore,citizen,,Local transmission,678,,Wilby Residences at 25 Wilby Road,TRUE,NA,NA,NA
 794,2020-03-27,NCID,22,F,unknown,visitor,Unclear origin,Imported case,,,,TRUE,NA,NA,NA
 795,2020-03-28,NCID,18,M,Singapore,citizen,,Local transmission,"533, 659, 734, 797",,,TRUE,NA,NA,NA
@@ -805,7 +805,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 804,2020-03-28,NCID,21,F,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,NA,NA,NA
 805,2020-03-28,NCID,32,M,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,NA,NA,NA
 806,2020-03-28,NCID,25,M,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,NA,NA,NA
-807,2020-03-28,CGH,21,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+807,2020-03-28,CGH,21,M,Singapore,citizen,,Local transmission,,,Ce La Vi at Marina Bay Sands,TRUE,NA,NA,NA
 808,2020-03-28,NTFGH,44,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 809,2020-03-28,SKH,37,M,Singapore,citizen,,Local transmission,,"742, 845",,TRUE,NA,NA,NA
 810,2020-03-28,CGH,22,F,Singapore,citizen,,Local transmission,,,The Wedding Brocade at 1 Yishun Industrial Street 1,TRUE,NA,NA,NA
@@ -853,8 +853,8 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 852,2020-03-29,SGH,31,M,India,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 853,2020-03-29,NCID,20,M,Malaysia,visitor,,Local transmission,,,,TRUE,2020-03-28,NA,NA
 854,2020-03-29,KTPH,43,M,India,visitor,,Local transmission,,,,TRUE,NA,NA,NA
-855,2020-03-29,NCID,88,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-856,2020-03-29,CGH,32,M,China,visitor,,Local transmission,,,,TRUE,NA,NA,NA
+855,2020-03-29,NCID,88,M,Singapore,citizen,,Local transmission,,,Singapore Cricket Club at A Connaught Drive,TRUE,NA,NA,NA
+856,2020-03-29,CGH,32,M,China,visitor,,Local transmission,,,Ce La Vi at Marina Bay Sands,TRUE,NA,NA,NA
 857,2020-03-29,SKH,20,M,Singapore,citizen,Malaysia,Imported case,,887,,TRUE,NA,NA,NA
 858,2020-03-29,NCID,35,F,Singapore,citizen,France,Imported case,,,,TRUE,NA,NA,NA
 859,2020-03-29,NCID,41,M,Bangaldesh,visitor,,Local transmission,,,,TRUE,NA,NA,NA
@@ -954,7 +954,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 953,2020-04-01,NCID,51,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 954,2020-04-01,NCID,53,F,Singapore,citizen,United Kingdom,Imported case,,544,,TRUE,NA,NA,NA
 955,2020-04-01,NCID,53,M,Australia,wp,South Africa,Imported case,,,,TRUE,NA,NA,NA
-956,2020-04-01,NCID,32,M,Bangaldesh,lp,,Local transmission,,,,TRUE,NA,NA,NA
+956,2020-04-01,NCID,32,M,Bangaldesh,lp,,Local transmission,,,Project Glory at 50 Market Street,TRUE,NA,NA,NA
 957,2020-04-01,NCID,73,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 958,2020-04-01,NCID,41,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 959,2020-04-01,NCID,41,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
@@ -965,7 +965,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 964,2020-04-01,SKH,37,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
 965,2020-04-01,SGH,34,F,Malaysia,wp,,Local transmission,,,,TRUE,NA,NA,NA
 966,2020-04-01,NCID,25,M,Bangaldesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-967,2020-04-01,NCID,47,M,Bangaldesh,lp,,Local transmission,,,,TRUE,NA,NA,NA
+967,2020-04-01,NCID,47,M,Bangaldesh,lp,,Local transmission,,,Project Glory at 50 Market Street,TRUE,NA,NA,NA
 968,2020-04-01,NUH,2,M,Brazil,lp,Brazil,Imported case,,"851, 969",,TRUE,NA,NA,NA
 969,2020-04-01,NUH,42,M,Brazil,lp,Brazil,Imported case,,,,TRUE,NA,NA,NA
 970,2020-04-01,AH,67,M,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
@@ -1017,7 +1017,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1016,2020-04-01,NCID,67,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 1017,2020-04-01,NCID,32,M,India,lp,,Local transmission,,,,TRUE,NA,NA,NA
 1018,2020-04-01,KTPH,29,M,Bangaldesh,lp,,Local transmission,,,,TRUE,NA,NA,NA
-1019,2020-04-01,NCID,29,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+1019,2020-04-01,NCID,29,M,Singapore,citizen,,Local transmission,,,Project Glory at 50 Market Street,TRUE,NA,NA,NA
 1020,2020-04-02,NCID,45,M,Bangaldesh,lp,,Local transmission,"658, 718",,,TRUE,NA,NA,NA
 1021,2020-04-02,NCID,44,F,France,wp,Indonesia,Imported case,,,,TRUE,NA,NA,NA
 1022,2020-04-01,NCID,39,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
@@ -1048,3 +1048,68 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1047,2020-04-02,NCID,25,M,India,lp,,Local transmission,,,SingPost Centre at 10 Eunos Road 8,TRUE,NA,NA,NA
 1048,2020-04-02,NCID,73,F,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
 1049,2020-04-02,NCID,30,M,India,lp,,Local transmission,,,,TRUE,NA,NA,NA
+1050,2020-04-02,NCID ,56,M ,China ,visitor,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+1051,2020-04-02,KTPH ,35,M ,Singapore ,citizen,Malaysia ,Imported case,,,,TRUE,NA,NA,NA
+1052,2020-04-02,SGH ,55,F ,Singapore ,citizen,,Local transmission,,,Singapore Cricket Club at A Connaught Drive ,TRUE,NA,NA,NA
+1053,2020-04-02,NCID ,47,M ,Singapore ,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+1054,2020-04-02,NCID ,29,M ,India ,visitor,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+1055,2020-04-02,NCID ,61,M ,Singapore ,citizen,,Local transmission,,,Lee Ah Mooi Old Age Home at 1 Thomson Lane,TRUE,NA,NA,NA
+1056,2020-04-02,NCID ,40,M ,Bangladesh ,visitor,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA
+1057,2020-04-02,NCID ,46,F ,Netherlands ,visitor,,Local transmission,,907,,TRUE,NA,NA,NA
+1058,2020-04-02,KKH ,7,M ,Singapore ,citizen,UAE ,Imported case,,"832, 872 ",,TRUE,NA,NA,NA
+1059,2020-04-02,KKH ,5,M ,Singapore ,citizen,UAE ,Imported case,,"832, 872 ",,TRUE,NA,NA,NA
+1060,2020-04-02,NCID ,66,F ,Singapore ,citizen,US ,Imported case,,,,TRUE,NA,NA,NA
+1061,2020-04-02,NCID ,37,M ,Bangladesh ,lp,,Local transmission,,,,TRUE,NA,NA,NA
+1062,2020-04-02,SGH ,28,M ,India ,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+1063,2020-04-02,KTPH ,63,M ,Singapore ,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+1064,2020-04-02,CGH ,47,F ,Singapore ,citizen,,Local transmission,,937,,TRUE,NA,NA,NA
+1065,2020-04-02,NCID ,36,M ,Philippines ,wp,,Local transmission,737,,,TRUE,NA,NA,NA
+1066,2020-04-02,NCID ,69,M ,Singapore ,citizen,Malaysia ,Local transmission,,,,TRUE,NA,NA,NA
+1067,2020-04-02,NUH ,72,M ,Singapore ,citizen,,Local transmission,826,,,TRUE,NA,NA,NA
+1068,2020-04-02,NTFGH ,29,M ,Bangladesh ,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+1069,2020-04-02,NUH ,53,M ,Singapore ,citizen,,Local transmission,,,Maxwell MRT station at 50 Neil Road,TRUE,NA,NA,NA
+1070,2020-04-02,NCID ,34,M ,Bangladesh ,wp,,Local transmission,,,,TRUE,NA,NA,NA
+1071,2020-04-02,KTPH ,84,F ,Singapore ,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+1072,2020-04-02,NTFGH ,28,M ,Bangladesh ,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+1073,2020-04-02,KTPH ,26,F ,Singapore ,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+1074,2020-04-02,SKH ,41,M ,India ,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+1075,2020-04-02,NCID ,67,F ,Philippines ,wp,,Local transmission,,,Wilby Residences at 25 Wilby Road,TRUE,NA,NA,NA
+1076,2020-04-02,NCID ,54,M ,Singapore Permanent Resident ,citizen,,Local transmission,,,Keppel Shipyard at 51 Pioneer Sector 1,TRUE,NA,NA,NA
+1077,2020-04-02,NCID ,33,M ,India ,lp,,Local transmission,,,,TRUE,NA,NA,NA
+1078,2020-04-03,NCID ,44,M ,Bangladesh ,lp,,Local transmission,,,,TRUE,NA,NA,NA
+1079,2020-04-03,NTFGH ,31,M ,Bangladesh ,lp,,Local transmission,,,,TRUE,NA,NA,NA
+1080,2020-04-03,NTFGH ,85,F ,Singapore ,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+1081,2020-04-02,NCID ,62,F ,Singapore ,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+1082,2020-04-02,NCID ,38,M ,Singapore ,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+1083,2020-04-03,SKH ,49,M ,China ,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+1084,2020-04-03,SKH ,34,M ,India ,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+1085,2020-04-03,SKH ,31,M ,Singapore ,citizen,Malaysia ,Imported case,,,,TRUE,NA,NA,NA
+1086,2020-04-03,NUH ,40,F ,Philippines ,wp,,Local transmission,"227, 348, 1029, 1087 ",,,TRUE,NA,NA,NA
+1087,2020-04-02,NUH ,18,M ,Singapore ,citizen,,Local transmission,1086,"227, 348, 1029",,TRUE,NA,NA,NA
+1088,2020-04-03,AH ,23,M ,Singapore ,citizen,UK ,Imported case,,,,TRUE,NA,NA,NA
+1089,2020-04-03,NCID ,43,M ,Bangladesh ,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+1090,2020-04-02,NCID ,73,M ,Singapore ,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+1091,2020-04-03,NCID ,48,F ,Singapore ,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+1092,2020-04-03,KTPH ,61,M ,Singapore ,citizen,Romania ,Imported case,,,,TRUE,NA,NA,NA
+1093,2020-04-03,NCID ,40,F ,Singapore Permanent Resident ,citizen,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA
+1094,2020-04-03,NCID ,24,M ,India ,wp,,Local transmission,,,Ce La Vi at Marina Bay Sands,TRUE,NA,NA,NA
+1095,2020-04-03,NCID ,61,M ,Singapore Permanent Resident ,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+1096,2020-04-03,NCID ,40,F ,Malaysia ,wp,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA
+1097,2020-04-03,NCID ,28,F ,UK ,lp,,Local transmission,,,Hero's bar at 69 Circular Road,TRUE,NA,NA,NA
+1098,2020-04-03,NCID ,35,F ,Singapore ,citizen,,Local transmission,,,Dover Court International School at 301 Dover Road,TRUE,NA,NA,NA
+1099,2020-04-03,NCID ,54,M ,Singapore ,citizen,US ,Imported case,,,,TRUE,NA,NA,NA
+1100,2020-04-03,NCID ,39,M ,Singapore Permanent Resident ,citizen,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+1101,2020-04-03,NCID ,32,M ,Bangladesh ,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+1102,2020-04-03,NCID ,30,M ,Singapore ,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+1103,2020-04-03,NCID ,42,F ,Singapore ,citizen,,Local transmission,1031,,,TRUE,NA,NA,NA
+1104,2020-04-03,NCID ,23,M ,Bangladesh ,lp,,Local transmission,,,Project Glory at 50 Market Street,TRUE,NA,NA,NA
+1105,2020-04-03,NCID ,55,F ,Singapore Permanent Resident ,citizen,,Local transmission,887,,,TRUE,NA,NA,NA
+1106,2020-04-03,NCID ,27,M ,Bangladesh ,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+1107,2020-04-03,KTPH ,23,M ,India ,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+1108,2020-04-03,KTPH ,24,M ,Bangladesh ,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+1109,2020-04-03,AH ,72,M ,Indonesia ,lp,Indonesia ,Imported case,,928,,TRUE,NA,NA,NA
+1110,2020-04-03,KTPH ,27,M ,Bangladesh ,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+1111,2020-04-03,KTPH ,29,M ,Myanmar ,visitor,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+1112,2020-04-03,KTPH ,32,M ,Myanmar ,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+1113,2020-04-03,NTFGH ,42,M ,Bangladesh ,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+1114,2020-04-03,CGH ,28,M ,Singapore ,citizen,,Local transmission,,,,TRUE,NA,NA,NA
