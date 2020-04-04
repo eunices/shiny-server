@@ -28,8 +28,10 @@ clean_data = function(df, write=F) {
 
     df$patient.info = sub(".*male (.*)", "\\1", df$patient)
     df$patient.citizen = "visitor"
-    text = "singapore pr|(singapore|singaporea) (citizen|resident)|singapore permanent|singaporean|permanent resident"
+    text = "(singapore|singaporea) (citizen|resident)|singaporean"
     df[grepl(text, tolower(df$patient.info)),]$patient.citizen = "citizen"
+    text = "singapore pr|permanent resident|singapore permanent"
+    df[grepl(text, tolower(df$patient.info)),]$patient.citizen = "pr"
     df[grepl("work pass", tolower(df$patient.info)),]$patient.citizen = "wp"
     df[grepl("long term", tolower(df$patient.info)),]$patient.citizen = "lp"
 
