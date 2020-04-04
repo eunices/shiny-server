@@ -61,9 +61,8 @@ The data differs slightly from the MOH's press releases annex:
 2. Does not have case local linked/unlinked
 3. Does not have cluster information or links (for non-cluster cases). Both are considered "local linked".
 4. Only one imported country, when there could be a list.
-5. Citizen and PR are same, i.e. "citizen".
-6. Local linked cases may also be imported or have a travel history. But the former takes precedence. (e.g. case 973 linked to Lee Ah Mooi Home).
-7. Long term pass holder/ work pass status seem to be inaccurately captured.
+5. Local linked cases may also be imported or have a travel history. But the former takes precedence. (e.g. case 973 linked to Lee Ah Mooi Home).
+6. Long term pass holder/ work pass status seem to be inaccurately captured.
 
 Additionally, I tried to adopt the MOH format as it had more information. Certain fields, like links, hospital, locations are missing prior to that. I also changed the citizenship to country names, and camelcase-d everything. I trimmed down columns that were captured in other columns (from `r url1`) as well to prevent conflicting columns (e.g., patient.status).
 
