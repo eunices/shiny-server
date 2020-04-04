@@ -95,7 +95,7 @@ Those who are in critical condition are in ICU.
 
 These are the deaths, critical condition (ICU), cases in hospital, cases well but still test positive, recovered:
 
-```r
+```{r}
 knitr::kable(read.csv("cases.csv"), "markdown")
 ```
 
