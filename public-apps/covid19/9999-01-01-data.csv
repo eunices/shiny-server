@@ -1119,8 +1119,8 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1118,2020-04-03,SKH ,26,M ,Bangladesh ,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 1119,2020-04-03,SKH ,23,M ,Bangladesh ,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 1120,2020-04-03,NCID ,25,M ,Bangladesh ,lp,,Local transmission,,,Project Glory at 50 Market Street,TRUE,NA,NA,NA
-1121,2020-04-03,NCID ,66,M ,Singapore  ,citizen,Unclear origin,Imported,,1060,,TRUE,NA,NA,NA
-1122,2020-04-03,NCID ,29,M ,France ,lp,Unclear origin,Imported,,,,TRUE,NA,NA,NA
+1121,2020-04-03,NCID ,66,M ,Singapore  ,citizen,Unclear origin,Imported case,,1060,,TRUE,NA,NA,NA
+1122,2020-04-03,NCID ,29,M ,France ,lp,Unclear origin,Imported case,,,,TRUE,NA,NA,NA
 1123,2020-04-03,KKH,9,F ,Singapore  ,pr,,Local transmission,,884,,TRUE,NA,NA,NA
 1124,2020-04-03,NCID ,26,M ,India ,wp,,Local transmission,,,Project Glory at 50 Market Street; Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
 1125,2020-04-03,NCID ,42,M ,Bangladesh ,wp,,Local transmission,,,,TRUE,NA,NA,NA
@@ -1141,7 +1141,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1140,2020-04-03,CGH ,30,M ,Bangladesh ,wp,,Local transmission,,,,TRUE,NA,NA,NA
 1141,2020-04-03,CGH ,37,M ,Singapore  ,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 1142,2020-04-03,NCID ,90,M ,Singapore  ,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-1143,2020-04-03,NCID ,42,F ,Singapore  ,citizen,United Kingdom,Imported,,932,,TRUE,NA,NA,NA
+1143,2020-04-03,NCID ,42,F ,Singapore  ,citizen,United Kingdom,Imported case,,932,,TRUE,NA,NA,NA
 1144,2020-04-03,NCID ,41,M ,India ,lp,,Local transmission,,,,TRUE,NA,NA,NA
 1145,2020-04-03,SKH ,20,M ,Bangladesh ,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 1146,2020-04-03,NCID ,33,M ,Bangladesh ,wp,,Local transmission,,,,TRUE,NA,NA,NA
@@ -1162,7 +1162,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1161,2020-04-03,NCID ,19,M ,Singapore  ,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 1163,2020-04-03,NCID ,52,M ,India ,wp,,Local transmission,,,,TRUE,NA,NA,NA
 1164,2020-04-03,NCID ,27,M ,Bangladesh ,lp,,Local transmission,,,,TRUE,NA,NA,NA
-1165,2020-04-03,NCID ,60,M ,Singapore  ,citizen,Turkey ,Imported,,,,TRUE,NA,NA,NA
+1165,2020-04-03,NCID ,60,M ,Singapore  ,citizen,Turkey ,Imported case,,,,TRUE,NA,NA,NA
 1166,2020-04-03,NCID ,62,M ,UK ,wp,,Local transmission,,,,TRUE,NA,NA,NA
 1167,2020-04-03,NCID ,58,F ,Singapore  ,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 1168,2020-04-04,NCID ,60,F ,Singapore  ,citizen,,Local transmission,,933,,TRUE,NA,NA,NA
@@ -1172,9 +1172,9 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1172,2020-04-04,NCID ,64,M ,Singapore  ,citizen,,Local transmission,,,Keppel Shipyard at 51 Pioneer Sector 1,TRUE,NA,NA,NA
 1173,2020-04-04,NCID ,35,M ,Bangladesh ,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 1174,2020-04-04,NCID ,40,M ,India ,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-1175,2020-04-04,NCID ,32,M ,Malaysia ,wp,Malaysia ,Imported,,,,TRUE,NA,NA,NA
+1175,2020-04-04,NCID ,32,M ,Malaysia ,wp,Malaysia ,Imported case,,,,TRUE,NA,NA,NA
 1176,2020-04-04,NCID ,33,M ,Bangladesh ,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
-1177,2020-04-04,NCID ,25,M ,Singapore  ,citizen,United Kingdom,Imported,,,,TRUE,NA,NA,NA
+1177,2020-04-04,NCID ,25,M ,Singapore  ,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
 1178,2020-04-04,NCID ,24,M ,Bangladesh ,wp,,Local transmission,,,,TRUE,NA,NA,NA
 1179,2020-04-04,NCID ,23,F ,Singapore  ,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 1180,2020-04-04,NCID ,42,M ,Singapore  ,citizen,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA
