@@ -853,7 +853,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 852,2020-03-29,SGH,31,M,India,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 853,2020-03-29,NCID,20,M,Malaysia,visitor,,Local transmission,,,,TRUE,2020-03-28,NA,NA
 854,2020-03-29,KTPH,43,M,India,visitor,,Local transmission,,,,TRUE,NA,NA,NA
-855,2020-03-29,NCID,88,M,Singapore,citizen,,Local transmission,,,Singapore Cricket Club at A Connaught Drive,TRUE,NA,NA,NA
+855,2020-03-29,NCID,88,M,Singapore,citizen,,Local transmission,,,Singapore Cricket Club at A Connaught Drive,TRUE,NA,NA,2020-04-04
 856,2020-03-29,CGH,32,M,China,visitor,,Local transmission,,,Ce La Vi at Marina Bay Sands,TRUE,NA,NA,NA
 857,2020-03-29,SKH,20,M,Singapore,citizen,Malaysia,Imported case,,887,,TRUE,NA,NA,NA
 858,2020-03-29,NCID,35,F,Singapore,citizen,France,Imported case,,,,TRUE,NA,NA,NA
