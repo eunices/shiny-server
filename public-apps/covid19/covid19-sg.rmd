@@ -21,12 +21,6 @@ library(gridExtra)
 source('main.r')
 source('util.r')
 
-# Resources
-# https://staff.math.su.se/hoehle/blog/2020/03/16/flatteningthecurve.html
-# https://blog.ephorie.de/covid-19-the-case-of-germany 
-# https://rviews.rstudio.com/2020/03/19/simulating-covid-19-interventions-with-r/
-# https://allthiswasfield.blogspot.com/2020/04/another-flatten-covid-19-curve.html
-
 # Params
 theme = theme_minimal()
 ```
@@ -84,6 +78,7 @@ Notes about data:
 3. `days.to.recover.resources` = recovered - confirmed
 4. `hospital` is the hospital warded (may have been transferred from another hospital).
 5. `links.to` are linked cases which are not family; `links.to.family` are linked cases which are family
+6. No more detailed annexes from 5 Apr 2020 onwards
 
 
 ### Summary stats
@@ -92,8 +87,7 @@ This is collected in anticipation that case data will subsequently not be releas
 
 Those who are in critical condition are in ICU. 
 
-
-These are the deaths, critical condition (ICU), cases in hospital, cases well but still test positive, recovered:
+These are the deaths, critical condition (ICU), cases in hospital, cases well but still test positive, recovered, new cases (imported), new cases (local), total cases:
 
 ```{r}
 knitr::kable(read.csv("cases.csv"), "markdown")
@@ -192,27 +186,26 @@ From here, we can see that there are two waves of imported cases, the first from
 
 This records the key measures the Singapore government has taken.
 
-- 2020-04-02: work from home mandated, [offense otherwise](https://www.channelnewsasia.com/news/singapore/covid-19-work-from-home-singapore-jail-fines-coronavirus-1260222).
-- 2020-03-28: defer non-essential trips to malls
-- 2020-03-27: [home based learning](http://go.gov.sg/homebasedlearning) once a week for primary, secondary schools, and junior college
-- 2020-03-26: spacing regulated in malls/ supermarket, e.g. 1 m distance (marked by duct tapes); returnees from UK/ US to stay in [hotels](https://www.stb.gov.sg/content/stb/en/home-pages/advisory-on-covid-19.html).
+- 2020-04-02: work from home mandated, offense otherwise [source](https://www.channelnewsasia.com/news/singapore/covid-19-work-from-home-singapore-jail-fines-coronavirus-1260222).
+- 2020-03-28: defer non-essential trips to malls 
+- 2020-03-27: home based learning once a week for primary, secondary schools, and junior college [source](http://go.gov.sg/homebasedlearning)
+- 2020-03-26: spacing regulated in malls/ supermarket, e.g. 1 m distance (marked by duct tapes); returnees from UK/ US to stay in hotels [source](https://www.stb.gov.sg/content/stb/en/home-pages/advisory-on-covid-19.html).
 - 2020-03-25: large-scale events (>250 people) suspended till 30 Jun
-- 2020-03-24: many gatherings suspended till 30 Apr. 
-- 2020-03-22: [no short-term visitors allowed, workpass only essential services](http://go.gov.sg/travel22mar).
-- 2020-03-20: [ActiveSG sport centres social distancing measures](http://go.gov.sg/sport15mar).
-- 2020-03-18: [Malaysia under lock down](http://go.gov.sg/mco) till 14 Apr; increased border control measures.
-- 2020-03-17: [Singaporeans coming back](https://www.straitstimes.com/politics/parliament-coronavirus-cases-to-rise-as-more-overseas-singaporeans-return-home-says-gan-kim)
-- 2020-03-16: [Singaporeans to defer all non-essential travel](http://go.gov.sg/travel-15mar); [temporary closure of mosques](https://www.muis.gov.sg/Media/Media-Releases/16-Mar-20-Media-Statement-on-Extension-of-Temporary-Closure-of-Mosques).
-- 2020-03-14: encourage employers to allow [tele-commuting/ staggered work hours](http://go.gov.sg/workplacesocialdistancing).
-- 2020-03-13: [large-scale ticketed events with >250 people to be deferred/cancelled](http://go.gov.sg/socialdistancing-13mar).
-- 2020-03-11: [senior activities suspended, till 24 March - was later extended on 25 Mar](http://go.gov.sg/PAseniors).
-- 2020-03-10: Port call by [Costa Fortuna](http://go.gov.sg/mpa9mar).
-- 2020-03-07: Foreigners to [bear cost of covid treatment](https://www.channelnewsasia.com/news/singapore/foreigners-to-bear-costs-of-covid-19-treatment-in-singapore-12519500).
-- 2020-03-04: [work pass holders allowed to return, be swabbed with 5-6 hours turnaround for test results](http://go.gov.sg/mom3mar).
-- 2020-02-28: [schools with extra precaution](http://go.gov.sg/covid19-MOE).
-- 2020-02-23: [start of travel advisories to outbreak countries other than China (e.g. Daegu, Korea)](http://go.gov.sg/mom-27feb).
-- 2020-02-19: [introduction of Stay Home Notice](http://go.gov.sg/StayHomeNotice).
-- 2020-02-07: [some community spread in Singapore, DORSCON orange. Business continuity plans kick in and temp. screening](http://go.gov.sg/dorscon7feb).
+- 2020-03-22: no short-term visitors allowed, work pass only essential services [source](http://go.gov.sg/travel22mar).
+- 2020-03-20: ActiveSG sport centres social distancing measures [source](http://go.gov.sg/sport15mar).
+- 2020-03-18: Malaysia under lock down till 14 Apr; increased border control measures. [source](http://go.gov.sg/mco)
+- 2020-03-17: Singaporeans coming back [source](https://www.straitstimes.com/politics/parliament-coronavirus-cases-to-rise-as-more-overseas-singaporeans-return-home-says-gan-kim)
+- 2020-03-16: Singaporeans to defer all non-essential travel [source](http://go.gov.sg/travel-15mar); temporary closure of mosques [source](https://www.muis.gov.sg/Media/Media-Releases/16-Mar-20-Media-Statement-on-Extension-of-Temporary-Closure-of-Mosques).
+- 2020-03-14: encourage employers to allow tele-commuting/ staggered work hours [source](http://go.gov.sg/workplacesocialdistancing).
+- 2020-03-13: large-scale ticketed events with >250 people to be deferred/cancelled [source](http://go.gov.sg/socialdistancing-13mar)
+- 2020-03-11: senior activities suspended, till 24 March - was later extended on 25 Mar [source](http://go.gov.sg/PAseniors).
+- 2020-03-10: Port call by Costa Fortuna [source](http://go.gov.sg/mpa9mar).
+- 2020-03-07: foreigners to bear cost of covid treatment [source](https://www.channelnewsasia.com/news/singapore/foreigners-to-bear-costs-of-covid-19-treatment-in-singapore-12519500).
+- 2020-03-04: work pass holders allowed to return, be swabbed with 5-6 hours turnaround for test results [source](http://go.gov.sg/mom3mar).
+- 2020-02-28: schools with extra precaution [source](http://go.gov.sg/covid19-MOE).
+- 2020-02-23: start of travel advisories to outbreak countries other than China (e.g. Daegu, Korea)[source](http://go.gov.sg/mom-27feb).
+- 2020-02-19: introduction of Stay Home Notice [source](http://go.gov.sg/StayHomeNotice).
+- 2020-02-07: some community spread in Singapore, DORSCON orange. Business continuity plans kick in and temp. screening [source](http://go.gov.sg/dorscon7feb).
 
 Source: https://www.moh.gov.sg/news-highlights/
 
