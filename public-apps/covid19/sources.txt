@@ -3,3 +3,4 @@
 2020-04-04, https://www.moh.gov.sg/news-highlights/details/15-more-cases-discharged-75-more-cases-of-covid-19-infection-confirmed
 2020-04-05, https://www.moh.gov.sg/news-highlights/details/23-more-cases-discharged-120-new-cases-of-covid-19-infection-confirmed
 2020-04-06, https://www.moh.gov.sg/news-highlights/details/24-more-cases-discharged-66-new-cases-of-covid-19-infection-confirmed
+2020-04-07, https://www.moh.gov.sg/news-highlights/details/33-more-cases-discharged-106-new-cases-of-covid-19-infection-confirmed
