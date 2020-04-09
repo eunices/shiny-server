@@ -57,6 +57,7 @@ The data differs slightly from the MOH's press releases annex:
 4. Only one imported country, when there could be a list.
 5. Local linked cases may also be imported or have a travel history. But the former takes precedence. (e.g. case 973 linked to Lee Ah Mooi Home).
 6. Long term pass holder/ work pass status seem to be inaccurately captured.
+7. confirmed.at.date is press release date, not the confirmed.at.date provided by MOH Annex
 
 Additionally, I tried to adopt the MOH format as it had more information. Certain fields, like links, hospital, locations are missing prior to that. I also changed the citizenship to country names, and camelcase-d everything. I trimmed down columns that were captured in other columns (from `r url1`) as well to prevent conflicting columns (e.g., patient.status).
 
@@ -69,7 +70,6 @@ Henceforth, my data collection from MOH annexes include:
 5. Add addresses where possible [TBC]
 6. Dumping the `r url2` data
 
-Data complete up till: 3 Apr 2020
 
 Notes about data: 
 
@@ -78,7 +78,7 @@ Notes about data:
 3. `days.to.recover.resources` = recovered - confirmed
 4. `hospital` is the hospital warded (may have been transferred from another hospital).
 5. `links.to` are linked cases which are not family; `links.to.family` are linked cases which are family
-6. No more detailed annexes from 5 Apr 2020 onwards, only cluster links and release dates updated.
+6. No detailed annexes from 5-6 Apr 2020, only cluster links and release dates updated.
 
 
 ### Summary stats
