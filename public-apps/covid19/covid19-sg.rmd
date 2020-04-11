@@ -7,7 +7,6 @@ output:
     theme: flatly
 ---
 
-https://www.moh.gov.sg/news-highlights
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
@@ -27,8 +26,6 @@ source('util.r')
 theme = theme_minimal()
 ```
 
-## Get data
-
 ```{r}
 url1 = "https://co.vid19.sg/cases/search"
 url2 = "https://www.againstcovid19.com/singapore/cases/search"
@@ -42,65 +39,18 @@ url2 = "https://www.againstcovid19.com/singapore/cases/search"
 df = get_alternative_data()
 ```
 
-```{r echo=TRUE}
-str(df)
-```
-
-
-Up till 1 Apr 2020, data was obtained from `r url1` (which appears to be defunct as of 2 Apr 2020; they migrated to `r url2`.
-
-Subsequently, data was collected based on the MOH press releases. Also retrospectively, prior was augmented from this [Straits Times news article](https://www.straitstimes.com/singapore/health/novel-coronavirus-cases-in-singapore). It provided more information and cluster/links were added, origin  information from previous cases.
-
-The data differs slightly from the MOH's press releases annex:
-
-1. Does not have hospital information
-2. Does not have case local linked/unlinked
-3. Does not have cluster information or links (for non-cluster cases). Both are considered "local linked".
-4. Only one imported country, when there could be a list.
-5. Local linked cases may also be imported or have a travel history. But the former takes precedence. (e.g. case 973 linked to Lee Ah Mooi Home).
-6. Long term pass holder/ work pass status seem to be inaccurately captured.
-7. confirmed.at.date is press release date, not the confirmed.at.date provided by MOH Annex
-
-Additionally, I tried to adopt the MOH format as it had more information. Certain fields, like links, hospital, locations are missing prior to that. I also changed the citizenship to country names, and camelcase-d everything. I trimmed down columns that were captured in other columns (from `r url1`) as well to prevent conflicting columns (e.g., patient.status).
-
-Henceforth, my data collection from MOH annexes include:
-
-1. Summary of daily stats
-2. Getting recovered dates of those who recovered
-3. Add new links/ clusters to existing cases
-4. Copy and paste new cases from table
-5. Add addresses where possible [TBC]
-6. Dumping the `r url2` data
-
-
-Notes about data: 
-
-1. symptomatic < confirmed < recovered date
-2. `days.to.recover.symptomatic` = recovered - symptomatic
-3. `days.to.recover.resources` = recovered - confirmed
-4. `hospital` is the hospital warded (may have been transferred from another hospital).
-5. `links.to` are linked cases which are not family; `links.to.family` are linked cases which are family
-6. No detailed annexes from 5-6 Apr 2020, only cluster links and release dates updated.
-
-
-### Summary stats
-
-This is collected in anticipation that case data will subsequently not be released when there are too many cases.
-
-Those who are in critical condition are in ICU. 
-
-These are the deaths, critical condition (ICU), cases in hospital, cases well but still test positive, recovered, new cases (imported), new cases (local), total cases:
-
-Here's a preview of the dataset (first 10 rows):
 ```{r}
-knitr::kable(read.csv("cases.csv")[1:10,], "markdown")
+# Columns are deaths [D], critical condition (ICU) [I1], cases in hospital [I2], 
+# cases well but still test positive [I3], recovered [R],
+# new cases (imported) [nI], new cases (local) [nL], total cases [total]:
+# see cases.csv
 ```
 
 ## What are the figures
 
 ### Coronavirus through time
 
-#### Cases detected through time
+#### New cases through time
 ```{r}
 min_date = min(df$confirmed.at.date, na.rm=T)
 max_date = max(df$confirmed.at.date, na.rm=T)
@@ -176,41 +126,12 @@ renderPlot({
       grid.arrange(p1, p2)
 })
 
-
-
-
 ```
 
-From here, we can see that there are two waves of imported cases, the first from EW 03 to EW 07 and second from EW 08 onwards. These are associated with the Chinese cases mainly and when there was a global spread subsequently with Europe as the epicenter.
+#### Two waves
 
-### Key measures
+From here, we can see that there are two waves of imported cases, the first from EW 03 to EW 07 and second from EW 08 onwards. These are associated with the Chinese cases mainly and when there was a global spread subsequently with Europe and other countries as the epicenter. 
 
-This records the key measures the Singapore government has taken.
-
-- 2020-04-02: work from home mandated, offense otherwise [source](https://www.channelnewsasia.com/news/singapore/covid-19-work-from-home-singapore-jail-fines-coronavirus-1260222).
-- 2020-03-28: defer non-essential trips to malls 
-- 2020-03-27: home based learning once a week for primary, secondary schools, and junior college [source](http://go.gov.sg/homebasedlearning)
-- 2020-03-26: spacing regulated in malls/ supermarket, e.g. 1 m distance (marked by duct tapes); returnees from UK/ US to stay in hotels [source](https://www.stb.gov.sg/content/stb/en/home-pages/advisory-on-covid-19.html).
-- 2020-03-25: large-scale events (>250 people) suspended till 30 Jun
-- 2020-03-22: no short-term visitors allowed, work pass only essential services [source](http://go.gov.sg/travel22mar).
-- 2020-03-20: ActiveSG sport centres social distancing measures [source](http://go.gov.sg/sport15mar).
-- 2020-03-18: Malaysia under lock down till 14 Apr; increased border control measures. [source](http://go.gov.sg/mco)
-- 2020-03-17: Singaporeans coming back [source](https://www.straitstimes.com/politics/parliament-coronavirus-cases-to-rise-as-more-overseas-singaporeans-return-home-says-gan-kim)
-- 2020-03-16: Singaporeans to defer all non-essential travel [source](http://go.gov.sg/travel-15mar); temporary closure of mosques [source](https://www.muis.gov.sg/Media/Media-Releases/16-Mar-20-Media-Statement-on-Extension-of-Temporary-Closure-of-Mosques).
-- 2020-03-14: encourage employers to allow tele-commuting/ staggered work hours [source](http://go.gov.sg/workplacesocialdistancing).
-- 2020-03-13: large-scale ticketed events with >250 people to be deferred/cancelled [source](http://go.gov.sg/socialdistancing-13mar)
-- 2020-03-11: senior activities suspended, till 24 March - was later extended on 25 Mar [source](http://go.gov.sg/PAseniors).
-- 2020-03-10: Port call by Costa Fortuna [source](http://go.gov.sg/mpa9mar).
-- 2020-03-07: foreigners to bear cost of covid treatment [source](https://www.channelnewsasia.com/news/singapore/foreigners-to-bear-costs-of-covid-19-treatment-in-singapore-12519500).
-- 2020-03-04: work pass holders allowed to return, be tested [source](http://go.gov.sg/mom3mar).
-- 2020-02-28: schools with extra precaution [source](http://go.gov.sg/covid19-MOE). 5-6 hours turnaround for test results [
-- 2020-02-23: start of travel advisories to outbreak countries other than China (e.g. Daegu, Korea)[source](http://go.gov.sg/mom-27feb).
-- 2020-02-17: introduction of Stay Home Notice [source](http://go.gov.sg/StayHomeNotice).
-- 2020-02-07: some community spread in Singapore, DORSCON orange. Business continuity plans kick in and temp. screening [source](http://go.gov.sg/dorscon7feb).
-
-Source: https://www.moh.gov.sg/news-highlights/
-
-TODO: categorize policies into tackling different "issues", see if intervention "worked"
 
 ```{r fig.height=6, fig.width=9}
 data_1st_wave = data.table(df[df$confirmed.at.date < date_second_wave & df$infection.source == "Imported case",])
@@ -232,22 +153,26 @@ grid.arrange(
 )
 ```
 
+#### Key events
+
 ```{r}
-# SIR 
+events_cols = c("date", "short", "type", "related")
+events = fread("events.csv")[, ..events_cols]
+names(events) = c("Date", "Event", "Type", "Measure related to")
+knitr::kable(events, "markdown")
 ```
 
-TODO: SIR model
+The `Measure related to` refers to:
 
+1. Quarantine and isolation events/measures.
+2. Border control events/measures to decrease imported cases.
+3. Social distancing measures to reduce number of contacts per day.
+4. Good hygiene measures to reduce transmission probability of virus.
 
-#### Test kits
-
-TODO:
-- estimate test kit availability
-
-#### Hospital load
+### Case load
 
 ```{r} 
-max_load = 9*1200*0.15 # hospital capacity
+max_load = (9*1200*0.15) + 300 # hospital capacity
 hosp_prop = 0.2        # proportion of cases requiring hospitalisation
 date_no_hosp = as.Date("2020-03-24") # date when hospitalisation not required for positive, asymptomatic cases
 ```
@@ -269,7 +194,6 @@ df_cases_day$hospital_load = df_cases_day$case_load
 df_cases_day[day>=date_no_hosp,]$hospital_load =  
   df_cases_day[day>=date_no_hosp,]$hospital_load * hosp_prop
 ```
-
 
 ```{r}
 renderPlot({
@@ -294,7 +218,7 @@ renderPlot({
 })
 ```
 
-There are 9 public acute hospitals in Singapore, with an average capacity of 1,200 beds. They are currently operating at approximately [75% load](https://www.moh.gov.sg/resources-statistics/healthcare-institution-statistics/beds-occupancy-rate-(bor)). We assume that hospitals can operate at a 90% bed load, to ensure that hospitals are not overtaxed and there is sufficient isolation between covid patients (more than usual required). Then there would be `r max_load` beds available. 
+There are 9 public acute hospitals in Singapore, with an average capacity of 1,200 beds. They are currently operating at approximately [75% load](https://www.moh.gov.sg/resources-statistics/healthcare-institution-statistics/beds-occupancy-rate-(bor)). There is also the NCID has approximately 300 beds. If it is assumed that hospitals can operate at a 90% bed load, to ensure that hospitals are not overtaxed and there is sufficient isolation between covid patients (more than usual required), then there would be `r max_load` beds available. 
 
 
 ```{r}
@@ -308,11 +232,11 @@ renderPlot({
 })
 ```
 
-### Recovery time
+### Recovery
 
 Recovered date is based on the discharged date when there are [consecutive negative PCR tests](https://www.channelnewsasia.com/news/singapore/).
 
-#### Days to recovery histogram
+#### Duration of recovery
 
 ```{r}
 is.recovered = table(!is.na(df[, c("days.to.recover.symptomatic")]))
@@ -323,15 +247,15 @@ is.recovered = table(!is.na(df[, c("days.to.recover.symptomatic")]))
   `r round(prop.table(is.recovered)[2]*100, 1)`%
 
 - Median time to recovery (from confirmed): 
-  `r as.numeric(median(df[, c("days.to.recover.symptomatic")], na.rm=T))` days
-- Median time to recovery (from confirmed): 
-  `r round(as.numeric(mean(df[, c("days.to.recover.symptomatic")], na.rm=T)), 1)` days
+  `r as.numeric(median(df$days.to.recover.symptomatic, na.rm=T))` days
+- Mean time to recovery (from confirmed): 
+  `r round(as.numeric(mean(df$days.to.recover.symptomatic, na.rm=T)), 1)` days
 
 ```{r fig.height=3, fig.width=5}
 binwidth = 5
-min = as.numeric(min(df[, c("days.to.recover.symptomatic")], na.rm=T))
-max = as.numeric(max(df[, c("days.to.recover.symptomatic")], na.rm=T))
-hist_max = max(table(cut(as.numeric(df[, c("days.to.recover.symptomatic")]), 
+min = as.numeric(min(df$days.to.recover.symptomatic, na.rm=T))
+max = as.numeric(max(df$days.to.recover.symptomatic, na.rm=T))
+hist_max = max(table(cut(as.numeric(df$days.to.recover.symptomatic), 
                          breaks=seq(min, max, by=binwidth), right = FALSE)))
 
 ggplot(df, aes(x=days.to.recover.symptomatic)) + 
@@ -342,33 +266,11 @@ ggplot(df, aes(x=days.to.recover.symptomatic)) +
   theme
 ```
 
-#### Deaths
+#### Risk factors
 
-[Fatalities are higher for elderly above 65](https://www.businessinsider.sg/most-us-coronavirus-deaths-ages-65-older-cdc-report-2020-3). 
+##### Age
 
-```{r}
-# TODO: deceased at date
-deceased = df[df$patient.status == "Deceased", c("case", "age", "gender", "patient.nationality",
-                                         "confirmed.at.date", "infection.source")]
-knitr::kable(deceased, "markdown")
-```
-
-Number of deceased: `r dim(deceased)[1]`
-
-
-### Cluster characteristics
-
-TODO:
-- duration of cluster
-- type of venue of cluster
-- number of people involved
-
-
-### Risk factors
-
-#### Age
-
-Here we attempt to investigate if there is an association with number of days to recover and age.
+Is there an association between number of days to recover and age?
 
 ```{r}
 selectInput("age_width", label = "Age bin width", choices = c(5, 10, 20), selected = 10)
@@ -378,7 +280,7 @@ renderPlot({
   min = as.numeric(min(df$age, na.rm=T))
   max = as.numeric(max(df$age, na.rm=T))
   data = data.frame(cat=cut(as.numeric(df$age), breaks=seq(0, max, by=agewidth), right = FALSE),
-                    age=df$age, days=df[, c("days.to.recover.symptomatic")])
+                    age=df$age, days=df$days.to.recover.symptomatic)
   data = data[!is.na(data$cat),]
 
   ggplot(data, aes(x=cat, y=days)) + 
@@ -388,7 +290,7 @@ renderPlot({
 })
 ```
 
-#### Gender
+##### Gender
 
 ```{r}
 ggplot(df, aes(x=gender, y=days.to.recover.symptomatic)) +
@@ -396,7 +298,6 @@ ggplot(df, aes(x=gender, y=days.to.recover.symptomatic)) +
   geom_jitter(height = 0, width = 0.1) +
   xlab("Gender") + ylab("Days to recover") + theme
 ```
-
 
 ```{r fig.height=4, fig.width=12}
 # ggplot(df, aes(x=as.numeric(age), y=as.numeric(days.to.recover.symptomatic))) + 
@@ -409,3 +310,67 @@ ggplot(df, aes(x=gender, y=days.to.recover.symptomatic)) +
 # df_corr = df[!is.na(df[, c("days.to.recover.symptomatic")]),]
 # rsq = cor(as.numeric(df_corr$age), as.numeric(df_corr$days.to.recover.symptomatic))^2
 ```
+
+### Deaths
+
+```{r}
+cols = c("age", "gender", "patient.nationality", "patient.citizen",
+         "confirmed.at.date", "infection.source", "deceased.at.date")
+deceased = df[df$patient.status == "Deceased", ..cols]
+names(deceased) = unlist(lapply(gsub("\\.", " ", cols), function(x) camelcase_labeller("", x)))
+```
+
+[Fatalities are higher for elderly above 65](https://www.businessinsider.sg/most-us-coronavirus-deaths-ages-65-older-cdc-report-2020-3). 
+
+Number of deceased: `r dim(deceased)[1]`
+
+```{r}
+knitr::kable(deceased, "markdown")
+```
+
+### Clusters
+
+TODO:duration of cluster, type of venue of cluster, number of people involved
+
+
+## Methods
+
+### Data aquisition
+
+**Prior to 1 Apr 2020**, data was obtained from `r url1` up till 1 Apr 2020. The site became defunct from 2 Apr 2020 onwards though later it was found that they migrated to `r url2`. 
+
+**From 2 Apr 2020**, data was collected based on the [MOH press releases annexes](https://www.moh.gov.sg/news-highlights). 
+
+In addition, the following was done to the dataset collected from `r url1`:
+
+1. Prior data was augmented from this [Straits Times news article](https://www.straitstimes.com/singapore/health/novel-coronavirus-cases-in-singapore) retrospectively with information on clusters and links which were omitted from `r url1`.
+2. The MOH annex format was adopted, as it was more comprehensive (more variables) wher certain fields, e.g. links, cluster and hospital were missing prior to that. 
+3. The citizenship column was changed to country names. 
+4. Columns which were already captured in other columns (from `r url1`) were removed because they could result in conflicting columns.
+5. Add a `deceased.at.date` column.
+
+There are some differences between the dataset from `r url1` as compared to the MOH annexes:
+
+1. Does not have hospital information.
+2. Does not have cluster information or links (for non-cluster cases).
+3. One imported country which is derived from the travel history field in the MOH annex. Where there are multiple countries, it is labelled as "unclear origin". 
+4. Long term pass and work pass status seem to be inaccurately captured.
+
+The specific steps taken to get the data: 
+
+1. Adding to daily summary statistics, captured in `cases.csv`.
+2. Adding to the case-level dataset, captured in `9999-01-01-data.csv`.
+    a. Adding MOH annexes data to the main list of documents. 
+    b. Adding `recovered.at.date` if cases have recovered.
+    c. Adding new links and clusters to existing cases as contact tracing has made progress.
+
+### Notes about data
+
+1. `symptomatic` < `confirmed` < `recovered` dates.
+2. `days.to.recover.symptomatic` = recovered - symptomatic.
+3. `days.to.recover.resources` = recovered - confirmed.
+4. `hospital` is the hospital warded (may have been transferred from another hospital).
+5. `links.to` are linked cases which are not family; `links.to.family` are linked cases which are family.
+6. No detailed annexes from 5-6 Apr 2020, only cluster links and release dates updated.
+7. The `confirmed.at.date` is press release date, not the `confirmed at date` provided by MOH Annex for dataset collected from 2 Apr 2020, whereas it was otherwise so prior to 2 Apr 2020.
+

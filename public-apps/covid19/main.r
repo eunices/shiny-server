@@ -1,3 +1,5 @@
+library(data.table)
+
 get_data = function(url) {
     html = read_html(url)
     print(html)
@@ -111,5 +113,5 @@ get_alternative_data = function() {
 
     # Age
     df$age = as.numeric(df$age)
-    df
+    data.table(df)
 }

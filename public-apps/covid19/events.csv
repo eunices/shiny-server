@@ -1,0 +1,21 @@
+date,short,type,related,event
+2020-02-07,DORSCON orange,"event, measure","1,3,4","some community spread in Singapore, DORSCON orange. Business continuity plans kick in and temp. screening [source](http://go.gov.sg/dorscon7feb)."
+2020-02-17,Quarantined introduced,measure,1,introduction of Stay Home Notice [source](http://go.gov.sg/StayHomeNotice).
+2020-02-23,Travel advisories outside China,measure,2,"start of travel advisories to outbreak countries other than China (e.g. Daegu, Korea)[source](http://go.gov.sg/mom-27feb)."
+2020-02-28,Schools social distancing,measure,3,schools with extra precaution [source](http://go.gov.sg/covid19-MOE). 5-6 hours turnaround for test results.
+2020-03-04,WP holders return,event,2,"work pass holders allowed to return, be tested [source](http://go.gov.sg/mom3mar)."
+2020-03-07,Foreigners bear covid hospital costs,measure,2,foreigners to bear cost of covid treatment [source](https://www.channelnewsasia.com/news/singapore/foreigners-to-bear-costs-of-covid-19-treatment-in-singapore-12519500).
+2020-03-10,Costa Fortuna port call,event,2,Port call by Costa Fortuna [source](http://go.gov.sg/mpa9mar).
+2020-03-11,Senior activities suspended,measure,3,"senior activities suspended, till 24 March - was later extended on 25 Mar [source](http://go.gov.sg/PAseniors)."
+2020-03-13,No large-scale events,measure,3,large-scale ticketed events with >250 people to be deferred/cancelled [source](http://go.gov.sg/socialdistancing-13mar)
+2020-03-14,WFH encouraged,measure,3,"encourage employers to allow tele-commuting/ staggered work hours [source](http://go.gov.sg/workplacesocialdistancing)."""
+2020-03-16,Defer non-essential travels,measure,3,"Singaporeans to defer all non-essential travel [source](http://go.gov.sg/travel-15mar); temporary closure of mosques [source](https://www.muis.go""v.sg/Media/Media-Releases/16-Mar-20-Media-Statement-on-Extension-of-Temporary-Closure-of-Mosques)."
+2020-03-17,Second wave,event,2,Singaporeans coming back [source](https://www.straitstimes.com/politics/parliament-coronavirus-cases-to-rise-as-more-overseas-singaporeans-return-home-says-gan-kim)
+2020-03-18,Malaysia border closure,"event, measure",2,Malaysia border closure till 28 Apr (extended); increased border control measures. [source](http://go.gov.sg/mco)
+2020-03-20,Social distancing in sports centres,measure,3,ActiveSG sport centres social distancing measures [source](http://go.gov.sg/sport15mar).
+2020-03-22,Border closure,measure,2,"no short-term visitors allowed, work pass only essential services [source](http://go.gov.sg/travel22mar)."
+2020-03-26,Social distancing in malls,measure,3,"spacing regulated in malls/ supermarket, e.g. 1 m distance (marked by duct tapes); returnees from UK/ US to stay in hotels [source](https://www.stb.gov.sg/content/stb/en/home-pages/advisory-on-covid-19.html)."
+2020-03-27,HBL once a week,measure,3,"home based learning once a week for primary, secondary schools, and junior college [source](http://go.gov.sg/homebasedlearning)."
+2020-03-28,Defer mall trips,measure,3,defer non-essential trips to malls.
+2020-04-02,WFH policy,measure,3,"work from home mandated, offense otherwise [source](https://www.channelnewsasia.com/news/singapore/covid-19-work-from-home-singapore-jail-fines-coronavirus-1260222)."
+2020-04-07,Circuit breaker,"event, measure",3,circuit breaker to last till 4 May 2020 [source](https://www.moh.gov.sg/news-highlights/details/circuit-breaker-to-minimise-further-spread-of-covid-19).
