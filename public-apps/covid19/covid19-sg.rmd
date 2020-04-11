@@ -328,7 +328,7 @@ TODO:duration of cluster, type of venue of cluster, number of people involved
 
 ### Data aquisition
 
-**Prior to 1 Apr 2020**, data was obtained from `r url1` up till 1 Apr 2020. The site became defunct from 2 Apr 2020 onwards though later it was found that they migrated to `r url2`. 
+**Prior to 2 Apr 2020**, data was obtained from `r url1` up till 1 Apr 2020. The site became defunct from 2 Apr 2020 onwards though later it was found that they migrated to `r url2`. 
 
 **From 2 Apr 2020**, data was collected based on the [MOH press releases annexes](https://www.moh.gov.sg/news-highlights). 
 
