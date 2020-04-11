@@ -93,7 +93,7 @@ These are the deaths, critical condition (ICU), cases in hospital, cases well bu
 
 Here's a preview of the dataset (first 10 rows):
 ```{r}
-knitr::kable(read.csv("cases.csv")[1:10], "markdown")
+knitr::kable(read.csv("cases.csv")[1:10,], "markdown")
 ```
 
 Note: Data was only captured from 2 Apr 2020 onwards, refer to "sources.txt" for links.
