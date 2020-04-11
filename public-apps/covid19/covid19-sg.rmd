@@ -195,8 +195,9 @@ renderPlot({
     geom_line(color="steelblue", size=1) + 
     geom_point(color="steelblue", size=2) + 
     xlab("") + ylab("Number of recovering cases\n") + 
-    scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
-    theme
+    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
+    theme +
+    theme(axis.text.x=element_text(angle = 90))
 })
 ```
 
@@ -212,9 +213,10 @@ renderPlot({
     geom_point(color="steelblue", size=2) + 
     geom_vline(xintercept=date_no_hosp, size=1, col="red") +
     xlab("") + ylab("Number of (estimated) hospitalised persons\n") + 
-    scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
+    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
     scale_y_continuous(sec.axis = sec_axis(~ ./max_load*100, name=sec_axis_name)) + 
-    theme
+    theme +
+    theme(axis.text.x=element_text(angle = 90))
 })
 ```
 
