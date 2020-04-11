@@ -22,6 +22,7 @@ if (type==2) {
   d[grepl("us", tolower(country.of.origin))]$country.of.origin = "United States of America"
 }
 
+d$confirmed.at.date = as.character(Sys.Date())
 
 d$hospital = gsub('[0-9]+', '', d$hospital)
 
