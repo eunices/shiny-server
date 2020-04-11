@@ -2107,194 +2107,194 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2106,2020-04-10,NCID,41,M,Bangladesh,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
 2107,2020-04-10,NCID,65,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 2108,2020-04-10,NCID,46,M,Bangladesh,wp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
-2109,2020-04-10,NCID,31,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2110,2020-04-10,NCID,25,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2111,2020-04-10,NCID,48,M,NA,wp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
-2112,2020-04-10,NCID,48,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2113,2020-04-10,NCID,48,M,NA,wp,,Local transmission,,,Shaw Lodge at 12 Shaw Road,TRUE,NA,NA,NA
-2114,2020-04-10,NCID,24,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2115,2020-04-10,NCID,38,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2116,2020-04-10,NCID,46,M,NA,wp,,Local transmission,,,Tampines Dormitory at 2 Tampines Place,TRUE,NA,NA,NA
-2117,2020-04-10,SKH,24,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2118,2020-04-10,CGH,48,F,NA,citizen,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA
-2119,2020-04-10,NCID,29,M,NA,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2120,2020-04-10,NCID,45,M,NA,wp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
-2121,2020-04-10,NCID,35,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2122,2020-04-10,NCID,29,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2123,2020-04-10,NCID,28,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2124,2020-04-10,NCID,26,F,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2125,2020-04-10,NCID,36,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2126,2020-04-10,NCID,23,M,NA,lp,,Local transmission,1374,,,TRUE,NA,NA,NA
-2127,2020-04-10,NCID,27,M,NA,lp,,Local transmission,1374,,,TRUE,NA,NA,NA
-2128,2020-04-10,NCID,35,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2129,2020-04-10,NCID,36,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2130,2020-04-10,KKH,11,M,NA,citizen,,Local transmission,,"1937, 1949",,TRUE,NA,NA,NA
-2131,2020-04-10,SGH,41,M,NA,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
-2132,2020-04-10,SGH,39,M,NA,lp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA
-2133,2020-04-10,SGH,26,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2134,2020-04-10,NTFGH,32,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2135,2020-04-10,NTFGH,34,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2136,2020-04-10,NTFGH,25,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2137,2020-04-10,NTFGH,34,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2138,2020-04-10,NTFGH,21,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2139,2020-04-10,NTFGH,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2140,2020-04-10,KTPH,46,M,NA,wp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA
-2141,2020-04-10,KTPH,44,M,NA,lp,,Local transmission,,,Kranji Lodge at 12 Kranji Road,TRUE,NA,NA,NA
-2142,2020-04-10,CGH,73,F,NA,citizen,,Local transmission,,2285,,TRUE,NA,NA,NA
-2143,2020-04-10,NCID,70,M,NA,pr,,Local transmission,,,,TRUE,NA,NA,NA
-2144,2020-04-10,CGH,37,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2145,2020-04-10,SGH,61,F,NA,citizen,,Local transmission,,1665,,TRUE,NA,NA,NA
-2146,2020-04-10,SGH,67,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-2147,2020-04-10,SGH,25,M,NA,wp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
-2148,2020-04-10,SGH,47,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-2149,2020-04-10,NCID,24,M,NA,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
-2150,2020-04-10,NCID,25,M,NA,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
-2151,2020-04-10,NCID,30,M,NA,lp,,Local transmission,,,Cassia @ Penjuru at 15 Penjuru Walk,TRUE,NA,NA,NA
-2152,2020-04-10,NCID,38,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2153,2020-04-10,NCID,52,M,NA,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
-2154,2020-04-10,NCID,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2155,2020-04-10,NCID,38,M,NA,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
-2156,2020-04-10,NCID,28,M,NA,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2157,2020-04-10,NCID,34,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-2158,2020-04-10,NCID,25,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2159,2020-04-10,NCID,27,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2160,2020-04-10,NCID,28,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2161,2020-04-10,AH,46,M,NA,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2162,2020-04-10,NUH,34,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2163,2020-04-10,NCID,47,F,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-2164,2020-04-10,KTPH,49,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2165,2020-04-10,KTPH,36,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2166,2020-04-10,NTFGH,33,M,NA,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
-2167,2020-04-10,NTFGH,45,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2168,2020-04-10,NTFGH,33,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2169,2020-04-10,NCID,45,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2170,2020-04-10,NCID,25,M,NA,wp,,Local transmission,,,Cassia @ Penjuru at 15 Penjuru Walk,TRUE,NA,NA,NA
-2171,2020-04-10,SGH,61,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-2172,2020-04-10,NCID,30,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2173,2020-04-10,NCID,53,F,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-2174,2020-04-10,NCID,60,F,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-2175,2020-04-10,KTPH,23,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2176,2020-04-10,KTPH,61,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-2177,2020-04-10,SGH,33,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2178,2020-04-10,SGH,46,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2179,2020-04-10,CIF,28,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2180,2020-04-10,CIF,37,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2181,2020-04-10,CIF,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2182,2020-04-10,CIF,33,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2183,2020-04-10,CIF,27,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2184,2020-04-10,CIF,41,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2185,2020-04-10,CIF,27,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2186,2020-04-10,CIF,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2187,2020-04-10,CIF,31,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2188,2020-04-10,NCID,42,M,NA,wp,,Local transmission,1567,,,TRUE,NA,NA,NA
-2189,2020-04-10,NCID,44,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2190,2020-04-10,NCID,33,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2191,2020-04-10,NCID,40,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2192,2020-04-10,NCID,27,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2193,2020-04-10,NCID,38,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2194,2020-04-10,NCID,28,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2195,2020-04-10,NCID,31,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2196,2020-04-10,NCID,40,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2197,2020-04-10,NCID,29,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2198,2020-04-10,NCID,28,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2199,2020-04-10,NCID,32,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2200,2020-04-10,NCID,35,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2201,2020-04-10,KTPH,58,F,NA,citizen,,Local transmission,1704,,,TRUE,NA,NA,NA
-2202,2020-04-10,KTPH,32,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2203,2020-04-10,KTPH,38,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2204,2020-04-10,KTPH,44,M,NA,lp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
-2205,2020-04-10,NTFGH,56,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2206,2020-04-10,NTFGH,28,M,NA,wp,,Local transmission,1491,,,TRUE,NA,NA,NA
-2207,2020-04-10,NTFGH,52,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2208,2020-04-10,NTFGH,40,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2209,2020-04-10,NTFGH,22,M,NA,visitor,,Local transmission,,,Dormitory at 31 Sungei Kadut Avenue,TRUE,NA,NA,NA
-2210,2020-04-10,NTFGH,64,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-2211,2020-04-10,NTFGH,57,F,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-2212,2020-04-10,SGH,53,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2213,2020-04-10,SKH,40,M,NA,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2214,2020-04-10,PEH,38,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-2215,2020-04-10,SGH,41,M,NA,pr,,Local transmission,,,,TRUE,NA,NA,NA
-2216,2020-04-10,CIF,28,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2217,2020-04-10,CIF,25,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2218,2020-04-10,CIF,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2219,2020-04-10,CIF,29,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2220,2020-04-10,CIF,22,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2221,2020-04-10,CIF,29,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2222,2020-04-10,CIF,31,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2223,2020-04-10,CIF,29,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2224,2020-04-10,CIF,28,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2225,2020-04-10,CIF,32,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2226,2020-04-10,CIF,34,M,NA,wp,,Local transmission,1745,,,TRUE,NA,NA,NA
-2227,2020-04-10,CIF,32,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2228,2020-04-10,CIF,42,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2229,2020-04-10,CIF,33,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2230,2020-04-10,CIF,21,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2231,2020-04-10,CIF,29,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2232,2020-04-10,CIF,33,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2233,2020-04-10,CIF,37,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2234,2020-04-10,CIF,32,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2235,2020-04-10,CIF,30,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2236,2020-04-10,CIF,38,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2237,2020-04-10,NCID,46,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2238,2020-04-10,NCID,28,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2239,2020-04-10,NCID,32,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2240,2020-04-10,NCID,23,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-2241,2020-04-10,NCID,33,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2242,2020-04-10,NCID,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2243,2020-04-10,NCID,33,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2244,2020-04-10,KTPH,42,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2245,2020-04-10,KTPH,34,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2246,2020-04-10,KTPH,37,M,NA,wp,,Local transmission,,,Kranji Lodge at 12 Kranji Road,TRUE,NA,NA,NA
-2247,2020-04-10,KTPH,40,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2248,2020-04-10,KTPH,40,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2249,2020-04-10,KTPH,34,M,NA,wp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA
-2250,2020-04-10,KTPH,38,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2251,2020-04-10,NUH,23,M,NA,visitor,,Local transmission,,,,TRUE,NA,NA,NA
-2252,2020-04-10,NUH,23,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2253,2020-04-10,NUH,28,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2254,2020-04-10,NUH,31,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2255,2020-04-10,NUH,37,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2256,2020-04-10,NUH,29,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2257,2020-04-10,NUH,20,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2258,2020-04-10,NUH,40,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2259,2020-04-10,NUH,30,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2260,2020-04-10,NUH,38,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2261,2020-04-10,NUH,28,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2262,2020-04-10,KTPH,33,M,NA,visitor,,Local transmission,,,North Coast Lodge at 51 North Coast Avenue,TRUE,NA,NA,NA
-2263,2020-04-10,KTPH,25,M,NA,wp,,Local transmission,,,North Coast Lodge at 51 North Coast Avenue,TRUE,NA,NA,NA
-2264,2020-04-10,NCID,24,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2265,2020-04-10,NCID,40,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2266,2020-04-10,NCID,24,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2267,2020-04-10,NCID,32,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2268,2020-04-10,NCID,26,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2269,2020-04-10,NCID,28,M,NA,lp,,Local transmission,1011,,,TRUE,NA,NA,NA
-2270,2020-04-10,NCID,29,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2271,2020-04-10,NCID,38,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2272,2020-04-10,NCID,39,M,NA,lp,,Local transmission,1394,,,TRUE,NA,NA,NA
-2273,2020-04-10,NCID,44,F,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-2274,2020-04-10,NCID,36,M,NA,lp,,Local transmission,1394,,,TRUE,NA,NA,NA
-2275,2020-04-10,NCID,32,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2276,2020-04-10,NCID,26,M,NA,lp,,Local transmission,"1072, 1101, 1401",,,TRUE,NA,NA,NA
-2277,2020-04-10,NCID,37,M,NA,lp,,Local transmission,,,Dormitory at 31 Sungei Kadut Avenue,TRUE,NA,NA,NA
-2278,2020-04-10,NCID,61,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-2279,2020-04-10,NCID,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2280,2020-04-10,NCID,30,M,NA,wp,,Local transmission,"2281, 2288",,,TRUE,NA,NA,NA
-2281,2020-04-10,NCID,39,M,NA,wp,,Local transmission,"2280, 2288",,,TRUE,NA,NA,NA
-2282,2020-04-10,NCID,41,F,NA,visitor,,Local transmission,,,,TRUE,NA,NA,NA
-2283,2020-04-10,NCID,38,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2284,2020-04-10,NCID,40,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2285,2020-04-10,NCID,80,M,NA,citizen,,Local transmission,,2142,,TRUE,NA,NA,NA
-2286,2020-04-10,NCID,35,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2287,2020-04-10,NCID,59,F,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-2288,2020-04-10,NCID,38,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2289,2020-04-10,NCID,35,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2290,2020-04-10,NCID,30,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2291,2020-04-10,NCID,37,M,NA,lp,,Local transmission,"2280, 2281",,,TRUE,NA,NA,NA
-2292,2020-04-10,NCID,30,F,NA,citizen,,Local transmission,,1702,,TRUE,NA,NA,NA
-2293,2020-04-10,NCID,24,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2294,2020-04-10,NCID,29,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2295,2020-04-10,NCID,51,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2296,2020-04-10,NCID,59,M,NA,wp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA
-2297,2020-04-10,NCID,35,M,NA,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2298,2020-04-10,NCID,32,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2299,2020-04-10,NCID,25,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2109,2020-04-11,NCID,31,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2110,2020-04-11,NCID,25,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2111,2020-04-11,NCID,48,M,NA,wp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
+2112,2020-04-11,NCID,48,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2113,2020-04-11,NCID,48,M,NA,wp,,Local transmission,,,Shaw Lodge at 12 Shaw Road,TRUE,NA,NA,NA
+2114,2020-04-11,NCID,24,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2115,2020-04-11,NCID,38,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2116,2020-04-11,NCID,46,M,NA,wp,,Local transmission,,,Tampines Dormitory at 2 Tampines Place,TRUE,NA,NA,NA
+2117,2020-04-11,SKH,24,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2118,2020-04-11,CGH,48,F,NA,citizen,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA
+2119,2020-04-11,NCID,29,M,NA,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2120,2020-04-11,NCID,45,M,NA,wp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
+2121,2020-04-11,NCID,35,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2122,2020-04-11,NCID,29,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2123,2020-04-11,NCID,28,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2124,2020-04-11,NCID,26,F,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2125,2020-04-11,NCID,36,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2126,2020-04-11,NCID,23,M,NA,lp,,Local transmission,1374,,,TRUE,NA,NA,NA
+2127,2020-04-11,NCID,27,M,NA,lp,,Local transmission,1374,,,TRUE,NA,NA,NA
+2128,2020-04-11,NCID,35,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2129,2020-04-11,NCID,36,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2130,2020-04-11,KKH,11,M,NA,citizen,,Local transmission,,"1937, 1949",,TRUE,NA,NA,NA
+2131,2020-04-11,SGH,41,M,NA,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2132,2020-04-11,SGH,39,M,NA,lp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA
+2133,2020-04-11,SGH,26,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2134,2020-04-11,NTFGH,32,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2135,2020-04-11,NTFGH,34,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2136,2020-04-11,NTFGH,25,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2137,2020-04-11,NTFGH,34,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2138,2020-04-11,NTFGH,21,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2139,2020-04-11,NTFGH,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2140,2020-04-11,KTPH,46,M,NA,wp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA
+2141,2020-04-11,KTPH,44,M,NA,lp,,Local transmission,,,Kranji Lodge at 12 Kranji Road,TRUE,NA,NA,NA
+2142,2020-04-11,CGH,73,F,NA,citizen,,Local transmission,,2285,,TRUE,NA,NA,NA
+2143,2020-04-11,NCID,70,M,NA,pr,,Local transmission,,,,TRUE,NA,NA,NA
+2144,2020-04-11,CGH,37,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2145,2020-04-11,SGH,61,F,NA,citizen,,Local transmission,,1665,,TRUE,NA,NA,NA
+2146,2020-04-11,SGH,67,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2147,2020-04-11,SGH,25,M,NA,wp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
+2148,2020-04-11,SGH,47,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2149,2020-04-11,NCID,24,M,NA,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+2150,2020-04-11,NCID,25,M,NA,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+2151,2020-04-11,NCID,30,M,NA,lp,,Local transmission,,,Cassia @ Penjuru at 15 Penjuru Walk,TRUE,NA,NA,NA
+2152,2020-04-11,NCID,38,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2153,2020-04-11,NCID,52,M,NA,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+2154,2020-04-11,NCID,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2155,2020-04-11,NCID,38,M,NA,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+2156,2020-04-11,NCID,28,M,NA,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2157,2020-04-11,NCID,34,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2158,2020-04-11,NCID,25,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2159,2020-04-11,NCID,27,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2160,2020-04-11,NCID,28,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2161,2020-04-11,AH,46,M,NA,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2162,2020-04-11,NUH,34,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2163,2020-04-11,NCID,47,F,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2164,2020-04-11,KTPH,49,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2165,2020-04-11,KTPH,36,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2166,2020-04-11,NTFGH,33,M,NA,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+2167,2020-04-11,NTFGH,45,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2168,2020-04-11,NTFGH,33,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2169,2020-04-11,NCID,45,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2170,2020-04-11,NCID,25,M,NA,wp,,Local transmission,,,Cassia @ Penjuru at 15 Penjuru Walk,TRUE,NA,NA,NA
+2171,2020-04-11,SGH,61,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2172,2020-04-11,NCID,30,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2173,2020-04-11,NCID,53,F,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2174,2020-04-11,NCID,60,F,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2175,2020-04-11,KTPH,23,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2176,2020-04-11,KTPH,61,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2177,2020-04-11,SGH,33,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2178,2020-04-11,SGH,46,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2179,2020-04-11,CIF,28,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2180,2020-04-11,CIF,37,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2181,2020-04-11,CIF,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2182,2020-04-11,CIF,33,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2183,2020-04-11,CIF,27,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2184,2020-04-11,CIF,41,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2185,2020-04-11,CIF,27,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2186,2020-04-11,CIF,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2187,2020-04-11,CIF,31,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2188,2020-04-11,NCID,42,M,NA,wp,,Local transmission,1567,,,TRUE,NA,NA,NA
+2189,2020-04-11,NCID,44,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2190,2020-04-11,NCID,33,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2191,2020-04-11,NCID,40,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2192,2020-04-11,NCID,27,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2193,2020-04-11,NCID,38,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2194,2020-04-11,NCID,28,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2195,2020-04-11,NCID,31,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2196,2020-04-11,NCID,40,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2197,2020-04-11,NCID,29,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2198,2020-04-11,NCID,28,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2199,2020-04-11,NCID,32,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2200,2020-04-11,NCID,35,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2201,2020-04-11,KTPH,58,F,NA,citizen,,Local transmission,1704,,,TRUE,NA,NA,NA
+2202,2020-04-11,KTPH,32,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2203,2020-04-11,KTPH,38,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2204,2020-04-11,KTPH,44,M,NA,lp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
+2205,2020-04-11,NTFGH,56,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2206,2020-04-11,NTFGH,28,M,NA,wp,,Local transmission,1491,,,TRUE,NA,NA,NA
+2207,2020-04-11,NTFGH,52,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2208,2020-04-11,NTFGH,40,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2209,2020-04-11,NTFGH,22,M,NA,visitor,,Local transmission,,,Dormitory at 31 Sungei Kadut Avenue,TRUE,NA,NA,NA
+2210,2020-04-11,NTFGH,64,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2211,2020-04-11,NTFGH,57,F,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2212,2020-04-11,SGH,53,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2213,2020-04-11,SKH,40,M,NA,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2214,2020-04-11,PEH,38,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2215,2020-04-11,SGH,41,M,NA,pr,,Local transmission,,,,TRUE,NA,NA,NA
+2216,2020-04-11,CIF,28,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2217,2020-04-11,CIF,25,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2218,2020-04-11,CIF,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2219,2020-04-11,CIF,29,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2220,2020-04-11,CIF,22,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2221,2020-04-11,CIF,29,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2222,2020-04-11,CIF,31,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2223,2020-04-11,CIF,29,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2224,2020-04-11,CIF,28,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2225,2020-04-11,CIF,32,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2226,2020-04-11,CIF,34,M,NA,wp,,Local transmission,1745,,,TRUE,NA,NA,NA
+2227,2020-04-11,CIF,32,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2228,2020-04-11,CIF,42,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2229,2020-04-11,CIF,33,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2230,2020-04-11,CIF,21,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2231,2020-04-11,CIF,29,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2232,2020-04-11,CIF,33,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2233,2020-04-11,CIF,37,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2234,2020-04-11,CIF,32,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2235,2020-04-11,CIF,30,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2236,2020-04-11,CIF,38,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2237,2020-04-11,NCID,46,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2238,2020-04-11,NCID,28,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2239,2020-04-11,NCID,32,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2240,2020-04-11,NCID,23,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2241,2020-04-11,NCID,33,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2242,2020-04-11,NCID,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2243,2020-04-11,NCID,33,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2244,2020-04-11,KTPH,42,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2245,2020-04-11,KTPH,34,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2246,2020-04-11,KTPH,37,M,NA,wp,,Local transmission,,,Kranji Lodge at 12 Kranji Road,TRUE,NA,NA,NA
+2247,2020-04-11,KTPH,40,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2248,2020-04-11,KTPH,40,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2249,2020-04-11,KTPH,34,M,NA,wp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA
+2250,2020-04-11,KTPH,38,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2251,2020-04-11,NUH,23,M,NA,visitor,,Local transmission,,,,TRUE,NA,NA,NA
+2252,2020-04-11,NUH,23,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2253,2020-04-11,NUH,28,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2254,2020-04-11,NUH,31,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2255,2020-04-11,NUH,37,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2256,2020-04-11,NUH,29,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2257,2020-04-11,NUH,20,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2258,2020-04-11,NUH,40,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2259,2020-04-11,NUH,30,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2260,2020-04-11,NUH,38,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2261,2020-04-11,NUH,28,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2262,2020-04-11,KTPH,33,M,NA,visitor,,Local transmission,,,North Coast Lodge at 51 North Coast Avenue,TRUE,NA,NA,NA
+2263,2020-04-11,KTPH,25,M,NA,wp,,Local transmission,,,North Coast Lodge at 51 North Coast Avenue,TRUE,NA,NA,NA
+2264,2020-04-11,NCID,24,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2265,2020-04-11,NCID,40,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2266,2020-04-11,NCID,24,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2267,2020-04-11,NCID,32,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2268,2020-04-11,NCID,26,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2269,2020-04-11,NCID,28,M,NA,lp,,Local transmission,1011,,,TRUE,NA,NA,NA
+2270,2020-04-11,NCID,29,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2271,2020-04-11,NCID,38,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2272,2020-04-11,NCID,39,M,NA,lp,,Local transmission,1394,,,TRUE,NA,NA,NA
+2273,2020-04-11,NCID,44,F,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2274,2020-04-11,NCID,36,M,NA,lp,,Local transmission,1394,,,TRUE,NA,NA,NA
+2275,2020-04-11,NCID,32,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2276,2020-04-11,NCID,26,M,NA,lp,,Local transmission,"1072, 1101, 1401",,,TRUE,NA,NA,NA
+2277,2020-04-11,NCID,37,M,NA,lp,,Local transmission,,,Dormitory at 31 Sungei Kadut Avenue,TRUE,NA,NA,NA
+2278,2020-04-11,NCID,61,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2279,2020-04-11,NCID,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2280,2020-04-11,NCID,30,M,NA,wp,,Local transmission,"2281, 2288",,,TRUE,NA,NA,NA
+2281,2020-04-11,NCID,39,M,NA,wp,,Local transmission,"2280, 2288",,,TRUE,NA,NA,NA
+2282,2020-04-11,NCID,41,F,NA,visitor,,Local transmission,,,,TRUE,NA,NA,NA
+2283,2020-04-11,NCID,38,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2284,2020-04-11,NCID,40,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2285,2020-04-11,NCID,80,M,NA,citizen,,Local transmission,,2142,,TRUE,NA,NA,NA
+2286,2020-04-11,NCID,35,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2287,2020-04-11,NCID,59,F,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2288,2020-04-11,NCID,38,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2289,2020-04-11,NCID,35,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2290,2020-04-11,NCID,30,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2291,2020-04-11,NCID,37,M,NA,lp,,Local transmission,"2280, 2281",,,TRUE,NA,NA,NA
+2292,2020-04-11,NCID,30,F,NA,citizen,,Local transmission,,1702,,TRUE,NA,NA,NA
+2293,2020-04-11,NCID,24,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2294,2020-04-11,NCID,29,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2295,2020-04-11,NCID,51,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2296,2020-04-11,NCID,59,M,NA,wp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA
+2297,2020-04-11,NCID,35,M,NA,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2298,2020-04-11,NCID,32,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2299,2020-04-11,NCID,25,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
