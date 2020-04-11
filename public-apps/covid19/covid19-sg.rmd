@@ -19,6 +19,7 @@ library(ggplot2)
 library(tidyr)
 library(data.table)
 library(gridExtra)
+library(wordcloud2)
 source('main.r')
 source('util.r')
 
@@ -37,6 +38,7 @@ url2 = "https://www.againstcovid19.com/singapore/cases/search"
 # }  
 
 df = get_alternative_data()
+df_cases_day = get_df_cases_day()
 ```
 
 ```{r}
@@ -76,13 +78,15 @@ renderPlot({
     ggplot(data=data, aes(x=confirmed.at.date)) +
       geom_histogram(stat="bin", binwidth=input$binwidth_date, fill="steelblue") + 
       xlab("") + ylab("") + 
-      geom_vline(xintercept=date_second_wave, size=2, col="red") +
-      annotate("text", x=date_second_wave, y=20, label= "Second wave") + 
+      geom_vline(xintercept=date_second_wave, size=1, col="red") +
+      annotate("text", x=date_second_wave+7, y=100, label= "Second wave") + 
       scale_x_date(date_breaks = "weeks", date_labels = "%Y EW %U") +
       theme
+
 }, height=280)
 
 renderPlot({
+
     min_date = input$range_date[1]
     max_date = input$range_date[2]
     data = df[df$confirmed.at.date >= min_date & df$confirmed.at.date <= max_date,]
@@ -93,13 +97,14 @@ renderPlot({
     ggplot(data=data, aes(x=confirmed.at.date, fill=infection.source)) +
       geom_histogram(stat="bin", binwidth=input$binwidth_date) + 
       facet_wrap(~ infection.source, ncol=1, labeller = camelcase_labeller) + 
-      geom_vline(xintercept=date_second_wave, size=2, col="red") +
-      annotate("text", x=date_second_wave, y=20, label= "Second wave") + 
+      geom_vline(xintercept=date_second_wave, size=1, col="red") +
+      annotate("text", x=date_second_wave+7, y=100, label= "Second wave") + 
       scale_fill_discrete(name="Case type", breaks=type_label, labels=names(type_label)) + 
       xlab("") + ylab("Number of confirmed cases detected\n") +
       scale_x_date(date_breaks = "weeks", date_labels = "%Y EW %U") +
       guides(fill=F) +
       theme
+
 })
 
 renderPlot({
@@ -134,11 +139,14 @@ From here, we can see that there are two waves of imported cases, the first from
 
 
 ```{r fig.height=6, fig.width=9}
-data_1st_wave = data.table(df[df$confirmed.at.date < date_second_wave & df$infection.source == "Imported case",])
+data_1st_wave = df[df$confirmed.at.date < date_second_wave & df$infection.source == "Imported case",]
+data_1st_wave = data.table(data_1st_wave)
 data_1st_wave = data_1st_wave[, list(N=length(case)), by="country.of.origin"]
 
-data_2nd_wave = data.table(df[df$confirmed.at.date >= date_second_wave & df$infection.source == "Imported case",])
+data_2nd_wave = df[df$confirmed.at.date >= date_second_wave & df$infection.source == "Imported case",]
+data_2nd_wave = data.table(data_2nd_wave)
 data_2nd_wave = data_2nd_wave[, list(N=length(case)), by="country.of.origin"]
+data_2nd_wave = data_2nd_wave[country.of.origin != "Unclear origin"]
 
 grid.arrange(
   ggplot(data_1st_wave, aes(x=reorder(camelcase_labeller("", country.of.origin), -N), y=N)) +
@@ -151,6 +159,7 @@ grid.arrange(
   xlab("") + ylab("Number of imported cases detected") + ggtitle("Second wave") +
   theme(axis.text.y=element_text(size=rel(0.7)))
 )
+
 ```
 
 #### Key events
@@ -180,57 +189,44 @@ date_no_hosp = as.Date("2020-03-24") # date when hospitalisation not required fo
 Case load is an important metric that is correlated also with hospital load. Here, it's the sum of people who are not recovered. 
 
 ```{r}
-df_cases = df[df$patient.status != "Deceased", c("case", "symptomatic.at.date", "recovered.at.date", "confirmed.at.date")]
-df_cases[is.na(df_cases$recovered.at.date),]$recovered.at.date = Sys.Date()
-df_cases[is.na(df_cases$symptomatic.at.date),]$symptomatic.at.date = 
-  df_cases[is.na(df_cases$symptomatic.at.date),]$confirmed.at.date # use confirmed.at if no symptomatic
-
-df_cases$day = mapply(function(min, max) { seq(min, max, by="day") }, 
-                       min=df_cases$symptomatic.at.date, max=df_cases$recovered.at.date)
-df_cases_day = data.table(unnest(df_cases, cols=c(day, case))); rm(df_cases)
-df_cases_day = df_cases_day[, list(case_load=length(case)), by="day"]
-df_cases_day$case_load = as.numeric(df_cases_day$case_load)
+df_cases_day$date = as.Date(df_cases_day$date)
+df_cases_day$case_load = df_cases_day$I1 + df_cases_day$I2 + df_cases_day$I3
 df_cases_day$hospital_load = df_cases_day$case_load
-df_cases_day[day>=date_no_hosp,]$hospital_load =  
-  df_cases_day[day>=date_no_hosp,]$hospital_load * hosp_prop
+df_cases_day[date>=date_no_hosp,]$hospital_load =  
+  df_cases_day[date>=date_no_hosp,]$hospital_load * hosp_prop
 ```
 
 ```{r}
 renderPlot({
-  ggplot(data=df_cases_day, aes(x=day, y=case_load)) +
-    geom_bar(stat="identity", fill="steelblue") + 
-    xlab("") + ylab("Number of cases\n") + 
+  ggplot(data=df_cases_day, aes(x=date, y=case_load)) +
+    geom_line(color="steelblue", size=1) + 
+    geom_point(color="steelblue", size=2) + 
+    xlab("") + ylab("Number of recovering cases\n") + 
     scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
     theme
 })
 ```
 
-Measuring hospital load is key to ensure that hospitals are not overloaded.  We assume that the number of those who require hospitalisation is 20% of the case load, since it is a conservative estimate that 20% of the patients require hospitalisation and/or ICU care. From [24 Mar 2020](https://go.gov.sg/measures24mar), those who still test positive but display no symptoms will no longer be hospitalised. 
+Measuring hospital load is key to ensure that hospitals are not overloaded.  We assume that the number of those who require hospitalisation is 20% of the case load, since it is a conservative estimate that 20% of the patients require hospitalisation and/or ICU care. 
+
+From [24 Mar 2020](https://go.gov.sg/measures24mar), those who still test positive but display no symptoms will no longer be hospitalised but moved to isolation facilities.
 
 ```{r}
 renderPlot({
-  ggplot(data=df_cases_day, aes(x=day, y=hospital_load)) +
-    geom_bar(stat="identity", fill="steelblue") + 
-    geom_vline(xintercept=date_no_hosp, size=2, col="red") +
+  sec_axis_name = "% of (estimated) maximum patient load\n"
+  ggplot(data=df_cases_day, aes(x=date, y=hospital_load)) +
+    geom_line(color="steelblue", size=1) + 
+    geom_point(color="steelblue", size=2) + 
+    geom_vline(xintercept=date_no_hosp, size=1, col="red") +
     xlab("") + ylab("Number of (estimated) hospitalised persons\n") + 
     scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
+    scale_y_continuous(sec.axis = sec_axis(~ ./max_load*100, name=sec_axis_name)) + 
     theme
 })
 ```
 
 There are 9 public acute hospitals in Singapore, with an average capacity of 1,200 beds. They are currently operating at approximately [75% load](https://www.moh.gov.sg/resources-statistics/healthcare-institution-statistics/beds-occupancy-rate-(bor)). There is also the NCID has approximately 300 beds. If it is assumed that hospitals can operate at a 90% bed load, to ensure that hospitals are not overtaxed and there is sufficient isolation between covid patients (more than usual required), then there would be `r max_load` beds available. 
 
-
-```{r}
-renderPlot({
-  ggplot(data=df_cases_day, aes(x=day, y=round(hospital_load/max_load*100, 2))) +
-    geom_bar(stat="identity", fill="steelblue") + 
-    geom_vline(xintercept=date_no_hosp, size=2, col="red") +
-    xlab("") + ylab("% of (estimated) maximum patient load\n") + 
-    scale_x_date(date_breaks = "weeks" , date_labels = "%Y EW %U") +
-    theme
-})
-```
 
 ### Recovery
 
@@ -239,7 +235,9 @@ Recovered date is based on the discharged date when there are [consecutive negat
 #### Duration of recovery
 
 ```{r}
-is.recovered = table(!is.na(df[, c("days.to.recover.symptomatic")]))
+is.recovered = table(!is.na(df$days.to.recover.symptomatic))
+median_recovery_time = as.numeric(median(df$days.to.recover.symptomatic, na.rm=T))
+mean_recovery_time = round(as.numeric(mean(df$days.to.recover.symptomatic, na.rm=T)), 1)
 ```
 - Number of recovered persons: 
   `r is.recovered[2]`
@@ -247,9 +245,9 @@ is.recovered = table(!is.na(df[, c("days.to.recover.symptomatic")]))
   `r round(prop.table(is.recovered)[2]*100, 1)`%
 
 - Median time to recovery (from confirmed): 
-  `r as.numeric(median(df$days.to.recover.symptomatic, na.rm=T))` days
+  `r median_recovery_time` days
 - Mean time to recovery (from confirmed): 
-  `r round(as.numeric(mean(df$days.to.recover.symptomatic, na.rm=T)), 1)` days
+  `r mean_recovery_time` days
 
 ```{r fig.height=3, fig.width=5}
 binwidth = 5
@@ -261,6 +259,7 @@ hist_max = max(table(cut(as.numeric(df$days.to.recover.symptomatic),
 ggplot(df, aes(x=days.to.recover.symptomatic)) + 
   geom_histogram(binwidth=binwidth, na.rm=T) + 
   xlab("Days to recover") + ylab("Number of people") +
+  geom_vline(xintercept=mean_recovery_time, size=1, col="red") +
   scale_y_continuous(breaks=seq(0, hist_max, ifelse(hist_max<30, 1, 5))) +
   scale_x_continuous(breaks=seq(0, max, ifelse(max<30, 1, 5))) + 
   theme
@@ -331,7 +330,6 @@ knitr::kable(deceased, "markdown")
 ### Clusters
 
 TODO:duration of cluster, type of venue of cluster, number of people involved
-
 
 ## Methods
 

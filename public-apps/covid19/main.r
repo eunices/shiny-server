@@ -16,6 +16,11 @@ get_data = function(url) {
     }
 }
 
+get_df_cases_day = function() {
+    print(paste0(Sys.time(), ": Read case summary data."))
+    fread('cases.csv')
+}
+
 clean_data = function(df, write=F) {
     print(paste0(Sys.time(), ": Cleaning patient field."))
 
