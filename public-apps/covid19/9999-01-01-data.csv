@@ -6,8 +6,8 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 5,2020-01-27,TTSH,56,F,China,visitor,China,Imported case,,,,TRUE,2020-01-24,2020-02-18,NA
 6,2020-01-27,CGH,56,M,China,visitor,China,Imported case,,,,TRUE,2020-01-25,2020-02-20,NA
 7,2020-01-27,NCID,35,M,China,visitor,China,Imported case,,,,TRUE,2020-01-24,2020-02-04,NA
-8,2020-01-28,NCID,56,F,China,visitor,China,Imported case,,,"The Life Church and Missions, and the Grace Assembly of God church: The Life Church and Missions sub-cluster",TRUE,2020-01-24,2020-02-18,NA
-9,2020-01-29,NCID,56,M,China,visitor,China,Imported case,,,"The Life Church and Missions, and the Grace Assembly of God church: The Life Church and Missions sub-cluster",TRUE,2020-01-24,2020-02-23,NA
+8,2020-01-28,NCID,56,F,China,visitor,China,Imported case,,,The Life Church and Missions sub-cluster,TRUE,2020-01-24,2020-02-18,NA
+9,2020-01-29,NCID,56,M,China,visitor,China,Imported case,,,The Life Church and Missions sub-cluster,TRUE,2020-01-24,2020-02-23,NA
 10,2020-01-29,NCID,56,M,China,visitor,China,Imported case,,,,TRUE,2020-01-21,2020-02-09,NA
 11,2020-01-29,NCID,31,F,China,visitor,China,Imported case,,,,TRUE,2020-01-27,2020-02-10,NA
 12,2020-01-29,NCID,37,F,China,visitor,China,Imported case,,,,TRUE,2020-01-26,2020-02-12,NA
@@ -29,14 +29,14 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 28,2020-02-05,KKH,1,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,2020-02-22,NA
 29,2020-02-05,NCID,41,M,Singapore,citizen,,Local transmission,,,,TRUE,2020-01-28,2020-02-12,NA
 30,2020-02-06,NCID,27,M,Singapore,citizen,,Local transmission,,,Grand Hyatt business meeting,TRUE,2020-01-21,2020-02-14,NA
-31,2020-02-06,CGH,53,M,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: The Life Church and Missions sub-cluster",TRUE,2020-01-23,2020-02-17,NA
+31,2020-02-06,CGH,53,M,Singapore,citizen,,Local transmission,,,The Life Church and Missions sub-cluster,TRUE,2020-01-23,2020-02-17,NA
 32,2020-02-06,NCID,42,F,Singapore,citizen,,Local transmission,,,,TRUE,2020-02-02,2020-02-19,NA
-33,2020-02-06,SKH,39,F,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: The Life Church and Missions sub-cluster",TRUE,2020-01-30,2020-02-19,NA
+33,2020-02-06,SKH,39,F,Singapore,citizen,,Local transmission,,,The Life Church and Missions sub-cluster,TRUE,2020-01-30,2020-02-19,NA
 34,2020-02-07,NCID,40,F,Singapore,citizen,,Local transmission,,,Yong Thai Hang health products store in Cavan Road,TRUE,2020-01-27,2020-02-12,NA
 35,2020-02-07,SGH,64,M,Singapore,citizen,,Local transmission,,,Yong Thai Hang health products store in Cavan Road,TRUE,2020-01-30,NA,NA
 36,2020-02-07,NCID,38,F,Singapore,pr,,Local transmission,,,Grand Hyatt business meeting,TRUE,2020-01-24,2020-02-11,NA
 37,2020-02-07,NCID,53,M,Singapore,citizen,,Local transmission,,,,TRUE,2020-01-30,2020-03-02,NA
-38,2020-02-08,NCID,52,F,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: The Life Church and Missions sub-cluster",TRUE,2020-02-03,2020-02-18,NA
+38,2020-02-08,NCID,52,F,Singapore,citizen,,Local transmission,,,The Life Church and Missions sub-cluster,TRUE,2020-02-03,2020-02-18,NA
 39,2020-02-08,NCID,51,M,Singapore,citizen,,Local transmission,,,Grand Hyatt business meeting,TRUE,2020-01-29,2020-02-16,NA
 40,2020-02-08,NCID,36,M,Singapore,citizen,,Local transmission,,,,TRUE,2020-01-30,2020-02-12,NA
 41,2020-02-08,NCID,71,M,Singapore,citizen,,Local transmission,,,,TRUE,2020-02-01,NA,NA
@@ -46,50 +46,50 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 45,2020-02-10,KKH,2,F,Singapore,citizen,China,Imported case,,,,FALSE,NA,2020-02-14,NA
 46,2020-02-10,NCID,35,M,Singapore,pr,,Local transmission,,,,TRUE,2020-02-05,2020-02-24,NA
 47,2020-02-10,NCID,39,M,Bangaldesh,wp,,Local transmission,,,A work site in Seletar Aerospace Heights,TRUE,2020-02-06,2020-03-07,NA
-48,2020-02-11,NCID,34,M,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: Grace Assembly of God sub-cluster",TRUE,2020-02-01,2020-02-17,NA
-49,2020-02-11,NUH,46,M,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: Grace Assembly of God sub-cluster",TRUE,2020-02-03,2020-02-26,NA
+48,2020-02-11,NCID,34,M,Singapore,citizen,,Local transmission,,,Grace Assembly of God sub-cluster,TRUE,2020-02-01,2020-02-17,NA
+49,2020-02-11,NUH,46,M,Singapore,citizen,,Local transmission,,,Grace Assembly of God sub-cluster,TRUE,2020-02-03,2020-02-26,NA
 50,2020-02-12,NCID,62,M,Singapore,citizen,,Local transmission,77,,,TRUE,2020-02-07,2020-02-21,NA
-51,2020-02-12,NCID,48,M,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: Grace Assembly of God sub-cluster",TRUE,2020-02-04,2020-02-21,NA
+51,2020-02-12,NCID,48,M,Singapore,citizen,,Local transmission,,,Grace Assembly of God sub-cluster,TRUE,2020-02-04,2020-02-21,NA
 52,2020-02-12,TTSH,37,M,Bangaldesh,visitor,,Local transmission,,,A work site in Seletar Aerospace Heights,TRUE,2020-02-07,2020-02-28,NA
-53,2020-02-12,NCID,54,M,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: Grace Assembly of God sub-cluster",TRUE,2020-02-07,2020-03-14,NA
-54,2020-02-13,NCID,55,F,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: Grace Assembly of God sub-cluster",TRUE,2020-02-10,2020-03-01,NA
+53,2020-02-12,NCID,54,M,Singapore,citizen,,Local transmission,,,Grace Assembly of God sub-cluster,TRUE,2020-02-07,2020-03-14,NA
+54,2020-02-13,NCID,55,F,Singapore,citizen,,Local transmission,,,Grace Assembly of God sub-cluster,TRUE,2020-02-10,2020-03-01,NA
 55,2020-02-13,NCID,30,M,Singapore,citizen,,Local transmission,,,,TRUE,2020-01-30,2020-02-19,NA
 56,2020-02-13,NCID,30,M,Bangaldesh,visitor,,Local transmission,,,A work site in Seletar Aerospace Heights,TRUE,2020-02-12,2020-02-26,NA
-57,2020-02-13,NCID,26,M,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: Grace Assembly of God sub-cluster",TRUE,2020-02-11,2020-02-21,NA
-58,2020-02-13,NCID,55,M,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: Grace Assembly of God sub-cluster",TRUE,2020-02-10,2020-02-25,NA
+57,2020-02-13,NCID,26,M,Singapore,citizen,,Local transmission,,,Grace Assembly of God sub-cluster,TRUE,2020-02-11,2020-02-21,NA
+58,2020-02-13,NCID,55,M,Singapore,citizen,,Local transmission,,,Grace Assembly of God sub-cluster,TRUE,2020-02-10,2020-02-25,NA
 59,2020-02-13,NCID,61,M,Singapore,citizen,,Local transmission,,,,TRUE,2020-02-07,2020-02-26,NA
-60,2020-02-13,NCID,51,F,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: Grace Assembly of God sub-cluster",TRUE,2020-02-08,2020-03-01,NA
-61,2020-02-13,NUH,57,M,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: Grace Assembly of God sub-cluster",TRUE,2020-02-06,2020-03-04,NA
-62,2020-02-13,SGH,44,F,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: Grace Assembly of God sub-cluster",TRUE,2020-02-09,2020-02-25,NA
-63,2020-02-14,NCID,54,F,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: Grace Assembly of God sub-cluster",TRUE,2020-02-10,2020-02-21,NA
+60,2020-02-13,NCID,51,F,Singapore,citizen,,Local transmission,,,Grace Assembly of God sub-cluster,TRUE,2020-02-08,2020-03-01,NA
+61,2020-02-13,NUH,57,M,Singapore,citizen,,Local transmission,,,Grace Assembly of God sub-cluster,TRUE,2020-02-06,2020-03-04,NA
+62,2020-02-13,SGH,44,F,Singapore,citizen,,Local transmission,,,Grace Assembly of God sub-cluster,TRUE,2020-02-09,2020-02-25,NA
+63,2020-02-14,NCID,54,F,Singapore,citizen,,Local transmission,,,Grace Assembly of God sub-cluster,TRUE,2020-02-10,2020-02-21,NA
 64,2020-02-14,NUH,50,M,Singapore,citizen,,Local transmission,,,,TRUE,2020-02-03,2020-02-23,NA
 65,2020-02-14,NCID,61,F,Singapore,citizen,,Local transmission,,"50, 55",,TRUE,2020-02-12,2020-02-17,NA
-66,2020-02-14,NCID,28,M,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: Grace Assembly of God sub-cluster",TRUE,2020-01-29,2020-02-20,NA
-67,2020-02-14,NCID,56,F,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: Grace Assembly of God sub-cluster",TRUE,2020-02-09,2020-03-02,NA
-68,2020-02-14,NCID,79,F,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: Grace Assembly of God sub-cluster",TRUE,2020-01-30,2020-02-29,NA
+66,2020-02-14,NCID,28,M,Singapore,citizen,,Local transmission,,,Grace Assembly of God sub-cluster,TRUE,2020-01-29,2020-02-20,NA
+67,2020-02-14,NCID,56,F,Singapore,citizen,,Local transmission,,,Grace Assembly of God sub-cluster,TRUE,2020-02-09,2020-03-02,NA
+68,2020-02-14,NCID,79,F,Singapore,citizen,,Local transmission,,,Grace Assembly of God sub-cluster,TRUE,2020-01-30,2020-02-29,NA
 69,2020-02-15,NCID,26,M,Bangaldesh,wp,,Local transmission,,,A work site in Seletar Aerospace Heights,TRUE,2020-02-14,2020-03-02,NA
-70,2020-02-15,NCID,27,F,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: Grace Assembly of God sub-cluster",TRUE,2020-02-03,2020-02-21,NA
-71,2020-02-15,NCID,25,M,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: Grace Assembly of God sub-cluster",TRUE,2020-02-01,2020-03-05,NA
+70,2020-02-15,NCID,27,F,Singapore,citizen,,Local transmission,,,Grace Assembly of God sub-cluster,TRUE,2020-02-03,2020-02-21,NA
+71,2020-02-15,NCID,25,M,Singapore,citizen,,Local transmission,,,Grace Assembly of God sub-cluster,TRUE,2020-02-01,2020-03-05,NA
 72,2020-02-15,NCID,40,M,China,wp,,Local transmission,"59, 79",,,TRUE,2020-02-10,2020-02-27,NA
-73,2020-02-15,NCID,43,M,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: Grace Assembly of God sub-cluster",TRUE,2020-02-09,2020-02-26,NA
-74,2020-02-15,AH,29,M,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: Grace Assembly of God sub-cluster",TRUE,2020-02-12,2020-03-07,NA
+73,2020-02-15,NCID,43,M,Singapore,citizen,,Local transmission,,,Grace Assembly of God sub-cluster,TRUE,2020-02-09,2020-02-26,NA
+74,2020-02-15,AH,29,M,Singapore,citizen,,Local transmission,,,Grace Assembly of God sub-cluster,TRUE,2020-02-12,2020-03-07,NA
 75,2020-02-16,NCID,71,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,2020-02-29,NA
 76,2020-02-16,KKH,1,M,Singapore,citizen,China,Imported case,,,,FALSE,NA,2020-02-18,NA
 77,2020-02-17,NCID,35,M,Singapore,citizen,,Local transmission,,,,TRUE,2020-02-10,2020-02-25,NA
-78,2020-02-17,NCID,57,F,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: Grace Assembly of God sub-cluster",TRUE,2020-02-09,2020-02-27,NA
+78,2020-02-17,NCID,57,F,Singapore,citizen,,Local transmission,,,Grace Assembly of God sub-cluster,TRUE,2020-02-09,2020-02-27,NA
 79,2020-02-17,NCID,35,F,Malaysia,wp,,Local transmission,,,,TRUE,2020-02-12,2020-02-28,NA
-80,2020-02-18,NUH,38,F,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: Grace Assembly of God sub-cluster",TRUE,2020-02-04,2020-02-27,NA
-81,2020-02-18,NCID,50,M,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: Grace Assembly of God sub-cluster",TRUE,2020-02-16,2020-02-25,NA
+80,2020-02-18,NUH,38,F,Singapore,citizen,,Local transmission,,,Grace Assembly of God sub-cluster,TRUE,2020-02-04,2020-02-27,NA
+81,2020-02-18,NCID,50,M,Singapore,citizen,,Local transmission,,,Grace Assembly of God sub-cluster,TRUE,2020-02-16,2020-02-25,NA
 82,2020-02-18,NTFGH,57,F,Singapore,citizen,,Local transmission,,,,TRUE,2020-02-09,2020-03-25,NA
-83,2020-02-19,NCID,54,M,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: Grace Assembly of God sub-cluster",TRUE,2020-01-28,2020-02-21,NA
+83,2020-02-19,NCID,54,M,Singapore,citizen,,Local transmission,,,Grace Assembly of God sub-cluster,TRUE,2020-01-28,2020-02-21,NA
 84,2020-02-19,NCID,35,F,Singapore,citizen,,Local transmission,,,,TRUE,2020-02-04,2020-02-21,NA
 85,2020-02-20,NCID,36,M,China,wp,,Local transmission,,,,TRUE,2020-02-14,2020-03-07,NA
 86,2020-02-20,NTFGH,24,M,Singapore,citizen,,Local transmission,82,,,TRUE,2020-02-14,2020-03-07,NA
 87,2020-02-21,NCID,32,M,Singapore,citizen,China,Imported case,76,,,FALSE,NA,2020-02-24,NA
-88,2020-02-21,NCID,30,F,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: Grace Assembly of God sub-cluster",TRUE,2020-02-16,2020-03-02,NA
+88,2020-02-21,NCID,30,F,Singapore,citizen,,Local transmission,,,Grace Assembly of God sub-cluster,TRUE,2020-02-16,2020-03-02,NA
 89,2020-02-22,NCID,41,M,Singapore,pr,,Local transmission,,,,TRUE,2020-02-03,2020-02-28,NA
-90,2020-02-23,NCID,75,F,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: The Life Church and Missions sub-cluster",TRUE,2020-02-09,NA,2020-03-21
-91,2020-02-22,NCID,58,F,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: The Life Church and Missions sub-cluster",TRUE,2020-01-23,2020-02-25,NA
+90,2020-02-23,NCID,75,F,Singapore,citizen,,Local transmission,,,The Life Church and Missions sub-cluster,TRUE,2020-02-09,NA,2020-03-21
+91,2020-02-22,NCID,58,F,Singapore,citizen,,Local transmission,,,The Life Church and Missions sub-cluster,TRUE,2020-01-23,2020-02-25,NA
 92,2020-02-26,SKH,47,M,Singapore,citizen,,Local transmission,,,,TRUE,2020-02-17,2020-03-11,NA
 93,2020-02-26,NTFGH,38,M,Singapore,citizen,,Local transmission,,,"Wizlearn Technologies, an e-learning solutions company in Science Park Road",TRUE,2020-02-17,2020-03-07,NA
 94,2020-02-26,SGH,64,F,Singapore,citizen,,Local transmission,,,Safra Jurong private dinner function,TRUE,2020-02-11,2020-03-24,NA
@@ -136,7 +136,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 135,2020-03-06,SGH,40,M,Singapore,citizen,,Local transmission,,,,TRUE,2020-02-26,2020-03-14,NA
 136,2020-03-06,NCID,36,M,Italy,visitor,Unclear origin,Imported case,,,,TRUE,2020-03-01,2020-03-19,NA
 137,2020-03-06,NCID,60,M,Singapore,citizen,,Local transmission,,,Safra Jurong private dinner function,TRUE,2020-03-05,2020-03-21,NA
-138,2020-03-06,NTFGH,26,M,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: The Life Church and Missions sub-cluster",FALSE,NA,2020-03-09,NA
+138,2020-03-06,NTFGH,26,M,Singapore,citizen,,Local transmission,,,The Life Church and Missions sub-cluster,FALSE,NA,2020-03-09,NA
 139,2020-03-07,NTFGH,71,M,Singapore,citizen,,Local transmission,,,Safra Jurong private dinner function,TRUE,2020-03-03,2020-03-26,NA
 140,2020-03-07,NTFGH,62,F,Singapore,citizen,,Local transmission,,,Safra Jurong private dinner function,TRUE,2020-02-28,2020-03-24,NA
 141,2020-03-07,NTFGH,69,M,Singapore,citizen,,Local transmission,,,,TRUE,2020-03-01,2020-03-25,NA
@@ -149,7 +149,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 148,2020-03-08,NCID,67,F,Singapore,citizen,,Local transmission,,,Safra Jurong private dinner function,TRUE,2020-02-24,2020-03-11,NA
 149,2020-03-08,NCID,62,M,Singapore,citizen,,Local transmission,,,Safra Jurong private dinner function,TRUE,2020-02-23,2020-03-16,NA
 150,2020-03-08,NCID,53,F,Singapore,pr,,Local transmission,,,Safra Jurong private dinner function,TRUE,2020-02-29,2020-03-14,NA
-151,2020-03-08,NCID,51,M,Singapore,citizen,,Local transmission,,,"The Life Church and Missions, and the Grace Assembly of God church: The Life Church and Missions sub-cluster",TRUE,2020-02-04,2020-03-08,NA
+151,2020-03-08,NCID,51,M,Singapore,citizen,,Local transmission,,,The Life Church and Missions sub-cluster,TRUE,2020-02-04,2020-03-08,NA
 152,2020-03-08,SGH,65,M,Indonesia,visitor,Unclear origin,Imported case,,170,,TRUE,2020-02-28,2020-04-09,NA
 153,2020-03-08,SGH,65,F,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,2020-03-03,2020-03-27,NA
 154,2020-03-09,NCID,52,M,United Kingdom,visitor,Unclear origin,Imported case,,,,TRUE,2020-03-08,2020-03-25,NA
@@ -1539,11 +1539,11 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1538,2020-04-08,NCID,12,F,Singapore,pr,,Local transmission,,,,TRUE,NA,NA,NA
 1539,2020-04-08,NTFGH,21,M,Bangladesh,lp,,Local transmission,,,,TRUE,NA,NA,NA
 1540,2020-04-08,KTPH,30,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
-1541,2020-04-08,Unknown,43,M,Singapore,pr,,Local transmission,,,,TRUE,NA,NA,NA
+1541,2020-04-08,unknown,43,M,Singapore,pr,,Local transmission,,,,TRUE,NA,NA,NA
 1542,2020-04-08,KTPH,32,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 1543,2020-04-08,NTFGH,37,M,Bangladesh,lp,,Local transmission,,,,TRUE,NA,NA,NA
 1544,2020-04-08,NTFGH,22,M,India,lp,,Local transmission,,,,TRUE,NA,NA,NA
-1545,2020-04-08,Unknown,40,M,Bangladesh,lp,,Local transmission,,,,TRUE,NA,NA,NA
+1545,2020-04-08,unknown,40,M,Bangladesh,lp,,Local transmission,,,,TRUE,NA,NA,NA
 1546,2020-04-08,SKH,53,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 1547,2020-04-08,NCID,43,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 1548,2020-04-08,KKH,15,M,Singapore,citizen,,Local transmission,,1133,,TRUE,NA,NA,NA
@@ -1731,7 +1731,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1730,2020-04-09,NCID,27,M,Bangladesh,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
 1731,2020-04-09,NCID,41,M,Bangladesh,wp,,Local transmission,,,Dormitory at 31 Sungei Kadut Avenue,TRUE,NA,NA,NA
 1732,2020-04-09,NCID,51,M,Singapore,pr,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA
-1733,2020-04-09,MEN,39,F,Singapore,citizen,,Local transmission,,,ICA Building at 10 Kallang Road,TRUE,NA,NA,NA
+1733,2020-04-09,Mount Elizabeth Novena Hospital,39,F,Singapore,citizen,,Local transmission,,,ICA Building at 10 Kallang Road,TRUE,NA,NA,NA
 1734,2020-04-09,NCID,51,M,China,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 1735,2020-04-09,NCID,30,M,Bangladesh,lp,,Local transmission,,,Dormitory at 31 Sungei Kadut Avenue,TRUE,NA,NA,NA
 1736,2020-04-09,NCID,47,M,China,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
@@ -1935,7 +1935,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1934,2020-04-10,SGH,27,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
 1935,2020-04-10,SGH,51,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
 1936,2020-04-10,SGH,51,F,Singapore,citizen,,Local transmission,,,Dover Court International School at 301 Dover Road,TRUE,NA,NA,NA
-1937,2020-04-10,KKH5,11,F,Singapore,citizen,,Local transmission,,1949,,TRUE,NA,NA,NA
+1937,2020-04-10,KKH,11,F,Singapore,citizen,,Local transmission,,1949,,TRUE,NA,NA,NA
 1938,2020-04-10,KTPH,27,M,Bangladesh,wp,,Local transmission,1394,,,TRUE,NA,NA,NA
 1939,2020-04-10,AH,44,M,Thailand,wp,,Local transmission,,,,TRUE,NA,NA,NA
 1940,2020-04-10,AH,39,M,Thailand,visitor,,Local transmission,,,,TRUE,NA,NA,NA
@@ -1976,15 +1976,15 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1975,2020-04-10,SKH,40,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 1976,2020-04-10,NCID,54,M,India,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
 1977,2020-04-10,NCID,26,M,Bangladesh,lp,,Local transmission,1164,,,TRUE,NA,NA,NA
-1978,2020-04-10,CIF,35,M,India,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
-1979,2020-04-10,CIF,28,M,India,wp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
-1980,2020-04-10,CIF,49,M,Bangladesh,wp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
-1981,2020-04-10,CIF,26,M,Bangladesh,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
-1982,2020-04-10,CIF,24,M,India,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-1983,2020-04-10,CIF,25,M,India,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-1984,2020-04-10,CIF,28,M,Bangladesh,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
-1985,2020-04-10,CIF,26,M,Bangladesh,lp,,Local transmission,,,,TRUE,NA,NA,NA
-1986,2020-04-10,Pending,50,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+1978,2020-04-10,Community Isolation Facility,35,M,India,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
+1979,2020-04-10,Community Isolation Facility,28,M,India,wp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
+1980,2020-04-10,Community Isolation Facility,49,M,Bangladesh,wp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
+1981,2020-04-10,Community Isolation Facility,26,M,Bangladesh,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
+1982,2020-04-10,Community Isolation Facility,24,M,India,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+1983,2020-04-10,Community Isolation Facility,25,M,India,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+1984,2020-04-10,Community Isolation Facility,28,M,Bangladesh,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
+1985,2020-04-10,Community Isolation Facility,26,M,Bangladesh,lp,,Local transmission,,,,TRUE,NA,NA,NA
+1986,2020-04-10,unknown,50,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 1987,2020-04-10,NCID,45,M,Thailand,lp,,Local transmission,,,,TRUE,NA,NA,NA
 1988,2020-04-10,NCID,24,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
 1989,2020-04-10,NCID,31,M,India,lp,,Local transmission,,,,TRUE,NA,NA,NA
@@ -2014,37 +2014,37 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2013,2020-04-10,NUH,51,M,Singapore,pr,,Local transmission,1704,,,TRUE,NA,NA,NA
 2014,2020-04-10,NUH,34,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2015,2020-04-10,NUH,30,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
-2016,2020-04-10,Pending,35,F,Singapore,pr,,Local transmission,,,,TRUE,NA,NA,NA
+2016,2020-04-10,unknown,35,F,Singapore,pr,,Local transmission,,,,TRUE,NA,NA,NA
 2017,2020-04-10,CGH,37,M,China,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2018,2020-04-10,CGH,38,M,India,wp,,Local transmission,,,Tampines Dormitory at 2 Tampines Place,TRUE,NA,NA,NA
-2019,2020-04-10,Pending,42,M,Bangladeshi,wp,,Local transmission,"2020, 2021, 2022",,,TRUE,NA,NA,NA
-2020,2020-04-10,Pending,32,M,Bangladeshi,visitor,,Local transmission,"2019, 2021, 2022",,,TRUE,NA,NA,NA
-2021,2020-04-10,Pending,30,M,Bangladesh,lp,,Local transmission,"2019, 2020, 2022",,,TRUE,NA,NA,NA
-2022,2020-04-10,Pending,36,M,Bangladesh,lp,,Local transmission,"2019, 2020, 2021",,,TRUE,NA,NA,NA
-2023,2020-04-10,Pending,38,F,Singapore,citizen,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA
-2024,2020-04-10,Pending,40,M,Singapore,pr,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA
-2025,2020-04-10,CIF,28,M,Bangladesh,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
-2026,2020-04-10,CIF,39,M,Bangladesh,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
-2027,2020-04-10,CIF,30,M,Bangladesh,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
-2028,2020-04-10,CIF,40,M,Oman,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
-2029,2020-04-10,CIF,32,M,Bangladesh,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
-2030,2020-04-10,CIF,33,M,Bangladesh,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
-2031,2020-04-10,CIF,28,M,India,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
-2032,2020-04-10,CIF,30,M,Bangladesh,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
-2033,2020-04-10,CIF,34,M,unknown,visitor,,Local transmission,,,,TRUE,NA,NA,NA
-2034,2020-04-10,CIF,47,M,unknown,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
-2035,2020-04-10,CIF,28,M,unknown,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
-2036,2020-04-10,CIF,41,M,China,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2037,2020-04-10,CIF,45,M,unknown,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2038,2020-04-10,CIF,37,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2039,2020-04-10,CIF,36,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2040,2020-04-10,CIF,50,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2041,2020-04-10,CIF,41,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2042,2020-04-10,CIF,21,M,India,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2043,2020-04-10,CIF,35,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2044,2020-04-10,CIF,32,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2045,2020-04-10,CIF,28,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2046,2020-04-10,CIF,22,M,unknown,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2019,2020-04-10,unknown,42,M,Bangladeshi,wp,,Local transmission,"2020, 2021, 2022",,,TRUE,NA,NA,NA
+2020,2020-04-10,unknown,32,M,Bangladeshi,visitor,,Local transmission,"2019, 2021, 2022",,,TRUE,NA,NA,NA
+2021,2020-04-10,unknown,30,M,Bangladesh,lp,,Local transmission,"2019, 2020, 2022",,,TRUE,NA,NA,NA
+2022,2020-04-10,unknown,36,M,Bangladesh,lp,,Local transmission,"2019, 2020, 2021",,,TRUE,NA,NA,NA
+2023,2020-04-10,unknown,38,F,Singapore,citizen,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA
+2024,2020-04-10,unknown,40,M,Singapore,pr,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA
+2025,2020-04-10,Community Isolation Facility,28,M,Bangladesh,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+2026,2020-04-10,Community Isolation Facility,39,M,Bangladesh,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+2027,2020-04-10,Community Isolation Facility,30,M,Bangladesh,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+2028,2020-04-10,Community Isolation Facility,40,M,Oman,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+2029,2020-04-10,Community Isolation Facility,32,M,Bangladesh,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+2030,2020-04-10,Community Isolation Facility,33,M,Bangladesh,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+2031,2020-04-10,Community Isolation Facility,28,M,India,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+2032,2020-04-10,Community Isolation Facility,30,M,Bangladesh,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+2033,2020-04-10,Community Isolation Facility,34,M,unknown,visitor,,Local transmission,,,,TRUE,NA,NA,NA
+2034,2020-04-10,Community Isolation Facility,47,M,unknown,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+2035,2020-04-10,Community Isolation Facility,28,M,unknown,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+2036,2020-04-10,Community Isolation Facility,41,M,China,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2037,2020-04-10,Community Isolation Facility,45,M,unknown,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2038,2020-04-10,Community Isolation Facility,37,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2039,2020-04-10,Community Isolation Facility,36,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2040,2020-04-10,Community Isolation Facility,50,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2041,2020-04-10,Community Isolation Facility,41,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2042,2020-04-10,Community Isolation Facility,21,M,India,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2043,2020-04-10,Community Isolation Facility,35,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2044,2020-04-10,Community Isolation Facility,32,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2045,2020-04-10,Community Isolation Facility,28,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2046,2020-04-10,Community Isolation Facility,22,M,unknown,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 2047,2020-04-10,NCID,35,M,Bangladesh,lp,,Local transmission,1399,,Westlite Woodlands dormitory at 2 Woodlands Sector 2,TRUE,NA,NA,NA
 2048,2020-04-10,NCID,25,M,India,lp,,Local transmission,,,Renovation site at National University Hospital @ 5 Lower Kent Ridge Road,TRUE,NA,NA,NA
 2049,2020-04-10,NCID,46,F,Singapore,citizen,,Local transmission,,1045,,TRUE,NA,NA,NA
@@ -2066,9 +2066,9 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2065,2020-04-10,NCID,48,M,China,wp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
 2066,2020-04-10,NCID,38,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 2067,2020-04-10,NUH,20,F,Singapore,pr,,Local transmission,,1711,,TRUE,NA,NA,NA
-2068,2020-04-10,Pending,47,M,Bangladesh,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2069,2020-04-10,Pending,26,M,India,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2070,2020-04-10,Pending,26,M,Bangladesh,lp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
+2068,2020-04-10,unknown,47,M,Bangladesh,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2069,2020-04-10,unknown,26,M,India,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2070,2020-04-10,unknown,26,M,Bangladesh,lp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
 2071,2020-04-10,KTPH,44,M,India,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2072,2020-04-10,KTPH,39,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2073,2020-04-10,KTPH,24,M,India,wp,,Local transmission,,,Renovation site at National University Hospital @ 5 Lower Kent Ridge Road,TRUE,NA,NA,NA
@@ -2177,15 +2177,15 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2176,2020-04-11,KTPH,61,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 2177,2020-04-11,SGH,33,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2178,2020-04-11,SGH,46,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2179,2020-04-11,CIF,28,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2180,2020-04-11,CIF,37,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2181,2020-04-11,CIF,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2182,2020-04-11,CIF,33,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2183,2020-04-11,CIF,27,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2184,2020-04-11,CIF,41,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2185,2020-04-11,CIF,27,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2186,2020-04-11,CIF,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2187,2020-04-11,CIF,31,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2179,2020-04-11,Community Isolation Facility,28,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2180,2020-04-11,Community Isolation Facility,37,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2181,2020-04-11,Community Isolation Facility,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2182,2020-04-11,Community Isolation Facility,33,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2183,2020-04-11,Community Isolation Facility,27,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2184,2020-04-11,Community Isolation Facility,41,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2185,2020-04-11,Community Isolation Facility,27,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2186,2020-04-11,Community Isolation Facility,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2187,2020-04-11,Community Isolation Facility,31,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2188,2020-04-11,NCID,42,M,NA,wp,,Local transmission,1567,,,TRUE,NA,NA,NA
 2189,2020-04-11,NCID,44,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2190,2020-04-11,NCID,33,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
@@ -2212,29 +2212,29 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2211,2020-04-11,NTFGH,57,F,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 2212,2020-04-11,SGH,53,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2213,2020-04-11,SKH,40,M,NA,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2214,2020-04-11,PEH,38,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2214,2020-04-11,Parkway East Hospital,38,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 2215,2020-04-11,SGH,41,M,NA,pr,,Local transmission,,,,TRUE,NA,NA,NA
-2216,2020-04-11,CIF,28,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2217,2020-04-11,CIF,25,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2218,2020-04-11,CIF,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2219,2020-04-11,CIF,29,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2220,2020-04-11,CIF,22,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2221,2020-04-11,CIF,29,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2222,2020-04-11,CIF,31,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2223,2020-04-11,CIF,29,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2224,2020-04-11,CIF,28,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2225,2020-04-11,CIF,32,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2226,2020-04-11,CIF,34,M,NA,wp,,Local transmission,1745,,,TRUE,NA,NA,NA
-2227,2020-04-11,CIF,32,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2228,2020-04-11,CIF,42,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2229,2020-04-11,CIF,33,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2230,2020-04-11,CIF,21,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2231,2020-04-11,CIF,29,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2232,2020-04-11,CIF,33,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2233,2020-04-11,CIF,37,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2234,2020-04-11,CIF,32,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2235,2020-04-11,CIF,30,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2236,2020-04-11,CIF,38,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2216,2020-04-11,Community Isolation Facility,28,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2217,2020-04-11,Community Isolation Facility,25,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2218,2020-04-11,Community Isolation Facility,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2219,2020-04-11,Community Isolation Facility,29,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2220,2020-04-11,Community Isolation Facility,22,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2221,2020-04-11,Community Isolation Facility,29,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2222,2020-04-11,Community Isolation Facility,31,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2223,2020-04-11,Community Isolation Facility,29,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2224,2020-04-11,Community Isolation Facility,28,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2225,2020-04-11,Community Isolation Facility,32,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2226,2020-04-11,Community Isolation Facility,34,M,NA,wp,,Local transmission,1745,,,TRUE,NA,NA,NA
+2227,2020-04-11,Community Isolation Facility,32,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2228,2020-04-11,Community Isolation Facility,42,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2229,2020-04-11,Community Isolation Facility,33,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2230,2020-04-11,Community Isolation Facility,21,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2231,2020-04-11,Community Isolation Facility,29,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2232,2020-04-11,Community Isolation Facility,33,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2233,2020-04-11,Community Isolation Facility,37,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2234,2020-04-11,Community Isolation Facility,32,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2235,2020-04-11,Community Isolation Facility,30,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2236,2020-04-11,Community Isolation Facility,38,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 2237,2020-04-11,NCID,46,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2238,2020-04-11,NCID,28,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2239,2020-04-11,NCID,32,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA

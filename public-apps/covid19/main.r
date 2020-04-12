@@ -17,15 +17,18 @@ get_data = function(url) {
 }
 
 get_df_cases_day = function() {
-    print(paste0(Sys.time(), ": Read case summary data."))
-    cases = fread('cases.csv')
+    filename = 'cases.csv'
+    print(paste0(Sys.time(), ": Read case summary data from ", filename, "."))
+    cases = fread(filename)
     cases$date = as.Date(cases$date)
     cases
 }
 
 get_events = function() {
     events_cols = c("date", "short", "type", "related")
-    events = fread("events.csv")[, ..events_cols]
+    filename = "events.csv"
+    print(paste0(Sys.time(), ": Read event data from ", filename, "."))
+    events = fread(filename)[, ..events_cols]
     events$date = as.Date(events$date)
     events$no = 1:dim(events)[1]
     events

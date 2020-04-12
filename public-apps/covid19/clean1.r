@@ -25,6 +25,10 @@ if (type==2) {
 d$confirmed.at.date = as.character(Sys.Date())
 
 d$hospital = gsub('[0-9]+', '', d$hospital)
+d[hospital=="Pending"]$hospital = 'unknown'
+d[hospital=="PEH"]$hospital = 'Parkway East Hospital'
+d[hospital=="MEN"]$hospital = 'Mount Elizabeth Novena Hospital'
+d[hospital=="CIF"]$hospital = 'Community Isolation Facility'
 
 d$patient.nationality[] = gsub("\\n", "", 
                                lapply(d$nat, function(text) strsplit(text, "\\(")[[1]][1]))

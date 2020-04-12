@@ -1,17 +1,19 @@
 ---
 runtime: shiny
-title: "COVID 19 Singapore"
+title: "COVID-19 in Singapore"
 output: 
   html_document:
     toc: true
     theme: flatly
 ---
 
+> **DISCLAIMER: I am not an epidemiologist, so the information below should not be used for policy. Neither has this document gone through peer-review, so please do not cite it.**
+
+---
+
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
-```
 
-```{r}
 # Libraries
 library(rvest)
 library(ggplot2)
@@ -111,7 +113,7 @@ renderPlot({
                      segment.size=0.5, segment.color='black', 
                      box.padding = unit(0.4, 'lines'), aes(fill=type),
                      arrow = arrow(length = unit(1, "mm")),
-                     point.padding = 0, max.iter=3000, show_guide=F)
+                     point.padding = 0, max.iter=3000, show.legend=F)
   
   if(min_date < date_second_wave) {
     plt = plt + geom_vline(xintercept=date_second_wave, size=1, col=cbp1[2], linetype="dotted")
@@ -230,6 +232,7 @@ renderPlot({
 
 ```
 
+
 ### Case load
 
 ```{r} 
@@ -247,7 +250,7 @@ df_cases_day$hospital_load = df_cases_day$case_load
 df_cases_day[date>=date_no_hosp,]$hospital_load =  
   df_cases_day[date>=date_no_hosp,]$hospital_load * hosp_prop
 ```
-
+ 
 ```{r}
 renderPlot({
   ggplot(data=df_cases_day, aes(x=date, y=case_load)) +
@@ -259,6 +262,8 @@ renderPlot({
     theme(axis.text.x=element_text(angle = 90))
 })
 ```
+
+#### Back of the envelope hospital load
 
 Measuring hospital load is key to ensure that hospitals are not overloaded.  We assume that the number of those who require hospitalisation is 20% of the case load, since it is a conservative estimate that 20% of the patients require hospitalisation and/or ICU care. 
 
@@ -280,6 +285,18 @@ renderPlot({
 ```
 
 There are 9 public acute hospitals in Singapore, with an average capacity of 1,200 beds. They are currently operating at approximately [75% load](https://www.moh.gov.sg/resources-statistics/healthcare-institution-statistics/beds-occupancy-rate-(bor)). There is also the NCID has approximately 300 beds. If it is assumed that hospitals can operate at a 90% bed load, to ensure that hospitals are not overtaxed and there is sufficient isolation between covid patients (more than usual required), then there would be `r max_load` beds available. 
+
+#### Hospital/isolation facilities
+
+```{r}
+hospital = df[!tolower(hospital) %in% c("unknown", "not admitted"), list(cases=.N) , by=hospital]
+hospital = hospital[order(-cases)]
+hospital$proportion = paste0(round(hospital$cases / sum(hospital$cases)*100), "%")
+names(hospital) = unlist(lapply(names(hospital), function(word) camelcase_labeller("", word)))
+knitr::kable(hospital, "markdown")
+```
+
+Note: cases whose hospitals were pending at time of press release and thos who are not admitted are omitted from table above.
 
 
 ### Recovery
@@ -321,12 +338,10 @@ ggplot(df, aes(x=days.to.recover.symptomatic)) +
 
 #### Risk factors
 
-##### Age
-
-Is there an association between number of days to recover and age?
+Is there an association between the risk factors and number of days for recovery?
 
 ```{r}
-selectInput("age_width", label = "Age bin width", choices = c(5, 10, 20), selected = 20)
+selectInput("age_width", label="Age bin width", choices=c(5, 10, 20), selected=20)
 renderPlot({
   # input = list(age_width=10)
   agewidth = as.numeric(input$age_width)
@@ -336,33 +351,25 @@ renderPlot({
                     age=df$age, days=df$days.to.recover.symptomatic)
   data = data[!is.na(data$cat),]
 
-  ggplot(data, aes(x=cat, y=days)) + 
-    geom_jitter(height = 0, width = 0.1, color=cbp1[3]) +
-    geom_boxplot(color=cbp1[6], fill=NA) +
-    xlab("Age category") + ylab("Days to recover") + theme
+  gs = list(
+    ggplot(data, aes(x=cat, y=days)) + 
+      geom_jitter(height = 0, width = 0.1, color=cbp1[3]) +
+      geom_boxplot(color=cbp1[6], fill=NA) +
+      xlab("Age category") + ylab("Days to recover\n") + theme +
+      ggtitle("Age"),
+  
+    ggplot(df[gender != "unknown"], aes(x=gender, y=days.to.recover.symptomatic)) +
+      geom_boxplot(color=cbp1[6], fill=NA) +
+      geom_jitter(height = 0, width = 0.1, color=cbp1[3]) +
+      xlab("Gender") + ylab("Days to recover\n") + theme +
+      ggtitle("Gender")
+  )
+
+  layout=rbind(c(1, 1, 1, 2))
+  grid.arrange(grobs=gs, layout_matrix=layout)
 })
 ```
 
-##### Gender
-
-```{r}
-ggplot(df, aes(x=gender, y=days.to.recover.symptomatic)) +
-  geom_boxplot(color=cbp1[6], fill=NA) +
-  geom_jitter(height = 0, width = 0.1, color=cbp1[3]) +
-  xlab("Gender") + ylab("Days to recover") + theme
-```
-
-```{r fig.height=4, fig.width=12}
-# ggplot(df, aes(x=as.numeric(age), y=as.numeric(days.to.recover.symptomatic))) + 
-#   geom_smooth(method='lm', formula= y~x) +
-#   geom_point() + 
-#   xlab("Age") + ylab("Days to recover") +
-#   theme
-
-# # Calculate Rsq
-# df_corr = df[!is.na(df[, c("days.to.recover.symptomatic")]),]
-# rsq = cor(as.numeric(df_corr$age), as.numeric(df_corr$days.to.recover.symptomatic))^2
-```
 
 ### Deaths
 
@@ -373,7 +380,6 @@ deceased = df[df$patient.status == "Deceased", ..cols]
 deceased$patient.citizen = unlist(lapply(deceased$patient.citizen, function(word) {
   if(nchar(word) ==2) toupper(word) else camelcase_labeller("", word)
 }))
-names(deceased) = unlist(lapply(gsub("\\.", " ", cols), function(x) camelcase_labeller("", x)))
 ```
 
 Number of deceased: `r dim(deceased)[1]`
@@ -381,12 +387,22 @@ Number of deceased: `r dim(deceased)[1]`
 [Fatalities are higher for elderly above 65](https://www.businessinsider.sg/most-us-coronavirus-deaths-ages-65-older-cdc-report-2020-3). 
 
 ```{r}
+names(deceased) = unlist(lapply(gsub("\\.", " ", cols), function(x) camelcase_labeller("", x)))
 knitr::kable(deceased, "markdown")
 ```
 
+
 ### Clusters
 
-TODO:duration of cluster, type of venue of cluster, number of people involved
+```{r}
+clusters = df[cluster != "", list(cases=.N), by=cluster][order(-cases)][1:10]
+clusters$proportion = paste0(round(clusters$cases / dim(df)[1]*100), "%")
+names(clusters) = unlist(lapply(gsub("\\.", " ", names(clusters)), 
+                                function(x) camelcase_labeller("", x)))
+knitr::kable(clusters, "markdown")
+```
+TODO: duration of cluster, progression of cluster with time, type of venue of cluster/ map of cluster
+
 
 ## Methods
 
@@ -429,3 +445,6 @@ The specific steps taken to get the data:
 6. No detailed annexes from 5-6 Apr 2020, only cluster links and release dates updated.
 7. The `confirmed.at.date` is press release date, not the `confirmed at date` provided by MOH Annex for dataset collected from 2 Apr 2020, whereas it was otherwise so prior to 2 Apr 2020.
 
+
+---
+This document was created by Eunice J.Y. Soh ([eunices.github.io](https://eunices.github.io)).
