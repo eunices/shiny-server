@@ -401,6 +401,7 @@ knitr::kable(deceased, "markdown")
 clusters = df[cluster != "", list(cases=.N), by=cluster][order(-cases)][1:10]
 clusters$proportion = paste0(round(clusters$cases / dim(df)[1]*100), "%")
 clusters$no = 1:dim(clusters)[1]
+clusters = clusters[, c("no", "cluster", "cases", "proportion")]
 names(clusters) = unlist(lapply(gsub("\\.", " ", names(clusters)), 
                                 function(x) camelcase_labeller("", x)))
 knitr::kable(clusters, "markdown")
