@@ -1,6 +1,6 @@
 library(data.table)
 ddir = "C:\\Users\\ejysoh\\Desktop\\sg-covid-cases\\"
-filename = "2020-04-11.csv"
+filename = "2020-04-12.csv"
 type = 1
 # type 1: without country of origin
 # type 2: with country of origin
@@ -61,7 +61,7 @@ d$X = NULL
 
 # Manual
 clust = data.frame(clust=unique(d$clust), full="")
-write.csv(clust, paste0(ddir, "clust.csv"), row.names=F))
+write.csv(clust[clust$clust != "",][order(clust$clust),], paste0(ddir, "clust.csv"), row.names=F)
 
 lp = fread(paste0(ddir, "clust.csv"))
 d = merge(d, lp, by="clust", all.x=T, all.y=F)
