@@ -17,6 +17,7 @@ knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
 library(rvest)
 library(ggplot2)
 library(tidyr)
+library(plyr)
 library(data.table)
 library(gridExtra)
 library(ggrepel)
@@ -85,11 +86,12 @@ renderPlot({
   labels$x = labels$xend - 5
   labels$y = labels$yend + sample(2:6, size=length(labels$yend), replace=T)*50
   labels$infection.source = "Local transmission"
+  
 
   data = merge(data, labels, by.x=c("confirmed.at.date", "infection.source"), 
                by.y=c("date", "infection.source"), all.x=T, all.y=T)
 
-  plt = ggplot(data=data, aes(x=confirmed.at.date, y=N, fill=infection.source, label=short)) +
+  plt = ggplot(data=data, aes(x=confirmed.at.date, y=N, fill=infection.source, label=no)) +
     geom_bar(position='stack', stat="identity") + 
     geom_vline(xintercept=date_second_wave, size=1, col="red") +
     xlab("") + ylab("Number of cases detected\n") +
@@ -101,12 +103,12 @@ renderPlot({
     theme(legend.position="bottom", legend.box = "horizontal", 
           axis.text.x=element_text(angle = 90))
   
-  plt = plt + geom_label_repel(nudge_y=100, angle=0, vjust=0, force=5,
+  plt = plt + geom_label_repel(nudge_y=100, angle=90, vjust=0, force=5,
                                fontface='bold', color='black', size=3, 
                                segment.size=0.5, segment.color='black', 
-                               box.padding = unit(0.25, 'lines'), fill='grey97',
+                               box.padding = unit(0.4, 'lines'), fill='grey97',
                                arrow = arrow(length = unit(1, "mm")),
-                               point.padding = 0)
+                               point.padding = 0, max.iter=3000)
   
   plt
 
@@ -115,28 +117,36 @@ renderPlot({
 ```
 
 ```{r}
-# **Events**
-# show_events = events[grepl("event", type)][,c("date", "short")]
-# names(show_events) = c("Date", "Event")
-# knitr::kable(show_events, "markdown")
-```
+show_events = events[grepl("event", type)][,c("no", "date", "short")]
+show_events$no = paste0("[",show_events$no,"]")
+names(show_events) = c("No", "Date", "Event")
 
-```{r}
 show_measures = events[grepl("measure", type)]
 show_measures = data.table(unnest(show_measures, related=strsplit(related, ",")))
 show_measures$related = as.numeric(show_measures$related)
-show_measures$event = paste0(show_measures$short, " (", format(show_measures$date, "%d %b"), ")")
+show_measures$event = paste0(show_measures$short, " [", show_measures$no, "] (", 
+                             format(show_measures$date, "%d %b"), ")")
 show_measures =  show_measures[, list(Measures=paste0(event, collapse = ", ")), by="related"][
   order(as.numeric(related))]
 names(show_measures) = c("Category", "Measures")
 show_measures[,1] = c(
-  "1. Quarantine and isolation events/measures.", 
-  "2. Border control events/measures to decrease imported cases.",  
-  "3. Social distancing measures to reduce number of contacts per day.",  
-  "4. Good hygiene measures to reduce transmission probability of virus."
-)
-knitr::kable(show_measures, "markdown")
+  "Quarantine and isolation events/measures", 
+  "Border control events/measures - to decrease imported cases.",  
+  "Social distancing measures - to reduce number of contacts per day.",  
+  "Good hygiene measures - to reduce transmission probability of virus.")
+
+show_events %>%
+  knitr::kable("html", align = 'clc', caption = 'Events') %>%
+    kableExtra::kable_styling(full_width = F, position = "float_left")
+ 
+show_measures %>%
+  knitr::kable("html", align = 'clc', caption = 'Measures') %>%
+    kableExtra::kable_styling(full_width = F, position = "right")
+
+
+
 ```
+
 
 #### Two waves
 

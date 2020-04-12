@@ -27,6 +27,7 @@ get_events = function() {
     events_cols = c("date", "short", "type", "related")
     events = fread("events.csv")[, ..events_cols]
     events$date = as.Date(events$date)
+    events$no = 1:dim(events)[1]
     events
 }
 
