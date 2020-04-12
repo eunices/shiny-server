@@ -361,7 +361,7 @@ renderPlot({
     ggplot(df[gender != "unknown"], aes(x=gender, y=days.to.recover.symptomatic)) +
       geom_boxplot(color=cbp1[6], fill=NA) +
       geom_jitter(height = 0, width = 0.1, color=cbp1[3]) +
-      xlab("Gender") + ylab("Days to recover\n") + theme +
+      xlab("Gender") + ylab("") + theme +
       ggtitle("Gender")
   )
 
