@@ -1056,8 +1056,8 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1055,2020-04-03,NCID,61,M,Singapore,citizen,,Local transmission,,,Lee Ah Mooi Old Age Home at 1 Thomson Lane,TRUE,NA,NA,NA
 1056,2020-04-03,NCID,40,M,Bangladesh,visitor,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA
 1057,2020-04-03,NCID,46,F,Netherlands,visitor,,Local transmission,,907,,TRUE,NA,NA,NA
-1058,2020-04-03,KKH,7,M,Singapore,citizen,UAE,Imported case,,"832, 872 ",,TRUE,NA,NA,NA
-1059,2020-04-03,KKH,5,M,Singapore,citizen,UAE,Imported case,,"832, 872 ",,TRUE,NA,2020-04-09,NA
+1058,2020-04-03,KKH,7,M,Singapore,citizen,United Arab Emirates,Imported case,,"832, 872 ",,TRUE,NA,NA,NA
+1059,2020-04-03,KKH,5,M,Singapore,citizen,United Arab Emirates,Imported case,,"832, 872 ",,TRUE,NA,2020-04-09,NA
 1060,2020-04-03,NCID,66,F,Singapore,citizen,United States of America,Imported case,,,,TRUE,NA,NA,NA
 1061,2020-04-03,NCID,37,M,Bangladesh,lp,,Local transmission,,,,TRUE,NA,NA,NA
 1062,2020-04-03,SGH,28,M,India,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA

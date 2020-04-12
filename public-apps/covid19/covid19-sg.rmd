@@ -7,7 +7,6 @@ output:
     theme: flatly
 ---
 
-
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
 ```
@@ -21,7 +20,7 @@ library(plyr)
 library(data.table)
 library(gridExtra)
 library(ggrepel)
-library(wordcloud2)
+library(ggwordcloud)
 source('main.r')
 source('util.r')
 
@@ -105,7 +104,7 @@ renderPlot({
     theme +
     theme(legend.position="bottom", legend.box = "horizontal", 
           axis.text.x=element_text(angle = 90)) +
-    geom_label_repel(nudge_y=100, angle=90, vjust=0, force=5,
+    geom_label_repel(nudge_y=40, angle=90, vjust=0, force=5,
                           fontface='bold', color='black', size=3, 
                           segment.size=0.5, segment.color='black', 
                           box.padding = unit(0.4, 'lines'), fill='grey97',
@@ -113,7 +112,7 @@ renderPlot({
                           point.padding = 0, max.iter=3000)
   
   if(min_date < date_second_wave) {
-    plt = plt + geom_vline(xintercept=date_second_wave, size=1, col="red")
+    plt = plt + geom_vline(xintercept=date_second_wave, size=1, col=cbp1[2], linetype="dotted")
   }
   plt
 })
@@ -145,9 +144,6 @@ show_events %>%
 show_measures %>%
   knitr::kable("html", align = 'clc', caption = 'Measures') %>%
     kableExtra::kable_styling(full_width = F, position = "right")
-
-
-
 ```
 
 
@@ -155,7 +151,7 @@ show_measures %>%
 
 There were two waves of imported cases, the first from EW 03 to EW 07 and second from EW 08 onwards. These are associated with the Chinese cases mainly and when there was a global spread subsequently with Europe and other countries as the epicenter.
 
-```{r fig.height=6, fig.width=9}
+```{r fig.height=12, fig.width=9}
 data_1st_wave = df[df$confirmed.at.date < date_second_wave & df$infection.source == "Imported case",]
 data_1st_wave = data.table(data_1st_wave)
 data_1st_wave = data_1st_wave[, list(N=length(case)), by="country.of.origin"]
@@ -165,20 +161,36 @@ data_2nd_wave = data.table(data_2nd_wave)
 data_2nd_wave = data_2nd_wave[, list(N=length(case)), by="country.of.origin"]
 data_2nd_wave = data_2nd_wave[country.of.origin != "Unclear origin"]
 
-grid.arrange(
-  ggplot(data_1st_wave, aes(x=reorder(camelcase_labeller("", country.of.origin), -N), y=N)) +
-    geom_bar(stat = "identity") + coord_flip() + theme_minimal() +
+layout = rbind(c(1, 1, 1),
+               c(2, 2, 3),
+               c(2, 2, 3))
+
+gs = list(ggplot(data_1st_wave, aes(x=reorder(camelcase_labeller("", country.of.origin), -N), y=N)) +
+    geom_bar(stat = "identity", fill=cbp1[6]) + coord_flip() + theme_minimal() +
     xlab("") + ylab("") + ggtitle("First wave") +
-    theme(axis.text.x=element_text(size=rel(0.5), angle=90)),
-  
-  ggplot(data_2nd_wave, aes(x=reorder(camelcase_labeller("", country.of.origin), -N), y=N)) +
-    geom_bar(stat = "identity") + coord_flip() + theme_minimal() +
-    xlab("") + ylab("Number of imported cases detected") + ggtitle("Second wave") +
-    theme(axis.text.y=element_text(size=rel(0.7)))
+    theme(axis.text.x=element_text(size=rel(1), angle=90)),
+
+  ggplot(data_2nd_wave, 
+        aes(x=reorder(camelcase_labeller("", country.of.origin), -N), y=N, label=N)) +
+    geom_bar(stat = "identity", fill=cbp1[3]) + 
+    coord_flip() + 
+    theme_minimal() +
+    xlab("") + ylab("\nNumber of imported cases detected") + ggtitle("Second wave") +
+    theme(axis.text.y=element_text(size=rel(1))) +
+    guides(fill=F) +
+    geom_text(aes(fill=country.of.origin, y=N+5), colour = "black", 
+              fontface = "bold", size=3, show.legend = FALSE,
+              label.padding = unit(0.1, "lines")),
+
+  ggplot(data_2nd_wave, aes(label = country.of.origin, size = N, angle=90)) +
+    geom_text_wordcloud_area(eccentricity=.35,
+                             color=rep_len(cbp1[c(6, 3, 1)], nrow(data_2nd_wave)),
+                             shape="pentagon") +
+    scale_size_area(max_size = 20) +
+    theme
 )
 
-renderWordcloud2({wordcloud2(data=data_2nd_wave, size=3, 
-                             color=rep_len(cbp1[c(6, 3, 1)], nrow(data_2nd_wave)))}) # bug
+grid.arrange(grobs=gs, layout_matrix=layout)
 
 ```
 
@@ -256,7 +268,7 @@ renderPlot({
   ggplot(data=df_cases_day, aes(x=date, y=hospital_load)) +
     geom_line(color="steelblue", size=1) + 
     geom_point(color="steelblue", size=2) + 
-    geom_vline(xintercept=date_no_hosp, size=1, col="red") +
+    geom_vline(xintercept=date_no_hosp, size=1, col=cbp1[2], linetype="dotted") +
     xlab("") + ylab("Number of (estimated) hospitalised persons\n") + 
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
     scale_y_continuous(sec.axis = sec_axis(~ ./max_load*100, name=sec_axis_name)) + 
@@ -299,7 +311,7 @@ hist_max = max(table(cut(as.numeric(df$days.to.recover.symptomatic),
 ggplot(df, aes(x=days.to.recover.symptomatic)) + 
   geom_histogram(binwidth=binwidth, na.rm=T) + 
   xlab("Days to recover") + ylab("Number of people") +
-  geom_vline(xintercept=mean_recovery_time, size=1, col="red") +
+  geom_vline(xintercept=mean_recovery_time, size=1, col=cbp1[2], linetype="dotted") +
   scale_y_continuous(breaks=seq(0, hist_max, ifelse(hist_max<30, 1, 5))) +
   scale_x_continuous(breaks=seq(0, max, ifelse(max<30, 1, 5))) + 
   theme
