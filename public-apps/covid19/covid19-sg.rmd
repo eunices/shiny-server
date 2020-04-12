@@ -288,6 +288,8 @@ There are 9 public acute hospitals in Singapore, with an average capacity of 1,2
 
 #### Hospital/isolation facilities
 
+Most cases are currently in the newly-opened NCID to deal with infectious diseases. It was operational [since 7 Sep 2019](https://www.ncid.sg/News-Events/News/Pages/NCID-Official-Opening.aspx).
+
 ```{r}
 hospital = df[!tolower(hospital) %in% c("unknown", "not admitted"), list(cases=.N) , by=hospital]
 hospital = hospital[order(-cases)]
@@ -385,7 +387,6 @@ deceased$patient.citizen = unlist(lapply(deceased$patient.citizen, function(word
 Number of deceased: `r dim(deceased)[1]`
 
 [Fatalities are higher for elderly above 65](https://www.businessinsider.sg/most-us-coronavirus-deaths-ages-65-older-cdc-report-2020-3). 
-
 ```{r}
 names(deceased) = unlist(lapply(gsub("\\.", " ", cols), function(x) camelcase_labeller("", x)))
 knitr::kable(deceased, "markdown")
@@ -393,6 +394,8 @@ knitr::kable(deceased, "markdown")
 
 
 ### Clusters
+
+#### Top 10 largest clusters
 
 ```{r}
 clusters = df[cluster != "", list(cases=.N), by=cluster][order(-cases)][1:10]
