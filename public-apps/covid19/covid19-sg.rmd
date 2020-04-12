@@ -401,10 +401,31 @@ knitr::kable(deceased, "markdown")
 clusters = df[cluster != "", list(cases=.N), by=cluster][order(-cases)][1:10]
 clusters$proportion = paste0(round(clusters$cases / dim(df)[1]*100), "%")
 clusters$no = 1:dim(clusters)[1]
-clusters = clusters[, c("no", "cluster", "cases", "proportion")]
-names(clusters) = unlist(lapply(gsub("\\.", " ", names(clusters)), 
-                                function(x) camelcase_labeller("", x)))
-knitr::kable(clusters, "markdown")
+clusters$cluster.short = unlist(lapply(clusters$cluster, function(word) {
+  word <- strsplit(word, " ")
+  sapply(word, function(x){toupper(paste(substring(x, 1, 1), collapse = ""))
+  })
+}))
+clusters = clusters[, c("no", "cluster", "cases", "proportion", "cluster.short")]
+```
+
+```{r fig.width=10, fig.height=3}
+df = merge(df, clusters[, c("cluster", "no", "cluster.short")], 
+           by.x="cluster", by.y="cluster", all.x=T, all.y=F)
+df$cluster.short = paste0(df$cluster.short, " [", df$no, "]")
+ggplot(df[cluster %in% clusters$cluster], aes(x=reorder(cluster.short, -no))) +
+  geom_dotplot(method="histodot", binwidth=.1, stackratio=.7, 
+               binpositions="all", fill=cbp1[3], stroke=NA) + theme +
+  scale_y_continuous(limits=c(0, 3000), breaks=NULL, name=NULL) +
+  theme(axis.text.x=element_text(angle = 90, hjust=0.95, vjust=0.2)) + xlab("") + 
+  coord_flip()
+```
+
+```{r}
+show_clusters = clusters[, c("no", "cluster", "cases", "proportion")]
+names(show_clusters) = unlist(lapply(gsub("\\.", " ", names(show_clusters)), 
+                              function(x) camelcase_labeller("", x)))
+knitr::kable(show_clusters, "markdown")
 ```
 
 ```{r}
