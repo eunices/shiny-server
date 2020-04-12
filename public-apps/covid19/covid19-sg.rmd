@@ -13,7 +13,9 @@ output:
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
+```
 
+```{r}
 # Libraries
 library(rvest)
 library(ggplot2)
@@ -27,7 +29,7 @@ source('main.r')
 source('util.r')
 
 # Params
-theme = theme_minimal()
+theme = theme_bw()
 ```
 
 ```{r}
@@ -177,8 +179,7 @@ gs = list(ggplot(data_1st_wave, aes(x=reorder(camelcase_labeller("", country.of.
   ggplot(data_2nd_wave, 
         aes(x=reorder(camelcase_labeller("", country.of.origin), -N), y=N, label=N)) +
     geom_bar(stat = "identity", fill=cbp1[3]) + 
-    coord_flip() + 
-    theme_minimal() +
+    coord_flip() + theme +
     xlab("") + ylab("\nNumber of imported cases detected") + ggtitle("Second wave") +
     theme(axis.text.y=element_text(size=rel(1))) +
     guides(fill=F) +
@@ -189,9 +190,8 @@ gs = list(ggplot(data_1st_wave, aes(x=reorder(camelcase_labeller("", country.of.
   ggplot(data_2nd_wave, aes(label = country.of.origin, size = N, angle=90)) +
     geom_text_wordcloud_area(eccentricity=.35,
                              color=rep_len(cbp1[c(6, 3, 1)], nrow(data_2nd_wave)),
-                             shape="pentagon") +
-    scale_size_area(max_size = 20) +
-    theme
+                             shape="pentagon") + theme_minimal() +
+    scale_size_area(max_size = 20) 
 )
 
 grid.arrange(grobs=gs, layout_matrix=layout)
@@ -328,7 +328,7 @@ hist_max = max(table(cut(as.numeric(df$days.to.recover.symptomatic),
                          breaks=seq(min, max, by=binwidth), right = FALSE)))
 
 ggplot(df, aes(x=days.to.recover.symptomatic)) + 
-  geom_histogram(binwidth=binwidth, na.rm=T, color=cbp1[3], fill=cbp1[6]) + 
+  geom_histogram(binwidth=binwidth, na.rm=T, color=cbp1[3], fill=cbp1[6], pad=T) + 
   xlab("\nDays to recover") + ylab("Number of people\n") +
   geom_vline(xintercept=mean_recovery_time, size=1, col=cbp1[2], linetype="dotted") +
   scale_y_continuous(breaks=seq(0, hist_max, ifelse(hist_max<30, 1, 5))) +
@@ -397,6 +397,7 @@ knitr::kable(deceased, "markdown")
 ```{r}
 clusters = df[cluster != "", list(cases=.N), by=cluster][order(-cases)][1:10]
 clusters$proportion = paste0(round(clusters$cases / dim(df)[1]*100), "%")
+clusters$no = 1:dim(clusters)[1]
 names(clusters) = unlist(lapply(gsub("\\.", " ", names(clusters)), 
                                 function(x) camelcase_labeller("", x)))
 knitr::kable(clusters, "markdown")
