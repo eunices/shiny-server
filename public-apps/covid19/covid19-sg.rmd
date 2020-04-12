@@ -401,7 +401,12 @@ names(clusters) = unlist(lapply(gsub("\\.", " ", names(clusters)),
                                 function(x) camelcase_labeller("", x)))
 knitr::kable(clusters, "markdown")
 ```
-TODO: duration of cluster, progression of cluster with time, type of venue of cluster/ map of cluster
+
+```{r}
+# TODO: duration of cluster (+ earliest and latest case)
+# TODO: progression of cluster with time (facet plot)
+# TODO: type of venue of cluster/ map of cluster (ggmap)
+```
 
 
 ## Methods
