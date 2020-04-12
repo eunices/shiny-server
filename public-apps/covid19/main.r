@@ -18,7 +18,16 @@ get_data = function(url) {
 
 get_df_cases_day = function() {
     print(paste0(Sys.time(), ": Read case summary data."))
-    fread('cases.csv')
+    cases = fread('cases.csv')
+    cases$date = as.Date(cases$date)
+    cases
+}
+
+get_events = function() {
+    events_cols = c("date", "short", "type", "related")
+    events = fread("events.csv")[, ..events_cols]
+    events$date = as.Date(events$date)
+    events
 }
 
 clean_data = function(df, write=F) {
