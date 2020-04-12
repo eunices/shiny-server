@@ -53,7 +53,7 @@ events = get_events()
 
 ## What are the figures
 
-### Coronavirus through time
+### Cases through time
 
 #### New cases through time
 ```{r}
@@ -62,38 +62,41 @@ max_date = max(df$confirmed.at.date, na.rm=T)
 date_second_wave = as.Date("2020-02-25")
 ```
 
-The first case detected in Singapore on `r format(min_date, "%d %B %Y")`. Key measures and events are marked below.
+The first case of covid-19 was detected in Singapore on `r format(min_date, "%d %B %Y")`. 
 
+Key measures and events are marked below. Just at a glance, the border control measures and events (category 4) seem to be effacious as the number of imported cases dropped 31 Mar onwards.
 
 ```{r}
 style = "display: inline-block;vertical-align:top;padding-right: 20px"
 bootstrapPage(
   div(style=style, dateRangeInput("range_date", "Date range", 
-                                  start = min_date, end = max_date,
+                                  start = min_date, end = max_date, 
                                   min = min_date, max = max_date)))
+
+
+summ = df[,list(N=.N),by=c("confirmed.at.date", "infection.source")]
+
+labels = events[]
+labels$xend = labels$date
+labels$yend = summ[confirmed.at.date %in% labels$x, list(sum=sum(N)), by="confirmed.at.date"]$sum
+labels$x = labels$xend - 5
+labels$y = labels$yend + sample(2:6, size=length(labels$yend), replace=T)*50
+labels$infection.source = "Local transmission"
 
 cbp1 = c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 renderPlot({
   
   min_date = input$range_date[1]
   max_date = input$range_date[2]
+
   data = df[df$confirmed.at.date >= min_date & df$confirmed.at.date <= max_date,]
-  data = df[,list(N=.N),by=c("confirmed.at.date", "infection.source")]
-
-  labels = events[]
-  labels$xend = labels$date
-  labels$yend = data[confirmed.at.date %in% labels$x, list(sum=sum(N)), by="confirmed.at.date"]$sum
-  labels$x = labels$xend - 5
-  labels$y = labels$yend + sample(2:6, size=length(labels$yend), replace=T)*50
-  labels$infection.source = "Local transmission"
-  
-
+  data = data[,list(N=.N),by=c("confirmed.at.date", "infection.source")]
   data = merge(data, labels, by.x=c("confirmed.at.date", "infection.source"), 
                by.y=c("date", "infection.source"), all.x=T, all.y=T)
 
-  plt = ggplot(data=data, aes(x=confirmed.at.date, y=N, fill=infection.source, label=no)) +
+  plt = ggplot(data=data[confirmed.at.date >= min_date & confirmed.at.date <= max_date], 
+               aes(x=confirmed.at.date, y=N, fill=infection.source, label=no)) +
     geom_bar(position='stack', stat="identity") + 
-    geom_vline(xintercept=date_second_wave, size=1, col="red") +
     xlab("") + ylab("Number of cases detected\n") +
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
     scale_fill_manual(name="", 
@@ -101,18 +104,18 @@ renderPlot({
                         values=c(cbp1[c(6, 3, 1)])) + 
     theme +
     theme(legend.position="bottom", legend.box = "horizontal", 
-          axis.text.x=element_text(angle = 90))
+          axis.text.x=element_text(angle = 90)) +
+    geom_label_repel(nudge_y=100, angle=90, vjust=0, force=5,
+                          fontface='bold', color='black', size=3, 
+                          segment.size=0.5, segment.color='black', 
+                          box.padding = unit(0.4, 'lines'), fill='grey97',
+                          arrow = arrow(length = unit(1, "mm")),
+                          point.padding = 0, max.iter=3000)
   
-  plt = plt + geom_label_repel(nudge_y=100, angle=90, vjust=0, force=5,
-                               fontface='bold', color='black', size=3, 
-                               segment.size=0.5, segment.color='black', 
-                               box.padding = unit(0.4, 'lines'), fill='grey97',
-                               arrow = arrow(length = unit(1, "mm")),
-                               point.padding = 0, max.iter=3000)
-  
+  if(min_date < date_second_wave) {
+    plt = plt + geom_vline(xintercept=date_second_wave, size=1, col="red")
+  }
   plt
-
-
 })
 ```
 
@@ -150,7 +153,7 @@ show_measures %>%
 
 #### Two waves
 
-There are two waves of imported cases, the first from EW 03 to EW 07 and second from EW 08 onwards. These are associated with the Chinese cases mainly and when there was a global spread subsequently with Europe and other countries as the epicenter.
+There were two waves of imported cases, the first from EW 03 to EW 07 and second from EW 08 onwards. These are associated with the Chinese cases mainly and when there was a global spread subsequently with Europe and other countries as the epicenter.
 
 ```{r fig.height=6, fig.width=9}
 data_1st_wave = df[df$confirmed.at.date < date_second_wave & df$infection.source == "Imported case",]
@@ -309,7 +312,7 @@ ggplot(df, aes(x=days.to.recover.symptomatic)) +
 Is there an association between number of days to recover and age?
 
 ```{r}
-selectInput("age_width", label = "Age bin width", choices = c(5, 10, 20), selected = 10)
+selectInput("age_width", label = "Age bin width", choices = c(5, 10, 20), selected = 20)
 renderPlot({
   # input = list(age_width=10)
   agewidth = as.numeric(input$age_width)
