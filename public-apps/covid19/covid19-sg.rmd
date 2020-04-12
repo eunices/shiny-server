@@ -99,17 +99,19 @@ renderPlot({
     xlab("") + ylab("Number of cases detected\n") +
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
     scale_fill_manual(name="", 
-                        labels=c("Imported case", "Local transmission", "Unknown"),
-                        values=c(cbp1[c(6, 3, 1)])) + 
+                      labels=c("Event", "Event/measure",
+                                "Imported case", "Local transmission", 
+                                "Measure", "Unknown"),
+                      values=c(cbp1[c(5, 2, 6, 3)], "tomato1", cbp1[1])) + 
     theme +
     theme(legend.position="bottom", legend.box = "horizontal", 
           axis.text.x=element_text(angle = 90)) +
-    geom_label_repel(nudge_y=40, angle=90, vjust=0, force=5,
-                          fontface='bold', color='black', size=3, 
-                          segment.size=0.5, segment.color='black', 
-                          box.padding = unit(0.4, 'lines'), fill='grey97',
-                          arrow = arrow(length = unit(1, "mm")),
-                          point.padding = 0, max.iter=3000)
+    geom_label_repel(nudge_y=40, angle=90, vjust=0, force=5, 
+                     fontface='bold', color='black', size=3, 
+                     segment.size=0.5, segment.color='black', 
+                     box.padding = unit(0.4, 'lines'), aes(fill=type),
+                     arrow = arrow(length = unit(1, "mm")),
+                     point.padding = 0, max.iter=3000, show_guide=F)
   
   if(min_date < date_second_wave) {
     plt = plt + geom_vline(xintercept=date_second_wave, size=1, col=cbp1[2], linetype="dotted")
@@ -126,7 +128,7 @@ names(show_events) = c("No", "Date", "Event")
 show_measures = events[grepl("measure", type)]
 show_measures = data.table(unnest(show_measures, related=strsplit(related, ",")))
 show_measures$related = as.numeric(show_measures$related)
-show_measures$event = paste0(show_measures$short, " [", show_measures$no, "] (", 
+show_measures$event = paste0("[", show_measures$no, "] ", show_measures$short, " (", 
                              format(show_measures$date, "%d %b"), ")")
 show_measures =  show_measures[, list(Measures=paste0(event, collapse = ", ")), by="related"][
   order(as.numeric(related))]
@@ -301,7 +303,7 @@ mean_recovery_time = round(as.numeric(mean(df$days.to.recover.symptomatic, na.rm
 - Mean time to recovery (from confirmed): 
   `r mean_recovery_time` days
 
-```{r fig.height=3, fig.width=5}
+```{r}
 binwidth = 5
 min = as.numeric(min(df$days.to.recover.symptomatic, na.rm=T))
 max = as.numeric(max(df$days.to.recover.symptomatic, na.rm=T))
@@ -309,8 +311,8 @@ hist_max = max(table(cut(as.numeric(df$days.to.recover.symptomatic),
                          breaks=seq(min, max, by=binwidth), right = FALSE)))
 
 ggplot(df, aes(x=days.to.recover.symptomatic)) + 
-  geom_histogram(binwidth=binwidth, na.rm=T) + 
-  xlab("Days to recover") + ylab("Number of people") +
+  geom_histogram(binwidth=binwidth, na.rm=T, color=cbp1[3], fill=cbp1[6]) + 
+  xlab("\nDays to recover") + ylab("Number of people\n") +
   geom_vline(xintercept=mean_recovery_time, size=1, col=cbp1[2], linetype="dotted") +
   scale_y_continuous(breaks=seq(0, hist_max, ifelse(hist_max<30, 1, 5))) +
   scale_x_continuous(breaks=seq(0, max, ifelse(max<30, 1, 5))) + 
@@ -335,8 +337,8 @@ renderPlot({
   data = data[!is.na(data$cat),]
 
   ggplot(data, aes(x=cat, y=days)) + 
-    geom_boxplot() +
-    geom_jitter(height = 0, width = 0.1) +
+    geom_jitter(height = 0, width = 0.1, color=cbp1[3]) +
+    geom_boxplot(color=cbp1[6], fill=NA) +
     xlab("Age category") + ylab("Days to recover") + theme
 })
 ```
@@ -345,8 +347,8 @@ renderPlot({
 
 ```{r}
 ggplot(df, aes(x=gender, y=days.to.recover.symptomatic)) +
-  geom_boxplot() +
-  geom_jitter(height = 0, width = 0.1) +
+  geom_boxplot(color=cbp1[6], fill=NA) +
+  geom_jitter(height = 0, width = 0.1, color=cbp1[3]) +
   xlab("Gender") + ylab("Days to recover") + theme
 ```
 
@@ -368,12 +370,15 @@ ggplot(df, aes(x=gender, y=days.to.recover.symptomatic)) +
 cols = c("age", "gender", "patient.nationality", "patient.citizen",
          "confirmed.at.date", "infection.source", "deceased.at.date")
 deceased = df[df$patient.status == "Deceased", ..cols]
+deceased$patient.citizen = unlist(lapply(deceased$patient.citizen, function(word) {
+  if(nchar(word) ==2) toupper(word) else camelcase_labeller("", word)
+}))
 names(deceased) = unlist(lapply(gsub("\\.", " ", cols), function(x) camelcase_labeller("", x)))
 ```
 
-[Fatalities are higher for elderly above 65](https://www.businessinsider.sg/most-us-coronavirus-deaths-ages-65-older-cdc-report-2020-3). 
-
 Number of deceased: `r dim(deceased)[1]`
+
+[Fatalities are higher for elderly above 65](https://www.businessinsider.sg/most-us-coronavirus-deaths-ages-65-older-cdc-report-2020-3). 
 
 ```{r}
 knitr::kable(deceased, "markdown")
