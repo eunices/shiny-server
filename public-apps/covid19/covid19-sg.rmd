@@ -252,8 +252,8 @@ renderPlot({
   ggplot(data=df_cases_day, aes(x=date, y=case_load)) +
     geom_line(color=cbp1[3], size=1) + 
     geom_point(color=cbp1[3], size=2) + 
-    geom_line(aes(x=date, y=I1*100), color=cbp1[6], size=1) +
-    geom_point(aes(x=date, y=I1*100), color=cbp1[6], size=2) + 
+    geom_line(aes(x=date, y=I1*icu_scale), color=cbp1[6], size=1) +
+    geom_point(aes(x=date, y=I1*icu_scale), color=cbp1[6], size=2) + 
     xlab("") + ylab("Number of active cases (light blue)\n") + 
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
     scale_y_continuous(sec.axis = sec_axis(~ ./icu_scale, name="Number of active ICU cases (dark blue)\n")) +
