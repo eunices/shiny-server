@@ -1,6 +1,6 @@
 library(data.table)
 ddir = "C:\\Users\\ejysoh\\Desktop\\sg-covid-cases\\"
-filename = "2020-04-12.csv"
+filename = "2020-04-13.csv"
 type = 1
 # type 1: without country of origin
 # type 2: with country of origin
@@ -22,6 +22,9 @@ if (type==2) {
   d[grepl("us", tolower(country.of.origin))]$country.of.origin = "United States of America"
 }
 
+d[age=="Pending"]$age = "unknown"
+d[gender=="Pending"]$gender = "unknown"
+
 d$confirmed.at.date = as.character(Sys.Date())
 
 d$hospital = gsub('[0-9]+', '', d$hospital)
@@ -30,13 +33,19 @@ d[hospital=="PEH"]$hospital = 'Parkway East Hospital'
 d[hospital=="MEN"]$hospital = 'Mount Elizabeth Novena Hospital'
 d[hospital=="CIF"]$hospital = 'Community Isolation Facility'
 
-d$patient.nationality[] = gsub("\\n", "", 
-                               lapply(d$nat, function(text) strsplit(text, "\\(")[[1]][1]))
+d$patient.nationality = trimws(gsub("\\n", "", 
+                               lapply(d$nat, function(text) strsplit(text, "\\(")[[1]][1])))
+d[grepl("singapore permanent", tolower(nat)),]$patient.nationality = "Singapore"
+d[grepl("singapore citizen", tolower(nat)),]$patient.nationality = "Singapore"
+d[grepl("pending", tolower(nat)),]$patient.nationality = "unknown"
+
+
 d$patient.citizen = "visitor"
 d[grepl("long", tolower(nat)),]$patient.citizen = "lp"
 d[grepl("work", tolower(nat)),]$patient.citizen = "wp"
 d[grepl("permanent", tolower(nat)),]$patient.citizen = "pr"
 d[grepl("citizen", tolower(nat)),]$patient.citizen = "citizen"
+d[grepl("pending", tolower(nat)),]$patient.citizen = "unknown"
 d$nat = NULL
 
 
@@ -56,12 +65,11 @@ d[grepl("contact", tolower(X))]$linked.to = tolower(d[grepl("contact", tolower(X
 text = "contact of cases |contact of case "
 d[grepl("contact", tolower(X))]$linked.to = gsub(" and ", ", ", gsub(text, "", 
   d[grepl("contact", tolower(X))]$linked.to))
-
 d$X = NULL
 
 # Manual
 clust = data.frame(clust=unique(d$clust), full="")
-write.csv(clust[clust$clust != "",][order(clust$clust),], paste0(ddir, "clust.csv"), row.names=F)
+# write.csv(clust[clust$clust != "",][order(clust$clust),], paste0(ddir, "clust.csv"), row.names=F)
 
 lp = fread(paste0(ddir, "clust.csv"))
 d = merge(d, lp, by="clust", all.x=T, all.y=F)

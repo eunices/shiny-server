@@ -154,7 +154,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 153,2020-03-08,SGH,65,F,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,2020-03-03,2020-03-27,NA
 154,2020-03-09,NCID,52,M,United Kingdom,visitor,Unclear origin,Imported case,,,,TRUE,2020-03-08,2020-03-25,NA
 155,2020-03-09,NCID,47,F,Malaysia,wp,,Local transmission,,,Safra Jurong private dinner function,TRUE,2020-03-04,2020-03-22,NA
-156,2020-03-09,NCID,50,F,Singapore,pr,,Local transmission,,,Safra Jurong private dinner function,TRUE,2020-03-07,NA,NA
+156,2020-03-09,NCID,50,F,Singapore,pr,,Local transmission,,,Safra Jurong private dinner function,TRUE,2020-03-07,2020-04-13,NA
 157,2020-03-09,NCID,54,F,Singapore,pr,,Local transmission,,,Safra Jurong private dinner function,TRUE,2020-03-08,2020-03-26,NA
 158,2020-03-09,NTFGH,53,F,Singapore,citizen,,Local transmission,,,Safra Jurong private dinner function,TRUE,2020-03-05,NA,NA
 159,2020-03-09,NTFGH,59,M,Singapore,citizen,,Local transmission,,,Safra Jurong private dinner function,TRUE,2020-03-05,2020-03-27,NA
@@ -205,7 +205,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 204,2020-03-13,SGH,32,M,United States of America,wp,Japan,Imported case,221,,,TRUE,2020-03-11,2020-04-07,NA
 205,2020-03-14,NCID,30,F,Philippines,lp,Philippines,Imported case,256,,,TRUE,NA,2020-04-08,NA
 206,2020-03-14,NCID,33,F,New Zealand,lp,United States of America,Imported case,,,,TRUE,NA,2020-03-29,NA
-207,2020-03-14,NCID,40,F,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
+207,2020-03-14,NCID,40,F,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,2020-04-13,NA
 208,2020-03-14,NCID,26,F,Singapore,citizen,,Local transmission,,,Church of Singapore (Bukit Timah) at 2B Hindhede Road,TRUE,NA,NA,NA
 209,2020-03-14,SGH,32,F,Singapore,citizen,United States of America,Imported case,,,,TRUE,NA,2020-04-09,NA
 210,2020-03-14,NCID,56,M,Germany,lp,Unclear origin,Imported case,,,,TRUE,2020-03-13,2020-03-30,NA
@@ -218,7 +218,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 217,2020-03-14,NCID,22,M,Spanish,lp,Spain,Imported case,,,,TRUE,2020-03-13,2020-03-28,NA
 218,2020-03-14,NUH,55,F,Singapore,citizen,,Local transmission,,,Safra Jurong private dinner function,TRUE,2020-03-02,2020-03-20,NA
 219,2020-03-15,SKH,30,M,Singapore,citizen,,Local transmission,"142, 211, 236",,,TRUE,2020-03-13,2020-03-27,NA
-220,2020-03-15,NCID,53,M,Singapore,pr,France,Imported case,,,,TRUE,2020-03-12,NA,NA
+220,2020-03-15,NCID,53,M,Singapore,pr,France,Imported case,,,,TRUE,2020-03-12,2020-04-13,NA
 221,2020-03-15,NCID,28,F,Philippines,wp,,Local transmission,204,,,TRUE,2020-03-11,2020-04-09,NA
 222,2020-03-15,NCID,41,M,France,wp,Unclear origin,Imported case,"340, 634",,,TRUE,2020-03-13,2020-03-31,NA
 223,2020-03-15,NCID,60,M,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,2020-03-13,2020-03-26,NA
@@ -263,7 +263,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 262,2020-03-17,NCID,20,F,Indonesia,visitor,United Kingdom,Imported case,,,,TRUE,NA,2020-03-31,NA
 263,2020-03-17,NCID,52,F,Singapore,citizen,Unclear origin,Imported case,266,,,TRUE,NA,2020-03-30,NA
 264,2020-03-17,NCID,41,F,Indonesia,visitor,Indonesia,Imported case,,,,TRUE,NA,2020-03-28,NA
-265,2020-03-17,NCID,25,F,Singapore,citizen,United Kingdom,Imported case,354,,,TRUE,NA,NA,NA
+265,2020-03-17,NCID,25,F,Singapore,citizen,United Kingdom,Imported case,354,,,TRUE,NA,2020-04-13,NA
 266,2020-03-17,NCID,63,M,Singapore,citizen,Unclear origin,Imported case,263,,,TRUE,NA,2020-04-04,NA
 267,2020-03-17,KTPH,72,F,Singapore,citizen,Indonesia,Imported case,,287,,TRUE,NA,2020-04-07,NA
 268,2020-03-17,NCID,64,M,United Kingdom,visitor,Unclear origin,Imported case,,328,,TRUE,NA,NA,NA
@@ -320,7 +320,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 319,2020-03-18,SKH,67,F,Philippines,visitor,Philippines,Imported case,,,,TRUE,NA,2020-04-04,NA
 320,2020-03-18,NUH,34,M,Singapore,pr,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
 321,2020-03-18,AH,65,F,Singapore,citizen,,Local transmission,359,,,TRUE,NA,2020-03-30,NA
-322,2020-03-18,NCID,46,F,Singapore,pr,Unclear origin,Imported case,,,,TRUE,NA,NA,NA
+322,2020-03-18,NCID,46,F,Singapore,pr,Unclear origin,Imported case,,,,TRUE,NA,2020-04-13,NA
 323,2020-03-18,NCID,24,M,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,2020-04-06,NA
 324,2020-03-18,NCID,45,M,Brazil,visitor,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
 325,2020-03-19,NCID,38,M,Philippines,visitor,United Kingdom,Imported case,,,,TRUE,NA,2020-04-12,NA
@@ -423,7 +423,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 422,2020-03-21,NCID,56,F,Singapore,citizen,United States of America,Imported case,,,,TRUE,NA,NA,NA
 423,2020-03-21,NCID,24,M,Singapore,citizen,Ireland,Imported case,,,,TRUE,NA,2020-03-29,NA
 424,2020-03-21,CGH,24,M,Singapore,citizen,United States of America,Imported case,425,,,TRUE,NA,NA,NA
-425,2020-03-21,CGH,21,F,Singapore,citizen,United States of America,Imported case,424,,,TRUE,NA,NA,NA
+425,2020-03-21,CGH,21,F,Singapore,citizen,United States of America,Imported case,424,,,TRUE,NA,2020-04-13,NA
 426,2020-03-21,NCID,55,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,2020-03-29,NA
 427,2020-03-21,NCID,39,M,Singapore,citizen,United States of America,Imported case,,,,TRUE,NA,2020-04-06,NA
 428,2020-03-21,NCID,22,M,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
@@ -437,7 +437,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 436,2020-03-21,NCID,46,M,Singapore,citizen,Philippines,Imported case,,,,TRUE,NA,NA,NA
 437,2020-03-21,SGH,33,M,United Kingdom,visitor,Unclear origin,Imported case,,,,TRUE,NA,2020-04-03,NA
 438,2020-03-21,SGH,55,F,United States of America,visitor,United States of America,Imported case,,,,TRUE,NA,2020-04-11,NA
-439,2020-03-21,NCID,55,F,Denmark,lp,Denmark,Imported case,,,Wilby Residences at 25 Wilby Road,TRUE,NA,NA,NA
+439,2020-03-21,NCID,55,F,Denmark,lp,Denmark,Imported case,,,Wilby Residences at 25 Wilby Road,TRUE,NA,2020-04-13,NA
 440,2020-03-21,NCID,55,M,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
 441,2020-03-21,NCID,57,F,Singapore,citizen,Unclear origin,Imported case,277,308,,TRUE,NA,NA,NA
 442,2020-03-21,NCID,48,F,Singapore,citizen,,Local transmission,,398,,TRUE,NA,NA,NA
@@ -483,7 +483,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 482,2020-03-22,NCID,35,M,Singapore,citizen,United States of America,Imported case,,,,TRUE,NA,NA,NA
 483,2020-03-22,NCID,28,F,Singapore,citizen,United States of America,Imported case,,,,TRUE,NA,2020-04-10,NA
 484,2020-03-22,NCID,21,M,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
-485,2020-03-22,NCID,20,M,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
+485,2020-03-22,NCID,20,M,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,2020-04-13,NA
 486,2020-03-22,NCID,22,M,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,2020-03-30,NA
 487,2020-03-22,NCID,72,M,Singapore,citizen,Indonesia,Imported case,,,,TRUE,NA,2020-04-09,NA
 488,2020-03-22,SKH,36,M,Singapore,citizen,United Kingdom,Imported case,"865, 916",,,TRUE,NA,2020-04-03,NA
@@ -497,13 +497,13 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 496,2020-03-22,NCID,21,F,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
 497,2020-03-22,NCID,63,F,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,2020-04-07,NA
 498,2020-03-22,NCID,22,F,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
-499,2020-03-22,NCID,27,F,Singapore,citizen,United States of America,Imported case,,,,TRUE,NA,NA,NA
+499,2020-03-22,NCID,27,F,Singapore,citizen,United States of America,Imported case,,,,TRUE,NA,2020-04-13,NA
 500,2020-03-22,NCID,24,M,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,NA,NA,NA
 501,2020-03-22,NCID,65,M,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
 502,2020-03-22,NCID,74,F,India,visitor,United Kingdom,Imported case,,,,TRUE,NA,2020-03-29,NA
 503,2020-03-22,NCID,26,M,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,2020-04-07,NA
 504,2020-03-23,NCID,32,F,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,NA,2020-03-26,NA
-505,2020-03-23,NCID,24,M,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
+505,2020-03-23,NCID,24,M,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,2020-04-13,NA
 506,2020-03-23,NCID,49,M,Australia,visitor,Unclear origin,Imported case,,811,,TRUE,NA,2020-04-10,NA
 507,2020-03-23,NCID,29,F,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
 508,2020-03-23,NCID,23,M,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
@@ -528,7 +528,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 527,2020-03-23,KTPH,44,M,Singapore,citizen,,Local transmission,,577,,TRUE,NA,2020-04-10,NA
 528,2020-03-24,KTPH,50,M,Singapore,citizen,,Local transmission,,"645, 675, 676",,TRUE,NA,2020-04-09,NA
 529,2020-03-24,NTFGH,19,F,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,NA,2020-04-02,NA
-530,2020-03-24,NUH,35,M,Singapore,citizen,United States of America,Imported case,,,,TRUE,NA,NA,NA
+530,2020-03-24,NUH,35,M,Singapore,citizen,United States of America,Imported case,,,,TRUE,NA,2020-04-13,NA
 531,2020-03-24,SKH,43,M,India,visitor,,Local transmission,,,,TRUE,NA,2020-04-11,NA
 532,2020-03-24,SKH,44,M,Singapore,citizen,Unclear origin,Imported case,,"578, 630",,TRUE,NA,NA,NA
 533,2020-03-24,SKH,61,M,Singapore,citizen,,Local transmission,"734, 795, 797","839, 849",,TRUE,NA,NA,NA
@@ -561,8 +561,8 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 560,2020-03-24,NCID,24,M,Singapore,citizen,United States of America,Imported case,,,,TRUE,NA,NA,NA
 561,2020-03-24,NCID,30,M,Singapore,citizen,France,Imported case,,,,TRUE,NA,2020-04-11,NA
 562,2020-03-24,NTFGH,28,F,Singapore,pr,Unclear origin,Imported case,,,,TRUE,NA,NA,NA
-563,2020-03-24,NCID,25,M,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
-564,2020-03-24,NCID,29,M,France,visitor,Unclear origin,Imported case,,,,TRUE,NA,NA,NA
+563,2020-03-24,NCID,25,M,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,2020-04-13,NA
+564,2020-03-24,NCID,29,M,France,visitor,Unclear origin,Imported case,,,,TRUE,NA,2020-04-13,NA
 565,2020-03-24,NCID,46,F,Singapore,pr,United Kingdom,Imported case,,,,TRUE,NA,2020-04-07,NA
 566,2020-03-24,CGH,67,F,Singapore,citizen,,Local transmission,,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,NA,NA,NA
 567,2020-03-24,CGH,70,M,Singapore,citizen,,Local transmission,,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,NA,NA,NA
@@ -616,7 +616,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 615,2020-03-25,NCID,44,F,Singapore,citizen,Germany,Imported case,,,,TRUE,NA,NA,NA
 616,2020-03-25,NCID,39,M,Malaysia,visitor,Malaysia,Imported case,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA
 617,2020-03-25,NCID,26,F,Philippines,visitor,,Local transmission,,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,NA,NA,NA
-618,2020-03-25,NCID,29,F,United Kingdom,visitor,,Local transmission,,,Dover Court International School at 301 Dover Road,TRUE,NA,NA,NA
+618,2020-03-25,NCID,29,F,United Kingdom,visitor,,Local transmission,,,Dover Court International School at 301 Dover Road,TRUE,NA,2020-04-13,NA
 619,2020-03-25,NCID,65,F,Singapore,citizen,,Local transmission,,557,,TRUE,NA,NA,NA
 620,2020-03-25,NCID,18,F,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
 621,2020-03-25,NCID,50,M,Singapore,pr,,Local transmission,,,,TRUE,NA,NA,NA
@@ -642,7 +642,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 641,2020-03-25,NTFGH,55,M,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,NA,NA,NA
 642,2020-03-25,NTFGH,19,M,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
 643,2020-03-25,NTFGH,51,F,Singapore,pr,,Local transmission,,,,TRUE,NA,2020-04-07,NA
-644,2020-03-25,CGH,52,M,Singapore,citizen,,Local transmission,632,,,TRUE,NA,NA,NA
+644,2020-03-25,CGH,52,M,Singapore,citizen,,Local transmission,632,,,TRUE,NA,2020-04-13,NA
 645,2020-03-25,SGH,27,M,Singapore,citizen,,Local transmission,"528, 675, 676",,,TRUE,NA,2020-04-07,NA
 646,2020-03-25,SGH,56,F,Singapore,pr,Indonesia,Imported case,,,,TRUE,NA,2020-04-07,NA
 647,2020-03-25,KKH,46,F,Singapore,citizen,United States of America,Imported case,"418, 582",,,TRUE,NA,2020-04-06,NA
@@ -702,7 +702,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 701,2020-03-26,NUH,50,M,Singapore,citizen,United States of America,Imported case,,,,TRUE,NA,2020-04-08,NA
 702,2020-03-26,NTFGH,61,M,Singapore,citizen,Unclear origin,Imported case,"760, 798","682, 703, 975",,TRUE,NA,NA,NA
 703,2020-03-26,NTFGH,58,F,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,NA,NA,NA
-704,2020-03-26,SKH,19,M,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,NA,NA,NA
+704,2020-03-26,SKH,19,M,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,NA,2020-04-13,NA
 705,2020-03-26,KKH,2,F,Singapore,citizen,,Local transmission,,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,NA,NA,NA
 706,2020-03-26,KKH,6,F,Singapore,citizen,,Local transmission,,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,NA,2020-04-09,NA
 707,2020-03-26,KKH,11,M,Singapore,citizen,,Local transmission,,,"PCF Sparkletots pre-school in Fengshan at Block 126, Bedok North Street 2",TRUE,NA,2020-04-09,NA
@@ -751,12 +751,12 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 750,2020-03-27,SKH,22,F,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,NA,NA,NA
 751,2020-03-27,SKH,71,M,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,NA,NA,NA
 752,2020-03-27,NCID,70,F,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,NA,2020-04-05,NA
-753,2020-03-27,NCID,24,M,Singapore,citizen,Canada,Imported case,,,,TRUE,NA,NA,NA
+753,2020-03-27,NCID,24,M,Singapore,citizen,Canada,Imported case,,,,TRUE,NA,2020-04-13,NA
 754,2020-03-27,NCID,22,M,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
 755,2020-03-27,NCID,25,M,Singapore,citizen,Laos,Imported case,,,,TRUE,NA,NA,NA
 756,2020-03-27,NCID,42,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 757,2020-03-27,CGH,22,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-758,2020-03-27,NTFGH,23,M,Singapore,citizen,United States of America,Imported case,,,,TRUE,NA,NA,NA
+758,2020-03-27,NTFGH,23,M,Singapore,citizen,United States of America,Imported case,,,,TRUE,NA,2020-04-13,NA
 759,2020-03-27,NUH,1,F,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,NA,NA,NA
 760,2020-03-27,KTPH,64,M,Singapore,citizen,Turkey,Imported case,"683, 700, 702, 703, 798",830,,TRUE,NA,NA,NA
 761,2020-03-27,NUH,36,F,South Africa,visitor,,Local transmission,,,Dover Court International School at 301 Dover Road,TRUE,NA,NA,NA
@@ -815,7 +815,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 814,2020-03-28,KTPH,61,M,Singapore,citizen,Malaysia,Imported case,,,,TRUE,NA,NA,NA
 815,2020-03-28,NCID,21,F,Singapore,citizen,United States of America,Imported case,,,,TRUE,NA,NA,NA
 816,2020-03-28,NCID,36,F,Singapore,citizen,,Local transmission,,787,,TRUE,NA,NA,NA
-817,2020-03-28,NTFGH,43,M,Singapore,pr,India,Imported case,,,,TRUE,NA,NA,NA
+817,2020-03-28,NTFGH,43,M,Singapore,pr,India,Imported case,,,,TRUE,NA,2020-04-13,NA
 818,2020-03-28,NCID,22,F,Japan,visitor,,Local transmission,,,Wilby Residences at 25 Wilby Road,TRUE,NA,NA,NA
 819,2020-03-28,KKH,35,F,India,lp,India,Imported case,"695, 834",,,TRUE,NA,NA,NA
 820,2020-03-28,NCID,55,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
@@ -837,7 +837,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 836,2020-03-29,NCID,43,M,Singapore,citizen,,Local transmission,747,,,TRUE,NA,2020-04-12,NA
 837,2020-03-29,NCID,68,F,Singapore,citizen,Turkey,Imported case,,,,TRUE,NA,NA,NA
 838,2020-03-29,NCID,42,F,Singapore,pr,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
-839,2020-03-29,NCID,57,F,Singapore,citizen,,Local transmission,"533, 849",,,TRUE,NA,NA,NA
+839,2020-03-29,NCID,57,F,Singapore,citizen,,Local transmission,"533, 849",,,TRUE,NA,2020-04-13,NA
 840,2020-03-29,NCID,52,F,Singapore,pr,Philippines,Imported case,,,,TRUE,NA,NA,NA
 841,2020-03-29,NCID,21,F,Singapore,citizen,United States of America,Imported case,,,,TRUE,NA,NA,NA
 842,2020-03-29,NCID,30,M,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,NA,NA,NA
@@ -901,7 +901,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 900,2020-03-30,NCID,50,M,Singapore,pr,,Local transmission,,,Maxwell MRT station at 50 Neil Road,TRUE,NA,NA,NA
 901,2020-03-30,NCID,54,F,Singapore,citizen,Turkey,Imported case,,,,TRUE,NA,NA,NA
 902,2020-03-30,NCID,37,M,Sri Lanka,visitor,Unclear origin,Imported case,,,,TRUE,NA,NA,NA
-903,2020-03-30,NCID,27,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+903,2020-03-30,NCID,27,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,2020-04-13,NA
 904,2020-03-31,NCID,49,M,Singapore,pr,,Local transmission,,,,TRUE,NA,NA,NA
 905,2020-03-30,AH,22,F,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,2020-04-07,NA
 906,2020-03-30,NCID,44,M,Italy,visitor,Unclear origin,Imported case,,,,TRUE,NA,NA,NA
@@ -973,7 +973,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 972,2020-04-01,NCID,28,M,Bangaldesh,lp,,Local transmission,,,Sungei Kadut dormitory at 55 Sungei Kadut Loop,TRUE,NA,NA,NA
 973,2020-04-01,NCID,44,M,Sri Lanka,wp,,Local transmission,,,Lee Ah Mooi Old Age Home at 1 Thomson Lane,TRUE,NA,NA,NA
 974,2020-04-01,NCID,30,M,Bangaldesh,wp,,Local transmission,,,Sungei Kadut dormitory at 55 Sungei Kadut Loop,TRUE,NA,NA,NA
-975,2020-04-01,NCID,31,M,Singapore,citizen,,Local transmission,,"682, 702, 703",,TRUE,NA,NA,NA
+975,2020-04-01,NCID,31,M,Singapore,citizen,,Local transmission,,"682, 702, 703",,TRUE,NA,2020-04-13,NA
 976,2020-04-01,NCID,42,F,India,wp,,Local transmission,,,Lee Ah Mooi Old Age Home at 1 Thomson Lane,TRUE,NA,NA,NA
 977,2020-04-01,NCID,28,M,Bangaldesh,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
 978,2020-04-01,NCID,26,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
@@ -1076,7 +1076,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1075,2020-04-03,NCID,67,F,Philippines,wp,,Local transmission,,,Wilby Residences at 25 Wilby Road,TRUE,NA,NA,NA
 1076,2020-04-03,NCID,54,M,Singapore,pr,,Local transmission,,,Keppel Shipyard at 51 Pioneer Sector 1,TRUE,NA,2020-04-06,NA
 1077,2020-04-03,NCID,33,M,India,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
-1078,2020-04-03,NCID,44,M,Bangladesh,lp,,Local transmission,,,Project Glory at 50 Market Street,TRUE,NA,NA,NA
+1078,2020-04-03,NCID,44,M,Bangladesh,lp,,Local transmission,,,Project Glory at 50 Market Street; CitiWall at 34 Kaki Bukit Crescent,TRUE,NA,NA,NA
 1079,2020-04-03,NTFGH,31,M,Bangladesh,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East; Project Glory at 50 Market Street,TRUE,NA,NA,NA
 1080,2020-04-03,NTFGH,85,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 1081,2020-04-03,NCID,62,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
@@ -1139,7 +1139,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1138,2020-04-04,NCID,22,M,India,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 1139,2020-04-04,CGH,67,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 1140,2020-04-04,CGH,30,M,Bangladesh,wp,,Local transmission,,,Tampines Dormitory at 2 Tampines Place,TRUE,NA,NA,NA
-1141,2020-04-04,CGH,37,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+1141,2020-04-04,CGH,37,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,2020-04-13,NA
 1142,2020-04-04,NCID,90,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,2020-04-11
 1143,2020-04-04,NCID,42,F,Singapore,citizen,United Kingdom,Imported case,,932,,TRUE,NA,NA,NA
 1144,2020-04-04,NCID,41,M,India,lp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West; Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
@@ -1162,7 +1162,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1161,2020-04-04,NCID,19,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 1162,2020-04-04,SGH,28,M,India,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East; Project Glory at 50 Market Street,TRUE,NA,NA,NA
 1163,2020-04-04,NCID,52,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
-1164,2020-04-04,NCID,27,M,Bangladesh,lp,,Local transmission,,,Project Glory at 50 Market Street,TRUE,NA,NA,NA
+1164,2020-04-04,NCID,27,M,Bangladesh,lp,,Local transmission,,,Project Glory at 50 Market Street; CitiWall at 34 Kaki Bukit Crescent,TRUE,NA,NA,NA
 1165,2020-04-04,NCID,60,M,Singapore,citizen,Turkey,Imported case,,,,TRUE,NA,NA,NA
 1166,2020-04-04,NCID,62,M,United Kingdom,wp,,Local transmission,,,,TRUE,NA,NA,NA
 1167,2020-04-04,NCID,58,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,2020-04-08,NA
@@ -1219,7 +1219,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1218,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
 1219,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA
 1220,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA
-1221,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA
+1221,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,2020-04-13,NA
 1222,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 1223,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 1224,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
@@ -1446,8 +1446,8 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1445,2020-04-07,NCID,27,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 1446,2020-04-07,NCID,32,M,Bangladesh,wp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
 1447,2020-04-07,NCID,52,F,Singapore,citizen,,Local transmission,,1248,,TRUE,NA,NA,NA
-1448,2020-04-07,NCID,33,M,Bangladesh,lp,,Local transmission,,,Project Glory at 50 Market Street,TRUE,NA,NA,NA
-1449,2020-04-07,NCID,35,M,Bangladesh,wp,,Local transmission,,,Project Glory at 50 Market Street,TRUE,NA,NA,NA
+1448,2020-04-07,NCID,33,M,Bangladesh,lp,,Local transmission,,,Project Glory at 50 Market Street; CitiWall at 34 Kaki Bukit Crescent,TRUE,NA,NA,NA
+1449,2020-04-07,NCID,35,M,Bangladesh,wp,,Local transmission,,,Project Glory at 50 Market Street; CitiWall at 34 Kaki Bukit Crescent,TRUE,NA,NA,NA
 1450,2020-04-07,NCID,43,M,Singapore,pr,,Local transmission,,,,TRUE,NA,NA,NA
 1451,2020-04-07,NCID,27,M,China,wp,,Local transmission,,,,TRUE,NA,NA,NA
 1452,2020-04-07,NCID,54,M,Singapore,pr,,Local transmission,,,,TRUE,NA,NA,NA
@@ -1483,7 +1483,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1482,2020-04-08,KTPH,34,M,Bangladesh,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
 1483,2020-04-08,CGH,53,M,Singapore,pr,,Local transmission,,,,TRUE,NA,NA,NA
 1484,2020-04-08,CGH,81,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-1485,2020-04-08,KTPH,26,M,Bangladesh,lp,,Local transmission,,,Project Glory at 50 Market Street,TRUE,NA,NA,NA
+1485,2020-04-08,KTPH,26,M,Bangladesh,lp,,Local transmission,,,Project Glory at 50 Market Street; North Coast Lodge at 51 North Coast Avenue,TRUE,NA,NA,NA
 1486,2020-04-08,NCID,44,F,Singapore,pr,,Local transmission,,,Project Glory at 50 Market Street,TRUE,NA,NA,NA
 1487,2020-04-08,NCID,53,M,Singapore,pr,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA
 1488,2020-04-08,NCID,65,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
@@ -1834,15 +1834,15 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1833,2020-04-09,NCID,57,M,China,lp,,Local transmission,,,,TRUE,NA,NA,NA
 1834,2020-04-09,KTPH,21,M,India,unknown,,Local transmission,,,Renovation site at National University Hospital @ 5 Lower Kent Ridge Road; 36 Woodlands Industrial Park E1,TRUE,NA,NA,NA
 1835,2020-04-09,KTPH,25,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-1836,2020-04-09,KTPH,65,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+1836,2020-04-09,KTPH,65,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,2020-04-13
 1837,2020-04-09,KTPH,32,M,India,lp,,Local transmission,,,Renovation site at National University Hospital @ 5 Lower Kent Ridge Road; 36 Woodlands Industrial Park E1,TRUE,NA,NA,NA
 1838,2020-04-09,KTPH,27,M,India,lp,,Local transmission,,,Renovation site at National University Hospital @ 5 Lower Kent Ridge Road; 36 Woodlands Industrial Park E1,TRUE,NA,NA,NA
 1839,2020-04-09,NCID,28,F,Singapore,citizen,,Local transmission,,1589,,TRUE,NA,NA,NA
-1840,2020-04-09,NCID,32,M,Bangladesh,lp,,Local transmission,"1164, 1448, 1449",,Project Glory at 50 Market Street,TRUE,NA,NA,NA
+1840,2020-04-09,NCID,32,M,Bangladesh,lp,,Local transmission,"1164, 1448, 1449",,Project Glory at 50 Market Street; CitiWall at 34 Kaki Bukit Crescent,TRUE,NA,NA,NA
 1841,2020-04-09,NCID,31,M,Bangladesh,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
 1842,2020-04-09,NCID,26,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 1843,2020-04-09,NCID,31,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
-1844,2020-04-09,NCID,89,F,Pending,unknown,,Local transmission,,,,TRUE,NA,NA,NA
+1844,2020-04-09,NCID,89,F,Pending,unknown,,Local transmission,,,,TRUE,NA,2020-04-13,NA
 1845,2020-04-09,NCID,45,M,Bangladesh,lp,,Local transmission,,,,TRUE,NA,NA,NA
 1846,2020-04-09,unknown,50,M,China,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 1847,2020-04-09,unknown,26,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
@@ -1975,7 +1975,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1974,2020-04-10,SKH,79,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 1975,2020-04-10,SKH,40,M,Singapore,citizen,,Local transmission,,,Project Glory at 50 Market Street,TRUE,NA,NA,NA
 1976,2020-04-10,NCID,54,M,India,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
-1977,2020-04-10,NCID,26,M,Bangladesh,lp,,Local transmission,1164,,,TRUE,NA,NA,NA
+1977,2020-04-10,NCID,26,M,Bangladesh,lp,,Local transmission,1164,,CitiWall at 34 Kaki Bukit Crescent,TRUE,NA,NA,NA
 1978,2020-04-10,Community Isolation Facility,35,M,India,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
 1979,2020-04-10,Community Isolation Facility,28,M,India,wp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
 1980,2020-04-10,Community Isolation Facility,49,M,Bangladesh,wp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
@@ -2017,8 +2017,8 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2016,2020-04-10,unknown,35,F,Singapore,pr,,Local transmission,,,,TRUE,NA,NA,NA
 2017,2020-04-10,CGH,37,M,China,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2018,2020-04-10,CGH,38,M,India,wp,,Local transmission,,,Tampines Dormitory at 2 Tampines Place,TRUE,NA,NA,NA
-2019,2020-04-10,unknown,42,M,Bangladeshi,wp,,Local transmission,"2020, 2021, 2022",,,TRUE,NA,NA,NA
-2020,2020-04-10,unknown,32,M,Bangladeshi,visitor,,Local transmission,"2019, 2021, 2022",,,TRUE,NA,NA,NA
+2019,2020-04-10,unknown,42,M,Bangladesh,wp,,Local transmission,"2020, 2021, 2022",,,TRUE,NA,NA,NA
+2020,2020-04-10,unknown,32,M,Bangladesh,visitor,,Local transmission,"2019, 2021, 2022",,,TRUE,NA,NA,NA
 2021,2020-04-10,unknown,30,M,Bangladesh,lp,,Local transmission,"2019, 2020, 2022",,,TRUE,NA,NA,NA
 2022,2020-04-10,unknown,36,M,Bangladesh,lp,,Local transmission,"2019, 2020, 2021",,,TRUE,NA,NA,NA
 2023,2020-04-10,unknown,38,F,Singapore,citizen,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA
@@ -2052,7 +2052,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2051,2020-04-10,NCID,23,M,India,lp,,Local transmission,,,Renovation site at National University Hospital @ 5 Lower Kent Ridge Road; 36 Woodlands Industrial Park E1,TRUE,NA,NA,NA
 2052,2020-04-10,NCID,39,M,Bangladesh,lp,,Local transmission,1156,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 2053,2020-04-10,NCID,24,M,India,lp,,Local transmission,,,Renovation site at National University Hospital @ 5 Lower Kent Ridge Road; 36 Woodlands Industrial Park E1,TRUE,NA,NA,NA
-2054,2020-04-10,NCID,27,M,Bangladesh,lp,,Local transmission,1150,,,TRUE,NA,NA,NA
+2054,2020-04-10,NCID,27,M,Bangladesh,lp,,Local transmission,1150,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
 2055,2020-04-10,NCID,51,M,Thailand,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
 2056,2020-04-10,NCID,32,M,Bangladesh,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2057,2020-04-10,NCID,33,M,Bangladesh,lp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
@@ -2082,7 +2082,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2081,2020-04-10,KTPH,31,M,Bangladesh,lp,,Local transmission,,,North Coast Lodge at 51 North Coast Avenue,TRUE,NA,NA,NA
 2082,2020-04-10,KTPH,32,M,Bangladesh,lp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
 2083,2020-04-10,KTPH,30,M,India,wp,,Local transmission,,,Westlite Woodlands dormitory at 2 Woodlands Sector 2,TRUE,NA,NA,NA
-2084,2020-04-10,NCID,37,F,Philippines,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2084,2020-04-10,NCID,37,F,Philippines,wp,,Local transmission,,,"Macdonald's outlets at Forum, Lido and Parklane Malls",TRUE,NA,NA,NA
 2085,2020-04-10,NCID,47,M,Bangladesh,wp,,Local transmission,,,Sungei Kadut dormitory at 55 Sungei Kadut Loop,TRUE,NA,NA,NA
 2086,2020-04-10,NCID,37,M,Bangladesh,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
 2087,2020-04-10,NCID,26,M,Bangladesh,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
@@ -2126,7 +2126,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2125,2020-04-11,NCID,36,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2126,2020-04-11,NCID,23,M,NA,lp,,Local transmission,1374,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
 2127,2020-04-11,NCID,27,M,NA,lp,,Local transmission,1374,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
-2128,2020-04-11,NCID,35,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2128,2020-04-11,NCID,35,M,NA,wp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
 2129,2020-04-11,NCID,36,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 2130,2020-04-11,KKH,11,M,NA,citizen,,Local transmission,,"1937, 1949",,TRUE,NA,NA,NA
 2131,2020-04-11,SGH,41,M,NA,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
@@ -2143,7 +2143,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2142,2020-04-11,CGH,73,F,NA,citizen,,Local transmission,,2285,,TRUE,NA,NA,NA
 2143,2020-04-11,NCID,70,M,NA,pr,,Local transmission,,,,TRUE,NA,NA,NA
 2144,2020-04-11,CGH,37,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2145,2020-04-11,SGH,61,F,NA,citizen,,Local transmission,,1665,,TRUE,NA,NA,NA
+2145,2020-04-11,SGH,61,F,NA,citizen,,Local transmission,,1665,Renovation site at National University Hospital @ 5 Lower Kent Ridge Road,TRUE,NA,NA,NA
 2146,2020-04-11,SGH,67,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 2147,2020-04-11,SGH,25,M,NA,wp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
 2148,2020-04-11,SGH,47,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
@@ -2151,7 +2151,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2150,2020-04-11,NCID,25,M,NA,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East; Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
 2151,2020-04-11,NCID,30,M,NA,lp,,Local transmission,,,Cassia @ Penjuru at 15 Penjuru Walk,TRUE,NA,NA,NA
 2152,2020-04-11,NCID,38,M,NA,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East; Project Glory at 50 Market Street,TRUE,NA,NA,NA
-2153,2020-04-11,NCID,52,M,NA,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East; Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
+2153,2020-04-11,NCID,52,M,NA,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East; Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,2020-04-13,NA
 2154,2020-04-11,NCID,26,M,NA,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
 2155,2020-04-11,NCID,38,M,NA,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East; Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
 2156,2020-04-11,NCID,28,M,NA,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
@@ -2163,7 +2163,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2162,2020-04-11,NUH,34,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 2163,2020-04-11,NCID,47,F,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 2164,2020-04-11,KTPH,49,M,NA,lp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
-2165,2020-04-11,KTPH,36,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2165,2020-04-11,KTPH,36,M,NA,lp,,Local transmission,,,36 Woodlands Industrial Park E1,TRUE,NA,NA,NA
 2166,2020-04-11,NTFGH,33,M,NA,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East; Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
 2167,2020-04-11,NTFGH,45,M,NA,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
 2168,2020-04-11,NTFGH,33,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
@@ -2177,14 +2177,14 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2176,2020-04-11,KTPH,61,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 2177,2020-04-11,SGH,33,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2178,2020-04-11,SGH,46,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2179,2020-04-11,Community Isolation Facility,28,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2180,2020-04-11,Community Isolation Facility,37,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2179,2020-04-11,Community Isolation Facility,28,M,NA,wp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
+2180,2020-04-11,Community Isolation Facility,37,M,NA,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
 2181,2020-04-11,Community Isolation Facility,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2182,2020-04-11,Community Isolation Facility,33,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2183,2020-04-11,Community Isolation Facility,27,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2183,2020-04-11,Community Isolation Facility,27,M,NA,wp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
 2184,2020-04-11,Community Isolation Facility,41,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2185,2020-04-11,Community Isolation Facility,27,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2186,2020-04-11,Community Isolation Facility,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2186,2020-04-11,Community Isolation Facility,26,M,NA,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
 2187,2020-04-11,Community Isolation Facility,31,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2188,2020-04-11,NCID,42,M,NA,wp,,Local transmission,1567,,,TRUE,NA,NA,NA
 2189,2020-04-11,NCID,44,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
@@ -2213,7 +2213,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2212,2020-04-11,SGH,53,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2213,2020-04-11,SKH,40,M,NA,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 2214,2020-04-11,Parkway East Hospital,38,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-2215,2020-04-11,SGH,41,M,NA,pr,,Local transmission,,,,TRUE,NA,NA,NA
+2215,2020-04-11,SGH,41,M,NA,pr,,Local transmission,,,ABC Hostel at 3 Jalan Kubor,TRUE,NA,NA,NA
 2216,2020-04-11,Community Isolation Facility,28,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 2217,2020-04-11,Community Isolation Facility,25,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2218,2020-04-11,Community Isolation Facility,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
@@ -2245,20 +2245,20 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2244,2020-04-11,KTPH,42,M,NA,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 2245,2020-04-11,KTPH,34,M,NA,lp,,Local transmission,,,Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop,TRUE,NA,NA,NA
 2246,2020-04-11,KTPH,37,M,NA,wp,,Local transmission,,,Kranji Lodge at 12 Kranji Road,TRUE,NA,NA,NA
-2247,2020-04-11,KTPH,40,M,NA,lp,,Local transmission,,,Kranji Lodge at 12 Kranji Road,TRUE,NA,NA,NA
-2248,2020-04-11,KTPH,40,M,NA,lp,,Local transmission,,,Kranji Lodge at 12 Kranji Road,TRUE,NA,NA,NA
+2247,2020-04-11,KTPH,40,M,NA,lp,,Local transmission,,,Kranji Lodge at 12 Kranji Road; Kranji Dormitory at 17 Kranji Way,TRUE,NA,NA,NA
+2248,2020-04-11,KTPH,40,M,NA,lp,,Local transmission,,,Kranji Lodge at 12 Kranji Road; Kranji Dormitory at 17 Kranji Way,TRUE,NA,NA,NA
 2249,2020-04-11,KTPH,34,M,NA,wp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA
-2250,2020-04-11,KTPH,38,M,NA,lp,,Local transmission,,,Kranji Lodge at 12 Kranji Road,TRUE,NA,NA,NA
+2250,2020-04-11,KTPH,38,M,NA,lp,,Local transmission,,,Kranji Lodge at 12 Kranji Road; Kranji Dormitory at 17 Kranji Way,TRUE,NA,NA,NA
 2251,2020-04-11,NUH,23,M,NA,visitor,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
 2252,2020-04-11,NUH,23,M,NA,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
 2253,2020-04-11,NUH,28,M,NA,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
 2254,2020-04-11,NUH,31,M,NA,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
 2255,2020-04-11,NUH,37,M,NA,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
 2256,2020-04-11,NUH,29,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2257,2020-04-11,NUH,20,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2257,2020-04-11,NUH,20,M,NA,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
 2258,2020-04-11,NUH,40,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2259,2020-04-11,NUH,30,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2260,2020-04-11,NUH,38,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2260,2020-04-11,NUH,38,M,NA,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
 2261,2020-04-11,NUH,28,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2262,2020-04-11,KTPH,33,M,NA,visitor,,Local transmission,,,North Coast Lodge at 51 North Coast Avenue,TRUE,NA,NA,NA
 2263,2020-04-11,KTPH,25,M,NA,wp,,Local transmission,,,North Coast Lodge at 51 North Coast Avenue,TRUE,NA,NA,NA
@@ -2288,7 +2288,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2287,2020-04-11,NCID,59,F,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 2288,2020-04-11,NCID,38,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2289,2020-04-11,NCID,35,M,NA,lp,,Local transmission,,,Tampines Dormitory at 2 Tampines Place,TRUE,NA,NA,NA
-2290,2020-04-11,NCID,30,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2290,2020-04-11,NCID,30,M,NA,lp,,Local transmission,,,Acacia Lodge at 530-540 Bukit Batok Street 23,TRUE,NA,NA,NA
 2291,2020-04-11,NCID,37,M,NA,lp,,Local transmission,"2280, 2281",,Kenyon/ UBS construction site at 9 Penang Road,TRUE,NA,NA,NA
 2292,2020-04-11,NCID,30,F,NA,citizen,,Local transmission,,1702,,TRUE,NA,NA,NA
 2293,2020-04-11,NCID,24,M,NA,lp,,Local transmission,,,Cassia @ Penjuru at 15 Penjuru Walk,TRUE,NA,NA,NA
@@ -2326,14 +2326,14 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2325,2020-04-12,KTPH,43,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2326,2020-04-12,KTPH,46,M,NA,lp,,Local transmission,,,Kranji Lodge at 12 Kranji Road,TRUE,NA,NA,NA
 2327,2020-04-12,NTFGH,30,M,NA,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
-2328,2020-04-12,NTFGH,27,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2328,2020-04-12,NTFGH,27,M,NA,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
 2329,2020-04-12,NTFGH,25,M,NA,lp,,Local transmission,,,Tuas View Dormitory at 70 Tuas South Avenue 1,TRUE,NA,NA,NA
-2330,2020-04-12,NTFGH,31,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2330,2020-04-12,NTFGH,31,M,NA,lp,,Local transmission,,,Tech Park Crescent dormitory at 43 Tech Park Crescent,TRUE,NA,NA,NA
 2331,2020-04-12,NTFGH,35,M,NA,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
 2332,2020-04-12,NTFGH,36,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2333,2020-04-12,NTFGH,43,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2334,2020-04-12,NTFGH,34,M,NA,wp,,Local transmission,,,Tuas View Dormitory at 70 Tuas South Avenue 1,TRUE,NA,NA,NA
-2335,2020-04-12,NTFGH,36,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2335,2020-04-12,NTFGH,36,M,NA,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
 2336,2020-04-12,NTFGH,22,M,NA,lp,,Local transmission,,,Cassia @ Penjuru at 15 Penjuru Walk,TRUE,NA,NA,NA
 2337,2020-04-12,NCID,41,M,NA,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
 2338,2020-04-12,NCID,24,F,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
@@ -2342,40 +2342,40 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2341,2020-04-12,SKH,40,F,NA,pr,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA
 2342,2020-04-12,NCID,40,F,NA,visitor,,Local transmission,1409,,,TRUE,NA,NA,NA
 2343,2020-04-12,NCID,23,M,NA,citizen,,Local transmission,,1566,,TRUE,NA,NA,NA
-2344,2020-04-12,NCID,38,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2345,2020-04-12,NCID,43,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2346,2020-04-12,NCID,34,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2344,2020-04-12,NCID,38,M,NA,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2345,2020-04-12,NCID,43,M,NA,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2346,2020-04-12,NCID,34,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 2347,2020-04-12,NCID,29,M,NA,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 2348,2020-04-12,NTFGH,47,M,NA,wp,,Local transmission,,,Acacia Lodge at 530-540 Bukit Batok Street 23,TRUE,NA,NA,NA
-2349,2020-04-12,NTFGH,36,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2350,2020-04-12,SGH,40,M,NA,wp,,Local transmission,2215,,,TRUE,NA,NA,NA
-2351,2020-04-12,SGH,31,M,NA,wp,,Local transmission,2215,,,TRUE,NA,NA,NA
-2352,2020-04-12,SGH,23,M,NA,wp,,Local transmission,2215,,,TRUE,NA,NA,NA
-2353,2020-04-12,SGH,47,M,NA,wp,,Local transmission,2215,,,TRUE,NA,NA,NA
-2354,2020-04-12,SGH,25,M,NA,wp,,Local transmission,2215,,,TRUE,NA,NA,NA
+2349,2020-04-12,NTFGH,36,M,NA,lp,,Local transmission,,,Tech Park Crescent dormitory at 43 Tech Park Crescent,TRUE,NA,NA,NA
+2350,2020-04-12,SGH,40,M,NA,wp,,Local transmission,2215,,ABC Hostel at 3 Jalan Kubor,TRUE,NA,NA,NA
+2351,2020-04-12,SGH,31,M,NA,wp,,Local transmission,2215,,ABC Hostel at 3 Jalan Kubor,TRUE,NA,NA,NA
+2352,2020-04-12,SGH,23,M,NA,wp,,Local transmission,2215,,ABC Hostel at 3 Jalan Kubor,TRUE,NA,NA,NA
+2353,2020-04-12,SGH,47,M,NA,wp,,Local transmission,2215,,ABC Hostel at 3 Jalan Kubor,TRUE,NA,NA,NA
+2354,2020-04-12,SGH,25,M,NA,wp,,Local transmission,2215,,ABC Hostel at 3 Jalan Kubor,TRUE,NA,NA,NA
 2355,2020-04-12,NTFGH,24,M,NA,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
 2356,2020-04-12,NTFGH,43,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2357,2020-04-12,NCID,37,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2358,2020-04-12,NCID,39,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 2359,2020-04-12,NCID,41,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2360,2020-04-12,NCID,39,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2360,2020-04-12,NCID,39,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 2361,2020-04-12,NCID,28,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2362,2020-04-12,KTPH,39,M,NA,lp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
 2363,2020-04-12,KTPH,37,M,NA,lp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
-2364,2020-04-12,NUH,39,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2365,2020-04-12,NCID,40,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2364,2020-04-12,NUH,39,M,NA,wp,,Local transmission,,,Renovation site at National University Hospital @ 5 Lower Kent Ridge Road,TRUE,NA,NA,NA
+2365,2020-04-12,NCID,40,M,NA,lp,,Local transmission,,,Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop,TRUE,NA,NA,NA
 2366,2020-04-12,NCID,33,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2367,2020-04-12,NCID,33,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2368,2020-04-12,NCID,26,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2367,2020-04-12,NCID,33,M,NA,lp,,Local transmission,,,Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop,TRUE,NA,NA,NA
+2368,2020-04-12,NCID,26,M,NA,wp,,Local transmission,,,Westlite Woodlands dormitory at 2 Woodlands Sector 2,TRUE,NA,NA,NA
 2369,2020-04-12,Community Isolation Facility,29,M,NA,wp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA
 2370,2020-04-12,Community Isolation Facility,49,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-2371,2020-04-12,Community Isolation Facility,32,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2371,2020-04-12,Community Isolation Facility,32,M,NA,lp,,Local transmission,,,Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop,TRUE,NA,NA,NA
 2372,2020-04-12,Community Isolation Facility,36,M,NA,lp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA
 2373,2020-04-12,Community Isolation Facility,34,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2374,2020-04-12,Community Isolation Facility,52,F,NA,pr,,Local transmission,,,,TRUE,NA,NA,NA
 2375,2020-04-12,NCID,40,M,NA,pr,,Local transmission,,,,TRUE,NA,NA,NA
 2376,2020-04-12,NCID,67,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-2377,2020-04-12,NCID,23,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2377,2020-04-12,NCID,23,M,NA,wp,,Local transmission,,,36 Woodlands Industrial Park E1,TRUE,NA,NA,NA
 2378,2020-04-12,NCID,47,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2379,2020-04-12,NCID,48,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2380,2020-04-12,NCID,41,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
@@ -2387,74 +2387,74 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2386,2020-04-12,SKH,48,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2387,2020-04-12,SKH,39,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2388,2020-04-12,SKH,37,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2389,2020-04-12,NCID,25,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2390,2020-04-12,NTFGH,44,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2389,2020-04-12,NCID,25,M,NA,lp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA
+2390,2020-04-12,NTFGH,44,M,NA,lp,,Local transmission,,,Kranji Dormitory at 17 Kranji Way,TRUE,NA,NA,NA
 2391,2020-04-12,NTFGH,28,M,NA,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
 2392,2020-04-12,NTFGH,29,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2393,2020-04-12,NTFGH,27,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2394,2020-04-12,NTFGH,40,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2395,2020-04-12,NTFGH,24,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2393,2020-04-12,NTFGH,27,M,NA,lp,,Local transmission,,,Project Glory at 50 Market Street,TRUE,NA,NA,NA
+2394,2020-04-12,NTFGH,40,M,NA,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2395,2020-04-12,NTFGH,24,M,NA,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
 2396,2020-04-12,NTFGH,32,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2397,2020-04-12,NTFGH,32,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2398,2020-04-12,NTFGH,36,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2399,2020-04-12,NTFGH,39,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2400,2020-04-12,NTFGH,21,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2398,2020-04-12,NTFGH,36,M,NA,lp,,Local transmission,,,Kranji Dormitory at 17 Kranji Way; Project Glory at 50 Market Street,TRUE,NA,NA,NA
+2399,2020-04-12,NTFGH,39,M,NA,lp,,Local transmission,,,Kranji Dormitory at 17 Kranji Way,TRUE,NA,NA,NA
+2400,2020-04-12,NTFGH,21,M,NA,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
 2401,2020-04-12,NTFGH,56,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 2402,2020-04-12,NTFGH,35,M,NA,pr,,Local transmission,2215,,,TRUE,NA,NA,NA
 2403,2020-04-12,CGH,68,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 2404,2020-04-12,NCID,35,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2405,2020-04-12,NCID,44,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2406,2020-04-12,NCID,23,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2407,2020-04-12,NCID,36,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2408,2020-04-12,NCID,43,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2409,2020-04-12,NCID,48,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2410,2020-04-12,NCID,33,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2411,2020-04-12,NCID,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2412,2020-04-12,NCID,37,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2405,2020-04-12,NCID,44,M,NA,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2406,2020-04-12,NCID,23,M,NA,lp,,Local transmission,,,Cassia @ Penjuru at 15 Penjuru Walk,TRUE,NA,NA,NA
+2407,2020-04-12,NCID,36,M,NA,wp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA
+2408,2020-04-12,NCID,43,M,NA,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2409,2020-04-12,NCID,48,M,NA,wp,,Local transmission,,,Cassia @ Penjuru at 15 Penjuru Walk,TRUE,NA,NA,NA
+2410,2020-04-12,NCID,33,M,NA,lp,,Local transmission,,,Cassia @ Penjuru at 15 Penjuru Walk,TRUE,NA,NA,NA
+2411,2020-04-12,NCID,26,M,NA,lp,,Local transmission,,,Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop,TRUE,NA,NA,NA
+2412,2020-04-12,NCID,37,M,NA,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
 2413,2020-04-12,NCID,37,F,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 2414,2020-04-12,unknown,33,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2415,2020-04-12,NCID,69,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 2416,2020-04-12,unknown,40,F,NA,pr,,Local transmission,2424,,,TRUE,NA,NA,NA
-2417,2020-04-12,KTPH,22,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2417,2020-04-12,KTPH,22,M,NA,lp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
 2418,2020-04-12,KTPH,30,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2419,2020-04-12,KTPH,36,F,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 2420,2020-04-12,KTPH,39,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2421,2020-04-12,NCID,42,M,NA,wp,,Local transmission,2424,,,TRUE,NA,NA,NA
-2422,2020-04-12,NCID,27,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2422,2020-04-12,NCID,27,M,NA,lp,,Local transmission,,,Cassia @ Penjuru at 15 Penjuru Walk,TRUE,NA,NA,NA
 2423,2020-04-12,NCID,36,M,NA,lp,,Local transmission,2106,,,TRUE,NA,NA,NA
 2424,2020-04-12,NCID,48,M,NA,wp,,Local transmission,"2416, 2421",,,TRUE,NA,NA,NA
-2425,2020-04-12,NCID,27,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2425,2020-04-12,NCID,27,M,NA,lp,,Local transmission,,,Cassia @ Penjuru at 15 Penjuru Walk,TRUE,NA,NA,NA
 2426,2020-04-12,NCID,26,M,NA,wp,,Local transmission,2125,,,TRUE,NA,NA,NA
-2427,2020-04-12,NCID,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2427,2020-04-12,NCID,26,M,NA,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
 2428,2020-04-12,Community Isolation Facility,27,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2429,2020-04-12,Community Isolation Facility,45,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2429,2020-04-12,Community Isolation Facility,45,M,NA,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 2430,2020-04-12,Community Isolation Facility,38,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2431,2020-04-12,Community Isolation Facility,46,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2432,2020-04-12,Community Isolation Facility,45,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2433,2020-04-12,Community Isolation Facility,37,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2434,2020-04-12,Community Isolation Facility,32,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2433,2020-04-12,Community Isolation Facility,37,M,NA,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
+2434,2020-04-12,Community Isolation Facility,32,M,NA,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
 2435,2020-04-12,Community Isolation Facility,41,M,NA,wp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
-2436,2020-04-12,Community Isolation Facility,49,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2437,2020-04-12,Community Isolation Facility,31,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2438,2020-04-12,Community Isolation Facility,31,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2436,2020-04-12,Community Isolation Facility,49,M,NA,wp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
+2437,2020-04-12,Community Isolation Facility,31,M,NA,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
+2438,2020-04-12,Community Isolation Facility,31,M,NA,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
 2439,2020-04-12,Community Isolation Facility,35,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2440,2020-04-12,Community Isolation Facility,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2441,2020-04-12,Community Isolation Facility,32,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2440,2020-04-12,Community Isolation Facility,26,M,NA,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
+2441,2020-04-12,Community Isolation Facility,32,M,NA,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
 2442,2020-04-12,Community Isolation Facility,34,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2443,2020-04-12,Community Isolation Facility,34,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2444,2020-04-12,Community Isolation Facility,35,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2443,2020-04-12,Community Isolation Facility,34,M,NA,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
+2444,2020-04-12,Community Isolation Facility,35,M,NA,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
 2445,2020-04-12,Community Isolation Facility,27,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2446,2020-04-12,Community Isolation Facility,36,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2447,2020-04-12,Community Isolation Facility,25,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2447,2020-04-12,Community Isolation Facility,25,M,NA,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
 2448,2020-04-12,Community Isolation Facility,35,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2449,2020-04-12,Community Isolation Facility,22,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2450,2020-04-12,Community Isolation Facility,41,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2451,2020-04-12,Community Isolation Facility,25,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2452,2020-04-12,Community Isolation Facility,49,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2453,2020-04-12,Community Isolation Facility,35,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2454,2020-04-12,Community Isolation Facility,31,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2455,2020-04-12,Community Isolation Facility,44,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2456,2020-04-12,Community Isolation Facility,45,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2449,2020-04-12,Community Isolation Facility,22,M,NA,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+2450,2020-04-12,Community Isolation Facility,41,M,NA,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+2451,2020-04-12,Community Isolation Facility,25,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2452,2020-04-12,Community Isolation Facility,49,M,NA,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2453,2020-04-12,Community Isolation Facility,35,M,NA,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2454,2020-04-12,Community Isolation Facility,31,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2455,2020-04-12,Community Isolation Facility,44,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2456,2020-04-12,Community Isolation Facility,45,M,NA,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 2457,2020-04-12,Community Isolation Facility,41,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2458,2020-04-12,Community Isolation Facility,32,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2459,2020-04-12,Community Isolation Facility,34,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
@@ -2479,55 +2479,441 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2478,2020-04-12,Community Isolation Facility,39,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2479,2020-04-12,Community Isolation Facility,28,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2480,2020-04-12,Community Isolation Facility,55,M,NA,pr,,Local transmission,,,,TRUE,NA,NA,NA
-2481,2020-04-12,SGH,37,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2481,2020-04-12,SGH,37,M,NA,lp,,Local transmission,,,36 Woodlands Industrial Park E1; Renovation site at National University Hospital @ 5 Lower Kent Ridge Road,TRUE,NA,NA,NA
 2482,2020-04-12,SGH,25,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2483,2020-04-12,SGH,25,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2483,2020-04-12,SGH,25,M,NA,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
 2484,2020-04-12,SGH,47,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2485,2020-04-12,SGH,35,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2486,2020-04-12,SGH,53,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2487,2020-04-12,SGH,47,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2487,2020-04-12,SGH,47,M,NA,wp,,Local transmission,,,Kenyon/ UBS construction site at 9 Penang Road,TRUE,NA,NA,NA
 2488,2020-04-12,SGH,22,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2489,2020-04-12,SGH,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2490,2020-04-12,NUH,34,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2489,2020-04-12,SGH,26,M,NA,lp,,Local transmission,,,Kenyon/ UBS construction site at 9 Penang Road,TRUE,NA,NA,NA
+2490,2020-04-12,NUH,34,M,NA,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
 2491,2020-04-12,TTSH,50,M,NA,wp,,Local transmission,,,Acacia Lodge at 530-540 Bukit Batok Street 23,TRUE,NA,NA,NA
 2492,2020-04-12,TTSH,40,M,NA,wp,,Local transmission,,,Acacia Lodge at 530-540 Bukit Batok Street 23,TRUE,NA,NA,NA
 2493,2020-04-12,TTSH,38,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2494,2020-04-12,TTSH,19,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2494,2020-04-12,TTSH,19,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 2495,2020-04-12,TTSH,46,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2496,2020-04-12,TTSH,27,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2496,2020-04-12,TTSH,27,M,NA,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 2497,2020-04-12,TTSH,36,M,NA,lp,,Local transmission,1140,,,TRUE,NA,NA,NA
 2498,2020-04-12,TTSH,39,M,NA,wp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
 2499,2020-04-12,TTSH,63,F,NA,citizen,,Local transmission,"650, 1702",,,TRUE,NA,NA,NA
 2500,2020-04-12,TTSH,36,M,NA,lp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA
-2501,2020-04-12,TTSH,38,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2501,2020-04-12,TTSH,38,M,NA,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
 2502,2020-04-12,NUH,56,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 2503,2020-04-12,KTPH,58,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2504,2020-04-12,KTPH,32,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2505,2020-04-12,KTPH,34,M,NA,wp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA
 2506,2020-04-12,KTPH,44,F,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 2507,2020-04-12,KTPH,57,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-2508,2020-04-12,NCID,25,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2509,2020-04-12,NCID,24,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2510,2020-04-12,NCID,50,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2511,2020-04-12,NCID,45,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2512,2020-04-12,NCID,41,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2513,2020-04-12,NCID,27,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2514,2020-04-12,NCID,26,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2515,2020-04-12,NCID,27,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2508,2020-04-12,NCID,25,M,NA,wp,,Local transmission,,,Tech Park Crescent dormitory at 43 Tech Park Crescent,TRUE,NA,NA,NA
+2509,2020-04-12,NCID,24,M,NA,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2510,2020-04-12,NCID,50,M,NA,wp,,Local transmission,,,Tech Park Crescent dormitory at 43 Tech Park Crescent,TRUE,NA,NA,NA
+2511,2020-04-12,NCID,45,M,NA,lp,,Local transmission,,,Tech Park Crescent dormitory at 43 Tech Park Crescent,TRUE,NA,NA,NA
+2512,2020-04-12,NCID,41,M,NA,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2513,2020-04-12,NCID,27,M,NA,wp,,Local transmission,,,Tech Park Crescent dormitory at 43 Tech Park Crescent,TRUE,NA,NA,NA
+2514,2020-04-12,NCID,26,M,NA,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2515,2020-04-12,NCID,27,M,NA,wp,,Local transmission,,,Acacia Lodge at 530-540 Bukit Batok Street 23,TRUE,NA,NA,NA
 2516,2020-04-12,NCID,33,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2517,2020-04-12,NCID,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2518,2020-04-12,NCID,22,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2518,2020-04-12,NCID,22,M,NA,lp,,Local transmission,,,Tech Park Crescent dormitory at 43 Tech Park Crescent,TRUE,NA,NA,NA
 2519,2020-04-12,NCID,34,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2520,2020-04-12,NCID,29,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2521,2020-04-12,NCID,28,M,NA,wp,,Local transmission,,,,TRUE,NA,NA,NA
-2522,2020-04-12,NCID,36,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2523,2020-04-12,NCID,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2520,2020-04-12,NCID,29,M,NA,wp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
+2521,2020-04-12,NCID,28,M,NA,wp,,Local transmission,,,Project Glory at 50 Market Street,TRUE,NA,NA,NA
+2522,2020-04-12,NCID,36,M,NA,lp,,Local transmission,,,Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop,TRUE,NA,NA,NA
+2523,2020-04-12,NCID,26,M,NA,lp,,Local transmission,,,Tech Park Crescent dormitory at 43 Tech Park Crescent,TRUE,NA,NA,NA
 2524,2020-04-12,NCID,58,M,NA,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 2525,2020-04-12,NCID,28,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2526,2020-04-12,NCID,41,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2527,2020-04-12,NCID,28,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2527,2020-04-12,NCID,28,M,NA,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
 2528,2020-04-12,NCID,26,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
 2529,2020-04-12,NCID,38,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
-2530,2020-04-12,NCID,25,M,NA,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2530,2020-04-12,NCID,25,M,NA,lp,,Local transmission,,,Tuas View Dormitory at 70 Tuas South Avenue 1,TRUE,NA,NA,NA
 2531,2020-04-12,NCID,40,F,NA,citizen,,Local transmission,,1361,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA
 2532,2020-04-12,NCID,43,F,NA,pr,,Local transmission,,1732,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA
+2533,2020-04-14,KTPH,24,M,India,wp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA
+2534,2020-04-14,KTPH,37,M,India,wp,,Local transmission,,,North Coast Lodge at 51 North Coast Avenue,TRUE,NA,NA,NA
+2535,2020-04-14,KTPH,42,F,Malaysia,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2536,2020-04-14,KTPH,36,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2537,2020-04-14,KTPH,29,F,Malaysia,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2538,2020-04-14,KTPH,31,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2539,2020-04-14,KTPH,21,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2540,2020-04-14,KTPH,36,M,Vietnam,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2541,2020-04-14,KTPH,29,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2542,2020-04-14,NTFGH,34,M,Bangladesh,wp,,Local transmission,,,Tuas View Dormitory at 70 Tuas South Avenue 1,TRUE,NA,NA,NA
+2543,2020-04-14,NTFGH,21,M,unknown,unknown,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2544,2020-04-14,NCID,31,M,Bangladesh,wp,,Local transmission,,,Acacia Lodge at 530-540 Bukit Batok Street 23,TRUE,NA,NA,NA
+2545,2020-04-14,NCID,33,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2546,2020-04-14,MAH,51,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2547,2020-04-14,Mount Elizabeth Novena Hospital,47,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2548,2020-04-14,NCID,26,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2549,2020-04-14,NCID,47,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2550,2020-04-14,NCID,42,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2551,2020-04-14,NCID,49,M,China,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2552,2020-04-14,NCID,29,M,Bangladesh,wp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA
+2553,2020-04-14,NCID,30,M,India,wp,,Local transmission,,,Tampines Dormitory at 2 Tampines Place,TRUE,NA,NA,NA
+2554,2020-04-14,AH,26,M,India,wp,,Local transmission,,,36 Woodlands Industrial Park E1,TRUE,NA,NA,NA
+2555,2020-04-14,AH,30,M,Bangladesh,wp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
+2556,2020-04-14,AH,29,F,India,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2557,2020-04-14,unknown,59,F,Singapore,citizen,,Local transmission,,1643,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA
+2558,2020-04-14,NCID,80,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2559,2020-04-14,NCID,48,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2560,2020-04-14,SKH,29,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2561,2020-04-14,KTPH,76,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2562,2020-04-14,KTPH,69,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2563,2020-04-14,KTPH,18,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2564,2020-04-14,unknown,23,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2565,2020-04-14,unknown,29,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2566,2020-04-14,unknown,30,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2567,2020-04-14,unknown,30,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2568,2020-04-14,unknown,32,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2569,2020-04-14,unknown,36,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2570,2020-04-14,unknown,26,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2571,2020-04-14,unknown,35,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2572,2020-04-14,unknown,30,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2573,2020-04-14,unknown,37,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2574,2020-04-14,NTFGH,25,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2575,2020-04-14,NTFGH,33,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2576,2020-04-14,NTFGH,56,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2577,2020-04-14,NCID,28,M,Bangladesh,visitor,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2578,2020-04-14,KTPH,22,M,Bangladesh,wp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA
+2579,2020-04-14,KTPH,43,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2580,2020-04-14,KTPH,38,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2581,2020-04-14,CGH,50,M,Myanmar,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2582,2020-04-14,CGH,37,M,Myanmar,wp,,Local transmission,,,Kenyon/ UBS construction site at 9 Penang Road,TRUE,NA,NA,NA
+2583,2020-04-14,CGH,32,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2584,2020-04-14,CGH,48,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2585,2020-04-14,CGH,34,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2586,2020-04-14,CGH,30,M,Myanmar,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2587,2020-04-14,CGH,31,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2588,2020-04-14,CGH,35,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2589,2020-04-14,CGH,40,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2590,2020-04-14,CGH,32,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2591,2020-04-14,CGH,30,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2592,2020-04-14,CGH,34,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2593,2020-04-14,NUH,29,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2594,2020-04-14,Community Isolation Facility,29,M,Bangladesh,wp,,Local transmission,,,Acacia Lodge at 530-540 Bukit Batok Street 23,TRUE,NA,NA,NA
+2595,2020-04-14,Community Isolation Facility,27,M,Bangladesh,wp,,Local transmission,,,Acacia Lodge at 530-540 Bukit Batok Street 23,TRUE,NA,NA,NA
+2596,2020-04-14,Community Isolation Facility,27,M,Bangladesh,wp,,Local transmission,,,Acacia Lodge at 530-540 Bukit Batok Street 23,TRUE,NA,NA,NA
+2597,2020-04-14,CGH,30,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2598,2020-04-14,SGH,37,M,Bangladesh,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+2599,2020-04-14,SGH,28,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2600,2020-04-14,SGH,26,M,Malaysia,wp,,Local transmission,,,ABC Hostel at 3 Jalan Kubor,TRUE,NA,NA,NA
+2601,2020-04-14,SGH,24,M,China,wp,,Local transmission,"1451, 2607",,,TRUE,NA,NA,NA
+2602,2020-04-14,SGH,66,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2603,2020-04-14,SGH,39,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2604,2020-04-14,SGH,56,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2605,2020-04-14,KTPH,37,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2606,2020-04-14,KTPH,45,M,China,wp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
+2607,2020-04-14,NCID,27,M,China,wp,,Local transmission,"2601, 1451",,,TRUE,NA,NA,NA
+2608,2020-04-14,NCID,48,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2609,2020-04-14,NCID,32,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2610,2020-04-14,NCID,34,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2611,2020-04-14,NCID,28,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2612,2020-04-14,NCID,26,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2613,2020-04-14,NCID,39,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2614,2020-04-14,SKH,36,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2615,2020-04-14,SKH,36,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2616,2020-04-14,SKH,40,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2617,2020-04-14,SKH,30,M,India,lp,,Local transmission,,,,TRUE,NA,NA,NA
+2618,2020-04-14,SKH,unknown,unknown,unknown,unknown,,Local transmission,,,,TRUE,NA,NA,NA
+2619,2020-04-14,SKH,40,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2620,2020-04-14,SKH,29,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2621,2020-04-14,SKH,20,M,Bangladesh,visitor,,Local transmission,,,,TRUE,NA,NA,NA
+2622,2020-04-14,SKH,43,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2623,2020-04-14,SKH,25,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2624,2020-04-14,SKH,32,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2625,2020-04-14,SKH,26,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2626,2020-04-14,SKH,35,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2627,2020-04-14,NTFGH,28,M,Bangladesh,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
+2628,2020-04-14,NTFGH,33,M,Bangladesh,wp,,Local transmission,,,Tuas View Dormitory at 70 Tuas South Avenue 1,TRUE,NA,NA,NA
+2629,2020-04-14,NTFGH,42,M,Bangladesh,wp,,Local transmission,,,Cassia @ Penjuru at 15 Penjuru Walk,TRUE,NA,NA,NA
+2630,2020-04-14,NTFGH,35,M,Bangladesh,wp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
+2631,2020-04-14,NTFGH,32,M,Bangladesh,wp,,Local transmission,,,Tuas View Dormitory at 70 Tuas South Avenue 1,TRUE,NA,NA,NA
+2632,2020-04-14,NTFGH,50,M,China,wp,,Local transmission,,,Tech Park Crescent dormitory at 43 Tech Park Crescent,TRUE,NA,NA,NA
+2633,2020-04-14,NTFGH,75,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2634,2020-04-14,NCID,31,M,Bangladesh,wp,,Local transmission,,,Acacia Lodge at 530-540 Bukit Batok Street 23,TRUE,NA,NA,NA
+2635,2020-04-14,NCID,24,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2636,2020-04-14,NCID,28,M,Bangladesh,wp,,Local transmission,"2525, 2613, 2610, 2638",,,TRUE,NA,NA,NA
+2637,2020-04-14,NCID,24,M,Bangladesh,wp,,Local transmission,,,Acacia Lodge at 530-540 Bukit Batok Street 23,TRUE,NA,NA,NA
+2638,2020-04-14,NCID,46,M,India,wp,,Local transmission,"2525, 2613, 2610, 2636",,,TRUE,NA,NA,NA
+2639,2020-04-14,NCID,43,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2640,2020-04-14,NCID,26,M,Bangladesh,wp,,Local transmission,,,Acacia Lodge at 530-540 Bukit Batok Street 23,TRUE,NA,NA,NA
+2641,2020-04-14,NCID,37,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2642,2020-04-14,NCID,51,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2643,2020-04-14,unknown,44,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2644,2020-04-14,unknown,32,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2645,2020-04-14,unknown,48,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2646,2020-04-14,unknown,26,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2647,2020-04-14,unknown,30,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2648,2020-04-14,unknown,33,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2649,2020-04-14,unknown,34,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2650,2020-04-14,unknown,27,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2651,2020-04-14,unknown,30,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2652,2020-04-14,unknown,26,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2653,2020-04-14,unknown,44,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2654,2020-04-14,unknown,34,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2655,2020-04-14,unknown,27,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2656,2020-04-14,unknown,52,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2657,2020-04-14,unknown,51,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2658,2020-04-14,unknown,35,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2659,2020-04-14,unknown,42,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2660,2020-04-14,unknown,31,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2661,2020-04-14,unknown,43,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2662,2020-04-14,unknown,24,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2663,2020-04-14,unknown,29,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2664,2020-04-14,unknown,33,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2665,2020-04-14,unknown,27,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2666,2020-04-14,unknown,30,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2667,2020-04-14,unknown,29,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2668,2020-04-14,unknown,31,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2669,2020-04-14,unknown,38,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2670,2020-04-14,unknown,28,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2671,2020-04-14,unknown,27,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2672,2020-04-14,unknown,22,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2673,2020-04-14,unknown,35,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2674,2020-04-14,unknown,28,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2675,2020-04-14,unknown,23,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2676,2020-04-14,unknown,44,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2677,2020-04-14,unknown,31,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2678,2020-04-14,unknown,34,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2679,2020-04-14,unknown,28,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2680,2020-04-14,unknown,27,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2681,2020-04-14,unknown,29,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2682,2020-04-14,unknown,29,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2683,2020-04-14,unknown,27,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2684,2020-04-14,unknown,29,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2685,2020-04-14,unknown,26,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2686,2020-04-14,unknown,27,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2687,2020-04-14,unknown,45,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2688,2020-04-14,unknown,29,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2689,2020-04-14,unknown,33,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2690,2020-04-14,unknown,36,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2691,2020-04-14,unknown,28,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2692,2020-04-14,unknown,28,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2693,2020-04-14,unknown,29,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2694,2020-04-14,unknown,30,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2695,2020-04-14,unknown,28,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2696,2020-04-14,unknown,54,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2697,2020-04-14,unknown,23,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2698,2020-04-14,unknown,34,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2699,2020-04-14,unknown,24,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2700,2020-04-14,unknown,40,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2701,2020-04-14,unknown,38,M,Myanmar,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2702,2020-04-14,unknown,25,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2703,2020-04-14,unknown,34,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2704,2020-04-14,unknown,37,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2705,2020-04-14,unknown,34,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2706,2020-04-14,unknown,40,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2707,2020-04-14,unknown,25,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2708,2020-04-14,unknown,28,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2709,2020-04-14,unknown,25,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2710,2020-04-14,unknown,32,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2711,2020-04-14,unknown,36,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2712,2020-04-14,unknown,32,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2713,2020-04-14,unknown,34,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2714,2020-04-14,unknown,23,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2715,2020-04-14,unknown,22,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2716,2020-04-14,unknown,34,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2717,2020-04-14,unknown,54,M,Thailand,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2718,2020-04-14,unknown,30,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2719,2020-04-14,unknown,20,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2720,2020-04-14,unknown,25,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2721,2020-04-14,unknown,44,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2722,2020-04-14,unknown,25,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2723,2020-04-14,unknown,27,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2724,2020-04-14,unknown,27,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2725,2020-04-14,KTPH,23,M,India,wp,,Local transmission,,,North Coast Lodge at 51 North Coast Avenue,TRUE,NA,NA,NA
+2726,2020-04-14,KTPH,55,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2727,2020-04-14,KTPH,41,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2728,2020-04-14,NCID,60,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2729,2020-04-14,NCID,22,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2730,2020-04-14,NCID,81,F,Singapore,citizen,,Local transmission,,2524,,TRUE,NA,NA,NA
+2731,2020-04-14,NCID,46,M,Bangladesh,wp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
+2732,2020-04-14,NCID,23,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2733,2020-04-14,NCID,32,M,India,wp,,Local transmission,"1427, 1456, 2114",,,TRUE,NA,NA,NA
+2734,2020-04-14,NCID,37,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2735,2020-04-14,NCID,32,M,Bangladesh,wp,,Local transmission,,,Acacia Lodge at 530-540 Bukit Batok Street 23,TRUE,NA,NA,NA
+2736,2020-04-14,NCID,56,F,Singapore,citizen,,Local transmission,,2524,,TRUE,NA,NA,NA
+2737,2020-04-14,NCID,53,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2738,2020-04-14,KTPH,22,F,Singapore,citizen,,Local transmission,,"2739, 2419",,TRUE,NA,NA,NA
+2739,2020-04-14,KTPH,57,F,Singapore,pr,,Local transmission,,"2738, 2419",,TRUE,NA,NA,NA
+2740,2020-04-14,NCID,29,M,India,wp,,Local transmission,,,36 Woodlands Industrial Park E1,TRUE,NA,NA,NA
+2741,2020-04-14,NCID,35,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2742,2020-04-14,NCID,35,M,Bangladesh,wp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
+2743,2020-04-14,NCID,41,M,Philippines,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2744,2020-04-14,NCID,38,M,Bangladesh,wp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West,TRUE,NA,NA,NA
+2745,2020-04-14,NCID,34,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2746,2020-04-14,NCID,62,F,Singapore,citizen,,Local transmission,"family member of case 1589, 1839","1589, contact of case 1839",,TRUE,NA,NA,NA
+2747,2020-04-14,NCID,30,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2748,2020-04-14,NCID,26,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2749,2020-04-14,NTFGH,25,M,Bangladesh,wp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
+2750,2020-04-14,NTFGH,31,F,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2751,2020-04-14,NUH,24,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2752,2020-04-14,NUH,22,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2753,2020-04-14,NUH,31,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2754,2020-04-14,NUH,26,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2755,2020-04-14,NUH,31,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2756,2020-04-14,NUH,18,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2757,2020-04-14,NUH,47,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2758,2020-04-14,NUH,21,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2759,2020-04-14,NUH,46,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2760,2020-04-14,NUH,33,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2761,2020-04-14,NUH,43,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2762,2020-04-14,NUH,35,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2763,2020-04-14,NUH,21,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2764,2020-04-14,NUH,52,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2765,2020-04-14,NUH,55,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2766,2020-04-14,NUH,27,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2767,2020-04-14,NUH,42,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2768,2020-04-14,NUH,25,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2769,2020-04-14,NUH,33,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2770,2020-04-14,NUH,4,F,Singapore,citizen,,Local transmission,,1696,,TRUE,NA,NA,NA
+2771,2020-04-14,NUH,30,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2772,2020-04-14,NUH,22,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2773,2020-04-14,NUH,28,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2774,2020-04-14,NUH,29,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2775,2020-04-14,NUH,42,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2776,2020-04-14,NUH,24,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2777,2020-04-14,NUH,33,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2778,2020-04-14,NUH,32,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2779,2020-04-14,NUH,35,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2780,2020-04-14,NUH,35,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2781,2020-04-14,SKH,41,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2782,2020-04-14,SGH,41,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2783,2020-04-14,SGH,28,M,Bangladesh,wp,,Local transmission,,,Acacia Lodge at 530-540 Bukit Batok Street 23,TRUE,NA,NA,NA
+2784,2020-04-14,SGH,30,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2785,2020-04-14,SGH,25,F,Singapore,pr,,Local transmission,"1721, 1724",,,TRUE,NA,NA,NA
+2786,2020-04-14,SGH,24,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2787,2020-04-14,SGH,35,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2788,2020-04-14,KTPH,27,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2789,2020-04-14,Community Isolation Facility,44,M,China,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2790,2020-04-14,Community Isolation Facility,42,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2791,2020-04-14,Community Isolation Facility,39,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2792,2020-04-14,Community Isolation Facility,56,M,Myanmar,wp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
+2793,2020-04-14,Community Isolation Facility,28,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2794,2020-04-14,Community Isolation Facility,27,M,India,wp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East,TRUE,NA,NA,NA
+2795,2020-04-14,Community Isolation Facility,43,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2796,2020-04-14,Community Isolation Facility,30,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2797,2020-04-14,Community Isolation Facility,34,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2798,2020-04-14,Community Isolation Facility,31,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2799,2020-04-14,Community Isolation Facility,40,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2800,2020-04-14,Community Isolation Facility,33,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2801,2020-04-14,Community Isolation Facility,32,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2802,2020-04-14,Community Isolation Facility,48,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2803,2020-04-14,Community Isolation Facility,33,M,China,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2804,2020-04-14,Community Isolation Facility,36,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2805,2020-04-14,Community Isolation Facility,25,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2806,2020-04-14,Community Isolation Facility,47,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2807,2020-04-14,Community Isolation Facility,22,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2808,2020-04-14,Community Isolation Facility,50,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2809,2020-04-14,Community Isolation Facility,41,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2810,2020-04-14,Community Isolation Facility,23,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2811,2020-04-14,Community Isolation Facility,39,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2812,2020-04-14,Community Isolation Facility,26,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2813,2020-04-14,Community Isolation Facility,38,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2814,2020-04-14,Community Isolation Facility,33,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2815,2020-04-14,Community Isolation Facility,35,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2816,2020-04-14,Community Isolation Facility,24,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2817,2020-04-14,Community Isolation Facility,47,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2818,2020-04-14,Community Isolation Facility,33,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2819,2020-04-14,Community Isolation Facility,44,M,China,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2820,2020-04-14,Community Isolation Facility,33,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2821,2020-04-14,Community Isolation Facility,26,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2822,2020-04-14,Community Isolation Facility,38,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2823,2020-04-14,Community Isolation Facility,33,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2824,2020-04-14,Community Isolation Facility,28,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2825,2020-04-14,Community Isolation Facility,45,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2826,2020-04-14,Community Isolation Facility,47,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2827,2020-04-14,Community Isolation Facility,39,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2828,2020-04-14,Community Isolation Facility,29,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2829,2020-04-14,NCID,31,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2830,2020-04-14,NCID,26,M,Bangladesh,wp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA
+2831,2020-04-14,NCID,34,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2832,2020-04-14,NCID,29,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2833,2020-04-14,NCID,24,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2834,2020-04-14,NCID,41,M,Bangladesh,wp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA
+2835,2020-04-14,NCID,35,M,Bangladesh,wp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA
+2836,2020-04-14,unknown,45,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2837,2020-04-14,unknown,26,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2838,2020-04-14,unknown,33,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2839,2020-04-14,unknown,40,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2840,2020-04-14,NCID,25,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2841,2020-04-14,NCID,27,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2842,2020-04-14,NCID,26,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2843,2020-04-14,NCID,37,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2844,2020-04-14,NCID,26,M,Bangladesh,wp,,Local transmission,,,Acacia Lodge at 530-540 Bukit Batok Street 23,TRUE,NA,NA,NA
+2845,2020-04-14,NCID,25,M,Bangladesh,wp,,Local transmission,,,Acacia Lodge at 530-540 Bukit Batok Street 23,TRUE,NA,NA,NA
+2846,2020-04-14,NCID,25,M,Bangladesh,wp,,Local transmission,,,Acacia Lodge at 530-540 Bukit Batok Street 23,TRUE,NA,NA,NA
+2847,2020-04-14,NCID,31,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2848,2020-04-14,NCID,39,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2849,2020-04-14,NCID,24,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2850,2020-04-14,NUH,34,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2851,2020-04-14,NUH,31,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2852,2020-04-14,NUH,36,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2853,2020-04-14,NUH,25,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2854,2020-04-14,NUH,28,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2855,2020-04-14,NUH,30,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2856,2020-04-14,NUH,40,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2857,2020-04-14,NUH,41,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2858,2020-04-14,NUH,21,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2859,2020-04-14,NUH,30,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2860,2020-04-14,NUH,28,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2861,2020-04-14,NUH,38,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2862,2020-04-14,NUH,37,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2863,2020-04-14,NUH,30,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2864,2020-04-14,NUH,20,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2865,2020-04-14,NUH,30,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2866,2020-04-14,NUH,24,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2867,2020-04-14,NUH,27,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2868,2020-04-14,NUH,34,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2869,2020-04-14,NUH,40,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2870,2020-04-14,NUH,50,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2871,2020-04-14,NUH,54,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2872,2020-04-14,NUH,47,M,Thailand,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2873,2020-04-14,NUH,36,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2874,2020-04-14,NUH,34,M,China,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2875,2020-04-14,NUH,35,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2876,2020-04-14,NCID,32,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2877,2020-04-14,NCID,35,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2878,2020-04-14,NCID,25,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2879,2020-04-14,NCID,31,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2880,2020-04-14,NCID,32,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2881,2020-04-14,NCID,27,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2882,2020-04-14,NCID,34,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2883,2020-04-14,NCID,29,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2884,2020-04-14,NCID,23,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2885,2020-04-14,NCID,34,M,China,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2886,2020-04-14,NCID,24,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2887,2020-04-14,NCID,42,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2888,2020-04-14,NCID,30,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2889,2020-04-14,NCID,32,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2890,2020-04-14,NCID,31,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2891,2020-04-14,NCID,40,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2892,2020-04-14,NCID,47,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2893,2020-04-14,NCID,37,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2894,2020-04-14,NCID,39,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2895,2020-04-14,unknown,30,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2896,2020-04-14,unknown,45,M,Thailand,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2897,2020-04-14,unknown,27,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
+2898,2020-04-14,unknown,26,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2899,2020-04-14,unknown,42,M,China,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2900,2020-04-14,unknown,37,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA
+2901,2020-04-14,unknown,34,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2902,2020-04-14,unknown,33,M,unknown,unknown,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2903,2020-04-14,unknown,35,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2904,2020-04-14,unknown,41,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2905,2020-04-14,unknown,32,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2906,2020-04-14,unknown,47,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2907,2020-04-14,unknown,35,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2908,2020-04-14,unknown,51,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2909,2020-04-14,unknown,27,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2910,2020-04-14,unknown,36,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2911,2020-04-14,unknown,24,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2912,2020-04-14,unknown,23,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2913,2020-04-14,unknown,35,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2914,2020-04-14,unknown,24,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2915,2020-04-14,unknown,30,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2916,2020-04-14,unknown,37,M,India,wp,,Local transmission,,,Tampines Dormitory at 2 Tampines Place,TRUE,NA,NA,NA
+2917,2020-04-14,unknown,40,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
+2918,2020-04-14,unknown,33,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
