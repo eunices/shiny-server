@@ -476,7 +476,7 @@ pal = colorFactor(c("#8f5717", "#d48224", # construction, dorm
                     "#1aad0c", "#59cce3", "#8ded8c" # school, shoppping, work
                     ), domain=types)
 leaflet(clusters[!(is.na(x) | is.na(y))]) %>% addProviderTiles(providers$Stamen.Toner) %>%
- addCircleMarkers(lat=~y, lng=~x, radius=~5+(cases/10), stroke=FALSE, fillOpacity=0.7,
+ addCircleMarkers(lat=~y, lng=~x, radius=~5+(cases/20), stroke=FALSE, fillOpacity=0.7,
                   label=~paste0(cluster, " - cases: ", cases, " (", type, ")"), color=~pal(type)) %>%
  addLegend("topright", pal=pal, values=~type, opacity = 1, title = "Cluster type") %>%
  setView(103.812804, 1.360250, zoom=11)
