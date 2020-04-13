@@ -464,9 +464,24 @@ ggplot(cluster_cases[no %in% 1:10], aes(x=age)) +
 ```
 
 ```{r}
+print(unique(clusters$type))
+types = unique(clusters$type)
+clusters$type = factor(clusters$type, 
+                       levels=c("construction", "dormitory",
+                                "events", "food",  "shopping", "recreation",
+                                "residential", "nursing home",
+                                "work", "school", "religious"))
+pal = colorFactor(c("#8f5717", "#d48224", # construction, dorm
+                    "#25b5db", "#1484c9", # events, food
+                    "#863eab", "#3063ba", # nursing home, recreation
+                    "#e6da09", "#b081d4", # religious, residential
+                    "#1aad0c", "#59cce3", "#38ba36" # school, shoppping, work
+                    ), domain=types)
 leaflet(clusters[!(is.na(x) | is.na(y))]) %>% addProviderTiles(providers$Stamen.Toner) %>%
- addCircleMarkers(lat=~y, lng=~x, radius=~5+(cases/10), stroke=FALSE, fillOpacity=0.5,
-                  label=~paste0(cluster, " - cases: ", cases), color="red")
+ addCircleMarkers(lat=~y, lng=~x, radius=~5+(cases/10), stroke=FALSE, fillOpacity=0.7,
+                  label=~paste0(cluster, " - cases: ", cases, " (", type, ")"), color=~pal(type)) %>%
+ addLegend("topright", pal=pal, values=~type, opacity = 1, title = "Cluster type") %>%
+ setView(103.812804, 1.360250, zoom=11)
 ```
 Note: some clusters had more than one locality on the map but were only assigned to one point on the map.
 
