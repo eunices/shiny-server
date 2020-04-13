@@ -91,7 +91,7 @@ renderPlot({
   plt = ggplot(data=data[confirmed.at.date >= min_date & confirmed.at.date <= max_date], 
                aes(x=confirmed.at.date, y=N, fill=infection.source, label=no)) +
     geom_bar(position='stack', stat="identity") + 
-    xlab("") + ylab("Number of cases detected\n") +
+    xlab("") + ylab("Number of new cases detected\n") +
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
     scale_fill_manual(name="", 
                       labels=c("Event", "Event/measure",
