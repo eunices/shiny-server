@@ -447,13 +447,16 @@ knitr::kable(show_clusters, "markdown")
 ```
 
 ```{r}
-cluster_cases$no = factor(cluster_cases$no, levels=sort(as.numeric(unique(cluster_cases$no))))
+cluster_cases$no.bract = factor(paste0("[", cluster_cases$no, "]"), 
+                                levels=paste0("[", sort(as.integer(unique(cluster_cases$no))), "]"))
 ggplot(cluster_cases[cluster %in% clusters$cluster], aes(x=age)) +
   geom_histogram(binwidth=10) + theme +
-  facet_wrap(~no, ncol=3, scales="free_y") + 
+  facet_wrap(~no.bract, ncol=3, scales="free_y") + 
   scale_y_continuous(breaks=breaks_f) +
   scale_x_continuous(breaks=breaks_f) +
-  ylab("Number of people\n") + xlab("\nAge") #
+  theme(strip.background = element_rect(fill=cbp1[3])) +
+  ylab("Number of people\n") + xlab("\nAge") + ggtitle("Age profile of different clusters")
+# interesting: https://stackoverflow.com/questions/19440069/
 ```
 
 ```{r}
