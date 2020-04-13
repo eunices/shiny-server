@@ -466,7 +466,7 @@ ggplot(cluster_cases[no %in% 1:10], aes(x=age)) +
 types = unique(clusters$type)
 clusters$type = factor(clusters$type, 
                        levels=c("construction", "dormitory",
-                                "events", "food",  "shopping", "recreation",
+                                "events", "food", "shopping", "recreation",
                                 "residential", "nursing home",
                                 "work", "school", "religious"))
 pal = colorFactor(c("#8f5717", "#d48224", # construction, dorm
