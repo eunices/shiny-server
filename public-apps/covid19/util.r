@@ -11,7 +11,7 @@ camelcase_labeller <- function(variable, value){
 breaks_f <- function(v) {
   min = floor(min(v))
   max = ceiling(max(v))
-  inc = ifelse(max > 50, 10, 2)
+  inc = ifelse(max>100, ifelse(max > 50, 10, 2))
   seq(0, max, inc)
 }
 
