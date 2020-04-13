@@ -458,7 +458,7 @@ ggplot(cluster_cases[no %in% 1:10], aes(x=age)) +
   scale_y_continuous(breaks=breaks_f) +
   scale_x_continuous(breaks=breaks_f) +
   theme(strip.background = element_rect(fill=cbp1[3]), 
-        axis.text.y=element_text(size=rel(.8)),
+        axis.text.x=element_text(size=rel(.8)),
         axis.text.y=element_text(size=rel(.8)))+
   ylab("Number of people\n") + xlab("\nAge") + ggtitle("Age profile of top 10 largest clusters")
 # TODO if time: https://stackoverflow.com/questions/19440069/ [different colours for type]
