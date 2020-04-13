@@ -310,9 +310,9 @@ Recovered date is based on the discharged date when there are [consecutive negat
 #### Duration of recovery
 
 ```{r}
-is.recovered = table(!is.na(df$days.to.recover.symptomatic))
-median_recovery_time = as.numeric(median(df$days.to.recover.symptomatic, na.rm=T))
-mean_recovery_time = round(as.numeric(mean(df$days.to.recover.symptomatic, na.rm=T)), 1)
+is.recovered = table(!is.na(df$days.to.recover.resources))
+median_recovery_time = as.numeric(median(df$days.to.recover.resources, na.rm=T))
+mean_recovery_time = round(as.numeric(mean(df$days.to.recover.resources, na.rm=T)), 1)
 ```
 - Number of recovered persons: 
   `r is.recovered[2]`
@@ -326,12 +326,12 @@ mean_recovery_time = round(as.numeric(mean(df$days.to.recover.symptomatic, na.rm
 
 ```{r}
 binwidth = 5
-min = as.numeric(min(df$days.to.recover.symptomatic, na.rm=T))
-max = as.numeric(max(df$days.to.recover.symptomatic, na.rm=T))
-hist_max = max(table(cut(as.numeric(df$days.to.recover.symptomatic), 
+min = as.numeric(min(df$days.to.recover.resources, na.rm=T))
+max = as.numeric(max(df$days.to.recover.resources, na.rm=T))
+hist_max = max(table(cut(as.numeric(df$days.to.recover.resources), 
                          breaks=seq(min, max, by=binwidth), right = FALSE)))
 
-ggplot(df, aes(x=days.to.recover.symptomatic)) + 
+ggplot(df, aes(x=days.to.recover.resources)) + 
   geom_histogram(binwidth=binwidth, na.rm=T, color=cbp1[3], fill=cbp1[6], pad=T) + 
   xlab("\nDays to recover") + ylab("Number of people\n") +
   geom_vline(xintercept=mean_recovery_time, size=1, col=cbp1[2], linetype="dotted") +
@@ -352,7 +352,7 @@ renderPlot({
   min = as.numeric(min(df$age, na.rm=T))
   max = as.numeric(max(df$age, na.rm=T))
   data = data.frame(cat=cut(as.numeric(df$age), breaks=seq(0, max, by=agewidth), right = FALSE),
-                    age=df$age, days=df$days.to.recover.symptomatic)
+                    age=df$age, days=df$days.to.recover.resources)
   data = data[!is.na(data$cat),]
 
   gs = list(
@@ -362,7 +362,7 @@ renderPlot({
       xlab("Age category") + ylab("Days to recover\n") + theme +
       ggtitle("Age"),
   
-    ggplot(df[gender != "unknown"], aes(x=gender, y=days.to.recover.symptomatic)) +
+    ggplot(df[gender != "unknown"], aes(x=gender, y=days.to.recover.resources)) +
       geom_boxplot(color=cbp1[6], fill=NA) +
       geom_jitter(height = 0, width = 0.1, color=cbp1[3]) +
       xlab("Gender") + ylab("") + theme +
