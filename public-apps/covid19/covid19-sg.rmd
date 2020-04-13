@@ -263,7 +263,7 @@ renderPlot({
 })
 ```
 
-#### Back of the envelope hospital load
+#### Back-of-the-envelope hospital load
 
 Measuring hospital load is key to ensure that hospitals are not overloaded.  We assume that the number of those who require hospitalisation is 20% of the case load, since it is a conservative estimate that 20% of the patients require hospitalisation and/or ICU care. 
 
