@@ -247,12 +247,16 @@ df_cases_day[date>=date_no_hosp,]$hospital_load =
 ```
  
 ```{r}
+icu_scale = 10
 renderPlot({
   ggplot(data=df_cases_day, aes(x=date, y=case_load)) +
-    geom_line(color="steelblue", size=1) + 
-    geom_point(color="steelblue", size=2) + 
-    xlab("") + ylab("Number of recovering cases\n") + 
+    geom_line(color=cbp1[3], size=1) + 
+    geom_point(color=cbp1[3], size=2) + 
+    geom_line(aes(x=date, y=I1*100), color=cbp1[6], size=1) +
+    geom_point(aes(x=date, y=I1*100), color=cbp1[6], size=2) + 
+    xlab("") + ylab("Number of active cases (light blue)\n") + 
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
+    scale_y_continuous(sec.axis = sec_axis(~ ./icu_scale, name="Number of active ICU cases (dark blue)\n")) +
     theme +
     theme(axis.text.x=element_text(angle = 90))
 })
@@ -260,7 +264,7 @@ renderPlot({
 
 #### Back-of-the-envelope hospital load
 
-Measuring hospital load is key to ensure that hospitals are not overloaded.  We assume that the number of those who require hospitalisation is 20% of the case load, since it is a conservative estimate that 20% of the patients require hospitalisation and/or ICU care. 
+Measuring hospital load is key to ensure that hospitals are not overloaded.  We assume that the number of those who require hospitalisation is 20% of the case load, since it is a conservative estimate that 20% of the detected cases require hospitalisation and/or ICU care.
 
 From [24 Mar 2020](https://go.gov.sg/measures24mar), those who still test positive but display no symptoms will no longer be hospitalised but moved to isolation facilities.
 
@@ -296,7 +300,6 @@ no_hospital_data = dim(df[tolower(hospital) %in% c("unknown", "not admitted")])[
 ```
 
 Note: cases whose hospitals were pending at time of press release and those who are not admitted are omitted from table above. There were `r no_hospital_data` (of `r dim(df)[1]`) such cases.
-
 
 ### Recovery
 
@@ -510,6 +513,8 @@ The specific steps taken for the later dataset from MOH Annexes:
     a. Adding MOH annexes data to the main list of documents. 
     b. Adding `recovered.at.date` if cases have recovered.
     c. Adding new links and clusters to existing cases as contact tracing has made progress.
+3. Georeferencing new clusters in `clusters.csv`.
+4. Adding new events in `events.csv`.
 
 ### Notes about data
 
