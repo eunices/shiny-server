@@ -464,7 +464,6 @@ ggplot(cluster_cases[no %in% 1:10], aes(x=age)) +
 ```
 
 ```{r}
-print(unique(clusters$type))
 types = unique(clusters$type)
 clusters$type = factor(clusters$type, 
                        levels=c("construction", "dormitory",
