@@ -71,13 +71,6 @@ The first case of covid-19 was detected in Singapore on `r format(min_date, "%d 
 Key measures and events are marked below. Just at a glance, the border control measures and events (category 4) seem to be effacious as the number of imported cases dropped 31 Mar onwards.
 
 ```{r}
-style = "display: inline-block;vertical-align:top;padding-right: 20px"
-bootstrapPage(
-  div(style=style, dateRangeInput("range_date", "Date range", 
-                                  start = min_date, end = max_date, 
-                                  min = min_date, max = max_date)))
-
-
 summ = df[,list(N=.N),by=c("confirmed.at.date", "infection.source")]
 
 labels = events[]
@@ -87,14 +80,15 @@ labels$x = labels$xend - 5
 labels$y = labels$yend + sample(2:6, size=length(labels$yend), replace=T)*50
 labels$infection.source = "Local transmission"
 
+lab_cols = data.frame(label=c("Event", "Event/measure",
+                              "Imported case", "Local transmission", 
+                              "Measure", "Unknown"),
+                      colour=c(cbp1[c(5, 2, 6, 3)], "tomato1", cbp1[1]))
+
 cbp1 = c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 renderPlot({
-  
-  min_date = input$range_date[1]
-  max_date = input$range_date[2]
 
-  data = df[df$confirmed.at.date >= min_date & df$confirmed.at.date <= max_date,]
-  data = data[,list(N=.N),by=c("confirmed.at.date", "infection.source")]
+  data = df[,list(N=.N),by=c("confirmed.at.date", "infection.source")]
   data = merge(data, labels, by.x=c("confirmed.at.date", "infection.source"), 
                by.y=c("date", "infection.source"), all.x=T, all.y=T)
 
@@ -104,10 +98,8 @@ renderPlot({
     xlab("") + ylab("Number of cases detected\n") +
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
     scale_fill_manual(name="", 
-                      labels=c("Event", "Event/measure",
-                                "Imported case", "Local transmission", 
-                                "Measure", "Unknown"),
-                      values=c(cbp1[c(5, 2, 6, 3)], "tomato1", cbp1[1])) + 
+                      labels=lab_cols$label,
+                      values=lab_cols$colour) + 
     theme +
     theme(legend.position="bottom", legend.box = "horizontal", 
           axis.text.x=element_text(angle = 90)) +
@@ -204,6 +196,11 @@ From 7 Apr onwards, there was a greater number of unlinked cases.
 
 ```{r}
 
+style = "display: inline-block;vertical-align:top;padding-right: 20px"
+bootstrapPage(
+  div(style=style, dateRangeInput("range_date", "Date range", 
+                                  start = min_date, end = max_date, 
+                                  min = min_date, max = max_date)))
 renderPlot({
     min_date = input$range_date[1]
     max_date = input$range_date[2]
