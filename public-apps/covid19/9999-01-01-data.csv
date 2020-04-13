@@ -508,8 +508,8 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 507,2020-03-23,NCID,29,F,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
 508,2020-03-23,NCID,23,M,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
 509,2020-03-23,NCID,53,M,Singapore,citizen,Indonesia,Imported case,212,,,TRUE,NA,2020-04-02,NA
-510,2020-03-23,KTPH,52,F,Singapore,citizen,,Local transmission,,,Orange Ballroom at 845 Geylang Road; Orange Ballroom at  845 Geylang Road,TRUE,NA,2020-04-11,NA
-511,2020-03-23,KTPH,53,M,Singapore,citizen,,Local transmission,,,Orange Ballroom at 845 Geylang Road; Orange Ballroom at  845 Geylang Road,TRUE,NA,NA,NA
+510,2020-03-23,KTPH,52,F,Singapore,citizen,,Local transmission,,,Orange Ballroom at 845 Geylang Road; Orange Ballroom at 845 Geylang Road,TRUE,NA,2020-04-11,NA
+511,2020-03-23,KTPH,53,M,Singapore,citizen,,Local transmission,,,Orange Ballroom at 845 Geylang Road; Orange Ballroom at 845 Geylang Road,TRUE,NA,NA,NA
 512,2020-03-23,NCID,21,F,Singapore,citizen,United Kingdom,Imported case,791,,,TRUE,NA,2020-04-03,NA
 513,2020-03-23,NCID,21,M,Singapore,citizen,Unclear origin,Imported case,,,,TRUE,NA,2020-04-06,NA
 514,2020-03-23,NCID,18,F,India,visitor,Unclear origin,Imported case,,,,TRUE,NA,2020-04-11,NA
@@ -1005,7 +1005,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1004,2020-04-01,NCID,32,F,India,wp,,Local transmission,,,Lee Ah Mooi Old Age Home at 1 Thomson Lane,TRUE,NA,2020-04-07,NA
 1005,2020-04-01,NTFGH,30,F,Malaysia,wp,United Kingdom,Imported case,,,,TRUE,NA,NA,NA
 1006,2020-04-01,NTFGH,29,F,Singapore,pr,,Local transmission,,,,TRUE,NA,NA,NA
-1007,2020-04-01,CGH,62,F,Singapore,citizen,,Local transmission,,,Orange Ballroom at 845 Geylang Road; Orange Ballroom at  845 Geylang Road,TRUE,NA,NA,NA
+1007,2020-04-01,CGH,62,F,Singapore,citizen,,Local transmission,,,Orange Ballroom at 845 Geylang Road; Orange Ballroom at 845 Geylang Road,TRUE,NA,NA,NA
 1008,2020-04-01,NUH,76,M,Singapore,citizen,,Local transmission,,"1030, 1031",,TRUE,NA,NA,NA
 1009,2020-04-01,NUH,48,M,Singapore,citizen,,Local transmission,,,Maxwell MRT station at 50 Neil Road,TRUE,NA,NA,NA
 1010,2020-04-01,NUH,27,F,Singapore,citizen,,Local transmission,,,Black Tap at 10 Bayfront Avenue,TRUE,NA,NA,NA
@@ -1071,7 +1071,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1070,2020-04-03,NCID,34,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
 1071,2020-04-03,KTPH,84,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 1072,2020-04-03,NTFGH,28,M,Bangladesh,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
-1073,2020-04-03,KTPH,26,F,Singapore,citizen,,Local transmission,,,Orange Ballroom at  845 Geylang Road,TRUE,NA,NA,NA
+1073,2020-04-03,KTPH,26,F,Singapore,citizen,,Local transmission,,,Orange Ballroom at 845 Geylang Road,TRUE,NA,NA,NA
 1074,2020-04-03,SKH,41,M,India,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 1075,2020-04-03,NCID,67,F,Philippines,wp,,Local transmission,,,Wilby Residences at 25 Wilby Road,TRUE,NA,NA,NA
 1076,2020-04-03,NCID,54,M,Singapore,pr,,Local transmission,,,Keppel Shipyard at 51 Pioneer Sector 1,TRUE,NA,2020-04-06,NA
@@ -1113,7 +1113,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1112,2020-04-03,KTPH,32,M,Myanmar,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 1113,2020-04-03,NTFGH,42,M,Bangladesh,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
 1114,2020-04-03,CGH,28,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
-1115,2020-04-04,NCID,66,F,Singapore,citizen,,Local transmission,,,Orange Ballroom at 845 Geylang Road; Orange Ballroom at  845 Geylang Road,TRUE,NA,NA,NA
+1115,2020-04-04,NCID,66,F,Singapore,citizen,,Local transmission,,,Orange Ballroom at 845 Geylang Road; Orange Ballroom at 845 Geylang Road,TRUE,NA,NA,NA
 1116,2020-04-04,NCID,18,M,Singapore,citizen,,Local transmission,999,,,TRUE,NA,NA,NA
 1117,2020-04-04,SKH,24,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 1118,2020-04-04,SKH,26,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA

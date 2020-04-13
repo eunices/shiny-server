@@ -45,6 +45,7 @@ url2 = "https://www.againstcovid19.com/singapore/cases/search"
 df = get_alternative_data()
 df_cases_day = get_df_cases_day()
 events = get_events()
+lp_clust = get_clusters()
 ```
 
 ```{r}
@@ -184,8 +185,7 @@ gs = list(ggplot(data_1st_wave, aes(x=reorder(camelcase_labeller("", country.of.
     theme(axis.text.y=element_text(size=rel(1))) +
     guides(fill=F) +
     geom_text(aes(fill=country.of.origin, y=N+5), colour = "black", 
-              fontface = "bold", size=3, show.legend = FALSE,
-              label.padding = unit(0.1, "lines")),
+              fontface = "bold", size=3, show.legend = FALSE),
 
   ggplot(data_2nd_wave, aes(label = country.of.origin, size = N, angle=90)) +
     geom_text_wordcloud_area(eccentricity=.35,
@@ -376,9 +376,10 @@ renderPlot({
 ### Deaths
 
 ```{r}
-cols = c("age", "gender", "patient.nationality", "patient.citizen",
-         "confirmed.at.date", "infection.source", "deceased.at.date")
+cols = c("age", "gender", "patient.nationality", "patient.citizen", "infection.source",
+         "confirmed.at.date", "deceased.at.date")
 deceased = df[df$patient.status == "Deceased", ..cols]
+deceased$duration = as.numeric(deceased$deceased.at.date - deceased$confirmed.at.date+1)
 deceased$patient.citizen = unlist(lapply(deceased$patient.citizen, function(word) {
   if(nchar(word) ==2) toupper(word) else camelcase_labeller("", word)
 }))
@@ -388,8 +389,13 @@ Number of deceased: `r dim(deceased)[1]`
 
 [Fatalities are higher for elderly above 65](https://www.businessinsider.sg/most-us-coronavirus-deaths-ages-65-older-cdc-report-2020-3). 
 ```{r}
-names(deceased) = unlist(lapply(gsub("\\.", " ", cols), function(x) camelcase_labeller("", x)))
-knitr::kable(deceased, "markdown")
+cols = c("age", "gender", "patient.nationality", "patient.citizen", "infection.source",
+         "confirmed.at.date", "deceased.at.date", "duration")
+show_deceased = deceased[, ..cols]
+show_deceased$confirmed.at.date = format(show_deceased$confirmed.at.date, "%d.%m.%y")
+show_deceased$deceased.at.date = format(show_deceased$deceased.at.date, "%d.%m.%y")
+names(show_deceased) = unlist(lapply(gsub("\\.", " ", names(show_deceased)), function(x) camelcase_labeller("", x)))
+knitr::kable(show_deceased, "markdown")
 ```
 
 
@@ -398,7 +404,13 @@ knitr::kable(deceased, "markdown")
 #### Top 10 largest clusters
 
 ```{r}
-clusters = df[cluster != "", list(cases=.N), by=cluster][order(-cases)][1:10]
+cluster_cases = df[cluster != "", c("case", "cluster", "confirmed.at.date", "age")]
+cluster_cases$cluster = strsplit(cluster_cases$cluster, "; ")
+cluster_cases = data.table(unnest(cluster_cases, cols="cluster"))
+clusters = cluster_cases[, list(cases=.N,
+                                min.date=min(confirmed.at.date),
+                                max.date=max(confirmed.at.date)), by=cluster][order(-cases)][1:10]
+clusters$duration = as.numeric(clusters$max.date - clusters$min.date + 1)
 clusters$proportion = paste0(round(clusters$cases / dim(df)[1]*100), "%")
 clusters$no = 1:dim(clusters)[1]
 clusters$cluster.short = unlist(lapply(clusters$cluster, function(word) {
@@ -406,14 +418,17 @@ clusters$cluster.short = unlist(lapply(clusters$cluster, function(word) {
   sapply(word, function(x){toupper(paste(substring(x, 1, 1), collapse = ""))
   })
 }))
-clusters = clusters[, c("no", "cluster", "cases", "proportion", "cluster.short")]
+clusters$cluster.short.no = paste0(clusters$cluster.short, " [", clusters$no, "]")
+clusters = clusters[, c("no", "cluster", "cases", "proportion",  
+                        "min.date", "max.date", "duration", "cluster.short", 
+                        "cluster.short.no")]
+clusters = merge(clusters, lp_clust, by.x="cluster", by.y="cluster", all.x=T, all.y=F)
 ```
 
 ```{r fig.width=10, fig.height=3}
-df = merge(df, clusters[, c("cluster", "no", "cluster.short")], 
-           by.x="cluster", by.y="cluster", all.x=T, all.y=F)
-df$cluster.short = paste0(df$cluster.short, " [", df$no, "]")
-ggplot(df[cluster %in% clusters$cluster], aes(x=reorder(cluster.short, -no))) +
+cluster_cases = merge(cluster_cases, clusters[, c("cluster", "no", "cluster.short.no")], 
+                      by.x="cluster", by.y="cluster", all.x=T, all.y=F)
+ggplot(cluster_cases[cluster %in% clusters$cluster], aes(x=reorder(cluster.short.no, -no))) +
   geom_dotplot(method="histodot", binwidth=.1, stackratio=.7, 
                binpositions="all", fill=cbp1[3], stroke=NA) + theme +
   scale_y_continuous(limits=c(0, 3000), breaks=NULL, name=NULL) +
@@ -422,15 +437,26 @@ ggplot(df[cluster %in% clusters$cluster], aes(x=reorder(cluster.short, -no))) +
 ```
 
 ```{r}
-show_clusters = clusters[, c("no", "cluster", "cases", "proportion")]
+show_clusters = clusters[, c("no", "cluster", "type", "cases", "proportion", 
+                             "min.date", "max.date", "duration")][order(no)]
+show_clusters$min.date = format(show_clusters$min.date, "%d.%m.%y")
+show_clusters$max.date = format(show_clusters$max.date, "%d.%m.%y")
 names(show_clusters) = unlist(lapply(gsub("\\.", " ", names(show_clusters)), 
                               function(x) camelcase_labeller("", x)))
 knitr::kable(show_clusters, "markdown")
 ```
 
 ```{r}
-# TODO: duration of cluster (+ earliest and latest case)
-# TODO: progression of cluster with time (facet plot)
+cluster_cases$no = factor(cluster_cases$no, levels=sort(as.numeric(unique(cluster_cases$no))))
+ggplot(cluster_cases[cluster %in% clusters$cluster], aes(x=age)) +
+  geom_histogram(binwidth=10) + theme +
+  facet_wrap(~no, ncol=3, scales="free_y") + 
+  scale_y_continuous(breaks=breaks_f) +
+  scale_x_continuous(breaks=breaks_f) +
+  ylab("Number of people\n") + xlab("\nAge") #
+```
+
+```{r}
 # TODO: type of venue of cluster/ map of cluster (ggmap)
 ```
 

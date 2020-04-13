@@ -8,6 +8,13 @@ camelcase_labeller <- function(variable, value){
     sapply(words, paste, collapse=" ")
 }
 
+breaks_f <- function(v) {
+  min = floor(min(v))
+  max = ceiling(max(v))
+  inc = ifelse(max > 50, 10, 2)
+  seq(0, max, inc)
+}
+
 blank_theme <- theme_minimal() +
   theme(
   axis.title.x = element_blank(),

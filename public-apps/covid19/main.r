@@ -34,6 +34,13 @@ get_events = function() {
     events
 }
 
+get_clusters = function() {
+    filename = 'clusters.csv'
+    print(paste0(Sys.time(), ": Read clusters data from ", filename, "."))
+    clusters = fread(filename)
+    clusters
+}
+
 clean_data = function(df, write=F) {
     print(paste0(Sys.time(), ": Cleaning patient field."))
 
