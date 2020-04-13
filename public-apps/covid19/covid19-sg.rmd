@@ -46,6 +46,8 @@ df = get_alternative_data()
 df_cases_day = get_df_cases_day()
 events = get_events()
 lp_clust = get_clusters()
+
+cbp1 = c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 ```
 
 ```{r}
@@ -80,12 +82,6 @@ labels$x = labels$xend - 5
 labels$y = labels$yend + sample(2:6, size=length(labels$yend), replace=T)*50
 labels$infection.source = "Local transmission"
 
-lab_cols = data.frame(label=c("Event", "Event/measure",
-                              "Imported case", "Local transmission", 
-                              "Measure", "Unknown"),
-                      colour=c(cbp1[c(5, 2, 6, 3)], "tomato1", cbp1[1]))
-
-cbp1 = c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 renderPlot({
 
   data = df[,list(N=.N),by=c("confirmed.at.date", "infection.source")]
@@ -98,8 +94,10 @@ renderPlot({
     xlab("") + ylab("Number of cases detected\n") +
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
     scale_fill_manual(name="", 
-                      labels=lab_cols$label,
-                      values=lab_cols$colour) + 
+                      labels=c("Event", "Event/measure",
+                              "Imported case", "Local transmission", 
+                              "Measure", "Unknown"),
+                      values=c(cbp1[c(5, 2, 6, 3)], "tomato1", cbp1[1])) + 
     theme +
     theme(legend.position="bottom", legend.box = "horizontal", 
           axis.text.x=element_text(angle = 90)) +
@@ -199,8 +197,8 @@ From 7 Apr onwards, there was a greater number of unlinked cases.
 style = "display: inline-block;vertical-align:top;padding-right: 20px"
 bootstrapPage(
   div(style=style, dateRangeInput("range_date", "Date range", 
-                                  start = min_date, end = max_date, 
-                                  min = min_date, max = max_date)))
+                                   start = min_date, end = max_date, 
+                                   min = min_date, max = max_date)))
 renderPlot({
     min_date = input$range_date[1]
     max_date = input$range_date[2]
