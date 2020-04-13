@@ -493,7 +493,7 @@ Note: some clusters had more than one locality on the map but were only assigned
 
 **From 2 Apr 2020**, data was collected based on the [MOH press releases annexes](https://www.moh.gov.sg/news-highlights). 
 
-In addition, the following was done to the dataset collected from `r url1`:
+In addition, the following was done to the earlier dataset collected from `r url1`:
 
 1. Prior data was augmented from this [Straits Times news article](https://www.straitstimes.com/singapore/health/novel-coronavirus-cases-in-singapore) retrospectively with information on clusters and links which were omitted from `r url1`.
 2. The MOH annex format was adopted, as it was more comprehensive (more variables) wher certain fields, e.g. links, cluster and hospital were missing prior to that. 
@@ -501,14 +501,14 @@ In addition, the following was done to the dataset collected from `r url1`:
 4. Columns which were already captured in other columns (from `r url1`) were removed because they could result in conflicting columns.
 5. Add a `deceased.at.date` column.
 
-There are some differences between the dataset from `r url1` as compared to the MOH annexes:
+There are some differences between the earlier dataset from `r url1` as compared to the MOH annexes:
 
 1. Does not have hospital information.
 2. Does not have cluster information or links (for non-cluster cases).
 3. One imported country which is derived from the travel history field in the MOH annex. Where there are multiple countries, it is labelled as "unclear origin". 
 4. Long term pass and work pass status seem to be inaccurately captured.
 
-The specific steps taken to get the data: 
+The specific steps taken for the later dataset from MOH Annexes: 
 
 1. Adding to daily summary statistics, captured in `cases.csv`.
 2. Adding to the case-level dataset, captured in `9999-01-01-data.csv`.
