@@ -7,9 +7,8 @@ output:
     theme: flatly
 ---
 
-> **DISCLAIMER: I am not an epidemiologist, so the information below should not be used for policy. Neither has this document gone through peer review, so please do not cite it.**
+> **DISCLAIMER: Not an epidemiologist, so the information below should not be used for policy. Neither has this document gone through peer review, so please do not cite it.**
 
----
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
@@ -17,7 +16,7 @@ knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
 
 ```{r}
 # Libraries
-library(rvest)
+# library(rvest)
 library(ggplot2)
 library(tidyr)
 library(plyr)
@@ -33,7 +32,7 @@ source('util.r')
 theme = theme_bw()
 ```
 
-```{r}
+```{r include=F}
 url1 = "https://co.vid19.sg/cases/search"
 url2 = "https://www.againstcovid19.com/singapore/cases/search"
 # df = try({get_data(url1)})
@@ -513,5 +512,13 @@ The specific steps taken to get the data:
 6. No detailed annexes from 5-6 Apr 2020, only cluster links and release dates updated.
 7. The `confirmed.at.date` is press release date, not the `confirmed at date` provided by MOH Annex for dataset collected from 2 Apr 2020, whereas it was otherwise so prior to 2 Apr 2020.
 
+### Session information
+
+```{r}
+getS3method("print","sessionInfo")(sessionInfo()[-8])
+```
+
 ---
-This document was created by Eunice J.Y. Soh ([eunices.github.io](https://eunices.github.io)).
+This document was created by Eunice J.Y. Soh ([eunices.github.io](https://eunices.github.io)). 
+
+Thanks to Ong Xin Rui and DN for feedback.
