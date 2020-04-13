@@ -474,7 +474,7 @@ pal = colorFactor(c("#8f5717", "#d48224", # construction, dorm
                     "#25b5db", "#1484c9", # events, food
                     "#863eab", "#3063ba", # nursing home, recreation
                     "#e6da09", "#b081d4", # religious, residential
-                    "#1aad0c", "#59cce3", "#38ba36" # school, shoppping, work
+                    "#1aad0c", "#59cce3", "#8ded8c" # school, shoppping, work
                     ), domain=types)
 leaflet(clusters[!(is.na(x) | is.na(y))]) %>% addProviderTiles(providers$Stamen.Toner) %>%
  addCircleMarkers(lat=~y, lng=~x, radius=~5+(cases/10), stroke=FALSE, fillOpacity=0.7,
