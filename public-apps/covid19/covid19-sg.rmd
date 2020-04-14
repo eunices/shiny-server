@@ -332,7 +332,7 @@ df_deceased_age[is.na(df_deceased_age)] = 0
 
 show_deceased_age = df_deceased_age[, c("category", "Deceased", "Recovered", "cfr")]
 names(show_deceased_age)[which(names(show_deceased_age)=="cfr")] = "CFR (%)" 
-names(show_deceased_age)[which(names(show_deceased_age)=="category")] = "Category" 
+names(show_deceased_age)[which(names(show_deceased_age)=="category")] = "Age category" 
 show_deceased_age %>%
   mutate(`CFR (%)`=cell_spec(`CFR (%)`, "html", color="white", background=ifelse(`CFR (%)`>20, cbp1[7], cbp1[3]))) %>%
   kable("html", escape=F, align="c") %>%
