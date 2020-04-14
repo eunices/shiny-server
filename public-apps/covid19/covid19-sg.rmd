@@ -373,7 +373,7 @@ renderPlot({
     list(cases=.N) , by=c("confirmed.at.date", "hospital")], aes(x=confirmed.at.date, y=cases)) +
     geom_bar(stat="identity", color=cbp1[6]) +
     facet_wrap(~hospital) +
-    ylab("Number of new cases\n") + xlab("") + 
+    ylab("Number of new cases\n") + xlab("") + ggtitle("New cases for hospitals")
     theme
 })
 ```
@@ -386,7 +386,7 @@ renderPlot({
   ggplot(melted_df_cases_day_hosp[hospital !="" & variable=="I"], aes(x=date, y=value)) +
     geom_line(show.legend=F) +
     facet_wrap(~hospital) +
-    ylab("Number of active cases in hospital\n") + xlab("") + 
+    ylab("Number of active cases in hospital\n") + xlab("") + ggtitle("Active cases on hospitals") +
     theme
 })
 ```
@@ -466,13 +466,14 @@ renderPlot({
 #### Top 10 largest clusters
 
 ```{r}
-cluster_cases = df[cluster != "", c("case", "cluster", "confirmed.at.date", "age")]
+cluster_cases = df[cluster != "", c("case", "cluster", "confirmed.at.date", "age", "patient.citizen")]
 cluster_cases$cluster = strsplit(cluster_cases$cluster, "; ")
 cluster_cases = data.table(unnest(cluster_cases, cols="cluster"))
 
 clusters = cluster_cases[, list(cases=.N,
                                 min.date=min(confirmed.at.date),
-                                max.date=max(confirmed.at.date)), by=cluster][order(-cases)]
+                                max.date=max(confirmed.at.date)),
+                          by=cluster][order(-cases)]
 clusters$duration = as.numeric(clusters$max.date - clusters$min.date + 1)
 clusters$proportion = paste0(round(clusters$cases / dim(df)[1]*100), "%")
 clusters$no = 1:dim(clusters)[1]
@@ -520,14 +521,29 @@ renderPlot({
   ggplot(cluster_cases[no %in% 1:10], aes(x=age)) +
     geom_histogram(binwidth=10) + theme +
     facet_wrap(~no.bract, ncol=3, scales="free_y") + 
-    theme(strip.background = element_rect(fill=cbp1[3]), 
-          axis.text.x=element_text(size=rel(.8)),
+    theme(axis.text.x=element_text(size=rel(.8)),
           axis.text.y=element_text(size=rel(.8)))+
     scale_y_continuous(breaks=breaks_f) +
     scale_x_continuous(breaks=breaks_f) +
     ylab("Number of people\n") + xlab("\nAge") + ggtitle("Age profile of top 10 largest clusters")
 })
 # TODO if time: https://stackoverflow.com/questions/19440069/ [different colours for type]
+```
+
+```{r}
+renderPlot({
+  cluster_cases$patient.citizen = factor(cluster_cases$patient.citizen,
+    levels=c("citizen", "pr", "wp", "lp", "visitor", "unknown"),
+    labels=c("Citizen", "PR", "WP", "LP", "Visitor", "Unknown"))
+  ggplot(cluster_cases[no %in% 1:10], aes(x=patient.citizen, fill=patient.citizen)) +
+    geom_bar(stat="count") + theme +
+    facet_wrap(~no.bract, ncol=3, scales="free_y") + 
+    theme(axis.text.x=element_text(size=rel(1)),
+          axis.text.y=element_text(size=rel(1)))+
+    scale_y_continuous(breaks=breaks_f) +
+    scale_fill_manual(values=cbp1[c(2, 7, 3, 6, 4, 1)]) +
+    ylab("Number of people\n") + xlab("\nStatus") + ggtitle("Status of top 10 largest clusters")
+})
 ```
 
 ```{r}
