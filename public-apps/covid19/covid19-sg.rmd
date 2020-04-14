@@ -313,7 +313,7 @@ renderPlot({
     geom_point(color=cbp1[7], size=1) + 
     xlab("") + ylab("Case Fatality Rate (dark orange)\n") + 
     scale_y_continuous(sec.axis=sec_axis(~ ./death_scale, name="Cumulative deaths (light orange)\n",
-                                         breaks=breaks_f)) +
+                                         breaks=breaks_f, minor_breaks=breaks_f)) +
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") + theme +
     theme(axis.text.x=element_text(angle = 90))
 })
