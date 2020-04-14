@@ -373,7 +373,7 @@ renderPlot({
     list(cases=.N) , by=c("confirmed.at.date", "hospital")], aes(x=confirmed.at.date, y=cases)) +
     geom_bar(stat="identity", color=cbp1[6]) +
     facet_wrap(~hospital) +
-    ylab("Number of new cases\n") + xlab("") + ggtitle("New cases for hospitals")
+    ylab("Number of new cases\n") + xlab("") + ggtitle("New cases conveyed to hospitals")
     theme
 })
 ```
@@ -386,7 +386,7 @@ renderPlot({
   ggplot(melted_df_cases_day_hosp[hospital !="" & variable=="I"], aes(x=date, y=value)) +
     geom_line(show.legend=F) +
     facet_wrap(~hospital) +
-    ylab("Number of active cases in hospital\n") + xlab("") + ggtitle("Active cases on hospitals") +
+    ylab("Number of active cases in hospital\n") + xlab("") + ggtitle("Active cases in hospitals") +
     theme
 })
 ```
