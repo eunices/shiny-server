@@ -541,7 +541,7 @@ renderPlot({
     theme(axis.text.x=element_text(size=rel(1)),
           axis.text.y=element_text(size=rel(1)))+
     scale_y_continuous(breaks=breaks_f) +
-    scale_fill_manual(values=cbp1[c(2, 7, 3, 6, 4, 1)]) +
+    scale_fill_manual(name="", values=cbp1[c(2, 7, 3, 6, 4, 1)]) +
     ylab("Number of people\n") + xlab("\nStatus") + ggtitle("Status of top 10 largest clusters")
 })
 ```
