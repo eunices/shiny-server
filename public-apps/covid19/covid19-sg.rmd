@@ -95,6 +95,8 @@ renderPlot({
   data = df[,list(N=.N),by=c("confirmed.at.date", "infection.type")]
   data = merge(data, df[,list(R=-.N),by=c("recovered.at.date")], 
                by.x="confirmed.at.date", by.y="recovered.at.date", all.x=T, all.y=T)
+  data = merge(data, df[,list(D=-.N),by=c("deceased.at.date")], 
+               by.x="confirmed.at.date", by.y="deceased.at.date", all.x=T, all.y=T)
   data = merge(data, labels, by.x=c("confirmed.at.date", "infection.type"), 
                by.y=c("date", "infection.type"), all.x=T, all.y=T)
 
@@ -102,13 +104,14 @@ renderPlot({
                aes(x=confirmed.at.date, y=N, fill=infection.type, label=no)) +
     geom_bar(position='stack', stat="identity") + 
     geom_bar(aes(x=confirmed.at.date, y=R, fill=cbp1[7]), position='stack', stat="identity") + 
+    geom_bar(aes(x=confirmed.at.date, y=D, fill="#525252"), position='stack', stat="identity") + 
     xlab("") + ylab("Number of new cases detected\n") +
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
     scale_fill_manual(name="", 
-                      labels=c("Recovered", "Event", "Event/measure",
-                              "Imported case", "Local linked", "Local unlinked",
-                              "Measure", "Unknown"),
-                      values=c(cbp1[c(4, 5, 2, 6, 3)], "#8ccff5", "tomato1", cbp1[1])) + 
+                      labels=c("Deceased", "Recovered", "Event", "Event/measure",
+                               "Imported case", "Local linked", "Local unlinked",
+                               "Measure", "Unknown"),
+                      values=c("#525252", cbp1[c(4, 5, 2, 6, 3)], "#8ccff5", "tomato1", cbp1[1])) + 
     theme +
     theme(legend.position="bottom", legend.box = "horizontal", 
           axis.text.x=element_text(angle = 90)) +
