@@ -521,8 +521,8 @@ renderPlot({
   ggplot(cluster_cases[no %in% 1:10], aes(x=age)) +
     geom_histogram(binwidth=10) + theme +
     facet_wrap(~no.bract, ncol=3, scales="free_y") + 
-    theme(axis.text.x=element_text(size=rel(.8)),
-          axis.text.y=element_text(size=rel(.8)))+
+    theme(axis.text.x=element_text(size=rel(1)),
+          axis.text.y=element_text(size=rel(1)))+
     scale_y_continuous(breaks=breaks_f) +
     scale_x_continuous(breaks=breaks_f) +
     ylab("Number of people\n") + xlab("\nAge") + ggtitle("Age profile of top 10 largest clusters")
