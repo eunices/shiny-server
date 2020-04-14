@@ -1,6 +1,6 @@
 library(data.table)
 ddir = "C:\\Users\\ejysoh\\Desktop\\sg-covid-cases\\"
-filename = "2020-04-13.csv"
+filename = "2020-04-14.csv"
 type = 1
 # type 1: without country of origin
 # type 2: with country of origin
@@ -29,17 +29,20 @@ d$confirmed.at.date = as.character(Sys.Date())
 
 d$hospital = gsub('[0-9]+', '', d$hospital)
 d[hospital=="Pending"]$hospital = 'unknown'
-d[hospital=="PEH"]$hospital = 'Parkway East Hospital'
-d[hospital=="MEN"]$hospital = 'Mount Elizabeth Novena Hospital'
 d[hospital=="CIF"]$hospital = 'Community Isolation Facility'
+d[hospital=="MEN"]$hospital = 'Mount Elizabeth Novena Hospital'
 d[hospital=="MAH"]$hospital = 'Mount Alvernia Hospital'
+d[hospital=="GH"]$hospital = 'Gleneagles Hospital'
+d[hospital=="PEH"]$hospital = 'Parkway East Hospital'
+d[hospital=="FPH"]$hospital = 'Farrer Park Hospital'
 
 d$patient.nationality = trimws(gsub("\\n", "", 
                                lapply(d$nat, function(text) strsplit(text, "\\(")[[1]][1])))
 d[grepl("singapore permanent", tolower(nat)),]$patient.nationality = "Singapore"
 d[grepl("singapore citizen", tolower(nat)),]$patient.nationality = "Singapore"
+d[grepl("US", nat),]$patient.nationality = "United States of America"
+d[grepl("UK", nat),]$patient.nationality = "United Kingdom"
 d[grepl("pending", tolower(nat)),]$patient.nationality = "unknown"
-
 
 d$patient.citizen = "visitor"
 d[grepl("long", tolower(nat)),]$patient.citizen = "lp"
@@ -48,7 +51,6 @@ d[grepl("permanent", tolower(nat)),]$patient.citizen = "pr"
 d[grepl("citizen", tolower(nat)),]$patient.citizen = "citizen"
 d[grepl("pending", tolower(nat)),]$patient.citizen = "unknown"
 d$nat = NULL
-
 
 d$infection.source = "Local transmission"
 d[grepl("local", tolower(type))]$infection.source = "Local transmission"
