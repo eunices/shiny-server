@@ -567,6 +567,7 @@ renderPlot({
     facet_wrap(~no.bract, ncol=3, scales="free_y") + 
     theme(axis.text.x = element_blank(), 
           axis.ticks = element_blank(),
+          legend.position="bottom", legend.box = "vertical",
           axis.text.y=element_text(size=rel(1)))+
     scale_y_continuous(breaks=breaks_f) +
     scale_fill_manual(name="", values=cbp1[c(2, 7, 3, 6, 4, 1)]) +
