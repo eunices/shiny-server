@@ -355,8 +355,8 @@ renderPlot({
   sec_axis_name = "% of maximum patient load\n"
   ggplot(data=df_cases_day, aes(x=date, y=I2)) +
     geom_ribbon(aes(ymin=0, ymax=I2), fill="#3296cf", alpha=.5) + 
-    geom_line(color=cbp1[6], size=1) + 
-    geom_point(color=cbp1[6], size=2) + 
+    geom_line(color=cbp1[6], size=.5) + 
+    geom_point(color=cbp1[6], size=1) + 
     geom_vline(xintercept=date_no_hosp, size=1, col=cbp1[2], linetype="dotted") +
     xlab("") + ylab("Number of hospitalised persons\n") + 
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
