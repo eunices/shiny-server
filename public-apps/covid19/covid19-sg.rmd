@@ -264,9 +264,6 @@ renderPlot({
 
 #### Case fatality rate and deaths 
 
-Typically, Case Fatality Rate (CFR) will increase when hospitals get overwhelmed. 
-In addition, [fatalities are higher for elderly above 65](https://www.businessinsider.sg/most-us-coronavirus-deaths-ages-65-older-cdc-report-2020-3). 
-
 ```{r}
 cols = c("age", "gender", "patient.nationality", "patient.citizen", "infection.source",
          "confirmed.at.date", "deceased.at.date")
@@ -277,7 +274,10 @@ deceased$patient.citizen = unlist(lapply(deceased$patient.citizen, function(word
 }))
 ```
 
-Number of deceased to date: `r dim(deceased)[1]`
+- Number of deceased to date: `r dim(deceased)[1]`
+
+Typically, Case Fatality Rate (CFR) will increase when hospitals get overwhelmed. 
+In addition, [fatalities are higher for elderly above 65](https://www.businessinsider.sg/most-us-coronavirus-deaths-ages-65-older-cdc-report-2020-3). 
 
 ```{r}
 death_scale = 1
@@ -387,9 +387,10 @@ is.recovered = table(!is.na(df$days.to.recover.resources))
 median_recovery_time = as.numeric(median(df$days.to.recover.resources, na.rm=T))
 mean_recovery_time = round(as.numeric(mean(df$days.to.recover.resources, na.rm=T)), 1)
 ```
-- Number of recovered persons: 
+
+- Number of recoveries to date: 
   `r is.recovered[2]`
-- Proportion of recovered persons: 
+- Proportion of recoveries to date: 
   `r round(prop.table(is.recovered)[2]*100, 1)`%
 
 - Median time to recovery (from confirmed): 
