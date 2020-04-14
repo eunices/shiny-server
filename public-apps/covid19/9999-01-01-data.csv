@@ -126,7 +126,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 125,2020-03-06,NCID,65,F,Singapore,citizen,,Local transmission,,,Safra Jurong private dinner function,TRUE,2020-03-05,2020-03-19,NA
 126,2020-03-06,NCID,77,M,Singapore,citizen,,Local transmission,109,,,TRUE,2020-03-05,2020-04-12,NA
 127,2020-03-05,NCID,64,F,Singapore,citizen,,Local transmission,,,Safra Jurong private dinner function,TRUE,2020-03-05,2020-04-06,NA
-128,2020-03-06,NCID,70,M,Singapore,citizen,,Local transmission,,,Safra Jurong private dinner function,TRUE,2020-03-05,NA,NA
+128,2020-03-06,NCID,70,M,Singapore,citizen,,Local transmission,,,Safra Jurong private dinner function,TRUE,2020-03-05,NA,2020-04-14
 129,2020-03-06,NTFGH,68,F,Singapore,citizen,,Local transmission,,,Safra Jurong private dinner function,TRUE,NA,NA,NA
 130,2020-03-06,NTFGH,66,M,Singapore,citizen,,Local transmission,,,Safra Jurong private dinner function,TRUE,NA,NA,NA
 131,2020-03-06,NTFGH,66,M,Singapore,citizen,,Local transmission,,,Safra Jurong private dinner function,TRUE,2020-03-02,2020-03-17,NA

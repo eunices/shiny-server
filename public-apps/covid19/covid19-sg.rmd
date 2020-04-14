@@ -208,7 +208,7 @@ gs = list(ggplot(data_1st_wave, aes(x=reorder(camelcase_labeller("", country.of.
     xlab("") + ylab("\nNumber of imported cases detected") + ggtitle("Second wave") +
     theme(axis.text.y=element_text(size=rel(1))) +
     guides(fill=F) +
-    scale_y_continuous(breaks=seq(0, max(data_2nd_wave$N, na.rm=T)+20, 20)) +
+    scale_y_continuous(breaks=seq(0, max(data_2nd_wave$N, na.rm=T)+40, 20)) +
     geom_text(aes(fill=country.of.origin, y=N+3), colour = "black", 
               fontface = "bold", size=3, show.legend = FALSE, hjust = 0),
 
@@ -275,8 +275,23 @@ deceased$patient.citizen = unlist(lapply(deceased$patient.citizen, function(word
 
 - Number of deceased to date: `r dim(deceased)[1]`
 
+```{r}
+cols = c("age", "gender", "patient.nationality", "patient.citizen", "infection.source",
+         "confirmed.at.date", "deceased.at.date", "duration")
+show_deceased = deceased[, ..cols]
+show_deceased$confirmed.at.date = format(show_deceased$confirmed.at.date, "%d.%m.%y")
+show_deceased$deceased.at.date = format(show_deceased$deceased.at.date, "%d.%m.%y")
+names(show_deceased) = unlist(
+  lapply(gsub("\\.", " ", names(show_deceased)), function(x) camelcase_labeller("", x)))
+
+show_deceased %>%
+  mutate(`Infection Source`=cell_spec(`Infection Source`, "html", color="white", background=
+    ifelse(grepl("Local transmission", `Infection Source`), cbp1[7], cbp1[3]))) %>%
+  kable("html", escape=F, align="c") %>%
+  kable_styling(c("condensed", "responsive"), full_width=F) 
+```
+
 Typically, Case Fatality Rate (CFR) will increase when hospitals get overwhelmed. 
-In addition, [fatalities are higher for elderly above 65](https://www.businessinsider.sg/most-us-coronavirus-deaths-ages-65-older-cdc-report-2020-3). 
 
 ```{r}
 death_scale = 1
@@ -295,18 +310,31 @@ renderPlot({
 })
 ```
 
-```{r}
-cols = c("age", "gender", "patient.nationality", "patient.citizen", "infection.source",
-         "confirmed.at.date", "deceased.at.date", "duration")
-show_deceased = deceased[, ..cols]
-show_deceased$confirmed.at.date = format(show_deceased$confirmed.at.date, "%d.%m.%y")
-show_deceased$deceased.at.date = format(show_deceased$deceased.at.date, "%d.%m.%y")
-names(show_deceased) = unlist(
-  lapply(gsub("\\.", " ", names(show_deceased)), function(x) camelcase_labeller("", x)))
+In addition, [fatalities are higher for elderly above 65](https://www.businessinsider.sg/most-us-coronavirus-deaths-ages-65-older-cdc-report-2020-3). 
 
-show_deceased %>%
-  mutate(`Infection Source`=cell_spec(`Infection Source`, "html", color="white", background=
-    ifelse(grepl("Local transmission", `Infection Source`), cbp1[7], cbp1[3]))) %>%
+```{r}
+min = as.numeric(min(df$age, na.rm=T))
+max = as.numeric(max(df$age, na.rm=T))
+df_deceased_age = data.table(category=cut(as.numeric(df$age), breaks=seq(0, max, by=10), right = FALSE),
+                             age=df$age, status=df$patient.status)
+df_deceased_age = df_deceased_age[, list(cases=.N) , by=c("category", "status")]
+df_deceased_age = dcast(df_deceased_age, category~status, fun.aggregate=NULL, value.var="cases")
+df_deceased_age$category = as.character(df_deceased_age$category)
+df_deceased_age = df_deceased_age[!is.na(category), c("category", "Deceased",  "Recovered")]
+df_deceased_age$category = as.character(df_deceased_age$category)
+df_deceased_age = rbind(df_deceased_age, 
+                        data.frame(category="Total", 
+                                   Deceased=sum(as.numeric(df_deceased_age$`Deceased`), na.rm=T),
+                                   Recovered=sum(as.numeric(df_deceased_age$`Recovered`), na.rm=T)))
+df_deceased_age$cfr = 
+  round(df_deceased_age$Deceased / (df_deceased_age$Deceased + df_deceased_age$Recovered)*100, 2)
+df_deceased_age[is.na(df_deceased_age)] = 0
+
+show_deceased_age = df_deceased_age[, c("category", "Deceased", "Recovered", "cfr")]
+names(show_deceased_age)[which(names(show_deceased_age)=="cfr")] = "CFR (%)" 
+names(show_deceased_age)[which(names(show_deceased_age)=="category")] = "Category" 
+show_deceased_age %>%
+  mutate(`CFR (%)`=cell_spec(`CFR (%)`, "html", color="white", background=ifelse(`CFR (%)`>20, cbp1[7], cbp1[3]))) %>%
   kable("html", escape=F, align="c") %>%
   kable_styling(c("condensed", "responsive"), full_width=F) 
 ```
