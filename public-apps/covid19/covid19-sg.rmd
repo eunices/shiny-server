@@ -291,8 +291,6 @@ names(show_deceased) = unlist(
   lapply(gsub("\\.", " ", names(show_deceased)), function(x) camelcase_labeller("", x)))
 
 show_deceased %>%
-  mutate(`Infection Source`=cell_spec(`Infection Source`, "html", color="white", background=
-    ifelse(grepl("Local transmission", `Infection Source`), cbp1[7], cbp1[3]))) %>%
   mutate(`Age`=cell_spec(`Age`, "html", color="white", background=
     ifelse(`Age` < 60, cbp1[7], cbp1[3]))) %>%
   kable("html", escape=F, align="c") %>%
