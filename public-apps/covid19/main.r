@@ -45,7 +45,7 @@ get_clusters = function() {
 }
 
 get_df_cases_day_hosp = function(df) {
-    today = as.Date("2020-04-14")
+    today = max(df$confirmed.at.date)
     df = df[!tolower(hospital) %in% c("unknown", "not admitted")]
     df$I = mapply(function(min, max) if(is.na(max)) seq(min, today, by="day") else seq(min, max, by="day"),
     min=df$confirmed.at.date, max=df$recovered.at.date)

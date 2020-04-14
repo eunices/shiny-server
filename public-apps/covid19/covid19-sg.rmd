@@ -93,19 +93,22 @@ labels$infection.type = "Local unlinked"
 renderPlot({
 
   data = df[,list(N=.N),by=c("confirmed.at.date", "infection.type")]
+  data = merge(data, df[,list(R=-.N),by=c("recovered.at.date")], 
+               by.x="confirmed.at.date", by.y="recovered.at.date", all.x=T, all.y=T)
   data = merge(data, labels, by.x=c("confirmed.at.date", "infection.type"), 
                by.y=c("date", "infection.type"), all.x=T, all.y=T)
 
   plt = ggplot(data=data[confirmed.at.date >= min_date & confirmed.at.date <= max_date], 
                aes(x=confirmed.at.date, y=N, fill=infection.type, label=no)) +
     geom_bar(position='stack', stat="identity") + 
+    geom_bar(aes(x=confirmed.at.date, y=R, fill=cbp1[7]), position='stack', stat="identity") + 
     xlab("") + ylab("Number of new cases detected\n") +
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
     scale_fill_manual(name="", 
-                      labels=c("Event", "Event/measure",
+                      labels=c("Recovered", "Event", "Event/measure",
                               "Imported case", "Local linked", "Local unlinked",
                               "Measure", "Unknown"),
-                      values=c(cbp1[c(5, 2, 6, 3)], "#8ccff5", "tomato1", cbp1[1])) + 
+                      values=c(cbp1[c(4, 5, 2, 6, 3)], "#8ccff5", "tomato1", cbp1[1])) + 
     theme +
     theme(legend.position="bottom", legend.box = "horizontal", 
           axis.text.x=element_text(angle = 90)) +
@@ -234,9 +237,11 @@ date_no_hosp = as.Date("2020-03-24") # date when hospitalisation not required fo
 
 ```{r}
 mean_hospitalisation_rate = mean((df_cases_day[date>=date_no_hosp]$I2 + df_cases_day[date>=date_no_hosp]$I1)/ df_cases_day[date>=date_no_hosp]$case_load * 100, na.rm=T)
+mean_icu_rate = mean((df_cases_day[date>=date_no_hosp]$I1)/ df_cases_day[date>=date_no_hosp]$case_load * 100, na.rm=T)
 ```
 
-- Mean percentage of cases in hospital care (from `r format(date_no_hosp, "%d %b %Y")`): `r  round(mean_hospitalisation_rate, 1)`%
+- Mean percentage of cases in ICU (from `r format(date_no_hosp, "%d %b %Y")`): `r  round(mean_icu_rate, 1)`%
+- Mean percentage of cases in hospital care [ICU + hospitalised] (from `r format(date_no_hosp, "%d %b %Y")`): `r  round(mean_hospitalisation_rate, 1)`%
 
 Case load is an important metric that is correlated also with hospital load. These are split into those that are in ICU, those that are hospitalised and those which test positive but have no symptoms and are in isolation facilities.
  
