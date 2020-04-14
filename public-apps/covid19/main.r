@@ -44,6 +44,31 @@ get_clusters = function() {
     clusters
 }
 
+get_df_cases_day_hosp = function(df) {
+    today = Sys.Date()
+    df = df[!tolower(hospital) %in% c("unknown", "not admitted")]
+    df$I = mapply(function(min, max) if(is.na(max)) seq(min, today, by="day") else seq(min, max, by="day"),
+    min=df$confirmed.at.date, max=df$recovered.at.date)
+    df$R = mapply(function(min, max) { if(is.na(min)) NA else seq(min, max, by="day") }, 
+        min=df$recovered.at.date, max=Sys.Date())
+    df$D = mapply(function(min, max) { if(is.na(min)) NA else seq(min, max, by="day") }, 
+        min=df$deceased.at.date, max=Sys.Date())
+    I = data.table(unnest(df, cols=c(I)))[, c("I", "hospital")][, list(N_I=.N), by=c("I", "hospital")]
+    R = data.table(unnest(df, cols=c(R)))[, c("R", "hospital")][, list(N_R=.N), by=c("R", "hospital")]
+    D = data.table(unnest(df, cols=c(D)))[, c("D", "hospital")][, list(N_D=.N), by=c("D", "hospital")]
+
+    IRD = merge(merge(I, R, by.x=c("I", "hospital"), by.y=c("R", "hospital"), all.x=T, all.y=T), 
+            D, by.x=c("I", "hospital"), by.y=c("D", "hospital"), all.x=T, all.y=T)
+    names(IRD)[which(names(IRD)=="I")] = "date"
+    dates = seq(min(df$confirmed.at.date), max(df$confirmed.at.date), by="day")
+    IRD = data.table(merge(data.frame(date=dates), IRD, by="date", all.x=T, all.y=T))
+    IRD = IRD[!is.na(date),]
+    IRD = IRD[date<=today,]
+    IRD[is.na(IRD)] = 0
+    names(IRD) = c("date", "hospital", "I", "R", "D")
+    IRD
+}
+
 clean_data = function(df, write=F) {
     print(paste0(Sys.time(), ": Cleaning patient field."))
 

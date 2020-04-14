@@ -241,6 +241,7 @@ Case load is an important metric that is correlated also with hospital load. The
  
 ```{r}
 icu_scale = 10
+
 renderPlot({
   ggplot(data=df_cases_day, aes(x=date, y=case_load)) +
     geom_ribbon(aes(ymin=0, ymax=case_load), fill="#8cd6ff", alpha=.5) + 
@@ -316,7 +317,7 @@ Measuring hospital load is key to ensure that hospitals are not overloaded.
 
 There are 9 public acute hospitals in Singapore, with an average capacity of 1,200 beds. Prior to covid-19, they were operating at approximately [75% load](https://www.moh.gov.sg/resources-statistics/healthcare-institution-statistics/beds-occupancy-rate-(bor)). The NCID also provides approximately 300 beds. 
 
-If it is assumed that hospitals can operate at a 90% bed load, to ensure that hospitals are not overtaxed and there is sufficient isolation between Covid-19 patients (more than usual required), then there would be `r max_load` beds available. 
+If it is assumed that hospitals can operate at a 90% bed load, to ensure that hospitals are not overtaxed and there is sufficient isolation between Covid-19 patients (more than usual required), then there would be `r max_load` beds available. Note that this is a very rough estimate and that hospitals could possibly expand in capacity where needed (e.g. in the NCID can be expanded to [>500 beds](https://www.ncid.sg/Facilities-Services/Pages/default.aspx)).
 
 From [24 Mar 2020](https://go.gov.sg/measures24mar), those who still test positive but display no symptoms will no longer be hospitalised but moved to isolation facilities.
 
@@ -336,8 +337,7 @@ renderPlot({
 })
 ```
 
-
-#### Hospital/isolation facilities
+#### Hospitals/isolation facilities
 
 Most cases are currently in the newly-opened NCID to deal with infectious diseases. It was operational [since 7 Sep 2019](https://www.ncid.sg/News-Events/News/Pages/NCID-Official-Opening.aspx).
 
@@ -371,9 +371,23 @@ Note: cases whose hospitals were pending at time of press release and those who 
 renderPlot({
   ggplot(df[!tolower(hospital) %in% c("unknown", "not admitted"), 
     list(cases=.N) , by=c("confirmed.at.date", "hospital")], aes(x=confirmed.at.date, y=cases)) +
-    geom_line() +
+    geom_bar(stat="identity", color=cbp1[6]) +
     facet_wrap(~hospital) +
-    ylab("Number of cases conveyed to hospital\n") + xlab("") + 
+    ylab("Number of new cases\n") + xlab("") + 
+    theme
+})
+```
+
+```{r}
+# TODO: hospitalisation
+df_cases_day_hosp = get_df_cases_day_hosp(df)
+melted_df_cases_day_hosp = melt(df_cases_day_hosp, id.vars=c("date", "hospital"), 
+                                measure.vars=c("I", "R", "D"))
+renderPlot({
+  ggplot(melted_df_cases_day_hosp[hospital !="" & variable=="I"], aes(x=date, y=value)) +
+    geom_line(show.legend=F) +
+    facet_wrap(~hospital) +
+    ylab("Number of active cases in hospital\n") + xlab("") + 
     theme
 })
 ```
