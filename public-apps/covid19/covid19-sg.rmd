@@ -73,31 +73,31 @@ The first case of Covid-19 was detected in Singapore on `r format(min_date, "%d 
 Key measures and events are marked below. Just at a glance, the border control measures and events (category 4) seem to be effacious as the number of imported cases dropped 31 Mar onwards.
 
 ```{r}
-summ = df[,list(N=.N),by=c("confirmed.at.date", "infection.source")]
+summ = df[,list(N=.N),by=c("confirmed.at.date", "infection.type")]
 
 labels = events[]
 labels$xend = labels$date
-labels$yend = summ[confirmed.at.date %in% labels$x, list(sum=sum(N)), by="confirmed.at.date"]$sum
+labels$yend = summ[confirmed.at.date %in% labels$xend, list(sum=sum(N)), by="confirmed.at.date"]$sum
 labels$x = labels$xend - 5
 labels$y = labels$yend + sample(2:6, size=length(labels$yend), replace=T)*50
-labels$infection.source = "Local transmission"
+labels$infection.type = "Local unlinked"
 
 renderPlot({
 
-  data = df[,list(N=.N),by=c("confirmed.at.date", "infection.source")]
-  data = merge(data, labels, by.x=c("confirmed.at.date", "infection.source"), 
-               by.y=c("date", "infection.source"), all.x=T, all.y=T)
+  data = df[,list(N=.N),by=c("confirmed.at.date", "infection.type")]
+  data = merge(data, labels, by.x=c("confirmed.at.date", "infection.type"), 
+               by.y=c("date", "infection.type"), all.x=T, all.y=T)
 
   plt = ggplot(data=data[confirmed.at.date >= min_date & confirmed.at.date <= max_date], 
-               aes(x=confirmed.at.date, y=N, fill=infection.source, label=no)) +
+               aes(x=confirmed.at.date, y=N, fill=infection.type, label=no)) +
     geom_bar(position='stack', stat="identity") + 
     xlab("") + ylab("Number of new cases detected\n") +
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
     scale_fill_manual(name="", 
                       labels=c("Event", "Event/measure",
-                              "Imported case", "Local transmission", 
+                              "Imported case", "Local linked", "Local unlinked",
                               "Measure", "Unknown"),
-                      values=c(cbp1[c(5, 2, 6, 3)], "tomato1", cbp1[1])) + 
+                      values=c(cbp1[c(5, 2, 6, 3)], "#8ccff5", "tomato1", cbp1[1])) + 
     theme +
     theme(legend.position="bottom", legend.box = "horizontal", 
           axis.text.x=element_text(angle = 90)) +
@@ -399,6 +399,9 @@ names(show_deceased) = unlist(lapply(gsub("\\.", " ", names(show_deceased)), fun
 knitr::kable(show_deceased, "markdown")
 ```
 
+```{r}
+# TODO: survival
+```
 
 ### Clusters
 

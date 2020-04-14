@@ -138,5 +138,17 @@ get_alternative_data = function() {
 
     # Age
     df$age = as.numeric(df$age)
-    data.table(df)
+
+    df = data.table(df)
+
+    # Infection source
+    df$infection.type = df$infection.source
+
+    df[grepl("local", tolower(infection.type)) & (cluster == "" & linked.to == "" & linked.to.family == "")]$infection.type =
+        "Local unlinked"
+    df[grepl("local", tolower(infection.type)) & !(cluster == "" & linked.to == "" & linked.to.family == "")]$infection.type =
+        "Local linked"
+   
+    df
+
 }
