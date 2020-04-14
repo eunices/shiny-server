@@ -452,6 +452,7 @@ renderPlot({
 cluster_cases = df[cluster != "", c("case", "cluster", "confirmed.at.date", "age")]
 cluster_cases$cluster = strsplit(cluster_cases$cluster, "; ")
 cluster_cases = data.table(unnest(cluster_cases, cols="cluster"))
+
 clusters = cluster_cases[, list(cases=.N,
                                 min.date=min(confirmed.at.date),
                                 max.date=max(confirmed.at.date)), by=cluster][order(-cases)]
@@ -468,15 +469,16 @@ clusters = clusters[, c("no", "cluster", "cases", "proportion",
                         "min.date", "max.date", "duration", "cluster.short", 
                         "cluster.short.no")]
 clusters = merge(clusters, lp_clust, by.x="cluster", by.y="cluster", all.x=T, all.y=F)
-```
 
-```{r fig.width=10, fig.height=3}
 cluster_cases = merge(cluster_cases, clusters[, c("cluster", "no", "cluster.short.no")], 
                       by.x="cluster", by.y="cluster", all.x=T, all.y=F)
+```
+
+```{r fig.width=10, fig.height=2}
 ggplot(cluster_cases[no %in% 1:10], aes(x=reorder(cluster.short.no, -no))) +
   geom_dotplot(method="histodot", binwidth=.1, stackratio=.7, 
-               binpositions="all", fill=cbp1[3], stroke=NA) + theme +
-  scale_y_continuous(limits=c(0, 3000), breaks=NULL, name=NULL) +
+              binpositions="all", fill=cbp1[3], stroke=NA) + theme +
+  scale_y_continuous(limits=c(0, 100000), breaks=NULL, name=NULL) +
   theme(axis.text.x=element_text(angle = 90, hjust=0.95, vjust=0.2)) + xlab("") + 
   coord_flip()
 ```
