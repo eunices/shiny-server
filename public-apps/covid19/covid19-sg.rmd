@@ -17,6 +17,7 @@ knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
 ```{r}
 # Libraries
 # library(rvest)
+library(knitr)
 library(ggplot2)
 library(tidyr)
 library(plyr)
@@ -25,6 +26,7 @@ library(gridExtra)
 library(ggrepel)
 library(ggwordcloud)
 library(leaflet)
+library(kableExtra)
 source('main.r')
 source('util.r')
 
@@ -135,14 +137,44 @@ show_measures[,1] = c(
   "Good hygiene measures - to reduce transmission probability of virus.")
 
 show_events %>%
-  knitr::kable("html", align = 'clc', caption = 'Events') %>%
-    kableExtra::kable_styling(full_width = F, position = "float_left")
+  kable("html", align='clc', caption='Events') %>%
+    kable_styling(full_width = F, position = "float_left")
  
 show_measures %>%
-  knitr::kable("html", align = 'clc', caption = 'Measures') %>%
-    kableExtra::kable_styling(full_width = F, position = "right")
+  kable("html", align='clc', caption='Measures') %>%
+    kable_styling(full_width=F, position = "right")
 ```
 
+From 7 Apr onwards, there was a greater number of unlinked cases.
+
+#### Clusters through time
+
+```{r}
+
+style = "display: inline-block;vertical-align:top;padding-right: 20px"
+bootstrapPage(
+  div(style=style, dateRangeInput("range_date", "Date range", 
+                                   start = min_date, end = max_date, 
+                                   min = min_date, max = max_date)))
+renderPlot({
+  min_date = input$range_date[1]
+  max_date = input$range_date[2]
+  data = df[df$confirmed.at.date >= min_date & df$confirmed.at.date <= max_date,]
+  data = data[data$infection.source == "Local transmission",]
+  data$clustered = ifelse(data$cluster == "", "Not in cluster", "Cluster case")
+  cluster = data[data$clustered=="Cluster case",]
+  cluster = data[!duplicated(data$cluster),]
+
+  p1 = ggplot(data=cluster, aes(x=confirmed.at.date)) +
+    geom_histogram(stat="bin", binwidth=1, fill=cbp1[1]) + 
+    xlab("") + ylab("Number of clusters\n") +
+    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
+    theme +
+    theme(axis.text.x=element_text(angle = 90))
+  p1
+})
+
+```
 
 #### Two waves
 
@@ -189,46 +221,6 @@ grid.arrange(grobs=gs, layout_matrix=layout)
 
 ```
 
-#### Clusters and unlinked cases through time
-
-From 7 Apr onwards, there was a greater number of unlinked cases.
-
-```{r}
-
-style = "display: inline-block;vertical-align:top;padding-right: 20px"
-bootstrapPage(
-  div(style=style, dateRangeInput("range_date", "Date range", 
-                                   start = min_date, end = max_date, 
-                                   min = min_date, max = max_date)))
-renderPlot({
-    min_date = input$range_date[1]
-    max_date = input$range_date[2]
-    data = df[df$confirmed.at.date >= min_date & df$confirmed.at.date <= max_date,]
-    data = data[data$infection.source == "Local transmission",]
-    data$clustered = ifelse(data$cluster == "", "Not in cluster", "Cluster case")
-    cluster = data[data$clustered=="Cluster case",]
-    cluster = data[!duplicated(data$cluster),]
-
-    p1 = ggplot(data=cluster, aes(x=confirmed.at.date)) +
-      geom_histogram(stat="bin", binwidth=1, fill=cbp1[1]) + 
-      xlab("") + ylab("Number of clusters\n") +
-      scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
-      theme +
-      theme(axis.text.x=element_text(angle = 90))
-
-    p2 = ggplot(data=data[data$cluster=="",], aes(x=confirmed.at.date)) +
-      geom_histogram(stat="bin", binwidth=1, fill=cbp1[1]) + 
-      xlab("") + ylab("Number of local unlinked cases\n") +
-      scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
-      theme +
-      theme(axis.text.x=element_text(angle = 90))
-
-    grid.arrange(p1, p2)
-})
-
-```
-
-
 ### Case load
 
 ```{r} 
@@ -251,8 +243,10 @@ df_cases_day[date>=date_no_hosp,]$hospital_load =
 icu_scale = 10
 renderPlot({
   ggplot(data=df_cases_day, aes(x=date, y=case_load)) +
+    geom_ribbon(aes(ymin=0, ymax=case_load), fill="#8cd6ff", alpha=.5) + 
     geom_line(color=cbp1[3], size=1) + 
     geom_point(color=cbp1[3], size=2) + 
+    geom_ribbon(aes(ymin=0, ymax=I1*icu_scale), fill="#3296cf", alpha=.5) + 
     geom_line(aes(x=date, y=I1*icu_scale), color=cbp1[6], size=1) +
     geom_point(aes(x=date, y=I1*icu_scale), color=cbp1[6], size=2) + 
     xlab("") + ylab("Number of active cases (light blue)\n") + 
@@ -261,6 +255,57 @@ renderPlot({
     theme +
     theme(axis.text.x=element_text(angle = 90))
 })
+```
+
+#### Case fatality rate and deaths 
+
+Typically, Case Fatality Rate (CFR) will increase when hospitals get overwhelmed. 
+In addition, [fatalities are higher for elderly above 65](https://www.businessinsider.sg/most-us-coronavirus-deaths-ages-65-older-cdc-report-2020-3). 
+
+```{r}
+death_scale = 1
+df_cases_day$cfr = df_cases_day$D/(df_cases_day$Recovered+ df_cases_day$D)*100
+df_cases_day[is.na(df_cases_day)] = 0
+renderPlot({
+  ggplot(data=df_cases_day, aes(x=date, y=cfr)) + 
+    geom_ribbon(aes(ymin=0, ymax=D*death_scale), fill="#ffc394", alpha=.5) + 
+    geom_line(aes(y=D*death_scale), color="#e08f4f", size=1) + 
+    geom_point(aes(y=D*death_scale), color="#e08f4f", size=2) + 
+    geom_ribbon(aes(ymin=0, ymax=cfr), fill="#de8035", alpha=.5) + 
+    geom_line(color=cbp1[7], size=1) + 
+    geom_point(color=cbp1[7], size=2) + 
+    xlab("") + ylab("Case Fatality Rate (dark orange)\n") + 
+    scale_y_continuous(sec.axis = sec_axis(~ ./death_scale, name="Cumulative deaths (light orange)\n")) +
+    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") + theme +
+    theme(axis.text.x=element_text(angle = 90))
+})
+```
+
+```{r}
+cols = c("age", "gender", "patient.nationality", "patient.citizen", "infection.source",
+         "confirmed.at.date", "deceased.at.date")
+deceased = df[df$patient.status == "Deceased", ..cols]
+deceased$duration = as.numeric(deceased$deceased.at.date - deceased$confirmed.at.date+1)
+deceased$patient.citizen = unlist(lapply(deceased$patient.citizen, function(word) {
+  if(nchar(word) ==2) toupper(word) else camelcase_labeller("", word)
+}))
+```
+
+Number of deceased to date: `r dim(deceased)[1]`
+
+```{r}
+cols = c("age", "gender", "patient.nationality", "patient.citizen", "infection.source",
+         "confirmed.at.date", "deceased.at.date", "duration")
+show_deceased = deceased[, ..cols]
+show_deceased$confirmed.at.date = format(show_deceased$confirmed.at.date, "%d.%m.%y")
+show_deceased$deceased.at.date = format(show_deceased$deceased.at.date, "%d.%m.%y")
+names(show_deceased) = unlist(lapply(gsub("\\.", " ", names(show_deceased)), function(x) camelcase_labeller("", x)))
+show_deceased %>%
+  mutate(`Infection Source`=cell_spec(`Infection Source`, "html", color="white", background=
+    ifelse(grepl("Local transmission", `Infection Source`), cbp1[7], cbp1[3]))) %>%
+  kable("html", escape=F, align="c") %>%
+  kable_styling(c("condensed", "responsive"), full_width=F) 
+
 ```
 
 #### Back-of-the-envelope hospital load
@@ -273,8 +318,9 @@ From [24 Mar 2020](https://go.gov.sg/measures24mar), those who still test positi
 renderPlot({
   sec_axis_name = "% of (estimated) maximum patient load\n"
   ggplot(data=df_cases_day, aes(x=date, y=hospital_load)) +
-    geom_line(color="steelblue", size=1) + 
-    geom_point(color="steelblue", size=2) + 
+    geom_ribbon(aes(ymin=0, ymax=hospital_load), fill="#3296cf", alpha=.5) + 
+    geom_line(color=cbp1[6], size=1) + 
+    geom_point(color=cbp1[6], size=2) + 
     geom_vline(xintercept=date_no_hosp, size=1, col=cbp1[2], linetype="dotted") +
     xlab("") + ylab("Number of (estimated) hospitalised persons\n") + 
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
@@ -294,13 +340,36 @@ Most cases are currently in the newly-opened NCID to deal with infectious diseas
 hospital = df[!tolower(hospital) %in% c("unknown", "not admitted"), list(cases=.N) , by=hospital]
 hospital = hospital[order(-cases)]
 hospital$proportion = paste0(round(hospital$cases / sum(hospital$cases)*100), "%")
-names(hospital) = unlist(lapply(names(hospital), function(word) camelcase_labeller("", word)))
-knitr::kable(hospital, "markdown")
+names(hospital)[which(names(hospital) == "hospital")] = "hospital.or.facility"
 
 no_hospital_data = dim(df[tolower(hospital) %in% c("unknown", "not admitted")])[1]
 ```
 
-Note: cases whose hospitals were pending at time of press release and those who are not admitted are omitted from table above. There were `r no_hospital_data` (of `r dim(df)[1]`) such cases.
+```{r}
+show_hospital = hospital[, c("hospital.or.facility", "cases", "proportion")]
+names(show_hospital) = unlist(lapply(names(show_hospital), function(word) camelcase_labeller("", word)))
+show_hospital %>%
+  mutate(`Hospital Or Facility`=cell_spec(`Hospital Or Facility`, "html", color="white", 
+                              background=ifelse(
+                                `Hospital Or Facility` == "Community Isolation Facility", cbp1[2], 
+                                ifelse(nchar(`Hospital Or Facility`)>6, cbp1[7], cbp1[3])))) %>%
+  kable("html", escape=F) %>%
+  kable_styling(c("condensed", "responsive"), full_width=F)
+```
+Legend: light orange = community isolation facilities, dark orange = private hospitals,  blue = public hospitals
+
+Note: cases whose hospitals were pending at time of press release and those who are not admitted are omitted from table above. There were `r no_hospital_data` (of `r dim(df)[1]`) such cases. 
+
+```{r}
+renderPlot({
+  ggplot(df[!tolower(hospital) %in% c("unknown", "not admitted"), 
+    list(cases=.N) , by=c("confirmed.at.date", "hospital")], aes(x=confirmed.at.date, y=cases)) +
+    geom_line() +
+    facet_wrap(~hospital) +
+    ylab("Number of cases conveyed to hospital\n") + xlab("") + 
+    theme
+})
+```
 
 ### Recovery
 
@@ -373,36 +442,6 @@ renderPlot({
 })
 ```
 
-
-### Deaths
-
-```{r}
-cols = c("age", "gender", "patient.nationality", "patient.citizen", "infection.source",
-         "confirmed.at.date", "deceased.at.date")
-deceased = df[df$patient.status == "Deceased", ..cols]
-deceased$duration = as.numeric(deceased$deceased.at.date - deceased$confirmed.at.date+1)
-deceased$patient.citizen = unlist(lapply(deceased$patient.citizen, function(word) {
-  if(nchar(word) ==2) toupper(word) else camelcase_labeller("", word)
-}))
-```
-
-Number of deceased: `r dim(deceased)[1]`
-
-[Fatalities are higher for elderly above 65](https://www.businessinsider.sg/most-us-coronavirus-deaths-ages-65-older-cdc-report-2020-3). 
-```{r}
-cols = c("age", "gender", "patient.nationality", "patient.citizen", "infection.source",
-         "confirmed.at.date", "deceased.at.date", "duration")
-show_deceased = deceased[, ..cols]
-show_deceased$confirmed.at.date = format(show_deceased$confirmed.at.date, "%d.%m.%y")
-show_deceased$deceased.at.date = format(show_deceased$deceased.at.date, "%d.%m.%y")
-names(show_deceased) = unlist(lapply(gsub("\\.", " ", names(show_deceased)), function(x) camelcase_labeller("", x)))
-knitr::kable(show_deceased, "markdown")
-```
-
-```{r}
-# TODO: survival
-```
-
 ### Clusters
 
 #### Top 10 largest clusters
@@ -447,21 +486,26 @@ show_clusters$min.date = format(show_clusters$min.date, "%d.%m.%y")
 show_clusters$max.date = format(show_clusters$max.date, "%d.%m.%y")
 names(show_clusters) = unlist(lapply(gsub("\\.", " ", names(show_clusters)), 
                               function(x) camelcase_labeller("", x)))
-knitr::kable(show_clusters, "markdown")
+show_clusters %>% 
+  mutate(Cases=cell_spec(Cases, "html", color="white", background=ifelse(Cases>100, cbp1[7], cbp1[3]))) %>%
+  kable("html", escape=F) %>%
+  kable_styling(c("condensed", "responsive"), full_width=F)
 ```
 
 ```{r}
 cluster_cases$no.bract = factor(paste0("[", cluster_cases$no, "]"), 
                                 levels=paste0("[", sort(as.integer(unique(cluster_cases$no))), "]"))
-ggplot(cluster_cases[no %in% 1:10], aes(x=age)) +
-  geom_histogram(binwidth=10) + theme +
-  facet_wrap(~no.bract, ncol=3, scales="free_y") + 
-  scale_y_continuous(breaks=breaks_f) +
-  scale_x_continuous(breaks=breaks_f) +
-  theme(strip.background = element_rect(fill=cbp1[3]), 
-        axis.text.x=element_text(size=rel(.8)),
-        axis.text.y=element_text(size=rel(.8)))+
-  ylab("Number of people\n") + xlab("\nAge") + ggtitle("Age profile of top 10 largest clusters")
+renderPlot({
+  ggplot(cluster_cases[no %in% 1:10], aes(x=age)) +
+    geom_histogram(binwidth=10) + theme +
+    facet_wrap(~no.bract, ncol=3, scales="free_y") + 
+    theme(strip.background = element_rect(fill=cbp1[3]), 
+          axis.text.x=element_text(size=rel(.8)),
+          axis.text.y=element_text(size=rel(.8)))+
+    scale_y_continuous(breaks=breaks_f) +
+    scale_x_continuous(breaks=breaks_f) +
+    ylab("Number of people\n") + xlab("\nAge") + ggtitle("Age profile of top 10 largest clusters")
+})
 # TODO if time: https://stackoverflow.com/questions/19440069/ [different colours for type]
 ```
 
@@ -478,11 +522,13 @@ pal = colorFactor(c("#8f5717", "#d48224", # construction, dorm
                     "#e6da09", "#b081d4", # religious, residential
                     "#1aad0c", "#59cce3", "#8ded8c" # school, shoppping, work
                     ), domain=types)
-leaflet(clusters[!(is.na(x) | is.na(y))]) %>% addProviderTiles(providers$Stamen.Toner) %>%
+renderLeaflet({
+ leaflet(clusters[!(is.na(x) | is.na(y))]) %>% addProviderTiles(providers$Stamen.Toner) %>%
  addCircleMarkers(lat=~y, lng=~x, radius=~5+(cases/20), stroke=FALSE, fillOpacity=0.7,
                   label=~paste0(cluster, " - cases: ", cases, " (", type, ")"), color=~pal(type)) %>%
  addLegend("topright", pal=pal, values=~type, opacity = 1, title = "Cluster type") %>%
  setView(103.812804, 1.360250, zoom=11)
+})
 ```
 Note: some clusters had more than one locality on the map but were only assigned to one point on the map.
 

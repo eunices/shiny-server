@@ -2544,7 +2544,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2543,2020-04-13,NTFGH,21,M,unknown,unknown,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA
 2544,2020-04-13,NCID,31,M,Bangladesh,wp,,Local transmission,,,Acacia Lodge at 530-540 Bukit Batok Street 23,TRUE,NA,NA,NA
 2545,2020-04-13,NCID,33,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2546,2020-04-13,MAH,51,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
+2546,2020-04-13,Mount Alvernia Hospital,51,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 2547,2020-04-13,Mount Elizabeth Novena Hospital,47,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
 2548,2020-04-13,NCID,26,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2549,2020-04-13,NCID,47,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA
