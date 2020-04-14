@@ -372,12 +372,12 @@ df_cases_day_hosp = get_df_cases_day_hosp(df)
 melted_df_cases_day_hosp = melt(df_cases_day_hosp, id.vars=c("date", "hospital"), 
                                 measure.vars=c("I", "R", "D"))
 
-hosp_cases = df[, list(cases=.N), by=c("confirmed.at.date", "hospital")]
+hosp_cases = df[!(tolower(hospital) %in% c("unknown", "")), list(cases=.N), by=c("confirmed.at.date", "hospital")]
 
 hosp_scale=10
 
 renderPlot({
-  ggplot(melted_df_cases_day_hosp[!(hospital %in% c("unknown", "")) & variable=="I"], aes(x=date, y=value)) +
+  ggplot(melted_df_cases_day_hosp[!(tolower(hospital) %in% c("unknown", "")) & variable=="I"], aes(x=date, y=value)) +
     geom_line(show.legend=F, color=cbp1[6], size=1) +
     geom_bar(data=hosp_cases, aes(x=confirmed.at.date, y=cases*hosp_scale), 
              stat="identity", fill=cbp1[3], color=NA, alpha=0.6) +
