@@ -21,6 +21,9 @@ get_df_cases_day = function() {
     print(paste0(Sys.time(), ": Read case summary data from ", filename, "."))
     cases = fread(filename)
     cases$date = as.Date(cases$date)
+    cases$case_load = cases$I1 + cases$I2 + cases$I3
+    cases$cfr = cases$D / (cases$Recovered + cases$D) *100
+    cases[is.na(cases)] = 0
     cases
 }
 

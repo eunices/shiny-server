@@ -37,24 +37,25 @@ source('util.r')
 
 # Params
 theme = theme_bw()
-```
-
-```{r include=F}
 url1 = "https://co.vid19.sg/cases/search"
 url2 = "https://www.againstcovid19.com/singapore/cases/search"
+cbp1 = c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+```
+
+```{r}
 # df = try({get_data(url1)})
 # if(!grepl("error", df[[1]])) {
 #   df = clean_data(df)
 # } else {
 #   df = get_alternative_data()
 # }  
+```
 
+```{r include=F}
 df = get_alternative_data()
 df_cases_day = get_df_cases_day()
 events = get_events()
 lp_clust = get_clusters()
-
-cbp1 = c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 ```
 
 ```{r}
@@ -155,7 +156,6 @@ From 7 Apr onwards, there was a greater number of unlinked cases.
 #### Clusters through time
 
 ```{r}
-
 style = "display: inline-block;vertical-align:top;padding-right: 20px"
 bootstrapPage(
   div(style=style, dateRangeInput("range_date", "Date range", 
@@ -170,15 +170,12 @@ renderPlot({
   cluster = data[data$clustered=="Cluster case",]
   cluster = data[!duplicated(data$cluster),]
 
-  p1 = ggplot(data=cluster, aes(x=confirmed.at.date)) +
+  ggplot(data=cluster, aes(x=confirmed.at.date)) +
     geom_histogram(stat="bin", binwidth=1, fill=cbp1[1]) + 
     xlab("") + ylab("Number of clusters\n") +
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
-    theme +
-    theme(axis.text.x=element_text(angle = 90))
-  p1
+    theme + theme(axis.text.x=element_text(angle = 90))
 })
-
 ```
 
 #### Two waves
@@ -234,16 +231,13 @@ hosp_prop = 0.2        # proportion of cases requiring hospitalisation
 date_no_hosp = as.Date("2020-03-24") # date when hospitalisation not required for positive, asymptomatic cases
 ```
 
-Case load is an important metric that is correlated also with hospital load. These are split into those that are in ICU, those that are hospitalised and those which test positive but have no symptoms and are in isolation facilities.
-
-
 ```{r}
-df_cases_day$date = as.Date(df_cases_day$date)
-df_cases_day$case_load = df_cases_day$I1 + df_cases_day$I2 + df_cases_day$I3
-df_cases_day$hospital_load = df_cases_day$case_load
-df_cases_day[date>=date_no_hosp,]$hospital_load =  
-  df_cases_day[date>=date_no_hosp,]$hospital_load * hosp_prop
+mean_hospitalisation_rate = mean((df_cases_day[date>=date_no_hosp]$I2 + df_cases_day[date>=date_no_hosp]$I1)/ df_cases_day[date>=date_no_hosp]$case_load * 100, na.rm=T)
 ```
+
+- Mean percentage of cases in hospital care (from `r format(date_no_hosp, "%d %b %Y")`): `r  round(mean_hospitalisation_rate, 1)`%
+
+Case load is an important metric that is correlated also with hospital load. These are split into those that are in ICU, those that are hospitalised and those which test positive but have no symptoms and are in isolation facilities.
  
 ```{r}
 icu_scale = 10
@@ -285,8 +279,6 @@ In addition, [fatalities are higher for elderly above 65](https://www.businessin
 
 ```{r}
 death_scale = 1
-df_cases_day$cfr = df_cases_day$D/(df_cases_day$Recovered+ df_cases_day$D)*100
-df_cases_day[is.na(df_cases_day)] = 0
 renderPlot({
   ggplot(data=df_cases_day, aes(x=date, y=cfr)) + 
     geom_ribbon(aes(ymin=0, ymax=D*death_scale), fill="#ffc394", alpha=.5) + 
@@ -308,30 +300,35 @@ cols = c("age", "gender", "patient.nationality", "patient.citizen", "infection.s
 show_deceased = deceased[, ..cols]
 show_deceased$confirmed.at.date = format(show_deceased$confirmed.at.date, "%d.%m.%y")
 show_deceased$deceased.at.date = format(show_deceased$deceased.at.date, "%d.%m.%y")
-names(show_deceased) = unlist(lapply(gsub("\\.", " ", names(show_deceased)), function(x) camelcase_labeller("", x)))
+names(show_deceased) = unlist(
+  lapply(gsub("\\.", " ", names(show_deceased)), function(x) camelcase_labeller("", x)))
+
 show_deceased %>%
   mutate(`Infection Source`=cell_spec(`Infection Source`, "html", color="white", background=
     ifelse(grepl("Local transmission", `Infection Source`), cbp1[7], cbp1[3]))) %>%
   kable("html", escape=F, align="c") %>%
   kable_styling(c("condensed", "responsive"), full_width=F) 
-
 ```
 
 #### Back-of-the-envelope hospital load
 
-Measuring hospital load is key to ensure that hospitals are not overloaded. We assume that the number of those who require hospitalisation is 20% of the case load, since it is a conservative estimate that 20% of the detected cases require hospitalisation and/or ICU care.
+Measuring hospital load is key to ensure that hospitals are not overloaded. 
+
+There are 9 public acute hospitals in Singapore, with an average capacity of 1,200 beds. Prior to covid-19, they were operating at approximately [75% load](https://www.moh.gov.sg/resources-statistics/healthcare-institution-statistics/beds-occupancy-rate-(bor)). The NCID also provides approximately 300 beds. 
+
+If it is assumed that hospitals can operate at a 90% bed load, to ensure that hospitals are not overtaxed and there is sufficient isolation between Covid-19 patients (more than usual required), then there would be `r max_load` beds available. 
 
 From [24 Mar 2020](https://go.gov.sg/measures24mar), those who still test positive but display no symptoms will no longer be hospitalised but moved to isolation facilities.
 
 ```{r}
 renderPlot({
-  sec_axis_name = "% of (estimated) maximum patient load\n"
-  ggplot(data=df_cases_day, aes(x=date, y=hospital_load)) +
-    geom_ribbon(aes(ymin=0, ymax=hospital_load), fill="#3296cf", alpha=.5) + 
+  sec_axis_name = "% of maximum patient load\n"
+  ggplot(data=df_cases_day, aes(x=date, y=I2)) +
+    geom_ribbon(aes(ymin=0, ymax=I2), fill="#3296cf", alpha=.5) + 
     geom_line(color=cbp1[6], size=1) + 
     geom_point(color=cbp1[6], size=2) + 
     geom_vline(xintercept=date_no_hosp, size=1, col=cbp1[2], linetype="dotted") +
-    xlab("") + ylab("Number of (estimated) hospitalised persons\n") + 
+    xlab("") + ylab("Number of hospitalised persons\n") + 
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
     scale_y_continuous(sec.axis = sec_axis(~ ./max_load*100, name=sec_axis_name)) + 
     theme +
@@ -339,7 +336,6 @@ renderPlot({
 })
 ```
 
-There are 9 public acute hospitals in Singapore, with an average capacity of 1,200 beds. Prior to covid-19, they were operating at approximately [75% load](https://www.moh.gov.sg/resources-statistics/healthcare-institution-statistics/beds-occupancy-rate-(bor)). There is also the NCID has approximately 300 beds. If it is assumed that hospitals can operate at a 90% bed load, to ensure that hospitals are not overtaxed and there is sufficient isolation between Covid-19 patients (more than usual required), then there would be `r max_load` beds available. 
 
 #### Hospital/isolation facilities
 
@@ -356,7 +352,9 @@ no_hospital_data = dim(df[tolower(hospital) %in% c("unknown", "not admitted")])[
 
 ```{r}
 show_hospital = hospital[, c("hospital.or.facility", "cases", "proportion")]
-names(show_hospital) = unlist(lapply(names(show_hospital), function(word) camelcase_labeller("", word)))
+names(show_hospital) = unlist(
+  lapply(names(show_hospital), function(word) camelcase_labeller("", word)))
+
 show_hospital %>%
   mutate(`Hospital Or Facility`=cell_spec(`Hospital Or Facility`, "html", color="white", 
                               background=ifelse(
@@ -392,15 +390,11 @@ median_recovery_time = as.numeric(median(df$days.to.recover.resources, na.rm=T))
 mean_recovery_time = round(as.numeric(mean(df$days.to.recover.resources, na.rm=T)), 1)
 ```
 
-- Number of recoveries to date: 
-  `r is.recovered[2]`
-- Proportion of recoveries to date: 
-  `r round(prop.table(is.recovered)[2]*100, 1)`%
+- Number of recoveries to date: `r is.recovered[2]`
+- Proportion of recoveries to date: `r round(prop.table(is.recovered)[2]*100, 1)`%
 
-- Median time to recovery (from confirmed): 
-  `r median_recovery_time` days
-- Mean time to recovery (from confirmed): 
-  `r mean_recovery_time` days
+- Median time to recovery (from confirmed): `r median_recovery_time` days
+- Mean time to recovery (from confirmed): `r mean_recovery_time` days
 
 ```{r}
 binwidth = 5
@@ -424,6 +418,7 @@ Is there an association between the risk factors and number of days for recovery
 
 ```{r}
 selectInput("age_width", label="Age bin width", choices=c(5, 10, 20), selected=20)
+
 renderPlot({
   # input = list(age_width=10)
   agewidth = as.numeric(input$age_width)
@@ -449,6 +444,7 @@ renderPlot({
 
   layout=rbind(c(1, 1, 1, 2))
   grid.arrange(grobs=gs, layout_matrix=layout)
+
 })
 ```
 
