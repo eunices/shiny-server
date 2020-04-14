@@ -9,6 +9,8 @@ output:
 
 > **DISCLAIMER: Not an epidemiologist, so the information below should not be used for policy. Neither has this document gone through peer review, so please do not cite it.**
 
+This document is best viewed on a computer and is not optimised for mobile viewing.
+
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
