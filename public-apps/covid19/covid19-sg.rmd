@@ -379,7 +379,6 @@ renderPlot({
 ```
 
 ```{r}
-# TODO: hospitalisation
 df_cases_day_hosp = get_df_cases_day_hosp(df)
 melted_df_cases_day_hosp = melt(df_cases_day_hosp, id.vars=c("date", "hospital"), 
                                 measure.vars=c("I", "R", "D"))
