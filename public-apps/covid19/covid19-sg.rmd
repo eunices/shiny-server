@@ -7,9 +7,12 @@ output:
     theme: flatly
 ---
 
+> This document is best viewed on a computer and is not optimised for mobile viewing.
+>
 > **DISCLAIMER: Not an epidemiologist, so the information below should not be used for policy. Neither has this document gone through peer review, so please do not cite it.**
 
-This document is best viewed on a computer and is not optimised for mobile viewing.
+
+
 
 
 ```{r echo=FALSE}
@@ -265,6 +268,18 @@ Typically, Case Fatality Rate (CFR) will increase when hospitals get overwhelmed
 In addition, [fatalities are higher for elderly above 65](https://www.businessinsider.sg/most-us-coronavirus-deaths-ages-65-older-cdc-report-2020-3). 
 
 ```{r}
+cols = c("age", "gender", "patient.nationality", "patient.citizen", "infection.source",
+         "confirmed.at.date", "deceased.at.date")
+deceased = df[df$patient.status == "Deceased", ..cols]
+deceased$duration = as.numeric(deceased$deceased.at.date - deceased$confirmed.at.date+1)
+deceased$patient.citizen = unlist(lapply(deceased$patient.citizen, function(word) {
+  if(nchar(word) ==2) toupper(word) else camelcase_labeller("", word)
+}))
+```
+
+Number of deceased to date: `r dim(deceased)[1]`
+
+```{r}
 death_scale = 1
 df_cases_day$cfr = df_cases_day$D/(df_cases_day$Recovered+ df_cases_day$D)*100
 df_cases_day[is.na(df_cases_day)] = 0
@@ -282,18 +297,6 @@ renderPlot({
     theme(axis.text.x=element_text(angle = 90))
 })
 ```
-
-```{r}
-cols = c("age", "gender", "patient.nationality", "patient.citizen", "infection.source",
-         "confirmed.at.date", "deceased.at.date")
-deceased = df[df$patient.status == "Deceased", ..cols]
-deceased$duration = as.numeric(deceased$deceased.at.date - deceased$confirmed.at.date+1)
-deceased$patient.citizen = unlist(lapply(deceased$patient.citizen, function(word) {
-  if(nchar(word) ==2) toupper(word) else camelcase_labeller("", word)
-}))
-```
-
-Number of deceased to date: `r dim(deceased)[1]`
 
 ```{r}
 cols = c("age", "gender", "patient.nationality", "patient.citizen", "infection.source",
@@ -560,7 +563,7 @@ There are some differences between the earlier dataset from `r url1` as compared
 3. One imported country which is derived from the travel history field in the MOH annex. Where there are multiple countries, it is labelled as "unclear origin". 
 4. Long term pass and work pass status seem to be inaccurately captured.
 
-The specific steps taken for the later dataset from MOH Annexes: 
+The specific steps taken for data collection of the later dataset from MOH Annexes: 
 
 1. Adding to daily summary statistics, captured in `cases.csv`.
 2. Adding to the case-level dataset, captured in `9999-01-01-data.csv`.

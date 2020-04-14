@@ -32,6 +32,7 @@ d[hospital=="Pending"]$hospital = 'unknown'
 d[hospital=="PEH"]$hospital = 'Parkway East Hospital'
 d[hospital=="MEN"]$hospital = 'Mount Elizabeth Novena Hospital'
 d[hospital=="CIF"]$hospital = 'Community Isolation Facility'
+d[hospital=="MAH"]$hospital = 'Mount Alvernia Hospital'
 
 d$patient.nationality = trimws(gsub("\\n", "", 
                                lapply(d$nat, function(text) strsplit(text, "\\(")[[1]][1])))
