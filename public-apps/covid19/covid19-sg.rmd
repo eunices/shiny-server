@@ -253,6 +253,7 @@ mean_comm_rate = mean(df_cases_day[date>=date_no_hosp]$comm_rate, na.rm=T)
 Case load is an important metric that is correlated also with hospital load. These are split into those that are in ICU, those that are hospitalised and those which test positive but have no symptoms and are in isolation facilities.
  
 ```{r}
+icu_scale=10
 renderPlot({
   ggplot(data=df_cases_day, aes(x=date, y=case_load)) +
     geom_ribbon(aes(ymin=0, ymax=case_load), fill="#8cd6ff", alpha=.5) + 
