@@ -338,9 +338,9 @@ df_deceased_age = rbind(df_deceased_age,
                         data.frame(category="Total", 
                                    Deceased=sum(as.numeric(df_deceased_age$`Deceased`), na.rm=T),
                                    Recovered=sum(as.numeric(df_deceased_age$`Recovered`), na.rm=T)))
+df_deceased_age[is.na(df_deceased_age)] = 0
 df_deceased_age$cfr = 
   round(df_deceased_age$Deceased / (df_deceased_age$Deceased + df_deceased_age$Recovered)*100, 2)
-df_deceased_age[is.na(df_deceased_age)] = 0
 
 show_deceased_age = df_deceased_age[, c("category", "Deceased", "Recovered", "cfr")]
 names(show_deceased_age)[which(names(show_deceased_age)=="cfr")] = "CFR (%)" 
