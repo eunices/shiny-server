@@ -107,6 +107,7 @@ renderPlot({
     geom_bar(aes(x=confirmed.at.date, y=D, fill="#525252"), position='stack', stat="identity") + 
     xlab("") + ylab("Number of new cases detected\n") +
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
+    scale_y_continuous(breaks=breaks_f) +
     scale_fill_manual(name="", 
                       labels=c("Deceased", "Recovered", "Event", "Event/measure",
                                "Imported case", "Local linked", "Local unlinked",
