@@ -1,6 +1,6 @@
 library(data.table)
 ddir = "C:\\Users\\ejysoh\\Desktop\\sg-covid-cases\\"
-filename = "2020-04-14.csv"
+filename = "2020-04-14-edit.csv"
 type = 1
 # type 1: without country of origin
 # type 2: with country of origin
@@ -23,6 +23,8 @@ if (type==2) {
 }
 
 d[age=="Pending"]$age = "unknown"
+d[grepl("mth", age)]$age = as.numeric(gsub('[A-z]+|\\r|\\n', '', d[grepl("mth", age)]$age))/12
+
 d[gender=="Pending"]$gender = "unknown"
 
 d$confirmed.at.date = as.character(Sys.Date())

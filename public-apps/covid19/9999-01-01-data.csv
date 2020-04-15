@@ -2967,8 +2967,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2965,2020-04-14,unknown,50,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 2966,2020-04-14,unknown,28,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
 2967,2020-04-14,unknown,29,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA
-2968,2020-04-14,NUH,"13
-mths",M,Singapore,citizen,,Local transmission,,2605,,TRUE,NA,NA,NA
+2968,2020-04-14,NUH,1.083333,M,Singapore,citizen,,Local transmission,,2605,,TRUE,NA,NA,NA
 2969,2020-04-14,NUH,26,M,India,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA
 2970,2020-04-14,NUH,39,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
 2971,2020-04-14,KTPH,36,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA
