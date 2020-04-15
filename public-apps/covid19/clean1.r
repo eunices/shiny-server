@@ -1,11 +1,16 @@
 library(data.table)
 ddir = "C:\\Users\\ejysoh\\Desktop\\sg-covid-cases\\"
-filename = "2020-04-14-edit.csv"
+filename = "2020-04-15.csv"
 type = 1
 # type 1: without country of origin
 # type 2: with country of origin
 
 nms = names(fread("public-apps/covid19/9999-01-01-data.csv"))
+cls = unique(fread("public-apps/covid19/9999-01-01-data.csv")$cluster)
+cls = lapply(cls, function(x) strsplit(x, "; "))
+cls = unique(unlist(cls))
+cls = cls[order(cls)]
+cls = cls[cls!=""]
 
 d = fread(paste0(ddir, filename))
 
@@ -73,8 +78,16 @@ d[grepl("contact", tolower(X))]$linked.to = gsub(" and ", ", ", gsub(text, "",
 d$X = NULL
 
 # Manual
-clust = data.frame(clust=unique(d$clust), full="")
-# write.csv(clust[clust$clust != "",][order(clust$clust),], paste0(ddir, "clust.csv"), row.names=F)
+clust = data.table(clust=unique(d$clust), full="")
+clust = clust[clust != ""]
+for (i in 1:dim(clust)[1]) {
+  for (j in 1:length(cls)) {
+    if(grepl(tolower(clust[i,]$clust), tolower(cls[j]))) {
+      clust[i,]$full = cls[j]
+    }
+  }
+}
+# write.csv(clust[clust != "",][order(clust),], paste0(ddir, "clust.csv"), row.names=F)
 
 lp = fread(paste0(ddir, "clust.csv"))
 d = merge(d, lp, by="clust", all.x=T, all.y=F)
