@@ -241,12 +241,14 @@ date_no_hosp = as.Date("2020-03-24") # date when hospitalisation not required fo
 ```
 
 ```{r}
-mean_hospitalisation_rate = mean((df_cases_day[date>=date_no_hosp]$I2 + df_cases_day[date>=date_no_hosp]$I1)/ df_cases_day[date>=date_no_hosp]$case_load * 100, na.rm=T)
 mean_icu_rate = mean((df_cases_day[date>=date_no_hosp]$I1)/ df_cases_day[date>=date_no_hosp]$case_load * 100, na.rm=T)
+mean_hospitalisation_rate = mean((df_cases_day[date>=date_no_hosp]$I2 + df_cases_day[date>=date_no_hosp]$I1)/ df_cases_day[date>=date_no_hosp]$case_load * 100, na.rm=T)
+mean_comm_rate = mean((df_cases_day[date>=date_no_hosp]$I3)/ df_cases_day[date>=date_no_hosp]$case_load * 100, na.rm=T)
 ```
 
 - Mean percentage of cases in ICU (from `r format(date_no_hosp, "%d %b %Y")`): `r  round(mean_icu_rate, 1)`%
 - Mean percentage of cases in hospital care [ICU + hospitalised] (from `r format(date_no_hosp, "%d %b %Y")`): `r  round(mean_hospitalisation_rate, 1)`%
+- Mean percentage of cases in community isolation facilities (from `r format(date_no_hosp, "%d %b %Y")`): `r  round(mean_comm_rate, 1)`%
 
 Case load is an important metric that is correlated also with hospital load. These are split into those that are in ICU, those that are hospitalised and those which test positive but have no symptoms and are in isolation facilities.
  
@@ -581,7 +583,7 @@ renderPlot({
           legend.position="bottom", legend.box = "vertical",
           axis.text.y=element_text(size=rel(1)))+
     scale_y_continuous(breaks=breaks_f) +
-    scale_fill_manual(name="", values=cbp1[c(2, 7, 3, 6, 4, 1)]) +
+    scale_fill_manual(name="", values=cbp1[c(2, 7, 5, 3, 6, 4, 1)]) +
     ylab("Number of people\n") + xlab("\nStatus") + ggtitle("Status of top 10 largest clusters")
 })
 ```
