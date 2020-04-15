@@ -241,20 +241,18 @@ date_no_hosp = as.Date("2020-03-24") # date when hospitalisation not required fo
 ```
 
 ```{r}
-mean_icu_rate = mean((df_cases_day[date>=date_no_hosp]$I1)/ df_cases_day[date>=date_no_hosp]$case_load * 100, na.rm=T)
-mean_hospitalisation_rate = mean((df_cases_day[date>=date_no_hosp]$I2 + df_cases_day[date>=date_no_hosp]$I1)/ df_cases_day[date>=date_no_hosp]$case_load * 100, na.rm=T)
-mean_comm_rate = mean((df_cases_day[date>=date_no_hosp]$I3)/ df_cases_day[date>=date_no_hosp]$case_load * 100, na.rm=T)
-```
+df_cases_day$icu_rate = (df_cases_day$I1)/ df_cases_day$case_load * 100
+df_cases_day$hospitalisation_rate = (df_cases_day$I2 + df_cases_day$I1)/ df_cases_day$case_load * 100
+df_cases_day$comm_rate = (df_cases_day$I3)/ df_cases_day$case_load * 100
 
-- Mean percentage of cases in ICU (from `r format(date_no_hosp, "%d %b %Y")`): `r  round(mean_icu_rate, 1)`%
-- Mean percentage of cases in hospital care [ICU + hospitalised] (from `r format(date_no_hosp, "%d %b %Y")`): `r  round(mean_hospitalisation_rate, 1)`%
-- Mean percentage of cases in community isolation facilities (from `r format(date_no_hosp, "%d %b %Y")`): `r  round(mean_comm_rate, 1)`%
+mean_icu_rate = mean(df_cases_day[date>=date_no_hosp]$icu_rate, na.rm=T)
+mean_hospitalisation_rate = mean(df_cases_day[date>=date_no_hosp]$hospitalisation_rate, na.rm=T)
+mean_comm_rate = mean(df_cases_day[date>=date_no_hosp]$comm_rate, na.rm=T)
+```
 
 Case load is an important metric that is correlated also with hospital load. These are split into those that are in ICU, those that are hospitalised and those which test positive but have no symptoms and are in isolation facilities.
  
 ```{r}
-icu_scale = 10
-
 renderPlot({
   ggplot(data=df_cases_day, aes(x=date, y=case_load)) +
     geom_ribbon(aes(ymin=0, ymax=case_load), fill="#8cd6ff", alpha=.5) + 
@@ -269,6 +267,30 @@ renderPlot({
     xlab("") + ylab("Number of active cases (light blue)\n& hospital cases (turquoise)\n") + 
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
     scale_y_continuous(sec.axis = sec_axis(~ ./icu_scale, name="Number of active ICU cases (dark blue)\n")) +
+    theme +
+    theme(axis.text.x=element_text(angle = 90))
+})
+```
+
+- Mean percentage of cases in ICU (from `r format(date_no_hosp, "%d %b %Y")`): `r  round(mean_icu_rate, 1)`%
+- Mean percentage of cases in hospital care [ICU + hospitalised] (from `r format(date_no_hosp, "%d %b %Y")`): `r  round(mean_hospitalisation_rate, 1)`%
+- Mean percentage of cases in community isolation facilities (from `r format(date_no_hosp, "%d %b %Y")`): `r  round(mean_comm_rate, 1)`%
+
+```{r}
+renderPlot({
+  ggplot(data=df_cases_day, aes(x=date, y=comm_rate)) +
+    geom_ribbon(aes(ymin=0, ymax=comm_rate), fill="#8cd6ff", alpha=.5) + 
+    geom_line(color=cbp1[3], size=.5) + 
+    geom_point(color=cbp1[3], size=1) + 
+    geom_ribbon(aes(ymin=0, ymax=hospitalisation_rate), fill="#75ccd1", alpha=.5) + 
+    geom_line(aes(y=hospitalisation_rate), color="#35c4cc", size=.5) + 
+    geom_point(aes(y=hospitalisation_rate), color="#35c4cc", size=1) + 
+    geom_ribbon(aes(ymin=0, ymax=icu_rate*icu_scale), fill="#3296cf", alpha=.5) + 
+    geom_line(aes(x=date, y=icu_rate*icu_scale), color=cbp1[6], size=.5) +
+    geom_point(aes(x=date, y=icu_rate*icu_scale), color=cbp1[6], size=1) + 
+    xlab("") + ylab("% of active cases in CIF (light blue)\n& hospital cases (turquoise)\n") + 
+    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
+    scale_y_continuous(sec.axis = sec_axis(~ ./icu_scale, name="% active cases in ICU  (dark blue)\n")) +
     theme +
     theme(axis.text.x=element_text(angle = 90))
 })
@@ -438,7 +460,7 @@ Recovered date is based on the discharged date when there are [consecutive negat
 #### Duration of recovery
 
 ```{r}
-is.recovered = table(!is.na(df$days.to.recover.resources))
+is.recovered = table(!is.na(df$recovered.at.date))
 median_recovery_time = as.numeric(median(df$days.to.recover.resources, na.rm=T))
 mean_recovery_time = round(as.numeric(mean(df$days.to.recover.resources, na.rm=T)), 1)
 ```
