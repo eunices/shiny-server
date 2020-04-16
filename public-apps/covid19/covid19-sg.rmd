@@ -287,15 +287,21 @@ icu_scale=5
 renderPlot({
   ggplot(data=df_cases_day[date<=input$range_date_case[2] & date>=input$range_date_case[1]], 
          aes(x=date, y=case_load)) +
+
     geom_ribbon(aes(ymin=0, ymax=case_load), fill="#8cd6ff", alpha=.5) + 
     geom_line(color=cbp1[3], size=.5) + 
     geom_point(color=cbp1[3], size=1) + 
+
     geom_ribbon(aes(ymin=0, ymax=I2), fill="#75ccd1", alpha=.5) + 
     geom_line(aes(y=I2), color="#35c4cc", size=.5) + 
     geom_point(aes(y=I2), color="#35c4cc", size=1) + 
+
     geom_ribbon(aes(ymin=0, ymax=I1*icu_scale), fill="#3296cf", alpha=.5) + 
     geom_line(aes(x=date, y=I1*icu_scale), color=cbp1[6], size=.5) +
     geom_point(aes(x=date, y=I1*icu_scale), color=cbp1[6], size=1) + 
+
+    geom_vline(xintercept=date_no_hosp, size=1, col=cbp1[2], linetype="dotted") +
+
     xlab("") + ylab("Number of active cases [all] (light blue)\n& hospital cases [ICU + hospitalised] (turquoise)\n") + 
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
     scale_y_continuous(sec.axis = sec_axis(~ ./icu_scale, name="Number of active ICU cases (dark blue)\n")) +
@@ -312,15 +318,21 @@ renderPlot({
 renderPlot({
   ggplot(data=df_cases_day[date<=input$range_date_case[2] & date>=input$range_date_case[1]],
          aes(x=date, y=comm_rate)) +
+
     geom_ribbon(aes(ymin=0, ymax=hospitalisation_rate), fill="#75ccd1", alpha=.5) + 
     geom_line(aes(y=hospitalisation_rate), color="#35c4cc", size=.5) + 
     geom_point(aes(y=hospitalisation_rate), color="#35c4cc", size=1) + 
+
     geom_ribbon(aes(ymin=0, ymax=comm_rate), fill="#8cd6ff", alpha=.5) + 
     geom_line(color=cbp1[3], size=.5) + 
     geom_point(color=cbp1[3], size=1) + 
+
     geom_ribbon(aes(ymin=0, ymax=icu_rate*icu_scale), fill="#3296cf", alpha=.5) + 
     geom_line(aes(x=date, y=icu_rate*icu_scale), color=cbp1[6], size=.5) +
     geom_point(aes(x=date, y=icu_rate*icu_scale), color=cbp1[6], size=1) + 
+    
+    geom_vline(xintercept=date_no_hosp, size=1, col=cbp1[2], linetype="dotted") +
+
     xlab("") + ylab("% of active cases in CIF (light blue)\n& in hospital [ICU + hospitalised] (turquoise)\n") + 
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
     scale_y_continuous(sec.axis = sec_axis(~ ./icu_scale, name="% active cases in ICU  (dark blue)\n")) +
@@ -435,13 +447,18 @@ renderPlot({
   sec_axis_name = "% of maximum patient load (light blue)\n"
   ggplot(data=df_cases_day[date<=input$range_date_pl[2] & date>=input$range_date_pl[1]], 
          aes(x=date, y=I2)) +
+
     geom_ribbon(aes(ymin=0, ymax=I2), fill="#3296cf", alpha=.5) + 
     geom_line(color=cbp1[6], size=.5) + 
     geom_point(color=cbp1[6], size=1) + 
+
     geom_ribbon(aes(ymin=0, ymax=percent_load*patient_load_scale), fill="#8cd6ff", alpha=.5) + 
     geom_line(aes(y=percent_load*patient_load_scale), color=cbp1[3], size=.5) + 
     geom_point(aes(y=percent_load*patient_load_scale), color=cbp1[3], size=1) + 
+    
     geom_vline(xintercept=date_no_hosp, size=1, col=cbp1[2], linetype="dotted") +
+    geom_vline(xintercept=date_bvh, size=1, col=cbp1[2], linetype="dotted") +
+    
     xlab("") + ylab("Number of hospitalised persons (dark blue)\n") + 
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
     scale_y_continuous(sec.axis = sec_axis(~ ./patient_load_scale, name=sec_axis_name, 
