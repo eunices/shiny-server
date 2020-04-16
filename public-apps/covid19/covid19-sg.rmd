@@ -235,15 +235,18 @@ grid.arrange(grobs=gs, layout_matrix=layout)
 ### Case load
 
 ```{r} 
-max_load = (9*1200*0.15) + 300 # hospital capacity
-hosp_prop = 0.2        # proportion of cases requiring hospitalisation
+max_load = (9*1200*0.15) + 300       # hospital capacity
+hosp_prop = 0.5                      # proportion of cases requiring hospitalisation
 date_no_hosp = as.Date("2020-03-24") # date when hospitalisation not required for positive, asymptomatic cases
+date_bvh = as.Date("2020-03-24")     # date of opening of bvh
 ```
 
 ```{r}
 df_cases_day$icu_rate = (df_cases_day$I1)/ df_cases_day$case_load * 100
 df_cases_day$hospitalisation_rate = (df_cases_day$I2 + df_cases_day$I1)/ df_cases_day$case_load * 100
 df_cases_day$comm_rate = (df_cases_day$I3)/ df_cases_day$case_load * 100
+df_cases_day$max_load = ifelse(df_cases_day$date < date_bvh, max_load, max_load+200)
+df_cases_day$percent_load = (df_cases_day$I2+df_cases_day$I1)/df_cases_day$max_load * 100
 
 mean_icu_rate = mean(df_cases_day[date>=date_no_hosp]$icu_rate, na.rm=T)
 mean_hospitalisation_rate = mean(df_cases_day[date>=date_no_hosp]$hospitalisation_rate, na.rm=T)
@@ -396,7 +399,8 @@ There are 9 public acute hospitals in Singapore, with an average capacity of 1,2
 
 If it is assumed that hospitals can operate at a 90% bed load, to ensure that hospitals are not overtaxed and there is sufficient isolation between Covid-19 patients (more than usual required), then there would be `r max_load` beds available. Note that this is a very rough estimate and that hospitals could possibly expand in capacity where needed (e.g. in the NCID can be expanded to [>500 beds](https://www.ncid.sg/Facilities-Services/Pages/default.aspx)).
 
-From [24 Mar 2020](https://go.gov.sg/measures24mar), those who still test positive but display no symptoms will no longer be hospitalised but moved to isolation facilities.
+From [24 Mar 2020](https://go.gov.sg/measures24mar), those who still test positive but display no symptoms will no longer be hospitalised but moved to isolation facilities. We assume that 50% of patients require hospitalisation (as seen in the earlier graphs). 
+From [11 Apr 2020](https://www.straitstimes.com/singapore/health/bright-vision-hospital-transfers-all-patients-to-make-room-for-stable-covid-19), 110 stable (but requiring hospital care) Covid-19 patients were transferred to Bright Vision Hospital which has 200 bed space when fully operational.
 
 ```{r}
 style = "display: inline-block;vertical-align:top;padding-right: 20px"
@@ -404,17 +408,23 @@ bootstrapPage(
   div(style=style, dateRangeInput("range_date_pl", "Date range", 
                                    start = min_date, end = max_date, 
                                    min = min_date, max = max_date)))
+
 renderPlot({
-  sec_axis_name = "% of maximum patient load\n"
+  patient_load_scale = 10
+  sec_axis_name = "% of maximum patient load (light blue)\n"
   ggplot(data=df_cases_day[date<=input$range_date_pl[2] & date>=input$range_date_pl[1]], 
          aes(x=date, y=I2)) +
     geom_ribbon(aes(ymin=0, ymax=I2), fill="#3296cf", alpha=.5) + 
     geom_line(color=cbp1[6], size=.5) + 
     geom_point(color=cbp1[6], size=1) + 
+    geom_ribbon(aes(ymin=0, ymax=percent_load*patient_load_scale), fill="#8cd6ff", alpha=.5) + 
+    geom_line(aes(y=percent_load*patient_load_scale), color=cbp1[3], size=.5) + 
+    geom_point(aes(y=percent_load*patient_load_scale), color=cbp1[3], size=1) + 
     geom_vline(xintercept=date_no_hosp, size=1, col=cbp1[2], linetype="dotted") +
-    xlab("") + ylab("Number of hospitalised persons\n") + 
+    xlab("") + ylab("Number of hospitalised persons (dark blue)\n") + 
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
-    scale_y_continuous(sec.axis = sec_axis(~ ./max_load*100, name=sec_axis_name)) + 
+    scale_y_continuous(sec.axis = sec_axis(~ ./patient_load_scale, name=sec_axis_name, 
+                                           breaks=seq(0, 100, 10))) + 
     theme +
     theme(axis.text.x=element_text(angle = 90))
 })
@@ -446,7 +456,7 @@ show_hospital %>%
   kable("html", escape=F) %>%
   kable_styling(c("condensed", "responsive"), full_width=F)
 ```
-Legend: light orange = community isolation facilities, dark orange = private hospitals,  blue = public hospitals
+Legend: light orange = community isolation facilities (e.g. D'Resort NTUC in Pasir Ris, Singapore Expo), dark orange = private hospitals,  blue = public hospitals
 
 Note: cases whose hospitals were pending at time of press release and those who are not admitted are omitted from table above. There were `r no_hospital_data` (of `r dim(df)[1]`) such cases. 
 
