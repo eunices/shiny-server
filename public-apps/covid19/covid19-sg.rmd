@@ -568,12 +568,12 @@ cluster_cases = merge(cluster_cases, clusters[, c("cluster", "no", "cluster.shor
 ```
 
 ```{r fig.width=10, fig.height=2}
-ggplot(cluster_cases[no %in% 1:10], aes(x=reorder(cluster.short.no, -no))) +
-  geom_dotplot(method="histodot", binwidth=.1, stackratio=.7, 
-              binpositions="all", fill=cbp1[3], stroke=NA) + theme +
-  scale_y_continuous(limits=c(0, 100000), breaks=NULL, name=NULL) +
-  theme(axis.text.x=element_text(angle = 90, hjust=0.95, vjust=0.2)) + xlab("") + 
-  coord_flip()
+# ggplot(cluster_cases[no %in% 1:10], aes(x=reorder(cluster.short.no, -no))) +
+#   geom_dotplot(method="histodot", binwidth=.1, stackratio=.7, 
+#               binpositions="all", fill=cbp1[3], stroke=NA) + theme +
+#   scale_y_continuous(limits=c(0, 100000), breaks=NULL, name=NULL) +
+#   theme(axis.text.x=element_text(angle = 90, hjust=0.95, vjust=0.2)) + xlab("") + 
+#   coord_flip()
 ```
 
 ```{r}
