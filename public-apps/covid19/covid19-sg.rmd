@@ -287,12 +287,12 @@ renderPlot({
 renderPlot({
   ggplot(data=df_cases_day[date<=input$range_date_case[2] & date>=input$range_date_case[1]],
          aes(x=date, y=comm_rate)) +
-    geom_ribbon(aes(ymin=0, ymax=comm_rate), fill="#8cd6ff", alpha=.5) + 
-    geom_line(color=cbp1[3], size=.5) + 
-    geom_point(color=cbp1[3], size=1) + 
     geom_ribbon(aes(ymin=0, ymax=hospitalisation_rate), fill="#75ccd1", alpha=.5) + 
     geom_line(aes(y=hospitalisation_rate), color="#35c4cc", size=.5) + 
     geom_point(aes(y=hospitalisation_rate), color="#35c4cc", size=1) + 
+    geom_ribbon(aes(ymin=0, ymax=comm_rate), fill="#8cd6ff", alpha=.5) + 
+    geom_line(color=cbp1[3], size=.5) + 
+    geom_point(color=cbp1[3], size=1) + 
     geom_ribbon(aes(ymin=0, ymax=icu_rate*icu_scale), fill="#3296cf", alpha=.5) + 
     geom_line(aes(x=date, y=icu_rate*icu_scale), color=cbp1[6], size=.5) +
     geom_point(aes(x=date, y=icu_rate*icu_scale), color=cbp1[6], size=1) + 
@@ -399,9 +399,15 @@ If it is assumed that hospitals can operate at a 90% bed load, to ensure that ho
 From [24 Mar 2020](https://go.gov.sg/measures24mar), those who still test positive but display no symptoms will no longer be hospitalised but moved to isolation facilities.
 
 ```{r}
+style = "display: inline-block;vertical-align:top;padding-right: 20px"
+bootstrapPage(
+  div(style=style, dateRangeInput("range_date_pl", "Date range", 
+                                   start = min_date, end = max_date, 
+                                   min = min_date, max = max_date)))
 renderPlot({
   sec_axis_name = "% of maximum patient load\n"
-  ggplot(data=df_cases_day, aes(x=date, y=I2)) +
+  ggplot(data=df_cases_day[date<=input$date_range_pl[2] & date>=input$date_range_pl[1]], 
+         aes(x=date, y=I2)) +
     geom_ribbon(aes(ymin=0, ymax=I2), fill="#3296cf", alpha=.5) + 
     geom_line(color=cbp1[6], size=.5) + 
     geom_point(color=cbp1[6], size=1) + 
