@@ -21,6 +21,7 @@ https://shiny.rstudio.com/articles/interactive-docs.html
 https://rmarkdown.rstudio.com/lesson-3.html
 
 Use `rmarkdown::run("public-apps/covid19/covid19-sg.rmd")`.
+Use `rmarkdown::run("public-apps/themes/ggthemes.rmd")`.
 
 ## Information
 http://34.87.161.142:3838/

@@ -1,0 +1,36 @@
+---
+runtime: shiny
+title: "ggplot custom themes"
+output: 
+  html_document:
+    toc: true
+    theme: journal
+---
+
+```{r echo=FALSE}
+# markdown themes
+# "default", "cerulean", "journal", "flatly", "darkly", "readable", "spacelab", "united",
+# "cosmo", "lumen", "paper", "sandstone", "simplex", "yeti"
+```
+
+```{r echo=FALSE}
+knitr::opts_chunk$set(echo=T, message=T, warning=T)
+```
+
+```{r}
+library(ggplot2)
+```
+
+```{r echo=FALSE}
+# Resources
+# https://www.channelnewsasia.com/news/interactives
+# https://www.straitstimes.com/multimedia/graphics
+```
+
+# Theme 1
+
+
+
+```{r}
+# Test
+```
