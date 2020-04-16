@@ -76,7 +76,7 @@ max_date = max(df$confirmed.at.date, na.rm=T)
 date_second_wave = as.Date("2020-02-25")
 ```
 
-The first case of Covid-19 was detected in Singapore on `r format(min_date, "%d %B %Y")`. 
+The first case of Covid-19 was detected in Singapore on `r format(min_date, "%d %b %Y")`. 
 
 Key measures and events are marked below. Just at a glance, the border control measures and events (category 4) seem to be effacious as the number of imported cases dropped 31 Mar onwards.
 
@@ -100,33 +100,45 @@ renderPlot({
   data = merge(data, labels, by.x=c("confirmed.at.date", "infection.type"), 
                by.y=c("date", "infection.type"), all.x=T, all.y=T)
 
-  ggplot(data=data[confirmed.at.date >= min_date & confirmed.at.date <= max_date], 
-               aes(x=confirmed.at.date, y=N, fill=infection.type, label=no)) +
-    geom_bar(position='stack', stat="identity") + 
-    geom_bar(aes(x=confirmed.at.date, y=R, fill=cbp1[7]), position='stack', stat="identity") + 
-    geom_bar(aes(x=confirmed.at.date, y=D, fill="#525252"), position='stack', stat="identity") + 
-    xlab("") + ylab("Number of cases\n") +
-    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
-    scale_y_continuous(breaks=breaks_f) +
-    scale_fill_manual(name="", 
-                      labels=c("Deceased", "Recovered", "Event", "Event/measure",
-                               "Imported case", "Local linked", "Local unlinked",
-                               "Measure", "Unknown"),
-                      values=c("darkgreen", cbp1[4], "white", "grey90",
-                               cbp1[c(6, 3)], "#8ccff5", 
-                               "grey80", "navyblue"),
-                      aesthetics = c("fill", "segment.color")) + 
-    theme +
-    theme(legend.position="bottom", legend.box = "horizontal", 
-          axis.text.x=element_text(angle = 90)) +
-    geom_label_repel(nudge_y=100, direction="x", angle=90, vjust=0, force=2, 
-                     fontface='bold', color="black", size=3, 
-                     segment.size=0.5, segment.color='black', 
-                     box.padding = unit(0.4, 'lines'), aes(fill=type),
-                     arrow = arrow(length = unit(1, "mm")),
-                     point.padding = 0, max.iter=3000, show.legend=F) +
-    scale_color_discrete() + 
-    geom_vline(xintercept=date_second_wave, size=.5, col=cbp1[2], linetype="dotted")
+  data = data[confirmed.at.date >= min_date & confirmed.at.date <= max_date]
+
+  add_date = 4
+
+  ggplot(data=data, aes(x=confirmed.at.date, y=N, fill=infection.type, label=no)) +
+
+  geom_rect(aes(xmin=min(data$confirmed.at.date-add_date), xmax=max(data$confirmed.at.date)+add_date, 
+                ymin=0, ymax=Inf), fill="lightblue1", show.legend=F, alpha=0.01) +
+  geom_rect(aes(xmin=min(data$confirmed.at.date-add_date), xmax=max(data$confirmed.at.date)+add_date, 
+                ymin=-Inf, ymax=0), fill="lightgreen", show.legend=F, alpha=0.01) +
+
+  geom_bar(position='stack', stat="identity") + 
+  geom_bar(aes(x=confirmed.at.date, y=R, fill=cbp1[7]), position='stack', stat="identity") + 
+  geom_bar(aes(x=confirmed.at.date, y=D, fill="#525252"), position='stack', stat="identity") + 
+
+  xlab("") + ylab("Number of cases\n") +
+  scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
+  scale_y_continuous(breaks=breaks_f) +
+  scale_fill_manual(name="", 
+                    labels=c("Deceased", "Recovered", "Event", "Event/measure",
+                              "Imported case", "Local linked", "Local unlinked",
+                              "Measure", "Unknown"),
+                    values=c("darkgreen", cbp1[4], "white", "grey90",
+                              cbp1[c(6, 3)], "#8ccff5", 
+                              "grey80", "navyblue"),
+                    aesthetics = c("fill", "segment.color")) + 
+
+  theme +
+  theme(legend.position="bottom", legend.box = "horizontal", 
+        axis.text.x=element_text(angle = 90)) +
+
+  geom_label_repel(nudge_y=100, direction="x", angle=90, vjust=0, force=2, 
+                    fontface='bold', color="black", size=3, 
+                    segment.size=0.5, segment.color='black', 
+                    box.padding = unit(0.4, 'lines'), aes(fill=type),
+                    arrow = arrow(length = unit(1, "mm")),
+                    point.padding = 0, max.iter=3000, show.legend=F) +
+
+  geom_vline(xintercept=date_second_wave, size=.5, col=cbp1[2], linetype="dotted")
 
 })
 ```
