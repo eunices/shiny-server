@@ -406,7 +406,7 @@ bootstrapPage(
                                    min = min_date, max = max_date)))
 renderPlot({
   sec_axis_name = "% of maximum patient load\n"
-  ggplot(data=df_cases_day[date<=input$date_range_pl[2] & date>=input$date_range_pl[1]], 
+  ggplot(data=df_cases_day[date<=input$range_date_pl[2] & date>=input$range_date_pl[1]], 
          aes(x=date, y=I2)) +
     geom_ribbon(aes(ymin=0, ymax=I2), fill="#3296cf", alpha=.5) + 
     geom_line(color=cbp1[6], size=.5) + 
