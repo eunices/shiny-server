@@ -257,13 +257,15 @@ max_load = (9*1200*0.15) + 300       # hospital capacity
 hosp_prop = 0.5                      # proportion of cases requiring hospitalisation
 date_no_hosp = as.Date("2020-03-24") # date when hospitalisation not required for positive, asymptomatic cases
 date_bvh = as.Date("2020-03-24")     # date of opening of bvh
+
+beds_bvh = 200
 ```
 
 ```{r}
 df_cases_day$icu_rate = (df_cases_day$I1)/ df_cases_day$case_load * 100
 df_cases_day$hospitalisation_rate = (df_cases_day$I2 + df_cases_day$I1)/ df_cases_day$case_load * 100
 df_cases_day$comm_rate = (df_cases_day$I3)/ df_cases_day$case_load * 100
-df_cases_day$max_load = ifelse(df_cases_day$date < date_bvh, max_load, max_load+200)
+df_cases_day$max_load = ifelse(df_cases_day$date < date_bvh, max_load, max_load + beds_bvh)
 df_cases_day$percent_load = (df_cases_day$I2+df_cases_day$I1)/df_cases_day$max_load * 100
 
 mean_icu_rate = mean(df_cases_day[date>=date_no_hosp]$icu_rate, na.rm=T)
@@ -272,7 +274,9 @@ mean_comm_rate = mean(df_cases_day[date>=date_no_hosp]$comm_rate, na.rm=T)
 ```
 
 Case load is an important metric that is correlated also with hospital load. These are split into those that are in ICU, those that are hospitalised and those which test positive but have no symptoms and are in isolation facilities.
- 
+
+From [24 Mar 2020](https://go.gov.sg/measures24mar), those who still test positive but display no symptoms will no longer be hospitalised but moved to isolation facilities. Approximately 60% of cases are hospitalised.
+
 ```{r}
 style = "display: inline-block;vertical-align:top;padding-right: 20px"
 bootstrapPage(
@@ -417,7 +421,6 @@ There are 9 public acute hospitals in Singapore, with an average capacity of 1,2
 
 If it is assumed that hospitals can operate at a 90% bed load, to ensure that hospitals are not overtaxed and there is sufficient isolation between Covid-19 patients (more than usual required), then there would be `r max_load` beds available. Note that this is a very rough estimate and that hospitals could possibly expand in capacity where needed (e.g. in the NCID can be expanded to [>500 beds](https://www.ncid.sg/Facilities-Services/Pages/default.aspx)).
 
-From [24 Mar 2020](https://go.gov.sg/measures24mar), those who still test positive but display no symptoms will no longer be hospitalised but moved to isolation facilities. We assume that 50% of patients require hospitalisation (as seen in the earlier graphs). 
 From [11 Apr 2020](https://www.straitstimes.com/singapore/health/bright-vision-hospital-transfers-all-patients-to-make-room-for-stable-covid-19), 110 stable (but requiring hospital care) Covid-19 patients were transferred to Bright Vision Hospital which has 200 bed space when fully operational.
 
 ```{r}
