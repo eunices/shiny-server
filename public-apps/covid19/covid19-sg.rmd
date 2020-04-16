@@ -112,10 +112,11 @@ renderPlot({
              xmax=max(data$confirmed.at.date)+add_date, 
              ymin=0, ymax=Inf, fill="skyblue", alpha=0.2) +
     annotate("text", x = min(data$confirmed.at.date), y=annotation_y, label = "Infected", hjust = 0) +
+    
     annotate(geom="rect", xmin=min(data$confirmed.at.date-add_date), 
              xmax=max(data$confirmed.at.date)+add_date, 
              ymin=-Inf, ymax=0, fill="#dbffbf", alpha=0.5) +
-    annotate("text", x = min(data$confirmed.at.date), y=-annotation_y, label = "Recovered", hjust = 0) +
+    annotate("text", x = min(data$confirmed.at.date), y=-annotation_y, label = "Removed", hjust = 0) +
 
   geom_bar(position='stack', stat="identity") + 
   geom_bar(aes(x=confirmed.at.date, y=R, fill=cbp1[7]), position='stack', stat="identity") + 
