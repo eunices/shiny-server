@@ -106,10 +106,10 @@ renderPlot({
 
   ggplot(data=data, aes(x=confirmed.at.date, y=N, fill=infection.type, label=no)) +
 
-  geom_rect(aes(xmin=min(data$confirmed.at.date-add_date), xmax=max(data$confirmed.at.date)+add_date, 
-                ymin=0, ymax=Inf), fill="lightblue1", show.legend=F, alpha=0.01) +
-  geom_rect(aes(xmin=min(data$confirmed.at.date-add_date), xmax=max(data$confirmed.at.date)+add_date, 
-                ymin=-Inf, ymax=0), fill="lightgreen", show.legend=F, alpha=0.01) +
+  geom_rect(aes(xmin=as.Date("1990-01-01"), xmax=as.Date("2025-01-01"), 
+                ymin=0, ymax=Inf), fill="#a8e6ff", show.legend=F, alpha=0.01) +
+  geom_rect(aes(xmin=as.Date("1990-01-01"), xmax=as.Date("2025-01-01"), 
+                ymin=-Inf, ymax=0), fill="#dbffbf", show.legend=F, alpha=0.01) +
 
   geom_bar(position='stack', stat="identity") + 
   geom_bar(aes(x=confirmed.at.date, y=R, fill=cbp1[7]), position='stack', stat="identity") + 
