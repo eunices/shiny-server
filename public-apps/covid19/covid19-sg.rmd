@@ -109,7 +109,7 @@ renderPlot({
 
   # implement gradient alpha if have time
   geom_rect(aes(xmin=min(data$confirmed.at.date-add_date), xmax=max(data$confirmed.at.date)+add_date, 
-                ymin=0, ymax=Inf), fill="#9ee8ff", show.legend=F, alpha=0.01) +
+                ymin=0, ymax=Inf), fill="#baefff", show.legend=F, alpha=0.01) +
   geom_rect(aes(xmin=min(data$confirmed.at.date-add_date), xmax=max(data$confirmed.at.date)+add_date, 
                 ymin=-Inf, ymax=0), fill="#dbffbf", show.legend=F, alpha=0.01) +
 
