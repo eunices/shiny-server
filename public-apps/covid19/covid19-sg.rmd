@@ -7,7 +7,7 @@ output:
     theme: flatly
 ---
 
-This document is best viewed on a computer and is not optimised for mobile viewing.
+<p style="text-align: center;">This document is best viewed on a computer and is not optimised for mobile viewing.</p>
 
 **DISCLAIMER: Not an epidemiologist, so the information below should not be used for policy. Neither has this document gone through peer review, so please do not cite it.**
 
