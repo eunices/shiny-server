@@ -9,9 +9,9 @@ camelcase_labeller <- function(variable, value){
 }
 
 breaks_f <- function(v) {
-  min = 0
   max = ceiling(max(v, na.rm=T))
   inc = ifelse(max>300, 100, ifelse(max>100, 50, ifelse(max>80, 20, ifelse(max>20, 10, ifelse(max>10, 5,  2)))))
+  min = floor(min(v, na.rm=T)/inc)*inc
   seq(min, max, inc)
 }
 
