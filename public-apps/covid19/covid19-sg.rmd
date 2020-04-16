@@ -104,18 +104,15 @@ renderPlot({
 
   add_date = 3
 
-
   ggplot(data=data, aes(x=confirmed.at.date, y=N, fill=infection.type, label=no)) +
 
-  # implement gradient alpha if have time
-  geom_rect(data = data.frame(x = 0, y = 0), 
-           aes(xmin=min(data$confirmed.at.date-add_date), xmax=max(data$confirmed.at.date)+add_date, 
-               ymin=0, ymax=Inf), 
-           fill="skyblue", show.legend=F, alpha=0.2) +
-  geom_rect(data = data.frame(x = 0, y = 0), 
-            aes(xmin=min(data$confirmed.at.date-add_date), xmax=max(data$confirmed.at.date)+add_date, 
-                ymin=-Inf, ymax=0), 
-            fill="#dbffbf", show.legend=F, alpha=0.2) +
+    # implement gradient alpha if have time
+    annotate(geom="rect", xmin=min(data$confirmed.at.date-add_date),
+             xmax=max(data$confirmed.at.date)+add_date, 
+             ymin=0, ymax=Inf, fill="skyblue", alpha=0.2) +
+    annotate(geom="rect", xmin=min(data$confirmed.at.date-add_date), 
+             xmax=max(data$confirmed.at.date)+add_date, 
+             ymin=-Inf, ymax=0, fill="#dbffbf", alpha=0.5) +
 
   geom_bar(position='stack', stat="identity") + 
   geom_bar(aes(x=confirmed.at.date, y=R, fill=cbp1[7]), position='stack', stat="identity") + 
