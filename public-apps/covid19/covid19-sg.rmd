@@ -91,7 +91,6 @@ labels$y = labels$yend + sample(2:6, size=length(labels$yend), replace=T)*50
 labels$infection.type = "Local unlinked"
 
 renderPlot({
-
   data = df[,list(N=.N),by=c("confirmed.at.date", "infection.type")]
   data = merge(data, df[,list(R=-.N),by=c("recovered.at.date")], 
                by.x="confirmed.at.date", by.y="recovered.at.date", all.x=T, all.y=T)
@@ -101,6 +100,9 @@ renderPlot({
                by.y=c("date", "infection.type"), all.x=T, all.y=T)
 
   data = data[confirmed.at.date >= min_date & confirmed.at.date <= max_date]
+  data[is.na(data$R)]$R = 0
+  data[is.na(data$D)]$D = 0
+  data[is.na(data$N)]$N = 0
 
   add_date = 3
   annotation_y = 50
@@ -111,12 +113,12 @@ renderPlot({
     annotate(geom="rect", xmin=min(data$confirmed.at.date-add_date),
              xmax=max(data$confirmed.at.date)+add_date, 
              ymin=0, ymax=Inf, fill="skyblue", alpha=0.2) +
-    annotate("text", x = min(data$confirmed.at.date), y=annotation_y, label = "Infected", hjust = 0) +
+    annotate("text", x = min(data$confirmed.at.date), y=annotation_y, label="Infected", hjust=0) +
     
     annotate(geom="rect", xmin=min(data$confirmed.at.date-add_date), 
              xmax=max(data$confirmed.at.date)+add_date, 
              ymin=-Inf, ymax=0, fill="#dbffbf", alpha=0.5) +
-    annotate("text", x = min(data$confirmed.at.date), y=-annotation_y, label = "Removed", hjust = 0) +
+    annotate("text", x = min(data$confirmed.at.date), y=-annotation_y, label="Removed", hjust=0) +
 
   geom_bar(position='stack', stat="identity") + 
   geom_bar(aes(x=confirmed.at.date, y=R, fill=cbp1[7]), position='stack', stat="identity") + 
@@ -146,8 +148,8 @@ renderPlot({
                     point.padding = 0, max.iter=3000, show.legend=F) +
 
   geom_vline(xintercept=date_second_wave, size=.5, col=cbp1[2], linetype="dotted")
-
 })
+
 ```
 
 ```{r}
