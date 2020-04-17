@@ -1,6 +1,6 @@
 library(data.table)
 ddir = "C:\\Users\\ejysoh\\Desktop\\sg-covid-cases\\"
-filename = "2020-04-15.csv"
+filename = "2020-04-16.csv"
 type = 1
 # type 1: without country of origin
 # type 2: with country of origin
@@ -99,6 +99,7 @@ d$displayed.symptoms = TRUE
 d$symptomatic.at.date = NA
 d$recovered.at.date = NA
 d$deceased.at.date = NA
+d$deceased.at.date.other = NA
 
 d = d[, ..nms]
 d = d[order(as.numeric(case))]
