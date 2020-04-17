@@ -167,7 +167,7 @@ renderPlot({
     theme +
     theme(legend.position="bottom", legend.box = "horizontal", 
           axis.text.x=element_text(angle = 90),
-          panel.background = element_rect(fill='black')) + 
+          panel.background = element_rect(fill='black', color="grey20")) + 
 
     xlab("") + ylab("Number of cases by status\n") +
     
