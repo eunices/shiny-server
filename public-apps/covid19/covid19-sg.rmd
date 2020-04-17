@@ -152,31 +152,6 @@ renderPlot({
 
 ```
 
-```{r}
-
-renderPlot({
-  data = df[,list(N=.N),by=c("confirmed.at.date", "patient.citizen")]
-
-  data$patient.citizen = factor(data$patient.citizen,
-      levels=c("citizen", "pr", "sp", "wp", "lp", "visitor", "unknown"),
-      labels=c("Citizen", "PR", "SP", "WP", "LP", "Visitor", "Unknown"))   
-
-  ggplot(data=data, aes(x=confirmed.at.date, y=N, fill=patient.citizen)) +
-    geom_bar(position='stack', stat="identity") + 
-    
-    theme +
-    theme(legend.position="bottom", legend.box = "horizontal", 
-          axis.text.x=element_text(angle = 90)) + 
-
-    xlab("") + ylab("Number of cases by status\n") +
-    
-    scale_fill_brewer(palette = "Blues") +
-    guides(fill=guide_legend(title="")) + 
-
-    scale_y_continuous(breaks=breaks_f) +
-    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") 
-})
-```
 
 ```{r}
 show_events = events[grepl("event", type)][,c("no", "date", "short")]
@@ -207,6 +182,32 @@ show_measures %>%
 ```
 
 From 7 Apr onwards, there was a greater number of unlinked cases.
+
+
+```{r}
+renderPlot({
+  data = df[,list(N=.N),by=c("confirmed.at.date", "patient.citizen")]
+
+  data$patient.citizen = factor(data$patient.citizen,
+      levels=c("citizen", "pr", "sp", "wp", "lp", "visitor", "unknown"),
+      labels=c("Citizen", "PR", "SP", "WP", "LP", "Visitor", "Unknown"))   
+
+  ggplot(data=data, aes(x=confirmed.at.date, y=N, fill=patient.citizen)) +
+    geom_bar(position='stack', stat="identity") + 
+    
+    theme +
+    theme(legend.position="bottom", legend.box = "horizontal", 
+          axis.text.x=element_text(angle = 90)) + 
+
+    xlab("") + ylab("Number of cases by status\n") +
+    
+    scale_fill_brewer(palette = "Blues") +
+    guides(fill=guide_legend(title="")) + 
+
+    scale_y_continuous(breaks=breaks_f) +
+    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") 
+})
+```
 
 #### Clusters through time
 

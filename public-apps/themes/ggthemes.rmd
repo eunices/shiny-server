@@ -34,4 +34,5 @@ library(ggplot2)
 
 ```{r}
 # Test
+display.brewer.all() 
 ```
