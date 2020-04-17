@@ -31,5 +31,5 @@ library(RColorBrewer)
 
 ```{r}
 # Test
-display.brewer.all()  
+renderPlot({display.brewer.all()})
 ```
