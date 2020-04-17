@@ -170,7 +170,7 @@ renderPlot({
 
     xlab("") + ylab("Number of cases by status\n") +
     
-    scale_fill_brewer(palette = "Set2") +
+    scale_fill_brewer(palette = "Blues") +
     guides(fill=guide_legend(title="")) + 
 
     scale_y_continuous(breaks=breaks_f) +
