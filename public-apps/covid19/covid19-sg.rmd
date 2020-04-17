@@ -537,7 +537,7 @@ Note: cases whose hospitals were pending at time of press release and those who 
 hosp_cases = df[!(tolower(hospital) %in% c("unknown", "", "not admitted")), 
                 list(cases=.N), by=c("confirmed.at.date", "hospital")]
 renderPlot({
-  ggplot(data=hosp_cases, aes(x=confirmed.at.date, y=cases) +
+  ggplot(data=hosp_cases, aes(x=confirmed.at.date, y=cases)) +
     geom_bar(stat="identity", fill=cbp1[3], color=NA, alpha=0.6) +
     facet_wrap(~hospital) +
     scale_y_continuous(breaks=breaks_f) +
