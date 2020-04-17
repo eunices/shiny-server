@@ -162,12 +162,18 @@ renderPlot({
       labels=c("Citizen", "PR", "SP", "WP", "LP", "Visitor", "Unknown"))   
 
   ggplot(data=data, aes(x=confirmed.at.date, y=N, fill=patient.citizen)) +
-    geom_bar(position='stack', stat="identity") + theme +
+    geom_bar(position='stack', stat="identity") + 
+    
+    theme +
     theme(legend.position="bottom", legend.box = "horizontal", 
-          axis.text.x=element_text(angle = 90)) + 
+          axis.text.x=element_text(angle = 90),
+          panel.background = element_rect(fill='black')) + 
+
     xlab("") + ylab("Number of cases by status\n") +
+    
     scale_fill_brewer(palette = "YlGnBu") +
     guides(fill=guide_legend(title="")) + 
+
     scale_y_continuous(breaks=breaks_f) +
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") 
 })
