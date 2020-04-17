@@ -162,7 +162,8 @@ renderPlot({
       labels=c("Citizen", "PR", "SP", "WP", "LP", "Visitor", "Unknown"))   
 
   ggplot(data=data, aes(x=confirmed.at.date, y=N, fill=patient.citizen)) +
-    geom_bar(position='stack', stat="identity") + theme +
+    geom_bar(position='stack', stat="identity", 
+             aes(color=ifelse(grepl("citizen", tolower(patient.citizen), "grey60", NA)))) + theme +
     theme(legend.position="bottom", legend.box = "horizontal", 
           axis.text.x=element_text(angle = 90)) + 
     xlab("") + ylab("Number of cases by status\n") +
