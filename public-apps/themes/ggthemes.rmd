@@ -19,6 +19,7 @@ knitr::opts_chunk$set(echo=T, message=T, warning=T)
 
 ```{r}
 library(ggplot2)
+library(RColorBrewer)
 ```
 
 ```{r echo=FALSE}
