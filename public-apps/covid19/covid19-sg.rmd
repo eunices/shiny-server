@@ -166,12 +166,11 @@ renderPlot({
     
     theme +
     theme(legend.position="bottom", legend.box = "horizontal", 
-          axis.text.x=element_text(angle = 90),
-          panel.background = element_rect(fill='black', color="grey80")) + 
+          axis.text.x=element_text(angle = 90)) + 
 
     xlab("") + ylab("Number of cases by status\n") +
     
-    scale_fill_brewer(palette = "YlGnBu") +
+    scale_fill_brewer(palette = "Set2") +
     guides(fill=guide_legend(title="")) + 
 
     scale_y_continuous(breaks=breaks_f) +
