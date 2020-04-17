@@ -283,7 +283,7 @@ grid.arrange(grobs=gs, layout_matrix=layout)
 ### Case load
 
 ```{r} 
-max_load = (9*1200*0.15) + 300       # hospital capacity
+max_load = (9400*0.25) + 300         # hospital capacity
 hosp_prop = 0.5                      # proportion of cases requiring hospitalisation
 date_no_hosp = as.Date("2020-03-24") # date when hospitalisation not required for positive, asymptomatic cases
 date_bvh = as.Date("2020-04-11")     # date of opening of bvh
@@ -460,10 +460,9 @@ show_deceased_age %>%
 Measuring hospital load is key to ensure that hospitals are not overloaded. 
 
 There are 9 public acute hospitals in Singapore, with an average capacity of 1,200 beds. Prior to covid-19, they were operating at approximately [75% load](https://www.moh.gov.sg/resources-statistics/healthcare-institution-statistics/beds-occupancy-rate-(bor)). The NCID also provides approximately 300 beds. 
+According to [a Straits Times article]((https://www.straitstimes.com/singapore/health/coronavirus-experts-say-big-jump-in-infections-is-stretching-the-healthcare-system)), there are approximately 9,400 public hospital beds. Thus if we assume 25% bed space avalability, there would be `9400*0.25 + 300 =` `r max_load` beds available with the addition of 300 beds from the NCID. Note that this is a very rough estimate and that hospitals could possibly expand in capacity where needed (e.g. in the NCID can be expanded to [>500 beds](https://www.ncid.sg/Facilities-Services/Pages/default.aspx)).
 
-This is an [article](https://www.straitstimes.com/singapore/health/coronavirus-experts-say-big-jump-in-infections-is-stretching-the-healthcare-system) that supports the hospital bed availability is about 75% in Jan 2020. However, private hospital, which have about 1600 beds according to that article, were not included in the hospital beds maximum load, as they have not been housing many patients at the moment.
-
-If it is assumed that hospitals can operate at a 90% bed load, to ensure that hospitals are not overtaxed and there is sufficient isolation between Covid-19 patients (more than usual required), then there would be `r max_load` beds available. Note that this is a very rough estimate and that hospitals could possibly expand in capacity where needed (e.g. in the NCID can be expanded to [>500 beds](https://www.ncid.sg/Facilities-Services/Pages/default.aspx)).
+However, private hospital, which have about 1,600 beds according to the [article](https://www.straitstimes.com/singapore/health/coronavirus-experts-say-big-jump-in-infections-is-stretching-the-healthcare-system), were not included in the hospital beds maximum load, as they have not been housing many patients at the moment.
 
 From [11 Apr 2020](https://www.straitstimes.com/singapore/health/bright-vision-hospital-transfers-all-patients-to-make-room-for-stable-covid-19), 110 stable (but requiring hospital care) Covid-19 patients were transferred to Bright Vision Hospital which has 200 bed space when fully operational.
 
