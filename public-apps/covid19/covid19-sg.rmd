@@ -503,6 +503,16 @@ renderPlot({
 })
 ```
 
+```{r}
+prop_admitted20 = .2
+show_serious = df_cases_day[,c('date', 'case_load')]
+show_serious$admitted20 = df_cases_day$case_load
+show_serious$admitted20 = ceiling(show_serious$admitted20 * prop_admitted20)
+show_serious$proportion20 = round(show_serious$admitted/max_load*100, 1)
+```
+
+Assuming admitting only serious cases (`r prop_admitted20*100`% of active cases), on `r format(show_serious[dim(show_serious)[1]]$date, "%d %b %Y")` with `r show_serious[dim(show_serious)[1]]$case_load` cases, the hospitals are filled by `r show_serious[dim(show_serious)[1]]$proportion20`% and is increasing at a rate of `r show_serious[dim(show_serious)[1]]$proportion20-show_serious[(dim(show_serious)[1]-1)]$proportion20`% (or `r show_serious[dim(show_serious)[1]]$case_load-show_serious[(dim(show_serious)[1]-1)]$case_load` cases with `r round((show_serious[dim(show_serious)[1]]$case_load-show_serious[(dim(show_serious)[1]-1)]$case_load)*prop_admitted20, 0)` serious cases) from yesterday.
+
 #### Hospitals/isolation facilities
 
 Most cases are currently in the newly-opened NCID to deal with infectious diseases. It was operational [since 7 Sep 2019](https://www.ncid.sg/News-Events/News/Pages/NCID-Official-Opening.aspx).
@@ -541,7 +551,7 @@ renderPlot({
     geom_bar(stat="identity", fill=cbp1[3], color=NA, alpha=0.6) +
     facet_wrap(~hospital) +
     scale_y_continuous(breaks=breaks_f) +
-    ylab("Number of new cases in hospital (line)\n") + xlab("") + 
+    ylab("Number of new cases in hospital\n") + xlab("") + 
     theme
 })
 ```
