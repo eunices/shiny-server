@@ -122,6 +122,10 @@ clean_data = function(df, write=F) {
     df$symptomatic.at = NULL
     df$status = NULL
 
+    df$patient.citizen = factor(df$patient.citizen,
+        levels=c("citizen", "pr", "sp", "wp", "lp", "visitor", "unknown"),
+        labels=c("Citizen", "PR", "SP", "WP", "LP", "Visitor", "Unknown"))   
+
     print(paste0(Sys.time(), ": Finishing up."))
     df = df[order(as.numeric(df$case)),]
 
