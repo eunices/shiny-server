@@ -1048,14 +1048,14 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1047,2020-04-02,NCID,25,M,India,lp,,Local transmission,,,SingPost Centre at 10 Eunos Road 8; S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
 1048,2020-04-02,NCID,73,F,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA,NA
 1049,2020-04-02,NCID,30,M,India,lp,,Local transmission,,,Tampines Dormitory at 2 Tampines Place; Construction site at 6 Battery Road,TRUE,NA,NA,NA,NA
-1050,2020-04-03,NCID,56,M,China,visitor,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1050,2020-04-03,NCID,56,M,China,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
 1051,2020-04-03,KTPH,35,M,Singapore,citizen,Malaysia,Imported case,,,,TRUE,NA,NA,NA,NA
 1052,2020-04-03,SGH,55,F,Singapore,citizen,,Local transmission,,,Singapore Cricket Club at A Connaught Drive,TRUE,NA,2020-04-09,NA,NA
 1053,2020-04-03,NCID,47,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
-1054,2020-04-03,NCID,29,M,India,visitor,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East; Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA,NA
+1054,2020-04-03,NCID,29,M,India,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East; Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA,NA
 1055,2020-04-03,NCID,61,M,Singapore,citizen,,Local transmission,,,Lee Ah Mooi Old Age Home at 1 Thomson Lane,TRUE,NA,NA,NA,NA
 1056,2020-04-03,NCID,40,M,Bangladesh,visitor,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
-1057,2020-04-03,NCID,46,F,Netherlands,visitor,,Local transmission,,907,,TRUE,NA,NA,NA,NA
+1057,2020-04-03,NCID,46,F,Netherlands,lp,,Local transmission,,907,,TRUE,NA,NA,NA,NA
 1058,2020-04-03,KKH,7,M,Singapore,citizen,United Arab Emirates,Imported case,,"832, 872 ",,TRUE,NA,NA,NA,NA
 1059,2020-04-03,KKH,5,M,Singapore,citizen,United Arab Emirates,Imported case,,"832, 872 ",,TRUE,NA,2020-04-09,NA,NA
 1060,2020-04-03,NCID,66,F,Singapore,citizen,United States of America,Imported case,,,,TRUE,NA,2020-04-17,NA,NA
@@ -1109,7 +1109,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1108,2020-04-03,KTPH,24,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
 1109,2020-04-03,AH,72,M,Indonesia,lp,Indonesia,Imported case,,928,,TRUE,NA,NA,NA,NA
 1110,2020-04-03,KTPH,27,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1111,2020-04-03,KTPH,29,M,Myanmar,visitor,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1111,2020-04-03,KTPH,29,M,Myanmar,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
 1112,2020-04-03,KTPH,32,M,Myanmar,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
 1113,2020-04-03,NTFGH,42,M,Bangladesh,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
 1114,2020-04-03,CGH,28,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
