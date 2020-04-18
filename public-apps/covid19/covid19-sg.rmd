@@ -708,7 +708,8 @@ renderPlot({
           legend.position="bottom", legend.box = "vertical",
           axis.text.y=element_text(size=rel(1)))+
     scale_y_continuous(breaks=breaks_f) +
-    scale_fill_manual(name="", values=cbp1[c(2, 7, 5, 3, 6, 4, 1)]) +
+    scale_fill_brewer(palette = "Blues") +
+    guides(fill=guide_legend(title="")) + 
     ylab("Number of people\n") + xlab("\nStatus") + ggtitle("Status of top 10 largest clusters")
 })
 ```
