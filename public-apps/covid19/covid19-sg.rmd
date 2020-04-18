@@ -276,7 +276,7 @@ renderPlot({
     theme(legend.position="bottom", legend.box = "horizontal", 
           axis.text.x=element_text(angle = 90)) + 
 
-    xlab("") + ylab("Number of cases\n(by status)\n") + 
+    xlab("") + ylab("Number of cases\n(by linked status)\n") + 
     ggtitle("Community spread (citizens, PRs, WP/SP/LP not in dorm/construction clusters)") +
 
     scale_fill_brewer(palette = "Blues", direction=-1) +
