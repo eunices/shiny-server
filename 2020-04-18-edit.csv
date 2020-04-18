@@ -1,0 +1,950 @@
+"case","confirmed.at.date","hospital","age","gender","patient.nationality","patient.citizen","country.of.origin","infection.source","linked.to","linked.to.family","cluster","displayed.symptoms","symptomatic.at.date","recovered.at.date","deceased.at.date","deceased.at.date.other"
+5051,"2020-04-18","KTPH","28","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5052,"2020-04-18","KTPH","30","M","India","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5053,"2020-04-18","KTPH","27","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5054,"2020-04-18","KTPH","20","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5055,"2020-04-18","KTPH","48","M","China","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5056,"2020-04-18","unknown","33","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5057,"2020-04-18","unknown","33","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5058,"2020-04-18","unknown","31","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5059,"2020-04-18","unknown","21","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5060,"2020-04-18","unknown","30","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5061,"2020-04-18","unknown","28","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5062,"2020-04-18","unknown","33","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5063,"2020-04-18","unknown","32","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5064,"2020-04-18","unknown","30","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5065,"2020-04-18","unknown","28","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5066,"2020-04-18","unknown","25","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5067,"2020-04-18","unknown","28","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5068,"2020-04-18","unknown","30","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5069,"2020-04-18","unknown","48","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5070,"2020-04-18","unknown","29","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5071,"2020-04-18","unknown","46","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5072,"2020-04-18","unknown","38","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5073,"2020-04-18","unknown","41","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5074,"2020-04-18","unknown","29","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5075,"2020-04-18","unknown","32","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5076,"2020-04-18","unknown","36","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5077,"2020-04-18","unknown","47","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5078,"2020-04-18","unknown","37","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5079,"2020-04-18","unknown","32","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5080,"2020-04-18","unknown","53","M","China","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5081,"2020-04-18","unknown","27","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5082,"2020-04-18","unknown","33","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5083,"2020-04-18","unknown","31","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5084,"2020-04-18","unknown","35","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5085,"2020-04-18","unknown","36","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5086,"2020-04-18","unknown","43","M","China","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5087,"2020-04-18","unknown","39","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5088,"2020-04-18","unknown","37","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5089,"2020-04-18","unknown","53","M","China","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5090,"2020-04-18","unknown","22","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5091,"2020-04-18","unknown","23","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5092,"2020-04-18","unknown","36","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5093,"2020-04-18","unknown","37","M","China","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5094,"2020-04-18","unknown","31","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5095,"2020-04-18","unknown","24","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5096,"2020-04-18","unknown","31","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5097,"2020-04-18","unknown","38","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5098,"2020-04-18","unknown","49","M","China","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5099,"2020-04-18","unknown","47","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5100,"2020-04-18","unknown","31","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5101,"2020-04-18","unknown","50","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5102,"2020-04-18","unknown","24","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5103,"2020-04-18","unknown","29","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5104,"2020-04-18","unknown","25","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5105,"2020-04-18","unknown","28","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5106,"2020-04-18","unknown","22","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5107,"2020-04-18","unknown","45","M","China","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5108,"2020-04-18","unknown","28","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5109,"2020-04-18","unknown","36","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5110,"2020-04-18","unknown","33","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5111,"2020-04-18","unknown","24","M","Myanmar","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5112,"2020-04-18","unknown","38","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5113,"2020-04-18","unknown","40","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5114,"2020-04-18","unknown","31","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5115,"2020-04-18","unknown","26","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5116,"2020-04-18","unknown","27","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5117,"2020-04-18","unknown","43","M","China","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5118,"2020-04-18","unknown","27","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5119,"2020-04-18","unknown","37","M","Myanmar","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5120,"2020-04-18","unknown","41","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5121,"2020-04-18","unknown","34","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5122,"2020-04-18","unknown","25","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5123,"2020-04-18","unknown","34","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5124,"2020-04-18","unknown","32","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5125,"2020-04-18","unknown","27","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5126,"2020-04-18","unknown","43","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5127,"2020-04-18","unknown","32","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5128,"2020-04-18","unknown","28","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5129,"2020-04-18","unknown","27","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5130,"2020-04-18","unknown","29","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5131,"2020-04-18","unknown","31","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5132,"2020-04-18","unknown","32","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5133,"2020-04-18","unknown","30","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5134,"2020-04-18","unknown","37","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5135,"2020-04-18","unknown","42","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5136,"2020-04-18","unknown","27","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5137,"2020-04-18","unknown","26","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5138,"2020-04-18","unknown","29","M","Myanmar","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5139,"2020-04-18","unknown","27","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5140,"2020-04-18","unknown","30","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5141,"2020-04-18","unknown","33","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5142,"2020-04-18","unknown","26","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5143,"2020-04-18","unknown","39","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5144,"2020-04-18","unknown","32","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5145,"2020-04-18","unknown","32","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5146,"2020-04-18","unknown","33","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5147,"2020-04-18","unknown","35","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5148,"2020-04-18","unknown","39","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5149,"2020-04-18","unknown","34","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5150,"2020-04-18","unknown","39","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5151,"2020-04-18","unknown","25","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5152,"2020-04-18","unknown","28","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5153,"2020-04-18","unknown","27","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5154,"2020-04-18","unknown","23","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5155,"2020-04-18","unknown","35","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5156,"2020-04-18","unknown","23","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5157,"2020-04-18","unknown","22","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5158,"2020-04-18","unknown","37","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5159,"2020-04-18","unknown","37","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5160,"2020-04-18","unknown","25","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5161,"2020-04-18","unknown","52","M","China","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5162,"2020-04-18","unknown","20","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5163,"2020-04-18","unknown","26","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5164,"2020-04-18","unknown","40","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5165,"2020-04-18","unknown","28","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5166,"2020-04-18","unknown","21","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5167,"2020-04-18","unknown","25","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5168,"2020-04-18","unknown","25","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5169,"2020-04-18","unknown","25","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5170,"2020-04-18","unknown","24","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5171,"2020-04-18","unknown","25","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5172,"2020-04-18","unknown","22","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5173,"2020-04-18","unknown","34","M","Myanmar","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5174,"2020-04-18","unknown","37","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5175,"2020-04-18","unknown","26","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5176,"2020-04-18","unknown","35","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5177,"2020-04-18","unknown","29","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5178,"2020-04-18","unknown","34","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5179,"2020-04-18","unknown","23","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5180,"2020-04-18","unknown","32","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5181,"2020-04-18","unknown","35","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5182,"2020-04-18","unknown","43","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5183,"2020-04-18","unknown","22","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5184,"2020-04-18","unknown","28","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5185,"2020-04-18","unknown","24","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5186,"2020-04-18","unknown","55","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5187,"2020-04-18","unknown","32","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5188,"2020-04-18","unknown","30","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5189,"2020-04-18","unknown","22","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5190,"2020-04-18","unknown","38","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5191,"2020-04-18","unknown","36","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5192,"2020-04-18","unknown","37","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5193,"2020-04-18","unknown","42","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5194,"2020-04-18","unknown","47","M","Thailand","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5195,"2020-04-18","unknown","32","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5196,"2020-04-18","unknown","36","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5197,"2020-04-18","unknown","26","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5198,"2020-04-18","unknown","41","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5199,"2020-04-18","unknown","30","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5200,"2020-04-18","unknown","28","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5201,"2020-04-18","unknown","29","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5202,"2020-04-18","unknown","31","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5203,"2020-04-18","unknown","35","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5204,"2020-04-18","unknown","42","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5205,"2020-04-18","unknown","34","M","Myanmar","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5206,"2020-04-18","unknown","29","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5207,"2020-04-18","unknown","31","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5208,"2020-04-18","unknown","28","M","Myanmar","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5209,"2020-04-18","unknown","33","M","India","sp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5210,"2020-04-18","unknown","35","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5211,"2020-04-18","unknown","37","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5212,"2020-04-18","unknown","29","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5213,"2020-04-18","unknown","25","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5214,"2020-04-18","unknown","29","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5215,"2020-04-18","unknown","49","M","China","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5216,"2020-04-18","unknown","28","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5217,"2020-04-18","unknown","32","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5218,"2020-04-18","unknown","39","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5219,"2020-04-18","unknown","43","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5220,"2020-04-18","unknown","34","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5221,"2020-04-18","unknown","27","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5222,"2020-04-18","unknown","24","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5223,"2020-04-18","unknown","40","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5224,"2020-04-18","unknown","28","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5225,"2020-04-18","unknown","34","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5226,"2020-04-18","unknown","22","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5227,"2020-04-18","unknown","46","M","China","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5228,"2020-04-18","unknown","35","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5229,"2020-04-18","unknown","31","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5230,"2020-04-18","unknown","45","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5231,"2020-04-18","unknown","29","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5232,"2020-04-18","unknown","22","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5233,"2020-04-18","unknown","42","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5234,"2020-04-18","unknown","44","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5235,"2020-04-18","unknown","26","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5236,"2020-04-18","unknown","35","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5237,"2020-04-18","KTPH","45","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5238,"2020-04-18","KTPH","42","M","Bangladesh","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5239,"2020-04-18","KTPH","35","M","India","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5240,"2020-04-18","KTPH","26","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5241,"2020-04-18","KTPH","35","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5242,"2020-04-18","KTPH","31","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5243,"2020-04-18","KTPH","25","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5244,"2020-04-18","KTPH","41","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5245,"2020-04-18","KTPH","46","M","China","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5246,"2020-04-18","KTPH","29","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5247,"2020-04-18","KTPH","32","M","Bangladesh","wp","","Local transmission","","","Westlite Mandai at 34 Mandai Estate",TRUE,NA,NA,NA,NA
+5248,"2020-04-18","KTPH","25","M","India","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5249,"2020-04-18","KTPH","30","M","Bangladesh","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5250,"2020-04-18","KTPH","29","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5251,"2020-04-18","KTPH","33","M","India","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5252,"2020-04-18","KTPH","29","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5253,"2020-04-18","KTPH","27","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5254,"2020-04-18","KTPH","42","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5255,"2020-04-18","KTPH","36","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5256,"2020-04-18","KTPH","36","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5257,"2020-04-18","KTPH","31","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5258,"2020-04-18","KTPH","36","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5259,"2020-04-18","AH","37","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5260,"2020-04-18","AH","37","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5261,"2020-04-18","unknown","49","M","China","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5262,"2020-04-18","unknown","56","M","Singapore","citizen","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5263,"2020-04-18","unknown","28","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5264,"2020-04-18","unknown","34","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5265,"2020-04-18","unknown","36","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5266,"2020-04-18","unknown","34","M","India","sp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5267,"2020-04-18","SGH","28","M","Bangladesh","wp","","Local transmission","3487","","",TRUE,NA,NA,NA,NA
+5268,"2020-04-18","SGH","37","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5269,"2020-04-18","SGH","40","M","India","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5270,"2020-04-18","SGH","32","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5271,"2020-04-18","SGH","24","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5272,"2020-04-18","SGH","30","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5273,"2020-04-18","CGH","35","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5274,"2020-04-18","CGH","36","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5275,"2020-04-18","CGH","35","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5276,"2020-04-18","CGH","48","M","China","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5277,"2020-04-18","SKH","67","M","Singapore","citizen","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5278,"2020-04-18","SKH","43","M","India","sp","","Local transmission","","","PPT Lodge 1A at 8 Seletar North Link",TRUE,NA,NA,NA,NA
+5279,"2020-04-18","SKH","40","M","Bangladesh","wp","","Local transmission","","","PPT Lodge 1A at 8 Seletar North Link",TRUE,NA,NA,NA,NA
+5280,"2020-04-18","SKH","50","M","Bangladesh","wp","","Local transmission","","","PPT Lodge 1A at 8 Seletar North Link",TRUE,NA,NA,NA,NA
+5281,"2020-04-18","SKH","23","M","Bangladesh","wp","","Local transmission","","","PPT Lodge 1A at 8 Seletar North Link",TRUE,NA,NA,NA,NA
+5282,"2020-04-18","NTFGH","44","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5283,"2020-04-18","NTFGH","41","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5284,"2020-04-18","NTFGH","35","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5285,"2020-04-18","NTFGH","40","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5286,"2020-04-18","NTFGH","36","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5287,"2020-04-18","NTFGH","36","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5288,"2020-04-18","NTFGH","27","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5289,"2020-04-18","NTFGH","31","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5290,"2020-04-18","NTFGH","34","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5291,"2020-04-18","NTFGH","26","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5292,"2020-04-18","NTFGH","24","M","India","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5293,"2020-04-18","NTFGH","25","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5294,"2020-04-18","NTFGH","32","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5295,"2020-04-18","NTFGH","42","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5296,"2020-04-18","NTFGH","38","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5297,"2020-04-18","NTFGH","35","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5298,"2020-04-18","NTFGH","80","M","Singapore","citizen","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5299,"2020-04-18","NTFGH","81","M","Singapore","citizen","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5300,"2020-04-18","NTFGH","39","M","Bangladesh","sp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5301,"2020-04-18","CGH","30","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5302,"2020-04-18","CGH","36","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5303,"2020-04-18","CGH","31","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5304,"2020-04-18","CGH","27","M","Bangladesh","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5305,"2020-04-18","CGH","24","M","Bangladesh","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5306,"2020-04-18","CGH","31","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5307,"2020-04-18","CGH","43","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5308,"2020-04-18","CGH","36","M","India","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5309,"2020-04-18","CGH","30","M","India","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5310,"2020-04-18","CGH","47","M","China","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5311,"2020-04-18","CGH","42","M","India","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5312,"2020-04-18","CGH","56","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5313,"2020-04-18","CGH","34","M","Bangladesh","wp","","Local transmission","","","Jurong Penjuru Dormitory at 58 Penjuru Place",TRUE,NA,NA,NA,NA
+5314,"2020-04-18","unknown","24","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5315,"2020-04-18","unknown","60","M","Thailand","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5316,"2020-04-18","unknown","42","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5317,"2020-04-18","unknown","25","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5318,"2020-04-18","unknown","30","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5319,"2020-04-18","unknown","32","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5320,"2020-04-18","unknown","48","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5321,"2020-04-18","unknown","25","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5322,"2020-04-18","unknown","25","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5323,"2020-04-18","unknown","31","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5324,"2020-04-18","unknown","32","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5325,"2020-04-18","unknown","36","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5326,"2020-04-18","unknown","28","M","Myanmar","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5327,"2020-04-18","unknown","43","M","Myanmar","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5328,"2020-04-18","unknown","46","M","Myanmar","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5329,"2020-04-18","unknown","35","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5330,"2020-04-18","unknown","29","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5331,"2020-04-18","unknown","39","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5332,"2020-04-18","unknown","23","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5333,"2020-04-18","unknown","29","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5334,"2020-04-18","unknown","40","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5335,"2020-04-18","unknown","31","M","Bangladesh","wp","","Local transmission","","","Tech Park Crescent dormitory at 43 Tech Park Crescent",TRUE,NA,NA,NA,NA
+5336,"2020-04-18","unknown","28","M","India","wp","","Local transmission","","","Tech Park Crescent dormitory at 43 Tech Park Crescent",TRUE,NA,NA,NA,NA
+5337,"2020-04-18","unknown","36","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5338,"2020-04-18","unknown","30","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5339,"2020-04-18","unknown","37","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5340,"2020-04-18","unknown","27","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5341,"2020-04-18","unknown","35","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5342,"2020-04-18","unknown","26","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5343,"2020-04-18","unknown","46","M","India","wp","","Local transmission","","","Tech Park Crescent dormitory at 43 Tech Park Crescent",TRUE,NA,NA,NA,NA
+5344,"2020-04-18","unknown","27","M","Bangladesh","wp","","Local transmission","","","Tech Park Crescent dormitory at 43 Tech Park Crescent",TRUE,NA,NA,NA,NA
+5345,"2020-04-18","unknown","28","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5346,"2020-04-18","unknown","35","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5347,"2020-04-18","unknown","28","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5348,"2020-04-18","unknown","29","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5349,"2020-04-18","unknown","33","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5350,"2020-04-18","unknown","40","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5351,"2020-04-18","unknown","31","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5352,"2020-04-18","unknown","29","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5353,"2020-04-18","unknown","38","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5354,"2020-04-18","unknown","35","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5355,"2020-04-18","unknown","25","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5356,"2020-04-18","unknown","24","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5357,"2020-04-18","unknown","37","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5358,"2020-04-18","unknown","27","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5359,"2020-04-18","unknown","40","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5360,"2020-04-18","unknown","31","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5361,"2020-04-18","unknown","30","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5362,"2020-04-18","unknown","29","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5363,"2020-04-18","unknown","34","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5364,"2020-04-18","unknown","36","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5365,"2020-04-18","unknown","42","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5366,"2020-04-18","unknown","30","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5367,"2020-04-18","unknown","49","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5368,"2020-04-18","unknown","","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5369,"2020-04-18","unknown","30","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5370,"2020-04-18","unknown","35","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5371,"2020-04-18","unknown","31","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5372,"2020-04-18","unknown","31","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5373,"2020-04-18","unknown","32","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5374,"2020-04-18","unknown","40","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5375,"2020-04-18","unknown","37","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5376,"2020-04-18","unknown","26","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5377,"2020-04-18","unknown","27","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5378,"2020-04-18","unknown","31","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5379,"2020-04-18","unknown","27","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5380,"2020-04-18","unknown","31","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5381,"2020-04-18","unknown","36","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5382,"2020-04-18","unknown","32","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5383,"2020-04-18","unknown","43","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5384,"2020-04-18","unknown","23","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5385,"2020-04-18","unknown","27","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5386,"2020-04-18","unknown","34","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5387,"2020-04-18","unknown","34","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5388,"2020-04-18","unknown","48","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5389,"2020-04-18","unknown","31","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5390,"2020-04-18","unknown","27","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5391,"2020-04-18","unknown","38","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5392,"2020-04-18","unknown","37","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5393,"2020-04-18","unknown","25","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5394,"2020-04-18","unknown","27","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5395,"2020-04-18","unknown","36","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5396,"2020-04-18","unknown","37","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5397,"2020-04-18","unknown","30","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5398,"2020-04-18","unknown","30","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5399,"2020-04-18","unknown","28","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5400,"2020-04-18","unknown","23","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5401,"2020-04-18","unknown","44","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5402,"2020-04-18","unknown","42","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5403,"2020-04-18","unknown","31","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5404,"2020-04-18","unknown","33","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5405,"2020-04-18","unknown","34","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5406,"2020-04-18","unknown","40","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5407,"2020-04-18","unknown","33","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5408,"2020-04-18","unknown","40","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5409,"2020-04-18","unknown","36","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5410,"2020-04-18","unknown","48","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5411,"2020-04-18","unknown","32","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5412,"2020-04-18","unknown","34","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5413,"2020-04-18","unknown","41","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5414,"2020-04-18","unknown","31","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5415,"2020-04-18","unknown","30","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5416,"2020-04-18","unknown","35","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5417,"2020-04-18","unknown","28","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5418,"2020-04-18","NTFGH","46","M","Bangladesh","wp","","Local transmission","","","Avery Lodge Dormitory at 2D Jln Papan",TRUE,NA,NA,NA,NA
+5419,"2020-04-18","NTFGH","31","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5420,"2020-04-18","NTFGH","29","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5421,"2020-04-18","NTFGH","39","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5422,"2020-04-18","NTFGH","27","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5423,"2020-04-18","NTFGH","25","M","India","wp","","Local transmission","3097","","",TRUE,NA,NA,NA,NA
+5424,"2020-04-18","NTFGH","31","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5425,"2020-04-18","NTFGH","38","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5426,"2020-04-18","NTFGH","43","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5427,"2020-04-18","NTFGH","51","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5428,"2020-04-18","NTFGH","38","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5429,"2020-04-18","NTFGH","41","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5430,"2020-04-18","NTFGH","33","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5431,"2020-04-18","NTFGH","28","M","India","wp","","Local transmission","3097","","",TRUE,NA,NA,NA,NA
+5432,"2020-04-18","CGH","41","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5433,"2020-04-18","KTPH","27","M","India","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5434,"2020-04-18","KTPH","36","M","Myanmar","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5435,"2020-04-18","KTPH","30","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5436,"2020-04-18","NTFGH","47","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5437,"2020-04-18","NTFGH","33","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5438,"2020-04-18","NTFGH","39","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5439,"2020-04-18","NCID","26","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5440,"2020-04-18","NCID","51","M","China","wp","","Local transmission","","","North Coast Lodge at 51 North Coast Avenue",TRUE,NA,NA,NA,NA
+5441,"2020-04-18","NCID","24","M","India","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5442,"2020-04-18","NCID","38","M","India","wp","","Local transmission","","","Kranji Dormitory at 17 Kranji Way",TRUE,NA,NA,NA,NA
+5443,"2020-04-18","NCID","37","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5444,"2020-04-18","NCID","37","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5445,"2020-04-18","NCID","23","M","India","wp","","Local transmission","","","85 Kallang Dormitory at 85 Kallang Avenue",TRUE,NA,NA,NA,NA
+5446,"2020-04-18","NCID","36","M","Bangladesh","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5447,"2020-04-18","NCID","37","M","Bangladesh","wp","","Local transmission","","","Kian Teck Dormitory at 26 Kian Teck Ave",TRUE,NA,NA,NA,NA
+5448,"2020-04-18","NCID","26","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5449,"2020-04-18","NCID","29","M","Bangladesh","wp","","Local transmission","","","Mandai Lodge I at 460 Mandai Rd",TRUE,NA,NA,NA,NA
+5450,"2020-04-18","NCID","36","M","Bangladesh","wp","","Local transmission","","","North Coast Lodge at 51 North Coast Avenue",TRUE,NA,NA,NA,NA
+5451,"2020-04-18","NCID","21","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5452,"2020-04-18","NCID","39","M","Bangladesh","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5453,"2020-04-18","NCID","35","M","Bangladesh","wp","","Local transmission","","","North Coast Lodge at 51 North Coast Avenue",TRUE,NA,NA,NA,NA
+5454,"2020-04-18","NCID","29","M","Bangladesh","wp","","Local transmission","","","Shaw Lodge at 12 Shaw Road",TRUE,NA,NA,NA,NA
+5455,"2020-04-18","NCID","27","M","Bangladesh","wp","","Local transmission","","","North Coast Lodge at 51 North Coast Avenue",TRUE,NA,NA,NA,NA
+5456,"2020-04-18","NCID","36","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5457,"2020-04-18","NCID","34","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5458,"2020-04-18","NCID","47","M","India","wp","","Local transmission","","","North Coast Lodge at 51 North Coast Avenue",TRUE,NA,NA,NA,NA
+5459,"2020-04-18","NCID","25","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5460,"2020-04-18","NCID","27","M","Bangladesh","wp","","Local transmission","","","North Coast Lodge at 51 North Coast Avenue",TRUE,NA,NA,NA,NA
+5461,"2020-04-18","NCID","35","M","India","wp","","Local transmission","1419","","",TRUE,NA,NA,NA,NA
+5462,"2020-04-18","NCID","40","M","India","wp","","Local transmission","","","Kranji Dormitory at 17 Kranji Way",TRUE,NA,NA,NA,NA
+5463,"2020-04-18","NCID","32","M","Bangladesh","wp","","Local transmission","","","Acacia Lodge at 530-540 Bukit Batok Street 23",TRUE,NA,NA,NA,NA
+5464,"2020-04-18","NCID","31","M","Bangladesh","wp","","Local transmission","2788","","",TRUE,NA,NA,NA,NA
+5465,"2020-04-18","NCID","27","M","Bangladesh","wp","","Local transmission","3848","","",TRUE,NA,NA,NA,NA
+5466,"2020-04-18","NCID","34","N","Bangladesh","wp","","Local transmission","","","85 Kallang Dormitory at 85 Kallang Avenue",TRUE,NA,NA,NA,NA
+5467,"2020-04-18","NCID","39","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5468,"2020-04-18","NCID","40","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5469,"2020-04-18","NCID","30","M","Bangladesh","wp","","Local transmission","","","Cassia @ Penjuru at 15 Penjuru Walk",TRUE,NA,NA,NA,NA
+5470,"2020-04-18","NCID","36","M","Bangladesh","wp","","Local transmission","","","Westlite Mandai at 34 Mandai Estate",TRUE,NA,NA,NA,NA
+5471,"2020-04-18","NCID","46","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5472,"2020-04-18","NCID","30","M","India","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5473,"2020-04-18","NCID","29","M","India","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5474,"2020-04-18","NCID","34","M","India","wp","","Local transmission","","","Homestay Lodge at 39 Kaki Bukit Ave 3",TRUE,NA,NA,NA,NA
+5475,"2020-04-18","NCID","34","M","Bangladesh","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5476,"2020-04-18","NCID","27","M","Bangladesh","sp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5477,"2020-04-18","NCID","25","M","Bangladesh","wp","","Local transmission","","","PPT Lodge 1A at 8 Seletar North Link",TRUE,NA,NA,NA,NA
+5478,"2020-04-18","NCID","30","M","Bangladesh","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5479,"2020-04-18","NCID","29","M","India","wp","","Local transmission","","","36 Woodlands Industrial Park E1",TRUE,NA,NA,NA,NA
+5480,"2020-04-18","NCID","43","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5481,"2020-04-18","NCID","30","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5482,"2020-04-18","NCID","33","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5483,"2020-04-18","NCID","28","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5484,"2020-04-18","NCID","41","M","Bangladesh","wp","","Local transmission","","","Westlite Toh Guan Dormitory at 18 Toh Guan Road East",TRUE,NA,NA,NA,NA
+5485,"2020-04-18","KKH","8","F","Singapore","citizen","","Local transmission","","4824, 3431","",TRUE,NA,NA,NA,NA
+5486,"2020-04-18","KKH","40","F","Singapore","citizen","","Local transmission","","2994","",TRUE,NA,NA,NA,NA
+5487,"2020-04-18","NUH","22","M","Myanmar","wp","","Local transmission","","","PPT Lodge 1A at 8 Seletar North Link",TRUE,NA,NA,NA,NA
+5488,"2020-04-18","AH","47","M","Thailand","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5489,"2020-04-18","NUH","26","F","Malaysia","lp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5490,"2020-04-18","AH","43","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5491,"2020-04-18","AH","33","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5492,"2020-04-18","NUH","33","M","India","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5493,"2020-04-18","AH","24","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5494,"2020-04-18","NTFGH","45","M","Thailand","visitor","","Local transmission","2397","","",TRUE,NA,NA,NA,NA
+5495,"2020-04-18","NTFGH","33","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5496,"2020-04-18","NTFGH","27","M","Bangladesh","wp","","Local transmission","5562","","",TRUE,NA,NA,NA,NA
+5497,"2020-04-18","NTFGH","25","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5498,"2020-04-18","NTFGH","32","M","India","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5499,"2020-04-18","NTFGH","26","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5500,"2020-04-18","NTFGH","38","M","India","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5501,"2020-04-18","NTFGH","35","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5502,"2020-04-18","NTFGH","41","F","Singapore","pr","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5503,"2020-04-18","CGH","47","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5504,"2020-04-18","CGH","39","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5505,"2020-04-18","KTPH","47","M","India","sp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5506,"2020-04-18","KTPH","36","M","Bangladesh","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5507,"2020-04-18","KTPH","45","M","Bangladesh","wp","","Local transmission","","","13 Senoko Way",TRUE,NA,NA,NA,NA
+5508,"2020-04-18","KTPH","27","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5509,"2020-04-18","KTPH","43","M","Bangladesh","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5510,"2020-04-18","SGH","26","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5511,"2020-04-18","SGH","34","M","Myanmar","wp","","Local transmission","","","Avery Lodge Dormitory at 2D Jln Papan",TRUE,NA,NA,NA,NA
+5512,"2020-04-18","SGH","21","M","India","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5513,"2020-04-18","SGH","34","M","Bangladesh","sp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5514,"2020-04-18","SGH","45","M","Myanmar","wp","","Local transmission","","","Avery Lodge Dormitory at 2D Jln Papan",TRUE,NA,NA,NA,NA
+5515,"2020-04-18","SGH","27","M","India","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5516,"2020-04-18","SGH","37","M","Myanmar","wp","","Local transmission","","","Avery Lodge Dormitory at 2D Jln Papan",TRUE,NA,NA,NA,NA
+5517,"2020-04-18","SGH","37","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5518,"2020-04-18","SGH","22","M","India","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5519,"2020-04-18","SGH","30","M","Myanmar","wp","","Local transmission","","","Avery Lodge Dormitory at 2D Jln Papan",TRUE,NA,NA,NA,NA
+5520,"2020-04-18","SGH","27","M","Bangladesh","wp","","Local transmission","","","North Coast Lodge at 51 North Coast Avenue",TRUE,NA,NA,NA,NA
+5521,"2020-04-18","SGH","35","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5522,"2020-04-18","unknown","40","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5523,"2020-04-18","unknown","26","M","India","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5524,"2020-04-18","unknown","26","M","India","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5525,"2020-04-18","unknown","39","M","Bangladesh","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5526,"2020-04-18","unknown","53","M","Thailand","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5527,"2020-04-18","unknown","36","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5528,"2020-04-18","CGH","36","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5529,"2020-04-18","CGH","42","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5530,"2020-04-18","CGH","42","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5531,"2020-04-18","CGH","27","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5532,"2020-04-18","unknown","52","M","Singapore","citizen","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5533,"2020-04-18","SKH","28","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5534,"2020-04-18","SKH","27","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5535,"2020-04-18","SKH","16","F","Singapore","citizen","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5536,"2020-04-18","KKH","2","M","Philippines","sp","","Local transmission","","2009, 4436","",TRUE,NA,NA,NA,NA
+5537,"2020-04-18","KTPH","34","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5538,"2020-04-18","SGH","25","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5539,"2020-04-18","SGH","27","M","India","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5540,"2020-04-18","NTFGH","29","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5541,"2020-04-18","NTFGH","45","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5542,"2020-04-18","unknown","38","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5543,"2020-04-18","NTFGH","30","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5544,"2020-04-18","NTFGH","30","M","Bangladesh","wp","","Local transmission","","","The Leo Dormitory at 23 Kaki Bukit Rd 3",TRUE,NA,NA,NA,NA
+5545,"2020-04-18","NTFGH","24","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5546,"2020-04-18","NTFGH","29","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5547,"2020-04-18","unknown","43","M","Bangladesh","wp","","Local transmission","","","10 Kian Teck Crescent dormitory",TRUE,NA,NA,NA,NA
+5548,"2020-04-18","NTFGH","31","M","Bangladesh","wp","","Local transmission","","","Jurong Penjuru Dormitory at 58 Penjuru Place",TRUE,NA,NA,NA,NA
+5549,"2020-04-18","NCID","28","M","India","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5550,"2020-04-18","NCID","33","M","India","wp","","Local transmission","","","Westlite Mandai at 34 Mandai Estate",TRUE,NA,NA,NA,NA
+5551,"2020-04-18","NCID","28","M","Bangladesh","wp","","Local transmission","","","Jurong Penjuru Dormitory at 58 Penjuru Place",TRUE,NA,NA,NA,NA
+5552,"2020-04-18","NCID","29","M","Bangladesh","wp","","Local transmission","","","Jurong Penjuru Dormitory at 58 Penjuru Place",TRUE,NA,NA,NA,NA
+5553,"2020-04-18","NCID","29","M","Bangladesh","wp","","Local transmission","","","Jurong Penjuru Dormitory at 58 Penjuru Place",TRUE,NA,NA,NA,NA
+5554,"2020-04-18","NCID","33","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5555,"2020-04-18","NUH","30","M","India","wp","","Local transmission","4809","","",TRUE,NA,NA,NA,NA
+5556,"2020-04-18","NUH","26","M","Bangladesh","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5557,"2020-04-18","NUH","38","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5558,"2020-04-18","NUH","26","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5559,"2020-04-18","NUH","36","M","Bangladesh","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5560,"2020-04-18","NUH","57","M","Bangladesh","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5561,"2020-04-18","NUH","41","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5562,"2020-04-18","NTFGH","29","M","Bangladesh","wp","","Local transmission","5496","","",TRUE,NA,NA,NA,NA
+5563,"2020-04-18","NTFGH","28","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5564,"2020-04-18","NTFGH","24","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5565,"2020-04-18","NTFGH","48","M","Bangladesh","wp","","Local transmission","1540","","",TRUE,NA,NA,NA,NA
+5566,"2020-04-18","NTFGH","45","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5567,"2020-04-18","NTFGH","22","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5568,"2020-04-18","NTFGH","55","M","Singapore","citizen","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5569,"2020-04-18","SGH","40","M","Bangladesh","wp","","Local transmission","","","Westlite Mandai at 34 Mandai Estate",TRUE,NA,NA,NA,NA
+5570,"2020-04-18","SGH","28","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5571,"2020-04-18","SGH","38","M","India","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5572,"2020-04-18","SGH","31","M","Bangladesh","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5573,"2020-04-18","SGH","34","M","India","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5574,"2020-04-18","unknown","39","M","India","wp","","Local transmission","","","Jurong Penjuru Dormitory at 58 Penjuru Place",TRUE,NA,NA,NA,NA
+5575,"2020-04-18","unknown","25","M","India","wp","","Local transmission","","","Jurong Penjuru Dormitory at 58 Penjuru Place",TRUE,NA,NA,NA,NA
+5576,"2020-04-18","unknown","34","M","India","wp","","Local transmission","","","Jurong Penjuru Dormitory at 58 Penjuru Place",TRUE,NA,NA,NA,NA
+5577,"2020-04-18","unknown","20","M","India","wp","","Local transmission","","","Jurong Penjuru Dormitory at 58 Penjuru Place",TRUE,NA,NA,NA,NA
+5578,"2020-04-18","NCID","38","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5579,"2020-04-18","NCID","34","M","Bangladesh","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5580,"2020-04-18","NCID","50","M","Malaysia","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5581,"2020-04-18","NCID","34","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5582,"2020-04-18","NCID","38","M","India","wp","","Local transmission","","","4 Sungei Kadut Street 2",TRUE,NA,NA,NA,NA
+5583,"2020-04-18","NCID","29","M","Bangladesh","wp","","Local transmission","","","Shaw Lodge at 12 Shaw Road",TRUE,NA,NA,NA,NA
+5584,"2020-04-18","NCID","52","M","Singapore","citizen","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5585,"2020-04-18","NCID","47","M","Singapore","citizen","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5586,"2020-04-18","NCID","43","M","Bangladesh","sp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5587,"2020-04-18","NCID","39","M","Bangladesh","sp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5588,"2020-04-18","NCID","24","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5589,"2020-04-18","NCID","36","M","Bangladesh","sp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5590,"2020-04-18","unknown","42","M","Bangladesh","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5591,"2020-04-18","unknown","24","M","India","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5592,"2020-04-18","AH","35","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5593,"2020-04-18","AH","25","M","Bangladesh","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5594,"2020-04-18","AH","26","M","Bangladesh","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5595,"2020-04-18","AH","28","M","Bangladesh","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5596,"2020-04-18","AH","39","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5597,"2020-04-18","AH","41","M","India","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5598,"2020-04-18","AH","26","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5599,"2020-04-18","NUH","44","M","China","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5600,"2020-04-18","NUH","45","M","India","sp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5601,"2020-04-18","NUH","25","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5602,"2020-04-18","unknown","60","M","Sri Lanka","sp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5603,"2020-04-18","CGH","27","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5604,"2020-04-18","CGH","31","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5605,"2020-04-18","CGH","25","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5606,"2020-04-18","CGH","31","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5607,"2020-04-18","CGH","34","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5608,"2020-04-18","CGH","23","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5609,"2020-04-18","CGH","27","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5610,"2020-04-18","CGH","25","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5611,"2020-04-18","CGH","26","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5612,"2020-04-18","CGH","35","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5613,"2020-04-18","CGH","27","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5614,"2020-04-18","CGH","30","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5615,"2020-04-18","CGH","41","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5616,"2020-04-18","CGH","27","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5617,"2020-04-18","CGH","33","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5618,"2020-04-18","CGH","37","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5619,"2020-04-18","CGH","32","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5620,"2020-04-18","CGH","28","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5621,"2020-04-18","CGH","33","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5622,"2020-04-18","CGH","37","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5623,"2020-04-18","CGH","40","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5624,"2020-04-18","NCID","37","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5625,"2020-04-18","NCID","56","M","Malaysia","wp","","Local transmission","","","TTJ Design & Engineering Pte Ltd at 57 Pioneer Rd",TRUE,NA,NA,NA,NA
+5626,"2020-04-18","NCID","22","M","India","wp","","Local transmission","","","36 Woodlands Industrial Park E1",TRUE,NA,NA,NA,NA
+5627,"2020-04-18","NCID","34","M","India","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5628,"2020-04-18","NCID","30","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5629,"2020-04-18","NCID","24","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5630,"2020-04-18","NCID","32","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5631,"2020-04-18","NCID","31","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5632,"2020-04-18","NCID","38","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5633,"2020-04-18","NCID","37","M","Bangladesh","wp","","Local transmission","","","Kranji Dormitory at 17 Kranji Way",TRUE,NA,NA,NA,NA
+5634,"2020-04-18","NCID","32","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5635,"2020-04-18","unknown","","M","unknown","unknown","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5636,"2020-04-18","unknown","33","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5637,"2020-04-18","unknown","19","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5638,"2020-04-18","unknown","31","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5639,"2020-04-18","unknown","41","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5640,"2020-04-18","unknown","35","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5641,"2020-04-18","unknown","32","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5642,"2020-04-18","unknown","36","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5643,"2020-04-18","unknown","34","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5644,"2020-04-18","unknown","36","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5645,"2020-04-18","unknown","33","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5646,"2020-04-18","unknown","21","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5647,"2020-04-18","unknown","30","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5648,"2020-04-18","unknown","32","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5649,"2020-04-18","unknown","33","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5650,"2020-04-18","unknown","35","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5651,"2020-04-18","unknown","43","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5652,"2020-04-18","unknown","27","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5653,"2020-04-18","unknown","43","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5654,"2020-04-18","unknown","31","M","Myanmar","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5655,"2020-04-18","unknown","48","M","China","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5656,"2020-04-18","unknown","31","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5657,"2020-04-18","unknown","37","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5658,"2020-04-18","unknown","25","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5659,"2020-04-18","unknown","37","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5660,"2020-04-18","unknown","27","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5661,"2020-04-18","unknown","37","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5662,"2020-04-18","unknown","26","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5663,"2020-04-18","unknown","52","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5664,"2020-04-18","unknown","27","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5665,"2020-04-18","unknown","35","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5666,"2020-04-18","unknown","34","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5667,"2020-04-18","unknown","35","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5668,"2020-04-18","unknown","36","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5669,"2020-04-18","unknown","29","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5670,"2020-04-18","unknown","45","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5671,"2020-04-18","unknown","39","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5672,"2020-04-18","unknown","37","M","China","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5673,"2020-04-18","unknown","28","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5674,"2020-04-18","unknown","27","M","Bangladesh","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5675,"2020-04-18","unknown","21","M","India","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5676,"2020-04-18","unknown","22","M","Myanmar","wp","","Local transmission","","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5677,"2020-04-18","unknown","30","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5678,"2020-04-18","unknown","37","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5679,"2020-04-18","unknown","42","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5680,"2020-04-18","unknown","26","M","India","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5681,"2020-04-18","unknown","M","50","India","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5682,"2020-04-18","unknown","M","35","India","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5683,"2020-04-18","unknown","M","28","India","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5684,"2020-04-18","unknown","M","43","Bangladesh","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5685,"2020-04-18","unknown","M","24","India","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5686,"2020-04-18","unknown","M","39","Bangladesh","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5687,"2020-04-18","unknown","M","26","India","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5688,"2020-04-18","unknown","M","21","India","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5689,"2020-04-18","unknown","M","44","Bangladesh","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5690,"2020-04-18","unknown","M","27","India","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5691,"2020-04-18","unknown","M","31","India","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5692,"2020-04-18","unknown","M","35","India","wp","","Local transmission","","","Cochrane Lodge II at 49 Admiralty Road West",TRUE,NA,NA,NA,NA
+5693,"2020-04-18","NCID","M","25","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5694,"2020-04-18","NCID","M","24","Bangladesh","wp","","Local transmission","4042, 4572, 4398,
+4574, 4404","","",TRUE,NA,NA,NA,NA
+5695,"2020-04-18","NCID","M","37","Bangladesh","wp","","Local transmission","4042, 4572, 4398,
+4574, 4404","","",TRUE,NA,NA,NA,NA
+5696,"2020-04-18","NCID","M","22","Bangladesh","wp","","Local transmission","","","Shaw Lodge at 12 Shaw Road",TRUE,NA,NA,NA,NA
+5697,"2020-04-18","NCID","M","29","Singapore","citizen","","Local transmission","","4405","",TRUE,NA,NA,NA,NA
+5698,"2020-04-18","NCID","M","40","India","wp","","Local transmission","","","4 Sungei Kadut Street 2",TRUE,NA,NA,NA,NA
+5699,"2020-04-18","NCID","M","36","Bangladesh","wp","","Local transmission","2414","","",TRUE,NA,NA,NA,NA
+5700,"2020-04-18","NCID","M","30","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5701,"2020-04-18","NCID","M","26","Bangladesh","wp","","Local transmission","","","Shaw Lodge at 12 Shaw Road",TRUE,NA,NA,NA,NA
+5702,"2020-04-18","NCID","M","33","Bangladesh","wp","","Local transmission","","","Shaw Lodge at 12 Shaw Road",TRUE,NA,NA,NA,NA
+5703,"2020-04-18","NCID","M","22","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5704,"2020-04-18","NCID","M","28","Bangladesh","wp","","Local transmission","","","Shaw Lodge at 12 Shaw Road",TRUE,NA,NA,NA,NA
+5705,"2020-04-18","NCID","F","24","Malaysia","wp","","Local transmission","","4547","",TRUE,NA,NA,NA,NA
+5706,"2020-04-18","NUH","M","31","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5707,"2020-04-18","NUH","M","29","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5708,"2020-04-18","NUH","M","58","Malaysia","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5709,"2020-04-18","NUH","M","25","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5710,"2020-04-18","KTPH","M","44","India","wp","","Local transmission","2488","","",TRUE,NA,NA,NA,NA
+5711,"2020-04-18","KTPH","M","39","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5712,"2020-04-18","KTPH","M","28","Bangladesh","wp","","Local transmission","5718, 5714, 4914,
+5713, 5715","","",TRUE,NA,NA,NA,NA
+5713,"2020-04-18","KTPH","M","33","India","wp","","Local transmission","5718, 5714, 4914,
+5715, 5712","","",TRUE,NA,NA,NA,NA
+5714,"2020-04-18","KTPH","M","24","Bangladesh","wp","","Local transmission","5718,  4914, 5713,
+5715, 5712","","",TRUE,NA,NA,NA,NA
+5715,"2020-04-18","KTPH","M","24","Bangladesh","wp","","Local transmission","5718, 4914, 5713,
+5714, 5712","","",TRUE,NA,NA,NA,NA
+5716,"2020-04-18","KTPH","M","37","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5717,"2020-04-18","KTPH","M","42","India","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5718,"2020-04-18","KTPH","M","37","Bangladesh","wp","","Local transmission","5714, 4914, 5713,
+5715, 5712","","",TRUE,NA,NA,NA,NA
+5719,"2020-04-18","KTPH","M","42","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5720,"2020-04-18","KTPH","M","28","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5721,"2020-04-18","KTPH","M","36","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5722,"2020-04-18","KTPH","M","28","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5723,"2020-04-18","KTPH","M","26","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5724,"2020-04-18","KTPH","M","32","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5725,"2020-04-18","unknown","M","34","Myanmar","wp","","Local transmission","","","Kenyon/ UBS construction site at 9 Penang Road",TRUE,NA,NA,NA,NA
+5726,"2020-04-18","unknown","M","60","Thailand","sp","","Local transmission","","","Kenyon/ UBS construction site at 9 Penang Road",TRUE,NA,NA,NA,NA
+5727,"2020-04-18","unknown","M","30","Bangladesh","wp","","Local transmission","","","Kenyon/ UBS construction site at 9 Penang Road",TRUE,NA,NA,NA,NA
+5728,"2020-04-18","unknown","M","32","Myanmar","wp","","Local transmission","","","Kenyon/ UBS construction site at 9 Penang Road",TRUE,NA,NA,NA,NA
+5729,"2020-04-18","unknown","M","31","Myanmar","wp","","Local transmission","","","Kenyon/ UBS construction site at 9 Penang Road",TRUE,NA,NA,NA,NA
+5730,"2020-04-18","unknown","M","34","India","wp","","Local transmission","","","Kenyon/ UBS construction site at 9 Penang Road",TRUE,NA,NA,NA,NA
+5731,"2020-04-18","unknown","M","36","Myanmar","wp","","Local transmission","","","Kenyon/ UBS construction site at 9 Penang Road",TRUE,NA,NA,NA,NA
+5732,"2020-04-18","unknown","M","36","Myanmar","wp","","Local transmission","","","Kenyon/ UBS construction site at 9 Penang Road",TRUE,NA,NA,NA,NA
+5733,"2020-04-18","unknown","M","28","India","wp","","Local transmission","","","Kenyon/ UBS construction site at 9 Penang Road",TRUE,NA,NA,NA,NA
+5734,"2020-04-18","unknown","M","32","Myanmar","wp","","Local transmission","","","Kenyon/ UBS construction site at 9 Penang Road",TRUE,NA,NA,NA,NA
+5735,"2020-04-18","unknown","M","30","Myanmar","wp","","Local transmission","","","Kenyon/ UBS construction site at 9 Penang Road",TRUE,NA,NA,NA,NA
+5736,"2020-04-18","unknown","M","50","Myanmar","wp","","Local transmission","","","Kenyon/ UBS construction site at 9 Penang Road",TRUE,NA,NA,NA,NA
+5737,"2020-04-18","unknown","M","33","Myanmar","wp","","Local transmission","","","Kenyon/ UBS construction site at 9 Penang Road",TRUE,NA,NA,NA,NA
+5738,"2020-04-18","unknown","M","25","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5739,"2020-04-18","unknown","M","29","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5740,"2020-04-18","unknown","M","35","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5741,"2020-04-18","unknown","M","33","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5742,"2020-04-18","unknown","M","25","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5743,"2020-04-18","unknown","M","22","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5744,"2020-04-18","unknown","M","27","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5745,"2020-04-18","unknown","M","26","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5746,"2020-04-18","unknown","M","39","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5747,"2020-04-18","unknown","M","25","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5748,"2020-04-18","unknown","M","30","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5749,"2020-04-18","unknown","M","23","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5750,"2020-04-18","unknown","M","35","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5751,"2020-04-18","unknown","M","32","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5752,"2020-04-18","unknown","M","39","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5753,"2020-04-18","unknown","M","42","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5754,"2020-04-18","unknown","M","35","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5755,"2020-04-18","unknown","M","28","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5756,"2020-04-18","unknown","M","28","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5757,"2020-04-18","unknown","M","36","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5758,"2020-04-18","unknown","M","31","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5759,"2020-04-18","unknown","M","33","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5760,"2020-04-18","unknown","M","32","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5761,"2020-04-18","unknown","M","30","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5762,"2020-04-18","unknown","M","32","Bangladesh","wp","","Local transmission","","","Tech Park Crescent dormitory at 43 Tech Park Crescent",TRUE,NA,NA,NA,NA
+5763,"2020-04-18","unknown","M","35","Bangladesh","wp","","Local transmission","","","Tech Park Crescent dormitory at 43 Tech Park Crescent",TRUE,NA,NA,NA,NA
+5764,"2020-04-18","unknown","M","39","India","wp","","Local transmission","","","Tech Park Crescent dormitory at 43 Tech Park Crescent",TRUE,NA,NA,NA,NA
+5765,"2020-04-18","unknown","M","30","Bangladesh","wp","","Local transmission","","","Tech Park Crescent dormitory at 43 Tech Park Crescent",TRUE,NA,NA,NA,NA
+5766,"2020-04-18","unknown","M","45","India","wp","","Local transmission","","","Tech Park Crescent dormitory at 43 Tech Park Crescent",TRUE,NA,NA,NA,NA
+5767,"2020-04-18","NUH","M","28","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5768,"2020-04-18","NUH","M","26","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5769,"2020-04-18","NUH","M","40","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5770,"2020-04-18","KTPH","M","25","India","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5771,"2020-04-18","KTPH","M","39","India","sp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5772,"2020-04-18","KTPH","M","33","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5773,"2020-04-18","KTPH","M","52","India","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5774,"2020-04-18","KTPH","M","42","India","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5775,"2020-04-18","KTPH","M","34","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5776,"2020-04-18","NCID","M","37","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5777,"2020-04-18","NCID","M","32","Bangladesh","wp","","Local transmission","","","4 Sungei Kadut Street 2",TRUE,NA,NA,NA,NA
+5778,"2020-04-18","NCID","M","23","Bangladesh","wp","","Local transmission","","","4 Sungei Kadut Street 2",TRUE,NA,NA,NA,NA
+5779,"2020-04-18","NCID","M","48","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5780,"2020-04-18","NCID","M","37","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5781,"2020-04-18","NCID","M","46","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5782,"2020-04-18","NCID","M","29","India","ep","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5783,"2020-04-18","NCID","F","26","Malaysia","ep","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5784,"2020-04-18","NCID","M","28","Bangladesh","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5785,"2020-04-18","NCID","M","32","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5786,"2020-04-18","NCID","50","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5787,"2020-04-18","NCID","46","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5788,"2020-04-18","NCID","49","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5789,"2020-04-18","NCID","40","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5790,"2020-04-18","NCID","34","M","Bangladesh","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5791,"2020-04-18","NCID","42","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5792,"2020-04-18","NCID","37","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5793,"2020-04-18","NCID","45","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5794,"2020-04-18","unknown","42","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5795,"2020-04-18","unknown","26","M","Bangladesh","wp","","Local transmission","3537","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5796,"2020-04-18","unknown","24","M","Bangladesh","wp","","Local transmission","3537","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5797,"2020-04-18","unknown","32","M","Bangladesh","wp","","Local transmission","3537","","S11 Dormitory @ Punggol at 2 Seletar North Link",TRUE,NA,NA,NA,NA
+5798,"2020-04-18","unknown","26","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5799,"2020-04-18","unknown","25","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5800,"2020-04-18","unknown","29","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5801,"2020-04-18","unknown","30","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5802,"2020-04-18","unknown","43","M","China","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5803,"2020-04-18","unknown","30","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5804,"2020-04-18","unknown","41","M","China","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5805,"2020-04-18","unknown","46","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5806,"2020-04-18","unknown","27","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5807,"2020-04-18","unknown","26","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5808,"2020-04-18","unknown","35","M","India","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5809,"2020-04-18","unknown","24","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5810,"2020-04-18","unknown","44","M","China","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5811,"2020-04-18","unknown","29","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5812,"2020-04-18","unknown","44","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5813,"2020-04-18","unknown","32","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5814,"2020-04-18","unknown","20","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5815,"2020-04-18","unknown","32","M","China","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5816,"2020-04-18","unknown","25","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5817,"2020-04-18","unknown","26","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5818,"2020-04-18","unknown","25","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5819,"2020-04-18","unknown","33","M","Bangladesh","wp","","Local transmission","","","Westlite Toh Guan Dormitory at 18 Toh Guan Road East",TRUE,NA,NA,NA,NA
+5820,"2020-04-18","unknown","31","M","Bangladesh","wp","","Local transmission","","","Westlite Toh Guan Dormitory at 18 Toh Guan Road East",TRUE,NA,NA,NA,NA
+5821,"2020-04-18","unknown","34","M","India","wp","","Local transmission","","","Westlite Toh Guan Dormitory at 18 Toh Guan Road East",TRUE,NA,NA,NA,NA
+5822,"2020-04-18","unknown","42","M","China","wp","","Local transmission","","","Westlite Toh Guan Dormitory at 18 Toh Guan Road East",TRUE,NA,NA,NA,NA
+5823,"2020-04-18","unknown","39","M","India","wp","","Local transmission","","","Westlite Toh Guan Dormitory at 18 Toh Guan Road East",TRUE,NA,NA,NA,NA
+5824,"2020-04-18","unknown","35","M","Bangladesh","wp","","Local transmission","","","Westlite Toh Guan Dormitory at 18 Toh Guan Road East",TRUE,NA,NA,NA,NA
+5825,"2020-04-18","unknown","31","M","Myanmar","wp","","Local transmission","","","Westlite Toh Guan Dormitory at 18 Toh Guan Road East",TRUE,NA,NA,NA,NA
+5826,"2020-04-18","unknown","20","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5827,"2020-04-18","unknown","44","M","India","wp","","Local transmission","","","Westlite Toh Guan Dormitory at 18 Toh Guan Road East",TRUE,NA,NA,NA,NA
+5828,"2020-04-18","unknown","39","M","Bangladesh","wp","","Local transmission","","","Westlite Toh Guan Dormitory at 18 Toh Guan Road East",TRUE,NA,NA,NA,NA
+5829,"2020-04-18","unknown","33","M","Bangladesh","wp","","Local transmission","","","Westlite Toh Guan Dormitory at 18 Toh Guan Road East",TRUE,NA,NA,NA,NA
+5830,"2020-04-18","unknown","28","M","India","wp","","Local transmission","","","Westlite Toh Guan Dormitory at 18 Toh Guan Road East",TRUE,NA,NA,NA,NA
+5831,"2020-04-18","unknown","35","M","Bangladesh","wp","","Local transmission","","","Westlite Toh Guan Dormitory at 18 Toh Guan Road East",TRUE,NA,NA,NA,NA
+5832,"2020-04-18","NUH","38","M","India","sp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5833,"2020-04-18","NUH","27","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5834,"2020-04-18","NUH","28","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5835,"2020-04-18","NUH","26","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5836,"2020-04-18","NUH","40","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5837,"2020-04-18","NUH","26","M","India","wp","","Local transmission","","","Tampines Dormitory at 2 Tampines Place",TRUE,NA,NA,NA,NA
+5838,"2020-04-18","NUH","33","M","India","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5839,"2020-04-18","NUH","28","M","India","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5840,"2020-04-18","NUH","55","M","Myanmar","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5841,"2020-04-18","NUH","30","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5842,"2020-04-18","NUH","27","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5843,"2020-04-18","NUH","26","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5844,"2020-04-18","NUH","30","M","India","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5845,"2020-04-18","NUH","26","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5846,"2020-04-18","NUH","30","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5847,"2020-04-18","NUH","33","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5848,"2020-04-18","NUH","37","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5849,"2020-04-18","NUH","31","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5850,"2020-04-18","NUH","35","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5851,"2020-04-18","NUH","28","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5852,"2020-04-18","NUH","38","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5853,"2020-04-18","NUH","25","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5854,"2020-04-18","NUH","28","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5855,"2020-04-18","NUH","38","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5856,"2020-04-18","NUH","36","M","India","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5857,"2020-04-18","NUH","35","M","India","sp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5858,"2020-04-18","NUH","34","M","India","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5859,"2020-04-18","NUH","45","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5860,"2020-04-18","NUH","37","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5861,"2020-04-18","NUH","30","M","India","sp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5862,"2020-04-18","NUH","30","M","India","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5863,"2020-04-18","NUH","36","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5864,"2020-04-18","NUH","44","M","China","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5865,"2020-04-18","NUH","35","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5866,"2020-04-18","NUH","36","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5867,"2020-04-18","NUH","43","M","China","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5868,"2020-04-18","NUH","38","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5869,"2020-04-18","NUH","39","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5870,"2020-04-18","NUH","30","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5871,"2020-04-18","NUH","29","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5872,"2020-04-18","NUH","27","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5873,"2020-04-18","NUH","29","M","India","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5874,"2020-04-18","NUH","21","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5875,"2020-04-18","NUH","31","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5876,"2020-04-18","NUH","22","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5877,"2020-04-18","NUH","28","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5878,"2020-04-18","NUH","22","M","India","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5879,"2020-04-18","NUH","24","M","India","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5880,"2020-04-18","NUH","29","M","India","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5881,"2020-04-18","NUH","28","M","India","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5882,"2020-04-18","NUH","44","M","China","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5883,"2020-04-18","NUH","63","M","Malaysia","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5884,"2020-04-18","NUH","43","M","Thailand","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5885,"2020-04-18","NUH","48","M","India","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5886,"2020-04-18","NUH","38","M","India","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5887,"2020-04-18","NUH","32","M","India","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5888,"2020-04-18","NUH","45","M","Philippines","sp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5889,"2020-04-18","NUH","37","M","India","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5890,"2020-04-18","NUH","32","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5891,"2020-04-18","NUH","25","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5892,"2020-04-18","NUH","32","M","India","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5893,"2020-04-18","NUH","42","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5894,"2020-04-18","NUH","24","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5895,"2020-04-18","NUH","33","M","India","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5896,"2020-04-18","NUH","37","M","Thailand","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5897,"2020-04-18","NUH","28","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5898,"2020-04-18","NUH","25","M","Bangladesh","wp","","Local transmission","","","Sungei Tengah Lodge at 500 Old Choa Chu Kang Road",TRUE,NA,NA,NA,NA
+5899,"2020-04-18","NUH","89","F","Singapore","citizen","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5900,"2020-04-18","AH","32","M","Bangladesh","wp","","Local transmission","3125","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5901,"2020-04-18","AH","46","M","Thailand","wp","","Local transmission","3125","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5902,"2020-04-18","AH","36","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5903,"2020-04-18","NUH","38","M","Bangladesh","wp","","Local transmission","","","Tuas South Dormitory at 12 Tuas South Street 13",TRUE,NA,NA,NA,NA
+5904,"2020-04-18","NUH","27","M","Bangladesh","wp","","Local transmission","","","Tuas South Dormitory at 12 Tuas South Street 13",TRUE,NA,NA,NA,NA
+5905,"2020-04-18","NUH","40","M","Bangladesh","wp","","Local transmission","","","Tuas South Dormitory at 12 Tuas South Street 13",TRUE,NA,NA,NA,NA
+5906,"2020-04-18","NUH","32","M","India","wp","","Local transmission","contact of 3981","","",TRUE,NA,NA,NA,NA
+5907,"2020-04-18","NUH","26","M","Bangladesh","wp","","Local transmission","","","Acacia Lodge at 530-540 Bukit Batok Street 23",TRUE,NA,NA,NA,NA
+5908,"2020-04-18","NUH","37","M","India","wp","","Local transmission","","","Acacia Lodge at 530-540 Bukit Batok Street 23",TRUE,NA,NA,NA,NA
+5909,"2020-04-18","NUH","46","M","Bangladesh","wp","","Local transmission","","","Tuas South Dormitory at 12 Tuas South Street 13",TRUE,NA,NA,NA,NA
+5910,"2020-04-18","NUH","23","M","Bangladesh","wp","","Local transmission","","","Tuas South Dormitory at 12 Tuas South Street 13",TRUE,NA,NA,NA,NA
+5911,"2020-04-18","NUH","43","M","India","wp","","Local transmission","","","Tuas South Dormitory at 12 Tuas South Street 13",TRUE,NA,NA,NA,NA
+5912,"2020-04-18","NUH","39","M","Bangladesh","wp","","Local transmission","","","Tuas South Dormitory at 12 Tuas South Street 13",TRUE,NA,NA,NA,NA
+5913,"2020-04-18","NUH","32","M","Bangladesh","wp","","Local transmission","","","Tuas South Dormitory at 12 Tuas South Street 13",TRUE,NA,NA,NA,NA
+5914,"2020-04-18","NUH","20","M","Bangladesh","wp","","Local transmission","","","Tuas South Dormitory at 12 Tuas South Street 13",TRUE,NA,NA,NA,NA
+5915,"2020-04-18","NUH","29","M","Bangladesh","wp","","Local transmission","","","Tuas South Dormitory at 12 Tuas South Street 13",TRUE,NA,NA,NA,NA
+5916,"2020-04-18","NUH","36","M","Bangladesh","wp","","Local transmission","","","Tuas South Dormitory at 12 Tuas South Street 13",TRUE,NA,NA,NA,NA
+5917,"2020-04-18","NUH","32","M","Bangladesh","wp","","Local transmission","","","Tuas South Dormitory at 12 Tuas South Street 13",TRUE,NA,NA,NA,NA
+5918,"2020-04-18","NUH","34","M","Bangladesh","wp","","Local transmission","","","Tuas South Dormitory at 12 Tuas South Street 13",TRUE,NA,NA,NA,NA
+5919,"2020-04-18","NUH","31","M","Bangladesh","wp","","Local transmission","","","Tuas South Dormitory at 12 Tuas South Street 13",TRUE,NA,NA,NA,NA
+5920,"2020-04-18","NCID","32","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5921,"2020-04-18","NCID","45","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5922,"2020-04-18","NCID","26","M","India","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5923,"2020-04-18","NCID","31","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5924,"2020-04-18","NCID","51","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5925,"2020-04-18","NCID","31","M","Bangladesh","wp","","Local transmission","","","Tech Park Crescent dormitory at 43 Tech Park Crescent",TRUE,NA,NA,NA,NA
+5926,"2020-04-18","NCID","46","M","China","wp","","Local transmission","","","10 Kian Teck Crescent dormitory",TRUE,NA,NA,NA,NA
+5927,"2020-04-18","NCID","36","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5928,"2020-04-18","NCID","49","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5929,"2020-04-18","NCID","33","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5930,"2020-04-18","NCID","27","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5931,"2020-04-18","NCID","23","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5932,"2020-04-18","NCID","46","M","India","wp","","Local transmission","3080","","",TRUE,NA,NA,NA,NA
+5933,"2020-04-18","NCID","23","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5934,"2020-04-18","NCID","46","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5935,"2020-04-18","NCID","37","M","India","sp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5936,"2020-04-18","NCID","35","M","Bangladesh","wp","","Local transmission","","","Dormitory at 31 Sungei Kadut Avenue and 21B Senoko Loop",TRUE,NA,NA,NA,NA
+5937,"2020-04-18","NCID","36","M","India","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5938,"2020-04-18","NCID","38","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5939,"2020-04-18","NCID","25","M","Bangladesh","wp","","Local transmission","","","PPT Lodge 1A at 8 Seletar North Link",TRUE,NA,NA,NA,NA
+5940,"2020-04-18","NUH","33","M","India","wp","","Local transmission","","","Homestay Lodge at 39 Kaki Bukit Ave 3",TRUE,NA,NA,NA,NA
+5941,"2020-04-18","NUH","22","M","India","wp","","Local transmission","","","Homestay Lodge at 39 Kaki Bukit Ave 3",TRUE,NA,NA,NA,NA
+5942,"2020-04-18","NUH","29","M","India","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5943,"2020-04-18","NUH","34","M","India","wp","","Local transmission","","","Homestay Lodge at 39 Kaki Bukit Ave 3",TRUE,NA,NA,NA,NA
+5944,"2020-04-18","NUH","44","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5945,"2020-04-18","NUH","40","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5946,"2020-04-18","NUH","33","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5947,"2020-04-18","NUH","30","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5948,"2020-04-18","NUH","27","M","Bangladesh","wp","","Local transmission","","","Homestay Lodge at 39 Kaki Bukit Ave 3",TRUE,NA,NA,NA,NA
+5949,"2020-04-18","NUH","39","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5950,"2020-04-18","NUH","35","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5951,"2020-04-18","NUH","36","M","India","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5952,"2020-04-18","NUH","34","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5953,"2020-04-18","NUH","50","M","Thailand","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5954,"2020-04-18","NUH","22","M","India","wp","","Local transmission","","","Homestay Lodge at 39 Kaki Bukit Ave 3",TRUE,NA,NA,NA,NA
+5955,"2020-04-18","NUH","36","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5956,"2020-04-18","NUH","27","M","India","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5957,"2020-04-18","NUH","36","M","India","wp","","Local transmission","","","Homestay Lodge at 39 Kaki Bukit Ave 3",TRUE,NA,NA,NA,NA
+5958,"2020-04-18","NUH","32","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5959,"2020-04-18","NUH","27","M","India","wp","","Local transmission","","","Homestay Lodge at 39 Kaki Bukit Ave 3",TRUE,NA,NA,NA,NA
+5960,"2020-04-18","NUH","28","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5961,"2020-04-18","NUH","25","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5962,"2020-04-18","NUH","23","M","India","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5963,"2020-04-18","NUH","21","M","India","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5964,"2020-04-18","NUH","39","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5965,"2020-04-18","NUH","26","M","India","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5966,"2020-04-18","NUH","30","M","India","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5967,"2020-04-18","NUH","32","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5968,"2020-04-18","NUH","29","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5969,"2020-04-18","NUH","38","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5970,"2020-04-18","NUH","44","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5971,"2020-04-18","NUH","32","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5972,"2020-04-18","NUH","27","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5973,"2020-04-18","NUH","39","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5974,"2020-04-18","NUH","33","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5975,"2020-04-18","NUH","28","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5976,"2020-04-18","NUH","41","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5977,"2020-04-18","NUH","33","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5978,"2020-04-18","NUH","29","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5979,"2020-04-18","NUH","34","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5980,"2020-04-18","NUH","35","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5981,"2020-04-18","NUH","46","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5982,"2020-04-18","NUH","33","M","Bangladesh","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5983,"2020-04-18","NUH","39","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5984,"2020-04-18","NUH","38","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5985,"2020-04-18","NUH","35","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5986,"2020-04-18","NUH","29","M","Bangladesh","wp","","Local transmission","","","Tuas View Dormitory at 70 Tuas South Avenue 1",TRUE,NA,NA,NA,NA
+5987,"2020-04-18","NUH","26","M","Bangladesh","wp","","Local transmission","","","Acacia Lodge at 530-540 Bukit Batok Street 23",TRUE,NA,NA,NA,NA
+5988,"2020-04-18","NUH","31","M","Bangladesh","wp","","Local transmission","","","Acacia Lodge at 530-540 Bukit Batok Street 23",TRUE,NA,NA,NA,NA
+5989,"2020-04-18","NUH","26","M","Bangladesh","wp","","Local transmission","","","Acacia Lodge at 530-540 Bukit Batok Street 23",TRUE,NA,NA,NA,NA
+5990,"2020-04-18","NUH","34","M","India","wp","","Local transmission","","","Kranji Lodge I at 12 Kranji Rd",TRUE,NA,NA,NA,NA
+5991,"2020-04-18","NUH","36","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA
+5992,"2020-04-18","NUH","43","M","India","wp","","Local transmission","","","",TRUE,NA,NA,NA,NA

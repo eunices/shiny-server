@@ -16,8 +16,8 @@ get_li = function(text) {
   text[order(text)]
 }
 
-today = "2020-04-05"
-recovered = "145, 163, 169, 177, 191, 204, 250, 267, 312, 373, 430, 443, 480, 614, 643, 645, 727, 745, 748, 752, 783, 832 and 1000"
+today = "2020-04-18"
+recovered = "190, 305, 324, 344, 387, 490, 500, 507, 508, 517, 521, 587, 603, 660, 676, 705, 741, 845, 873, 907, 1136, 1272, 1335, 1386, 1398, 1431, 1548, 2212, 2504, 2535, 2537, 2563, 3332, 3364, 3468, 3657, 3970 and 4754"
 text_filename = paste0(ddir, today, "-contact.txt")
 links = readChar(text_filename, file.info(text_filename)$size)
 
@@ -63,7 +63,7 @@ links_de = links_de[,c("cluster", "full", "cases")]
 links_de = fread(links_filename)
 links_de$cases = gsub("Cases |\\.", "", links_de$cases)
 links_de$cases = gsub(" and ", ", ", links_de$cases)
-links_de$cases = lapply(links_de$cases, function(text) strsplit(text, ", ")[[1]])
+links_de$cases = lapply(links_de$cases, function(text) strsplit(text, ",|, ")[[1]])
 links_de = data.table(unnest(links_de, cols=c("cases")))
 links_de$cases = as.integer(links_de$cases)
 links_de = links_de[!is.na(cases)]

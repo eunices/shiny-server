@@ -1,7 +1,8 @@
 library(data.table)
 ddir = "C:\\Users\\ejysoh\\Desktop\\sg-covid-cases\\"
-filename = "2020-04-05-2020-04-06.csv"
-type = 2
+date = "2020-04-18"
+filename = paste0(date, ".csv")
+type = 1 
 # type 1: without country of origin
 # type 2: with country of origin
 
@@ -32,7 +33,7 @@ d[grepl("mth", age)]$age = as.numeric(gsub('[A-z]+|\\r|\\n', '', d[grepl("mth", 
 
 d[gender=="Pending"]$gender = "unknown"
 
-d$confirmed.at.date = as.character(Sys.Date())
+d$confirmed.at.date = as.character(date)
 
 d$hospital = gsub('[0-9]+', '', d$hospital)
 d[hospital=="Pending"]$hospital = 'unknown'
