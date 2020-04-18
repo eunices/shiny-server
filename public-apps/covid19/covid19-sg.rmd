@@ -520,7 +520,7 @@ However, private hospital, which have about 1,600 beds according to the [article
 
 From [11 Apr 2020](https://www.straitstimes.com/singapore/health/bright-vision-hospital-transfers-all-patients-to-make-room-for-stable-covid-19), 110 stable (but requiring hospital care) Covid-19 patients were transferred to Bright Vision Hospital which has 200 bed space when fully operational.
 
-As of 17 Apr 2020, the hospitals seem to be filling up fast, and Singapore would probably need to change its strategy soon, not to admit [milder Covid-19 cases](https://www.straitstimes.com/singapore/health/coronavirus-experts-say-big-jump-in-infections-is-stretching-the-healthcare-system).
+As of 17 Apr 2020, the hospitals seem to be filling up fast, and Singapore would probably need to change its strategy soon, not to admit [milder Covid-19 cases](https://www.straitstimes.com/singapore/health/coronavirus-experts-say-big-jump-in-infections-is-stretching-the-healthcare-system) or to transfer milder cases out into isolation facilities.
 
 ```{r}
 style = "display: inline-block;vertical-align:top;padding-right: 20px"
