@@ -792,6 +792,14 @@ Note: some clusters had more than one locality on the map but were only assigned
 
 ## Methods
 
+### About the disease
+
+- Pre-symptomatic -> Symptomatic -> Removed
+- Asymptomatic -> Removed
+
+- Incubation time: 5.5 days
+- Recovery time (till 2 -ve tests): 20 days
+
 ### Data aquisition
 
 **Prior to 2 Apr 2020**, data was obtained from `r url1` up till 1 Apr 2020. The site became defunct from 2 Apr 2020 onwards though later it was found that they migrated to `r url2`. 
