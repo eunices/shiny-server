@@ -184,18 +184,6 @@ show_measures %>%
     kable_styling(full_width=F, position = "right")
 ```
 
-On 31 Jan, quarantine measures were issued to all travellers arriving from outbreak areas such as Hubei Province, and this was extended to China as well as other outbreak epicentres such as Italy and Korea on 4 Mar, as well as to Singapore residents from 18 Mar. These aimed at reducing imported cases. Within this time, some local transmission had already occurred, resulting in the seven clusters with 107 cases.
-
-On 7 Feb, Singapore went DORSCON orange. Preparatory (e.g. preparing business continuity plans) and imposed measures were put in place. Imposed measures were largely for social distancing (e.g., encouraging telecommuting to workplaces) and though some also to reduce imported cases (e.g. Singaporeans to defer non-essential travel and foreigners to bear cost of covid19 treatment). 
-
-However a second wave of imported cases started arriving from early March. These were from countries other than China as the contagion had spread outside of China. The largest proportion were from United States and United Kingdom. These imported cases comprised of Singaporeans who were coming back from overseas and certain Singapore Work Pass Holders. On 18 Mar, Malaysia had a border lockdown. On 22 Mar, Singapore closed its borders to visitors but by 1 Apr, there was already a greater proportion of cases with local transmission (i.e. community spread).
-
-During this period, there were also heighted social-distancing measures, especially for vulnerable groups, such as spaced out seating and queuing arrangements in malls, deferring trips to malls, senior activities suspended and no visitors to Old Folks Homes. The defining social-distancing measure was the “circuit breaker” which would last from 7 Apr to 4 May, where many, except those in essential services, in Singapore will work and study from home.
-
-The first wave of imported cases was generally contained. The large influx of second wave imported cases, however, led to sustained local transmission from 1 Apr, especially in the worker dormitories. It appears that imported cases were effectively reduced when border was locked down. However, given that some symptomatic cases would likely had slipped through as the detection of infected cases is not perfect (due to asymptomatic cases and variable incubation time) and the social distancing measures were likely not stringent enough, there was greater community spread from 1 Apr, warranting the "circuit breaker" measure. 
-
-From 11 Apr onwards, workers from these dormitories were actively tested, resulting in the spike of cases. Unless active testing is done (as with the dormitories), the unlinked cases picked up will only be those symptomatic and those of greater severity (not mild cases) which would be the tip of the iceberg...
-
 ```{r}
 renderPlot({
 
@@ -339,6 +327,20 @@ renderPlot({
   grid.arrange(grobs=list(plt1, plt2a, plt2b, plt3), ncol=1)
 }, height=1200)
 ```
+
+
+On 31 Jan, quarantine measures were issued to all travellers arriving from outbreak areas such as Hubei Province, and this was extended to China as well as other outbreak epicentres such as Italy and Korea on 4 Mar, as well as to Singapore residents from 18 Mar. These aimed at reducing imported cases. Within this time, some local transmission had already occurred, resulting in the seven clusters with 107 cases.
+
+On 7 Feb, Singapore went DORSCON orange. Preparatory (e.g. preparing business continuity plans) and imposed measures were put in place. Imposed measures were largely for social distancing (e.g., encouraging telecommuting to workplaces) and though some also to reduce imported cases (e.g. Singaporeans to defer non-essential travel and foreigners to bear cost of covid19 treatment). 
+
+However a second wave of imported cases started arriving from early March. These were from countries other than China as the contagion had spread outside of China. The largest proportion were from United States and United Kingdom. These imported cases comprised of Singaporeans who were coming back from overseas and certain Singapore Work Pass Holders. On 18 Mar, Malaysia had a border lockdown. On 22 Mar, Singapore closed its borders to visitors but by 1 Apr, there was already a greater proportion of cases with local transmission (i.e. community spread).
+
+During this period, there were also heighted social-distancing measures, especially for vulnerable groups, such as spaced out seating and queuing arrangements in malls, deferring trips to malls, senior activities suspended and no visitors to Old Folks Homes. The defining social-distancing measure was the “circuit breaker” which would last from 7 Apr to 4 May, where many, except those in essential services, in Singapore will work and study from home.
+
+The first wave of imported cases was generally contained. The large influx of second wave imported cases, however, led to sustained local transmission from 1 Apr, especially in the worker dormitories. It appears that imported cases were effectively reduced when border was locked down. However, given that some symptomatic cases would likely had slipped through as the detection of infected cases is not perfect (due to asymptomatic cases and variable incubation time) and the social distancing measures were likely not stringent enough, there was greater community spread from 1 Apr, warranting the "circuit breaker" measure. 
+
+From 11 Apr onwards, workers from these dormitories were actively tested, resulting in the spike of cases. Unless active testing is done (as with the dormitories), the unlinked cases picked up will only be those symptomatic and those of greater severity (not mild cases) which would be the tip of the iceberg...
+
 
 #### Clusters through time
 
