@@ -16,8 +16,8 @@ get_li = function(text) {
   text[order(text)]
 }
 
-today = "2020-04-17"
-recovered = "388, 511, 533, 632, 638, 898, 911, 1046, 1060, 1115, 1266, 1352, 1435, 1575, 1620, 1712, 1915, 1936, 1990, 2421, 2556, 2558, 2641, 2727 and 3193"
+today = "2020-04-05"
+recovered = "145, 163, 169, 177, 191, 204, 250, 267, 312, 373, 430, 443, 480, 614, 643, 645, 727, 745, 748, 752, 783, 832 and 1000"
 text_filename = paste0(ddir, today, "-contact.txt")
 links = readChar(text_filename, file.info(text_filename)$size)
 

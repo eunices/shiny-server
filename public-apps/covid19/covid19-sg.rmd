@@ -135,7 +135,7 @@ renderPlot({
                               "Measure", "Unknown"),
                     values=c("darkgreen", cbp1[4], "white", "grey90",
                               cbp1[c(6, 3)], "#8ccff5", 
-                              "grey80", "navyblue"),
+                              "grey80", "white"),
                     aesthetics = c("fill", "segment.color")) + 
 
   theme +
@@ -188,27 +188,72 @@ From 7 Apr onwards, there was a greater number of unlinked cases.
 
 ```{r}
 renderPlot({
-  data = df[,list(N=.N),by=c("confirmed.at.date", "patient.citizen")]
 
-  data$patient.citizen = factor(data$patient.citizen,
+  # Plot 1
+  data1 = df[infection.source=="Imported case", list(N=.N),by=c("confirmed.at.date")]
+
+  plt1 = ggplot(data=data1, aes(x=confirmed.at.date, y=N)) +
+    geom_bar(position='stack', stat="identity", fill=cbp1[5]) + 
+    
+    theme +
+    theme(legend.position="bottom", legend.box = "horizontal", 
+          axis.text.x=element_text(angle = 90)) + 
+
+    xlab("") + ylab("Number of cases\n(imported) \n") + ggtitle("Imported") +
+    
+    scale_y_continuous(breaks=breaks_f) +
+    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") 
+  
+  df2 = merge(df, lp_clust[, c("cluster", "type")], by.x="cluster", by.y="cluster",
+              all.x=T, all.y=F)
+  
+  # Plot 2
+  data2 = df2[infection.source=="Local transmission" & !(type %in% c("construction", "dormitory")),
+             list(N=.N),by=c("confirmed.at.date", "patient.citizen")]
+             
+  data2$patient.citizen = factor(data2$patient.citizen,
       levels=c("citizen", "pr", "sp", "wp", "lp", "visitor", "unknown"),
       labels=c("Citizen", "PR", "SP", "WP", "LP", "Visitor", "Unknown"))   
 
-  ggplot(data=data, aes(x=confirmed.at.date, y=N, fill=patient.citizen)) +
+  plt2 = ggplot(data=data2, aes(x=confirmed.at.date, y=N, fill=patient.citizen)) +
     geom_bar(position='stack', stat="identity") + 
     
     theme +
     theme(legend.position="bottom", legend.box = "horizontal", 
           axis.text.x=element_text(angle = 90)) + 
 
-    xlab("") + ylab("Number of cases by status\n") +
+    xlab("") + ylab("Number of cases\n(by status)\n") + ggtitle("Community spread") +
     
-    scale_fill_brewer(palette = "Blues") +
+    scale_fill_brewer(palette = "Blues", direction=-1) +
     guides(fill=guide_legend(title="")) + 
 
     scale_y_continuous(breaks=breaks_f) +
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") 
-})
+
+  # Plot 2
+  data3 = df2[infection.source=="Local transmission" & (type %in% c("construction", "dormitory")),
+             list(N=.N),by=c("confirmed.at.date")]
+
+  plt3 = ggplot(data=data3, aes(x=confirmed.at.date, y=N)) +
+    geom_bar(position='stack', stat="identity", fill=cbp1[2]) + 
+    
+    theme +
+    theme(legend.position="bottom", legend.box = "horizontal", 
+          axis.text.x=element_text(angle = 90)) + 
+
+    xlab("") + ylab("Number of cases\n(dormitory/ construction related)\n") + 
+    ggtitle("Migrant worker-related") +
+    
+    scale_fill_brewer(palette = "Blues", direction=-1) +
+    guides(fill=guide_legend(title="")) + 
+
+    scale_y_continuous(breaks=breaks_f) +
+    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") 
+
+
+  # Plots
+  grid.arrange(grobs=list(plt1, plt2, plt3))
+}, height=900)
 ```
 
 #### Clusters through time
@@ -708,7 +753,7 @@ renderPlot({
           legend.position="bottom", legend.box = "vertical",
           axis.text.y=element_text(size=rel(1)))+
     scale_y_continuous(breaks=breaks_f) +
-    scale_fill_brewer(palette = "Blues") +
+    scale_fill_brewer(palette = "Blues", direction=-1) +
     guides(fill=guide_legend(title="")) + 
     ylab("Number of people\n") + xlab("\nStatus") + ggtitle("Status of top 10 largest clusters")
 })
