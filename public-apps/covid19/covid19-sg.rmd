@@ -147,9 +147,8 @@ renderPlot({
                     segment.size=0.5, segment.color='black', 
                     box.padding = unit(0.4, 'lines'), aes(fill=type),
                     arrow = arrow(length = unit(1, "mm")),
-                    point.padding = 0, max.iter=3000, show.legend=F) +
+                    point.padding = 0, max.iter=3000, show.legend=F) 
 
-  geom_vline(xintercept=date_second_wave, size=.5, col=cbp1[2], linetype="dotted")
 })
 
 ```
@@ -202,13 +201,17 @@ renderPlot({
     xlab("") + ylab("Number of cases\n(imported) \n") + ggtitle("Imported") +
     
     scale_y_continuous(breaks=breaks_f) +
-    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") 
+    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b",
+                 limits=c(min_date, max_date)) +
+    
+    geom_vline(xintercept=date_second_wave, size=.5, col=cbp1[2], linetype="dotted") + 
+    annotate("text", x = date_second_wave+2, y=10, label="Second wave", hjust=0) 
   
-  df2 = merge(df, lp_clust[, c("cluster", "type")], by.x="cluster", by.y="cluster",
+  df2 = merge(df, lp_clust[, c("cluster", "foreign.workers")], by.x="cluster", by.y="cluster",
               all.x=T, all.y=F)
   
   # Plot 2
-  data2 = df2[infection.source=="Local transmission" & !(type %in% c("construction", "dormitory")),
+  data2 = df2[infection.source %in% c("Local transmission", "unknown") & foreign.workers != "y",
              list(N=.N),by=c("confirmed.at.date", "patient.citizen")]
              
   data2$patient.citizen = factor(data2$patient.citizen,
@@ -228,10 +231,11 @@ renderPlot({
     guides(fill=guide_legend(title="")) + 
 
     scale_y_continuous(breaks=breaks_f) +
-    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") 
+    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b",
+                 limits=c(min_date, max_date)) 
 
-  # Plot 2
-  data3 = df2[infection.source=="Local transmission" & (type %in% c("construction", "dormitory")),
+  # Plot 3
+  data3 = df2[infection.source %in% c("Local transmission", "unknown") & foreign.workers=="y",
              list(N=.N),by=c("confirmed.at.date")]
 
   plt3 = ggplot(data=data3, aes(x=confirmed.at.date, y=N)) +
@@ -248,7 +252,8 @@ renderPlot({
     guides(fill=guide_legend(title="")) + 
 
     scale_y_continuous(breaks=breaks_f) +
-    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") 
+    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b",
+                 limits=c(min_date, max_date)) 
 
 
   # Plots
