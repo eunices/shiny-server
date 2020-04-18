@@ -276,7 +276,7 @@ renderPlot({
     theme(legend.position="bottom", legend.box = "horizontal", 
           axis.text.x=element_text(angle = 90)) + 
 
-    xlab("") + ylab("Number of cases\n(by linked status)\n") + 
+    xlab("") + ylab("Number of cases\n(by linked status)\n") + ggtitle("") +
 
     scale_fill_brewer(palette = "Blues", direction=-1) +
     guides(fill=guide_legend(title="")) + 
