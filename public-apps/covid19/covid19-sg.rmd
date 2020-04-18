@@ -186,9 +186,6 @@ show_measures %>%
 
 ```{r}
 renderPlot({
-
-  # TODO: fix the missing bars
-
   # Plot 1
   data1 = df[infection.source=="Imported case", list(N=.N),by=c("confirmed.at.date")]
   data1 = merge(data1, labels[grepl("2", related)], by.x=c("confirmed.at.date"), by.y=c("date"), all.x=T, all.y=T)
