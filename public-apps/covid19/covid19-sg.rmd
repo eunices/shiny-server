@@ -98,7 +98,7 @@ renderPlot({
                by.x="confirmed.at.date", by.y="recovered.at.date", all.x=T, all.y=T)
   data = merge(data, df[,list(D=-.N),by=c("deceased.at.date")], 
                by.x="confirmed.at.date", by.y="deceased.at.date", all.x=T, all.y=T)
-  data = merge(data, labels, by.x=c("confirmed.at.date", "infection.type"), 
+  data = merge(data, labels[grepl("events", type)], by.x=c("confirmed.at.date", "infection.type"), 
                by.y=c("date", "infection.type"), all.x=T, all.y=T)
 
   data = data[confirmed.at.date >= min_date & confirmed.at.date <= max_date]
