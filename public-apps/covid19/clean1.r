@@ -52,11 +52,15 @@ d[grepl("UK", nat),]$patient.nationality = "United Kingdom"
 d[grepl("pending", tolower(nat)),]$patient.nationality = "unknown"
 
 d$patient.citizen = "visitor"
-d[grepl("long", tolower(nat)),]$patient.citizen = "lp"
-d[grepl("work", tolower(nat)),]$patient.citizen = "wp"
-d[grepl("permanent", tolower(nat)),]$patient.citizen = "pr"
 d[grepl("citizen", tolower(nat)),]$patient.citizen = "citizen"
+d[grepl("permanent", tolower(nat)),]$patient.citizen = "pr"
+d[grepl("employment pass", tolower(nat)),]$patient.citizen = "ep"
+d[grepl("s pass", tolower(nat)),]$patient.citizen = "sp"
+d[grepl("work", tolower(nat)),]$patient.citizen = "wp"
+d[grepl("long", tolower(nat)),]$patient.citizen = "lp"
 d[grepl("pending", tolower(nat)),]$patient.citizen = "unknown"
+# https://www.paulhypepage.com/guide-faq/singapore-working-visa-guide/
+
 d$nat = NULL
 
 d$infection.source = "Local transmission"

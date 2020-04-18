@@ -149,7 +149,7 @@ renderPlot({
                     arrow = arrow(length = unit(1, "mm")),
                     point.padding = 0, max.iter=3000, show.legend=F) 
 
-})
+}, height=500)
 
 ```
 
@@ -211,12 +211,13 @@ renderPlot({
               all.x=T, all.y=F)
   
   # Plot 2
-  data2 = df2[infection.source %in% c("Local transmission", "unknown") & foreign.workers != "y",
+  data2 = df2[infection.source %in% c("Local transmission") & 
+              (foreign.workers=="" | (foreign.workers=="y" & !(patient.citizen %in% c("wp", "lp", "sp", "unknown")))),
              list(N=.N),by=c("confirmed.at.date", "patient.citizen")]
              
   data2$patient.citizen = factor(data2$patient.citizen,
-      levels=c("citizen", "pr", "sp", "wp", "lp", "visitor", "unknown"),
-      labels=c("Citizen", "PR", "SP", "WP", "LP", "Visitor", "Unknown"))   
+      levels=c("citizen", "pr", "ep", "sp", "wp", "lp", "visitor", "unknown"),
+      labels=c("Citizen", "PR", "EP", "SP", "WP", "LP", "Visitor", "Unknown"))   
 
   plt2 = ggplot(data=data2, aes(x=confirmed.at.date, y=N, fill=patient.citizen)) +
     geom_bar(position='stack', stat="identity") + 
@@ -225,7 +226,8 @@ renderPlot({
     theme(legend.position="bottom", legend.box = "horizontal", 
           axis.text.x=element_text(angle = 90)) + 
 
-    xlab("") + ylab("Number of cases\n(by status)\n") + ggtitle("Community spread") +
+    xlab("") + ylab("Number of cases\n(by status)\n") + 
+    ggtitle("Community spread (citizens, PRs, WP/LP/SP not in dorm clusters)") +
     
     scale_fill_brewer(palette = "Blues", direction=-1) +
     guides(fill=guide_legend(title="")) + 
@@ -235,7 +237,8 @@ renderPlot({
                  limits=c(min_date, max_date)) 
 
   # Plot 3
-  data3 = df2[infection.source %in% c("Local transmission", "unknown") & foreign.workers=="y",
+  data3 = df2[infection.source %in% c("Local transmission") & 
+              (foreign.workers=="y" & patient.citizen %in% c("wp", "lp", "sp", "unknown")),
              list(N=.N),by=c("confirmed.at.date")]
 
   plt3 = ggplot(data=data3, aes(x=confirmed.at.date, y=N)) +
@@ -246,19 +249,37 @@ renderPlot({
           axis.text.x=element_text(angle = 90)) + 
 
     xlab("") + ylab("Number of cases\n(dormitory/ construction related)\n") + 
-    ggtitle("Migrant worker-related") +
+    ggtitle("Migrant worker-related (in clusters and holding WP/LP/SP)") +
     
     scale_fill_brewer(palette = "Blues", direction=-1) +
     guides(fill=guide_legend(title="")) + 
 
     scale_y_continuous(breaks=breaks_f) +
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b",
+                 limits=c(min_date, max_date))
+
+  # Plot 4
+  data4 = df2[infection.source %in% c("unknown"),
+             list(N=.N),by=c("confirmed.at.date")]
+
+  plt4 = ggplot(data=data4, aes(x=confirmed.at.date, y=N)) +
+    geom_bar(position='stack', stat="identity", fill=cbp1[1]) + 
+    
+    theme +
+    theme(legend.position="bottom", legend.box = "horizontal", 
+          axis.text.x=element_text(angle = 90)) + 
+
+    xlab("") + ylab("Number of cases\n(unknown status)\n") + 
+    ggtitle("Missing data") +
+    
+    scale_y_continuous(breaks=breaks_f) +
+    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b",
                  limits=c(min_date, max_date)) 
 
 
   # Plots
-  grid.arrange(grobs=list(plt1, plt2, plt3))
-}, height=900)
+  grid.arrange(grobs=list(plt1, plt2, plt3, plt4), ncol=1)
+}, height=1200)
 ```
 
 #### Clusters through time
@@ -748,8 +769,8 @@ renderPlot({
 ```{r}
 renderPlot({
   cluster_cases$patient.citizen = factor(cluster_cases$patient.citizen,
-    levels=c("citizen", "pr", "sp", "wp", "lp", "visitor", "unknown"),
-    labels=c("Citizen", "PR", "SP", "WP", "LP", "Visitor", "Unknown"))
+    levels=c("citizen", "pr", "ep", "sp", "wp", "lp", "visitor", "unknown"),
+    labels=c("Citizen", "PR", "EP", "SP", "WP", "LP", "Visitor", "Unknown"))
   ggplot(cluster_cases[no %in% 1:10], aes(x=patient.citizen, fill=patient.citizen)) +
     geom_bar(stat="count") + theme +
     facet_wrap(~no.bract, ncol=3, scales="free_y") + 
@@ -820,6 +841,8 @@ The specific steps taken for data collection of the later dataset from MOH Annex
     c. Adding new links and clusters to existing cases as contact tracing has made progress.
 3. Georeferencing new clusters in `clusters.csv`.
 4. Adding new events in `events.csv`.
+
+In the later dataset, EP, SP, WP were separated different work passes. However in the earlier dataset to that all were consider WP but WP/LP were already distinguished.
 
 ### Notes about data
 
