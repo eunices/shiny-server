@@ -796,6 +796,7 @@ Note: some clusters had more than one locality on the map but were only assigned
 
 - Pre-symptomatic -> Symptomatic -> Removed
 - Asymptomatic -> Removed
+- Reinfection?
 
 - Incubation time: 5.5 days
 - Recovery time (till 2 -ve tests): 20 days
