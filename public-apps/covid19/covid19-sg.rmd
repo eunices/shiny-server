@@ -212,7 +212,7 @@ renderPlot({
   
   # Plot 2
   data2 = df2[infection.source %in% c("Local transmission") & 
-              (foreign.workers=="" | (foreign.workers=="y" & !(patient.citizen %in% c("wp", "lp", "sp", "unknown")))),
+              (is.na(foreign.workers)| foreign.workers=="" | (foreign.workers=="y" & !(patient.citizen %in% c("wp", "lp", "sp", "unknown")))),
              list(N=.N),by=c("confirmed.at.date", "patient.citizen")]
              
   data2$patient.citizen = factor(data2$patient.citizen,
@@ -258,27 +258,8 @@ renderPlot({
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b",
                  limits=c(min_date, max_date))
 
-  # Plot 4
-  data4 = df2[infection.source %in% c("unknown"),
-             list(N=.N),by=c("confirmed.at.date")]
-
-  plt4 = ggplot(data=data4, aes(x=confirmed.at.date, y=N)) +
-    geom_bar(position='stack', stat="identity", fill=cbp1[1]) + 
-    
-    theme +
-    theme(legend.position="bottom", legend.box = "horizontal", 
-          axis.text.x=element_text(angle = 90)) + 
-
-    xlab("") + ylab("Number of cases\n(unknown status)\n") + 
-    ggtitle("Missing data") +
-    
-    scale_y_continuous(breaks=breaks_f) +
-    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b",
-                 limits=c(min_date, max_date)) 
-
-
   # Plots
-  grid.arrange(grobs=list(plt1, plt2, plt3, plt4), ncol=1)
+  grid.arrange(grobs=list(plt1, plt2, plt3), ncol=1)
 }, height=1200)
 ```
 
