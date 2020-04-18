@@ -187,6 +187,8 @@ show_measures %>%
 ```{r}
 renderPlot({
 
+  # TODO: fix the missing bars
+
   # Plot 1
   data1 = df[infection.source=="Imported case", list(N=.N),by=c("confirmed.at.date")]
   data1 = merge(data1, labels[grepl("2", related)], by.x=c("confirmed.at.date"), by.y=c("date"), all.x=T, all.y=T)
@@ -203,7 +205,7 @@ renderPlot({
     
     scale_y_continuous(breaks=breaks_f) +
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b",
-                 limits=c(min_date, max_date)) +
+                 limits=c(min_date-1, max_date+2)) +
 
     geom_label_repel(nudge_y=20, direction="x", angle=90, vjust=0, force=5, 
                      fontface='bold', color="black", size=3, 
@@ -216,72 +218,55 @@ renderPlot({
               all.x=T, all.y=F)
   
   # Plot 2a
-  data2a = df2[infection.source %in% c("Local transmission") & 
+  data2 = df2[infection.source %in% c("Local transmission") & 
               (is.na(foreign.workers)| foreign.workers=="" | 
               (foreign.workers=="y" & !(patient.citizen %in% c("wp", "lp", "sp", "unknown")))),
              list(N=.N),by=c("confirmed.at.date", "patient.citizen")]
   labels$patient.citizen = "citizen"
-  data2a = merge(data2a, labels[grepl("1|3|4", related)], 
+  data2 = merge(data2, labels[grepl("1|3|4", related)], 
                 by.x=c("confirmed.at.date", "patient.citizen"), 
                 by.y=c("date", "patient.citizen"), all.x=T, all.y=T)
 
-  data2a$patient.citizen = factor(data2a$patient.citizen,
+  data2$patient.citizen = factor(data2$patient.citizen,
       levels=c("citizen", "pr", "ep", "sp", "wp", "lp", "visitor", "unknown"),
       labels=c("Citizen", "PR", "EP", "SP", "WP", "LP", "Visitor", "Unknown"))   
 
-  plt2a = ggplot(data=data2a, aes(x=confirmed.at.date, y=N, fill=patient.citizen, label=no)) +
-    geom_bar(position='stack', stat="identity") + 
-    
-    theme +
-    theme(legend.position="bottom", legend.box = "horizontal", 
-          axis.text.x=element_text(angle = 90)) + 
-
-    xlab("") + ylab("Number of cases\n(by status)\n") + 
-    ggtitle("Community spread (citizens, PRs, WP/SP/LP not in dorm/construction clusters)") +
-
-    scale_fill_brewer(palette = "Blues", direction=-1) +
-    guides(fill=guide_legend(title="")) + 
-
-    scale_y_continuous(breaks=breaks_f) +
-    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b",
-                 limits=c(min_date, max_date)) +
-    
-    geom_label_repel(nudge_y=100, direction="x", angle=90, vjust=0, force=2, 
-                     fontface='bold', color="black", size=3, fill="white",
-                     segment.size=0.5, segment.color='black', 
-                     box.padding = unit(0.4, 'lines'), 
-                     arrow = arrow(length = unit(1, "mm")),
-                     point.padding = 0, max.iter=3000, show.legend=F)
-
-  # Plot 2b
+  # data 2b
   data2b = df2[infection.source %in% c("Local transmission") & 
               (is.na(foreign.workers)| foreign.workers=="" | 
               (foreign.workers=="y" & !(patient.citizen %in% c("wp", "lp", "sp", "unknown")))),
-             list(N=.N),by=c("confirmed.at.date", "infection.type")]
-  labels$infection.type = "Local linked"
-  data2b = merge(data2b, labels[grepl("1|3|4", related)], 
-                by.x=c("confirmed.at.date", "infection.type"), 
-                by.y=c("date", "infection.type"), all.x=T, all.y=T)
+             list(N=.N),by=c("confirmed.at.date", "infection.type")][confirmed.at.date <= max_date]
+  data2b = dcast(data2b, confirmed.at.date ~ infection.type, value.var="N")
+  data2b[is.na(data2b)] = 0
+  data2b$prop_unlinked = data2b$`Local unlinked` / (data2b$`Local linked` + data2b$`Local unlinked`) * 100
 
-  data2b$patient.citizen = factor(data2b$patient.citizen,
-      levels=c("citizen", "pr", "ep", "sp", "wp", "lp", "visitor", "unknown"),
-      labels=c("Citizen", "PR", "EP", "SP", "WP", "LP", "Visitor", "Unknown"))   
+  link_scale = 1
 
-  plt2b = ggplot(data=data2b, aes(x=confirmed.at.date, y=N, fill=infection.type, label=no)) +
+  plt2 = ggplot(data=data2, aes(x=confirmed.at.date, y=N, fill=patient.citizen, label=no)) +
     geom_bar(position='stack', stat="identity") + 
     
     theme +
     theme(legend.position="bottom", legend.box = "horizontal", 
           axis.text.x=element_text(angle = 90)) + 
 
-    xlab("") + ylab("Number of cases\n(by linked status)\n") + ggtitle("") +
+    xlab("") + ylab("Number of cases (bars)\n") + 
+    ggtitle("Community spread (citizens, PRs, WP/SP/LP not in dorm/construction clusters)") +
+
+    geom_line(data=data2b, 
+              aes(x=confirmed.at.date, y=prop_unlinked*link_scale),
+              show.legend=F, inherit.aes=F, color=cbp1[2]) +
+    geom_point(data=data2b, 
+               aes(x=confirmed.at.date, y=prop_unlinked*link_scale),
+               show.legend=F, inherit.aes=F, color=cbp1[2]) +
 
     scale_fill_brewer(palette = "Blues", direction=-1) +
     guides(fill=guide_legend(title="")) + 
 
-    scale_y_continuous(breaks=breaks_f) +
+    scale_y_continuous(breaks=breaks_f, 
+                      sec.axis = sec_axis(~ ./link_scale, name="% of unlinked cases (line)\n",,
+                                          breaks=seq(0, 100, 10))) +
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b",
-                 limits=c(min_date, max_date)) +
+                 limits=c(min_date-1, max_date+2)) +
     
     geom_label_repel(nudge_y=100, direction="x", angle=90, vjust=0, force=2, 
                      fontface='bold', color="black", size=3, fill="white",
@@ -314,7 +299,7 @@ renderPlot({
 
     scale_y_continuous(breaks=breaks_f) +
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b",
-                 limits=c(min_date, max_date)) +
+                 limits=c(min_date-1, max_date+2)) +
     
     geom_label_repel(nudge_y=100, direction="x", angle=90, vjust=0, force=2, 
                      fontface='bold', color="black", size=3, fill="white",
@@ -324,7 +309,8 @@ renderPlot({
                      point.padding = 0, max.iter=3000, show.legend=F)
 
   # Plots
-  grid.arrange(grobs=list(plt1, plt2a, plt2b, plt3), ncol=1)
+  grid.arrange(grobs=list(plt1, plt2, plt3), ncol=1)
+
 }, height=1200)
 ```
 
@@ -577,7 +563,7 @@ df_deceased_age = rbind(df_deceased_age,
                                    Recovered=sum(as.numeric(df_deceased_age$`Recovered`), na.rm=T)))
 df_deceased_age[is.na(df_deceased_age)] = 0
 df_deceased_age$cfr = 
-  round(df_deceased_age$Deceased / (df_deceased_age$Deceased + df_deceased_age$Recovered)*100, 2)
+  round(df_deceased_age$Deceased / (df_deceased_age$Deceased + df_deceased_age$Recovered)*100, 1)
 
 show_deceased_age = df_deceased_age[, c("category", "Deceased", "Recovered", "cfr")]
 names(show_deceased_age)[which(names(show_deceased_age)=="cfr")] = "CFR (%)" 
