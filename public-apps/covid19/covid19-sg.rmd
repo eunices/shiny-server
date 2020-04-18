@@ -223,7 +223,7 @@ renderPlot({
               (foreign.workers=="y" & !(patient.citizen %in% c("wp", "lp", "sp", "unknown")))),
              list(N=.N),by=c("confirmed.at.date", "patient.citizen")]
   labels$patient.citizen = "citizen"
-  data2 = merge(data2, labels[grepl("3", related)], 
+  data2 = merge(data2, labels[grepl("3", related) | grepl("4", related)], 
                 by.x=c("confirmed.at.date", "patient.citizen"), 
                 by.y=c("date", "patient.citizen"), all.x=T, all.y=T)
   print(data2)
