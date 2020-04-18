@@ -217,21 +217,21 @@ renderPlot({
   df2 = merge(df, lp_clust[, c("cluster", "foreign.workers")], by.x="cluster", by.y="cluster",
               all.x=T, all.y=F)
   
-  # Plot 2
-  data2 = df2[infection.source %in% c("Local transmission") & 
+  # Plot 2a
+  data2a = df2[infection.source %in% c("Local transmission") & 
               (is.na(foreign.workers)| foreign.workers=="" | 
               (foreign.workers=="y" & !(patient.citizen %in% c("wp", "lp", "sp", "unknown")))),
              list(N=.N),by=c("confirmed.at.date", "patient.citizen")]
   labels$patient.citizen = "citizen"
-  data2 = merge(data2, labels[grepl("1|3|4", related)], 
+  data2a = merge(data2a, labels[grepl("1|3|4", related)], 
                 by.x=c("confirmed.at.date", "patient.citizen"), 
                 by.y=c("date", "patient.citizen"), all.x=T, all.y=T)
 
-  data2$patient.citizen = factor(data2$patient.citizen,
+  data2a$patient.citizen = factor(data2a$patient.citizen,
       levels=c("citizen", "pr", "ep", "sp", "wp", "lp", "visitor", "unknown"),
       labels=c("Citizen", "PR", "EP", "SP", "WP", "LP", "Visitor", "Unknown"))   
 
-  plt2a = ggplot(data=data2, aes(x=confirmed.at.date, y=N, fill=patient.citizen, label=no)) +
+  plt2a = ggplot(data=data2a, aes(x=confirmed.at.date, y=N, fill=patient.citizen, label=no)) +
     geom_bar(position='stack', stat="identity") + 
     
     theme +
@@ -255,7 +255,21 @@ renderPlot({
                      arrow = arrow(length = unit(1, "mm")),
                      point.padding = 0, max.iter=3000, show.legend=F)
 
-  plt2b = ggplot(data=data2, aes(x=confirmed.at.date, y=N, fill=infection.type, label=no)) +
+  # Plot 2b
+  data2b = df2[infection.source %in% c("Local transmission") & 
+              (is.na(foreign.workers)| foreign.workers=="" | 
+              (foreign.workers=="y" & !(patient.citizen %in% c("wp", "lp", "sp", "unknown")))),
+             list(N=.N),by=c("confirmed.at.date", "infection.type")]
+  labels$infection.type = "Local unlinked"
+  data2b = merge(data2b, labels[grepl("1|3|4", related)], 
+                by.x=c("confirmed.at.date", "infection.type"), 
+                by.y=c("date", "infection.type"), all.x=T, all.y=T)
+
+  data2b$patient.citizen = factor(data2b$patient.citizen,
+      levels=c("citizen", "pr", "ep", "sp", "wp", "lp", "visitor", "unknown"),
+      labels=c("Citizen", "PR", "EP", "SP", "WP", "LP", "Visitor", "Unknown"))   
+
+  plt2b = ggplot(data=data2b, aes(x=confirmed.at.date, y=N, fill=infection.type, label=no)) +
     geom_bar(position='stack', stat="identity") + 
     
     theme +
