@@ -171,7 +171,8 @@ show_measures[,1] = c(
   "Quarantine and isolation events/measures", 
   "Border control events/measures - to decrease imported cases.",  
   "Social distancing measures - to reduce number of contacts per day.",  
-  "Good hygiene measures - to reduce transmission probability of virus.")
+  "Good hygiene measures - to reduce transmission probability of virus.",
+  "Measures to handle the spread within dormitories")
 
 show_events %>%
   kable("html", align='clc', caption='Events') %>%
@@ -190,8 +191,10 @@ renderPlot({
 
   # Plot 1
   data1 = df[infection.source=="Imported case", list(N=.N),by=c("confirmed.at.date")]
+  data1 = merge(data1, labels[grepl("2", related)], by.x=c("confirmed.at.date"), by.y=c("date"), all.x=T, all.y=T)
 
-  plt1 = ggplot(data=data1, aes(x=confirmed.at.date, y=N)) +
+
+  plt1 = ggplot(data=data1, aes(x=confirmed.at.date, y=N, label=no)) +
     geom_bar(position='stack', stat="identity", fill=cbp1[5]) + 
     
     theme +
@@ -203,23 +206,33 @@ renderPlot({
     scale_y_continuous(breaks=breaks_f) +
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b",
                  limits=c(min_date, max_date)) +
-    
-    geom_vline(xintercept=date_second_wave, size=.5, col=cbp1[2], linetype="dotted") + 
-    annotate("text", x = date_second_wave+2, y=10, label="Second wave", hjust=0) 
+
+    geom_label_repel(nudge_y=20, direction="x", angle=90, vjust=0, force=5, 
+                     fontface='bold', color="black", size=3, 
+                     segment.size=0.5, segment.color='black', fill='white',
+                     box.padding = unit(0.4, 'lines'), 
+                     arrow = arrow(length = unit(1, "mm")),
+                     point.padding = 0, max.iter=3000, show.legend=F) 
   
   df2 = merge(df, lp_clust[, c("cluster", "foreign.workers")], by.x="cluster", by.y="cluster",
               all.x=T, all.y=F)
   
   # Plot 2
   data2 = df2[infection.source %in% c("Local transmission") & 
-              (is.na(foreign.workers)| foreign.workers=="" | (foreign.workers=="y" & !(patient.citizen %in% c("wp", "lp", "sp", "unknown")))),
+              (is.na(foreign.workers)| foreign.workers=="" | 
+              (foreign.workers=="y" & !(patient.citizen %in% c("wp", "lp", "sp", "unknown")))),
              list(N=.N),by=c("confirmed.at.date", "patient.citizen")]
-             
+  labels$patient.citizen = "citizen"
+  data2 = merge(data2, labels[grepl("3", related)], 
+                by.x=c("confirmed.at.date", "patient.citizen"), 
+                by.y=c("date", "patient.citizen"), all.x=T, all.y=T)
+  print(data2)
+
   data2$patient.citizen = factor(data2$patient.citizen,
       levels=c("citizen", "pr", "ep", "sp", "wp", "lp", "visitor", "unknown"),
       labels=c("Citizen", "PR", "EP", "SP", "WP", "LP", "Visitor", "Unknown"))   
 
-  plt2 = ggplot(data=data2, aes(x=confirmed.at.date, y=N, fill=patient.citizen)) +
+  plt2 = ggplot(data=data2, aes(x=confirmed.at.date, y=N, fill=patient.citizen, label=no)) +
     geom_bar(position='stack', stat="identity") + 
     
     theme +
@@ -228,20 +241,31 @@ renderPlot({
 
     xlab("") + ylab("Number of cases\n(by status)\n") + 
     ggtitle("Community spread (citizens, PRs, WP/SP/LP not in dorm/construction clusters)") +
-    
+
     scale_fill_brewer(palette = "Blues", direction=-1) +
     guides(fill=guide_legend(title="")) + 
 
     scale_y_continuous(breaks=breaks_f) +
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b",
-                 limits=c(min_date, max_date)) 
+                 limits=c(min_date, max_date)) +
+    
+    geom_label_repel(nudge_y=100, direction="x", angle=90, vjust=0, force=2, 
+                     fontface='bold', color="black", size=3, fill="white",
+                     segment.size=0.5, segment.color='black', 
+                     box.padding = unit(0.4, 'lines'), 
+                     arrow = arrow(length = unit(1, "mm")),
+                     point.padding = 0, max.iter=3000, show.legend=F)
 
   # Plot 3
   data3 = df2[infection.source %in% c("Local transmission") & 
               (foreign.workers=="y" & patient.citizen %in% c("wp", "lp", "sp", "unknown")),
              list(N=.N),by=c("confirmed.at.date")]
 
-  plt3 = ggplot(data=data3, aes(x=confirmed.at.date, y=N)) +
+  data3 = merge(data3, labels[grepl("5", related)], 
+                by.x=c("confirmed.at.date"), 
+                by.y=c("date"), all.x=T, all.y=T)
+
+  plt3 = ggplot(data=data3, aes(x=confirmed.at.date, y=N, label=no)) +
     geom_bar(position='stack', stat="identity", fill=cbp1[2]) + 
     
     theme +
@@ -256,7 +280,14 @@ renderPlot({
 
     scale_y_continuous(breaks=breaks_f) +
     scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b",
-                 limits=c(min_date, max_date))
+                 limits=c(min_date, max_date)) +
+    
+    geom_label_repel(nudge_y=100, direction="x", angle=90, vjust=0, force=2, 
+                     fontface='bold', color="black", size=3, fill="white",
+                     segment.size=0.5, segment.color='black', 
+                     box.padding = unit(0.4, 'lines'), 
+                     arrow = arrow(length = unit(1, "mm")),
+                     point.padding = 0, max.iter=3000, show.legend=F)
 
   # Plots
   grid.arrange(grobs=list(plt1, plt2, plt3), ncol=1)
@@ -561,9 +592,15 @@ show_serious = df_cases_day[,c('date', 'case_load')]
 show_serious$admitted20 = df_cases_day$case_load
 show_serious$admitted20 = ceiling(show_serious$admitted20 * prop_admitted20)
 show_serious$proportion20 = round(show_serious$admitted/max_load*100, 1)
+
+increased_yesterday_prop = 
+  show_serious[dim(show_serious)[1]]$proportion20-show_serious[(dim(show_serious)[1]-1)]$proportion20
+increased_yesterday = 
+  show_serious[dim(show_serious)[1]]$case_load-show_serious[(dim(show_serious)[1]-1)]$case_load
+increased_yesterday_serious = increased_yesterday*prop_admitted20
 ```
 
-Assuming admitting only serious cases (`r prop_admitted20*100`% of active cases), on `r format(show_serious[dim(show_serious)[1]]$date, "%d %b %Y")` with `r show_serious[dim(show_serious)[1]]$case_load` cases, the hospitals are filled by `r show_serious[dim(show_serious)[1]]$proportion20`% and is increasing at a rate of `r show_serious[dim(show_serious)[1]]$proportion20-show_serious[(dim(show_serious)[1]-1)]$proportion20`% (or `r show_serious[dim(show_serious)[1]]$case_load-show_serious[(dim(show_serious)[1]-1)]$case_load` cases with `r round((show_serious[dim(show_serious)[1]]$case_load-show_serious[(dim(show_serious)[1]-1)]$case_load)*prop_admitted20, 0)` serious cases) from yesterday.
+Assuming admitting only serious cases (`r prop_admitted20*100`% of active cases), on `r format(show_serious[dim(show_serious)[1]]$date, "%d %b %Y")` with `r show_serious[dim(show_serious)[1]]$case_load` cases, the hospitals are filled by `r show_serious[dim(show_serious)[1]]$proportion20`% and is increasing at a rate of `r increased_yesterday_prop`% (or `r increased_yesterday` cases with `r round(increased_yesterday_serious, 0)` serious cases) from yesterday.
 
 #### Hospitals/isolation facilities
 

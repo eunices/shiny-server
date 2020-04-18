@@ -19,5 +19,6 @@ date,short,type,related,event
 2020-03-28,Defer mall trips,measure,3,defer non-essential trips to malls.
 2020-04-02,WFH policy,measure,3,"work from home mandated, offense otherwise [source](https://www.channelnewsasia.com/news/singapore/covid-19-work-from-home-singapore-jail-fines-coronavirus-1260222)."
 2020-04-07,Circuit breaker,"event, measure",3,"circuit breaker to last till 4 May 2020 [source](https://www.moh.gov.sg/news-highlights/details/circuit-breaker-to-minimise-further-spread-of-covid-19)."
-2020-04-09,Active migrant worker testing,"measure",1,"Active testing of migrant workers due to clusters emerging [source](https://sg.news.yahoo.com/covid-19-taskforce-set-up-to-manage-infections-within-foreign-worker-population-122006700.html)."
+2020-04-09,Active migrant worker testing,"measure",5,"Active testing of migrant workers due to clusters emerging [source](https://sg.news.yahoo.com/covid-19-taskforce-set-up-to-manage-infections-within-foreign-worker-population-122006700.html)."
+2020-04-11,Essential services migrant workers relocated, "measure",5,"Essential services migrant workers, around 7000, moved out of their dormitories. [source](http://theindependent.sg/singapore-moves-migrant-workers-out-of-dorms-after-surge-in-virus-cases/)."
 2020-04-15,Masks compsulory,measure,4,"need to wear masks, offenders fined [source](https://go.gov.sg/mustwearmask)"
