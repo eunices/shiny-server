@@ -1,6 +1,6 @@
 library(data.table)
 ddir = "C:\\Users\\ejysoh\\Desktop\\sg-covid-cases\\"
-filename = "2020-04-16.csv"
+filename = "2020-04-17.csv"
 type = 1
 # type 1: without country of origin
 # type 2: with country of origin

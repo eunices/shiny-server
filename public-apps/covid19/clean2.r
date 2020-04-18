@@ -16,7 +16,7 @@ get_li = function(text) {
   text[order(text)]
 }
 
-today = "2020-04-16"
+today = "2020-04-17"
 recovered = "230, 268, 320, 380, 410, 464, 470, 554, 566, 571, 594, 608, 616, 674, 786, 792, 814, 841, 859, 887, 933, 937, 985, 1078, 1129, 1235, 1359, 1472, 1552, 1998 and 2538"
 text_filename = paste0(ddir, today, "-contact.txt")
 links = readChar(text_filename, file.info(text_filename)$size)
@@ -75,13 +75,17 @@ links_de[duplicated(links_de$cases)]
 for(i in 1:dim(links_de)[1]) {
   idx = as.integer(links_de[i,]$cases)
   clust = as.character(links_de[i,]$full)
-  if(d[case==idx,]$cluster == "") {
-    d[case==idx,]$cluster = clust
-  } else if (grepl(clust, d[case==idx,]$cluster)){
-    # don't do anything
+  if(idx %in% d$case) {
+    if(d[case==idx,]$cluster == "") {
+      d[case==idx,]$cluster = clust
+    } else if (grepl(clust, d[case==idx,]$cluster)){
+      # don't do anything
+    } else {
+      d[case==idx,]$cluster = paste0(d[case==idx,]$cluster, "; ", clust)
+    }
   } else {
-    d[case==idx,]$cluster = paste0(d[case==idx,]$cluster, "; ", clust)
-  }
+    print(paste0(i, " / case ", idx, " : Not in index"))  
+  } 
 }
 
 write.csv(d, paste0(gsub(".csv", "", filename), "-edit.csv"), row.names=F)
