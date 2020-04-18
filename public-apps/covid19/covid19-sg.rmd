@@ -665,7 +665,7 @@ renderPlot({
       xlab("Age category") + ylab("Days to recover\n") + theme +
       ggtitle("Age"),
   
-    ggplot(df[gender != "unknown"], aes(x=gender, y=days.to.recover.resources)) +
+    ggplot(df[gender %in% c("M", "F")], aes(x=gender, y=days.to.recover.resources)) +
       geom_jitter(height = 0, width = 0.1, color=cbp1[3]) +
       geom_boxplot(color=cbp1[6], fill=NA, outlier.size = -1) +
       xlab("Gender") + ylab("") + theme +
