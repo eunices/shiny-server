@@ -236,7 +236,7 @@ renderPlot({
   data2b = dcast(data2b, confirmed.at.date ~ infection.type, value.var="N")
   data2b[is.na(data2b)] = 0
   data2b$prop_unlinked = data2b$`Local unlinked` / (data2b$`Local linked` + data2b$`Local unlinked`) * 100
-  data2b = data2b[ (data2b$`Local linked` + data2b$`Local unlinked`) > 30]
+  data2b = data2b[(data2b$`Local linked` + data2b$`Local unlinked`) > 30]
 
   link_scale = 1
 
@@ -919,6 +919,14 @@ In the later dataset, EP, SP, WP were separated different work passes. However i
 getS3method("print","sessionInfo")(sessionInfo()[-8])
 ```
 
+```{r}
+## Potential research questions
+
+# Ideas
+# - Prediction of when hospitals will be overwhelmed
+# - Contact tracing app
+# - Estimating R0 with clusters
+```
 ---
 This document was created by Eunice J.Y. Soh ([eunices.github.io](https://eunices.github.io)). 
 
