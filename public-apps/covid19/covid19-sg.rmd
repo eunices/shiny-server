@@ -328,7 +328,7 @@ renderPlot({
 
   # Plots
   grid.arrange(grobs=list(plt1, plt2a, plt2b, plt3), ncol=1)
-}, height=1000)
+}, height=1200)
 ```
 
 #### Clusters through time
