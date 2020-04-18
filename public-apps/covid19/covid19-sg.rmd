@@ -258,7 +258,7 @@ renderPlot({
               (is.na(foreign.workers)| foreign.workers=="" | 
               (foreign.workers=="y" & !(patient.citizen %in% c("wp", "lp", "sp", "unknown")))),
              list(N=.N),by=c("confirmed.at.date", "infection.type")]
-  labels$infection.type = "Local unlinked"
+  labels$infection.type = "Local linked"
   data2b = merge(data2b, labels[grepl("1|3|4", related)], 
                 by.x=c("confirmed.at.date", "infection.type"), 
                 by.y=c("date", "infection.type"), all.x=T, all.y=T)
