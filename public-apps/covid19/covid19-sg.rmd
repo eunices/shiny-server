@@ -227,7 +227,7 @@ renderPlot({
           axis.text.x=element_text(angle = 90)) + 
 
     xlab("") + ylab("Number of cases\n(by status)\n") + 
-    ggtitle("Community spread (citizens, PRs, WP/LP/SP not in dorm clusters)") +
+    ggtitle("Community spread (citizens, PRs, WP/SP/LP not in dorm/construction clusters)") +
     
     scale_fill_brewer(palette = "Blues", direction=-1) +
     guides(fill=guide_legend(title="")) + 
@@ -249,7 +249,7 @@ renderPlot({
           axis.text.x=element_text(angle = 90)) + 
 
     xlab("") + ylab("Number of cases\n(dormitory/ construction related)\n") + 
-    ggtitle("Migrant worker-related (in clusters and holding WP/LP/SP)") +
+    ggtitle("Migrant worker-related (in clusters and holding WP/SP/LP)") +
     
     scale_fill_brewer(palette = "Blues", direction=-1) +
     guides(fill=guide_legend(title="")) + 

@@ -1188,192 +1188,194 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 1187,2020-04-04,KTPH,25,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
 1188,2020-04-04,KTPH,54,M,Singapore,citizen,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
 1189,2020-04-04,KTPH,15,F,Singapore,citizen,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
-1190,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Kranji Lodge at 12 Kranji Road,TRUE,NA,NA,NA,NA
-1191,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Project Glory at 50 Market Street,TRUE,NA,NA,NA,NA
-1192,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1193,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Tampines Dormitory at 2 Tampines Place,TRUE,NA,NA,NA,NA
-1194,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
-1195,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Toh Guan Dormitory at 19A Toh Guan Road East; Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
-1196,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
-1197,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1198,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1199,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
-1200,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
-1201,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
-1202,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
-1203,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1204,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Avery Lodge Dormitory at 2D Jln Papan,TRUE,NA,NA,NA,NA
-1205,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1206,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
-1207,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1208,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1209,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
-1210,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1211,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,2020-04-15,NA,NA
-1212,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1213,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1214,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
-1215,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1216,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
-1217,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,2020-04-10,NA,NA
-1218,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
-1219,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
-1220,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1221,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,2020-04-13,NA,NA
-1222,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1223,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1224,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1225,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1226,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Tampines Dormitory at 2 Tampines Place; Project Glory at 50 Market Street,TRUE,NA,NA,NA,NA
-1227,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
-1228,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1229,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1230,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1231,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1232,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1233,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,2020-04-11,NA,NA
-1234,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1235,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Black Tap at 10 Bayfront Avenue,TRUE,NA,2020-04-16,NA,NA
-1236,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1237,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1238,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
-1239,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1240,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA,NA
-1241,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Kranji Lodge at 12 Kranji Road,TRUE,NA,NA,NA,NA
-1242,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1243,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,2020-04-14,NA,NA
-1244,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1245,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1246,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
-1247,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1248,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1249,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1250,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1251,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
-1252,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
-1253,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
-1254,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Toh Guan Dormitory at 19A Toh Guan Road East; Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
-1255,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
-1256,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
-1257,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1258,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1259,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
-1260,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
-1261,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Tampines Dormitory at 2 Tampines Place,TRUE,NA,NA,NA,NA
-1262,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Toh Guan Dormitory at 19A Toh Guan Road East; Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
-1263,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Toh Guan Dormitory at 19A Toh Guan Road East; Project Glory at 50 Market Street; Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
-1264,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1265,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1266,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Ce La Vi at Marina Bay Sands,TRUE,NA,2020-04-17,NA,NA
-1267,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA,NA
-1268,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,2020-04-08,NA,NA
-1269,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1270,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Keppel Shipyard at 51 Pioneer Sector 1; Acacia Lodge at 530-540 Bukit Batok Street 23,TRUE,NA,NA,NA,NA
-1271,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Toh Guan Dormitory at 19A Toh Guan Road East; Project Glory at 50 Market Street; Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
-1272,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1273,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Toh Guan Dormitory at 19A Toh Guan Road East; Project Glory at 50 Market Street; Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,2020-04-15,NA,NA
-1274,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Toh Guan Dormitory at 19A Toh Guan Road East; Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
-1275,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1276,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Toh Guan Dormitory at 19A Toh Guan Road East; Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
-1277,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
-1278,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1279,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1280,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1281,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1282,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
-1283,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1284,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1285,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1286,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1287,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1288,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1289,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1290,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1291,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1292,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1293,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1294,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Little Gems Preschool at 3 Ang Mo Kio Street 62,TRUE,NA,NA,NA,NA
-1295,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
-1296,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1297,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1298,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1299,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Tampines Dormitory at 2 Tampines Place,TRUE,NA,NA,NA,NA
-1300,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1301,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1302,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1303,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1304,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1305,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1306,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA,NA
-1307,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1308,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1309,2020-04-05,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1310,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1311,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1312,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Construction site at 6 Battery Road,TRUE,NA,NA,NA,NA
-1313,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Tampines Dormitory at 2 Tampines Place,TRUE,NA,NA,NA,NA
-1314,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Tampines Dormitory at 2 Tampines Place; Cochrane Lodge II at 49 Admiralty Road West; Construction site at 6 Battery Road,TRUE,NA,NA,NA,NA
-1315,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
-1316,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
-1317,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1318,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1319,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA,NA
-1320,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1321,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1322,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1323,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1324,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Keppel Shipyard at 51 Pioneer Sector 1; Avery Lodge Dormitory at 2D Jln Papan,TRUE,NA,NA,NA,NA
-1325,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1326,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
-1327,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Tampines Dormitory at 2 Tampines Place,TRUE,NA,NA,NA,NA
-1328,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1329,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1330,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
-1331,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1332,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1333,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1334,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1335,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Little Gems Preschool at 3 Ang Mo Kio Street 62,TRUE,NA,NA,NA,NA
-1336,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Keppel Shipyard at 51 Pioneer Sector 1; Acacia Lodge at 530-540 Bukit Batok Street 23,TRUE,NA,NA,NA,NA
-1337,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1338,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1339,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Cochrane Lodge I at 51 Admiralty Road West; Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA,NA
-1340,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
-1341,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Project Glory at 50 Market Street,TRUE,NA,NA,NA,NA
-1342,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA,NA
-1343,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
-1344,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1345,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1346,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Project Glory at 50 Market Street,TRUE,NA,NA,NA,NA
-1347,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Toh Guan Dormitory at 19A Toh Guan Road East; Project Glory at 50 Market Street; Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
-1348,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1349,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Cochrane Lodge II at 49 Admiralty Road West; Project Glory at 50 Market Street,TRUE,NA,NA,NA,NA
-1350,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1351,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1352,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,2020-04-17,NA,NA
-1353,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1354,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1355,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1356,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,2020-04-14,NA,NA
-1357,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1358,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1359,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,2020-04-16,NA,NA
-1360,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1361,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
-1362,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA,NA
-1363,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1364,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1365,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1366,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1367,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA,NA
-1368,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1369,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1370,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1371,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,TRUE,NA,NA,NA,NA
-1372,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
-1373,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Tampines Dormitory at 2 Tampines Place,TRUE,NA,NA,NA,NA
-1374,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Toh Guan Dormitory at 19A Toh Guan Road East; Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
-1375,2020-04-06,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
+1190,2020-04-18,KTPH,25,M,India,wp,,Local transmission,,,Kranji Lodge at 12 Kranji Road,TRUE,NA,NA,NA,NA
+1191,2020-04-18,NCID,35,M,India,wp,,Local transmission,,,Project Glory at 50 Market Street,TRUE,NA,NA,NA,NA
+1192,2020-04-18,NCID,45,M,Singapore,citizen,,Local transmission,,1210,,TRUE,NA,NA,NA,NA
+1193,2020-04-18,NCID,35,M,Bangladesh,lp,,Local transmission,,,Tampines Dormitory at 2 Tampines Place,TRUE,NA,NA,NA,NA
+1194,2020-04-18,NCID,35,M,India,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
+1195,2020-04-18,NCID,35,M,Bangladesh,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East; Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
+1196,2020-04-18,NCID,32,F,Phillipines,wp,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
+1197,2020-04-18,NCID,69,F,Singapore,citizen,,Local transmission,,1210,,TRUE,NA,NA,NA,NA
+1198,2020-04-18,NCID,28,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1199,2020-04-18,KKH,9,F,Bangladesh,wp,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
+1200,2020-04-18,KKH,10,M,Singapore,pr,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
+1201,2020-04-18,SGH,53,F,Singapore,citizen,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
+1202,2020-04-18,SGH,30,M,Bangladesh,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
+1203,2020-04-18,NCID,22,M,Malaysia,lp,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1204,2020-04-18,NTFGH,42,M,Bangladesh,lp,,Local transmission,,,Avery Lodge Dormitory at 2D Jln Papan,TRUE,NA,NA,NA,NA
+1205,2020-04-18,NTFGH,60,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1206,2020-04-18,SKH,58,F,Singapore,citizen,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
+1207,2020-04-18,CGH,64,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1208,2020-04-18,CGH,57,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1209,2020-04-18,SKH,51,F,Singapore,citizen,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
+1210,2020-04-18,SKH,70,M,Singapore,citizen,,Local transmission,,"1192, 1197",,TRUE,NA,NA,NA,NA
+1211,2020-04-18,NUH,26,M,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,2020-04-15,NA,NA
+1212,2020-04-18,NUH,33,M,Malaysia,wp,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1213,2020-04-18,NCID,29,M,Myanmar,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1214,2020-04-18,NCID,41,M,Singapore,citizen,,Local transmission,1180,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
+1215,2020-04-18,NCID,21,M,India,wp,,Local transmission,,"1040, 1041",,TRUE,NA,NA,NA,NA
+1216,2020-04-18,SGH,27,M,India,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
+1217,2020-04-18,NCID,21,M,Singapore,citizen,,Local transmission,1044,,,TRUE,NA,2020-04-10,NA,NA
+1218,2020-04-18,SGH,35,M,Bangladesh,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
+1219,2020-04-18,SGH,29,M,India,wp,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
+1220,2020-04-18,SGH,67,F,Slovakia,visitor,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1221,2020-04-18,SGH,55,F,Singapore,citizen,,Local transmission,1258,,,TRUE,NA,2020-04-13,NA,NA
+1222,2020-04-18,NCID,28,M,India,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1223,2020-04-18,NCID,42,M,India,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1224,2020-04-18,NCID,30,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1225,2020-04-18,NCID,33,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1226,2020-04-18,NCID,40,M,Bangladesh,lp,,Local transmission,,,Tampines Dormitory at 2 Tampines Place; Project Glory at 50 Market Street,TRUE,NA,NA,NA,NA
+1227,2020-04-18,NCID,53,F,Singapore,citizen,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
+1228,2020-04-18,NCID,28,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1229,2020-04-18,NTFGH,89,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1230,2020-04-18,KTPH,48,M,Singapore,pr,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1231,2020-04-18,SKH,32,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1232,2020-04-18,SKH,40,M,China,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1233,2020-04-18,SKH,49,M,Singapore,citizen,,Local transmission,1010,,,TRUE,NA,2020-04-11,NA,NA
+1234,2020-04-18,CGH,37,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1235,2020-04-18,CGH,26,M,Philippines,lp,,Local transmission,,,Black Tap at 10 Bayfront Avenue,TRUE,NA,2020-04-16,NA,NA
+1236,2020-04-18,SKH,43,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1237,2020-04-18,SGH,35,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1238,2020-04-18,NTFGH,26,M,India,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
+1239,2020-04-18,NCID,53,M,Malaysian,wp,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1240,2020-04-18,KTPH,34,M,Bangladesh,lp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA,NA
+1241,2020-04-18,NCID,29,M,Bangladesh,wp,,Local transmission,,,Kranji Lodge at 12 Kranji Road,TRUE,NA,NA,NA,NA
+1242,2020-04-18,NCID,33,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1243,2020-04-18,NUH,30,F,Malaysian,wp,,Local transmission,,,,TRUE,NA,2020-04-14,NA,NA
+1244,2020-04-18,NUH,70,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1245,2020-04-18,NUH,"9
+mts",M,Singapore,citizen,,Local transmission,"1030, 1008",,,TRUE,NA,NA,NA,NA
+1246,2020-04-18,NCID,40,M,Singapore,citizen,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
+1247,2020-04-18,NCID,61,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1248,2020-04-18,NCID,56,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1249,2020-04-18,NCID,33,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1250,2020-04-18,NCID,42,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1251,2020-04-18,NTFGH,44,M,Bangladesh,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
+1252,2020-04-18,NTFGH,38,M,Bangladesh,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
+1253,2020-04-18,NTFGH,27,M,Bangladesh,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
+1254,2020-04-18,NTFGH,26,M,India,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East; Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
+1255,2020-04-18,NTFGH,31,M,Bangladesh,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
+1256,2020-04-18,NTFGH,30,M,India,lp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
+1257,2020-04-18,NTFGH,59,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1258,2020-04-18,NTFGH,40,F,Singapore,pr,,Local transmission,1221,,,TRUE,NA,NA,NA,NA
+1259,2020-04-18,NCID,36,M,China,wp,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
+1260,2020-04-18,NCID,53,F,Sri Lanka,lp,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
+1261,2020-04-18,NCID,38,M,Bangladesh,lp,,Local transmission,,,Tampines Dormitory at 2 Tampines Place,TRUE,NA,NA,NA,NA
+1262,2020-04-18,NCID,33,M,Bangladesh,wp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East; Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
+1263,2020-04-18,NCID,31,M,Bangladesh,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East; Project Glory at 50 Market Street; Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
+1264,2020-04-18,NCID,33,M,India,wp,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1265,2020-04-18,NCID,25,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1266,2020-04-18,NCID,52,M,Singapore,citizen,,Local transmission,,,Ce La Vi at Marina Bay Sands,TRUE,NA,2020-04-17,NA,NA
+1267,2020-04-18,NCID,27,M,Bangladesh,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA,NA
+1268,2020-04-18,NCID,28,M,Singapore,citizen,United States of America,Imported case,,,,TRUE,NA,2020-04-08,NA,NA
+1269,2020-04-18,NCID,34,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1270,2020-04-18,NCID,35,M,Bangladesh,lp,,Local transmission,,,Keppel Shipyard at 51 Pioneer Sector 1; Acacia Lodge at 530-540 Bukit Batok Street 23,TRUE,NA,NA,NA,NA
+1271,2020-04-18,SGH,36,M,Bangladesh,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East; Project Glory at 50 Market Street; Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
+1272,2020-04-18,NCID,26,M,Bangladesh,lp,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1273,2020-04-18,SGH,31,M,Bangladesh,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East; Project Glory at 50 Market Street; Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,2020-04-15,NA,NA
+1274,2020-04-18,NCID,28,M,India,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East; Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
+1275,2020-04-18,SGH,25,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1276,2020-04-18,NCID,25,M,India,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East; Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
+1277,2020-04-18,SGH,40,F,Singapore,pr,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
+1278,2020-04-18,NCID,30,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1279,2020-04-18,SKH,32,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1280,2020-04-18,NCID,27,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1281,2020-04-18,KTPH,50,M,India,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1282,2020-04-18,KTPH,23,M,Singapore,citizen,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
+1283,2020-04-18,SKH,27,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1284,2020-04-18,NCID,32,M,India,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1285,2020-04-18,NCID,28,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1286,2020-04-18,NCID,24,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1287,2020-04-18,NCID,37,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1288,2020-04-18,NCID,24,M,India,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1289,2020-04-18,NCID,30,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1290,2020-04-18,NCID,32,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1291,2020-04-18,NCID,28,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1292,2020-04-18,NCID,42,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1293,2020-04-18,NCID,20,M,India,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1294,2020-04-18,NCID,58,F,Singapore,citizen,,Local transmission,1182,,Little Gems Preschool at 3 Ang Mo Kio Street 62,TRUE,NA,NA,NA,NA
+1295,2020-04-18,NCID,58,M,Singapore,citizen,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
+1296,2020-04-18,NCID,22,F,Singapore,citizen,United States of America,Imported case,,,,TRUE,NA,NA,NA,NA
+1297,2020-04-18,NCID,34,M,Singapore,pr,,Local transmission,887,,,TRUE,NA,NA,NA,NA
+1298,2020-04-18,NCID,43,M,Singapore,pr,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1299,2020-04-18,NCID,33,M,Bangladesh,wp,,Local transmission,,,Tampines Dormitory at 2 Tampines Place,TRUE,NA,NA,NA,NA
+1300,2020-04-18,NCID,33,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1301,2020-04-18,NCID,25,F,Malaysia,visitor,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1302,2020-04-18,NCID,42,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1303,2020-04-18,NCID,60,F,Singapore,citizen,Europe,Imported case,,,,TRUE,NA,NA,NA,NA
+1304,2020-04-18,NCID,30,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1305,2020-04-18,NUH,67,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1306,2020-04-18,AH,27,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA,NA
+1307,2020-04-18,NCID,36,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1308,2020-04-18,NCID,27,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1309,2020-04-18,NCID,36,M,Bangladesh,lp,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1310,2020-04-18,SKH,45,M,China,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1311,2020-04-18,NCID,35,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1312,2020-04-18,CGH,40,M,India,wp,,Local transmission,,,Construction site at 6 Battery Road,TRUE,NA,NA,NA,NA
+1313,2020-04-18,CGH,32,M,Bangladesh,lp,,Local transmission,,,Tampines Dormitory at 2 Tampines Place,TRUE,NA,NA,NA,NA
+1314,2020-04-18,CGH,27,M,Bangladesh,lp,,Local transmission,,,Tampines Dormitory at 2 Tampines Place; Cochrane Lodge II at 49 Admiralty Road West; Construction site at 6 Battery Road,TRUE,NA,NA,NA,NA
+1315,2020-04-18,NCID,22,F,Singapore,citizen,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
+1316,2020-04-18,NCID,51,F,Singapore,citizen,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
+1317,2020-04-18,NCID,31,M,Bangladesh,lp,,Local transmission,"1178,
+1120, 1320",,,TRUE,NA,NA,NA,NA
+1318,2020-04-18,NCID,30,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1319,2020-04-18,NCID,43,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA,NA
+1320,2020-04-18,NCID,39,M,Bangladesh,lp,,Local transmission,1120,,,TRUE,NA,NA,NA,NA
+1321,2020-04-18,NCID,25,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1322,2020-04-18,NTFGH,27,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1323,2020-04-18,CGH,76,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1324,2020-04-18,NTFGH,36,M,Bangladesh,wp,,Local transmission,,,Keppel Shipyard at 51 Pioneer Sector 1; Avery Lodge Dormitory at 2D Jln Papan,TRUE,NA,NA,NA,NA
+1325,2020-04-18,SGH,61,F,Singapore,pr,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1326,2020-04-18,SGH,63,M,Singapore,citizen,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
+1327,2020-04-18,SGH,30,M,India,lp,,Local transmission,,,Tampines Dormitory at 2 Tampines Place,TRUE,NA,NA,NA,NA
+1328,2020-04-18,NUH,79,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1329,2020-04-18,NCID,26,M,India,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1330,2020-04-18,NTFGH,35,m,India,wp,,Local transmission,,,Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
+1331,2020-04-18,NTFGH,59,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1332,2020-04-18,NTFGH,25,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1333,2020-04-18,SGH,48,M,China,wp,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1334,2020-04-18,NCID,24,M,India,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1335,2020-04-18,KKH,2,F,Vietnam,visitor,,Local transmission,,,Little Gems Preschool at 3 Ang Mo Kio Street 62,TRUE,NA,NA,NA,NA
+1336,2020-04-18,NTFGH,43,M,Bangladesh,wp,,Local transmission,,,Keppel Shipyard at 51 Pioneer Sector 1; Acacia Lodge at 530-540 Bukit Batok Street 23,TRUE,NA,NA,NA,NA
+1337,2020-04-18,SKH,28,F,Myanmar,lp,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1338,2020-04-18,SKH,40,M,Singapore,citizen,,Local transmission,1208,,,TRUE,NA,NA,NA,NA
+1339,2020-04-18,KTPH,36,M,Bangladesh,lp,,Local transmission,,,Cochrane Lodge I at 51 Admiralty Road West; Cochrane Lodge II at 49 Admiralty Road West,TRUE,NA,NA,NA,NA
+1340,2020-04-18,NCID,50,M,Netherlands,lp,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
+1341,2020-04-18,NCID,24,M,Bangladesh,wp,,Local transmission,,,Project Glory at 50 Market Street,TRUE,NA,NA,NA,NA
+1342,2020-04-18,NCID,21,M,Bangladesh,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA,NA
+1343,2020-04-18,NCID,63,M,Singapore,citizen,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
+1344,2020-04-18,NCID,23,M,India,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1345,2020-04-18,NCID,58,F,Singapore,citizen,,Local transmission,910,,,TRUE,NA,NA,NA,NA
+1346,2020-04-18,NCID,31,M,Malaysia,wp,,Local transmission,,,Project Glory at 50 Market Street,TRUE,NA,NA,NA,NA
+1347,2020-04-18,NCID,28,M,Bangladesh,lp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East; Project Glory at 50 Market Street; Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
+1348,2020-04-18,NCID,66,M,Singapore,citizen,,Local transmission,1081,,,TRUE,NA,NA,NA,NA
+1349,2020-04-18,NCID,32,M,Bangladesh,lp,,Local transmission,,,Cochrane Lodge II at 49 Admiralty Road West; Project Glory at 50 Market Street,TRUE,NA,NA,NA,NA
+1350,2020-04-18,NCID,35,M,India,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1351,2020-04-18,NCID,48,M,Bangladesh,visitor,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1352,2020-04-18,NCID,37,M,Singapore,pr,,Local transmission,1126,,,TRUE,NA,2020-04-17,NA,NA
+1353,2020-04-18,NCID,45,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1354,2020-04-18,NCID,25,M,India,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1355,2020-04-18,NCID,49,M,Bangladesh,visitor,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1356,2020-04-18,NCID,42,M,Bangladesh,lp,,Local transmission,,,,TRUE,NA,2020-04-14,NA,NA
+1357,2020-04-18,NCID,30,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1358,2020-04-18,NCID,45,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1359,2020-04-18,NCID,37,M,Singapore,citizen,,Local transmission,1161,,,TRUE,NA,2020-04-16,NA,NA
+1360,2020-04-18,NCID,41,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1361,2020-04-18,SGH,41,M,Singapore,citizen,,Local transmission,,,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
+1362,2020-04-18,NCID,24,M,Bangladesh,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA,NA
+1363,2020-04-18,KTPH,28,M,Bangladesh,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1364,2020-04-18,KTPH,31,M,India,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1365,2020-04-18,KTPH,52,M,India,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1366,2020-04-18,AH,25,M,Singapore,citizen,United Kingdom,Imported case,,,,TRUE,NA,NA,NA,NA
+1367,2020-04-18,AH,23,M,Bangladesh,lp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA,NA
+1368,2020-04-18,NUH,30,F,Thailand Visitor,visitor,,Local transmission,,,,TRUE,NA,NA,NA,NA
+1369,2020-04-18,CGH,45,F,Singapore,citizen,,Local transmission,1208,,,TRUE,NA,NA,NA,NA
+1370,2020-04-18,NUH,63,M,Singapore,citizen,,Local transmission,"1331, 1371",,,TRUE,NA,NA,NA,NA
+1371,2020-04-18,NUH,24,F,Indonesia,wp,,Local transmission,"1370, 1331",,,TRUE,NA,NA,NA,NA
+1372,2020-04-18,NCID,29,M,Bangladesh,lp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
+1373,2020-04-18,NCID,48,M,Bangladesh,lp,,Local transmission,,,Tampines Dormitory at 2 Tampines Place,TRUE,NA,NA,NA,NA
+1374,2020-04-18,NCID,43,M,Bangladesh,wp,,Local transmission,,,Toh Guan Dormitory at 19A Toh Guan Road East; Westlite Toh Guan Dormitory at 18 Toh Guan Road East,TRUE,NA,NA,NA,NA
+1375,2020-04-18,NCID,33,M,Singapore,pr,,Local transmission,"1295, 1246",,Mustafa Centre at 145 Syed Alwi Road,TRUE,NA,NA,NA,NA
 1376,2020-04-07,NTFGH,35,F,India,wp,,Local transmission,,,,TRUE,NA,NA,NA,NA
 1377,2020-04-07,SKH,18,M,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
 1378,2020-04-07,KTPH,58,F,Singapore,citizen,,Local transmission,,"227, 348, 1029, 1086 ",,TRUE,NA,NA,NA,NA
@@ -2933,14 +2935,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2926,2020-04-14,NCID,66,F,Singapore,citizen,,Local transmission,,2415,,TRUE,NA,NA,NA,NA
 2927,2020-04-14,NCID,44,M,Bangladesh,wp,,Local transmission,,,,TRUE,NA,NA,NA,NA
 2928,2020-04-14,NCID,28,M,Singapore,citizen,,Local transmission,,,ABC Hostel at 3 Jalan Kubor,TRUE,NA,NA,NA,NA
-2929,2020-04-14,NCID,29,M,Bangladesh,wp,,Local transmission,"1125, 1540 and
-
-
-
-
-
-
-1959",,10 Kian Teck Crescent dormitory,TRUE,NA,NA,NA,NA
+2929,2020-04-14,NCID,29,M,Bangladesh,wp,,Local transmission,"1125, 1540, 1959",,10 Kian Teck Crescent dormitory,TRUE,NA,NA,NA,NA
 2930,2020-04-14,NCID,21,M,Bangladesh,wp,,Local transmission,"2932, 2933",,Mandai Lodge I at 460 Mandai Rd,TRUE,NA,NA,NA,NA
 2931,2020-04-14,NCID,37,M,India,wp,,Local transmission,,,S11 Dormitory @ Punggol at 2 Seletar North Link,TRUE,NA,NA,NA,NA
 2932,2020-04-14,NCID,40,M,India,wp,,Local transmission,"2930, 2933",,Mandai Lodge I at 460 Mandai Rd,TRUE,NA,NA,NA,NA
@@ -2992,14 +2987,7 @@ case,confirmed.at.date,hospital,age,gender,patient.nationality,patient.citizen,c
 2978,2020-04-14,KTPH,37,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA,NA
 2979,2020-04-14,KTPH,36,F,Singapore,citizen,,Local transmission,,,,TRUE,NA,NA,NA,NA
 2980,2020-04-14,KTPH,23,M,India,wp,,Local transmission,,,Westlite Woodlands dormitory at 2 Woodlands Sector 2,TRUE,NA,NA,NA,NA
-2981,2020-04-14,SGH,56,F,Singapore,citizen,,Local transmission,"1702, 2107 and
-
-
-
-
-
-
-2499",,,TRUE,NA,NA,NA,NA
+2981,2020-04-14,SGH,56,F,Singapore,citizen,,Local transmission,"1702, 2107, 2499",,,TRUE,NA,NA,NA,NA
 2982,2020-04-14,SGH,29,M,Bangladesh,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA,NA
 2983,2020-04-14,SGH,65,F,Singapore,citizen,,Local transmission,,2602,,TRUE,NA,NA,NA,NA
 2984,2020-04-14,SGH,24,M,India,wp,,Local transmission,,,Sungei Tengah Lodge at 500 Old Choa Chu Kang Road,TRUE,NA,NA,NA,NA
