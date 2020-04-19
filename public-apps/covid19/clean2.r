@@ -16,8 +16,8 @@ get_li = function(text) {
   text[order(text)]
 }
 
-today = "2020-04-18"
-recovered = "190, 305, 324, 344, 387, 490, 500, 507, 508, 517, 521, 587, 603, 660, 676, 705, 741, 845, 873, 907, 1136, 1272, 1335, 1386, 1398, 1431, 1548, 2212, 2504, 2535, 2537, 2563, 3332, 3364, 3468, 3657, 3970 and 4754"
+today = "2020-04-19"
+recovered = "284, 288, 391, 545, 557, 611, 976, 1158, 1199, 1402, 1412, 1500, 1514, 1888, 2023, 2157, 2524, 2541, 2737, 3140, 3337, 4571, 4578, 4579, 4774 and 4777"
 text_filename = paste0(ddir, today, "-contact.txt")
 links = readChar(text_filename, file.info(text_filename)$size)
 
@@ -58,6 +58,7 @@ for (i in 1:dim(links_de)[1]) {
 # Manual 
 links_filename = paste0(ddir, "clean.csv")
 links_de = links_de[,c("cluster", "full", "cases")]
+links_de = unique(links_de)
 # write.csv(links_de, links_filename, row.names=F)
 
 links_de = fread(links_filename)

@@ -1,6 +1,6 @@
 library(data.table)
 ddir = "C:\\Users\\ejysoh\\Desktop\\sg-covid-cases\\"
-date = "2020-04-18"
+date = "2020-04-19"
 filename = paste0(date, ".csv")
 type = 1 
 # type 1: without country of origin
