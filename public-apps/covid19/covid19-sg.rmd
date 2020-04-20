@@ -903,6 +903,8 @@ The specific steps taken for data collection of the later dataset from MOH Annex
 
 In the later dataset, EP, SP, WP were separated different work passes. However in the earlier dataset to that all were consider WP but WP/LP were already distinguished.
 
+As of 20 Apr, data on cases and contact tracing information were no longer released by cases. Only recoveries were noted. Up till then, there were 84 days of case-level data from 23 Jan to 19 Apr.
+
 ### Notes about data
 
 1. `symptomatic` < `confirmed` < `recovered` dates.
