@@ -67,11 +67,9 @@ lp_clust = get_clusters()
 
 ## What are the figures
 
-Total number of cases to date: `r dim(df)[1]`
+Total number of cases to date: `r df_cases_day[nrow(df_case_day)]$total`
 
-### New cases
 
-#### New cases through time
 ```{r}
 min_date = min(df$confirmed.at.date, na.rm=T)
 # max_date = max(df$confirmed.at.date, na.rm=T)
@@ -79,6 +77,102 @@ max_date = Sys.Date()
 date_second_wave = as.Date("2020-02-25")
 ```
 
+### Case load
+
+```{r} 
+max_load = (9400*0.25) + 300         # hospital capacity
+hosp_prop = 0.5                      # proportion of cases requiring hospitalisation
+date_no_hosp = as.Date("2020-03-24") # date when hospitalisation not required for positive, asymptomatic cases
+date_bvh = as.Date("2020-04-11")     # date of opening of bvh
+
+beds_bvh = 200
+```
+
+```{r}
+df_cases_day$icu_rate = (df_cases_day$I1)/ df_cases_day$case_load * 100
+df_cases_day$hospitalisation_rate = (df_cases_day$I2 + df_cases_day$I1)/ df_cases_day$case_load * 100
+df_cases_day$comm_rate = (df_cases_day$I3)/ df_cases_day$case_load * 100
+df_cases_day$max_load = ifelse(df_cases_day$date < date_bvh, max_load, max_load + beds_bvh)
+df_cases_day$percent_load = (df_cases_day$I2+df_cases_day$I1)/df_cases_day$max_load * 100
+
+mean_icu_rate = mean(df_cases_day[date>=date_no_hosp]$icu_rate, na.rm=T)
+mean_hospitalisation_rate = mean(df_cases_day[date>=date_no_hosp]$hospitalisation_rate, na.rm=T)
+mean_comm_rate = mean(df_cases_day[date>=date_no_hosp]$comm_rate, na.rm=T)
+```
+
+Case load is an important metric that is correlated also with hospital load. These are split into those that are in ICU, those that are hospitalised and those which test positive but have no symptoms and are in isolation facilities.
+
+From [24 Mar 2020](https://go.gov.sg/measures24mar), those who still test positive but display no symptoms will no longer be hospitalised but moved to isolation facilities. Approximately 60% of cases are hospitalised.
+
+```{r}
+style = "display: inline-block;vertical-align:top;padding-right: 20px"
+bootstrapPage(
+  div(style=style, dateRangeInput("range_date_case", "Date range", 
+                                   start = min_date, end = max_date, 
+                                   min = min_date, max = max_date)))
+icu_scale=5
+renderPlot({
+  ggplot(data=df_cases_day[date<=input$range_date_case[2] & date>=input$range_date_case[1]], 
+         aes(x=date, y=case_load)) +
+
+    geom_ribbon(aes(ymin=0, ymax=case_load), fill="#8cd6ff", alpha=.5) + 
+    geom_line(color=cbp1[3], size=.5) + 
+    geom_point(color=cbp1[3], size=1) + 
+
+    geom_ribbon(aes(ymin=0, ymax=I2), fill="#75ccd1", alpha=.5) + 
+    geom_line(aes(y=I2), color="#35c4cc", size=.5) + 
+    geom_point(aes(y=I2), color="#35c4cc", size=1) + 
+
+    geom_ribbon(aes(ymin=0, ymax=I1*icu_scale), fill="#3296cf", alpha=.5) + 
+    geom_line(aes(x=date, y=I1*icu_scale), color=cbp1[6], size=.5) +
+    geom_point(aes(x=date, y=I1*icu_scale), color=cbp1[6], size=1) + 
+
+    geom_vline(xintercept=date_no_hosp, size=.5, col=cbp1[2], linetype="dotted") +
+
+    xlab("") + ylab("Number of active cases [all] (light blue)\n& hospital cases [ICU + hospitalised] (turquoise)\n") + 
+    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
+    scale_y_continuous(sec.axis = sec_axis(~ ./icu_scale, name="Number of active ICU cases (dark blue)\n")) +
+    theme +
+    theme(axis.text.x=element_text(angle = 90))
+})
+```
+
+- Mean percentage of cases in ICU (from `r format(date_no_hosp, "%d %b %Y")`): `r  round(mean_icu_rate, 1)`%
+- Mean percentage of cases in hospital care [ICU + hospitalised] (from `r format(date_no_hosp, "%d %b %Y")`): `r  round(mean_hospitalisation_rate, 1)`%
+- Mean percentage of cases in community isolation facilities (from `r format(date_no_hosp, "%d %b %Y")`): `r  round(mean_comm_rate, 1)`%
+
+```{r}
+renderPlot({
+  ggplot(data=df_cases_day[date<=input$range_date_case[2] & date>=input$range_date_case[1]],
+         aes(x=date, y=comm_rate)) +
+
+    geom_ribbon(aes(ymin=0, ymax=hospitalisation_rate), fill="#75ccd1", alpha=.5) + 
+    geom_line(aes(y=hospitalisation_rate), color="#35c4cc", size=.5) + 
+    geom_point(aes(y=hospitalisation_rate), color="#35c4cc", size=1) + 
+
+    geom_ribbon(aes(ymin=0, ymax=comm_rate), fill="#8cd6ff", alpha=.5) + 
+    geom_line(color=cbp1[3], size=.5) + 
+    geom_point(color=cbp1[3], size=1) + 
+
+    geom_ribbon(aes(ymin=0, ymax=icu_rate*icu_scale), fill="#3296cf", alpha=.5) + 
+    geom_line(aes(x=date, y=icu_rate*icu_scale), color=cbp1[6], size=.5) +
+    geom_point(aes(x=date, y=icu_rate*icu_scale), color=cbp1[6], size=1) + 
+    
+    geom_vline(xintercept=date_no_hosp, size=.5, col=cbp1[2], linetype="dotted") +
+
+    xlab("") + ylab("% of active cases in CIF (light blue)\n& in hospital [ICU + hospitalised] (turquoise)\n") + 
+    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
+    scale_y_continuous(sec.axis = sec_axis(~ ./icu_scale, name="% active cases in ICU  (dark blue)\n")) +
+    theme +
+    theme(axis.text.x=element_text(angle = 90))
+})
+```
+
+*Datasets below were not updated from 20 Apr onwards*
+
+### New cases
+
+#### New cases through time
 
 The first case of Covid-19 was detected in Singapore on `r format(min_date, "%d %b %Y")`, after the first case was detected in 17 Nov 2019 in China.
 
@@ -396,97 +490,6 @@ gs = list(ggplot(data_1st_wave, aes(x=reorder(camelcase_labeller("", country.of.
 
 grid.arrange(grobs=gs, layout_matrix=layout)
 
-```
-
-### Case load
-
-```{r} 
-max_load = (9400*0.25) + 300         # hospital capacity
-hosp_prop = 0.5                      # proportion of cases requiring hospitalisation
-date_no_hosp = as.Date("2020-03-24") # date when hospitalisation not required for positive, asymptomatic cases
-date_bvh = as.Date("2020-04-11")     # date of opening of bvh
-
-beds_bvh = 200
-```
-
-```{r}
-df_cases_day$icu_rate = (df_cases_day$I1)/ df_cases_day$case_load * 100
-df_cases_day$hospitalisation_rate = (df_cases_day$I2 + df_cases_day$I1)/ df_cases_day$case_load * 100
-df_cases_day$comm_rate = (df_cases_day$I3)/ df_cases_day$case_load * 100
-df_cases_day$max_load = ifelse(df_cases_day$date < date_bvh, max_load, max_load + beds_bvh)
-df_cases_day$percent_load = (df_cases_day$I2+df_cases_day$I1)/df_cases_day$max_load * 100
-
-mean_icu_rate = mean(df_cases_day[date>=date_no_hosp]$icu_rate, na.rm=T)
-mean_hospitalisation_rate = mean(df_cases_day[date>=date_no_hosp]$hospitalisation_rate, na.rm=T)
-mean_comm_rate = mean(df_cases_day[date>=date_no_hosp]$comm_rate, na.rm=T)
-```
-
-Case load is an important metric that is correlated also with hospital load. These are split into those that are in ICU, those that are hospitalised and those which test positive but have no symptoms and are in isolation facilities.
-
-From [24 Mar 2020](https://go.gov.sg/measures24mar), those who still test positive but display no symptoms will no longer be hospitalised but moved to isolation facilities. Approximately 60% of cases are hospitalised.
-
-```{r}
-style = "display: inline-block;vertical-align:top;padding-right: 20px"
-bootstrapPage(
-  div(style=style, dateRangeInput("range_date_case", "Date range", 
-                                   start = min_date, end = max_date, 
-                                   min = min_date, max = max_date)))
-icu_scale=5
-renderPlot({
-  ggplot(data=df_cases_day[date<=input$range_date_case[2] & date>=input$range_date_case[1]], 
-         aes(x=date, y=case_load)) +
-
-    geom_ribbon(aes(ymin=0, ymax=case_load), fill="#8cd6ff", alpha=.5) + 
-    geom_line(color=cbp1[3], size=.5) + 
-    geom_point(color=cbp1[3], size=1) + 
-
-    geom_ribbon(aes(ymin=0, ymax=I2), fill="#75ccd1", alpha=.5) + 
-    geom_line(aes(y=I2), color="#35c4cc", size=.5) + 
-    geom_point(aes(y=I2), color="#35c4cc", size=1) + 
-
-    geom_ribbon(aes(ymin=0, ymax=I1*icu_scale), fill="#3296cf", alpha=.5) + 
-    geom_line(aes(x=date, y=I1*icu_scale), color=cbp1[6], size=.5) +
-    geom_point(aes(x=date, y=I1*icu_scale), color=cbp1[6], size=1) + 
-
-    geom_vline(xintercept=date_no_hosp, size=.5, col=cbp1[2], linetype="dotted") +
-
-    xlab("") + ylab("Number of active cases [all] (light blue)\n& hospital cases [ICU + hospitalised] (turquoise)\n") + 
-    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
-    scale_y_continuous(sec.axis = sec_axis(~ ./icu_scale, name="Number of active ICU cases (dark blue)\n")) +
-    theme +
-    theme(axis.text.x=element_text(angle = 90))
-})
-```
-
-- Mean percentage of cases in ICU (from `r format(date_no_hosp, "%d %b %Y")`): `r  round(mean_icu_rate, 1)`%
-- Mean percentage of cases in hospital care [ICU + hospitalised] (from `r format(date_no_hosp, "%d %b %Y")`): `r  round(mean_hospitalisation_rate, 1)`%
-- Mean percentage of cases in community isolation facilities (from `r format(date_no_hosp, "%d %b %Y")`): `r  round(mean_comm_rate, 1)`%
-
-```{r}
-renderPlot({
-  ggplot(data=df_cases_day[date<=input$range_date_case[2] & date>=input$range_date_case[1]],
-         aes(x=date, y=comm_rate)) +
-
-    geom_ribbon(aes(ymin=0, ymax=hospitalisation_rate), fill="#75ccd1", alpha=.5) + 
-    geom_line(aes(y=hospitalisation_rate), color="#35c4cc", size=.5) + 
-    geom_point(aes(y=hospitalisation_rate), color="#35c4cc", size=1) + 
-
-    geom_ribbon(aes(ymin=0, ymax=comm_rate), fill="#8cd6ff", alpha=.5) + 
-    geom_line(color=cbp1[3], size=.5) + 
-    geom_point(color=cbp1[3], size=1) + 
-
-    geom_ribbon(aes(ymin=0, ymax=icu_rate*icu_scale), fill="#3296cf", alpha=.5) + 
-    geom_line(aes(x=date, y=icu_rate*icu_scale), color=cbp1[6], size=.5) +
-    geom_point(aes(x=date, y=icu_rate*icu_scale), color=cbp1[6], size=1) + 
-    
-    geom_vline(xintercept=date_no_hosp, size=.5, col=cbp1[2], linetype="dotted") +
-
-    xlab("") + ylab("% of active cases in CIF (light blue)\n& in hospital [ICU + hospitalised] (turquoise)\n") + 
-    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
-    scale_y_continuous(sec.axis = sec_axis(~ ./icu_scale, name="% active cases in ICU  (dark blue)\n")) +
-    theme +
-    theme(axis.text.x=element_text(angle = 90))
-})
 ```
 
 #### Case fatality rate and deaths 
