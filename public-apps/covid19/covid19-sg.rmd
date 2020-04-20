@@ -67,8 +67,7 @@ lp_clust = get_clusters()
 
 ## What are the figures
 
-Total number of cases to date: `r df_cases_day[nrow(df_case_day)]$total`
-
+Total number of cases to date: `r df_cases_day[nrow(df_cases_day)]$total`
 
 ```{r}
 min_date = min(df$confirmed.at.date, na.rm=T)
@@ -77,7 +76,9 @@ max_date = Sys.Date()
 date_second_wave = as.Date("2020-02-25")
 ```
 
-### Case load
+### Updated
+
+#### Case load
 
 ```{r} 
 max_load = (9400*0.25) + 300         # hospital capacity
@@ -168,9 +169,99 @@ renderPlot({
 })
 ```
 
+#### Case fatality rate
+
+Typically, Case Fatality Rate (CFR) will increase when hospitals get overwhelmed. 
+
+```{r}
+style = "display: inline-block;vertical-align:top;padding-right: 20px"
+bootstrapPage(
+  div(style=style, dateRangeInput("range_date_cfr", "Date range", 
+                                   start = min_date, end = max_date, 
+                                   min = min_date, max = max_date)))
+death_scale = 1
+renderPlot({
+  ggplot(data=df_cases_day[date<=input$range_date_cfr[2] & date>=input$range_date_cfr[1]], aes(x=date, y=cfr)) + 
+    geom_ribbon(aes(ymin=0, ymax=D*death_scale), fill="#ffc394", alpha=.5) + 
+    geom_line(aes(y=D*death_scale), color="#e08f4f", size=.5) + 
+    geom_point(aes(y=D*death_scale), color="#e08f4f", size=1) + 
+    geom_ribbon(aes(ymin=0, ymax=cfr), fill="#de8035", alpha=.5) + 
+    geom_line(color=cbp1[7], size=.5) + 
+    geom_point(color=cbp1[7], size=1) + 
+    xlab("") + ylab("Case Fatality Rate (dark orange)\n") + 
+    scale_y_continuous(sec.axis=sec_axis(~ ./death_scale, name="Cumulative deaths (light orange)\n",
+                                         breaks=breaks_f)) +
+    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") + theme +
+    theme(axis.text.x=element_text(angle = 90))
+})
+```
+
+#### Back-of-the-envelope hospital load
+
+Measuring hospital load is key to ensure that hospitals are not overloaded. 
+
+There are 9 public acute hospitals in Singapore, with an average capacity of 1,200 beds. Prior to covid-19, they were operating at approximately [75% load](https://www.moh.gov.sg/resources-statistics/healthcare-institution-statistics/beds-occupancy-rate-(bor)). The NCID also provides approximately 300 beds. 
+According to [a Straits Times article]((https://www.straitstimes.com/singapore/health/coronavirus-experts-say-big-jump-in-infections-is-stretching-the-healthcare-system)), there are approximately 9,400 public hospital beds. Thus if we assume 25% bed space availability, there would be `9400*0.25 + 300 =` `r max_load` beds available with the addition of 300 beds from the NCID. Note that this is a very rough estimate and that hospitals could possibly expand in capacity where needed (e.g. in the NCID can be expanded to [>500 beds](https://www.ncid.sg/Facilities-Services/Pages/default.aspx)).
+
+However, private hospital, which have about 1,600 beds according to the [article](https://www.straitstimes.com/singapore/health/coronavirus-experts-say-big-jump-in-infections-is-stretching-the-healthcare-system), were not included in the hospital beds maximum load, as they have not been housing many patients at the moment.
+
+From [11 Apr 2020](https://www.straitstimes.com/singapore/health/bright-vision-hospital-transfers-all-patients-to-make-room-for-stable-covid-19), 110 stable (but requiring hospital care) Covid-19 patients were transferred to Bright Vision Hospital which has 200 bed space when fully operational.
+
+As of 17 Apr 2020, the hospitals seem to be filling up fast, and Singapore would probably need to change its strategy soon, not to admit [milder Covid-19 cases](https://www.straitstimes.com/singapore/health/coronavirus-experts-say-big-jump-in-infections-is-stretching-the-healthcare-system) or to transfer milder cases out into isolation facilities.
+
+```{r}
+style = "display: inline-block;vertical-align:top;padding-right: 20px"
+bootstrapPage(
+  div(style=style, dateRangeInput("range_date_pl", "Date range", 
+                                   start = min_date, end = max_date, 
+                                   min = min_date, max = max_date)))
+
+renderPlot({
+  patient_load_scale = 10
+  sec_axis_name = "% of maximum patient load (light blue)\n"
+  ggplot(data=df_cases_day[date<=input$range_date_pl[2] & date>=input$range_date_pl[1]], 
+         aes(x=date, y=I2)) +
+
+    geom_ribbon(aes(ymin=0, ymax=I2), fill="#3296cf", alpha=.5) + 
+    geom_line(color=cbp1[6], size=.5) + 
+    geom_point(color=cbp1[6], size=1) + 
+
+    geom_ribbon(aes(ymin=0, ymax=percent_load*patient_load_scale), fill="#8cd6ff", alpha=.5) + 
+    geom_line(aes(y=percent_load*patient_load_scale), color=cbp1[3], size=.5) + 
+    geom_point(aes(y=percent_load*patient_load_scale), color=cbp1[3], size=1) + 
+    
+    geom_vline(xintercept=date_no_hosp, size=.5, col=cbp1[2], linetype="dotted") +
+    geom_vline(xintercept=date_bvh, size=.5, col=cbp1[2], linetype="dotted") +
+    
+    xlab("") + ylab("Number of hospitalised persons (dark blue)\n") + 
+    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
+    scale_y_continuous(sec.axis = sec_axis(~ ./patient_load_scale, name=sec_axis_name, 
+                                           breaks=seq(0, 100, 10))) + 
+    theme +
+    theme(axis.text.x=element_text(angle = 90))
+})
+```
+
+```{r}
+prop_admitted20 = .2
+show_serious = df_cases_day[,c('date', 'case_load')]
+show_serious$admitted20 = df_cases_day$case_load
+show_serious$admitted20 = ceiling(show_serious$admitted20 * prop_admitted20)
+show_serious$proportion20 = round(show_serious$admitted/max_load*100, 1)
+
+increased_yesterday_prop = 
+  show_serious[dim(show_serious)[1]]$proportion20-show_serious[(dim(show_serious)[1]-1)]$proportion20
+increased_yesterday = 
+  show_serious[dim(show_serious)[1]]$case_load-show_serious[(dim(show_serious)[1]-1)]$case_load
+increased_yesterday_serious = increased_yesterday*prop_admitted20
+```
+
+Assuming admitting only serious cases (`r prop_admitted20*100`% of active cases), on `r format(show_serious[dim(show_serious)[1]]$date, "%d %b %Y")` with `r show_serious[dim(show_serious)[1]]$case_load` cases, the hospitals are filled by `r show_serious[dim(show_serious)[1]]$proportion20`% and is increasing at a rate of `r increased_yesterday_prop`% (or `r increased_yesterday` cases with `r round(increased_yesterday_serious, 0)` serious cases) from yesterday.
+
+
 *Datasets below were not updated from 20 Apr onwards*
 
-### New cases
+### Not updated
 
 #### New cases through time
 
@@ -522,31 +613,6 @@ show_deceased %>%
   kable_styling(c("condensed", "responsive"), full_width=F) 
 ```
 
-Typically, Case Fatality Rate (CFR) will increase when hospitals get overwhelmed. 
-
-```{r}
-style = "display: inline-block;vertical-align:top;padding-right: 20px"
-bootstrapPage(
-  div(style=style, dateRangeInput("range_date_cfr", "Date range", 
-                                   start = min_date, end = max_date, 
-                                   min = min_date, max = max_date)))
-death_scale = 1
-renderPlot({
-  ggplot(data=df_cases_day[date<=input$range_date_cfr[2] & date>=input$range_date_cfr[1]], aes(x=date, y=cfr)) + 
-    geom_ribbon(aes(ymin=0, ymax=D*death_scale), fill="#ffc394", alpha=.5) + 
-    geom_line(aes(y=D*death_scale), color="#e08f4f", size=.5) + 
-    geom_point(aes(y=D*death_scale), color="#e08f4f", size=1) + 
-    geom_ribbon(aes(ymin=0, ymax=cfr), fill="#de8035", alpha=.5) + 
-    geom_line(color=cbp1[7], size=.5) + 
-    geom_point(color=cbp1[7], size=1) + 
-    xlab("") + ylab("Case Fatality Rate (dark orange)\n") + 
-    scale_y_continuous(sec.axis=sec_axis(~ ./death_scale, name="Cumulative deaths (light orange)\n",
-                                         breaks=breaks_f)) +
-    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") + theme +
-    theme(axis.text.x=element_text(angle = 90))
-})
-```
-
 In addition, [fatalities are higher for elderly above 65](https://www.businessinsider.sg/most-us-coronavirus-deaths-ages-65-older-cdc-report-2020-3). 
 
 ```{r}
@@ -575,68 +641,6 @@ show_deceased_age %>%
   kable("html", escape=F, align="c") %>%
   kable_styling(c("condensed", "responsive"), full_width=F) 
 ```
-
-#### Back-of-the-envelope hospital load
-
-Measuring hospital load is key to ensure that hospitals are not overloaded. 
-
-There are 9 public acute hospitals in Singapore, with an average capacity of 1,200 beds. Prior to covid-19, they were operating at approximately [75% load](https://www.moh.gov.sg/resources-statistics/healthcare-institution-statistics/beds-occupancy-rate-(bor)). The NCID also provides approximately 300 beds. 
-According to [a Straits Times article]((https://www.straitstimes.com/singapore/health/coronavirus-experts-say-big-jump-in-infections-is-stretching-the-healthcare-system)), there are approximately 9,400 public hospital beds. Thus if we assume 25% bed space availability, there would be `9400*0.25 + 300 =` `r max_load` beds available with the addition of 300 beds from the NCID. Note that this is a very rough estimate and that hospitals could possibly expand in capacity where needed (e.g. in the NCID can be expanded to [>500 beds](https://www.ncid.sg/Facilities-Services/Pages/default.aspx)).
-
-However, private hospital, which have about 1,600 beds according to the [article](https://www.straitstimes.com/singapore/health/coronavirus-experts-say-big-jump-in-infections-is-stretching-the-healthcare-system), were not included in the hospital beds maximum load, as they have not been housing many patients at the moment.
-
-From [11 Apr 2020](https://www.straitstimes.com/singapore/health/bright-vision-hospital-transfers-all-patients-to-make-room-for-stable-covid-19), 110 stable (but requiring hospital care) Covid-19 patients were transferred to Bright Vision Hospital which has 200 bed space when fully operational.
-
-As of 17 Apr 2020, the hospitals seem to be filling up fast, and Singapore would probably need to change its strategy soon, not to admit [milder Covid-19 cases](https://www.straitstimes.com/singapore/health/coronavirus-experts-say-big-jump-in-infections-is-stretching-the-healthcare-system) or to transfer milder cases out into isolation facilities.
-
-```{r}
-style = "display: inline-block;vertical-align:top;padding-right: 20px"
-bootstrapPage(
-  div(style=style, dateRangeInput("range_date_pl", "Date range", 
-                                   start = min_date, end = max_date, 
-                                   min = min_date, max = max_date)))
-
-renderPlot({
-  patient_load_scale = 10
-  sec_axis_name = "% of maximum patient load (light blue)\n"
-  ggplot(data=df_cases_day[date<=input$range_date_pl[2] & date>=input$range_date_pl[1]], 
-         aes(x=date, y=I2)) +
-
-    geom_ribbon(aes(ymin=0, ymax=I2), fill="#3296cf", alpha=.5) + 
-    geom_line(color=cbp1[6], size=.5) + 
-    geom_point(color=cbp1[6], size=1) + 
-
-    geom_ribbon(aes(ymin=0, ymax=percent_load*patient_load_scale), fill="#8cd6ff", alpha=.5) + 
-    geom_line(aes(y=percent_load*patient_load_scale), color=cbp1[3], size=.5) + 
-    geom_point(aes(y=percent_load*patient_load_scale), color=cbp1[3], size=1) + 
-    
-    geom_vline(xintercept=date_no_hosp, size=.5, col=cbp1[2], linetype="dotted") +
-    geom_vline(xintercept=date_bvh, size=.5, col=cbp1[2], linetype="dotted") +
-    
-    xlab("") + ylab("Number of hospitalised persons (dark blue)\n") + 
-    scale_x_date(date_breaks = "week", date_minor_breaks = "1 day", date_labels = "%d-%b") +
-    scale_y_continuous(sec.axis = sec_axis(~ ./patient_load_scale, name=sec_axis_name, 
-                                           breaks=seq(0, 100, 10))) + 
-    theme +
-    theme(axis.text.x=element_text(angle = 90))
-})
-```
-
-```{r}
-prop_admitted20 = .2
-show_serious = df_cases_day[,c('date', 'case_load')]
-show_serious$admitted20 = df_cases_day$case_load
-show_serious$admitted20 = ceiling(show_serious$admitted20 * prop_admitted20)
-show_serious$proportion20 = round(show_serious$admitted/max_load*100, 1)
-
-increased_yesterday_prop = 
-  show_serious[dim(show_serious)[1]]$proportion20-show_serious[(dim(show_serious)[1]-1)]$proportion20
-increased_yesterday = 
-  show_serious[dim(show_serious)[1]]$case_load-show_serious[(dim(show_serious)[1]-1)]$case_load
-increased_yesterday_serious = increased_yesterday*prop_admitted20
-```
-
-Assuming admitting only serious cases (`r prop_admitted20*100`% of active cases), on `r format(show_serious[dim(show_serious)[1]]$date, "%d %b %Y")` with `r show_serious[dim(show_serious)[1]]$case_load` cases, the hospitals are filled by `r show_serious[dim(show_serious)[1]]$proportion20`% and is increasing at a rate of `r increased_yesterday_prop`% (or `r increased_yesterday` cases with `r round(increased_yesterday_serious, 0)` serious cases) from yesterday.
 
 #### Hospitals/isolation facilities
 
@@ -681,11 +685,11 @@ renderPlot({
 })
 ```
 
-### Recovery
+#### Recovery
 
 Recovered date is based on the discharged date when there are [consecutive negative PCR tests](https://www.channelnewsasia.com/news/singapore/).
 
-#### Duration of recovery
+##### Duration of recovery
 
 ```{r}
 is.recovered = table(!is.na(df$recovered.at.date))
@@ -715,7 +719,7 @@ ggplot(df, aes(x=days.to.recover.resources)) +
   theme
 ```
 
-#### Risk factors
+##### Risk factors
 
 Is there an association between the risk factors and number of days for recovery? Recovery in this case does not refer to clinical symptoms but the detection of viral nucleic acid from [nasal swabs](https://mothership.sg/2020/04/singapore-covid-19-nose-swab/), which may be dead or alive.
 
@@ -751,9 +755,9 @@ renderPlot({
 })
 ```
 
-### Clusters
+#### Clusters
 
-#### Top 10 largest clusters
+##### Top 10 largest clusters
 
 ```{r}
 cluster_cases = df[cluster != "", c("case", "cluster", "confirmed.at.date", "age", "patient.citizen")]
@@ -872,7 +876,7 @@ Note: some clusters had more than one locality on the map but were only assigned
 - Reinfection?
 
 - Incubation time: 5.5 days
-- Recovery time (till 2 -ve tests): 20 days
+- Recovery time (till 2 -ve tests, on the conservative side): 20 days
 
 ### Data aquisition
 
