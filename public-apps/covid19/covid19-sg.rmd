@@ -74,7 +74,8 @@ Total number of cases to date: `r dim(df)[1]`
 #### New cases through time
 ```{r}
 min_date = min(df$confirmed.at.date, na.rm=T)
-max_date = max(df$confirmed.at.date, na.rm=T)
+# max_date = max(df$confirmed.at.date, na.rm=T)
+max_date = Sys.Date()
 date_second_wave = as.Date("2020-02-25")
 ```
 
